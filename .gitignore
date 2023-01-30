@@ -59,6 +59,7 @@ types_*.taghl
 _Deparsed_XSubs.pm
 porymap.*.cfg
 prefabs.json
+pokefirered/tools/agbcc/
 .vscode/*.*
 *.js
 *.sym
