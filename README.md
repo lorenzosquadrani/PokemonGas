@@ -1,12 +1,12 @@
 # PokemonGas
 Facciamo un gioco di pokemon per Gas!
 
-# Get Started
+## Get Started
 1.  Creiamo una cartella chiamata CheccoGay, e ci cloniamo dentro questa repo.
 
     ```bash
     mkdir CheccoGay
-    cd PokemonFireRed
+    cd CheccoGay
     git clone https://github.com/lorenzosquadrani/PokemonGas.git
     ```
 
@@ -50,7 +50,7 @@ Facciamo un gioco di pokemon per Gas!
     Using Qt version 5.15.3 in /usr/lib/x86_64-linux-gnu
     ```
 
-# Usare le cose
+## Usare le cose
 
 1.  **Creare la ROM**
     La ROM è un file binario .gba, e si crea compilando tutto il codice che c'è in PokemonGas/pokefirered con il comando:
