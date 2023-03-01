@@ -1,6 +1,11 @@
 pokefirered/tools/agbcc/
 pokeemerald/tools/agbcc/
 
+pokeemerald/porymap.project.cfg
+pokeemerald/porymap.user.cfg
+pokefirered/porymap.project.cfg
+pokefirered/porymap.user.cfg
+
 pokefirered/build/
 pokefirered/data/tilesets/primary/building/palettes/00.gbapal
 pokefirered/data/tilesets/primary/building/palettes/01.gbapal
