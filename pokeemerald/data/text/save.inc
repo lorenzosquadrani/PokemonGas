@@ -1,6 +1,6 @@
 	.align 2
 gText_ConfirmSave::
-	.string "Would you like to save the game?$"
+	.string "Cos'è ci hai la scaga Gassi Gas?$"
 
 gText_AlreadySavedFile::
 	.string "There is already a saved file.\n"

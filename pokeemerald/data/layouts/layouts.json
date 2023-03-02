@@ -94,8 +94,8 @@
     {
       "id": "LAYOUT_RIMINI_TOWN",
       "name": "RiminiTown_Layout",
-      "width": 60,
-      "height": 40,
+      "width": 59,
+      "height": 37,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/RiminiTown/border.bin",
@@ -2417,7 +2417,7 @@
       "width": 58,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "0",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/UnusedOutdoorArea/border.bin",
       "blockdata_filepath": "data/layouts/UnusedOutdoorArea/map.bin"
     },
@@ -4415,7 +4415,7 @@
       "id": "LAYOUT_RIMINI_TOWN_MARE",
       "name": "RiminiTown_Mare_Layout",
       "width": 35,
-      "height": 50,
+      "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/RiminiTown_Mare/border.bin",
