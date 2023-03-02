@@ -4415,9 +4415,9 @@
       "id": "LAYOUT_RIMINI_MARE",
       "name": "RiminiMare_Layout",
       "width": 35,
-      "height": 20,
+      "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/RiminiMare/border.bin",
       "blockdata_filepath": "data/layouts/RiminiMare/map.bin"
     }
