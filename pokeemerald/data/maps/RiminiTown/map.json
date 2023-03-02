@@ -1,9 +1,9 @@
 {
-  "id": "MAP_LITTLEROOT_TOWN",
-  "name": "LittlerootTown",
-  "layout": "LAYOUT_LITTLEROOT_TOWN",
-  "music": "MUS_LITTLEROOT",
-  "region_map_section": "MAPSEC_RIMINI",
+  "id": "MAP_RIMINI_TOWN",
+  "name": "RiminiTown",
+  "layout": "LAYOUT_RIMINI_TOWN",
+  "music": "MUS_RIMINI",
+  "region_map_section": "MAPSEC_RIMINI_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_TOWN",
@@ -19,7 +19,7 @@
       "direction": "up"
     },
     {
-      "map": "MAP_RIMINI_MARE",
+      "map": "MAP_RIMINI_TOWN_MARE",
       "offset": 0,
       "direction": "down"
     }
@@ -35,7 +35,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_EventScript_Twin",
+      "script": "RiminiTown_EventScript_Twin",
       "flag": "0"
     },
     {
@@ -48,8 +48,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_EventScript_FatMan",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN"
+      "script": "RiminiTown_EventScript_FatMan",
+      "flag": "FLAG_HIDE_RIMINI_TOWN_FAT_MAN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
@@ -61,7 +61,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_EventScript_Boy",
+      "script": "RiminiTown_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -74,8 +74,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_EventScript_Mom",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE"
+      "script": "RiminiTown_EventScript_Mom",
+      "flag": "FLAG_HIDE_RIMINI_TOWN_MOM_OUTSIDE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
@@ -88,7 +88,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_TRUCK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
@@ -101,7 +101,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_TRUCK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -114,7 +114,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_RIVAL"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_RIVAL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
@@ -127,7 +127,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BIRCH"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_BIRCH"
     }
   ],
   "warp_events": [
@@ -135,21 +135,21 @@
       "x": 14,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
+      "dest_map": "MAP_RIMINI_TOWN_MAYS_HOUSE_1F",
       "dest_warp_id": "1"
     },
     {
       "x": 5,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+      "dest_map": "MAP_RIMINI_TOWN_BRENDANS_HOUSE_1F",
       "dest_warp_id": "1"
     },
     {
       "x": 7,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
+      "dest_map": "MAP_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB",
       "dest_warp_id": "0"
     }
   ],
@@ -159,81 +159,81 @@
       "x": 10,
       "y": 1,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "0",
-      "script": "LittlerootTown_EventScript_NeedPokemonTriggerLeft"
+      "script": "RiminiTown_EventScript_NeedPokemonTriggerLeft"
     },
     {
       "type": "trigger",
       "x": 11,
       "y": 1,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "0",
-      "script": "LittlerootTown_EventScript_NeedPokemonTriggerRight"
+      "script": "RiminiTown_EventScript_NeedPokemonTriggerRight"
     },
     {
       "type": "trigger",
       "x": 11,
       "y": 1,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "1",
-      "script": "LittlerootTown_EventScript_GoSaveBirchTrigger"
+      "script": "RiminiTown_EventScript_GoSaveBirchTrigger"
     },
     {
       "type": "trigger",
       "x": 8,
       "y": 9,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger4"
+      "script": "RiminiTown_EventScript_GiveRunningShoesTrigger4"
     },
     {
       "type": "trigger",
       "x": 9,
       "y": 9,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger5"
+      "script": "RiminiTown_EventScript_GiveRunningShoesTrigger5"
     },
     {
       "type": "trigger",
       "x": 10,
       "y": 9,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger2"
+      "script": "RiminiTown_EventScript_GiveRunningShoesTrigger2"
     },
     {
       "type": "trigger",
       "x": 11,
       "y": 9,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger3"
+      "script": "RiminiTown_EventScript_GiveRunningShoesTrigger3"
     },
     {
       "type": "trigger",
       "x": 10,
       "y": 2,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger0"
+      "script": "RiminiTown_EventScript_GiveRunningShoesTrigger0"
     },
     {
       "type": "trigger",
       "x": 11,
       "y": 2,
       "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger1"
+      "script": "RiminiTown_EventScript_GiveRunningShoesTrigger1"
     }
   ],
   "bg_events": [
@@ -243,7 +243,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_EventScript_TownSign"
+      "script": "RiminiTown_EventScript_TownSign"
     },
     {
       "type": "sign",
@@ -251,7 +251,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_EventScript_BirchsLabSign"
+      "script": "RiminiTown_EventScript_BirchsLabSign"
     },
     {
       "type": "sign",
@@ -259,7 +259,7 @@
       "y": 8,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_EventScript_BrendansHouseSign"
+      "script": "RiminiTown_EventScript_BrendansHouseSign"
     },
     {
       "type": "sign",
@@ -267,7 +267,7 @@
       "y": 8,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_EventScript_MaysHouseSign"
+      "script": "RiminiTown_EventScript_MaysHouseSign"
     }
   ]
 }

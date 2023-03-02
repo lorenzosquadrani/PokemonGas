@@ -1,9 +1,9 @@
 {
-  "id": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
-  "name": "LittlerootTown_BrendansHouse_2F",
-  "layout": "LAYOUT_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
-  "music": "MUS_LITTLEROOT",
-  "region_map_section": "MAPSEC_RIMINI",
+  "id": "MAP_RIMINI_TOWN_MAYS_HOUSE_2F",
+  "name": "RiminiTown_MaysHouse_2F",
+  "layout": "LAYOUT_RIMINI_TOWN_MAYS_HOUSE_2F",
+  "music": "MUS_RIMINI",
+  "region_map_section": "MAPSEC_RIMINI_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -15,8 +15,8 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
-      "x": 7,
+      "graphics_id": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
+      "x": 1,
       "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -25,12 +25,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivalsHouse_2F_EventScript_Rival",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_RIVAL_BEDROOM"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
       "x": 0,
-      "y": 0,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -42,9 +42,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_1",
-      "x": 0,
-      "y": 1,
-      "elevation": 0,
+      "x": 1,
+      "y": 6,
+      "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -55,9 +55,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_2",
-      "x": 0,
-      "y": 2,
-      "elevation": 3,
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -68,8 +68,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_3",
-      "x": 0,
-      "y": 3,
+      "x": 3,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -81,9 +81,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_4",
-      "x": 0,
-      "y": 4,
-      "elevation": 0,
+      "x": 4,
+      "y": 6,
+      "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -94,9 +94,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_5",
-      "x": 0,
-      "y": 5,
-      "elevation": 4,
+      "x": 5,
+      "y": 6,
+      "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -107,9 +107,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_6",
-      "x": 1,
-      "y": 0,
-      "elevation": 0,
+      "x": 0,
+      "y": 7,
+      "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -121,8 +121,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_7",
       "x": 1,
-      "y": 1,
-      "elevation": 0,
+      "y": 7,
+      "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -133,8 +133,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_8",
-      "x": 1,
-      "y": 2,
+      "x": 2,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -146,8 +146,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_9",
-      "x": 1,
-      "y": 3,
+      "x": 3,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -159,8 +159,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_A",
-      "x": 1,
-      "y": 4,
+      "x": 4,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -172,9 +172,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_B",
-      "x": 1,
-      "y": 5,
-      "elevation": 0,
+      "x": 5,
+      "y": 7,
+      "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -185,7 +185,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MOM",
-      "x": 7,
+      "x": 1,
       "y": 1,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -194,11 +194,24 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_BEDROOM_MOM"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_PLAYERS_BEDROOM_MOM"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PICHU_DOLL",
+      "x": 3,
+      "y": 4,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_2F_PICHU_DOLL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 3,
+      "x": 5,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -206,29 +219,16 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_BrendansHouse_2F_EventScript_RivalsPokeBall",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SWABLU_DOLL",
-      "x": 5,
-      "y": 5,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_SWABLU_DOLL"
+      "script": "RiminiTown_MaysHouse_2F_EventScript_RivalsPokeBall",
+      "flag": "FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_2F_POKE_BALL"
     }
   ],
   "warp_events": [
     {
-      "x": 7,
+      "x": 1,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+      "dest_map": "MAP_RIMINI_TOWN_MAYS_HOUSE_1F",
       "dest_warp_id": "2"
     }
   ],
@@ -238,15 +238,15 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 0,
+      "x": 5,
       "y": 1,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "LittlerootTown_BrendansHouse_2F_EventScript_PC"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PlayersHouse_2F_EventScript_GameCube"
     },
     {
       "type": "sign",
-      "x": 1,
+      "x": 7,
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -254,19 +254,19 @@
     },
     {
       "type": "sign",
-      "x": 5,
-      "y": 1,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_BrendansHouse_2F_EventScript_WallClock"
-    },
-    {
-      "type": "sign",
       "x": 3,
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PlayersHouse_2F_EventScript_GameCube"
+      "script": "RiminiTown_MaysHouse_2F_EventScript_WallClock"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RiminiTown_MaysHouse_2F_EventScript_PC"
     }
   ]
 }

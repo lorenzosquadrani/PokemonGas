@@ -278,7 +278,7 @@
 #define SE_SUDOWOODO_SHAKE          269 // SE_USSOKI
 
 // Music
-#define MUS_LITTLEROOT_TEST         350 // MUS_TETSUJI
+#define MUS_RIMINI_TEST         350 // MUS_TETSUJI
 #define MUS_GSC_ROUTE38             351 // MUS_FIELD13
 #define MUS_CAUGHT                  352 // MUS_KACHI22
 #define MUS_VICTORY_WILD            353 // MUS_KACHI2
@@ -333,7 +333,7 @@
 #define MUS_ROUTE119                402 // MUS_GRANROAD
 #define MUS_CYCLING                 403 // MUS_CYCLING
 #define MUS_POKE_MART               404 // MUS_FRIENDLY
-#define MUS_LITTLEROOT              405 // MUS_MISHIRO
+#define MUS_RIMINI              405 // MUS_MISHIRO
 #define MUS_MT_CHIMNEY              406 // MUS_TOZAN
 #define MUS_ENCOUNTER_FEMALE        407 // MUS_GIRLEYE
 #define MUS_LILYCOVE                408 // MUS_MINAMO
