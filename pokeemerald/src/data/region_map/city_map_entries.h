@@ -1,9 +1,9 @@
 static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
 {
     {
-        .mapSecId = MAPSEC_RIMINI,
+        .mapSecId = MAPSEC_RIMINI_TOWN,
         .index = 0,
-        .tilemap = gPokenavCityMap_Littleroot_0,
+        .tilemap = gPokenavCityMap_Rimini_0,
     },
     {
         .mapSecId = MAPSEC_OLDALE_TOWN,
