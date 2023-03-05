@@ -524,7 +524,7 @@ RiminiTown_ProfessorBirchsLab_EventScript_GivePokedex::
 	call_if_eq VAR_RESULT, FEMALE, RiminiTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls
 	setvar VAR_BIRCH_LAB_STATE, 5
 	setflag FLAG_ADVENTURE_STARTED
-	setvar VAR_OLDALE_TOWN_STATE, 1
+	setvar VAR_BOLOGNA_TOWN_STATE, 1
 	setvar VAR_RIMINI_RIVAL_STATE, 4
 	setvar VAR_RIMINI_TOWN_STATE, 3
 	releaseall

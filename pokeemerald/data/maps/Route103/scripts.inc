@@ -143,8 +143,8 @@ Route103_EventScript_RivalEnd::
 	setvar VAR_BIRCH_LAB_STATE, 4
 	clearflag FLAG_HIDE_RIMINI_TOWN_BIRCHS_LAB_RIVAL
 	setflag FLAG_DEFEATED_RIVAL_ROUTE103
-	setvar VAR_OLDALE_RIVAL_STATE, 1
-	clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+	setvar VAR_BOLOGNA_RIVAL_STATE, 1
+	clearflag FLAG_HIDE_BOLOGNA_TOWN_RIVAL
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	releaseall
@@ -194,7 +194,7 @@ Route103_EventScript_Boy::
 	end
 
 Route103_EventScript_Man::
-	msgbox Route103_Text_ShortcutToOldale, MSGBOX_NPC
+	msgbox Route103_Text_ShortcutToBologna, MSGBOX_NPC
 	end
 
 Route103_EventScript_RouteSign::
@@ -344,12 +344,12 @@ Route103_Text_ShouldHaveBroughtPotion:
 	.string "My POKéMON is staggeringly tired…\n"
 	.string "I should have brought a POTION…$"
 
-Route103_Text_ShortcutToOldale:
+Route103_Text_ShortcutToBologna:
 	.string "If you cross the sea from here,\n"
-	.string "it'll be a shortcut to OLDALE TOWN.\p"
+	.string "it'll be a shortcut to BOLOGNA TOWN.\p"
 	.string "Fufufu, that's useful, isn't it?$"
 
 Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
-	.string "{DOWN_ARROW} OLDALE TOWN$"
+	.string "{DOWN_ARROW} BOLOGNA TOWN$"
 

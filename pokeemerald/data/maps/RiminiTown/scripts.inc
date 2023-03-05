@@ -47,7 +47,7 @@ RiminiTown_OnTransition:
 	call_if_eq VAR_RIMINI_TOWN_STATE, 3, RiminiTown_EventScript_SetMomStandingInFrontOfDoorPos
 	call_if_eq VAR_RIMINI_HOUSES_STATE_MAY, 4, RiminiTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
 	call_if_eq VAR_RIMINI_HOUSES_STATE_BRENDAN, 4, RiminiTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
-	call_if_eq VAR_OLDALE_RIVAL_STATE, 1, RiminiTown_EventScript_MoveRivalFromOldale
+	call_if_eq VAR_BOLOGNA_RIVAL_STATE, 1, RiminiTown_EventScript_MoveRivalFromBologna
 	call_if_eq VAR_RIMINI_RIVAL_STATE, 3, RiminiTown_EventScript_SetRivalLeftForRoute103
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, RiminiTown_EventScript_HideMapNamePopup
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, RiminiTown_EventScript_LeftLabAfterDexUpgrade
@@ -65,9 +65,9 @@ RiminiTown_EventScript_SetRivalLeftForRoute103::
 	setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
 	return
 
-RiminiTown_EventScript_MoveRivalFromOldale::
-	setvar VAR_OLDALE_RIVAL_STATE, 2
-	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+RiminiTown_EventScript_MoveRivalFromBologna::
+	setvar VAR_BOLOGNA_RIVAL_STATE, 2
+	setflag FLAG_HIDE_BOLOGNA_TOWN_RIVAL
 	return
 
 RiminiTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent::

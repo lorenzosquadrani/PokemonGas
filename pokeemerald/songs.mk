@@ -243,7 +243,7 @@ $(MID_SUBDIR)/mus_petalburg.s: %.s: %.mid
 $(MID_SUBDIR)/mus_fortree.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G032 -V080
 
-$(MID_SUBDIR)/mus_oldale.s: %.s: %.mid
+$(MID_SUBDIR)/mus_bologna.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
 
 $(MID_SUBDIR)/mus_mt_pyre_exterior.s: %.s: %.mid

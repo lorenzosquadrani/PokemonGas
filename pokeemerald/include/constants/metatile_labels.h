@@ -400,7 +400,7 @@
 
 // gTileset_Petalburg
 #define METATILE_Petalburg_Door_BirchsLab  0x249
-#define METATILE_Petalburg_Door_Oldale     0x287
+#define METATILE_Petalburg_Door_Bologna     0x287
 #define METATILE_Petalburg_Door_Rimini     0x248
 
 // gTileset_PokemonCenter

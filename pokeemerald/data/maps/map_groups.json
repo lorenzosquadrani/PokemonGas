@@ -3,7 +3,7 @@
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorRimini",
-    "gMapGroup_IndoorOldale",
+    "gMapGroup_IndoorBologna",
     "gMapGroup_IndoorDewford",
     "gMapGroup_IndoorLavaridge",
     "gMapGroup_IndoorFallarbor",
@@ -47,7 +47,7 @@
     "SootopolisCity",
     "EverGrandeCity",
     "RiminiTown",
-    "OldaleTown",
+    "BolognaTown",
     "DewfordTown",
     "LavaridgeTown",
     "FallarborTown",
@@ -103,12 +103,12 @@
     "RiminiTown_MaysHouse_2F",
     "RiminiTown_ProfessorBirchsLab"
   ],
-  "gMapGroup_IndoorOldale": [
-    "OldaleTown_House1",
-    "OldaleTown_House2",
-    "OldaleTown_PokemonCenter_1F",
-    "OldaleTown_PokemonCenter_2F",
-    "OldaleTown_Mart"
+  "gMapGroup_IndoorBologna": [
+    "BolognaTown_House1",
+    "BolognaTown_House2",
+    "BolognaTown_PokemonCenter_1F",
+    "BolognaTown_PokemonCenter_2F",
+    "BolognaTown_Mart"
   ],
   "gMapGroup_IndoorDewford": [
     "DewfordTown_House1",

@@ -75,6 +75,22 @@ Facciamo un gioco di pokemon per Gas!
     ```
     Poi facciamo File->Open Project e selezioniamo la cartella PokemonGas/pokefirered. A sto punto si capisce subito come si usa.
 
+3. **Rinominare le cose**
+    Bisogna combinare visual studio per rinominare nel contenuto di tutti i files, e linux bash per rinominare i nomi dei files.
+    Per esempio così ho rinominato OldaleTown in BolognaTown:
+    - Con VScode ho cercato in tutta la cartella pokemerald 'oldale', 'Oldale', 'OLDALE', e li ho sostituiti con
+    'bologna', 'Bologna', 'BOLOGNA'
+    - Ho eseguito i comandi:
+        ```bash
+        cd pokeemerald
+        find ./ -name "*oldale*" -exec rename 's/oldale/bologna/' '{}' \;
+        find ./ -name "*Oldale*" -exec rename 's/Oldale/Bologna/' '{}' \;
+        find ./ -name "*OLDALE*" -exec rename 's/OLDALE/BOLOGNA/' '{}' \;
+        ```
+      Per controllare che abbia fatto bene:
+        ```bash
+        find ./ -iname "*oldale*"
+        ```
 
 
 
