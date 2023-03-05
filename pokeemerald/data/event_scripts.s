@@ -227,7 +227,7 @@ gStdScripts_End::
 	.include "data/maps/SlateportCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/SlateportCity_Mart/scripts.inc"
 	.include "data/maps/MauvilleCity_Gym/scripts.inc"
-	.include "data/maps/MauvilleCity_BikeShop/scripts.inc"
+	.include "data/maps/RiminiTown_BikeShop/scripts.inc"
 	.include "data/maps/MauvilleCity_House1/scripts.inc"
 	.include "data/maps/MauvilleCity_GameCorner/scripts.inc"
 	.include "data/maps/MauvilleCity_House2/scripts.inc"

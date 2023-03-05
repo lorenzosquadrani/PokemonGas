@@ -893,13 +893,13 @@
     },
     {
       "id": "LAYOUT_MAUVILLE_CITY_BIKE_SHOP",
-      "name": "MauvilleCity_BikeShop_Layout",
+      "name": "RiminiTown_BikeShop_Layout",
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BikeShop",
-      "border_filepath": "data/layouts/MauvilleCity_BikeShop/border.bin",
-      "blockdata_filepath": "data/layouts/MauvilleCity_BikeShop/map.bin"
+      "border_filepath": "data/layouts/RiminiTown_BikeShop/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiTown_BikeShop/map.bin"
     },
     {
       "id": "LAYOUT_MAUVILLE_CITY_GAME_CORNER",
