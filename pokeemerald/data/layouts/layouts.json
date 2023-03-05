@@ -4414,7 +4414,7 @@
     {
       "id": "LAYOUT_RIMINI_TOWN_MARE",
       "name": "RiminiTown_Mare_Layout",
-      "width": 35,
+      "width": 37,
       "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
