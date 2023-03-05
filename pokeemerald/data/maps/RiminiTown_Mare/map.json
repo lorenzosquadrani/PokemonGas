@@ -23,7 +23,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 42,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_RIMINI_TOWN_BIKE_SHOP",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

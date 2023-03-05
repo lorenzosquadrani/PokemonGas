@@ -1,5 +1,5 @@
 {
-  "id": "MAP_MAUVILLE_CITY_BIKE_SHOP",
+  "id": "MAP_RIMINI_TOWN_BIKE_SHOP",
   "name": "RiminiTown_BikeShop",
   "layout": "LAYOUT_MAUVILLE_CITY_BIKE_SHOP",
   "music": "MUS_RIMINI",
@@ -46,14 +46,14 @@
       "x": 3,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_MAUVILLE_CITY",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_RIMINI_TOWN_MARE",
+      "dest_warp_id": "0"
     },
     {
       "x": 4,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_MAUVILLE_CITY",
+      "dest_map": "MAP_RIMINI_TOWN",
       "dest_warp_id": "2"
     }
   ],

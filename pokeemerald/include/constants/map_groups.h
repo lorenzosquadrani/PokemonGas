@@ -153,7 +153,7 @@
 
 // gMapGroup_IndoorMauville
 #define MAP_MAUVILLE_CITY_GYM               (0 | (10 << 8))
-#define MAP_MAUVILLE_CITY_BIKE_SHOP         (1 | (10 << 8))
+#define MAP_RIMINI_TOWN_BIKE_SHOP           (1 | (10 << 8))
 #define MAP_MAUVILLE_CITY_HOUSE1            (2 | (10 << 8))
 #define MAP_MAUVILLE_CITY_GAME_CORNER       (3 | (10 << 8))
 #define MAP_MAUVILLE_CITY_HOUSE2            (4 | (10 << 8))

@@ -50,6 +50,9 @@ Facciamo un gioco di pokemon per Gas!
     Using Qt version 5.15.3 in /usr/lib/x86_64-linux-gnu
     ```
 
+6. Installiamo Poryscript.
+   Scarica la release di linux da qua: https://github.com/huderlem/poryscript/releases
+
 ## Usare le cose
 
 1.  **Creare la ROM**
