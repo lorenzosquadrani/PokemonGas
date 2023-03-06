@@ -1057,3 +1057,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/RiminiTown_Mare/scripts.inc"
+
+	.include "data/maps/RiminiTown_CasaChecco_1F/scripts.inc"

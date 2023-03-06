@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/RiminiTown_Mare/border.bin",
       "blockdata_filepath": "data/layouts/RiminiTown_Mare/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMINI_TOWN_CASA_CHECCO_1F",
+      "name": "RiminiTown_CasaChecco_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RiminiTown_CasaChecco_1F/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiTown_CasaChecco_1F/map.bin"
     }
   ]
 }
