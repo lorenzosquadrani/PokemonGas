@@ -51,7 +51,8 @@ Facciamo un gioco di pokemon per Gas!
     ```
 
 6. Installiamo Poryscript.
-   Scarica la release di linux da qua: https://github.com/huderlem/poryscript/releases
+   Scarica la release di linux da qua: https://github.com/huderlem/poryscript/releases.
+   
 
 ## Usare le cose
 
