@@ -396,6 +396,10 @@ RiminiTown_EventScript_TownSign::
 	msgbox RiminiTown_Text_TownSign, MSGBOX_SIGN
 	end
 
+RiminiTown_EventScript_GasSign::
+	msgbox RiminiTown_Text_GasSign, MSGBOX_SIGN
+	end
+
 RiminiTown_EventScript_BirchsLabSign::
 	msgbox RiminiTown_Text_ProfBirchsLab, MSGBOX_SIGN
 	end
@@ -999,6 +1003,9 @@ RiminiTown_Text_TownSign:
 	.string "RIMINI TOWN\n"
 	.string "“A town that can't be shaded any hue.”$"
 
+RiminiTown_Text_GasSign:
+	.string "Casa di Gas$"
+
 RiminiTown_Text_ProfBirchsLab:
 	.string "PROF. BIRCH'S POKéMON LAB$"
 
@@ -1018,4 +1025,3 @@ RiminiTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I gave you?\p"
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
-
