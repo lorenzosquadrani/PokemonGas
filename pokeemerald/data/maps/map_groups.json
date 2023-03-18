@@ -4,7 +4,7 @@
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorRimini",
     "gMapGroup_IndoorBologna",
-    "gMapGroup_IndoorDewford",
+    "gMapGroup_IndoorDipartimento",
     "gMapGroup_IndoorLavaridge",
     "gMapGroup_IndoorFallarbor",
     "gMapGroup_IndoorVerdanturf",
@@ -48,7 +48,7 @@
     "EverGrandeCity",
     "RiminiTown",
     "BolognaTown",
-    "DewfordTown",
+    "DipartimentoFisica",
     "LavaridgeTown",
     "FallarborTown",
     "VerdanturfTown",
@@ -111,13 +111,13 @@
     "BolognaTown_PokemonCenter_2F",
     "BolognaTown_Mart"
   ],
-  "gMapGroup_IndoorDewford": [
-    "DewfordTown_House1",
-    "DewfordTown_PokemonCenter_1F",
-    "DewfordTown_PokemonCenter_2F",
-    "DewfordTown_Gym",
-    "DewfordTown_Hall",
-    "DewfordTown_House2"
+  "gMapGroup_IndoorDipartimento": [
+    "DipartimentoFisica_House1",
+    "DipartimentoFisica_PokemonCenter_1F",
+    "DipartimentoFisica_PokemonCenter_2F",
+    "DipartimentoFisica_Gym",
+    "DipartimentoFisica_Hall",
+    "DipartimentoFisica_House2"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",

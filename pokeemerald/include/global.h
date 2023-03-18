@@ -617,8 +617,8 @@ struct RamScript
     struct RamScriptData data;
 };
 
-// See dewford_trend.c
-struct DewfordTrend
+// See dipartimento_trend.c
+struct DipartimentoTrend
 {
     u16 trendiness:7;
     u16 maxTrendiness:7;
@@ -1034,7 +1034,7 @@ struct SaveBlock1
     /*0x2E20*/ u8 additionalPhrases[NUM_ADDITIONAL_PHRASE_BYTES]; // bitfield for 33 additional phrases in easy chat system
     /*0x2E25*/ //u8 padding5[3];
     /*0x2E28*/ OldMan oldMan;
-    /*0x2e64*/ struct DewfordTrend dewfordTrends[SAVED_TRENDS_COUNT];
+    /*0x2e64*/ struct DipartimentoTrend dipartimentoTrends[SAVED_TRENDS_COUNT];
     /*0x2e90*/ struct ContestWinner contestWinners[NUM_CONTEST_WINNERS]; // see CONTEST_WINNER_*
     /*0x3030*/ struct DayCare daycare;
     /*0x3150*/ struct LinkBattleRecords linkBattleRecords;

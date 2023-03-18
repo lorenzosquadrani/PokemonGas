@@ -17,7 +17,7 @@
 #define MAP_EVER_GRANDE_CITY    (8 | (0 << 8))
 #define MAP_RIMINI_TOWN         (9 | (0 << 8))
 #define MAP_BOLOGNA_TOWN        (10 | (0 << 8))
-#define MAP_DEWFORD_TOWN        (11 | (0 << 8))
+#define MAP_DIPARTIMENTO_FISICA        (11 | (0 << 8))
 #define MAP_LAVARIDGE_TOWN      (12 | (0 << 8))
 #define MAP_FALLARBOR_TOWN      (13 | (0 << 8))
 #define MAP_VERDANTURF_TOWN     (14 | (0 << 8))
@@ -80,13 +80,13 @@
 #define MAP_BOLOGNA_TOWN_POKEMON_CENTER_2F (3 | (2 << 8))
 #define MAP_BOLOGNA_TOWN_MART              (4 | (2 << 8))
 
-// gMapGroup_IndoorDewford
-#define MAP_DEWFORD_TOWN_HOUSE1            (0 | (3 << 8))
-#define MAP_DEWFORD_TOWN_POKEMON_CENTER_1F (1 | (3 << 8))
-#define MAP_DEWFORD_TOWN_POKEMON_CENTER_2F (2 | (3 << 8))
-#define MAP_DEWFORD_TOWN_GYM               (3 | (3 << 8))
-#define MAP_DEWFORD_TOWN_HALL              (4 | (3 << 8))
-#define MAP_DEWFORD_TOWN_HOUSE2            (5 | (3 << 8))
+// gMapGroup_IndoorDipartimento
+#define MAP_DIPARTIMENTO_FISICA_HOUSE1            (0 | (3 << 8))
+#define MAP_DIPARTIMENTO_FISICA_POKEMON_CENTER_1F (1 | (3 << 8))
+#define MAP_DIPARTIMENTO_FISICA_POKEMON_CENTER_2F (2 | (3 << 8))
+#define MAP_DIPARTIMENTO_FISICA_GYM               (3 | (3 << 8))
+#define MAP_DIPARTIMENTO_FISICA_HALL              (4 | (3 << 8))
+#define MAP_DIPARTIMENTO_FISICA_HOUSE2            (5 | (3 << 8))
 
 // gMapGroup_IndoorLavaridge
 #define MAP_LAVARIDGE_TOWN_HERB_SHOP         (0 | (4 << 8))

@@ -8582,8 +8582,8 @@
           }
         },
         {
-          "map": "MAP_DEWFORD_TOWN",
-          "base_label": "gDewfordTown",
+          "map": "MAP_DIPARTIMENTO_FISICA",
+          "base_label": "gDipartimentoFisica",
           "water_mons": {
             "encounter_rate": 4,
             "mons": [

@@ -2868,7 +2868,7 @@
     "width": 4,
     "height": 4,
     "primary_tileset": "",
-    "secondary_tileset": "gTileset_Dewford",
+    "secondary_tileset": "gTileset_Dipartimento",
     "metatiles": [
       {
         "x": 0,
@@ -2989,7 +2989,7 @@
     "width": 5,
     "height": 4,
     "primary_tileset": "",
-    "secondary_tileset": "gTileset_Dewford",
+    "secondary_tileset": "gTileset_Dipartimento",
     "metatiles": [
       {
         "x": 0,
@@ -3138,7 +3138,7 @@
     "width": 1,
     "height": 4,
     "primary_tileset": "",
-    "secondary_tileset": "gTileset_Dewford",
+    "secondary_tileset": "gTileset_Dipartimento",
     "metatiles": [
       {
         "x": 0,

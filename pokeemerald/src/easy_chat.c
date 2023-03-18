@@ -4,7 +4,7 @@
 #include "bg.h"
 #include "data.h"
 #include "decompress.h"
-#include "dewford_trend.h"
+#include "dipartimento_trend.h"
 #include "dynamic_placeholder_text_util.h"
 #include "easy_chat.h"
 #include "event_data.h"
@@ -1497,8 +1497,8 @@ void ShowEasyChatScreen(void)
         break;
     case EASY_CHAT_TYPE_TRENDY_PHRASE:
         words = (u16 *)gStringVar3;
-        words[0] = gSaveBlock1Ptr->dewfordTrends[0].words[0];
-        words[1] = gSaveBlock1Ptr->dewfordTrends[0].words[1];
+        words[0] = gSaveBlock1Ptr->dipartimentoTrends[0].words[0];
+        words[1] = gSaveBlock1Ptr->dipartimentoTrends[0].words[1];
         break;
     case EASY_CHAT_TYPE_GABBY_AND_TY:
         words = gSaveBlock1Ptr->gabbyAndTyData.quote;
@@ -5417,7 +5417,7 @@ void ShowEasyChatProfile(void)
     ShowFieldAutoScrollMessage(gStringVar4);
 }
 
-// The phrase that a man in Dewford Hall suggests has a "deep link" to the current trendy phrase
+// The phrase that a man in Dipartimento Hall suggests has a "deep link" to the current trendy phrase
 void BufferDeepLinkPhrase(void)
 {
     int groupId = Random() & 1 ? EC_GROUP_HOBBIES : EC_GROUP_LIFESTYLE;

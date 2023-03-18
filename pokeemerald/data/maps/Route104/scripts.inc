@@ -1,5 +1,5 @@
-@ NOTE: Route 104's sail to Dewford script references local IDs from Dewford's map.
-@  These are labeled in DewfordTown/scripts.inc
+@ NOTE: Route 104's sail to Dipartimento script references local IDs from Dipartimento's map.
+@  These are labeled in DipartimentoFisica/scripts.inc
 .set LOCALID_RIVAL, 34
 
 Route104_MapScripts::
@@ -8,12 +8,12 @@ Route104_MapScripts::
 	.byte 0
 
 Route104_OnFrame:
-	map_script_2 VAR_BOARD_BRINEY_BOAT_STATE, 1, Route104_EventScript_StartSailToDewford
+	map_script_2 VAR_BOARD_BRINEY_BOAT_STATE, 1, Route104_EventScript_StartSailToDipartimento
 	.2byte 0
 
-Route104_EventScript_StartSailToDewford::
+Route104_EventScript_StartSailToDipartimento::
 	lockall
-	goto Route104_EventScript_SailToDewford
+	goto Route104_EventScript_SailToDipartimento
 	end
 
 Route104_OnTransition:
@@ -346,7 +346,7 @@ Route104_EventScript_Girl2::
 	msgbox Route104_Text_ImNotATrainer, MSGBOX_NPC
 	end
 
-Route104_EventScript_SailToDewford::
+Route104_EventScript_SailToDipartimento::
 	setobjectsubpriority LOCALID_BRINEY_R104, MAP_ROUTE104, 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104, 0
 	applymovement LOCALID_BRINEY_R104, Route104_Movement_BrineyBoardBoat
@@ -356,19 +356,19 @@ Route104_EventScript_SailToDewford::
 	waitmovement 0
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
 	call Common_EventScript_PlayBrineysBoatMusic
-	goto_if_set FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDewfordNoCall
-	goto_if_unset FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDewfordDadCalls
+	goto_if_set FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDipartimentoNoCall
+	goto_if_unset FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDipartimentoDadCalls
 	end
 
-Route104_EventScript_SailToDewfordNoCall::
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewford
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewford
+Route104_EventScript_SailToDipartimentoNoCall::
+	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDipartimento
+	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDipartimento
 	waitmovement 0
-	goto Route104_EventScript_ArriveInDewford
+	goto Route104_EventScript_ArriveInDipartimento
 
-Route104_EventScript_SailToDewfordDadCalls::
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordBeforeDadCalls
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordBeforeDadCalls
+Route104_EventScript_SailToDipartimentoDadCalls::
+	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDipartimentoBeforeDadCalls
+	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDipartimentoBeforeDadCalls
 	waitmovement 0
 	pokenavcall Route104_Text_DadPokenavCall
 	waitmessage
@@ -379,51 +379,51 @@ Route104_EventScript_SailToDewfordDadCalls::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordAfterDadCalls
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordAfterDadCalls, MAP_ROUTE104
+	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDipartimentoAfterDadCalls
+	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDipartimentoAfterDadCalls, MAP_ROUTE104
 	waitmovement LOCALID_BOAT_R104, MAP_ROUTE104
 	waitmovement 0
-	goto Route104_EventScript_ArriveInDewford
+	goto Route104_EventScript_ArriveInDipartimento
 
-Route104_EventScript_ArriveInDewford::
+Route104_EventScript_ArriveInDipartimento::
 	delay 50
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerExitBoat
 	waitmovement 0
 	call Common_EventScript_StopBrineysBoatMusic
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
+	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DIPARTIMENTO_FISICA
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerMoveForBriney
 	waitmovement 0
-	setobjectxyperm LOCALID_BRINEY_DEWFORD, 12, 8
-	addobject LOCALID_BRINEY_DEWFORD
-	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
-	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
-	applymovement LOCALID_BRINEY_DEWFORD, Route104_Movement_BrineyExitBoat
+	setobjectxyperm LOCALID_BRINEY_DIPARTIMENTO, 12, 8
+	addobject LOCALID_BRINEY_DIPARTIMENTO
+	setobjectsubpriority LOCALID_BRINEY_DIPARTIMENTO, MAP_DIPARTIMENTO_FISICA, 0
+	clearflag FLAG_HIDE_MR_BRINEY_DIPARTIMENTO_FISICA
+	applymovement LOCALID_BRINEY_DIPARTIMENTO, Route104_Movement_BrineyExitBoat
 	waitmovement 0
-	addobject LOCALID_BOAT_DEWFORD
-	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	addobject LOCALID_BOAT_DIPARTIMENTO
+	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DIPARTIMENTO_FISICA
 	call Common_EventScript_StopBrineysBoatMusic
 	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
 	hideobjectat LOCALID_BOAT_R104, MAP_ROUTE104
 	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
-	resetobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN
-	copyobjectxytoperm LOCALID_BRINEY_DEWFORD
+	resetobjectsubpriority LOCALID_BRINEY_DIPARTIMENTO, MAP_DIPARTIMENTO_FISICA
+	copyobjectxytoperm LOCALID_BRINEY_DIPARTIMENTO
 	setvar VAR_BOARD_BRINEY_BOAT_STATE, 0
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_DeliverLetterReminder
-	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_LandedInDewford
+	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_LandedInDipartimento
 	end
 
 Route104_EventScript_DeliverLetterReminder::
-	msgbox Route104_Text_LandedInDewfordDeliverLetter, MSGBOX_DEFAULT
+	msgbox Route104_Text_LandedInDipartimentoDeliverLetter, MSGBOX_DEFAULT
 	releaseall
 	end
 
-Route104_EventScript_LandedInDewford::
-	msgbox DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT
+Route104_EventScript_LandedInDipartimento::
+	msgbox DipartimentoFisica_Text_BrineyLandedInDipartimento, MSGBOX_DEFAULT
 	releaseall
 	end
 
-Route104_Movement_SailToDewfordBeforeDadCalls:
+Route104_Movement_SailToDipartimentoBeforeDadCalls:
 	walk_down
 	walk_down
 	walk_down
@@ -523,7 +523,7 @@ Route104_Movement_SailToDewfordBeforeDadCalls:
 	walk_faster_down
 	step_end
 
-Route104_Movement_SailToDewfordAfterDadCalls:
+Route104_Movement_SailToDipartimentoAfterDadCalls:
 	walk_faster_down
 	walk_faster_down
 	walk_faster_down
@@ -623,7 +623,7 @@ Route104_Movement_SailToDewfordAfterDadCalls:
 	walk_down
 	step_end
 
-Route104_Movement_SailToDewford:
+Route104_Movement_SailToDipartimento:
 	walk_down
 	walk_down
 	walk_down

@@ -11,9 +11,9 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .tilemap = gPokenavCityMap_Bologna_0,
     },
     {
-        .mapSecId = MAPSEC_DEWFORD_TOWN,
+        .mapSecId = MAPSEC_DIPARTIMENTO_FISICA,
         .index = 0,
-        .tilemap = gPokenavCityMap_Dewford_0,
+        .tilemap = gPokenavCityMap_Dipartimento_0,
     },
     {
         .mapSecId = MAPSEC_LAVARIDGE_TOWN,

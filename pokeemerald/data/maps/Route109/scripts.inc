@@ -1,10 +1,10 @@
-@ NOTE: Route 109's sail to Dewford script references local IDs from Dewford's map.
-@  These are labeled in DewfordTown/scripts.inc
+@ NOTE: Route 109's sail to Dipartimento script references local IDs from Dipartimento's map.
+@  These are labeled in DipartimentoFisica/scripts.inc
 
 Route109_MapScripts::
 	.byte 0
 
-Route109_EventScript_StartDepartForDewford::
+Route109_EventScript_StartDepartForDipartimento::
 	call EventScript_BackupMrBrineyLocation
 	setobjectsubpriority LOCALID_BRINEY_R109, MAP_ROUTE109, 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE109, 0
@@ -20,52 +20,52 @@ Route109_EventScript_StartDepartForDewford::
 Route109_EventScript_EnterBoatSouth::
 	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerEnterBoatSouth
 	waitmovement 0
-	goto Route109_EventScript_DoSailToDewford
+	goto Route109_EventScript_DoSailToDipartimento
 	end
 
 Route109_EventScript_EnterBoatEast::
 	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerEnterBoatEast
 	waitmovement 0
-	goto Route109_EventScript_DoSailToDewford
+	goto Route109_EventScript_DoSailToDipartimento
 	end
 
 Route109_EventScript_EnterBoatWest::
 	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerEnterBoatWest
 	waitmovement 0
-	goto Route109_EventScript_DoSailToDewford
+	goto Route109_EventScript_DoSailToDipartimento
 	end
 
-Route109_EventScript_DoSailToDewford::
+Route109_EventScript_DoSailToDipartimento::
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
 	call Common_EventScript_PlayBrineysBoatMusic
-	applymovement LOCALID_BOAT_R109, Route109_Movement_SailToDewford
-	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_SailToDewford
+	applymovement LOCALID_BOAT_R109, Route109_Movement_SailToDipartimento
+	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_SailToDipartimento
 	waitmovement 0
 	delay 50
 	call Common_EventScript_StopBrineysBoatMusic
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
+	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DIPARTIMENTO_FISICA
 	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerExitBoat
 	waitmovement 0
-	addobject LOCALID_BOAT_DEWFORD
-	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	setobjectxyperm LOCALID_BRINEY_DEWFORD, 12, 8
-	addobject LOCALID_BRINEY_DEWFORD
-	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
-	applymovement LOCALID_BRINEY_DEWFORD, Route109_Movement_BrineyExitBoat
+	addobject LOCALID_BOAT_DIPARTIMENTO
+	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DIPARTIMENTO_FISICA
+	setobjectxyperm LOCALID_BRINEY_DIPARTIMENTO, 12, 8
+	addobject LOCALID_BRINEY_DIPARTIMENTO
+	setobjectsubpriority LOCALID_BRINEY_DIPARTIMENTO, MAP_DIPARTIMENTO_FISICA, 0
+	applymovement LOCALID_BRINEY_DIPARTIMENTO, Route109_Movement_BrineyExitBoat
 	waitmovement 0
-	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
+	clearflag FLAG_HIDE_MR_BRINEY_DIPARTIMENTO_FISICA
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
 	hideobjectat LOCALID_BOAT_R109, MAP_ROUTE109
-	msgbox DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT
+	msgbox DipartimentoFisica_Text_BrineyLandedInDipartimento, MSGBOX_DEFAULT
 	closemessage
 	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
-	resetobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN
-	copyobjectxytoperm LOCALID_BRINEY_DEWFORD
+	resetobjectsubpriority LOCALID_BRINEY_DIPARTIMENTO, MAP_DIPARTIMENTO_FISICA
+	copyobjectxytoperm LOCALID_BRINEY_DIPARTIMENTO
 	release
 	end
 
-Route109_Movement_SailToDewford:
+Route109_Movement_SailToDipartimento:
 	walk_in_place_faster_down
 	walk_down
 	walk_down
@@ -280,26 +280,26 @@ Route109_EventScript_MrBriney::
 	end
 
 Route109_EventScript_HaveNotDeliveredDevonGood::
-	message Route109_Text_BrineySailToDewfordQuestion
-	msgbox Route109_Text_BrineySailToDewfordQuestion, MSGBOX_YESNO
+	message Route109_Text_BrineySailToDipartimentoQuestion
+	msgbox Route109_Text_BrineySailToDipartimentoQuestion, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route109_EventScript_StayHere
-	goto Route109_EventScript_SailToDewford
+	goto Route109_EventScript_SailToDipartimento
 	end
 
 Route109_EventScript_DeliveredDevonGoods::
 	message Route109_Text_BrineyWhereAreWeBound
 	waitmessage
-	multichoicedefault 21, 8, MULTI_BRINEY_OFF_DEWFORD, 1, FALSE
+	multichoicedefault 21, 8, MULTI_BRINEY_OFF_DIPARTIMENTO, 1, FALSE
 	switch VAR_RESULT
-	case 0, Route109_EventScript_SailToDewford
+	case 0, Route109_EventScript_SailToDipartimento
 	case 1, Route109_EventScript_ChoseNotToSail
 	case MULTI_B_PRESSED, Route109_EventScript_ChoseNotToSail
 	end
 
-Route109_EventScript_SailToDewford::
-	msgbox Route109_Text_BrineyDewfordItIs, MSGBOX_DEFAULT
+Route109_EventScript_SailToDipartimento::
+	msgbox Route109_Text_BrineyDipartimentoItIs, MSGBOX_DEFAULT
 	closemessage
-	goto Route109_EventScript_StartDepartForDewford
+	goto Route109_EventScript_StartDepartForDipartimento
 	end
 
 Route109_EventScript_StayHere::
@@ -476,20 +476,20 @@ Route109_EventScript_Elijah::
 	msgbox Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-DewfordTown_Text_BrineyLandedInSlateportDeliverGoods:
+DipartimentoFisica_Text_BrineyLandedInSlateportDeliverGoods:
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "We've made land in SLATEPORT!\p"
 	.string "I suppose you're going to visit CAPT.\n"
 	.string "STERN and deliver the DEVON GOODS?$"
 
-Route109_Text_BrineySailToDewfordQuestion:
+Route109_Text_BrineySailToDipartimentoQuestion:
 	.string "MR. BRINEY: I thought you're supposed\n"
 	.string "to deliver the DEVON GOODS.\p"
 	.string "Would you like to sail back to\n"
-	.string "DEWFORD, then?$"
+	.string "DIPARTIMENTO, then?$"
 
-Route109_Text_BrineyDewfordItIs:
-	.string "MR. BRINEY: DEWFORD it is, then!\p"
+Route109_Text_BrineyDipartimentoItIs:
+	.string "MR. BRINEY: DIPARTIMENTO it is, then!\p"
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
 
@@ -497,7 +497,7 @@ Route109_Text_BrineyDeliverDevonGoods:
 	.string "MR. BRINEY: Then you go on and deliver\n"
 	.string "the DEVON GOODS. I'll be waiting.$"
 
-DewfordTown_Text_BrineyLandedInSlateport:
+DipartimentoFisica_Text_BrineyLandedInSlateport:
 	.string "MR. BRINEY: Ahoy! We've made land in\n"
 	.string "SLATEPORT!\p"
 	.string "You just go on and tell me whenever\n"

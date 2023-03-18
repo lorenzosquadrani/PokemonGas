@@ -3,7 +3,7 @@
 
 #define MAPSEC_RIMINI_TOWN                       0x00
 #define MAPSEC_BOLOGNA_TOWN                  0x01
-#define MAPSEC_DEWFORD_TOWN                 0x02
+#define MAPSEC_DIPARTIMENTO_FISICA                 0x02
 #define MAPSEC_LAVARIDGE_TOWN               0x03
 #define MAPSEC_FALLARBOR_TOWN               0x04
 #define MAPSEC_VERDANTURF_TOWN              0x05

@@ -192,7 +192,7 @@ $(MID_SUBDIR)/mus_encounter_intense.s: %.s: %.mid
 $(MID_SUBDIR)/mus_weather_groudon.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G090 -V050
 
-$(MID_SUBDIR)/mus_dewford.s: %.s: %.mid
+$(MID_SUBDIR)/mus_dipartimento.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G073 -V078
 
 $(MID_SUBDIR)/mus_encounter_twins.s: %.s: %.mid

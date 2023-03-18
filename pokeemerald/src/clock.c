@@ -4,7 +4,7 @@
 #include "time_events.h"
 #include "field_specials.h"
 #include "lottery_corner.h"
-#include "dewford_trend.h"
+#include "dipartimento_trend.h"
 #include "tv.h"
 #include "field_weather.h"
 #include "berry.h"
@@ -42,7 +42,7 @@ static void UpdatePerDay(struct Time *localTime)
     {
         daysSince = localTime->days - *days;
         ClearDailyFlags();
-        UpdateDewfordTrendPerDay(daysSince);
+        UpdateDipartimentoTrendPerDay(daysSince);
         UpdateTVShowsPerDay(daysSince);
         UpdateWeatherPerDay(daysSince);
         UpdatePartyPokerusTime(daysSince);
