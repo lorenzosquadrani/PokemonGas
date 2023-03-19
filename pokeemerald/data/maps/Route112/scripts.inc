@@ -55,12 +55,12 @@ Route112_EventScript_MtChimneySign::
 	msgbox Route112_Text_MtChimneySign, MSGBOX_SIGN
 	end
 
-Route112_EventScript_RouteSignLavaridge::
-	msgbox Route112_Text_RouteSignLavaridge, MSGBOX_SIGN
+Route112_EventScript_RouteSignSanta::
+	msgbox Route112_Text_RouteSignSanta, MSGBOX_SIGN
 	end
 
 Route112_EventScript_Hiker::
-	msgbox Route112_Text_NotEasyToGetBackToLavaridge, MSGBOX_NPC
+	msgbox Route112_Text_NotEasyToGetBackToSanta, MSGBOX_NPC
 	end
 
 Route112_EventScript_Brice::
@@ -125,10 +125,10 @@ Route112_Text_CantLetAnyonePassUntilTheyreBack:
 	.string "You got it. And until they come back,\n"
 	.string "we're not to let anyone pass, right.$"
 
-Route112_Text_NotEasyToGetBackToLavaridge:
+Route112_Text_NotEasyToGetBackToSanta:
 	.string "Eh, I'd like to get to MAUVILLE, but if\n"
 	.string "I went down these ledges, it'd be no\l"
-	.string "easy matter to get back to LAVARIDGE.$"
+	.string "easy matter to get back to SANTA.$"
 
 Route112_Text_MtChimneyCableCarSign:
 	.string "MT. CHIMNEY CABLE CAR\n"
@@ -136,10 +136,10 @@ Route112_Text_MtChimneyCableCarSign:
 
 Route112_Text_MtChimneySign:
 	.string "MT. CHIMNEY\p"
-	.string "“For LAVARIDGE TOWN or the summit,\n"
+	.string "“For SANTA TOWN or the summit,\n"
 	.string "please take the CABLE CAR.”$"
 
-Route112_Text_RouteSignLavaridge:
+Route112_Text_RouteSignSanta:
 	.string "ROUTE 112\n"
-	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
+	.string "{LEFT_ARROW} SANTA TOWN$"
 

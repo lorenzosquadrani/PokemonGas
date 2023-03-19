@@ -531,16 +531,16 @@ void DoEscalatorWarp(u8 metatileBehavior)
     StartEscalatorWarp(metatileBehavior, 10);
 }
 
-void DoLavaridgeGymB1FWarp(void)
+void DoSantaGymB1FWarp(void)
 {
     LockPlayerFieldControls();
-    StartLavaridgeGymB1FWarp(10);
+    StartSantaGymB1FWarp(10);
 }
 
-void DoLavaridgeGym1FWarp(void)
+void DoSantaGym1FWarp(void)
 {
     LockPlayerFieldControls();
-    StartLavaridgeGym1FWarp(10);
+    StartSantaGym1FWarp(10);
 }
 
 // DoSpinEnterWarp but with a fade out

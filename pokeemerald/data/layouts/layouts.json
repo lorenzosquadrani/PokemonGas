@@ -122,14 +122,14 @@
       "blockdata_filepath": "data/layouts/DipartimentoFisica/map.bin"
     },
     {
-      "id": "LAYOUT_LAVARIDGE_TOWN",
-      "name": "LavaridgeTown_Layout",
+      "id": "LAYOUT_SANTA_GIUSTINA",
+      "name": "SantaGiustina_Layout",
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/LavaridgeTown/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown/map.bin"
+      "secondary_tileset": "gTileset_Santa",
+      "border_filepath": "data/layouts/SantaGiustina/border.bin",
+      "blockdata_filepath": "data/layouts/SantaGiustina/map.bin"
     },
     {
       "id": "LAYOUT_FALLARBOR_TOWN",
@@ -277,7 +277,7 @@
       "width": 40,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/Route112/border.bin",
       "blockdata_filepath": "data/layouts/Route112/map.bin"
     },
@@ -672,44 +672,44 @@
       "blockdata_filepath": "data/layouts/House4/map.bin"
     },
     {
-      "id": "LAYOUT_LAVARIDGE_TOWN_HERB_SHOP",
-      "name": "LavaridgeTown_HerbShop_Layout",
+      "id": "LAYOUT_SANTA_GIUSTINA_HERB_SHOP",
+      "name": "SantaGiustina_HerbShop_Layout",
       "width": 11,
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Shop",
-      "border_filepath": "data/layouts/LavaridgeTown_HerbShop/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown_HerbShop/map.bin"
+      "border_filepath": "data/layouts/SantaGiustina_HerbShop/border.bin",
+      "blockdata_filepath": "data/layouts/SantaGiustina_HerbShop/map.bin"
     },
     {
-      "id": "LAYOUT_LAVARIDGE_TOWN_GYM_1F",
-      "name": "LavaridgeTown_Gym_1F_Layout",
+      "id": "LAYOUT_SANTA_GIUSTINA_GYM_1F",
+      "name": "SantaGiustina_Gym_1F_Layout",
       "width": 17,
       "height": 19,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_LavaridgeGym",
-      "border_filepath": "data/layouts/LavaridgeTown_Gym_1F/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown_Gym_1F/map.bin"
+      "secondary_tileset": "gTileset_SantaGym",
+      "border_filepath": "data/layouts/SantaGiustina_Gym_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SantaGiustina_Gym_1F/map.bin"
     },
     {
-      "id": "LAYOUT_LAVARIDGE_TOWN_GYM_B1F",
-      "name": "LavaridgeTown_Gym_B1F_Layout",
+      "id": "LAYOUT_SANTA_GIUSTINA_GYM_B1F",
+      "name": "SantaGiustina_Gym_B1F_Layout",
       "width": 17,
       "height": 19,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_LavaridgeGym",
-      "border_filepath": "data/layouts/LavaridgeTown_Gym_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown_Gym_B1F/map.bin"
+      "secondary_tileset": "gTileset_SantaGym",
+      "border_filepath": "data/layouts/SantaGiustina_Gym_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/SantaGiustina_Gym_B1F/map.bin"
     },
     {
-      "id": "LAYOUT_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
-      "name": "LavaridgeTown_PokemonCenter_1F_Layout",
+      "id": "LAYOUT_SANTA_GIUSTINA_POKEMON_CENTER_1F",
+      "name": "SantaGiustina_PokemonCenter_1F_Layout",
       "width": 14,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F/border.bin",
-      "blockdata_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F/map.bin"
+      "border_filepath": "data/layouts/SantaGiustina_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SantaGiustina_PokemonCenter_1F/map.bin"
     },
     {
       "id": "LAYOUT_FALLARBOR_TOWN_LEFTOVER_RSCONTEST_LOBBY",
@@ -1357,7 +1357,7 @@
       "width": 40,
       "height": 47,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MtChimney/border.bin",
       "blockdata_filepath": "data/layouts/MtChimney/map.bin"
     },
@@ -2917,7 +2917,7 @@
       "width": 30,
       "height": 46,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/JaggedPass/border.bin",
       "blockdata_filepath": "data/layouts/JaggedPass/map.bin"
     },
@@ -2927,7 +2927,7 @@
       "width": 35,
       "height": 38,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/FieryPath/border.bin",
       "blockdata_filepath": "data/layouts/FieryPath/map.bin"
     },
@@ -3357,7 +3357,7 @@
       "width": 37,
       "height": 38,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MagmaHideout_1F/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_1F/map.bin"
     },
@@ -3367,7 +3367,7 @@
       "width": 33,
       "height": 39,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MagmaHideout_2F_1R/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_2F_1R/map.bin"
     },
@@ -3377,7 +3377,7 @@
       "width": 49,
       "height": 28,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MagmaHideout_2F_2R/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_2F_2R/map.bin"
     },
@@ -3387,7 +3387,7 @@
       "width": 28,
       "height": 24,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MagmaHideout_3F_1R/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_3F_1R/map.bin"
     },
@@ -3397,7 +3397,7 @@
       "width": 24,
       "height": 17,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MagmaHideout_3F_2R/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_3F_2R/map.bin"
     },
@@ -3407,7 +3407,7 @@
       "width": 59,
       "height": 28,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MagmaHideout_4F/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_4F/map.bin"
     },
@@ -3787,7 +3787,7 @@
       "width": 33,
       "height": 24,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MagmaHideout_3F_3R/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_3F_3R/map.bin"
     },
@@ -3797,7 +3797,7 @@
       "width": 60,
       "height": 19,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Santa",
       "border_filepath": "data/layouts/MagmaHideout_2F_3R/border.bin",
       "blockdata_filepath": "data/layouts/MagmaHideout_2F_3R/map.bin"
     },

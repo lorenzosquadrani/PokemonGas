@@ -114,27 +114,27 @@ static bool8 DiveFieldEffect_Init(struct Task *);
 static bool8 DiveFieldEffect_ShowMon(struct Task *);
 static bool8 DiveFieldEffect_TryWarp(struct Task *);
 
-static void Task_LavaridgeGymB1FWarp(u8);
-static bool8 LavaridgeGymB1FWarpEffect_Init(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGymB1FWarpEffect_CameraShake(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGymB1FWarpEffect_Launch(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGymB1FWarpEffect_Rise(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGymB1FWarpEffect_FadeOut(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGymB1FWarpEffect_Warp(struct Task *, struct ObjectEvent *, struct Sprite *);
+static void Task_SantaGymB1FWarp(u8);
+static bool8 SantaGymB1FWarpEffect_Init(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGymB1FWarpEffect_CameraShake(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGymB1FWarpEffect_Launch(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGymB1FWarpEffect_Rise(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGymB1FWarpEffect_FadeOut(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGymB1FWarpEffect_Warp(struct Task *, struct ObjectEvent *, struct Sprite *);
 
-static void FieldCB_LavaridgeGymB1FWarpExit(void);
-static void Task_LavaridgeGymB1FWarpExit(u8);
-static bool8 LavaridgeGymB1FWarpExitEffect_Init(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGymB1FWarpExitEffect_StartPopOut(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGymB1FWarpExitEffect_PopOut(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGymB1FWarpExitEffect_End(struct Task *, struct ObjectEvent *, struct Sprite *);
+static void FieldCB_SantaGymB1FWarpExit(void);
+static void Task_SantaGymB1FWarpExit(u8);
+static bool8 SantaGymB1FWarpExitEffect_Init(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGymB1FWarpExitEffect_StartPopOut(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGymB1FWarpExitEffect_PopOut(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGymB1FWarpExitEffect_End(struct Task *, struct ObjectEvent *, struct Sprite *);
 
-static void Task_LavaridgeGym1FWarp(u8);
-static bool8 LavaridgeGym1FWarpEffect_Init(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGym1FWarpEffect_AshPuff(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGym1FWarpEffect_Disappear(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGym1FWarpEffect_FadeOut(struct Task *, struct ObjectEvent *, struct Sprite *);
-static bool8 LavaridgeGym1FWarpEffect_Warp(struct Task *, struct ObjectEvent *, struct Sprite *);
+static void Task_SantaGym1FWarp(u8);
+static bool8 SantaGym1FWarpEffect_Init(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGym1FWarpEffect_AshPuff(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGym1FWarpEffect_Disappear(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGym1FWarpEffect_FadeOut(struct Task *, struct ObjectEvent *, struct Sprite *);
+static bool8 SantaGym1FWarpEffect_Warp(struct Task *, struct ObjectEvent *, struct Sprite *);
 
 static void Task_EscapeRopeWarpOut(u8);
 static void EscapeRopeWarpOutEffect_Init(struct Task *);
@@ -656,31 +656,31 @@ static bool8 (*const sDiveFieldEffectFuncs[])(struct Task *) =
     DiveFieldEffect_TryWarp,
 };
 
-static bool8 (*const sLavaridgeGymB1FWarpEffectFuncs[])(struct Task *, struct ObjectEvent *, struct Sprite *) =
+static bool8 (*const sSantaGymB1FWarpEffectFuncs[])(struct Task *, struct ObjectEvent *, struct Sprite *) =
 {
-    LavaridgeGymB1FWarpEffect_Init,
-    LavaridgeGymB1FWarpEffect_CameraShake,
-    LavaridgeGymB1FWarpEffect_Launch,
-    LavaridgeGymB1FWarpEffect_Rise,
-    LavaridgeGymB1FWarpEffect_FadeOut,
-    LavaridgeGymB1FWarpEffect_Warp,
+    SantaGymB1FWarpEffect_Init,
+    SantaGymB1FWarpEffect_CameraShake,
+    SantaGymB1FWarpEffect_Launch,
+    SantaGymB1FWarpEffect_Rise,
+    SantaGymB1FWarpEffect_FadeOut,
+    SantaGymB1FWarpEffect_Warp,
 };
 
-static bool8 (*const sLavaridgeGymB1FWarpExitEffectFuncs[])(struct Task *, struct ObjectEvent *, struct Sprite *) =
+static bool8 (*const sSantaGymB1FWarpExitEffectFuncs[])(struct Task *, struct ObjectEvent *, struct Sprite *) =
 {
-    LavaridgeGymB1FWarpExitEffect_Init,
-    LavaridgeGymB1FWarpExitEffect_StartPopOut,
-    LavaridgeGymB1FWarpExitEffect_PopOut,
-    LavaridgeGymB1FWarpExitEffect_End,
+    SantaGymB1FWarpExitEffect_Init,
+    SantaGymB1FWarpExitEffect_StartPopOut,
+    SantaGymB1FWarpExitEffect_PopOut,
+    SantaGymB1FWarpExitEffect_End,
 };
 
-static bool8 (*const sLavaridgeGym1FWarpEffectFuncs[])(struct Task *, struct ObjectEvent *, struct Sprite *) =
+static bool8 (*const sSantaGym1FWarpEffectFuncs[])(struct Task *, struct ObjectEvent *, struct Sprite *) =
 {
-    LavaridgeGym1FWarpEffect_Init,
-    LavaridgeGym1FWarpEffect_AshPuff,
-    LavaridgeGym1FWarpEffect_Disappear,
-    LavaridgeGym1FWarpEffect_FadeOut,
-    LavaridgeGym1FWarpEffect_Warp,
+    SantaGym1FWarpEffect_Init,
+    SantaGym1FWarpEffect_AshPuff,
+    SantaGym1FWarpEffect_Disappear,
+    SantaGym1FWarpEffect_FadeOut,
+    SantaGym1FWarpEffect_Warp,
 };
 
 static void (*const sEscapeRopeWarpOutEffectFuncs[])(struct Task *) =
@@ -1946,17 +1946,17 @@ static bool8 DiveFieldEffect_TryWarp(struct Task *task)
     return FALSE;
 }
 
-void StartLavaridgeGymB1FWarp(u8 priority)
+void StartSantaGymB1FWarp(u8 priority)
 {
-    CreateTask(Task_LavaridgeGymB1FWarp, priority);
+    CreateTask(Task_SantaGymB1FWarp, priority);
 }
 
-static void Task_LavaridgeGymB1FWarp(u8 taskId)
+static void Task_SantaGymB1FWarp(u8 taskId)
 {
-    while (sLavaridgeGymB1FWarpEffectFuncs[gTasks[taskId].data[0]](&gTasks[taskId], &gObjectEvents[gPlayerAvatar.objectEventId], &gSprites[gPlayerAvatar.spriteId]));
+    while (sSantaGymB1FWarpEffectFuncs[gTasks[taskId].data[0]](&gTasks[taskId], &gObjectEvents[gPlayerAvatar.objectEventId], &gSprites[gPlayerAvatar.spriteId]));
 }
 
-static bool8 LavaridgeGymB1FWarpEffect_Init(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpEffect_Init(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     FreezeObjectEvents();
     CameraObjectReset2();
@@ -1968,7 +1968,7 @@ static bool8 LavaridgeGymB1FWarpEffect_Init(struct Task *task, struct ObjectEven
     return TRUE;
 }
 
-static bool8 LavaridgeGymB1FWarpEffect_CameraShake(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpEffect_CameraShake(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     SetCameraPanning(0, task->data[1]);
     task->data[1] = -task->data[1];
@@ -1981,7 +1981,7 @@ static bool8 LavaridgeGymB1FWarpEffect_CameraShake(struct Task *task, struct Obj
     return FALSE;
 }
 
-static bool8 LavaridgeGymB1FWarpEffect_Launch(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpEffect_Launch(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     sprite->y2 = 0;
     task->data[3] = 1;
@@ -1995,7 +1995,7 @@ static bool8 LavaridgeGymB1FWarpEffect_Launch(struct Task *task, struct ObjectEv
     return TRUE;
 }
 
-static bool8 LavaridgeGymB1FWarpEffect_Rise(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpEffect_Rise(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     s16 centerToCornerVecY;
     SetCameraPanning(0, task->data[1]);
@@ -2038,7 +2038,7 @@ static bool8 LavaridgeGymB1FWarpEffect_Rise(struct Task *task, struct ObjectEven
     return FALSE;
 }
 
-static bool8 LavaridgeGymB1FWarpEffect_FadeOut(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpEffect_FadeOut(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     TryFadeOutOldMapMusic();
     WarpFadeOutScreen();
@@ -2046,33 +2046,33 @@ static bool8 LavaridgeGymB1FWarpEffect_FadeOut(struct Task *task, struct ObjectE
     return FALSE;
 }
 
-static bool8 LavaridgeGymB1FWarpEffect_Warp(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpEffect_Warp(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     if (!gPaletteFade.active && BGMusicStopped() == TRUE)
     {
         WarpIntoMap();
-        gFieldCallback = FieldCB_LavaridgeGymB1FWarpExit;
+        gFieldCallback = FieldCB_SantaGymB1FWarpExit;
         SetMainCallback2(CB2_LoadMap);
-        DestroyTask(FindTaskIdByFunc(Task_LavaridgeGymB1FWarp));
+        DestroyTask(FindTaskIdByFunc(Task_SantaGymB1FWarp));
     }
     return FALSE;
 }
 
-static void FieldCB_LavaridgeGymB1FWarpExit(void)
+static void FieldCB_SantaGymB1FWarpExit(void)
 {
     Overworld_PlaySpecialMapMusic();
     WarpFadeInScreen();
     LockPlayerFieldControls();
     gFieldCallback = NULL;
-    CreateTask(Task_LavaridgeGymB1FWarpExit, 0);
+    CreateTask(Task_SantaGymB1FWarpExit, 0);
 }
 
-static void Task_LavaridgeGymB1FWarpExit(u8 taskId)
+static void Task_SantaGymB1FWarpExit(u8 taskId)
 {
-    while (sLavaridgeGymB1FWarpExitEffectFuncs[gTasks[taskId].data[0]](&gTasks[taskId], &gObjectEvents[gPlayerAvatar.objectEventId], &gSprites[gPlayerAvatar.spriteId]));
+    while (sSantaGymB1FWarpExitEffectFuncs[gTasks[taskId].data[0]](&gTasks[taskId], &gObjectEvents[gPlayerAvatar.objectEventId], &gSprites[gPlayerAvatar.spriteId]));
 }
 
-static bool8 LavaridgeGymB1FWarpExitEffect_Init(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpExitEffect_Init(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     CameraObjectReset2();
     FreezeObjectEvents();
@@ -2082,7 +2082,7 @@ static bool8 LavaridgeGymB1FWarpExitEffect_Init(struct Task *task, struct Object
     return FALSE;
 }
 
-static bool8 LavaridgeGymB1FWarpExitEffect_StartPopOut(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpExitEffect_StartPopOut(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     if (IsWeatherNotFadingIn())
     {
@@ -2096,7 +2096,7 @@ static bool8 LavaridgeGymB1FWarpExitEffect_StartPopOut(struct Task *task, struct
     return FALSE;
 }
 
-static bool8 LavaridgeGymB1FWarpExitEffect_PopOut(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpExitEffect_PopOut(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     sprite = &gSprites[task->data[1]];
     if (sprite->animCmdIndex > 1)
@@ -2110,19 +2110,19 @@ static bool8 LavaridgeGymB1FWarpExitEffect_PopOut(struct Task *task, struct Obje
     return FALSE;
 }
 
-static bool8 LavaridgeGymB1FWarpExitEffect_End(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGymB1FWarpExitEffect_End(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     if (ObjectEventClearHeldMovementIfFinished(objectEvent))
     {
         gPlayerAvatar.preventStep = FALSE;
         UnlockPlayerFieldControls();
         UnfreezeObjectEvents();
-        DestroyTask(FindTaskIdByFunc(Task_LavaridgeGymB1FWarpExit));
+        DestroyTask(FindTaskIdByFunc(Task_SantaGymB1FWarpExit));
     }
     return FALSE;
 }
 
-// For the ash effect when jumping off the Lavaridge Gym B1F warp tiles
+// For the ash effect when jumping off the Santa Gym B1F warp tiles
 u8 FldEff_AshLaunch(void)
 {
     u8 spriteId;
@@ -2139,17 +2139,17 @@ void SpriteCB_AshLaunch(struct Sprite *sprite)
         FieldEffectStop(sprite, FLDEFF_ASH_LAUNCH);
 }
 
-void StartLavaridgeGym1FWarp(u8 priority)
+void StartSantaGym1FWarp(u8 priority)
 {
-    CreateTask(Task_LavaridgeGym1FWarp, priority);
+    CreateTask(Task_SantaGym1FWarp, priority);
 }
 
-static void Task_LavaridgeGym1FWarp(u8 taskId)
+static void Task_SantaGym1FWarp(u8 taskId)
 {
-    while(sLavaridgeGym1FWarpEffectFuncs[gTasks[taskId].data[0]](&gTasks[taskId], &gObjectEvents[gPlayerAvatar.objectEventId], &gSprites[gPlayerAvatar.spriteId]));
+    while(sSantaGym1FWarpEffectFuncs[gTasks[taskId].data[0]](&gTasks[taskId], &gObjectEvents[gPlayerAvatar.objectEventId], &gSprites[gPlayerAvatar.spriteId]));
 }
 
-static bool8 LavaridgeGym1FWarpEffect_Init(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGym1FWarpEffect_Init(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     FreezeObjectEvents();
     CameraObjectReset2();
@@ -2159,7 +2159,7 @@ static bool8 LavaridgeGym1FWarpEffect_Init(struct Task *task, struct ObjectEvent
     return FALSE;
 }
 
-static bool8 LavaridgeGym1FWarpEffect_AshPuff(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGym1FWarpEffect_AshPuff(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     if (ObjectEventClearHeldMovementIfFinished(objectEvent))
     {
@@ -2175,13 +2175,13 @@ static bool8 LavaridgeGym1FWarpEffect_AshPuff(struct Task *task, struct ObjectEv
         {
             task->data[1]++;
             ObjectEventSetHeldMovement(objectEvent, GetWalkInPlaceFasterMovementAction(objectEvent->facingDirection));
-            PlaySE(SE_LAVARIDGE_FALL_WARP);
+            PlaySE(SE_SANTA_FALL_WARP);
         }
     }
     return FALSE;
 }
 
-static bool8 LavaridgeGym1FWarpEffect_Disappear(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGym1FWarpEffect_Disappear(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     if (gSprites[task->data[1]].animCmdIndex == 2)
     {
@@ -2191,7 +2191,7 @@ static bool8 LavaridgeGym1FWarpEffect_Disappear(struct Task *task, struct Object
     return FALSE;
 }
 
-static bool8 LavaridgeGym1FWarpEffect_FadeOut(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGym1FWarpEffect_FadeOut(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     if (!FieldEffectActiveListContains(FLDEFF_ASH_PUFF))
     {
@@ -2202,19 +2202,19 @@ static bool8 LavaridgeGym1FWarpEffect_FadeOut(struct Task *task, struct ObjectEv
     return FALSE;
 }
 
-static bool8 LavaridgeGym1FWarpEffect_Warp(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
+static bool8 SantaGym1FWarpEffect_Warp(struct Task *task, struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     if (!gPaletteFade.active && BGMusicStopped() == TRUE)
     {
         WarpIntoMap();
         gFieldCallback = FieldCB_FallWarpExit;
         SetMainCallback2(CB2_LoadMap);
-        DestroyTask(FindTaskIdByFunc(Task_LavaridgeGym1FWarp));
+        DestroyTask(FindTaskIdByFunc(Task_SantaGym1FWarp));
     }
     return FALSE;
 }
 
-// For the ash effect when a trainer pops out of ash, or when the player enters/exits a warp in Lavaridge Gym 1F
+// For the ash effect when a trainer pops out of ash, or when the player enters/exits a warp in Santa Gym 1F
 u8 FldEff_AshPuff(void)
 {
     u8 spriteId;

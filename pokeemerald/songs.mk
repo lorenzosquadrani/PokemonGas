@@ -873,7 +873,7 @@ $(MID_SUBDIR)/se_fu_zaku.s: %.s: %.mid
 $(MID_SUBDIR)/se_contest_condition_lose.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -V110 -P4
 
-$(MID_SUBDIR)/se_lavaridge_fall_warp.s: %.s: %.mid
+$(MID_SUBDIR)/se_santa_fall_warp.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -P4
 
 $(MID_SUBDIR)/se_balloon_red.s: %.s: %.mid

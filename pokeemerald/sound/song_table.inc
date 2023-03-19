@@ -40,7 +40,7 @@ gSongTable::
 	song se_click, 1, 1
 	song se_fu_zaku, 1, 1
 	song se_contest_condition_lose, 1, 1
-	song se_lavaridge_fall_warp, 1, 1
+	song se_santa_fall_warp, 1, 1
 	song se_ice_stairs, 1, 1
 	song se_ice_break, 1, 1
 	song se_ice_crack, 1, 1

@@ -3,7 +3,7 @@ Common_EventScript_SetGymTrainers::
 	case 1, RustboroCity_Gym_SetGymTrainers
 	case 2, DipartimentoFisica_Gym_SetGymTrainers
 	case 3, MauvilleCity_Gym_SetGymTrainers
-	case 4, LavaridgeTown_Gym_SetGymTrainers
+	case 4, SantaGiustina_Gym_SetGymTrainers
 	case 5, PetalburgCity_Gym_SetGymTrainers
 	case 6, FortreeCity_Gym_SetGymTrainers
 	case 7, MossdeepCity_Gym_SetGymTrainers
@@ -33,7 +33,7 @@ MauvilleCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_ANGELO
 	return
 
-LavaridgeTown_Gym_SetGymTrainers::
+SantaGiustina_Gym_SetGymTrainers::
 	settrainerflag TRAINER_COLE
 	settrainerflag TRAINER_AXLE
 	settrainerflag TRAINER_KEEGAN

@@ -713,14 +713,14 @@ static bool8 TryStartWarpEventScript(struct MapPosition *position, u16 metatileB
             DoEscalatorWarp(metatileBehavior);
             return TRUE;
         }
-        if (MetatileBehavior_IsLavaridgeB1FWarp(metatileBehavior) == TRUE)
+        if (MetatileBehavior_IsSantaB1FWarp(metatileBehavior) == TRUE)
         {
-            DoLavaridgeGymB1FWarp();
+            DoSantaGymB1FWarp();
             return TRUE;
         }
-        if (MetatileBehavior_IsLavaridge1FWarp(metatileBehavior) == TRUE)
+        if (MetatileBehavior_IsSanta1FWarp(metatileBehavior) == TRUE)
         {
-            DoLavaridgeGym1FWarp();
+            DoSantaGym1FWarp();
             return TRUE;
         }
         if (MetatileBehavior_IsAquaHideoutWarp(metatileBehavior) == TRUE)
@@ -755,8 +755,8 @@ static bool8 IsWarpMetatileBehavior(u16 metatileBehavior)
      && MetatileBehavior_IsLadder(metatileBehavior) != TRUE
      && MetatileBehavior_IsEscalator(metatileBehavior) != TRUE
      && MetatileBehavior_IsNonAnimDoor(metatileBehavior) != TRUE
-     && MetatileBehavior_IsLavaridgeB1FWarp(metatileBehavior) != TRUE
-     && MetatileBehavior_IsLavaridge1FWarp(metatileBehavior) != TRUE
+     && MetatileBehavior_IsSantaB1FWarp(metatileBehavior) != TRUE
+     && MetatileBehavior_IsSanta1FWarp(metatileBehavior) != TRUE
      && MetatileBehavior_IsAquaHideoutWarp(metatileBehavior) != TRUE
      && MetatileBehavior_IsMtPyreHole(metatileBehavior) != TRUE
      && MetatileBehavior_IsMossdeepGymWarp(metatileBehavior) != TRUE

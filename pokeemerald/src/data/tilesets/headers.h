@@ -64,15 +64,15 @@ const struct Tileset gTileset_Mauville =
     .callback = InitTilesetAnim_Mauville,
 };
 
-const struct Tileset gTileset_Lavaridge =
+const struct Tileset gTileset_Santa =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Lavaridge,
-    .palettes = gTilesetPalettes_Lavaridge,
-    .metatiles = gMetatiles_Lavaridge,
-    .metatileAttributes = gMetatileAttributes_Lavaridge,
-    .callback = InitTilesetAnim_Lavaridge,
+    .tiles = gTilesetTiles_Santa,
+    .palettes = gTilesetPalettes_Santa,
+    .metatiles = gMetatiles_Santa,
+    .metatileAttributes = gMetatileAttributes_Santa,
+    .callback = InitTilesetAnim_Santa,
 };
 
 const struct Tileset gTileset_Fallarbor =
@@ -570,14 +570,14 @@ const struct Tileset gTileset_MauvilleGym =
     .callback = InitTilesetAnim_MauvilleGym,
 };
 
-const struct Tileset gTileset_LavaridgeGym =
+const struct Tileset gTileset_SantaGym =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_LavaridgeGym,
-    .palettes = gTilesetPalettes_LavaridgeGym,
-    .metatiles = gMetatiles_LavaridgeGym,
-    .metatileAttributes = gMetatileAttributes_LavaridgeGym,
+    .tiles = gTilesetTiles_SantaGym,
+    .palettes = gTilesetPalettes_SantaGym,
+    .metatiles = gMetatiles_SantaGym,
+    .metatileAttributes = gMetatileAttributes_SantaGym,
     .callback = NULL,
 };
 

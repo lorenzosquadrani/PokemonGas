@@ -2155,7 +2155,7 @@ MatchCall_Text_Flannery2::
 MatchCall_Text_Flannery3::
 	.string "FLANNERY: Oh, {PLAYER}?\n"
 	.string "Our GYM's ready!\p"
-	.string "Come to LAVARIDGE for a soak\n"
+	.string "Come to SANTA for a soak\n"
 	.string "in the hot spring and a challenge!$"
 
 MatchCall_Text_Flannery4::
@@ -2402,7 +2402,7 @@ MatchCall_Text_May8::
 MatchCall_Text_May9::
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
 	.string "I was thinking of going to the hot\n"
-	.string "spring in LAVARIDGE.\p"
+	.string "spring in SANTA.\p"
 	.string "But on the way, around JAGGED\n"
 	.string "PASS, I ran into some bad-looking\l"
 	.string "characters. The mood was ugly!$"
@@ -2529,7 +2529,7 @@ MatchCall_Text_Brendan8::
 MatchCall_Text_Brendan9::
 	.string "BRENDAN: Hey there, {PLAYER}.\p"
 	.string "I was on my way back to the hot\n"
-	.string "spring in LAVARIDGE.\p"
+	.string "spring in SANTA.\p"
 	.string "But around JAGGED PASS, I ran into\n"
 	.string "some nasty-looking characters.\p"
 	.string "Those creeps…\n"

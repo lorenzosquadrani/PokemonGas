@@ -16,9 +16,9 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .tilemap = gPokenavCityMap_Dipartimento_0,
     },
     {
-        .mapSecId = MAPSEC_LAVARIDGE_TOWN,
+        .mapSecId = MAPSEC_SANTA_GIUSTINA,
         .index = 0,
-        .tilemap = gPokenavCityMap_Lavaridge_0,
+        .tilemap = gPokenavCityMap_Santa_0,
     },
     {
         .mapSecId = MAPSEC_FALLARBOR_TOWN,

@@ -29,7 +29,7 @@ static void TilesetAnim_Rustboro(u16);
 static void TilesetAnim_Dipartimento(u16);
 static void TilesetAnim_Slateport(u16);
 static void TilesetAnim_Mauville(u16);
-static void TilesetAnim_Lavaridge(u16);
+static void TilesetAnim_Santa(u16);
 static void TilesetAnim_EverGrande(u16);
 static void TilesetAnim_Pacifidlog(u16);
 static void TilesetAnim_Sootopolis(u16);
@@ -59,8 +59,8 @@ static void QueueAnimTiles_BattlePyramid_Torch(u16);
 static void QueueAnimTiles_BattlePyramid_StatueShadow(u16);
 static void BlendAnimPalette_BattleDome_FloorLights(u16);
 static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16);
-static void QueueAnimTiles_Lavaridge_Steam(u8);
-static void QueueAnimTiles_Lavaridge_Lava(u16);
+static void QueueAnimTiles_Santa_Steam(u8);
+static void QueueAnimTiles_Santa_Lava(u16);
 static void QueueAnimTiles_EverGrande_Flowers(u16, u8);
 static void QueueAnimTiles_Pacifidlog_LogBridges(u8);
 static void QueueAnimTiles_Pacifidlog_WaterCurrents(u8);
@@ -149,16 +149,16 @@ const u16 *const gTilesetAnims_General_LandWaterEdge[] = {
     gTilesetAnims_General_LandWaterEdge_Frame3
 };
 
-const u16 gTilesetAnims_Lavaridge_Steam_Frame0[] = INCBIN_U16("data/tilesets/secondary/lavaridge/anim/steam/0.4bpp");
-const u16 gTilesetAnims_Lavaridge_Steam_Frame1[] = INCBIN_U16("data/tilesets/secondary/lavaridge/anim/steam/1.4bpp");
-const u16 gTilesetAnims_Lavaridge_Steam_Frame2[] = INCBIN_U16("data/tilesets/secondary/lavaridge/anim/steam/2.4bpp");
-const u16 gTilesetAnims_Lavaridge_Steam_Frame3[] = INCBIN_U16("data/tilesets/secondary/lavaridge/anim/steam/3.4bpp");
+const u16 gTilesetAnims_Santa_Steam_Frame0[] = INCBIN_U16("data/tilesets/secondary/santa/anim/steam/0.4bpp");
+const u16 gTilesetAnims_Santa_Steam_Frame1[] = INCBIN_U16("data/tilesets/secondary/santa/anim/steam/1.4bpp");
+const u16 gTilesetAnims_Santa_Steam_Frame2[] = INCBIN_U16("data/tilesets/secondary/santa/anim/steam/2.4bpp");
+const u16 gTilesetAnims_Santa_Steam_Frame3[] = INCBIN_U16("data/tilesets/secondary/santa/anim/steam/3.4bpp");
 
-const u16 *const gTilesetAnims_Lavaridge_Steam[] = {
-    gTilesetAnims_Lavaridge_Steam_Frame0,
-    gTilesetAnims_Lavaridge_Steam_Frame1,
-    gTilesetAnims_Lavaridge_Steam_Frame2,
-    gTilesetAnims_Lavaridge_Steam_Frame3
+const u16 *const gTilesetAnims_Santa_Steam[] = {
+    gTilesetAnims_Santa_Steam_Frame0,
+    gTilesetAnims_Santa_Steam_Frame1,
+    gTilesetAnims_Santa_Steam_Frame2,
+    gTilesetAnims_Santa_Steam_Frame3
 };
 
 const u16 gTilesetAnims_Pacifidlog_LogBridges_Frame0[] = INCBIN_U16("data/tilesets/secondary/pacifidlog/anim/log_bridges/0.4bpp");
@@ -322,21 +322,21 @@ const u16 *const gTilesetAnims_Rustboro_Fountain[] = {
     gTilesetAnims_Rustboro_Fountain_Frame1
 };
 
-const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame0[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/0.4bpp");
-const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame1[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/1.4bpp");
-const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame2[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/2.4bpp");
-const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame3[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/3.4bpp");
-const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame4[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/4.4bpp");
-const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame5[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/5.4bpp");
-const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame6[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/6.4bpp");
-const u16 gTilesetAnims_Lavaridge_Cave_Lava_Frame7[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/7.4bpp");
+const u16 gTilesetAnims_Santa_Cave_Lava_Frame0[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/0.4bpp");
+const u16 gTilesetAnims_Santa_Cave_Lava_Frame1[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/1.4bpp");
+const u16 gTilesetAnims_Santa_Cave_Lava_Frame2[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/2.4bpp");
+const u16 gTilesetAnims_Santa_Cave_Lava_Frame3[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/3.4bpp");
+const u16 gTilesetAnims_Santa_Cave_Lava_Frame4[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/4.4bpp");
+const u16 gTilesetAnims_Santa_Cave_Lava_Frame5[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/5.4bpp");
+const u16 gTilesetAnims_Santa_Cave_Lava_Frame6[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/6.4bpp");
+const u16 gTilesetAnims_Santa_Cave_Lava_Frame7[] = INCBIN_U16("data/tilesets/secondary/cave/anim/lava/7.4bpp");
 const u16 tileset_anims_space_3[16] = {};
 
-const u16 *const gTilesetAnims_Lavaridge_Cave_Lava[] = {
-    gTilesetAnims_Lavaridge_Cave_Lava_Frame0,
-    gTilesetAnims_Lavaridge_Cave_Lava_Frame1,
-    gTilesetAnims_Lavaridge_Cave_Lava_Frame2,
-    gTilesetAnims_Lavaridge_Cave_Lava_Frame3
+const u16 *const gTilesetAnims_Santa_Cave_Lava[] = {
+    gTilesetAnims_Santa_Cave_Lava_Frame0,
+    gTilesetAnims_Santa_Cave_Lava_Frame1,
+    gTilesetAnims_Santa_Cave_Lava_Frame2,
+    gTilesetAnims_Santa_Cave_Lava_Frame3
 };
 
 const u16 gTilesetAnims_EverGrande_Flowers_Frame0[] = INCBIN_U16("data/tilesets/secondary/ever_grande/anim/flowers/0.4bpp");
@@ -708,11 +708,11 @@ void InitTilesetAnim_Mauville(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_Mauville;
 }
 
-void InitTilesetAnim_Lavaridge(void)
+void InitTilesetAnim_Santa(void)
 {
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
-    sSecondaryTilesetAnimCallback = TilesetAnim_Lavaridge;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Santa;
 }
 
 void InitTilesetAnim_Fallarbor(void)
@@ -889,12 +889,12 @@ static void TilesetAnim_Mauville(u16 timer)
         QueueAnimTiles_Mauville_Flowers(timer / 8, 7);
 }
 
-static void TilesetAnim_Lavaridge(u16 timer)
+static void TilesetAnim_Santa(u16 timer)
 {
     if (timer % 16 == 0)
-        QueueAnimTiles_Lavaridge_Steam(timer / 16);
+        QueueAnimTiles_Santa_Steam(timer / 16);
     if (timer % 16 == 1)
-        QueueAnimTiles_Lavaridge_Lava(timer / 16);
+        QueueAnimTiles_Santa_Lava(timer / 16);
 }
 
 static void TilesetAnim_EverGrande(u16 timer)
@@ -961,13 +961,13 @@ static void QueueAnimTiles_General_LandWaterEdge(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_General_LandWaterEdge[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(480)), 10 * TILE_SIZE_4BPP);
 }
 
-static void QueueAnimTiles_Lavaridge_Steam(u8 timer)
+static void QueueAnimTiles_Santa_Steam(u8 timer)
 {
-    u8 i = timer % ARRAY_COUNT(gTilesetAnims_Lavaridge_Steam);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Lavaridge_Steam[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 288)), 4 * TILE_SIZE_4BPP);
+    u8 i = timer % ARRAY_COUNT(gTilesetAnims_Santa_Steam);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Santa_Steam[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 288)), 4 * TILE_SIZE_4BPP);
 
-    i = (timer + 2) % (int)ARRAY_COUNT(gTilesetAnims_Lavaridge_Steam);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Lavaridge_Steam[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 292)), 4 * TILE_SIZE_4BPP);
+    i = (timer + 2) % (int)ARRAY_COUNT(gTilesetAnims_Santa_Steam);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Santa_Steam[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 292)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Pacifidlog_LogBridges(u8 timer)
@@ -1019,10 +1019,10 @@ static void QueueAnimTiles_Rustboro_Fountain(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_Rustboro_Fountain[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 448)), 4 * TILE_SIZE_4BPP);
 }
 
-static void QueueAnimTiles_Lavaridge_Lava(u16 timer)
+static void QueueAnimTiles_Santa_Lava(u16 timer)
 {
-    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Lavaridge_Cave_Lava);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Lavaridge_Cave_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 160)), 4 * TILE_SIZE_4BPP);
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Santa_Cave_Lava);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Santa_Cave_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 160)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_EverGrande_Flowers(u16 timer_div, u8 timer_mod)
@@ -1035,8 +1035,8 @@ static void QueueAnimTiles_EverGrande_Flowers(u16 timer_div, u8 timer_mod)
 
 static void QueueAnimTiles_Cave_Lava(u16 timer)
 {
-    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Lavaridge_Cave_Lava);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Lavaridge_Cave_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 416)), 4 * TILE_SIZE_4BPP);
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Santa_Cave_Lava);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Santa_Cave_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + 416)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Dipartimento_Flag(u16 timer)

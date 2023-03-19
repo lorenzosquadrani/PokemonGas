@@ -19,7 +19,7 @@
       "direction": "up"
     },
     {
-      "map": "MAP_LAVARIDGE_TOWN",
+      "map": "MAP_SANTA_GIUSTINA",
       "offset": 40,
       "direction": "left"
     },
@@ -283,7 +283,7 @@
       "y": 49,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route112_EventScript_RouteSignLavaridge"
+      "script": "Route112_EventScript_RouteSignSanta"
     }
   ]
 }

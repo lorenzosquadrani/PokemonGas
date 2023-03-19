@@ -76,7 +76,7 @@ MoveTutor_EventScript_FuryCutterTaught::
 	release
 	end
 
-LavaridgeTown_House_EventScript_MimicTutor::
+SantaGiustina_House_EventScript_MimicTutor::
 	lock
 	faceplayer
 	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_MIMIC, MoveTutor_EventScript_MimicTaught

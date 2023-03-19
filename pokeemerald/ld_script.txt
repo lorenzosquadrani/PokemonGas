@@ -749,7 +749,7 @@ SECTIONS {
         sound/songs/midi/se_click.o(.rodata);
         sound/songs/midi/se_fu_zaku.o(.rodata);
         sound/songs/midi/se_contest_condition_lose.o(.rodata);
-        sound/songs/midi/se_lavaridge_fall_warp.o(.rodata);
+        sound/songs/midi/se_santa_fall_warp.o(.rodata);
         sound/songs/midi/se_ice_stairs.o(.rodata);
         sound/songs/midi/se_ice_break.o(.rodata);
         sound/songs/midi/se_ice_crack.o(.rodata);
