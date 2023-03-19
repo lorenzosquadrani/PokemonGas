@@ -264,14 +264,6 @@
 #define METATILE_InsideShip_IntactDoor_Bottom_Locked    0x233
 #define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x22B
 
-// gTileset_Santa
-#define METATILE_Santa_AshGrass             0x207
-#define METATILE_Santa_CaveEntrance_Bottom  0x25E
-#define METATILE_Santa_CaveEntrance_Top     0x256
-#define METATILE_Santa_LavaField            0x271
-#define METATILE_Santa_NormalGrass          0x206
-#define METATILE_Santa_RockWall             0x274
-
 // gTileset_LilycoveMuseum
 #define METATILE_LilycoveMuseum_Painting0_Left   0x25A
 #define METATILE_LilycoveMuseum_Painting0_Right  0x25B
@@ -442,6 +434,14 @@
 // gTileset_Rustboro
 #define METATILE_Rustboro_Door_Gray  0x21F
 #define METATILE_Rustboro_Door_Tan   0x22F
+
+// gTileset_Santa
+#define METATILE_Santa_AshGrass             0x207
+#define METATILE_Santa_CaveEntrance_Bottom  0x25E
+#define METATILE_Santa_CaveEntrance_Top     0x256
+#define METATILE_Santa_LavaField            0x271
+#define METATILE_Santa_NormalGrass          0x206
+#define METATILE_Santa_RockWall             0x274
 
 // gTileset_SecretBase
 #define METATILE_SecretBase_AttractMat_BottomLeft       0x313
