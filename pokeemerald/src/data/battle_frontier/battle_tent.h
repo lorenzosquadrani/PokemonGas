@@ -2123,879 +2123,879 @@ const struct FacilityMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
     }
 };
 
-// Fallarbor Battle Tent.
-const u16 gFallarborBattleTentTrainerMons_Amber[] =
+// Emilia Battle Tent.
+const u16 gEmiliaBattleTentTrainerMons_Amber[] =
 {
-    FALLARBOR_TENT_MON_SWALOT,
-    FALLARBOR_TENT_MON_SHROOMISH,
-    FALLARBOR_TENT_MON_KIRLIA,
-    FALLARBOR_TENT_MON_LOMBRE,
-    FALLARBOR_TENT_MON_NUZLEAF,
-    FALLARBOR_TENT_MON_CACNEA,
+    EMILIA_TENT_MON_SWALOT,
+    EMILIA_TENT_MON_SHROOMISH,
+    EMILIA_TENT_MON_KIRLIA,
+    EMILIA_TENT_MON_LOMBRE,
+    EMILIA_TENT_MON_NUZLEAF,
+    EMILIA_TENT_MON_CACNEA,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Javier[] =
+const u16 gEmiliaBattleTentTrainerMons_Javier[] =
 {
-    FALLARBOR_TENT_MON_SOLROCK,
-    FALLARBOR_TENT_MON_TRAPINCH,
-    FALLARBOR_TENT_MON_BALTOY,
-    FALLARBOR_TENT_MON_GRAVELER,
-    FALLARBOR_TENT_MON_SANDSHREW,
-    FALLARBOR_TENT_MON_CACNEA,
+    EMILIA_TENT_MON_SOLROCK,
+    EMILIA_TENT_MON_TRAPINCH,
+    EMILIA_TENT_MON_BALTOY,
+    EMILIA_TENT_MON_GRAVELER,
+    EMILIA_TENT_MON_SANDSHREW,
+    EMILIA_TENT_MON_CACNEA,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Natalie[] =
+const u16 gEmiliaBattleTentTrainerMons_Natalie[] =
 {
-    FALLARBOR_TENT_MON_MAGIKARP,
-    FALLARBOR_TENT_MON_PELIPPER,
-    FALLARBOR_TENT_MON_BARBOACH,
-    FALLARBOR_TENT_MON_MARILL,
-    FALLARBOR_TENT_MON_GOLDEEN_2,
+    EMILIA_TENT_MON_MAGIKARP,
+    EMILIA_TENT_MON_PELIPPER,
+    EMILIA_TENT_MON_BARBOACH,
+    EMILIA_TENT_MON_MARILL,
+    EMILIA_TENT_MON_GOLDEEN_2,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Treve[] =
+const u16 gEmiliaBattleTentTrainerMons_Treve[] =
 {
-    FALLARBOR_TENT_MON_WINGULL,
-    FALLARBOR_TENT_MON_PELIPPER,
-    FALLARBOR_TENT_MON_BARBOACH,
-    FALLARBOR_TENT_MON_MARILL,
-    FALLARBOR_TENT_MON_GOLDEEN_1,
+    EMILIA_TENT_MON_WINGULL,
+    EMILIA_TENT_MON_PELIPPER,
+    EMILIA_TENT_MON_BARBOACH,
+    EMILIA_TENT_MON_MARILL,
+    EMILIA_TENT_MON_GOLDEEN_1,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Arianna[] =
+const u16 gEmiliaBattleTentTrainerMons_Arianna[] =
 {
-    FALLARBOR_TENT_MON_ELECTRIKE,
-    FALLARBOR_TENT_MON_LINOONE_2,
-    FALLARBOR_TENT_MON_MIGHTYENA,
-    FALLARBOR_TENT_MON_GOLBAT,
-    FALLARBOR_TENT_MON_CACNEA,
+    EMILIA_TENT_MON_ELECTRIKE,
+    EMILIA_TENT_MON_LINOONE_2,
+    EMILIA_TENT_MON_MIGHTYENA,
+    EMILIA_TENT_MON_GOLBAT,
+    EMILIA_TENT_MON_CACNEA,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Jadyn[] =
+const u16 gEmiliaBattleTentTrainerMons_Jadyn[] =
 {
-    FALLARBOR_TENT_MON_NUMEL,
-    FALLARBOR_TENT_MON_LOUDRED,
-    FALLARBOR_TENT_MON_MIGHTYENA,
-    FALLARBOR_TENT_MON_GOLBAT,
-    FALLARBOR_TENT_MON_MARILL,
-    FALLARBOR_TENT_MON_SWALOT,
+    EMILIA_TENT_MON_NUMEL,
+    EMILIA_TENT_MON_LOUDRED,
+    EMILIA_TENT_MON_MIGHTYENA,
+    EMILIA_TENT_MON_GOLBAT,
+    EMILIA_TENT_MON_MARILL,
+    EMILIA_TENT_MON_SWALOT,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Gerardo[] =
+const u16 gEmiliaBattleTentTrainerMons_Gerardo[] =
 {
-    FALLARBOR_TENT_MON_SOLROCK,
-    FALLARBOR_TENT_MON_ELECTRIKE,
-    FALLARBOR_TENT_MON_LINOONE_2,
-    FALLARBOR_TENT_MON_MIGHTYENA,
-    FALLARBOR_TENT_MON_PELIPPER,
+    EMILIA_TENT_MON_SOLROCK,
+    EMILIA_TENT_MON_ELECTRIKE,
+    EMILIA_TENT_MON_LINOONE_2,
+    EMILIA_TENT_MON_MIGHTYENA,
+    EMILIA_TENT_MON_PELIPPER,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Jonn[] =
+const u16 gEmiliaBattleTentTrainerMons_Jonn[] =
 {
-    FALLARBOR_TENT_MON_ARON_1,
-    FALLARBOR_TENT_MON_ARON_2,
-    FALLARBOR_TENT_MON_WHISMUR,
-    FALLARBOR_TENT_MON_LOUDRED,
-    FALLARBOR_TENT_MON_GRAVELER,
+    EMILIA_TENT_MON_ARON_1,
+    EMILIA_TENT_MON_ARON_2,
+    EMILIA_TENT_MON_WHISMUR,
+    EMILIA_TENT_MON_LOUDRED,
+    EMILIA_TENT_MON_GRAVELER,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Esteban[] =
+const u16 gEmiliaBattleTentTrainerMons_Esteban[] =
 {
-    FALLARBOR_TENT_MON_MAGIKARP,
-    FALLARBOR_TENT_MON_WINGULL,
-    FALLARBOR_TENT_MON_BARBOACH,
-    FALLARBOR_TENT_MON_GOLDEEN_1,
-    FALLARBOR_TENT_MON_LOMBRE,
+    EMILIA_TENT_MON_MAGIKARP,
+    EMILIA_TENT_MON_WINGULL,
+    EMILIA_TENT_MON_BARBOACH,
+    EMILIA_TENT_MON_GOLDEEN_1,
+    EMILIA_TENT_MON_LOMBRE,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Jameson[] =
+const u16 gEmiliaBattleTentTrainerMons_Jameson[] =
 {
-    FALLARBOR_TENT_MON_LINOONE_1,
-    FALLARBOR_TENT_MON_PLUSLE,
-    FALLARBOR_TENT_MON_POOCHYENA,
-    FALLARBOR_TENT_MON_MAGIKARP,
-    FALLARBOR_TENT_MON_NINCADA,
+    EMILIA_TENT_MON_LINOONE_1,
+    EMILIA_TENT_MON_PLUSLE,
+    EMILIA_TENT_MON_POOCHYENA,
+    EMILIA_TENT_MON_MAGIKARP,
+    EMILIA_TENT_MON_NINCADA,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Alanzo[] =
+const u16 gEmiliaBattleTentTrainerMons_Alanzo[] =
 {
-    FALLARBOR_TENT_MON_NINCADA,
-    FALLARBOR_TENT_MON_BEAUTIFLY,
-    FALLARBOR_TENT_MON_DUSTOX,
-    FALLARBOR_TENT_MON_ILLUMISE,
-    FALLARBOR_TENT_MON_VOLBEAT,
-    FALLARBOR_TENT_MON_NINJASK_1,
-    FALLARBOR_TENT_MON_NINJASK_2,
+    EMILIA_TENT_MON_NINCADA,
+    EMILIA_TENT_MON_BEAUTIFLY,
+    EMILIA_TENT_MON_DUSTOX,
+    EMILIA_TENT_MON_ILLUMISE,
+    EMILIA_TENT_MON_VOLBEAT,
+    EMILIA_TENT_MON_NINJASK_1,
+    EMILIA_TENT_MON_NINJASK_2,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Howard[] =
+const u16 gEmiliaBattleTentTrainerMons_Howard[] =
 {
-    FALLARBOR_TENT_MON_ELECTRIKE,
-    FALLARBOR_TENT_MON_LINOONE_2,
-    FALLARBOR_TENT_MON_WAILMER,
-    FALLARBOR_TENT_MON_SANDSHREW,
-    FALLARBOR_TENT_MON_NUZLEAF,
+    EMILIA_TENT_MON_ELECTRIKE,
+    EMILIA_TENT_MON_LINOONE_2,
+    EMILIA_TENT_MON_WAILMER,
+    EMILIA_TENT_MON_SANDSHREW,
+    EMILIA_TENT_MON_NUZLEAF,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Conrad[] =
+const u16 gEmiliaBattleTentTrainerMons_Conrad[] =
 {
-    FALLARBOR_TENT_MON_ELECTRIKE,
-    FALLARBOR_TENT_MON_MAGNEMITE,
-    FALLARBOR_TENT_MON_VOLTORB,
-    FALLARBOR_TENT_MON_WHISMUR,
-    FALLARBOR_TENT_MON_LOUDRED,
+    EMILIA_TENT_MON_ELECTRIKE,
+    EMILIA_TENT_MON_MAGNEMITE,
+    EMILIA_TENT_MON_VOLTORB,
+    EMILIA_TENT_MON_WHISMUR,
+    EMILIA_TENT_MON_LOUDRED,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Makenna[] =
+const u16 gEmiliaBattleTentTrainerMons_Makenna[] =
 {
-    FALLARBOR_TENT_MON_KECLEON,
-    FALLARBOR_TENT_MON_WHISMUR,
-    FALLARBOR_TENT_MON_SWABLU,
-    FALLARBOR_TENT_MON_BALTOY,
-    FALLARBOR_TENT_MON_SHROOMISH,
+    EMILIA_TENT_MON_KECLEON,
+    EMILIA_TENT_MON_WHISMUR,
+    EMILIA_TENT_MON_SWABLU,
+    EMILIA_TENT_MON_BALTOY,
+    EMILIA_TENT_MON_SHROOMISH,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Brayan[] =
+const u16 gEmiliaBattleTentTrainerMons_Brayan[] =
 {
-    FALLARBOR_TENT_MON_NUMEL,
-    FALLARBOR_TENT_MON_KECLEON,
-    FALLARBOR_TENT_MON_SOLROCK,
-    FALLARBOR_TENT_MON_ILLUMISE,
-    FALLARBOR_TENT_MON_MAGNEMITE,
-    FALLARBOR_TENT_MON_LINOONE_2,
-    FALLARBOR_TENT_MON_WINGULL,
+    EMILIA_TENT_MON_NUMEL,
+    EMILIA_TENT_MON_KECLEON,
+    EMILIA_TENT_MON_SOLROCK,
+    EMILIA_TENT_MON_ILLUMISE,
+    EMILIA_TENT_MON_MAGNEMITE,
+    EMILIA_TENT_MON_LINOONE_2,
+    EMILIA_TENT_MON_WINGULL,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Mariana[] =
+const u16 gEmiliaBattleTentTrainerMons_Mariana[] =
 {
-    FALLARBOR_TENT_MON_NUMEL,
-    FALLARBOR_TENT_MON_KECLEON,
-    FALLARBOR_TENT_MON_VOLBEAT,
-    FALLARBOR_TENT_MON_MAGNEMITE,
-    FALLARBOR_TENT_MON_WINGULL,
-    FALLARBOR_TENT_MON_BARBOACH,
-    FALLARBOR_TENT_MON_GRAVELER,
+    EMILIA_TENT_MON_NUMEL,
+    EMILIA_TENT_MON_KECLEON,
+    EMILIA_TENT_MON_VOLBEAT,
+    EMILIA_TENT_MON_MAGNEMITE,
+    EMILIA_TENT_MON_WINGULL,
+    EMILIA_TENT_MON_BARBOACH,
+    EMILIA_TENT_MON_GRAVELER,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Sheldon[] =
+const u16 gEmiliaBattleTentTrainerMons_Sheldon[] =
 {
-    FALLARBOR_TENT_MON_PLUSLE,
-    FALLARBOR_TENT_MON_POOCHYENA,
-    FALLARBOR_TENT_MON_WHISMUR,
-    FALLARBOR_TENT_MON_WAILMER,
-    FALLARBOR_TENT_MON_SWALOT,
+    EMILIA_TENT_MON_PLUSLE,
+    EMILIA_TENT_MON_POOCHYENA,
+    EMILIA_TENT_MON_WHISMUR,
+    EMILIA_TENT_MON_WAILMER,
+    EMILIA_TENT_MON_SWALOT,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Gianna[] =
+const u16 gEmiliaBattleTentTrainerMons_Gianna[] =
 {
-    FALLARBOR_TENT_MON_LINOONE_1,
-    FALLARBOR_TENT_MON_PLUSLE,
-    FALLARBOR_TENT_MON_BARBOACH,
-    FALLARBOR_TENT_MON_MARILL,
-    FALLARBOR_TENT_MON_KIRLIA,
+    EMILIA_TENT_MON_LINOONE_1,
+    EMILIA_TENT_MON_PLUSLE,
+    EMILIA_TENT_MON_BARBOACH,
+    EMILIA_TENT_MON_MARILL,
+    EMILIA_TENT_MON_KIRLIA,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Yahir[] =
+const u16 gEmiliaBattleTentTrainerMons_Yahir[] =
 {
-    FALLARBOR_TENT_MON_KECLEON,
-    FALLARBOR_TENT_MON_MACHOKE,
-    FALLARBOR_TENT_MON_NINJASK_2,
-    FALLARBOR_TENT_MON_ARON_2,
-    FALLARBOR_TENT_MON_LOUDRED,
-    FALLARBOR_TENT_MON_MIGHTYENA,
+    EMILIA_TENT_MON_KECLEON,
+    EMILIA_TENT_MON_MACHOKE,
+    EMILIA_TENT_MON_NINJASK_2,
+    EMILIA_TENT_MON_ARON_2,
+    EMILIA_TENT_MON_LOUDRED,
+    EMILIA_TENT_MON_MIGHTYENA,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Britney[] =
+const u16 gEmiliaBattleTentTrainerMons_Britney[] =
 {
-    FALLARBOR_TENT_MON_KECLEON,
-    FALLARBOR_TENT_MON_MAKUHITA,
-    FALLARBOR_TENT_MON_NINJASK_1,
-    FALLARBOR_TENT_MON_VOLTORB,
-    FALLARBOR_TENT_MON_LINOONE_2,
-    FALLARBOR_TENT_MON_NUZLEAF,
+    EMILIA_TENT_MON_KECLEON,
+    EMILIA_TENT_MON_MAKUHITA,
+    EMILIA_TENT_MON_NINJASK_1,
+    EMILIA_TENT_MON_VOLTORB,
+    EMILIA_TENT_MON_LINOONE_2,
+    EMILIA_TENT_MON_NUZLEAF,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Hecter[] =
+const u16 gEmiliaBattleTentTrainerMons_Hecter[] =
 {
-    FALLARBOR_TENT_MON_NUMEL,
-    FALLARBOR_TENT_MON_LINOONE_1,
-    FALLARBOR_TENT_MON_PLUSLE,
-    FALLARBOR_TENT_MON_MAGIKARP,
-    FALLARBOR_TENT_MON_NINCADA,
-    FALLARBOR_TENT_MON_TRAPINCH,
+    EMILIA_TENT_MON_NUMEL,
+    EMILIA_TENT_MON_LINOONE_1,
+    EMILIA_TENT_MON_PLUSLE,
+    EMILIA_TENT_MON_MAGIKARP,
+    EMILIA_TENT_MON_NINCADA,
+    EMILIA_TENT_MON_TRAPINCH,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Tannor[] =
+const u16 gEmiliaBattleTentTrainerMons_Tannor[] =
 {
-    FALLARBOR_TENT_MON_MAGIKARP,
-    FALLARBOR_TENT_MON_BARBOACH,
-    FALLARBOR_TENT_MON_WAILMER,
-    FALLARBOR_TENT_MON_GOLDEEN_1,
-    FALLARBOR_TENT_MON_GOLDEEN_2,
+    EMILIA_TENT_MON_MAGIKARP,
+    EMILIA_TENT_MON_BARBOACH,
+    EMILIA_TENT_MON_WAILMER,
+    EMILIA_TENT_MON_GOLDEEN_1,
+    EMILIA_TENT_MON_GOLDEEN_2,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Benji[] =
+const u16 gEmiliaBattleTentTrainerMons_Benji[] =
 {
-    FALLARBOR_TENT_MON_SWABLU,
-    FALLARBOR_TENT_MON_SKARMORY,
-    FALLARBOR_TENT_MON_GOLBAT,
-    FALLARBOR_TENT_MON_WINGULL,
-    FALLARBOR_TENT_MON_PELIPPER,
+    EMILIA_TENT_MON_SWABLU,
+    EMILIA_TENT_MON_SKARMORY,
+    EMILIA_TENT_MON_GOLBAT,
+    EMILIA_TENT_MON_WINGULL,
+    EMILIA_TENT_MON_PELIPPER,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Rory[] =
+const u16 gEmiliaBattleTentTrainerMons_Rory[] =
 {
-    FALLARBOR_TENT_MON_NINCADA,
-    FALLARBOR_TENT_MON_DUSTOX,
-    FALLARBOR_TENT_MON_NINJASK_1,
-    FALLARBOR_TENT_MON_NINJASK_2,
-    FALLARBOR_TENT_MON_GOLBAT,
-    FALLARBOR_TENT_MON_SWALOT,
+    EMILIA_TENT_MON_NINCADA,
+    EMILIA_TENT_MON_DUSTOX,
+    EMILIA_TENT_MON_NINJASK_1,
+    EMILIA_TENT_MON_NINJASK_2,
+    EMILIA_TENT_MON_GOLBAT,
+    EMILIA_TENT_MON_SWALOT,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Eleanor[] =
+const u16 gEmiliaBattleTentTrainerMons_Eleanor[] =
 {
-    FALLARBOR_TENT_MON_LINOONE_2,
-    FALLARBOR_TENT_MON_WINGULL,
-    FALLARBOR_TENT_MON_WAILMER,
-    FALLARBOR_TENT_MON_BALTOY,
-    FALLARBOR_TENT_MON_SANDSHREW,
-    FALLARBOR_TENT_MON_LOMBRE,
-    FALLARBOR_TENT_MON_CACNEA,
+    EMILIA_TENT_MON_LINOONE_2,
+    EMILIA_TENT_MON_WINGULL,
+    EMILIA_TENT_MON_WAILMER,
+    EMILIA_TENT_MON_BALTOY,
+    EMILIA_TENT_MON_SANDSHREW,
+    EMILIA_TENT_MON_LOMBRE,
+    EMILIA_TENT_MON_CACNEA,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Evelyn[] =
+const u16 gEmiliaBattleTentTrainerMons_Evelyn[] =
 {
-    FALLARBOR_TENT_MON_PELIPPER,
-    FALLARBOR_TENT_MON_WAILMER,
-    FALLARBOR_TENT_MON_MARILL,
-    FALLARBOR_TENT_MON_GOLDEEN_1,
-    FALLARBOR_TENT_MON_GOLDEEN_2,
+    EMILIA_TENT_MON_PELIPPER,
+    EMILIA_TENT_MON_WAILMER,
+    EMILIA_TENT_MON_MARILL,
+    EMILIA_TENT_MON_GOLDEEN_1,
+    EMILIA_TENT_MON_GOLDEEN_2,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Arielle[] =
+const u16 gEmiliaBattleTentTrainerMons_Arielle[] =
 {
-    FALLARBOR_TENT_MON_LINOONE_1,
-    FALLARBOR_TENT_MON_POOCHYENA,
-    FALLARBOR_TENT_MON_SANDSHREW,
-    FALLARBOR_TENT_MON_SWALOT,
-    FALLARBOR_TENT_MON_KIRLIA,
+    EMILIA_TENT_MON_LINOONE_1,
+    EMILIA_TENT_MON_POOCHYENA,
+    EMILIA_TENT_MON_SANDSHREW,
+    EMILIA_TENT_MON_SWALOT,
+    EMILIA_TENT_MON_KIRLIA,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Connar[] =
+const u16 gEmiliaBattleTentTrainerMons_Connar[] =
 {
-    FALLARBOR_TENT_MON_MAKUHITA,
-    FALLARBOR_TENT_MON_MACHOKE,
-    FALLARBOR_TENT_MON_WINGULL,
-    FALLARBOR_TENT_MON_PELIPPER,
-    FALLARBOR_TENT_MON_WAILMER,
-    FALLARBOR_TENT_MON_MARILL,
+    EMILIA_TENT_MON_MAKUHITA,
+    EMILIA_TENT_MON_MACHOKE,
+    EMILIA_TENT_MON_WINGULL,
+    EMILIA_TENT_MON_PELIPPER,
+    EMILIA_TENT_MON_WAILMER,
+    EMILIA_TENT_MON_MARILL,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Maurice[] =
+const u16 gEmiliaBattleTentTrainerMons_Maurice[] =
 {
-    FALLARBOR_TENT_MON_KECLEON,
-    FALLARBOR_TENT_MON_MAGIKARP,
-    FALLARBOR_TENT_MON_SOLROCK,
-    FALLARBOR_TENT_MON_ILLUMISE,
-    FALLARBOR_TENT_MON_VOLBEAT,
+    EMILIA_TENT_MON_KECLEON,
+    EMILIA_TENT_MON_MAGIKARP,
+    EMILIA_TENT_MON_SOLROCK,
+    EMILIA_TENT_MON_ILLUMISE,
+    EMILIA_TENT_MON_VOLBEAT,
     -1
 };
 
-const u16 gFallarborBattleTentTrainerMons_Kianna[] =
+const u16 gEmiliaBattleTentTrainerMons_Kianna[] =
 {
-    FALLARBOR_TENT_MON_LOUDRED,
-    FALLARBOR_TENT_MON_MIGHTYENA,
-    FALLARBOR_TENT_MON_SKARMORY,
-    FALLARBOR_TENT_MON_GOLBAT,
-    FALLARBOR_TENT_MON_GOLDEEN_2,
-    FALLARBOR_TENT_MON_GRAVELER,
+    EMILIA_TENT_MON_LOUDRED,
+    EMILIA_TENT_MON_MIGHTYENA,
+    EMILIA_TENT_MON_SKARMORY,
+    EMILIA_TENT_MON_GOLBAT,
+    EMILIA_TENT_MON_GOLDEEN_2,
+    EMILIA_TENT_MON_GRAVELER,
     -1
 };
 
-const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_TRAINERS] =
+const struct BattleFrontierTrainer gEmiliaBattleTentTrainers[NUM_BATTLE_TENT_TRAINERS] =
 {
-    [FALLARBOR_TENT_TRAINER_AMBER] = {
+    [EMILIA_TENT_TRAINER_AMBER] = {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("AMBER"),
         .speechBefore = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_TO, EC_WORD_DIET, EC_WORD_EVERY, EC_WORD_DAY},
         .speechWin = {EC_WORD_A, EC_MOVE(NIGHTMARE), EC_WORD_OF, EC_WORD_SWEETS, EC_WORD_SHOCKED, EC_WORD_ME},
         .speechLose = {EC_WORD_IF, EC_WORD_YOU, EC_WORD_GIVE_UP, EC_WORD_YOU, EC_WORD_WILL, EC_WORD_LOSE},
-        .monSet = gFallarborBattleTentTrainerMons_Amber
+        .monSet = gEmiliaBattleTentTrainerMons_Amber
     },
-    [FALLARBOR_TENT_TRAINER_JAVIER] = {
+    [EMILIA_TENT_TRAINER_JAVIER] = {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("JAVIER"),
         .speechBefore = {EC_WORD_I, EC_WORD_NEVER, EC_WORD_EVER, EC_WORD_HAVE, EC_WORD_ENOUGH, EC_WORD_MONEY},
         .speechWin = {EC_WORD_I, EC_WORD_WON, EC_WORD_BUT, EC_WORD_I, EC_WORD_NEED, EC_WORD_MONEY},
         .speechLose = {EC_WORD_I, EC_WORD_NEED, EC_WORD_MONEY, EC_WORD_FOR, EC_WORD_A, EC_WORD_BIKE},
-        .monSet = gFallarborBattleTentTrainerMons_Javier
+        .monSet = gEmiliaBattleTentTrainerMons_Javier
     },
-    [FALLARBOR_TENT_TRAINER_NATALIA] = {
+    [EMILIA_TENT_TRAINER_NATALIA] = {
         .facilityClass = FACILITY_CLASS_TUBER_F,
         .trainerName = _("NATALIE"),
         .speechBefore = {EC_WORD_THE, EC_WORD_WAY, EC_WORD_I, EC_WORD_BATTLE, EC_WORD_IS, EC_WORD_WEIRD},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_MUCH, EC_WORD_TOO_WEAK, EC_WORD_FOR, EC_WORD_THIS, EC_WORD_PLACE},
         .speechLose = {EC_WORD_GIVE_ME, EC_WORD_AN, EC_WORD_EASY, EC_WORD_MATCH, EC_WORD_NEXT, EC_WORD_TIME},
-        .monSet = gFallarborBattleTentTrainerMons_Natalie
+        .monSet = gEmiliaBattleTentTrainerMons_Natalie
     },
-    [FALLARBOR_TENT_TRAINER_TREVE] = {
+    [EMILIA_TENT_TRAINER_TREVE] = {
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("TREVE"),
         .speechBefore = {EC_WORD_LOOK, EC_WORD_AT, EC_WORD_MY, EC_MOVE2(METRONOME), EC_WORD_AND, EC_WORD_SLEEP},
         .speechWin = {EC_WORD_YEAH, EC_WORD_EXCL, EC_MOVE(HYPNOSIS), EC_WORD_IS, EC_WORD_TOTALLY, EC_WORD_GREAT},
         .speechLose = {EC_WORD_MY, EC_MOVE(HYPNOSIS), EC_WORD_DIDN_T, EC_WORD_WORK, EC_WORD_ELLIPSIS, -1},
-        .monSet = gFallarborBattleTentTrainerMons_Treve
+        .monSet = gEmiliaBattleTentTrainerMons_Treve
     },
-    [FALLARBOR_TENT_TRAINER_ARIANNA] = {
+    [EMILIA_TENT_TRAINER_ARIANNA] = {
         .facilityClass = FACILITY_CLASS_LADY,
         .trainerName = _("ARIANNA"),
         .speechBefore = {EC_WORD_IF_I_WIN, EC_WORD_GIVE_ME, EC_WORD_POKEMON, EC_WORD_FOR, EC_WORD_MY, EC_WORD_COLLECTION},
         .speechWin = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_TOO_WEAK, EC_WORD_TO, EC_WORD_COLLECT},
         .speechLose = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_SOMETHING, EC_WORD_ELSE, EC_WORD_ELLIPSIS},
-        .monSet = gFallarborBattleTentTrainerMons_Arianna
+        .monSet = gEmiliaBattleTentTrainerMons_Arianna
     },
-    [FALLARBOR_TENT_TRAINER_JADYN] = {
+    [EMILIA_TENT_TRAINER_JADYN] = {
         .facilityClass = FACILITY_CLASS_BEAUTY,
         .trainerName = _("JADYN"),
         .speechBefore = {EC_WORD_MY, EC_WORD_NAME, EC_WORD_IS, EC_WORD_REALLY, EC_WORD_A, EC_WORD_MYSTERY},
         .speechWin = {EC_WORD_MY, EC_WORD_NAME, EC_WORD_GOES, EC_WORD_ON, EC_WORD_A, EC_WORD_MYSTERY},
         .speechLose = {EC_WORD_MY, EC_WORD_NAME, EC_WORD_QUES, EC_WORD_I_AM, EC_WORD_YOUR, EC_WORD_MOTHER},
-        .monSet = gFallarborBattleTentTrainerMons_Jadyn
+        .monSet = gEmiliaBattleTentTrainerMons_Jadyn
     },
-    [FALLARBOR_TENT_TRAINER_GERARDO] = {
+    [EMILIA_TENT_TRAINER_GERARDO] = {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
         .trainerName = _("GERARDO"),
         .speechBefore = {EC_WORD_I_AM, EC_WORD_THE, EC_WORD_BEST, EC_WORD_HERO, EC_WORD_EVER, EC_WORD_EXCL},
         .speechWin = {EC_WORD_SEE, EC_WORD_WHAT, EC_WORD_I, EC_WORD_MEAN, EC_WORD_QUES, -1},
         .speechLose = {EC_WORD_HUH_QUES, EC_WORD_YOU, EC_WORD_WERE, EC_WORD_RIGHT, EC_WORD_QUES, -1},
-        .monSet = gFallarborBattleTentTrainerMons_Gerardo
+        .monSet = gEmiliaBattleTentTrainerMons_Gerardo
     },
-    [FALLARBOR_TENT_TRAINER_JONN] = {
+    [EMILIA_TENT_TRAINER_JONN] = {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
         .trainerName = _("JONN"),
         .speechBefore = {EC_WORD_THE, EC_WORD_WORLD, EC_MOVE2(SUPERPOWER), EC_MOVE2(STOMP), EC_WORD_CONTEST, EC_WORD_EXCL_EXCL},
         .speechWin = {EC_WORD_I_AM, EC_WORD_NO_1, EC_WORD_EXCL_EXCL, EC_WORD_HEAR, EC_WORD_ME, EC_MOVE2(ROAR)},
         .speechLose = {EC_WORD_I, EC_WORD_GIVE_UP, EC_WORD_EXCL, EC_WORD_YOU_RE, EC_WORD_NO_1, EC_WORD_EXCL},
-        .monSet = gFallarborBattleTentTrainerMons_Jonn
+        .monSet = gEmiliaBattleTentTrainerMons_Jonn
     },
-    [FALLARBOR_TENT_TRAINER_ESTEBAN] = {
+    [EMILIA_TENT_TRAINER_ESTEBAN] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
         .trainerName = _("ESTEBAN"),
         .speechBefore = {EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_GOOD, EC_WORD_TRAINER, EC_WORD_QUES, EC_WORD_UNBELIEVABLE},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_SOME, EC_WORD_PUSHOVER, EC_WORD_OF, EC_WORD_A, EC_WORD_TRAINER},
         .speechLose = {EC_WORD_YOU_RE, EC_WORD_MUCH, EC_WORD_TOO, EC_WORD_MUCH, EC_WORD_FOR, EC_WORD_ME},
-        .monSet = gFallarborBattleTentTrainerMons_Esteban
+        .monSet = gEmiliaBattleTentTrainerMons_Esteban
     },
-    [FALLARBOR_TENT_TRAINER_JAMESON] = {
+    [EMILIA_TENT_TRAINER_JAMESON] = {
         .facilityClass = FACILITY_CLASS_CAMPER,
         .trainerName = _("JAMESON"),
         .speechBefore = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_SILKY, EC_WORD_SMOOTH, EC_WORD_EXCL},
         .speechWin = {EC_WORD_MY, EC_WORD_SILKY, EC_WORD_SMOOTH, EC_WORD_POKEMON, EC_WORD_RULE, EC_WORD_EXCL},
         .speechLose = {EC_WORD_MY, EC_WORD_POKEMON, EC_MOVE2(STRUGGLE), EC_WORD_IN, EC_WORD_YOUR, EC_WORD_STICKY_HOLD},
-        .monSet = gFallarborBattleTentTrainerMons_Jameson
+        .monSet = gEmiliaBattleTentTrainerMons_Jameson
     },
-    [FALLARBOR_TENT_TRAINER_ALANZO] = {
+    [EMILIA_TENT_TRAINER_ALANZO] = {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("ALANZO"),
         .speechBefore = {EC_MOVE2(FORESIGHT), EC_WORD_IS, EC_WORD_A, EC_WORD_POWER, EC_WORD_I, EC_WORD_HAVE},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_OBLIVIOUS, EC_WORD_ABOUT, EC_MOVE2(FORESIGHT), EC_WORD_EXCL, -1},
         .speechLose = {EC_WORD_MY, EC_MOVE2(FORESIGHT), EC_WORD_IS, EC_WORD_ALWAYS, EC_WORD_RIGHT, EC_WORD_EXCL},
-        .monSet = gFallarborBattleTentTrainerMons_Alanzo
+        .monSet = gEmiliaBattleTentTrainerMons_Alanzo
     },
-    [FALLARBOR_TENT_TRAINER_HOWARD] = {
+    [EMILIA_TENT_TRAINER_HOWARD] = {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .trainerName = _("HOWARD"),
         .speechBefore = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_CAN_T, EC_WORD_BEAT, EC_WORD_ME, -1},
         .speechWin = {EC_WORD_YOU, EC_WORD_COULDN_T, EC_WORD_WIN, EC_WORD_COULD, EC_WORD_YOU, EC_WORD_QUES},
         .speechLose = {EC_WORD_YOU, EC_WORD_WOULD, EC_WORD_GO, EC_WORD_ALL, EC_WORD_OUT, EC_WORD_ELLIPSIS},
-        .monSet = gFallarborBattleTentTrainerMons_Howard
+        .monSet = gEmiliaBattleTentTrainerMons_Howard
     },
-    [FALLARBOR_TENT_TRAINER_CONRAD] = {
+    [EMILIA_TENT_TRAINER_CONRAD] = {
         .facilityClass = FACILITY_CLASS_GUITARIST,
         .trainerName = _("CONRAD"),
         .speechBefore = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_PRETTY, EC_WORD_WILD, EC_WORD_EXCL},
         .speechWin = {EC_WORD_WHOAH, EC_WORD_EXCL_EXCL, -1, EC_WORD_LET_S, EC_WORD_DANCE, EC_WORD_EXCL},
         .speechLose = {EC_WORD_MY, EC_WORD_MUSIC, EC_WORD_WILL, EC_WORD_PLAY, EC_WORD_ON, EC_WORD_ELLIPSIS},
-        .monSet = gFallarborBattleTentTrainerMons_Conrad
+        .monSet = gEmiliaBattleTentTrainerMons_Conrad
     },
-    [FALLARBOR_TENT_TRAINER_MAKENNA] = {
+    [EMILIA_TENT_TRAINER_MAKENNA] = {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
         .trainerName = _("MAKENNA"),
         .speechBefore = {EC_WORD_SHOW, EC_WORD_ME, EC_WORD_THAT, EC_WORD_YOU, EC_WORD_MEAN, EC_WORD_IT},
         .speechWin = {EC_WORD_THAT_S, EC_WORD_WHY, EC_WORD_I, EC_WORD_STUDY, EC_WORD_EVERY, EC_WORD_DAY},
         .speechLose = {EC_WORD_AWW, EC_WORD_I, EC_WORD_STUDY, EC_WORD_EVERY, EC_WORD_DAY, EC_WORD_TOO},
-        .monSet = gFallarborBattleTentTrainerMons_Makenna
+        .monSet = gEmiliaBattleTentTrainerMons_Makenna
     },
-    [FALLARBOR_TENT_TRAINER_BRAYAN] = {
+    [EMILIA_TENT_TRAINER_BRAYAN] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("BRAYAN"),
         .speechBefore = {EC_WORD_CAN, EC_WORD_YOU, EC_WORD_SEE, EC_WORD_MY, EC_WORD_POWER, EC_WORD_QUES},
         .speechWin = {EC_WORD_HOW, EC_WORD_BORING, EC_WORD_ELLIPSIS, EC_WORD_THIS, EC_WORD_IS, EC_WORD_GOOD_BYE},
         .speechLose = {EC_WORD_AM, EC_WORD_I, EC_WORD_THE, EC_WORD_WEAK, EC_WORD_TRAINER, EC_WORD_QUES},
-        .monSet = gFallarborBattleTentTrainerMons_Brayan
+        .monSet = gEmiliaBattleTentTrainerMons_Brayan
     },
-    [FALLARBOR_TENT_TRAINER_MARIANA] = {
+    [EMILIA_TENT_TRAINER_MARIANA] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
         .trainerName = _("MARIANA"),
         .speechBefore = {EC_WORD_A, EC_WORD_LIE, EC_WORD_CAN, EC_WORD_BE, EC_WORD_KIND, EC_WORD_ELLIPSIS},
         .speechWin = {EC_WORD_THIS, EC_WORD_IS, EC_WORD_LIKE, EC_WORD_THE, EC_WORD_SUNDAY, EC_WORD_COMICS},
         .speechLose = {EC_WORD_THIS, EC_WORD_IS, EC_WORD_LIKE, EC_WORD_FROM, EC_WORD_A, EC_WORD_MOVIE},
-        .monSet = gFallarborBattleTentTrainerMons_Mariana
+        .monSet = gEmiliaBattleTentTrainerMons_Mariana
     },
-    [FALLARBOR_TENT_TRAINER_SHELDON] = {
+    [EMILIA_TENT_TRAINER_SHELDON] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
         .trainerName = _("SHELDON"),
         .speechBefore = {EC_WORD_A, EC_WORD_POKEMON, EC_WORD_TEACHER, EC_WORD_GETS, EC_WORD_NO, EC_MOVE2(REST)},
         .speechWin = {EC_WORD_MY, EC_WORD_SMARTNESS, EC_WORD_GETS, EC_WORD_ME, EC_WORD_EASY, EC_WORD_WINS},
         .speechLose = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_TO, EC_WORD_GO, EC_WORD_WORK, EC_WORD_BYE_BYE},
-        .monSet = gFallarborBattleTentTrainerMons_Sheldon
+        .monSet = gEmiliaBattleTentTrainerMons_Sheldon
     },
-    [FALLARBOR_TENT_TRAINER_GIANNA] = {
+    [EMILIA_TENT_TRAINER_GIANNA] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
         .trainerName = _("GIANNA"),
         .speechBefore = {EC_WORD_AHAHA, EC_WORD_YES, EC_WORD_EXCL, EC_WORD_LOVEY_DOVEY, EC_WORD_POKEMON, EC_WORD_WORLD},
         .speechWin = {EC_WORD_MY, EC_WORD_SHINE, EC_WORD_IS, EC_WORD_MAKING, EC_WORD_THINGS, EC_WORD_BETTER},
         .speechLose = {EC_WORD_DO, EC_WORD_YOU, EC_WORD_DISLIKE, EC_WORD_POKEMON, EC_WORD_QUES, -1},
-        .monSet = gFallarborBattleTentTrainerMons_Gianna
+        .monSet = gEmiliaBattleTentTrainerMons_Gianna
     },
-    [FALLARBOR_TENT_TRAINER_YAHIR] = {
+    [EMILIA_TENT_TRAINER_YAHIR] = {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
         .trainerName = _("YAHIR"),
         .speechBefore = {EC_WORD_YOU, EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS, EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS, EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS, EC_WORD_COME_ON, EC_WORD_EXCL},
         .speechWin = {EC_WORD_YOU, EC_WORD_NEED, EC_WORD_TO, EC_WORD_TRAIN, EC_WORD_A_LOT, EC_WORD_MORE},
         .speechLose = {EC_WORD_NOT, EC_WORD_ENOUGH, EC_WORD_ELLIPSIS, EC_WORD_JUST, EC_WORD_NOT, EC_WORD_ENOUGH},
-        .monSet = gFallarborBattleTentTrainerMons_Yahir
+        .monSet = gEmiliaBattleTentTrainerMons_Yahir
     },
-    [FALLARBOR_TENT_TRAINER_BRITNEY] = {
+    [EMILIA_TENT_TRAINER_BRITNEY] = {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
         .trainerName = _("BRITNEY"),
         .speechBefore = {EC_WORD_IT, EC_WORD_SEEMS, EC_WORD_THAT, EC_WORD_YOU_RE, EC_WORD_QUITE, EC_WORD_GOOD},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_LUKEWARM, EC_WORD_TALENT, EC_WORD_AT, EC_WORD_BEST},
         .speechLose = {EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_COOL, EC_WORD_HERO, EC_WORD_AT, EC_WORD_THIS},
-        .monSet = gFallarborBattleTentTrainerMons_Britney
+        .monSet = gEmiliaBattleTentTrainerMons_Britney
     },
-    [FALLARBOR_TENT_TRAINER_HECTER] = {
+    [EMILIA_TENT_TRAINER_HECTER] = {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("HECTER"),
         .speechBefore = {EC_WORD_MY, EC_MOVE2(HIDDEN_POWER), EC_WORD_IS, EC_WORD_EXCITING, EC_WORD_ME, EC_WORD_EXCL},
         .speechWin = {EC_WORD_YEEHAW_EXCL, EC_WORD_LET_S, EC_WORD_HAVE, EC_WORD_A, EC_MOVE2(HIDDEN_POWER), EC_WORD_PARTY},
         .speechLose = {EC_WORD_WAAAH, EC_WORD_EXCL, EC_WORD_DON_T, EC_WORD_YOU, EC_MOVE2(MIMIC), EC_WORD_ME},
-        .monSet = gFallarborBattleTentTrainerMons_Hecter
+        .monSet = gEmiliaBattleTentTrainerMons_Hecter
     },
-    [FALLARBOR_TENT_TRAINER_TANNOR] = {
+    [EMILIA_TENT_TRAINER_TANNOR] = {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
         .trainerName = _("TANNOR"),
         .speechBefore = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_GOT, EC_WORD_TO, EC_WORD_BE, EC_WORD_JOKING},
         .speechWin = {EC_WORD_YOU_RE, EC_WORD_THE, EC_WORD_BEST, EC_WORD_AT, EC_WORD_BEING, EC_WORD_FUNNY},
         .speechLose = {EC_WORD_YOU, EC_WORD_WEREN_T, EC_WORD_BEING, EC_WORD_FUNNY, EC_WORD_AT, EC_WORD_ALL},
-        .monSet = gFallarborBattleTentTrainerMons_Tannor
+        .monSet = gEmiliaBattleTentTrainerMons_Tannor
     },
-    [FALLARBOR_TENT_TRAINER_BENJI] = {
+    [EMILIA_TENT_TRAINER_BENJI] = {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("BENJI"),
         .speechBefore = {EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_THINK, EC_WORD_VERY, EC_WORD_FAST, EC_WORD_HUH_QUES},
         .speechWin = {EC_WORD_SORRY, EC_WORD_EXCL, EC_WORD_I, EC_WORD_DIDN_T, EC_WORD_MEAN, EC_WORD_YOU},
         .speechLose = {EC_WORD_YOU, EC_WORD_LEFT, EC_WORD_ME, EC_WORD_FEELING, EC_WORD_SAD, EC_WORD_ELLIPSIS},
-        .monSet = gFallarborBattleTentTrainerMons_Benji
+        .monSet = gEmiliaBattleTentTrainerMons_Benji
     },
-    [FALLARBOR_TENT_TRAINER_RORY] = {
+    [EMILIA_TENT_TRAINER_RORY] = {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
         .trainerName = _("RORY"),
         .speechBefore = {EC_WORD_DON_T, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(UPROAR), EC_WORD_YOU, EC_WORD_EXCL},
         .speechWin = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_NEED, EC_WORD_AN, EC_MOVE(UPROAR), EC_WORD_EXCL},
         .speechLose = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(UPROAR)},
-        .monSet = gFallarborBattleTentTrainerMons_Rory
+        .monSet = gEmiliaBattleTentTrainerMons_Rory
     },
-    [FALLARBOR_TENT_TRAINER_ELEANOR] = {
+    [EMILIA_TENT_TRAINER_ELEANOR] = {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
         .trainerName = _("ELEANOR"),
         .speechBefore = {EC_WORD_I, EC_WORD_REALLY, EC_WORD_WANT, EC_WORD_TO, EC_WORD_PARTY, -1},
         .speechWin = {EC_WORD_A, EC_WORD_TRENDY, EC_WORD_PARTY, EC_WORD_WOULD, EC_WORD_BE, EC_WORD_REFRESHING},
         .speechLose = {EC_WORD_DON_T, EC_WORD_YOU, EC_WORD_LIKE, EC_WORD_TO, EC_WORD_PARTY, EC_WORD_QUES},
-        .monSet = gFallarborBattleTentTrainerMons_Eleanor
+        .monSet = gEmiliaBattleTentTrainerMons_Eleanor
     },
-    [FALLARBOR_TENT_TRAINER_EVELYN] = {
+    [EMILIA_TENT_TRAINER_EVELYN] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
         .trainerName = _("EVELYN"),
         .speechBefore = {EC_WORD_MY, EC_WORD_PC, EC_WORD_IS, EC_WORD_MY, EC_WORD_SECRET_BASE, EC_WORD_EXCL},
         .speechWin = {EC_WORD_IT_S, EC_WORD_ALL, EC_WORD_SECRET, EC_WORD_ON, EC_WORD_MY, EC_WORD_PC},
         .speechLose = {EC_WORD_NO, EC_WORD_EXCL, -1, EC_WORD_I, EC_WORD_REJECT, EC_WORD_THIS},
-        .monSet = gFallarborBattleTentTrainerMons_Evelyn
+        .monSet = gEmiliaBattleTentTrainerMons_Evelyn
     },
-    [FALLARBOR_TENT_TRAINER_ARIELLE] = {
+    [EMILIA_TENT_TRAINER_ARIELLE] = {
         .facilityClass = FACILITY_CLASS_PICNICKER,
         .trainerName = _("ARIELLE"),
         .speechBefore = {EC_WORD_IT_S, EC_WORD_NOT_VERY, EC_WORD_PRETTY, EC_WORD_BUT, EC_WORD_I, EC_WORD_TRY},
         .speechWin = {EC_WORD_WE_RE, EC_WORD_NOT_VERY, EC_WORD_PRETTY, EC_WORD_BUT, EC_WORD_WE_RE, EC_WORD_GREAT},
         .speechLose = {EC_WORD_THAT_WAS, EC_WORD_PRETTY, EC_WORD_MEAN, EC_WORD_OF, EC_WORD_YOU, EC_WORD_EXCL},
-        .monSet = gFallarborBattleTentTrainerMons_Arielle
+        .monSet = gEmiliaBattleTentTrainerMons_Arielle
     },
-    [FALLARBOR_TENT_TRAINER_CONNAR] = {
+    [EMILIA_TENT_TRAINER_CONNAR] = {
         .facilityClass = FACILITY_CLASS_SAILOR,
         .trainerName = _("CONNAR"),
         .speechBefore = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_STRONG, EC_WORD_ENOUGH, EC_WORD_FOR, EC_WORD_THIS},
         .speechWin = {EC_WORD_DO, EC_WORD_YOU, EC_WORD_THINK, EC_WORD_YOU_RE, EC_WORD_OK_QUES, -1},
         .speechLose = {EC_WORD_GOOD_BYE, EC_WORD_AND, EC_WORD_THANK_YOU, -1, -1, -1},
-        .monSet = gFallarborBattleTentTrainerMons_Connar
+        .monSet = gEmiliaBattleTentTrainerMons_Connar
     },
-    [FALLARBOR_TENT_TRAINER_MAURICE] = {
+    [EMILIA_TENT_TRAINER_MAURICE] = {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("MAURICE"),
         .speechBefore = {EC_WORD_THERE, EC_WORD_IS, EC_WORD_NO, EC_WORD_RADIO, EC_WORD_OR, EC_WORD_TELEVISION},
         .speechWin = {EC_WORD_BUT, EC_WORD_THERE, EC_WORD_IS, EC_WORD_A_LOT, EC_WORD_OF, EC_WORD_POKEMON},
         .speechLose = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_ENJOY, EC_WORD_MYSELF, EC_WORD_WITHOUT, EC_WORD_MONEY},
-        .monSet = gFallarborBattleTentTrainerMons_Maurice
+        .monSet = gEmiliaBattleTentTrainerMons_Maurice
     },
-    [FALLARBOR_TENT_TRAINER_KIANNA] = {
+    [EMILIA_TENT_TRAINER_KIANNA] = {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("KIANNA"),
         .speechBefore = {EC_WORD_I, EC_WORD_WANT, EC_WORD_TO, EC_WORD_GO, EC_WORD_DEPT_STORE, EC_WORD_SHOPPING},
         .speechWin = {EC_WORD_I, EC_WORD_DISLIKE, EC_WORD_SHOPPING, EC_WORD_ALONE, -1, -1},
         .speechLose = {EC_WORD_WANT, EC_WORD_TO, EC_WORD_GO, EC_WORD_SHOPPING, EC_WORD_TOGETHER, EC_WORD_QUES},
-        .monSet = gFallarborBattleTentTrainerMons_Kianna
+        .monSet = gEmiliaBattleTentTrainerMons_Kianna
     }
 };
 
-const struct FacilityMon gFallarborBattleTentMons[NUM_FALLARBOR_TENT_MONS] =
+const struct FacilityMon gEmiliaBattleTentMons[NUM_EMILIA_TENT_MONS] =
 {
-    [FALLARBOR_TENT_MON_NUMEL] = {
+    [EMILIA_TENT_MON_NUMEL] = {
         .species = SPECIES_NUMEL,
         .moves = {MOVE_GROWL, MOVE_FLAMETHROWER, MOVE_TACKLE, MOVE_SUNNY_DAY},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHARCOAL,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_QUIET
     },
-    [FALLARBOR_TENT_MON_LINOONE_1] = {
+    [EMILIA_TENT_MON_LINOONE_1] = {
         .species = SPECIES_LINOONE,
         .moves = {MOVE_ODOR_SLEUTH, MOVE_COVET, MOVE_ROCK_SMASH, MOVE_CHARM},
         .itemTableId = BATTLE_FRONTIER_ITEM_SILK_SCARF,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE,
         .nature = NATURE_SASSY
     },
-    [FALLARBOR_TENT_MON_PLUSLE] = {
+    [EMILIA_TENT_MON_PLUSLE] = {
         .species = SPECIES_PLUSLE,
         .moves = {MOVE_SPARK, MOVE_GROWL, MOVE_QUICK_ATTACK, MOVE_FAKE_TEARS},
         .itemTableId = BATTLE_FRONTIER_ITEM_MENTAL_HERB,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_MODEST
     },
-    [FALLARBOR_TENT_MON_POOCHYENA] = {
+    [EMILIA_TENT_MON_POOCHYENA] = {
         .species = SPECIES_POOCHYENA,
         .moves = {MOVE_YAWN, MOVE_ODOR_SLEUTH, MOVE_HOWL, MOVE_FRUSTRATION},
         .itemTableId = BATTLE_FRONTIER_ITEM_LEPPA_BERRY,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_NAUGHTY
     },
-    [FALLARBOR_TENT_MON_KECLEON] = {
+    [EMILIA_TENT_MON_KECLEON] = {
         .species = SPECIES_KECLEON,
         .moves = {MOVE_LICK, MOVE_SLASH, MOVE_FAINT_ATTACK, MOVE_PSYBEAM},
         .itemTableId = BATTLE_FRONTIER_ITEM_WIKI_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_MODEST
     },
-    [FALLARBOR_TENT_MON_MAGIKARP] = {
+    [EMILIA_TENT_MON_MAGIKARP] = {
         .species = SPECIES_MAGIKARP,
         .moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_FLAIL, MOVE_NONE},
         .itemTableId = BATTLE_FRONTIER_ITEM_DRAGON_SCALE,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_QUIRKY
     },
-    [FALLARBOR_TENT_MON_SOLROCK] = {
+    [EMILIA_TENT_MON_SOLROCK] = {
         .species = SPECIES_SOLROCK,
         .moves = {MOVE_ROCK_THROW, MOVE_FLASH, MOVE_SANDSTORM, MOVE_PSYWAVE},
         .itemTableId = BATTLE_FRONTIER_ITEM_HARD_STONE,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_SASSY
     },
-    [FALLARBOR_TENT_MON_MAKUHITA] = {
+    [EMILIA_TENT_MON_MAKUHITA] = {
         .species = SPECIES_MAKUHITA,
         .moves = {MOVE_DETECT, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_SMELLING_SALT},
         .itemTableId = BATTLE_FRONTIER_ITEM_BLACK_BELT,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_MACHOKE] = {
+    [EMILIA_TENT_MON_MACHOKE] = {
         .species = SPECIES_MACHOKE,
         .moves = {MOVE_COUNTER, MOVE_REVENGE, MOVE_BULK_UP, MOVE_FOCUS_ENERGY},
         .itemTableId = BATTLE_FRONTIER_ITEM_SCOPE_LENS,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_NAIVE
     },
-    [FALLARBOR_TENT_MON_NINCADA] = {
+    [EMILIA_TENT_MON_NINCADA] = {
         .species = SPECIES_NINCADA,
         .moves = {MOVE_FURY_SWIPES, MOVE_ENDURE, MOVE_MUD_SLAP, MOVE_DIG},
         .itemTableId = BATTLE_FRONTIER_ITEM_LUM_BERRY,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_SERIOUS
     },
-    [FALLARBOR_TENT_MON_BEAUTIFLY] = {
+    [EMILIA_TENT_MON_BEAUTIFLY] = {
         .species = SPECIES_BEAUTIFLY,
         .moves = {MOVE_FLASH, MOVE_MORNING_SUN, MOVE_HARDEN, MOVE_MEGA_DRAIN},
         .itemTableId = BATTLE_FRONTIER_ITEM_BRIGHT_POWDER,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_SPEED | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_QUIRKY
     },
-    [FALLARBOR_TENT_MON_DUSTOX] = {
+    [EMILIA_TENT_MON_DUSTOX] = {
         .species = SPECIES_DUSTOX,
         .moves = {MOVE_MOONLIGHT, MOVE_HARDEN, MOVE_POISON_STING, MOVE_PSYBEAM},
         .itemTableId = BATTLE_FRONTIER_ITEM_FOCUS_BAND,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_SPEED | F_EV_SPREAD_DEFENSE,
         .nature = NATURE_DOCILE
     },
-    [FALLARBOR_TENT_MON_ILLUMISE] = {
+    [EMILIA_TENT_MON_ILLUMISE] = {
         .species = SPECIES_ILLUMISE,
         .moves = {MOVE_METRONOME, MOVE_FLATTER, MOVE_WISH, MOVE_ATTRACT},
         .itemTableId = BATTLE_FRONTIER_ITEM_SALAC_BERRY,
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_VOLBEAT] = {
+    [EMILIA_TENT_MON_VOLBEAT] = {
         .species = SPECIES_VOLBEAT,
         .moves = {MOVE_TACKLE, MOVE_MOONLIGHT, MOVE_SIGNAL_BEAM, MOVE_TAIL_GLOW},
         .itemTableId = BATTLE_FRONTIER_ITEM_LEPPA_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_NINJASK_1] = {
+    [EMILIA_TENT_MON_NINJASK_1] = {
         .species = SPECIES_NINJASK,
         .moves = {MOVE_DOUBLE_TEAM, MOVE_PROTECT, MOVE_DIG, MOVE_SAND_ATTACK},
         .itemTableId = BATTLE_FRONTIER_ITEM_PETAYA_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_SPEED | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_TIMID
     },
-    [FALLARBOR_TENT_MON_NINJASK_2] = {
+    [EMILIA_TENT_MON_NINJASK_2] = {
         .species = SPECIES_NINJASK,
         .moves = {MOVE_SWORDS_DANCE, MOVE_CUT, MOVE_FURY_CUTTER, MOVE_LEECH_LIFE},
         .itemTableId = BATTLE_FRONTIER_ITEM_SILVER_POWDER,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_ARON_1] = {
+    [EMILIA_TENT_MON_ARON_1] = {
         .species = SPECIES_ARON,
         .moves = {MOVE_METAL_CLAW, MOVE_PROTECT, MOVE_SHOCK_WAVE, MOVE_METAL_SOUND},
         .itemTableId = BATTLE_FRONTIER_ITEM_SCOPE_LENS,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_LONELY
     },
-    [FALLARBOR_TENT_MON_ARON_2] = {
+    [EMILIA_TENT_MON_ARON_2] = {
         .species = SPECIES_ARON,
         .moves = {MOVE_SECRET_POWER, MOVE_METAL_CLAW, MOVE_IRON_DEFENSE, MOVE_MUD_SLAP},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_GENTLE
     },
-    [FALLARBOR_TENT_MON_ELECTRIKE] = {
+    [EMILIA_TENT_MON_ELECTRIKE] = {
         .species = SPECIES_ELECTRIKE,
         .moves = {MOVE_CRUNCH, MOVE_THUNDER_WAVE, MOVE_HOWL, MOVE_QUICK_ATTACK},
         .itemTableId = BATTLE_FRONTIER_ITEM_SEA_INCENSE,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_HASTY
     },
-    [FALLARBOR_TENT_MON_MAGNEMITE] = {
+    [EMILIA_TENT_MON_MAGNEMITE] = {
         .species = SPECIES_MAGNEMITE,
         .moves = {MOVE_THUNDER_WAVE, MOVE_SUPERSONIC, MOVE_ENDURE, MOVE_SPARK},
         .itemTableId = BATTLE_FRONTIER_ITEM_MAGNET,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_QUIET
     },
-    [FALLARBOR_TENT_MON_VOLTORB] = {
+    [EMILIA_TENT_MON_VOLTORB] = {
         .species = SPECIES_VOLTORB,
         .moves = {MOVE_CHARGE, MOVE_SPARK, MOVE_SCREECH, MOVE_SONIC_BOOM},
         .itemTableId = BATTLE_FRONTIER_ITEM_ASPEAR_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_MODEST
     },
-    [FALLARBOR_TENT_MON_WHISMUR] = {
+    [EMILIA_TENT_MON_WHISMUR] = {
         .species = SPECIES_WHISMUR,
         .moves = {MOVE_REST, MOVE_SLEEP_TALK, MOVE_HYPER_VOICE, MOVE_ATTRACT},
         .itemTableId = BATTLE_FRONTIER_ITEM_LAX_INCENSE,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_LOUDRED] = {
+    [EMILIA_TENT_MON_LOUDRED] = {
         .species = SPECIES_LOUDRED,
         .moves = {MOVE_STOMP, MOVE_REST, MOVE_SCREECH, MOVE_UPROAR},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHESTO_BERRY,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_LINOONE_2] = {
+    [EMILIA_TENT_MON_LINOONE_2] = {
         .species = SPECIES_LINOONE,
         .moves = {MOVE_FURY_SWIPES, MOVE_SAND_ATTACK, MOVE_SHOCK_WAVE, MOVE_GROWL},
         .itemTableId = BATTLE_FRONTIER_ITEM_MAGNET,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_MODEST
     },
-    [FALLARBOR_TENT_MON_MIGHTYENA] = {
+    [EMILIA_TENT_MON_MIGHTYENA] = {
         .species = SPECIES_MIGHTYENA,
         .moves = {MOVE_SAND_ATTACK, MOVE_HOWL, MOVE_SWAGGER, MOVE_SECRET_POWER},
         .itemTableId = BATTLE_FRONTIER_ITEM_KINGS_ROCK,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_JOLLY
     },
-    [FALLARBOR_TENT_MON_SWABLU] = {
+    [EMILIA_TENT_MON_SWABLU] = {
         .species = SPECIES_SWABLU,
         .moves = {MOVE_TAKE_DOWN, MOVE_SING, MOVE_GROWL, MOVE_SAFEGUARD},
         .itemTableId = BATTLE_FRONTIER_ITEM_FOCUS_BAND,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_QUIRKY
     },
-    [FALLARBOR_TENT_MON_SKARMORY] = {
+    [EMILIA_TENT_MON_SKARMORY] = {
         .species = SPECIES_SKARMORY,
         .moves = {MOVE_AGILITY, MOVE_STEEL_WING, MOVE_SAND_ATTACK, MOVE_TORMENT},
         .itemTableId = BATTLE_FRONTIER_ITEM_METAL_COAT,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_BOLD
     },
-    [FALLARBOR_TENT_MON_GOLBAT] = {
+    [EMILIA_TENT_MON_GOLBAT] = {
         .species = SPECIES_GOLBAT,
         .moves = {MOVE_CONFUSE_RAY, MOVE_BITE, MOVE_DOUBLE_TEAM, MOVE_SUBSTITUTE},
         .itemTableId = BATTLE_FRONTIER_ITEM_PETAYA_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_BOLD
     },
-    [FALLARBOR_TENT_MON_WINGULL] = {
+    [EMILIA_TENT_MON_WINGULL] = {
         .species = SPECIES_WINGULL,
         .moves = {MOVE_WING_ATTACK, MOVE_HAIL, MOVE_DOUBLE_TEAM, MOVE_SUPERSONIC},
         .itemTableId = BATTLE_FRONTIER_ITEM_RAWST_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_MODEST
     },
-    [FALLARBOR_TENT_MON_PELIPPER] = {
+    [EMILIA_TENT_MON_PELIPPER] = {
         .species = SPECIES_PELIPPER,
         .moves = {MOVE_TWISTER, MOVE_ICY_WIND, MOVE_DOUBLE_TEAM, MOVE_WATER_GUN},
         .itemTableId = BATTLE_FRONTIER_ITEM_DRAGON_FANG,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_BARBOACH] = {
+    [EMILIA_TENT_MON_BARBOACH] = {
         .species = SPECIES_BARBOACH,
         .moves = {MOVE_SPARK, MOVE_WATER_GUN, MOVE_EARTHQUAKE, MOVE_WATER_SPORT},
         .itemTableId = BATTLE_FRONTIER_ITEM_LIECHI_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_MODEST
     },
-    [FALLARBOR_TENT_MON_WAILMER] = {
+    [EMILIA_TENT_MON_WAILMER] = {
         .species = SPECIES_WAILMER,
         .moves = {MOVE_WATER_PULSE, MOVE_RAIN_DANCE, MOVE_SPLASH, MOVE_CURSE},
         .itemTableId = BATTLE_FRONTIER_ITEM_KINGS_ROCK,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_ATTACK,
         .nature = NATURE_QUIET
     },
-    [FALLARBOR_TENT_MON_MARILL] = {
+    [EMILIA_TENT_MON_MARILL] = {
         .species = SPECIES_MARILL,
         .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_BUBBLE_BEAM, MOVE_ATTRACT},
         .itemTableId = BATTLE_FRONTIER_ITEM_HARD_STONE,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_GOLDEEN_1] = {
+    [EMILIA_TENT_MON_GOLDEEN_1] = {
         .species = SPECIES_GOLDEEN,
         .moves = {MOVE_WATERFALL, MOVE_RAIN_DANCE, MOVE_FLAIL, MOVE_PROTECT},
         .itemTableId = BATTLE_FRONTIER_ITEM_GANLON_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_ATTACK,
         .nature = NATURE_HASTY
     },
-    [FALLARBOR_TENT_MON_GOLDEEN_2] = {
+    [EMILIA_TENT_MON_GOLDEEN_2] = {
         .species = SPECIES_GOLDEEN,
         .moves = {MOVE_SLEEP_TALK, MOVE_HORN_DRILL, MOVE_REST, MOVE_SUPERSONIC},
         .itemTableId = BATTLE_FRONTIER_ITEM_MENTAL_HERB,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_CAREFUL
     },
-    [FALLARBOR_TENT_MON_TRAPINCH] = {
+    [EMILIA_TENT_MON_TRAPINCH] = {
         .species = SPECIES_TRAPINCH,
         .moves = {MOVE_RETURN, MOVE_SAND_ATTACK, MOVE_ATTRACT, MOVE_STRENGTH},
         .itemTableId = BATTLE_FRONTIER_ITEM_MAGO_BERRY,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_BALTOY] = {
+    [EMILIA_TENT_MON_BALTOY] = {
         .species = SPECIES_BALTOY,
         .moves = {MOVE_SELF_DESTRUCT, MOVE_SANDSTORM, MOVE_RAPID_SPIN, MOVE_MIMIC},
         .itemTableId = BATTLE_FRONTIER_ITEM_SCOPE_LENS,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_JOLLY
     },
-    [FALLARBOR_TENT_MON_GRAVELER] = {
+    [EMILIA_TENT_MON_GRAVELER] = {
         .species = SPECIES_GRAVELER,
         .moves = {MOVE_ROCK_BLAST, MOVE_DEFENSE_CURL, MOVE_MAGNITUDE, MOVE_MUD_SPORT},
         .itemTableId = BATTLE_FRONTIER_ITEM_HARD_STONE,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_SANDSHREW] = {
+    [EMILIA_TENT_MON_SANDSHREW] = {
         .species = SPECIES_SANDSHREW,
         .moves = {MOVE_SAND_TOMB, MOVE_SANDSTORM, MOVE_DOUBLE_TEAM, MOVE_FOCUS_PUNCH},
         .itemTableId = BATTLE_FRONTIER_ITEM_SOFT_SAND,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_JOLLY
     },
-    [FALLARBOR_TENT_MON_SWALOT] = {
+    [EMILIA_TENT_MON_SWALOT] = {
         .species = SPECIES_SWALOT,
         .moves = {MOVE_YAWN, MOVE_ENCORE, MOVE_BULLET_SEED, MOVE_SLUDGE},
         .itemTableId = BATTLE_FRONTIER_ITEM_SCOPE_LENS,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_BRAVE
     },
-    [FALLARBOR_TENT_MON_SHROOMISH] = {
+    [EMILIA_TENT_MON_SHROOMISH] = {
         .species = SPECIES_SHROOMISH,
         .moves = {MOVE_HEADBUTT, MOVE_SPORE, MOVE_SWAGGER, MOVE_LEECH_SEED},
         .itemTableId = BATTLE_FRONTIER_ITEM_QUICK_CLAW,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_IMPISH
     },
-    [FALLARBOR_TENT_MON_KIRLIA] = {
+    [EMILIA_TENT_MON_KIRLIA] = {
         .species = SPECIES_KIRLIA,
         .moves = {MOVE_HYPNOSIS, MOVE_GROWL, MOVE_ATTRACT, MOVE_DREAM_EATER},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_LOMBRE] = {
+    [EMILIA_TENT_MON_LOMBRE] = {
         .species = SPECIES_LOMBRE,
         .moves = {MOVE_NATURE_POWER, MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_FLASH},
         .itemTableId = BATTLE_FRONTIER_ITEM_LEFTOVERS,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_BASHFUL
     },
-    [FALLARBOR_TENT_MON_NUZLEAF] = {
+    [EMILIA_TENT_MON_NUZLEAF] = {
         .species = SPECIES_NUZLEAF,
         .moves = {MOVE_NATURE_POWER, MOVE_TORMENT, MOVE_SWAGGER, MOVE_REST},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHESTO_BERRY,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
     },
-    [FALLARBOR_TENT_MON_CACNEA] = {
+    [EMILIA_TENT_MON_CACNEA] = {
         .species = SPECIES_CACNEA,
         .moves = {MOVE_SANDSTORM, MOVE_NEEDLE_ARM, MOVE_TEETER_DANCE, MOVE_LEECH_SEED},
         .itemTableId = BATTLE_FRONTIER_ITEM_BRIGHT_POWDER,

@@ -32,7 +32,7 @@ Route112_EventScript_MagmaGrunts::
 	applymovement LOCALID_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 20
-	msgbox Route112_Text_OhThatsWhyCrewWentToFallarbor, MSGBOX_DEFAULT
+	msgbox Route112_Text_OhThatsWhyCrewWentToEmilia, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -117,9 +117,9 @@ Route112_Text_YeahWeNeedMeteorite:
 	.string "Sounds like it, yeah. But I heard\n"
 	.string "we need a METEORITE to do it.$"
 
-Route112_Text_OhThatsWhyCrewWentToFallarbor:
+Route112_Text_OhThatsWhyCrewWentToEmilia:
 	.string "Oh, I get it now. That's why the rest\n"
-	.string "of the crew went out to FALLARBOR.$"
+	.string "of the crew went out to EMILIA.$"
 
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
 	.string "You got it. And until they come back,\n"

@@ -19,7 +19,7 @@
 #define MAP_BOLOGNA_TOWN        (10 | (0 << 8))
 #define MAP_DIPARTIMENTO_FISICA (11 | (0 << 8))
 #define MAP_SANTA_GIUSTINA      (12 | (0 << 8))
-#define MAP_FALLARBOR_TOWN      (13 | (0 << 8))
+#define MAP_EMILIA_ROAD      (13 | (0 << 8))
 #define MAP_VERDANTURF_TOWN     (14 | (0 << 8))
 #define MAP_PACIFIDLOG_TOWN     (15 | (0 << 8))
 #define MAP_ROUTE101            (16 | (0 << 8))
@@ -97,15 +97,15 @@
 #define MAP_SANTA_GIUSTINA_POKEMON_CENTER_1F (5 | (4 << 8))
 #define MAP_SANTA_GIUSTINA_POKEMON_CENTER_2F (6 | (4 << 8))
 
-// gMapGroup_IndoorFallarbor
-#define MAP_FALLARBOR_TOWN_MART                    (0 | (5 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY       (1 | (5 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR    (2 | (5 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM (3 | (5 << 8))
-#define MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F       (4 | (5 << 8))
-#define MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F       (5 | (5 << 8))
-#define MAP_FALLARBOR_TOWN_COZMOS_HOUSE            (6 | (5 << 8))
-#define MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE   (7 | (5 << 8))
+// gMapGroup_IndoorEmilia
+#define MAP_EMILIA_ROAD_MART                    (0 | (5 << 8))
+#define MAP_EMILIA_ROAD_BATTLE_TENT_LOBBY       (1 | (5 << 8))
+#define MAP_EMILIA_ROAD_BATTLE_TENT_CORRIDOR    (2 | (5 << 8))
+#define MAP_EMILIA_ROAD_BATTLE_TENT_BATTLE_ROOM (3 | (5 << 8))
+#define MAP_EMILIA_ROAD_POKEMON_CENTER_1F       (4 | (5 << 8))
+#define MAP_EMILIA_ROAD_POKEMON_CENTER_2F       (5 | (5 << 8))
+#define MAP_EMILIA_ROAD_COZMOS_HOUSE            (6 | (5 << 8))
+#define MAP_EMILIA_ROAD_MOVE_RELEARNERS_HOUSE   (7 | (5 << 8))
 
 // gMapGroup_IndoorVerdanturf
 #define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (6 << 8))

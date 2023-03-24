@@ -171,21 +171,21 @@
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile4    0x2CC
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile5    0x2CD
 
-// gTileset_Fallarbor
-#define METATILE_Fallarbor_AshField                  0x218
-#define METATILE_Fallarbor_AshGrass                  0x20A
-#define METATILE_Fallarbor_BrownCaveEntrance_Bottom  0x261
-#define METATILE_Fallarbor_BrownCaveEntrance_Top     0x259
-#define METATILE_Fallarbor_BrownCaveIndent           0x208
-#define METATILE_Fallarbor_BrownCaveOpen             0x210
-#define METATILE_Fallarbor_BrownRockWall             0x265
-#define METATILE_Fallarbor_Door_BattleTent           0x36C
-#define METATILE_Fallarbor_Door_DarkRoof             0x2F7
-#define METATILE_Fallarbor_Door_LightRoof            0x2A5
-#define METATILE_Fallarbor_NormalGrass               0x212
-#define METATILE_Fallarbor_RedCaveEntrance_Bottom    0x34F
-#define METATILE_Fallarbor_RedCaveEntrance_Top       0x347
-#define METATILE_Fallarbor_RedRockWall               0x269
+// gTileset_Emilia
+#define METATILE_Emilia_AshField                  0x218
+#define METATILE_Emilia_AshGrass                  0x20A
+#define METATILE_Emilia_BrownCaveEntrance_Bottom  0x261
+#define METATILE_Emilia_BrownCaveEntrance_Top     0x259
+#define METATILE_Emilia_BrownCaveIndent           0x208
+#define METATILE_Emilia_BrownCaveOpen             0x210
+#define METATILE_Emilia_BrownRockWall             0x265
+#define METATILE_Emilia_Door_BattleTent           0x36C
+#define METATILE_Emilia_Door_DarkRoof             0x2F7
+#define METATILE_Emilia_Door_LightRoof            0x2A5
+#define METATILE_Emilia_NormalGrass               0x212
+#define METATILE_Emilia_RedCaveEntrance_Bottom    0x34F
+#define METATILE_Emilia_RedCaveEntrance_Top       0x347
+#define METATILE_Emilia_RedRockWall               0x269
 
 // gTileset_Fortree
 #define METATILE_Fortree_BridgeOverGrass_Lowered           0x24F

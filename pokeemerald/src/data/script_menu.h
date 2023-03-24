@@ -752,7 +752,7 @@ static const struct MenuAction MultichoiceList_SlateportTentRules[] =
     {gText_Exit},
 };
 
-static const struct MenuAction MultichoiceList_FallarborTentRules[] =
+static const struct MenuAction MultichoiceList_EmiliaTentRules[] =
 {
     {gText_BattleTrainers},
     {gText_BattleRules},
@@ -896,7 +896,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_BATTLE_TOWER_FEELINGS]      = MULTICHOICE(MultichoiceList_BattleTowerFeelings),
     [MULTI_WHERES_RAYQUAZA]            = MULTICHOICE(MultichoiceList_WheresRayquaza),
     [MULTI_SLATEPORT_TENT_RULES]       = MULTICHOICE(MultichoiceList_SlateportTentRules),
-    [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
+    [MULTI_EMILIA_TENT_RULES]       = MULTICHOICE(MultichoiceList_EmiliaTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
 };
 

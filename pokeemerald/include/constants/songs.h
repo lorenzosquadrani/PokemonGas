@@ -365,7 +365,7 @@
 #define MUS_MT_PYRE_EXTERIOR        434 // MUS_MACHUPI
 #define MUS_SCHOOL                  435 // MUS_P_SCHOOL
 #define MUS_HALL_OF_FAME            436 // MUS_DENDOU
-#define MUS_FALLARBOR               437 // MUS_TONEKUSA
+#define MUS_EMILIA               437 // MUS_TONEKUSA
 #define MUS_SEALED_CHAMBER          438 // MUS_MABOROSI
 #define MUS_CONTEST_WINNER          439 // MUS_CON_FAN
 #define MUS_CONTEST                 440 // MUS_CONTEST0

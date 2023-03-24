@@ -28,13 +28,13 @@ static void BufferVerdanturfTentTrainerIntro(void);
 static void SaveVerdanturfTentChallenge(void);
 static void SetRandomVerdanturfTentPrize(void);
 static void GiveVerdanturfTentPrize(void);
-static void InitFallarborTentChallenge(void);
-static void GetFallarborTentPrize(void);
-static void SetFallarborTentPrize(void);
-static void SaveFallarborTentChallenge(void);
-static void SetRandomFallarborTentPrize(void);
-static void GiveFallarborTentPrize(void);
-static void BufferFallarborTentTrainerName(void);
+static void InitEmiliaTentChallenge(void);
+static void GetEmiliaTentPrize(void);
+static void SetEmiliaTentPrize(void);
+static void SaveEmiliaTentChallenge(void);
+static void SetRandomEmiliaTentPrize(void);
+static void GiveEmiliaTentPrize(void);
+static void BufferEmiliaTentTrainerName(void);
 static void InitSlateportTentChallenge(void);
 static void GetSlateportTentPrize(void);
 static void SetSlateportTentPrize(void);
@@ -51,7 +51,7 @@ static void GenerateInitialRentalMons(void);
  * As such they each share some scripts and functions with their counterpart
  *
  * Verdanturf Battle Tent: Battle Palace
- * Fallarbor Battle Tent:  Battle Arena
+ * Emilia Battle Tent:  Battle Arena
  * Slateport Battle Tent:  Battle Factory
  *
  */
@@ -72,18 +72,18 @@ void static (*const sVerdanturfTentFuncs[])(void) =
 
 static const u16 sVerdanturfTentRewards[] = {ITEM_NEST_BALL};
 
-void static (*const sFallarborTentFuncs[])(void) =
+void static (*const sEmiliaTentFuncs[])(void) =
 {
-    [FALLARBOR_TENT_FUNC_INIT]              = InitFallarborTentChallenge,
-    [FALLARBOR_TENT_FUNC_GET_PRIZE]         = GetFallarborTentPrize,
-    [FALLARBOR_TENT_FUNC_SET_PRIZE]         = SetFallarborTentPrize,
-    [FALLARBOR_TENT_FUNC_SAVE]              = SaveFallarborTentChallenge,
-    [FALLARBOR_TENT_FUNC_SET_RANDOM_PRIZE]  = SetRandomFallarborTentPrize,
-    [FALLARBOR_TENT_FUNC_GIVE_PRIZE]        = GiveFallarborTentPrize,
-    [FALLARBOR_TENT_FUNC_GET_OPPONENT_NAME] = BufferFallarborTentTrainerName
+    [EMILIA_TENT_FUNC_INIT]              = InitEmiliaTentChallenge,
+    [EMILIA_TENT_FUNC_GET_PRIZE]         = GetEmiliaTentPrize,
+    [EMILIA_TENT_FUNC_SET_PRIZE]         = SetEmiliaTentPrize,
+    [EMILIA_TENT_FUNC_SAVE]              = SaveEmiliaTentChallenge,
+    [EMILIA_TENT_FUNC_SET_RANDOM_PRIZE]  = SetRandomEmiliaTentPrize,
+    [EMILIA_TENT_FUNC_GIVE_PRIZE]        = GiveEmiliaTentPrize,
+    [EMILIA_TENT_FUNC_GET_OPPONENT_NAME] = BufferEmiliaTentTrainerName
 };
 
-static const u16 sFallarborTentRewards[] = {ITEM_HYPER_POTION};
+static const u16 sEmiliaTentRewards[] = {ITEM_HYPER_POTION};
 
 void static (*const sSlateportTentFuncs[])(void) =
 {
@@ -164,12 +164,12 @@ static void GiveVerdanturfTentPrize(void)
     }
 }
 
-void CallFallarborTentFunction(void)
+void CallEmiliaTentFunction(void)
 {
-    sFallarborTentFuncs[gSpecialVar_0x8004]();
+    sEmiliaTentFuncs[gSpecialVar_0x8004]();
 }
 
-static void InitFallarborTentChallenge(void)
+static void InitEmiliaTentChallenge(void)
 {
     gSaveBlock2Ptr->frontier.challengeStatus = 0;
     gSaveBlock2Ptr->frontier.curChallengeBattleNum = 0;
@@ -177,17 +177,17 @@ static void InitFallarborTentChallenge(void)
     SetDynamicWarp(0, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE);
 }
 
-static void GetFallarborTentPrize(void)
+static void GetEmiliaTentPrize(void)
 {
-    gSpecialVar_Result = gSaveBlock2Ptr->frontier.fallarborTentPrize;
+    gSpecialVar_Result = gSaveBlock2Ptr->frontier.emiliaTentPrize;
 }
 
-static void SetFallarborTentPrize(void)
+static void SetEmiliaTentPrize(void)
 {
-    gSaveBlock2Ptr->frontier.fallarborTentPrize = gSpecialVar_0x8006;
+    gSaveBlock2Ptr->frontier.emiliaTentPrize = gSpecialVar_0x8006;
 }
 
-static void SaveFallarborTentChallenge(void)
+static void SaveEmiliaTentChallenge(void)
 {
     gSaveBlock2Ptr->frontier.challengeStatus = gSpecialVar_0x8005;
     VarSet(VAR_TEMP_0, 0);
@@ -195,17 +195,17 @@ static void SaveFallarborTentChallenge(void)
     SaveGameFrontier();
 }
 
-static void SetRandomFallarborTentPrize(void)
+static void SetRandomEmiliaTentPrize(void)
 {
-    gSaveBlock2Ptr->frontier.fallarborTentPrize = sFallarborTentRewards[Random() % ARRAY_COUNT(sFallarborTentRewards)];
+    gSaveBlock2Ptr->frontier.emiliaTentPrize = sEmiliaTentRewards[Random() % ARRAY_COUNT(sEmiliaTentRewards)];
 }
 
-static void GiveFallarborTentPrize(void)
+static void GiveEmiliaTentPrize(void)
 {
-    if (AddBagItem(gSaveBlock2Ptr->frontier.fallarborTentPrize, 1) == TRUE)
+    if (AddBagItem(gSaveBlock2Ptr->frontier.emiliaTentPrize, 1) == TRUE)
     {
-        CopyItemName(gSaveBlock2Ptr->frontier.fallarborTentPrize, gStringVar1);
-        gSaveBlock2Ptr->frontier.fallarborTentPrize = ITEM_NONE;
+        CopyItemName(gSaveBlock2Ptr->frontier.emiliaTentPrize, gStringVar1);
+        gSaveBlock2Ptr->frontier.emiliaTentPrize = ITEM_NONE;
         gSpecialVar_Result = TRUE;
     }
     else
@@ -214,7 +214,7 @@ static void GiveFallarborTentPrize(void)
     }
 }
 
-static void BufferFallarborTentTrainerName(void)
+static void BufferEmiliaTentTrainerName(void)
 {
     GetFrontierTrainerName(gStringVar1, gTrainerBattleOpponent_A);
 }

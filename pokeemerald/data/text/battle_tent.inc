@@ -1,18 +1,18 @@
-FallarborTown_BattleTentLobby_Text_WelcomeToBattleTent:
+EmiliaRoad_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "I welcome you to the BATTLE TENT\n"
-	.string "FALLARBOR SITE!\p"
+	.string "EMILIA SITE!\p"
 	.string "I am your guide to the Set KO Tourney!$"
 
-FallarborTown_BattleTentLobby_Text_TakeChallenge:
+EmiliaRoad_BattleTentLobby_Text_TakeChallenge:
 	.string "Now, do you wish to take the challenge\n"
 	.string "of a Set KO Tourney?$"
 
-FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge:
+EmiliaRoad_BattleTentLobby_Text_AwaitAnotherChallenge:
 	.string "We await your challenge on\n"
 	.string "another occasion!$"
 
-FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
-	.string "In the FALLARBOR BATTLE TENT,\n"
+EmiliaRoad_BattleTentLobby_Text_ExplainEmiliaTent:
+	.string "In the EMILIA BATTLE TENT,\n"
 	.string "we undertake the Set KO Tourney.\p"
 	.string "All participants enter with a team of\n"
 	.string "three POKéMON.\p"
@@ -32,21 +32,21 @@ FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
 	.string "three TRAINERS in succession,\l"
 	.string "we will present you with a fine prize.$"
 
-FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
+EmiliaRoad_BattleTentLobby_Text_SaveBeforeChallenge:
 	.string "Before showing you to the BATTLE\n"
 	.string "TENT, I must save. Is that okay?$"
 
 @ Unused
-FallarborTown_BattleTentLobby_Text_WhichLevelMode:
+EmiliaRoad_BattleTentLobby_Text_WhichLevelMode:
 	.string "We offer two levels of challenge,\n"
 	.string "Level 50 and Open Level.\l"
 	.string "Which is your choice?$"
 
-FallarborTown_BattleTentLobby_Text_SelectThreeMons:
+EmiliaRoad_BattleTentLobby_Text_SelectThreeMons:
 	.string "Very well, now select your\n"
 	.string "three POKéMON, please.$"
 
-FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
+EmiliaRoad_BattleTentLobby_Text_NotEnoughValidMonsLv50:
 	.string "My dear challenger!\p"
 	.string "You do not have the three POKéMON\n"
 	.string "required for entry.\p"
@@ -56,7 +56,7 @@ FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
 	.string "When you have made your preparations,\n"
 	.string "please do return.$"
 
-FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
+EmiliaRoad_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "My dear challenger!\p"
 	.string "You do not have the three POKéMON\n"
 	.string "required for entry.\p"
@@ -68,11 +68,11 @@ FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "When you have made your preparations,\n"
 	.string "please do return.$"
 
-FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent:
+EmiliaRoad_BattleTentLobby_Text_GuideYouToBattleTent:
 	.string "I shall now guide you to\n"
 	.string "the BATTLE TENT.$"
 
-FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting:
+EmiliaRoad_BattleTentLobby_Text_DidntSaveBeforeQuitting:
 	.string "My dear challenger!\p"
 	.string "You did not save the game before\n"
 	.string "shutting down, did you?\p"
@@ -82,36 +82,36 @@ FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting:
 	.string "You may, of course, start with a fresh\n"
 	.string "challenge.$"
 
-FallarborTown_BattleTentLobby_Text_BeatThreeTrainers:
+EmiliaRoad_BattleTentLobby_Text_BeatThreeTrainers:
 	.string "How splendid! You have beaten\n"
 	.string "three TRAINERS in succession!$"
 
-FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame:
+EmiliaRoad_BattleTentLobby_Text_WaitWhileSaveGame:
 	.string "Please wait while I save the game.$"
 
-FallarborTown_BattleTentLobby_Text_PresentYouWithPrize:
+EmiliaRoad_BattleTentLobby_Text_PresentYouWithPrize:
 	.string "In commemoration of your 3-win streak,\n"
 	.string "we present you with this prize.$"
 
-FallarborTown_BattleTentLobby_Text_ReceivedPrize:
+EmiliaRoad_BattleTentLobby_Text_ReceivedPrize:
 	.string "{PLAYER} received the prize\n"
 	.string "{STR_VAR_1}.$"
 
-FallarborTown_BattleTentLobby_Text_BagFullReturnForPrize:
+EmiliaRoad_BattleTentLobby_Text_BagFullReturnForPrize:
 	.string "Oh?\n"
 	.string "Your BAG seems to be full.\p"
 	.string "I urge you to clear space and\n"
 	.string "return for your prize.$"
 
-FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving:
+EmiliaRoad_BattleTentLobby_Text_ThankYouWaitWhileSaving:
 	.string "Thank you so much for participating!\p"
 	.string "Please wait while I save the game.$"
 
-FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge2:
+EmiliaRoad_BattleTentLobby_Text_AwaitAnotherChallenge2:
 	.string "We await your challenge on\n"
 	.string "another occasion!$"
 
-FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
+EmiliaRoad_BattleTentLobby_Text_LookingForwardToArrival:
 	.string "We have been looking forward to\n"
 	.string "your arrival.\p"
 	.string "Before I show you to the BATTLE TENT,\n"

@@ -34,8 +34,8 @@ Route113_EventScript_RouteSign111::
 	msgbox Route113_Text_RouteSign111, MSGBOX_SIGN
 	end
 
-Route113_EventScript_RouteSignFallarbor::
-	msgbox Route113_Text_RouteSignFallarbor, MSGBOX_SIGN
+Route113_EventScript_RouteSignEmilia::
+	msgbox Route113_Text_RouteSignEmilia, MSGBOX_SIGN
 	end
 
 Route113_EventScript_GlassWorkshopSign::
@@ -149,9 +149,9 @@ Route113_Text_RouteSign111:
 	.string "ROUTE 113\n"
 	.string "{RIGHT_ARROW} ROUTE 111$"
 
-Route113_Text_RouteSignFallarbor:
+Route113_Text_RouteSignEmilia:
 	.string "ROUTE 113\n"
-	.string "{LEFT_ARROW} FALLARBOR TOWN$"
+	.string "{LEFT_ARROW} EMILIA TOWN$"
 
 Route113_Text_TrainerTipsRegisterKeyItems:
 	.string "TRAINER TIPS\p"

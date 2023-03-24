@@ -19,8 +19,8 @@ const u16 gMetatileAttributes_Mauville[] = INCBIN_U16("data/tilesets/secondary/m
 const u16 gMetatiles_Santa[] = INCBIN_U16("data/tilesets/secondary/santa/metatiles.bin");
 const u16 gMetatileAttributes_Santa[] = INCBIN_U16("data/tilesets/secondary/santa/metatile_attributes.bin");
 
-const u16 gMetatiles_Fallarbor[] = INCBIN_U16("data/tilesets/secondary/fallarbor/metatiles.bin");
-const u16 gMetatileAttributes_Fallarbor[] = INCBIN_U16("data/tilesets/secondary/fallarbor/metatile_attributes.bin");
+const u16 gMetatiles_Emilia[] = INCBIN_U16("data/tilesets/secondary/emilia/metatiles.bin");
+const u16 gMetatileAttributes_Emilia[] = INCBIN_U16("data/tilesets/secondary/emilia/metatile_attributes.bin");
 
 const u16 gMetatiles_Fortree[] = INCBIN_U16("data/tilesets/secondary/fortree/metatiles.bin");
 const u16 gMetatileAttributes_Fortree[] = INCBIN_U16("data/tilesets/secondary/fortree/metatile_attributes.bin");

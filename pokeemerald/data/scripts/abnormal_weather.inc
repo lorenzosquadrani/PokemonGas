@@ -1,21 +1,21 @@
 AbnormalWeather_EventScript_PlaceTilesRoute114North::
-	setmetatile 7, 3, METATILE_Fallarbor_RedCaveEntrance_Top, TRUE
-	setmetatile 7, 4, METATILE_Fallarbor_RedCaveEntrance_Bottom, FALSE
+	setmetatile 7, 3, METATILE_Emilia_RedCaveEntrance_Top, TRUE
+	setmetatile 7, 4, METATILE_Emilia_RedCaveEntrance_Bottom, FALSE
 	return
 
 AbnormalWeather_EventScript_PlaceTilesRoute114South::
-	setmetatile 6, 45, METATILE_Fallarbor_BrownCaveEntrance_Top, TRUE
-	setmetatile 6, 46, METATILE_Fallarbor_BrownCaveEntrance_Bottom, FALSE
+	setmetatile 6, 45, METATILE_Emilia_BrownCaveEntrance_Top, TRUE
+	setmetatile 6, 46, METATILE_Emilia_BrownCaveEntrance_Bottom, FALSE
 	return
 
 AbnormalWeather_EventScript_PlaceTilesRoute115West::
-	setmetatile 21, 5, METATILE_Fallarbor_BrownCaveEntrance_Top, TRUE
-	setmetatile 21, 6, METATILE_Fallarbor_BrownCaveEntrance_Bottom, FALSE
+	setmetatile 21, 5, METATILE_Emilia_BrownCaveEntrance_Top, TRUE
+	setmetatile 21, 6, METATILE_Emilia_BrownCaveEntrance_Bottom, FALSE
 	return
 
 AbnormalWeather_EventScript_PlaceTilesRoute115East::
-	setmetatile 36, 9, METATILE_Fallarbor_BrownCaveEntrance_Top, TRUE
-	setmetatile 36, 10, METATILE_Fallarbor_BrownCaveEntrance_Bottom, FALSE
+	setmetatile 36, 9, METATILE_Emilia_BrownCaveEntrance_Top, TRUE
+	setmetatile 36, 10, METATILE_Emilia_BrownCaveEntrance_Bottom, FALSE
 	return
 
 AbnormalWeather_EventScript_PlaceTilesRoute116North::
@@ -221,23 +221,23 @@ AbnormalWeather_EventScript_CleanupMapTiles::
 	return
 
 AbnormalWeather_EventScript_CleanupRoute114North::
-	setmetatile 7, 3, METATILE_Fallarbor_RedRockWall, TRUE
-	setmetatile 7, 4, METATILE_Fallarbor_RedRockWall, TRUE
+	setmetatile 7, 3, METATILE_Emilia_RedRockWall, TRUE
+	setmetatile 7, 4, METATILE_Emilia_RedRockWall, TRUE
 	return
 
 AbnormalWeather_EventScript_CleanupRoute114South::
-	setmetatile 6, 45, METATILE_Fallarbor_BrownRockWall, TRUE
-	setmetatile 6, 46, METATILE_Fallarbor_BrownRockWall, TRUE
+	setmetatile 6, 45, METATILE_Emilia_BrownRockWall, TRUE
+	setmetatile 6, 46, METATILE_Emilia_BrownRockWall, TRUE
 	return
 
 AbnormalWeather_EventScript_CleanupRoute115West::
-	setmetatile 21, 5, METATILE_Fallarbor_BrownRockWall, TRUE
-	setmetatile 21, 6, METATILE_Fallarbor_BrownRockWall, TRUE
+	setmetatile 21, 5, METATILE_Emilia_BrownRockWall, TRUE
+	setmetatile 21, 6, METATILE_Emilia_BrownRockWall, TRUE
 	return
 
 AbnormalWeather_EventScript_CleanupRoute115East::
-	setmetatile 36, 9, METATILE_Fallarbor_BrownRockWall, TRUE
-	setmetatile 36, 10, METATILE_Fallarbor_BrownRockWall, TRUE
+	setmetatile 36, 9, METATILE_Emilia_BrownRockWall, TRUE
+	setmetatile 36, 10, METATILE_Emilia_BrownRockWall, TRUE
 	return
 
 AbnormalWeather_EventScript_CleanupRoute116North::

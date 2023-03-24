@@ -3314,7 +3314,7 @@ static u16 GetBattleTentTrainerId(void)
 
     if (facility == FRONTIER_FACILITY_PALACE)       // Verdanturf Tent; uses Palace mechanics
         return Random() % NUM_BATTLE_TENT_TRAINERS;
-    else if (facility == FRONTIER_FACILITY_ARENA)   // Fallarbor Tent; uses Arena mechanics
+    else if (facility == FRONTIER_FACILITY_ARENA)   // Emilia Tent; uses Arena mechanics
         return Random() % NUM_BATTLE_TENT_TRAINERS;
     else if (facility == FRONTIER_FACILITY_FACTORY) // Slateport Tent; uses Factory mechanics
         return Random() % NUM_BATTLE_TENT_TRAINERS;
@@ -3341,8 +3341,8 @@ static u8 SetTentPtrsGetLevel(void)
     }
     else if (facility == FRONTIER_FACILITY_ARENA)
     {
-        gFacilityTrainers = gFallarborBattleTentTrainers;
-        gFacilityTrainerMons = gFallarborBattleTentMons;
+        gFacilityTrainers = gEmiliaBattleTentTrainers;
+        gFacilityTrainerMons = gEmiliaBattleTentMons;
     }
     else
     {

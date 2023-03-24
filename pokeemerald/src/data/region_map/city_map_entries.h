@@ -21,9 +21,9 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .tilemap = gPokenavCityMap_Santa_0,
     },
     {
-        .mapSecId = MAPSEC_FALLARBOR_TOWN,
+        .mapSecId = MAPSEC_EMILIA_ROAD,
         .index = 0,
-        .tilemap = gPokenavCityMap_Fallarbor_0,
+        .tilemap = gPokenavCityMap_Emilia_0,
     },
     {
         .mapSecId = MAPSEC_VERDANTURF_TOWN,

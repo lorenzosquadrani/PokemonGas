@@ -75,15 +75,15 @@ const struct Tileset gTileset_Santa =
     .callback = InitTilesetAnim_Santa,
 };
 
-const struct Tileset gTileset_Fallarbor =
+const struct Tileset gTileset_Emilia =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Fallarbor,
-    .palettes = gTilesetPalettes_Fallarbor,
-    .metatiles = gMetatiles_Fallarbor,
-    .metatileAttributes = gMetatileAttributes_Fallarbor,
-    .callback = InitTilesetAnim_Fallarbor,
+    .tiles = gTilesetTiles_Emilia,
+    .palettes = gTilesetPalettes_Emilia,
+    .metatiles = gMetatiles_Emilia,
+    .metatileAttributes = gMetatileAttributes_Emilia,
+    .callback = InitTilesetAnim_Emilia,
 };
 
 const struct Tileset gTileset_Fortree =

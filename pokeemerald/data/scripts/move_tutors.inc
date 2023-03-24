@@ -102,7 +102,7 @@ MoveTutor_EventScript_MimicTaught::
 	release
 	end
 
-FallarborTown_Mart_EventScript_MetronomeTutor::
+EmiliaRoad_Mart_EventScript_MetronomeTutor::
 	lock
 	faceplayer
 	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_METRONOME, MoveTutor_EventScript_MetronomeTaught

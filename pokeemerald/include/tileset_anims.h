@@ -13,7 +13,7 @@ void InitTilesetAnim_Dipartimento(void);
 void InitTilesetAnim_Slateport(void);
 void InitTilesetAnim_Mauville(void);
 void InitTilesetAnim_Santa(void);
-void InitTilesetAnim_Fallarbor(void);
+void InitTilesetAnim_Emilia(void);
 void InitTilesetAnim_Fortree(void);
 void InitTilesetAnim_Lilycove(void);
 void InitTilesetAnim_Mossdeep(void);

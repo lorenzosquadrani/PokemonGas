@@ -254,7 +254,7 @@ gSpecials::
 	def_special CallBattlePyramidFunction
 	def_special StopMapMusic
 	def_special CallVerdanturfTentFunction
-	def_special CallFallarborTentFunction
+	def_special CallEmiliaTentFunction
 	def_special CallSlateportTentFunction
 	def_special ChoosePartyForBattleFrontier
 	def_special ValidateEReaderTrainer

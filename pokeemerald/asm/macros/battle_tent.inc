@@ -52,51 +52,51 @@
 	.endm
 
 
-@ Fallarbor Tent
+@ Emilia Tent
 
-	@ Initialize the Fallarbor Battle Tent challenge
-	.macro fallarbortent_init
-	setvar VAR_0x8004, FALLARBOR_TENT_FUNC_INIT
-	special CallFallarborTentFunction
+	@ Initialize the Emilia Battle Tent challenge
+	.macro emiliatent_init
+	setvar VAR_0x8004, EMILIA_TENT_FUNC_INIT
+	special CallEmiliaTentFunction
 	.endm
 
 	@ Get the current prize item id
-	.macro fallarbortent_getprize
-	setvar VAR_0x8004, FALLARBOR_TENT_FUNC_GET_PRIZE
-	special CallFallarborTentFunction
+	.macro emiliatent_getprize
+	setvar VAR_0x8004, EMILIA_TENT_FUNC_GET_PRIZE
+	special CallEmiliaTentFunction
 	.endm
 
 	@ Unused. Set the prize item to be given
-	.macro fallarbortent_setprize unusedArg:req, itemId:req
-	setvar VAR_0x8004, FALLARBOR_TENT_FUNC_SET_PRIZE
+	.macro emiliatent_setprize unusedArg:req, itemId:req
+	setvar VAR_0x8004, EMILIA_TENT_FUNC_SET_PRIZE
 	setvar VAR_0x8005, \unusedArg
 	setvar VAR_0x8006, \itemId
-	special CallFallarborTentFunction
+	special CallEmiliaTentFunction
 	.endm
 
 	@ Save the game and set the challenge status
-	.macro fallarbortent_save challengeStatus:req
-	setvar VAR_0x8004, FALLARBOR_TENT_FUNC_SAVE
+	.macro emiliatent_save challengeStatus:req
+	setvar VAR_0x8004, EMILIA_TENT_FUNC_SAVE
 	setvar VAR_0x8005, \challengeStatus
-	special CallFallarborTentFunction
+	special CallEmiliaTentFunction
 	.endm
 
 	@ Set the prize item as randomly selected from a list. Randomness unnecessary, as the list is only 1 item
-	.macro fallarbortent_setrandomprize
-	setvar VAR_0x8004, FALLARBOR_TENT_FUNC_SET_RANDOM_PRIZE
-	special CallFallarborTentFunction
+	.macro emiliatent_setrandomprize
+	setvar VAR_0x8004, EMILIA_TENT_FUNC_SET_RANDOM_PRIZE
+	special CallEmiliaTentFunction
 	.endm
 
 	@ Give the current prize item. FALSE if no room for prize
-	.macro fallarbortent_giveprize
-	setvar VAR_0x8004, FALLARBOR_TENT_FUNC_GIVE_PRIZE
-	special CallFallarborTentFunction
+	.macro emiliatent_giveprize
+	setvar VAR_0x8004, EMILIA_TENT_FUNC_GIVE_PRIZE
+	special CallEmiliaTentFunction
 	.endm
 
 	@ Buffer the opponent trainers name to STR_VAR_1
-	.macro fallarbortent_getopponentname
-	setvar VAR_0x8004, FALLARBOR_TENT_FUNC_GET_OPPONENT_NAME
-	special CallFallarborTentFunction
+	.macro emiliatent_getopponentname
+	setvar VAR_0x8004, EMILIA_TENT_FUNC_GET_OPPONENT_NAME
+	special CallEmiliaTentFunction
 	.endm
 
 

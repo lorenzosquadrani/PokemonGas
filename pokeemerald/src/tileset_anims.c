@@ -715,7 +715,7 @@ void InitTilesetAnim_Santa(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_Santa;
 }
 
-void InitTilesetAnim_Fallarbor(void)
+void InitTilesetAnim_Emilia(void)
 {
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;

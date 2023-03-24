@@ -6,7 +6,7 @@
     "gMapGroup_IndoorBologna",
     "gMapGroup_IndoorDipartimento",
     "gMapGroup_IndoorSanta",
-    "gMapGroup_IndoorFallarbor",
+    "gMapGroup_IndoorEmilia",
     "gMapGroup_IndoorVerdanturf",
     "gMapGroup_IndoorPacifidlog",
     "gMapGroup_IndoorPetalburg",
@@ -50,7 +50,7 @@
     "BolognaTown",
     "DipartimentoFisica",
     "SantaGiustina",
-    "FallarborTown",
+    "EmiliaRoad",
     "VerdanturfTown",
     "PacifidlogTown",
     "Route101",
@@ -128,15 +128,15 @@
     "SantaGiustina_PokemonCenter_1F",
     "SantaGiustina_PokemonCenter_2F"
   ],
-  "gMapGroup_IndoorFallarbor": [
-    "FallarborTown_Mart",
-    "FallarborTown_BattleTentLobby",
-    "FallarborTown_BattleTentCorridor",
-    "FallarborTown_BattleTentBattleRoom",
-    "FallarborTown_PokemonCenter_1F",
-    "FallarborTown_PokemonCenter_2F",
-    "FallarborTown_CozmosHouse",
-    "FallarborTown_MoveRelearnersHouse"
+  "gMapGroup_IndoorEmilia": [
+    "EmiliaRoad_Mart",
+    "EmiliaRoad_BattleTentLobby",
+    "EmiliaRoad_BattleTentCorridor",
+    "EmiliaRoad_BattleTentBattleRoom",
+    "EmiliaRoad_PokemonCenter_1F",
+    "EmiliaRoad_PokemonCenter_2F",
+    "EmiliaRoad_CozmosHouse",
+    "EmiliaRoad_MoveRelearnersHouse"
   ],
   "gMapGroup_IndoorVerdanturf": [
     "VerdanturfTown_BattleTentLobby",

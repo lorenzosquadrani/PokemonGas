@@ -381,9 +381,9 @@ static void SetCutGrassMetatile(s16 x, s16 y)
     case METATILE_Santa_AshGrass:
         MapGridSetMetatileIdAt(x, y, METATILE_Santa_LavaField);
         break;
-    case METATILE_Fallarbor_NormalGrass:
-    case METATILE_Fallarbor_AshGrass:
-        MapGridSetMetatileIdAt(x, y, METATILE_Fallarbor_AshField);
+    case METATILE_Emilia_NormalGrass:
+    case METATILE_Emilia_AshGrass:
+        MapGridSetMetatileIdAt(x, y, METATILE_Emilia_AshField);
         break;
     case METATILE_General_TallGrass_TreeUp:
         MapGridSetMetatileIdAt(x, y, METATILE_General_Grass_TreeUp);

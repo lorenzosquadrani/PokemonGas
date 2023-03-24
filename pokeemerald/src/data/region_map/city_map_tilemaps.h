@@ -1,5 +1,5 @@
 const u32 gPokenavCityMap_Santa_0[] = INCBIN_U32("graphics/pokenav/region_map/city_maps/santa_0.bin.lz");
-const u32 gPokenavCityMap_Fallarbor_0[] = INCBIN_U32("graphics/pokenav/region_map/city_maps/fallarbor_0.bin.lz");
+const u32 gPokenavCityMap_Emilia_0[] = INCBIN_U32("graphics/pokenav/region_map/city_maps/emilia_0.bin.lz");
 const u32 gPokenavCityMap_Fortree_0[] = INCBIN_U32("graphics/pokenav/region_map/city_maps/fortree_0.bin.lz");
 const u32 gPokenavCityMap_Slateport_0[] = INCBIN_U32("graphics/pokenav/region_map/city_maps/slateport_0.bin.lz");
 const u32 gPokenavCityMap_Slateport_1[] = INCBIN_U32("graphics/pokenav/region_map/city_maps/slateport_1.bin.lz");

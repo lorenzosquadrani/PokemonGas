@@ -438,7 +438,7 @@ gSongTable::
 	song mus_mt_pyre_exterior, 0, 0
 	song mus_school, 0, 0
 	song mus_hall_of_fame, 0, 0
-	song mus_fallarbor, 0, 0
+	song mus_emilia, 0, 0
 	song mus_sealed_chamber, 0, 0
 	song mus_contest_winner, 0, 0
 	song mus_contest, 0, 0
