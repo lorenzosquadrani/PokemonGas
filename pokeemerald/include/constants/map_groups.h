@@ -19,7 +19,7 @@
 #define MAP_BOLOGNA_TOWN        (10 | (0 << 8))
 #define MAP_DIPARTIMENTO_FISICA (11 | (0 << 8))
 #define MAP_SANTA_GIUSTINA      (12 | (0 << 8))
-#define MAP_EMILIA_ROAD      (13 | (0 << 8))
+#define MAP_EMILIA_ROAD         (13 | (0 << 8))
 #define MAP_VERDANTURF_TOWN     (14 | (0 << 8))
 #define MAP_PACIFIDLOG_TOWN     (15 | (0 << 8))
 #define MAP_ROUTE101            (16 | (0 << 8))
