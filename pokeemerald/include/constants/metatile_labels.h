@@ -153,6 +153,22 @@
 #define METATILE_EliteFour_OpenDoor_Opening          0x345
 #define METATILE_EliteFour_RightSpotlightOff         0x2DE
 
+// gTileset_Emilia
+#define METATILE_Emilia_AshField                  0x218
+#define METATILE_Emilia_AshGrass                  0x20A
+#define METATILE_Emilia_BrownCaveEntrance_Bottom  0x261
+#define METATILE_Emilia_BrownCaveEntrance_Top     0x259
+#define METATILE_Emilia_BrownCaveIndent           0x208
+#define METATILE_Emilia_BrownCaveOpen             0x210
+#define METATILE_Emilia_BrownRockWall             0x265
+#define METATILE_Emilia_Door_BattleTent           0x36C
+#define METATILE_Emilia_Door_DarkRoof             0x2F7
+#define METATILE_Emilia_Door_LightRoof            0x2A5
+#define METATILE_Emilia_NormalGrass               0x212
+#define METATILE_Emilia_RedCaveEntrance_Bottom    0x34F
+#define METATILE_Emilia_RedCaveEntrance_Top       0x347
+#define METATILE_Emilia_RedRockWall               0x269
+
 // gTileset_EverGrande
 #define METATILE_EverGrande_Door_PokemonLeague  0x21D
 
@@ -170,22 +186,6 @@
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile3    0x2CB
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile4    0x2CC
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile5    0x2CD
-
-// gTileset_Emilia
-#define METATILE_Emilia_AshField                  0x218
-#define METATILE_Emilia_AshGrass                  0x20A
-#define METATILE_Emilia_BrownCaveEntrance_Bottom  0x261
-#define METATILE_Emilia_BrownCaveEntrance_Top     0x259
-#define METATILE_Emilia_BrownCaveIndent           0x208
-#define METATILE_Emilia_BrownCaveOpen             0x210
-#define METATILE_Emilia_BrownRockWall             0x265
-#define METATILE_Emilia_Door_BattleTent           0x36C
-#define METATILE_Emilia_Door_DarkRoof             0x2F7
-#define METATILE_Emilia_Door_LightRoof            0x2A5
-#define METATILE_Emilia_NormalGrass               0x212
-#define METATILE_Emilia_RedCaveEntrance_Bottom    0x34F
-#define METATILE_Emilia_RedCaveEntrance_Top       0x347
-#define METATILE_Emilia_RedRockWall               0x269
 
 // gTileset_Fortree
 #define METATILE_Fortree_BridgeOverGrass_Lowered           0x24F

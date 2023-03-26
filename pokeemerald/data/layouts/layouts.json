@@ -104,8 +104,8 @@
     {
       "id": "LAYOUT_BOLOGNA_TOWN",
       "name": "BolognaTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 50,
+      "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Bologna",
       "border_filepath": "data/layouts/BolognaTown/border.bin",
