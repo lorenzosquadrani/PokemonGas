@@ -254,6 +254,10 @@ RiminiTown_EventScript_Boy::
 	msgbox RiminiTown_Text_BirchSpendsDaysInLab, MSGBOX_NPC
 	end
 
+RiminiTown_EventScript_Ste::
+	msgbox RiminiTown_Text_SteSalutaGas, MSGBOX_NPC
+	end
+
 RiminiTown_EventScript_Twin::
 	lock
 	faceplayer
@@ -972,6 +976,10 @@ RiminiTown_Text_BirchSpendsDaysInLab:
 	.string "the wild to do more research…\p"
 	.string "When does PROF. BIRCH spend time\n"
 	.string "at home?$"
+
+RiminiTown_Text_SteSalutaGas:
+	.string "Bella Gassi,\n"
+	.string "ancora devono fare il mio script.$"
 
 RiminiTown_Text_IfYouGoInGrassPokemonWillJumpOut:
 	.string "Um, um, um!\p"
