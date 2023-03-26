@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_RIMINI_TOWN_MARE",
-      "offset": -10,
+      "offset": 10,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE101",
-      "offset": 0,
+      "offset": 33,
       "direction": "up"
     }
   ],

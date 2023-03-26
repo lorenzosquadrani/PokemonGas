@@ -24,11 +24,6 @@
       "direction": "down"
     },
     {
-      "map": "MAP_ROUTE103",
-      "offset": 60,
-      "direction": "left"
-    },
-    {
       "map": "MAP_SANTA_GIUSTINA",
       "offset": 0,
       "direction": "down"
