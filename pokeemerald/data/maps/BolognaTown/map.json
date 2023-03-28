@@ -20,12 +20,7 @@
     },
     {
       "map": "MAP_DIPARTIMENTO_FISICA",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_ROUTE103",
-      "offset": 0,
+      "offset": 10,
       "direction": "up"
     }
   ],

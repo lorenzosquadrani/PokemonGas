@@ -94,10 +94,10 @@
     {
       "id": "LAYOUT_RIMINI_TOWN",
       "name": "RiminiTown_Layout",
-      "width": 66,
+      "width": 59,
       "height": 37,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_EverGrande",
+      "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/RiminiTown/border.bin",
       "blockdata_filepath": "data/layouts/RiminiTown/map.bin"
     },
