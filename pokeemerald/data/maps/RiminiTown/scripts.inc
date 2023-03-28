@@ -397,48 +397,24 @@ RiminiTown_EventScript_GoSaveBirchTrigger::
 	end
 
 RiminiTown_EventScript_TownSign::
-	msgbox RiminiTown_Text_TownSign, MSGBOX_SIGN
+	msgbox RiminiTown_Text_TownName, MSGBOX_SIGN
 	end
 
 RiminiTown_EventScript_GasSign::
-	msgbox RiminiTown_Text_GasSign, MSGBOX_SIGN
+	msgbox RiminiTown_Text_GasHouse, MSGBOX_SIGN
 	end
 
-RiminiTown_EventScript_BirchsLabSign::
-	msgbox RiminiTown_Text_ProfBirchsLab, MSGBOX_SIGN
+RiminiTown_EventScript_TommiSign::
+	msgbox RiminiTown_Text_TommiHouse, MSGBOX_SIGN
 	end
 
-RiminiTown_EventScript_BrendansHouseSign::
-	lockall
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, RiminiTown_EventScript_PlayersHouseSignMale
-	call_if_eq VAR_RESULT, FEMALE, RiminiTown_EventScript_BirchsHouseSignFemale
-	releaseall
+RiminiTown_EventScript_SteSign::
+	msgbox RiminiTown_Text_SteHouse, MSGBOX_SIGN
 	end
 
-RiminiTown_EventScript_PlayersHouseSignMale::
-	msgbox RiminiTown_Text_PlayersHouse, MSGBOX_DEFAULT
-	return
-
-RiminiTown_EventScript_BirchsHouseSignFemale::
-	msgbox RiminiTown_Text_ProfBirchsHouse, MSGBOX_DEFAULT
-	return
-
-RiminiTown_EventScript_MaysHouseSign::
-	lockall
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, RiminiTown_EventScript_BirchsHouseSignMale
-	call_if_eq VAR_RESULT, FEMALE, RiminiTown_EventScript_PlayersHouseSignFemale
-	releaseall
+RiminiTown_EventScript_CavaSign::
+	msgbox RiminiTown_Text_Cava, MSGBOX_SIGN
 	end
-
-RiminiTown_EventScript_BirchsHouseSignMale::
-	msgbox RiminiTown_Text_ProfBirchsHouse, MSGBOX_DEFAULT
-	return
-
-RiminiTown_EventScript_PlayersHouseSignFemale::
-	msgbox RiminiTown_Text_PlayersHouse, MSGBOX_DEFAULT
-	return
 
 RiminiTown_EventScript_GiveRunningShoesTrigger0::
 	lockall
@@ -1007,21 +983,20 @@ RiminiTown_Text_GoodLuckCatchingPokemon:
 	.string "Are you going to catch POKéMON?\n"
 	.string "Good luck!$"
 
-RiminiTown_Text_TownSign:
-	.string "RIMINI TOWN\n"
-	.string "“A town that can't be shaded any hue.”$"
+RiminiTown_Text_TownName:
+	.string "RIMINI TOWN$"
 
-RiminiTown_Text_GasSign:
+RiminiTown_Text_GasHouse:
 	.string "Casa di Gas$"
 
-RiminiTown_Text_ProfBirchsLab:
-	.string "PROF. BIRCH'S POKéMON LAB$"
+RiminiTown_Text_TommiHouse:
+	.string "Casa di Tommi$"
 
-RiminiTown_Text_PlayersHouse:
-	.string "{PLAYER}'s HOUSE$"
+RiminiTown_Text_SteHouse:
+	.string "Casa di Ste$"
 
-RiminiTown_Text_ProfBirchsHouse:
-	.string "PROF. BIRCH'S HOUSE$"
+RiminiTown_Text_Cava:
+	.string "La Cava$"
 
 RiminiTown_Text_BirchSomethingToShowYouAtLab:
 	.string "PROF. BIRCH: Well, well, {PLAYER}{KUN}!\n"
