@@ -112,14 +112,14 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_RIMINI_TOWN",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
       "x": 2,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_RIMINI_TOWN",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
       "x": 2,
@@ -132,7 +132,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 2,
+      "x": 3,
       "y": 8,
       "elevation": 0,
       "var": "VAR_RIMINI_INTRO_STATE",
