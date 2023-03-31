@@ -46,11 +46,11 @@ RiminiTown_CasaTommi_EventScript_SetReadyForJohtoStarter::
 	goto RiminiTown_CasaTommi_EventScript_SetJohtoStarterLayout
 
 RiminiTown_CasaTommi_EventScript_SetJohtoStarterLayout::
-	setmaplayoutindex LAYOUT_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB_WITH_TABLE
+	setmaplayoutindex LAYOUT_RIMINI_TOWN_CASA_TOMMI_WITH_TABLE
 	end
 
 RiminiTown_CasaTommi_EventScript_SetAfterJohtoStarterLayout::
-	setmaplayoutindex LAYOUT_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB_WITH_TABLE
+	setmaplayoutindex LAYOUT_RIMINI_TOWN_CASA_TOMMI_WITH_TABLE
 	setobjectmovementtype LOCALID_RIVAL, MOVEMENT_TYPE_WANDER_UP_AND_DOWN
 	setobjectxyperm LOCALID_RIVAL, 5, 10
 	end

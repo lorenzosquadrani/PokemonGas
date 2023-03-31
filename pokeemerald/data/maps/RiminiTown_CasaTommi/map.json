@@ -1,7 +1,7 @@
 {
-  "id": "MAP_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB",
+  "id": "MAP_RIMINI_TOWN_CASA_TOMMI",
   "name": "RiminiTown_CasaTommi",
-  "layout": "LAYOUT_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB",
+  "layout": "LAYOUT_RIMINI_TOWN_CASA_TOMMI",
   "music": "MUS_BIRCH_LAB",
   "region_map_section": "MAPSEC_RIMINI_TOWN",
   "requires_flash": false,

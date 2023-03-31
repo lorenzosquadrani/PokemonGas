@@ -65,7 +65,7 @@ RiminiTown_CasaGas_1F_EventScript_GoUpstairsToSetClock::
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaGas_1F_Movement_PushTowardStairs
 	applymovement LOCALID_MOM, RiminiTown_CasaGas_1F_Movement_PushTowardStairs
 	waitmovement 0
-	warp MAP_RIMINI_TOWN_BRENDANS_HOUSE_2F, 7, 1
+	warp MAP_RIMINI_TOWN_CASA_GAS_2F, 7, 1
 	waitstate
 	releaseall
 	end
@@ -163,9 +163,9 @@ RiminiTown_CasaGas_1F_EventScript_MeetRival::
 	call_if_eq VAR_0x8008, 2, RiminiTown_CasaGas_1F_EventScript_BrendanGoUpstairs2
 	playse SE_EXIT
 	removeobject LOCALID_RIVAL
-	setflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_BRENDAN
-	setflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
-	clearflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_BRENDAN
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_2F_POKE_BALL
+	clearflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_RIVAL_BEDROOM
 	delay 30
 	setvar VAR_RIMINI_RIVAL_STATE, 3
 	setvar VAR_RIMINI_TOWN_STATE, 1

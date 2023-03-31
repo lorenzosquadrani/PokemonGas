@@ -117,8 +117,8 @@ RiminiTown_EventScript_StepOffTruckMale::
 	setvar VAR_0x8004, 5
 	setvar VAR_0x8005, 8
 	call RiminiTown_EventScript_GoInsideWithMom
-	setflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_TRUCK
-	warpsilent MAP_RIMINI_TOWN_BRENDANS_HOUSE_1F, 8, 8
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_TRUCK
+	warpsilent MAP_RIMINI_TOWN_CASA_GAS_1F, 8, 8
 	waitstate
 	releaseall
 	end
@@ -128,8 +128,8 @@ RiminiTown_EventScript_StepOffTruckFemale::
 	setvar VAR_0x8004, 14
 	setvar VAR_0x8005, 8
 	call RiminiTown_EventScript_GoInsideWithMom
-	setflag FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_TRUCK
-	warpsilent MAP_RIMINI_TOWN_MAYS_HOUSE_1F, 2, 8
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_STE_TRUCK
+	warpsilent MAP_RIMINI_TOWN_CASA_STE_1F, 2, 8
 	waitstate
 	releaseall
 	end
@@ -219,7 +219,7 @@ RiminiTown_EventScript_BeginDexUpgradeScene::
 	clearflag FLAG_HIDE_RIMINI_TOWN_BIRCH
 	delay 20
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
-	warp MAP_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB, 6, 5
+	warp MAP_RIMINI_TOWN_CASA_TOMMI, 6, 5
 	waitstate
 	releaseall
 	end

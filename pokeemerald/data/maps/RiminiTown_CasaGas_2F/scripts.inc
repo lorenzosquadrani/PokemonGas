@@ -72,8 +72,8 @@ RiminiTown_CasaGas_2F_EventScript_MeetBrendan::
 	call_if_eq VAR_FACING, DIR_WEST, RiminiTown_CasaGas_2F_EventScript_MeetBrendanWest
 	call_if_eq VAR_FACING, DIR_EAST, RiminiTown_CasaGas_2F_EventScript_MeetBrendanEast
 	setvar VAR_RIMINI_RIVAL_STATE, 3
-	setflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
-	clearflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_2F_POKE_BALL
+	clearflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_RIVAL_BEDROOM
 	setvar VAR_RIMINI_TOWN_STATE, 1
 	savebgm MUS_DUMMY
 	fadedefaultbgm

@@ -532,7 +532,7 @@
       "blockdata_filepath": "data/layouts/Underwater_Route128/map.bin"
     },
     {
-      "id": "LAYOUT_RIMINI_TOWN_BRENDANS_HOUSE_1F",
+      "id": "LAYOUT_RIMINI_TOWN_CASA_GAS_1F",
       "name": "RiminiTown_CasaGas_1F_Layout",
       "width": 11,
       "height": 9,
@@ -542,7 +542,7 @@
       "blockdata_filepath": "data/layouts/RiminiTown_CasaGas_1F/map.bin"
     },
     {
-      "id": "LAYOUT_RIMINI_TOWN_BRENDANS_HOUSE_2F",
+      "id": "LAYOUT_RIMINI_TOWN_CASA_GAS_2F",
       "name": "RiminiTown_CasaGas_2F_Layout",
       "width": 9,
       "height": 8,
@@ -552,7 +552,7 @@
       "blockdata_filepath": "data/layouts/RiminiTown_CasaGas_2F/map.bin"
     },
     {
-      "id": "LAYOUT_RIMINI_TOWN_MAYS_HOUSE_1F",
+      "id": "LAYOUT_RIMINI_TOWN_CASA_STE_1F",
       "name": "RiminiTown_CasaSte_1F_Layout",
       "width": 11,
       "height": 9,
@@ -562,7 +562,7 @@
       "blockdata_filepath": "data/layouts/RiminiTown_CasaSte_1F/map.bin"
     },
     {
-      "id": "LAYOUT_RIMINI_TOWN_MAYS_HOUSE_2F",
+      "id": "LAYOUT_RIMINI_TOWN_CASA_STE_2F",
       "name": "RiminiTown_CasaSte_2F_Layout",
       "width": 9,
       "height": 8,
@@ -572,7 +572,7 @@
       "blockdata_filepath": "data/layouts/RiminiTown_CasaSte_2F/map.bin"
     },
     {
-      "id": "LAYOUT_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB",
+      "id": "LAYOUT_RIMINI_TOWN_CASA_TOMMI",
       "name": "RiminiTown_CasaTommi_Layout",
       "width": 13,
       "height": 13,
@@ -4312,7 +4312,7 @@
       "blockdata_filepath": "data/layouts/MeteorFalls_StevensCave/map.bin"
     },
     {
-      "id": "LAYOUT_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB_WITH_TABLE",
+      "id": "LAYOUT_RIMINI_TOWN_CASA_TOMMI_WITH_TABLE",
       "name": "RiminiTown_CasaTommiWithTable_Layout",
       "width": 13,
       "height": 13,

@@ -71,8 +71,8 @@ RiminiTown_CasaSte_2F_EventScript_MeetMay::
 	call_if_eq VAR_FACING, DIR_WEST, RiminiTown_CasaSte_2F_EventScript_MeetMayWest
 	call_if_eq VAR_FACING, DIR_EAST, RiminiTown_CasaSte_2F_EventScript_MeetMayEast
 	setvar VAR_RIMINI_RIVAL_STATE, 3
-	setflag FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_2F_POKE_BALL
-	clearflag FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_STE_2F_POKE_BALL
+	clearflag FLAG_HIDE_RIMINI_TOWN_CASA_STE_RIVAL_BEDROOM
 	setvar VAR_RIMINI_TOWN_STATE, 1
 	savebgm MUS_DUMMY
 	fadedefaultbgm

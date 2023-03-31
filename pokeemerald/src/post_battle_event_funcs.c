@@ -36,9 +36,9 @@ int GameClear(void)
     SetContinueGameWarpStatus();
 
     if (gSaveBlock2Ptr->playerGender == MALE)
-        SetContinueGameWarpToHealLocation(HEAL_LOCATION_RIMINI_TOWN_BRENDANS_HOUSE_2F);
+        SetContinueGameWarpToHealLocation(HEAL_LOCATION_RIMINI_TOWN_CASA_GAS_2F);
     else
-        SetContinueGameWarpToHealLocation(HEAL_LOCATION_RIMINI_TOWN_MAYS_HOUSE_2F);
+        SetContinueGameWarpToHealLocation(HEAL_LOCATION_RIMINI_TOWN_CASA_STE_2F);
 
     ribbonGet = FALSE;
 

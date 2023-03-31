@@ -1,7 +1,7 @@
 {
-  "id": "MAP_RIMINI_TOWN_MAYS_HOUSE_2F",
+  "id": "MAP_RIMINI_TOWN_CASA_STE_2F",
   "name": "RiminiTown_CasaSte_2F",
-  "layout": "LAYOUT_RIMINI_TOWN_MAYS_HOUSE_2F",
+  "layout": "LAYOUT_RIMINI_TOWN_CASA_STE_2F",
   "music": "MUS_RIMINI",
   "region_map_section": "MAPSEC_RIMINI_TOWN",
   "requires_flash": false,
@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
-      "x": 1,
+      "x": 2,
       "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivalsHouse_2F_EventScript_Rival",
-      "flag": "FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_RIVAL_BEDROOM"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_CASA_STE_RIVAL_BEDROOM"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -207,7 +207,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_2F_PICHU_DOLL"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_CASA_STE_2F_PICHU_DOLL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -220,7 +220,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RiminiTown_CasaSte_2F_EventScript_RivalsPokeBall",
-      "flag": "FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_2F_POKE_BALL"
+      "flag": "FLAG_HIDE_RIMINI_TOWN_CASA_STE_2F_POKE_BALL"
     }
   ],
   "warp_events": [
@@ -228,7 +228,7 @@
       "x": 1,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_RIMINI_TOWN_MAYS_HOUSE_1F",
+      "dest_map": "MAP_RIMINI_TOWN_CASA_STE_1F",
       "dest_warp_id": "2"
     }
   ],

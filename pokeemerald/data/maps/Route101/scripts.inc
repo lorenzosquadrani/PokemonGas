@@ -243,17 +243,17 @@ Route101_EventScript_BirchsBag::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route101_EventScript_HideMayInBedroom
 	call_if_eq VAR_RESULT, FEMALE, Route101_EventScript_HideBrendanInBedroom
-	warp MAP_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB, 6, 5
+	warp MAP_RIMINI_TOWN_CASA_TOMMI, 6, 5
 	waitstate
 	release
 	end
 
 Route101_EventScript_HideMayInBedroom::
-	setflag FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_STE_RIVAL_BEDROOM
 	return
 
 Route101_EventScript_HideBrendanInBedroom::
-	setflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_RIVAL_BEDROOM
 	return
 
 Route101_Movement_BirchApproachPlayer:
