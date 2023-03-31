@@ -448,7 +448,7 @@ Route116_Text_RouteSignRustboro:
 
 Route116_Text_RusturfTunnelSign:
 	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
+	.string "“Linking RUSTBORO and RIMINIMARE\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 

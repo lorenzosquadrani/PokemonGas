@@ -3,7 +3,7 @@
   "name": "RiminiTown_BikeShop",
   "layout": "LAYOUT_MAUVILLE_CITY_BIKE_SHOP",
   "music": "MUS_RIMINI",
-  "region_map_section": "MAPSEC_RIMINI_TOWN",
+  "region_map_section": "MAPSEC_RIMINI_MARE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

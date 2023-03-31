@@ -1,0 +1,179 @@
+.set LOCALID_PLAYER, 1
+.set LOCALID_OPPONENT, 2
+.set LOCALID_ATTENDANT, 3
+
+RiminiMare_BattleTentBattleRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RiminiMare_BattleTentBattleRoom_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, RiminiMare_BattleTentBattleRoom_OnFrame
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, RiminiMare_BattleTentBattleRoom_OnWarp
+	.byte 0
+
+	@ On this map the player (OBJ_EVENT_ID_PLAYER) is hidden
+	@ The player is represented instead by object event 1, which has the gfx id VAR_OBJ_GFX_ID_1
+	@ The opponent is represented by object event 2, which has the gfx id VAR_OBJ_GFX_ID_0
+
+RiminiMare_BattleTentBattleRoom_OnTransition:
+	call RiminiMare_BattleTentBattleRoom_EventScript_SetPlayerGfx
+	end
+
+RiminiMare_BattleTentBattleRoom_EventScript_SetPlayerGfx::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, RiminiMare_BattleTentBattleRoom_EventScript_SetPlayerGfxMale
+	goto_if_eq VAR_RESULT, FEMALE, RiminiMare_BattleTentBattleRoom_EventScript_SetPlayerGfxFemale
+	return
+
+RiminiMare_BattleTentBattleRoom_EventScript_SetPlayerGfxMale::
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
+	return
+
+RiminiMare_BattleTentBattleRoom_EventScript_SetPlayerGfxFemale::
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
+	return
+
+RiminiMare_BattleTentBattleRoom_OnFrame:
+	map_script_2 VAR_TEMP_0, 0, RiminiMare_BattleTentBattleRoom_EventScript_EnterRoom
+	.2byte 0
+
+RiminiMare_BattleTentBattleRoom_EventScript_EnterRoom::
+	showobjectat LOCALID_PLAYER, MAP_RIMINI_MARE_BATTLE_TENT_BATTLE_ROOM
+	applymovement LOCALID_PLAYER, RiminiMare_BattleTentBattleRoom_Movement_PlayerEnter
+	waitmovement 0
+	frontier_get FRONTIER_DATA_BATTLE_NUM
+	goto_if_ne VAR_RESULT, 0, RiminiMare_BattleTentBattleRoom_EventScript_AskContinueChallenge
+RiminiMare_BattleTentBattleRoom_EventScript_NextOpponentEnter::
+	tower_setopponent
+	addobject LOCALID_OPPONENT
+	applymovement LOCALID_OPPONENT, RiminiMare_BattleTentBattleRoom_Movement_OpponentEnter
+	waitmovement 0
+	battletent_getopponentintro
+	msgbox gStringVar4, MSGBOX_DEFAULT
+	waitmessage
+	call BattleFrontier_BattlePalaceBattleRoom_EventScript_DoPalaceBattle
+	switch VAR_RESULT
+	case 1, RiminiMare_BattleTentBattleRoom_EventScript_DefeatedOpponent
+RiminiMare_BattleTentBattleRoom_EventScript_WarpToLobbyLost::
+	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST
+	special LoadPlayerParty
+	warp MAP_RIMINI_MARE_BATTLE_TENT_LOBBY, 6, 6
+	waitstate
+
+RiminiMare_BattleTentBattleRoom_EventScript_DefeatedOpponent::
+	frontier_get FRONTIER_DATA_BATTLE_NUM
+	addvar VAR_RESULT, 1
+	frontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT
+	switch VAR_RESULT
+	case 3, RiminiMare_BattleTentBattleRoom_EventScript_WarpToLobbyWon
+	applymovement LOCALID_OPPONENT, RiminiMare_BattleTentBattleRoom_Movement_OpponentExit
+	waitmovement 0
+	removeobject LOCALID_OPPONENT
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons, MSGBOX_DEFAULT
+	special LoadPlayerParty
+	special SavePlayerParty
+	frontier_setpartyorder FRONTIER_PARTY_SIZE
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
+
+RiminiMare_BattleTentBattleRoom_EventScript_AskContinueChallenge::
+	frontier_get FRONTIER_DATA_BATTLE_NUM
+	call_if_eq VAR_RESULT, 1, RiminiMare_BattleTentBattleRoom_EventScript_ReadyFor2ndOpponent
+	call_if_eq VAR_RESULT, 2, RiminiMare_BattleTentBattleRoom_EventScript_ReadyFor3rdOpponent
+	multichoice 20, 6, MULTI_GO_ON_REST_RETIRE, TRUE
+	switch VAR_RESULT
+	case 0, RiminiMare_BattleTentBattleRoom_EventScript_ContinueChallenge
+	case 1, RiminiMare_BattleTentBattleRoom_EventScript_AskPauseChallenge
+	case 2, RiminiMare_BattleTentBattleRoom_EventScript_AskRetireChallenge
+
+RiminiMare_BattleTentBattleRoom_EventScript_AskPauseChallenge::
+	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame, MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, RiminiMare_BattleTentBattleRoom_EventScript_AskContinueChallenge
+	case YES, RiminiMare_BattleTentBattleRoom_EventScript_PauseChallenge
+	case MULTI_B_PRESSED, RiminiMare_BattleTentBattleRoom_EventScript_AskContinueChallenge
+
+RiminiMare_BattleTentBattleRoom_EventScript_AskRetireChallenge::
+	message BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge
+	waitmessage
+	multichoicedefault 20, 8, MULTI_YESNO, 1, FALSE
+	switch VAR_RESULT
+	case 1, RiminiMare_BattleTentBattleRoom_EventScript_AskContinueChallenge
+	case 0, RiminiMare_BattleTentBattleRoom_EventScript_WarpToLobbyLost
+	case MULTI_B_PRESSED, RiminiMare_BattleTentBattleRoom_EventScript_AskContinueChallenge
+
+RiminiMare_BattleTentBattleRoom_EventScript_ContinueChallenge::
+	applymovement LOCALID_ATTENDANT, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	closemessage
+	goto RiminiMare_BattleTentBattleRoom_EventScript_NextOpponentEnter
+
+RiminiMare_BattleTentBattleRoom_EventScript_WarpToLobbyWon::
+	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON
+	special LoadPlayerParty
+	warp MAP_RIMINI_MARE_BATTLE_TENT_LOBBY, 6, 6
+	waitstate
+
+RiminiMare_BattleTentBattleRoom_EventScript_PauseChallenge::
+	message BattleFrontier_BattlePalaceBattleRoom_Text_SavingData
+	waitmessage
+	Riminimaretent_save CHALLENGE_STATUS_PAUSED
+	playse SE_SAVE
+	waitse
+	fadescreen FADE_TO_BLACK
+	frontier_reset
+	end
+
+RiminiMare_BattleTentBattleRoom_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, RiminiMare_BattleTentBattleRoom_EventScript_SetUpObjects
+	.2byte 0
+
+RiminiMare_BattleTentBattleRoom_EventScript_SetUpObjects::
+	hideobjectat LOCALID_PLAYER, MAP_RIMINI_MARE_BATTLE_TENT_BATTLE_ROOM
+	call RiminiMare_BattleTentBattleRoom_EventScript_SetPlayerGfx
+	setvar VAR_TEMP_1, 1
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiMare_BattleTentBattleRoom_Movement_SetInvisible
+	removeobject LOCALID_OPPONENT
+	end
+
+RiminiMare_BattleTentBattleRoom_EventScript_ReadyFor2ndOpponent::
+	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent
+	waitmessage
+	return
+
+RiminiMare_BattleTentBattleRoom_EventScript_ReadyFor3rdOpponent::
+	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent
+	waitmessage
+	return
+
+RiminiMare_BattleTentBattleRoom_Movement_SetInvisible:
+	set_invisible
+	step_end
+
+RiminiMare_BattleTentBattleRoom_Movement_PlayerEnter:
+	set_visible
+	walk_up
+	walk_up
+	walk_up
+	face_right
+	step_end
+
+RiminiMare_BattleTentBattleRoom_Movement_OpponentEnter:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	face_left
+	step_end
+
+RiminiMare_BattleTentBattleRoom_Movement_OpponentExit:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+

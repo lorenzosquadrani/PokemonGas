@@ -20,7 +20,7 @@
 #define MAP_DIPARTIMENTO_FISICA (11 | (0 << 8))
 #define MAP_SANTA_GIUSTINA      (12 | (0 << 8))
 #define MAP_EMILIA_ROAD         (13 | (0 << 8))
-#define MAP_VERDANTURF_TOWN     (14 | (0 << 8))
+#define MAP_RIMINI_MARE         (14 | (0 << 8))
 #define MAP_PACIFIDLOG_TOWN     (15 | (0 << 8))
 #define MAP_ROUTE101            (16 | (0 << 8))
 #define MAP_ROUTE102            (17 | (0 << 8))
@@ -107,16 +107,16 @@
 #define MAP_EMILIA_ROAD_COZMOS_HOUSE            (6 | (5 << 8))
 #define MAP_EMILIA_ROAD_MOVE_RELEARNERS_HOUSE   (7 | (5 << 8))
 
-// gMapGroup_IndoorVerdanturf
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (6 << 8))
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR    (1 | (6 << 8))
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM (2 | (6 << 8))
-#define MAP_VERDANTURF_TOWN_MART                    (3 | (6 << 8))
-#define MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F       (4 | (6 << 8))
-#define MAP_VERDANTURF_TOWN_POKEMON_CENTER_2F       (5 | (6 << 8))
-#define MAP_VERDANTURF_TOWN_WANDAS_HOUSE            (6 | (6 << 8))
-#define MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE (7 | (6 << 8))
-#define MAP_VERDANTURF_TOWN_HOUSE                   (8 | (6 << 8))
+// gMapGroup_IndoorRiminimare
+#define MAP_RIMINI_MARE_BATTLE_TENT_LOBBY       (0 | (6 << 8))
+#define MAP_RIMINI_MARE_BATTLE_TENT_CORRIDOR    (1 | (6 << 8))
+#define MAP_RIMINI_MARE_BATTLE_TENT_BATTLE_ROOM (2 | (6 << 8))
+#define MAP_RIMINI_MARE_MART                    (3 | (6 << 8))
+#define MAP_RIMINI_MARE_POKEMON_CENTER_1F       (4 | (6 << 8))
+#define MAP_RIMINI_MARE_POKEMON_CENTER_2F       (5 | (6 << 8))
+#define MAP_RIMINI_MARE_WANDAS_HOUSE            (6 | (6 << 8))
+#define MAP_RIMINI_MARE_FRIENDSHIP_RATERS_HOUSE (7 | (6 << 8))
+#define MAP_RIMINI_MARE_HOUSE                   (8 | (6 << 8))
 
 // gMapGroup_IndoorPacifidlog
 #define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F (0 | (7 << 8))

@@ -399,7 +399,7 @@ gSongTable::
 	song mus_link_contest_p3, 0, 0
 	song mus_link_contest_p4, 0, 0
 	song mus_encounter_rich, 0, 0
-	song mus_verdanturf, 0, 0
+	song mus_Riminimare, 0, 0
 	song mus_rustboro, 0, 0
 	song mus_poke_center, 0, 0
 	song mus_route104, 0, 0

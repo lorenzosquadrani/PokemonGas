@@ -46,7 +46,7 @@ RusturfTunnel_EventScript_WandasBoyfriend::
 	end
 
 RusturfTunnel_EventScript_AlreadySpokenTo::
-	msgbox RusturfTunnel_Text_ToGetToVerdanturf, MSGBOX_DEFAULT
+	msgbox RusturfTunnel_Text_ToGetToRiminimare, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -476,16 +476,16 @@ RusturfTunnel_Text_WhyCantTheyKeepDigging:
 	.string "… …\p"
 	.string "Why can't they keep digging?\n"
 	.string "Is the bedrock too hard?\p"
-	.string "My beloved awaits me in VERDANTURF\n"
+	.string "My beloved awaits me in RIMINIMARE\n"
 	.string "TOWN just beyond here…\p"
-	.string "If RUSTBORO and VERDANTURF were\n"
+	.string "If RUSTBORO and RIMINIMARE were\n"
 	.string "joined by this tunnel, I could visit\l"
 	.string "her every day…\p"
 	.string "But this…\n"
 	.string "What am I to do?$"
 
-RusturfTunnel_Text_ToGetToVerdanturf:
-	.string "To get from RUSTBORO to VERDANTURF,\n"
+RusturfTunnel_Text_ToGetToRiminimare:
+	.string "To get from RUSTBORO to RIMINIMARE,\n"
 	.string "you need to go to DIPARTIMENTO, then pass\l"
 	.string "through SLATEPORT and MAUVILLE…$"
 

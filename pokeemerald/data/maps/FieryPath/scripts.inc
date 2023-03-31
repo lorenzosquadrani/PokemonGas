@@ -8,7 +8,7 @@ FieryPath_OnTransition:
 	end
 
 FieryPath_EventScript_MoveScottToEmilia::
-	setflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT
+	setflag FLAG_HIDE_RIMINI_MARE_SCOTT
 	clearflag FLAG_HIDE_EMILIA_ROAD_BATTLE_TENT_SCOTT
 	return
 

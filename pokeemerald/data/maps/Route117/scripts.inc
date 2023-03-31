@@ -26,8 +26,8 @@ Route117_EventScript_Girl::
 	msgbox Route117_Text_DayCarePokemonHadNewMove, MSGBOX_NPC
 	end
 
-Route117_EventScript_RouteSignVerdanturf::
-	msgbox Route117_Text_RouteSignVerdanturf, MSGBOX_SIGN
+Route117_EventScript_RouteSignRiminimare::
+	msgbox Route117_Text_RouteSignRiminimare, MSGBOX_SIGN
 	end
 
 Route117_EventScript_RouteSignMauville::
@@ -194,9 +194,9 @@ Route117_Text_ArentTheseFlowersPretty:
 Route117_Text_AirIsTastyHere:
 	.string "The air is tasty here!$"
 
-Route117_Text_RouteSignVerdanturf:
+Route117_Text_RouteSignRiminimare:
 	.string "ROUTE 117\n"
-	.string "{LEFT_ARROW} VERDANTURF TOWN$"
+	.string "{LEFT_ARROW} RIMINIMARE TOWN$"
 
 Route117_Text_RouteSignMauville:
 	.string "ROUTE 117\n"

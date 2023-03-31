@@ -2367,7 +2367,7 @@ MatchCall_Text_May4::
 	.string "MAY: {PLAYER}{KUN}?\p"
 	.string "RUSTURF TUNNEL…\n"
 	.string "They named it that because it\l"
-	.string "joins RUSTBORO and VERDANTURF.$"
+	.string "joins RUSTBORO and RIMINIMARE.$"
 
 MatchCall_Text_May5::
 	.string "MAY: {PLAYER}{KUN}, how are you?\p"
@@ -2493,7 +2493,7 @@ MatchCall_Text_Brendan4::
 	.string "BRENDAN: This voice… {PLAYER}?\p"
 	.string "They gave RUSTURF TUNNEL its name\n"
 	.string "because it joins RUSTBORO and\l"
-	.string "VERDANTURF.\p"
+	.string "RIMINIMARE.\p"
 	.string "Did you know that?$"
 
 MatchCall_Text_Brendan5::
@@ -2601,7 +2601,7 @@ MatchCall_Text_Wally2::
 MatchCall_Text_Wally3::
 	.string "WALLY: Oh, {PLAYER}!\p"
 	.string "I… I left my uncle's place in\n"
-	.string "VERDANTURF without telling anyone.\p"
+	.string "RIMINIMARE without telling anyone.\p"
 	.string "I wonder if he's furious with me…\p"
 	.string "{PLAYER}, you understand how\n"
 	.string "I feel, don't you?$"

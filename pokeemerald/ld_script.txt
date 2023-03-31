@@ -1028,7 +1028,7 @@ SECTIONS {
         sound/songs/midi/mus_link_contest_p3.o(.rodata);
         sound/songs/midi/mus_link_contest_p4.o(.rodata);
         sound/songs/midi/mus_encounter_rich.o(.rodata);
-        sound/songs/midi/mus_verdanturf.o(.rodata);
+        sound/songs/midi/mus_riminimare.o(.rodata);
         sound/songs/midi/mus_rustboro.o(.rodata);
         sound/songs/midi/mus_poke_center.o(.rodata);
         sound/songs/midi/mus_route104.o(.rodata);

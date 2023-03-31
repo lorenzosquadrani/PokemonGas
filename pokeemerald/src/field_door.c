@@ -56,7 +56,7 @@ static const u8 sDoorAnimTiles_UnusedBottoms[] = INCBIN_U8("graphics/door_anims/
 static const u16 sDoorNullPalette11[16] = {};
 static const u8 sDoorAnimTiles_Mauville[] = INCBIN_U8("graphics/door_anims/mauville.4bpp");
 static const u16 sDoorNullPalette12[16] = {};
-static const u8 sDoorAnimTiles_Verdanturf[] = INCBIN_U8("graphics/door_anims/verdanturf.4bpp");
+static const u8 sDoorAnimTiles_Riminimare[] = INCBIN_U8("graphics/door_anims/riminimare.4bpp");
 static const u16 sDoorNullPalette13[16] = {};
 static const u8 sDoorAnimTiles_Slateport[] = INCBIN_U8("graphics/door_anims/slateport.4bpp");
 static const u16 sDoorNullPalette14[16] = {};
@@ -187,7 +187,7 @@ static const u8 sDoorAnimPalettes_Sootopolis[] = {6, 6, 6, 6, 6, 6, 6, 6};
 static const u8 sDoorAnimPalettes_Dipartimento[] = {0, 0, 5, 5, 5, 5, 5, 5};
 static const u8 sDoorAnimPalettes_Slateport[] = {6, 6, 1, 1, 1, 1, 1, 1};
 static const u8 sDoorAnimPalettes_Mauville[] = {7, 7, 7, 7, 7, 7, 7, 7};
-static const u8 sDoorAnimPalettes_Verdanturf[] = {6, 6, 5, 5, 5, 5, 5, 5};
+static const u8 sDoorAnimPalettes_Riminimare[] = {6, 6, 5, 5, 5, 5, 5, 5};
 static const u8 sDoorAnimPalettes_LilycoveWooden[] = {5, 5, 5, 5, 5, 5, 5, 5};
 static const u8 sDoorAnimPalettes_Contest[] = {1, 1, 1, 1, 1, 1, 1, 1};
 static const u8 sDoorAnimPalettes_PetalburgGym[] = {6, 6, 6, 6, 6, 6, 6, 6};
@@ -233,7 +233,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_Emilia_Door_LightRoof,                     DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_EmiliaLightRoof, sDoorAnimPalettes_EmiliaLightRoof},
     {METATILE_Petalburg_Door_Bologna,                        DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Bologna, sDoorAnimPalettes_Bologna},
     {METATILE_Mauville_Door,                                DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Mauville, sDoorAnimPalettes_Mauville},
-    {METATILE_Mauville_Door_Verdanturf,                     DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Verdanturf, sDoorAnimPalettes_Verdanturf},
+    {METATILE_Mauville_Door_Riminimare,                     DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Riminimare, sDoorAnimPalettes_Riminimare},
     {METATILE_Slateport_Door,                               DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Slateport, sDoorAnimPalettes_Slateport},
     {METATILE_Dipartimento_Door,                                 DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Dipartimento, sDoorAnimPalettes_Dipartimento},
     {METATILE_General_Door_Contest,                         DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Contest, sDoorAnimPalettes_Contest},

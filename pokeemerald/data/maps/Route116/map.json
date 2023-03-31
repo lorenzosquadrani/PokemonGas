@@ -14,7 +14,7 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_VERDANTURF_TOWN",
+      "map": "MAP_RIMINI_MARE",
       "offset": 80,
       "direction": "down"
     },

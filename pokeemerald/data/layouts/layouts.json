@@ -142,14 +142,14 @@
       "blockdata_filepath": "data/layouts/EmiliaRoad/map.bin"
     },
     {
-      "id": "LAYOUT_VERDANTURF_TOWN",
-      "name": "VerdanturfTown_Layout",
+      "id": "LAYOUT_RIMINI_MARE",
+      "name": "RiminiMare_Layout",
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
-      "border_filepath": "data/layouts/VerdanturfTown/border.bin",
-      "blockdata_filepath": "data/layouts/VerdanturfTown/map.bin"
+      "border_filepath": "data/layouts/RiminiMare/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiMare/map.bin"
     },
     {
       "id": "LAYOUT_PACIFIDLOG_TOWN",
@@ -752,14 +752,14 @@
       "blockdata_filepath": "data/layouts/UnusedContestRoom1/map.bin"
     },
     {
-      "id": "LAYOUT_VERDANTURF_TOWN_WANDAS_HOUSE",
-      "name": "VerdanturfTown_WandasHouse_Layout",
+      "id": "LAYOUT_RIMINI_MARE_WANDAS_HOUSE",
+      "name": "RiminiMare_WandasHouse_Layout",
       "width": 17,
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/VerdanturfTown_WandasHouse/border.bin",
-      "blockdata_filepath": "data/layouts/VerdanturfTown_WandasHouse/map.bin"
+      "border_filepath": "data/layouts/RiminiMare_WandasHouse/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiMare_WandasHouse/map.bin"
     },
     {
       "id": "LAYOUT_PACIFIDLOG_TOWN_HOUSE1",
@@ -3862,14 +3862,14 @@
       "blockdata_filepath": "data/layouts/BattleTentBattleRoom/map.bin"
     },
     {
-      "id": "LAYOUT_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM",
-      "name": "VerdanturfTown_BattleTentBattleRoom_Layout",
+      "id": "LAYOUT_RIMINI_MARE_BATTLE_TENT_BATTLE_ROOM",
+      "name": "RiminiMare_BattleTentBattleRoom_Layout",
       "width": 13,
       "height": 9,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattleTent",
-      "border_filepath": "data/layouts/VerdanturfTown_BattleTentBattleRoom/border.bin",
-      "blockdata_filepath": "data/layouts/VerdanturfTown_BattleTentBattleRoom/map.bin"
+      "border_filepath": "data/layouts/RiminiMare_BattleTentBattleRoom/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiMare_BattleTentBattleRoom/map.bin"
     },
     {
       "id": "LAYOUT_MIRAGE_TOWER_4F",

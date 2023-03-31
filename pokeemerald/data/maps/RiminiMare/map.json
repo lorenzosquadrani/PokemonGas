@@ -1,9 +1,9 @@
 {
-  "id": "MAP_VERDANTURF_TOWN",
-  "name": "VerdanturfTown",
-  "layout": "LAYOUT_VERDANTURF_TOWN",
-  "music": "MUS_VERDANTURF",
-  "region_map_section": "MAPSEC_VERDANTURF_TOWN",
+  "id": "MAP_RIMINI_MARE",
+  "name": "RiminiMare",
+  "layout": "LAYOUT_RIMINI_MARE",
+  "music": "MUS_RIMINIMARE",
+  "region_map_section": "MAPSEC_MAUVILLE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_TOWN",
@@ -35,7 +35,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "VerdanturfTown_EventScript_Man",
+      "script": "RiminiMare_EventScript_Man",
       "flag": "0"
     },
     {
@@ -48,7 +48,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "VerdanturfTown_EventScript_Twin",
+      "script": "RiminiMare_EventScript_Twin",
       "flag": "0"
     },
     {
@@ -61,7 +61,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "VerdanturfTown_EventScript_Boy",
+      "script": "RiminiMare_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -74,7 +74,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "VerdanturfTown_EventScript_Camper",
+      "script": "RiminiMare_EventScript_Camper",
       "flag": "0"
     }
   ],
@@ -83,28 +83,28 @@
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY",
+      "dest_map": "MAP_RIMINI_MARE_BATTLE_TENT_LOBBY",
       "dest_warp_id": "0"
     },
     {
       "x": 12,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_VERDANTURF_TOWN_MART",
+      "dest_map": "MAP_RIMINI_MARE_MART",
       "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F",
+      "dest_map": "MAP_RIMINI_MARE_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
       "x": 10,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_VERDANTURF_TOWN_WANDAS_HOUSE",
+      "dest_map": "MAP_RIMINI_MARE_WANDAS_HOUSE",
       "dest_warp_id": "0"
     },
     {
@@ -118,14 +118,14 @@
       "x": 1,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE",
+      "dest_map": "MAP_RIMINI_MARE_FRIENDSHIP_RATERS_HOUSE",
       "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_VERDANTURF_TOWN_HOUSE",
+      "dest_map": "MAP_RIMINI_MARE_HOUSE",
       "dest_warp_id": "0"
     }
   ],
@@ -147,7 +147,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "VerdanturfTown_EventScript_TownSign"
+      "script": "RiminiMare_EventScript_TownSign"
     },
     {
       "type": "sign",
@@ -163,7 +163,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "VerdanturfTown_EventScript_WandasHouseSign"
+      "script": "RiminiMare_EventScript_WandasHouseSign"
     },
     {
       "type": "sign",
@@ -187,7 +187,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "VerdanturfTown_EventScript_BattleTentSign"
+      "script": "RiminiMare_EventScript_BattleTentSign"
     },
     {
       "type": "sign",
@@ -195,7 +195,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "VerdanturfTown_EventScript_RusturfTunnelSign"
+      "script": "RiminiMare_EventScript_RusturfTunnelSign"
     }
   ]
 }

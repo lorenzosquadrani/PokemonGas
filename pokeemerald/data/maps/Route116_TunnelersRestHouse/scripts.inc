@@ -11,14 +11,14 @@ Route116_TunnelersRestHouse_EventScript_Tunneler1::
 	end
 
 Route116_TunnelersRestHouse_EventScript_Tunneler2::
-	msgbox Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf, MSGBOX_NPC
+	msgbox Route116_TunnelersRestHouse_Text_ManDiggingHisWayToRiminimare, MSGBOX_NPC
 	end
 
 Route116_TunnelersRestHouse_EventScript_Tunneler3::
 	lock
 	faceplayer
 	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, Route116_TunnelersRestHouse_EventScript_TunnelOpened
-	msgbox Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel, MSGBOX_DEFAULT
+	msgbox Route116_TunnelersRestHouse_Text_GetToRiminimareWithoutTunnel, MSGBOX_DEFAULT
 	release
 	end
 
@@ -38,9 +38,9 @@ Route116_TunnelersRestHouse_Text_WeHadToStopBoring:
 	.string "So, we've got nothing to do but loll\n"
 	.string "around here doing nothing.$"
 
-Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
+Route116_TunnelersRestHouse_Text_ManDiggingHisWayToRiminimare:
 	.string "There's a man digging his way to\n"
-	.string "VERDANTURF all by his lonesome.\l"
+	.string "RIMINIMARE all by his lonesome.\l"
 	.string "He's desperate to get through.\p"
 	.string "He says that if he digs little by little\n"
 	.string "without using machines, he won't\l"
@@ -48,14 +48,14 @@ Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
 	.string "harming the natural environment.\p"
 	.string "I wonder if he made it through yet.$"
 
-Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
-	.string "To get to VERDANTURF without using\n"
+Route116_TunnelersRestHouse_Text_GetToRiminimareWithoutTunnel:
+	.string "To get to RIMINIMARE without using\n"
 	.string "this TUNNEL, you'd have to cross the\l"
 	.string "sea to DIPARTIMENTO, sail on to SLATEPORT,\l"
 	.string "then travel through MAUVILLE.$"
 
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
-	.string "Did you hear? The TUNNEL to VERDANTURF\n"
+	.string "Did you hear? The TUNNEL to RIMINIMARE\n"
 	.string "has gone through!\p"
 	.string "Sometimes, if you hope strongly enough,\n"
 	.string "dreams do come true.$"

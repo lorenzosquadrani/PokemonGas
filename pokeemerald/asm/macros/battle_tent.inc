@@ -1,54 +1,54 @@
-@ Verdanturf Tent
+@ Riminimare Tent
 
-	@ Initialize the Verdanturf Battle Tent challenge
-	.macro verdanturftent_init
-	setvar VAR_0x8004, VERDANTURF_TENT_FUNC_INIT
-	special CallVerdanturfTentFunction
+	@ Initialize the Riminimare Battle Tent challenge
+	.macro Riminimaretent_init
+	setvar VAR_0x8004, RIMINIMARE_TENT_FUNC_INIT
+	special CallRiminimareTentFunction
 	.endm
 
 	@ Get the current prize item id
-	.macro verdanturftent_getprize
-	setvar VAR_0x8004, VERDANTURF_TENT_FUNC_GET_PRIZE
-	special CallVerdanturfTentFunction
+	.macro Riminimaretent_getprize
+	setvar VAR_0x8004, RIMINIMARE_TENT_FUNC_GET_PRIZE
+	special CallRiminimareTentFunction
 	.endm
 
 	@ Unused. Set the prize item to be given
-	.macro verdanturftent_setprize unusedArg:req, itemId:req
-	setvar VAR_0x8004, VERDANTURF_TENT_FUNC_SET_PRIZE
+	.macro Riminimaretent_setprize unusedArg:req, itemId:req
+	setvar VAR_0x8004, RIMINIMARE_TENT_FUNC_SET_PRIZE
 	setvar VAR_0x8005, \unusedArg
 	setvar VAR_0x8006, \itemId
-	special CallVerdanturfTentFunction
+	special CallRiminimareTentFunction
 	.endm
 
 	@ Unused. Set the opponent trainer and gfx. SetNextBattleTentOpponent is used through tower_setopponent instead
-	.macro verdanturftent_setopponentgfx
-	setvar VAR_0x8004, VERDANTURF_TENT_FUNC_SET_OPPONENT_GFX
-	special CallVerdanturfTentFunction
+	.macro Riminimaretent_setopponentgfx
+	setvar VAR_0x8004, RIMINIMARE_TENT_FUNC_SET_OPPONENT_GFX
+	special CallRiminimareTentFunction
 	.endm
 
-	@ Buffers the opponents intro speech to STR_VAR_4. Despite being a Verdanturf Tent function, it serves the same purpose for all 3 tents.
+	@ Buffers the opponents intro speech to STR_VAR_4. Despite being a Riminimare Tent function, it serves the same purpose for all 3 tents.
 	.macro battletent_getopponentintro
-	setvar VAR_0x8004, VERDANTURF_TENT_FUNC_GET_OPPONENT_INTRO
-	special CallVerdanturfTentFunction
+	setvar VAR_0x8004, RIMINIMARE_TENT_FUNC_GET_OPPONENT_INTRO
+	special CallRiminimareTentFunction
 	.endm
 
 	@ Save the game and set the challenge status
-	.macro verdanturftent_save challengeStatus:req
-	setvar VAR_0x8004, VERDANTURF_TENT_FUNC_SAVE
+	.macro Riminimaretent_save challengeStatus:req
+	setvar VAR_0x8004, RIMINIMARE_TENT_FUNC_SAVE
 	setvar VAR_0x8005, \challengeStatus
-	special CallVerdanturfTentFunction
+	special CallRiminimareTentFunction
 	.endm
 
 	@ Set the prize item as randomly selected from a list. Randomness unnecessary, as the list is only 1 item
-	.macro verdanturftent_setrandomprize
-	setvar VAR_0x8004, VERDANTURF_TENT_FUNC_SET_RANDOM_PRIZE
-	special CallVerdanturfTentFunction
+	.macro Riminimaretent_setrandomprize
+	setvar VAR_0x8004, RIMINIMARE_TENT_FUNC_SET_RANDOM_PRIZE
+	special CallRiminimareTentFunction
 	.endm
 
 	@ Give the current prize item. FALSE if no room for prize
-	.macro verdanturftent_giveprize
-	setvar VAR_0x8004, VERDANTURF_TENT_FUNC_GIVE_PRIZE
-	special CallVerdanturfTentFunction
+	.macro Riminimaretent_giveprize
+	setvar VAR_0x8004, RIMINIMARE_TENT_FUNC_GIVE_PRIZE
+	special CallRiminimareTentFunction
 	.endm
 
 

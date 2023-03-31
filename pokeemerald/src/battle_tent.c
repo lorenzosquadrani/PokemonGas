@@ -20,14 +20,14 @@
 #include "constants/trainers.h"
 
 // This file's functions.
-static void InitVerdanturfTentChallenge(void);
-static void GetVerdanturfTentPrize(void);
-static void SetVerdanturfTentPrize(void);
-static void SetVerdanturfTentTrainerGfx(void);
-static void BufferVerdanturfTentTrainerIntro(void);
-static void SaveVerdanturfTentChallenge(void);
-static void SetRandomVerdanturfTentPrize(void);
-static void GiveVerdanturfTentPrize(void);
+static void InitRiminimareTentChallenge(void);
+static void GetRiminimareTentPrize(void);
+static void SetRiminimareTentPrize(void);
+static void SetRiminimareTentTrainerGfx(void);
+static void BufferRiminimareTentTrainerIntro(void);
+static void SaveRiminimareTentChallenge(void);
+static void SetRandomRiminimareTentPrize(void);
+static void GiveRiminimareTentPrize(void);
 static void InitEmiliaTentChallenge(void);
 static void GetEmiliaTentPrize(void);
 static void SetEmiliaTentPrize(void);
@@ -50,7 +50,7 @@ static void GenerateInitialRentalMons(void);
  * Battle Tents are mini versions of particular Battle Frontier facilities
  * As such they each share some scripts and functions with their counterpart
  *
- * Verdanturf Battle Tent: Battle Palace
+ * Riminimare Battle Tent: Battle Palace
  * Emilia Battle Tent:  Battle Arena
  * Slateport Battle Tent:  Battle Factory
  *
@@ -58,19 +58,19 @@ static void GenerateInitialRentalMons(void);
 
 static u16 sRandMonId;
 
-void static (*const sVerdanturfTentFuncs[])(void) =
+void static (*const sRiminimareTentFuncs[])(void) =
 {
-    [VERDANTURF_TENT_FUNC_INIT]               = InitVerdanturfTentChallenge,
-    [VERDANTURF_TENT_FUNC_GET_PRIZE]          = GetVerdanturfTentPrize,
-    [VERDANTURF_TENT_FUNC_SET_PRIZE]          = SetVerdanturfTentPrize,
-    [VERDANTURF_TENT_FUNC_SET_OPPONENT_GFX]   = SetVerdanturfTentTrainerGfx,
-    [VERDANTURF_TENT_FUNC_GET_OPPONENT_INTRO] = BufferVerdanturfTentTrainerIntro,
-    [VERDANTURF_TENT_FUNC_SAVE]               = SaveVerdanturfTentChallenge,
-    [VERDANTURF_TENT_FUNC_SET_RANDOM_PRIZE]   = SetRandomVerdanturfTentPrize,
-    [VERDANTURF_TENT_FUNC_GIVE_PRIZE]         = GiveVerdanturfTentPrize
+    [RIMINIMARE_TENT_FUNC_INIT]               = InitRiminimareTentChallenge,
+    [RIMINIMARE_TENT_FUNC_GET_PRIZE]          = GetRiminimareTentPrize,
+    [RIMINIMARE_TENT_FUNC_SET_PRIZE]          = SetRiminimareTentPrize,
+    [RIMINIMARE_TENT_FUNC_SET_OPPONENT_GFX]   = SetRiminimareTentTrainerGfx,
+    [RIMINIMARE_TENT_FUNC_GET_OPPONENT_INTRO] = BufferRiminimareTentTrainerIntro,
+    [RIMINIMARE_TENT_FUNC_SAVE]               = SaveRiminimareTentChallenge,
+    [RIMINIMARE_TENT_FUNC_SET_RANDOM_PRIZE]   = SetRandomRiminimareTentPrize,
+    [RIMINIMARE_TENT_FUNC_GIVE_PRIZE]         = GiveRiminimareTentPrize
 };
 
-static const u16 sVerdanturfTentRewards[] = {ITEM_NEST_BALL};
+static const u16 sRiminimareTentRewards[] = {ITEM_NEST_BALL};
 
 void static (*const sEmiliaTentFuncs[])(void) =
 {
@@ -102,12 +102,12 @@ void static (*const sSlateportTentFuncs[])(void) =
 static const u16 sSlateportTentRewards[] = {ITEM_FULL_HEAL};
 
 // code
-void CallVerdanturfTentFunction(void)
+void CallRiminimareTentFunction(void)
 {
-    sVerdanturfTentFuncs[gSpecialVar_0x8004]();
+    sRiminimareTentFuncs[gSpecialVar_0x8004]();
 }
 
-static void InitVerdanturfTentChallenge(void)
+static void InitRiminimareTentChallenge(void)
 {
     gSaveBlock2Ptr->frontier.challengeStatus = 0;
     gSaveBlock2Ptr->frontier.curChallengeBattleNum = 0;
@@ -115,29 +115,29 @@ static void InitVerdanturfTentChallenge(void)
     SetDynamicWarp(0, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE);
 }
 
-static void GetVerdanturfTentPrize(void)
+static void GetRiminimareTentPrize(void)
 {
-    gSpecialVar_Result = gSaveBlock2Ptr->frontier.verdanturfTentPrize;
+    gSpecialVar_Result = gSaveBlock2Ptr->frontier.RiminimareTentPrize;
 }
 
-static void SetVerdanturfTentPrize(void)
+static void SetRiminimareTentPrize(void)
 {
-    gSaveBlock2Ptr->frontier.verdanturfTentPrize = gSpecialVar_0x8006;
+    gSaveBlock2Ptr->frontier.RiminimareTentPrize = gSpecialVar_0x8006;
 }
 
-static void SetVerdanturfTentTrainerGfx(void)
+static void SetRiminimareTentTrainerGfx(void)
 {
     gTrainerBattleOpponent_A = (u32)((Random() % 255) * 5) / 64;
     SetBattleFacilityTrainerGfxId(gTrainerBattleOpponent_A, 0);
 }
 
-static void BufferVerdanturfTentTrainerIntro(void)
+static void BufferRiminimareTentTrainerIntro(void)
 {
     if (gTrainerBattleOpponent_A < FRONTIER_TRAINERS_COUNT)
         FrontierSpeechToString(gFacilityTrainers[gTrainerBattleOpponent_A].speechBefore);
 }
 
-static void SaveVerdanturfTentChallenge(void)
+static void SaveRiminimareTentChallenge(void)
 {
     gSaveBlock2Ptr->frontier.challengeStatus = gSpecialVar_0x8005;
     VarSet(VAR_TEMP_0, 0);
@@ -145,17 +145,17 @@ static void SaveVerdanturfTentChallenge(void)
     SaveGameFrontier();
 }
 
-static void SetRandomVerdanturfTentPrize(void)
+static void SetRandomRiminimareTentPrize(void)
 {
-    gSaveBlock2Ptr->frontier.verdanturfTentPrize = sVerdanturfTentRewards[Random() % ARRAY_COUNT(sVerdanturfTentRewards)];
+    gSaveBlock2Ptr->frontier.RiminimareTentPrize = sRiminimareTentRewards[Random() % ARRAY_COUNT(sRiminimareTentRewards)];
 }
 
-static void GiveVerdanturfTentPrize(void)
+static void GiveRiminimareTentPrize(void)
 {
-    if (AddBagItem(gSaveBlock2Ptr->frontier.verdanturfTentPrize, 1) == TRUE)
+    if (AddBagItem(gSaveBlock2Ptr->frontier.RiminimareTentPrize, 1) == TRUE)
     {
-        CopyItemName(gSaveBlock2Ptr->frontier.verdanturfTentPrize, gStringVar1);
-        gSaveBlock2Ptr->frontier.verdanturfTentPrize = ITEM_NONE;
+        CopyItemName(gSaveBlock2Ptr->frontier.RiminimareTentPrize, gStringVar1);
+        gSaveBlock2Ptr->frontier.RiminimareTentPrize = ITEM_NONE;
         gSpecialVar_Result = TRUE;
     }
     else

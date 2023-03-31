@@ -7,7 +7,7 @@
     "gMapGroup_IndoorDipartimento",
     "gMapGroup_IndoorSanta",
     "gMapGroup_IndoorEmilia",
-    "gMapGroup_IndoorVerdanturf",
+    "gMapGroup_IndoorRiminimare",
     "gMapGroup_IndoorPacifidlog",
     "gMapGroup_IndoorPetalburg",
     "gMapGroup_IndoorSlateport",
@@ -51,7 +51,7 @@
     "DipartimentoFisica",
     "SantaGiustina",
     "EmiliaRoad",
-    "VerdanturfTown",
+    "RiminiMare",
     "PacifidlogTown",
     "Route101",
     "Route102",
@@ -138,16 +138,16 @@
     "EmiliaRoad_CozmosHouse",
     "EmiliaRoad_MoveRelearnersHouse"
   ],
-  "gMapGroup_IndoorVerdanturf": [
-    "VerdanturfTown_BattleTentLobby",
-    "VerdanturfTown_BattleTentCorridor",
-    "VerdanturfTown_BattleTentBattleRoom",
-    "VerdanturfTown_Mart",
-    "VerdanturfTown_PokemonCenter_1F",
-    "VerdanturfTown_PokemonCenter_2F",
-    "VerdanturfTown_WandasHouse",
-    "VerdanturfTown_FriendshipRatersHouse",
-    "VerdanturfTown_House"
+  "gMapGroup_IndoorRiminimare": [
+    "RiminiMare_BattleTentLobby",
+    "RiminiMare_BattleTentCorridor",
+    "RiminiMare_BattleTentBattleRoom",
+    "RiminiMare_Mart",
+    "RiminiMare_PokemonCenter_1F",
+    "RiminiMare_PokemonCenter_2F",
+    "RiminiMare_WandasHouse",
+    "RiminiMare_FriendshipRatersHouse",
+    "RiminiMare_House"
   ],
   "gMapGroup_IndoorPacifidlog": [
     "PacifidlogTown_PokemonCenter_1F",

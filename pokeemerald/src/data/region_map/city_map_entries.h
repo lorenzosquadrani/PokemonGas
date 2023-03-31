@@ -26,9 +26,9 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .tilemap = gPokenavCityMap_Emilia_0,
     },
     {
-        .mapSecId = MAPSEC_VERDANTURF_TOWN,
+        .mapSecId = MAPSEC_RIMINI_MARE,
         .index = 0,
-        .tilemap = gPokenavCityMap_Verdanturf_0,
+        .tilemap = gPokenavCityMap_Riminimare_0,
     },
     {
         .mapSecId = MAPSEC_PACIFIDLOG_TOWN,

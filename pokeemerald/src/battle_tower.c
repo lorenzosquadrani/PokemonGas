@@ -3312,7 +3312,7 @@ static u16 GetBattleTentTrainerId(void)
 {
     u32 facility = VarGet(VAR_FRONTIER_FACILITY);
 
-    if (facility == FRONTIER_FACILITY_PALACE)       // Verdanturf Tent; uses Palace mechanics
+    if (facility == FRONTIER_FACILITY_PALACE)       // Riminimare Tent; uses Palace mechanics
         return Random() % NUM_BATTLE_TENT_TRAINERS;
     else if (facility == FRONTIER_FACILITY_ARENA)   // Emilia Tent; uses Arena mechanics
         return Random() % NUM_BATTLE_TENT_TRAINERS;
@@ -3336,8 +3336,8 @@ static u8 SetTentPtrsGetLevel(void)
     }
     else if (facility == FRONTIER_FACILITY_PALACE)
     {
-        gFacilityTrainers = gVerdanturfBattleTentTrainers;
-        gFacilityTrainerMons = gVerdanturfBattleTentMons;
+        gFacilityTrainers = gRiminimareBattleTentTrainers;
+        gFacilityTrainerMons = gRiminimareBattleTentMons;
     }
     else if (facility == FRONTIER_FACILITY_ARENA)
     {

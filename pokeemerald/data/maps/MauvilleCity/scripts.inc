@@ -157,8 +157,8 @@ MauvilleCity_EventScript_WallyAndUncleExitEast::
 MauvilleCity_EventScript_DefeatedWally::
 	removeobject LOCALID_WALLY
 	removeobject LOCALID_WALLYS_UNCLE
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE
+	clearflag FLAG_HIDE_RIMINI_MARE_WANDAS_HOUSE_WALLY
+	clearflag FLAG_HIDE_RIMINI_MARE_WANDAS_HOUSE_WALLYS_UNCLE
 	setflag FLAG_DEFEATED_WALLY_MAUVILLE
 	setvar VAR_WALLY_CALL_STEP_COUNTER, 0
 	setflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL
@@ -205,7 +205,7 @@ MauvilleCity_EventScript_BattleWally::
 	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT
+	msgbox MauvilleCity_Text_WallyIllGoBackToRiminimare, MSGBOX_DEFAULT
 	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox MauvilleCity_Text_ThankYouNotEnoughToBattle, MSGBOX_DEFAULT
@@ -519,9 +519,9 @@ MauvilleCity_Text_WallyDefeat:
 	.string "… … … … … … … …\p"
 	.string "I lost…$"
 
-MauvilleCity_Text_WallyIllGoBackToVerdanturf:
+MauvilleCity_Text_WallyIllGoBackToRiminimare:
 	.string "WALLY: UNCLE…\n"
-	.string "I'll go back to VERDANTURF…$"
+	.string "I'll go back to RIMINIMARE…$"
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
 	.string "{PLAYER}, thank you.\n"
@@ -543,7 +543,7 @@ MauvilleCity_Text_UncleVisitUsSometime:
 	.string "that you must be the TRAINER who kept\l"
 	.string "an eye out for WALLY when he caught\l"
 	.string "his POKéMON.\p"
-	.string "Why don't you visit us in VERDANTURF\n"
+	.string "Why don't you visit us in RIMINIMARE\n"
 	.string "sometime?\l"
 	.string "I'm sure WALLY would enjoy it.$"
 

@@ -253,7 +253,7 @@ gSpecials::
 	def_special CallBattlePikeFunction
 	def_special CallBattlePyramidFunction
 	def_special StopMapMusic
-	def_special CallVerdanturfTentFunction
+	def_special CallRiminimareTentFunction
 	def_special CallEmiliaTentFunction
 	def_special CallSlateportTentFunction
 	def_special ChoosePartyForBattleFrontier

@@ -115,7 +115,7 @@ gStdScripts_End::
 	.include "data/maps/DipartimentoFisica/scripts.inc"
 	.include "data/maps/SantaGiustina/scripts.inc"
 	.include "data/maps/EmiliaRoad/scripts.inc"
-	.include "data/maps/VerdanturfTown/scripts.inc"
+	.include "data/maps/RiminiMare/scripts.inc"
 	.include "data/maps/PacifidlogTown/scripts.inc"
 	.include "data/maps/Route101/scripts.inc"
 	.include "data/maps/Route102/scripts.inc"
@@ -189,15 +189,15 @@ gStdScripts_End::
 	.include "data/maps/EmiliaRoad_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/EmiliaRoad_CozmosHouse/scripts.inc"
 	.include "data/maps/EmiliaRoad_MoveRelearnersHouse/scripts.inc"
-	.include "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc"
-	.include "data/maps/VerdanturfTown_BattleTentCorridor/scripts.inc"
-	.include "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc"
-	.include "data/maps/VerdanturfTown_Mart/scripts.inc"
-	.include "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/VerdanturfTown_PokemonCenter_2F/scripts.inc"
-	.include "data/maps/VerdanturfTown_WandasHouse/scripts.inc"
-	.include "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc"
-	.include "data/maps/VerdanturfTown_House/scripts.inc"
+	.include "data/maps/RiminiMare_BattleTentLobby/scripts.inc"
+	.include "data/maps/RiminiMare_BattleTentCorridor/scripts.inc"
+	.include "data/maps/RiminiMare_BattleTentBattleRoom/scripts.inc"
+	.include "data/maps/RiminiMare_Mart/scripts.inc"
+	.include "data/maps/RiminiMare_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/RiminiMare_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/RiminiMare_WandasHouse/scripts.inc"
+	.include "data/maps/RiminiMare_FriendshipRatersHouse/scripts.inc"
+	.include "data/maps/RiminiMare_House/scripts.inc"
 	.include "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc"
 	.include "data/maps/PacifidlogTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/PacifidlogTown_House1/scripts.inc"
@@ -775,8 +775,8 @@ EventScript_HideMrBriney::
 RusturfTunnel_EventScript_SetRusturfTunnelOpen::
 	removeobject LOCALID_WANDAS_BF
 	removeobject LOCALID_WANDA
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDAS_BOYFRIEND
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA
+	clearflag FLAG_HIDE_RIMINI_MARE_WANDAS_HOUSE_WANDAS_BOYFRIEND
+	clearflag FLAG_HIDE_RIMINI_MARE_WANDAS_HOUSE_WANDA
 	setvar VAR_RUSTURF_TUNNEL_STATE, 6
 	setflag FLAG_RUSTURF_TUNNEL_OPENED
 	return

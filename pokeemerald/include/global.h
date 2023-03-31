@@ -422,7 +422,7 @@ struct BattleFrontier
     /*0xE2C*/ struct PyramidBag pyramidBag;
     /*0xE68*/ u8 pyramidLightRadius;
     /*0xE69*/ //u8 padding4;
-    /*0xE6A*/ u16 verdanturfTentPrize;
+    /*0xE6A*/ u16 RiminimareTentPrize;
     /*0xE6C*/ u16 emiliaTentPrize;
     /*0xE6E*/ u16 slateportTentPrize;
     /*0xE70*/ struct RentalMon rentalMons[FRONTIER_PARTY_SIZE * 2];

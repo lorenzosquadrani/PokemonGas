@@ -8,7 +8,7 @@
 // Battle Frontier facility ids.
 #define FRONTIER_FACILITY_TOWER    0
 #define FRONTIER_FACILITY_DOME     1
-#define FRONTIER_FACILITY_PALACE   2  // also Verdanturf Tent
+#define FRONTIER_FACILITY_PALACE   2  // also Riminimare Tent
 #define FRONTIER_FACILITY_ARENA    3  // also Emilia Tent
 #define FRONTIER_FACILITY_FACTORY  4  // also Slateport Tent
 #define FRONTIER_FACILITY_PIKE     5

@@ -490,7 +490,7 @@
 #define FLAG_CAUGHT_LATIAS_OR_LATIOS         0x1C9
 #define FLAG_CAUGHT_MEW                      0x1CA
 #define FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE 0x1CB
-#define FLAG_MET_SCOTT_IN_VERDANTURF         0x1CC
+#define FLAG_MET_SCOTT_IN_RIMINIMARE         0x1CC
 #define FLAG_MET_SCOTT_IN_EMILIA          0x1CD
 #define FLAG_MET_SCOTT_IN_LILYCOVE           0x1CE
 #define FLAG_MET_SCOTT_IN_EVERGRANDE         0x1CF
@@ -809,7 +809,7 @@
 #define FLAG_HIDE_DEOXYS                                            0x2FB
 #define FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE                      0x2FC
 #define FLAG_HIDE_MAUVILLE_CITY_SCOTT                               0x2FD
-#define FLAG_HIDE_VERDANTURF_TOWN_SCOTT                             0x2FE
+#define FLAG_HIDE_RIMINI_MARE_SCOTT                             0x2FE
 #define FLAG_HIDE_EMILIA_ROAD_BATTLE_TENT_SCOTT                  0x2FF
 #define FLAG_HIDE_ROUTE_111_VICTOR_WINSTRATE                        0x300
 #define FLAG_HIDE_ROUTE_111_VICTORIA_WINSTRATE                      0x301
@@ -849,10 +849,10 @@
 #define FLAG_HIDE_SLATEPORT_CITY_CONTEST_REPORTER                   0x323
 #define FLAG_HIDE_MAUVILLE_CITY_WALLY                               0x324
 #define FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE                        0x325
-#define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY                0x326
+#define FLAG_HIDE_RIMINI_MARE_WANDAS_HOUSE_WALLY                0x326
 #define FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND                   0x327
-#define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDAS_BOYFRIEND     0x328
-#define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE         0x329
+#define FLAG_HIDE_RIMINI_MARE_WANDAS_HOUSE_WANDAS_BOYFRIEND     0x328
+#define FLAG_HIDE_RIMINI_MARE_WANDAS_HOUSE_WALLYS_UNCLE         0x329
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_SCOTT                           0x32A
 #define FLAG_HIDE_RIMINI_TOWN_BIRCHS_LAB_POKEBALL_CYNDAQUIL     0x32B
 #define FLAG_HIDE_RIMINI_TOWN_BIRCHS_LAB_POKEBALL_TOTODILE      0x32C
@@ -1027,7 +1027,7 @@
 #define FLAG_HIDE_ROUTE_120_KECLEON_BRIDGE_SHADOW                   0x3D5
 #define FLAG_HIDE_ROUTE_120_KECLEON_1                               0x3D6
 #define FLAG_HIDE_RUSTURF_TUNNEL_WANDA                              0x3D7
-#define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA                0x3D8
+#define FLAG_HIDE_RIMINI_MARE_WANDAS_HOUSE_WANDA                0x3D8
 #define FLAG_HIDE_ROUTE_120_KECLEON_2                               0x3D9
 #define FLAG_HIDE_ROUTE_120_KECLEON_3                               0x3DA
 #define FLAG_HIDE_ROUTE_120_KECLEON_4                               0x3DB
@@ -1367,7 +1367,7 @@
 #define FLAG_VISITED_DIPARTIMENTO_FISICA                   (SYSTEM_FLAGS + 0x11)
 #define FLAG_VISITED_SANTA_GIUSTINA                 (SYSTEM_FLAGS + 0x12)
 #define FLAG_VISITED_EMILIA_ROAD                 (SYSTEM_FLAGS + 0x13)
-#define FLAG_VISITED_VERDANTURF_TOWN                (SYSTEM_FLAGS + 0x14)
+#define FLAG_VISITED_RIMINI_MARE                (SYSTEM_FLAGS + 0x14)
 #define FLAG_VISITED_PACIFIDLOG_TOWN                (SYSTEM_FLAGS + 0x15)
 #define FLAG_VISITED_PETALBURG_CITY                 (SYSTEM_FLAGS + 0x16)
 #define FLAG_VISITED_SLATEPORT_CITY                 (SYSTEM_FLAGS + 0x17)

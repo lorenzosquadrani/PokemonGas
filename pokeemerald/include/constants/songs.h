@@ -326,7 +326,7 @@
 #define MUS_LINK_CONTEST_P3         395 // MUS_TEST3
 #define MUS_LINK_CONTEST_P4         396 // MUS_TEST4
 #define MUS_ENCOUNTER_RICH          397 // MUS_TEST
-#define MUS_VERDANTURF              398 // MUS_GOMACHI0
+#define MUS_RIMINIMARE              398 // MUS_GOMACHI0
 #define MUS_RUSTBORO                399 // MUS_GOTOWN
 #define MUS_POKE_CENTER             400 // MUS_POKECEN
 #define MUS_ROUTE104                401 // MUS_NEXTROAD
