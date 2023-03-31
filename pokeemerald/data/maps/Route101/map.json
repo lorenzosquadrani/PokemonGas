@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_RIMINI_TOWN",
-      "offset": -33,
+      "offset": -16,
       "direction": "down"
     },
     {
