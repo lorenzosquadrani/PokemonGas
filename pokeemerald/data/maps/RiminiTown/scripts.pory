@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_TWIN, 1
 .set LOCALID_MOM, 4
 .set LOCALID_RIVAL, 7
@@ -1002,10 +1003,9 @@ RiminiTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
-RiminiTown_EventScript_SteSign::
-	msgbox RiminiTown_EventScript_SteSign_Text_0, MSGBOX_SIGN
+`
+
+script RiminiTown_EventScript_SteSign {
+	msgbox("Casa di Ste", MSGBOX_SIGN)
 	end
-
-
-RiminiTown_EventScript_SteSign_Text_0:
-	.string "Casa di Ste$"
+}

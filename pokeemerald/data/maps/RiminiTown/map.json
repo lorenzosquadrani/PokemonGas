@@ -129,7 +129,7 @@
       "type": "sign",
       "x": 36,
       "y": 21,
-      "elevation": 3,
+      "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "RiminiTown_EventScript_CavaSign"
     },
@@ -137,7 +137,7 @@
       "type": "sign",
       "x": 22,
       "y": 21,
-      "elevation": 3,
+      "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "RiminiTown_EventScript_SteSign"
     },

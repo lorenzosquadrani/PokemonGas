@@ -408,6 +408,10 @@ RiminiTown_EventScript_TommiSign::
 	msgbox RiminiTown_Text_TommiHouse, MSGBOX_SIGN
 	end
 
+RiminiTown_EventScript_SteSign::
+	msgbox RiminiTown_Text_SteHouse, MSGBOX_SIGN
+	end
+
 RiminiTown_EventScript_CavaSign::
 	msgbox RiminiTown_Text_Cava, MSGBOX_SIGN
 	end
@@ -988,6 +992,9 @@ RiminiTown_Text_GasHouse:
 RiminiTown_Text_TommiHouse:
 	.string "Casa di Tommi$"
 
+RiminiTown_Text_SteHouse:
+	.string "Casa di Ste$"
+
 RiminiTown_Text_Cava:
 	.string "La Cava$"
 
@@ -1001,11 +1008,3 @@ RiminiTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I gave you?\p"
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
-
-RiminiTown_EventScript_SteSign::
-	msgbox RiminiTown_EventScript_SteSign_Text_0, MSGBOX_SIGN
-	end
-
-
-RiminiTown_EventScript_SteSign_Text_0:
-	.string "Casa di Ste$"
