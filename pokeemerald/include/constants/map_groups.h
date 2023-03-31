@@ -66,12 +66,12 @@
 #define MAP_RIMINI_TOWN_MARE    (57 | (0 << 8))
 
 // gMapGroup_IndoorRimini
-#define MAP_RIMINI_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
-#define MAP_RIMINI_TOWN_BRENDANS_HOUSE_2F    (1 | (1 << 8))
-#define MAP_RIMINI_TOWN_MAYS_HOUSE_1F        (2 | (1 << 8))
-#define MAP_RIMINI_TOWN_MAYS_HOUSE_2F        (3 | (1 << 8))
-#define MAP_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
-#define MAP_RIMINI_TOWN_CASA_CHECCO_1F       (5 | (1 << 8))
+#define MAP_RIMINI_TOWN_CASA_GAS_1F    (0 | (1 << 8))
+#define MAP_RIMINI_TOWN_CASA_GAS_2F    (1 | (1 << 8))
+#define MAP_RIMINI_TOWN_CASA_STE_1F    (2 | (1 << 8))
+#define MAP_RIMINI_TOWN_CASA_STE_2F    (3 | (1 << 8))
+#define MAP_RIMINI_TOWN_CASA_TOMMI     (4 | (1 << 8))
+#define MAP_RIMINI_TOWN_CASA_CHECCO_1F (5 | (1 << 8))
 
 // gMapGroup_IndoorBologna
 #define MAP_BOLOGNA_TOWN_HOUSE1            (0 | (2 << 8))

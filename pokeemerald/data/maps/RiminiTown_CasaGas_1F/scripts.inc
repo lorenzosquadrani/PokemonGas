@@ -14,8 +14,8 @@ RiminiTown_CasaGas_1F_OnLoad:
 	end
 
 RiminiTown_CasaGas_1F_EventScript_SetMovingBoxes::
-	setmetatile 5, 4, METATILE_BrendansMaysHouse_MovingBox_Open, TRUE
-	setmetatile 5, 2, METATILE_BrendansMaysHouse_MovingBox_Closed, TRUE
+	setmetatile 5, 4, METATILE_CasaGasSte_MovingBox_Open, TRUE
+	setmetatile 5, 2, METATILE_CasaGasSte_MovingBox_Closed, TRUE
 	return
 
 RiminiTown_CasaGas_1F_EventScript_CheckShowShoesManual::
@@ -24,7 +24,7 @@ RiminiTown_CasaGas_1F_EventScript_CheckShowShoesManual::
 	return
 
 RiminiTown_CasaGas_1F_EventScript_ShowRunningShoesManual::
-	setmetatile 3, 7, METATILE_BrendansMaysHouse_BookOnTable, TRUE
+	setmetatile 3, 7, METATILE_CasaGasSte_BookOnTable, TRUE
 	return
 
 RiminiTown_CasaGas_1F_OnTransition:

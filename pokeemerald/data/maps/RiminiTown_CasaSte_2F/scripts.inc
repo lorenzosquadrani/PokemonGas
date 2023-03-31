@@ -1,63 +1,63 @@
 .set LOCALID_RIVAL, 1
 
-RiminiTown_MaysHouse_2F_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_MaysHouse_2F_OnTransition
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, RiminiTown_MaysHouse_2F_OnWarp
+RiminiTown_CasaSte_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_CasaSte_2F_OnTransition
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, RiminiTown_CasaSte_2F_OnWarp
 	.byte 0
 
-RiminiTown_MaysHouse_2F_OnTransition:
-	call_if_lt VAR_RIMINI_RIVAL_STATE, 2, RiminiTown_MaysHouse_2F_EventScript_CheckSetReadyToMeetMay
-	call_if_ge VAR_RIMINI_RIVAL_STATE, 3, RiminiTown_MaysHouse_2F_EventScript_CheckShouldUpdateMayPos
+RiminiTown_CasaSte_2F_OnTransition:
+	call_if_lt VAR_RIMINI_RIVAL_STATE, 2, RiminiTown_CasaSte_2F_EventScript_CheckSetReadyToMeetMay
+	call_if_ge VAR_RIMINI_RIVAL_STATE, 3, RiminiTown_CasaSte_2F_EventScript_CheckShouldUpdateMayPos
 	call_if_eq VAR_RIMINI_INTRO_STATE, 4, PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet
 	call SecretBase_EventScript_SetDecorationFlags
 	setvar VAR_SECRET_BASE_INITIALIZED, 0
 	end
 
-RiminiTown_MaysHouse_2F_EventScript_CheckShouldUpdateMayPos::
-	goto_if_set FLAG_MET_RIVAL_LILYCOVE, RiminiTown_MaysHouse_2F_EventScript_TryUpdateMayPos
-	goto_if_ge VAR_BIRCH_LAB_STATE, 2, RiminiTown_MaysHouse_2F_EventScript_Ret
-	goto RiminiTown_MaysHouse_2F_EventScript_TryUpdateMayPos
+RiminiTown_CasaSte_2F_EventScript_CheckShouldUpdateMayPos::
+	goto_if_set FLAG_MET_RIVAL_LILYCOVE, RiminiTown_CasaSte_2F_EventScript_TryUpdateMayPos
+	goto_if_ge VAR_BIRCH_LAB_STATE, 2, RiminiTown_CasaSte_2F_EventScript_Ret
+	goto RiminiTown_CasaSte_2F_EventScript_TryUpdateMayPos
 
-RiminiTown_MaysHouse_2F_EventScript_TryUpdateMayPos::
+RiminiTown_CasaSte_2F_EventScript_TryUpdateMayPos::
 	checkplayergender
-	goto_if_eq VAR_RESULT, FEMALE, RiminiTown_MaysHouse_2F_EventScript_Ret
-	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, RiminiTown_MaysHouse_2F_EventScript_Ret
+	goto_if_eq VAR_RESULT, FEMALE, RiminiTown_CasaSte_2F_EventScript_Ret
+	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, RiminiTown_CasaSte_2F_EventScript_Ret
 	setobjectxyperm LOCALID_RIVAL, 8, 2
 	setobjectmovementtype LOCALID_RIVAL, MOVEMENT_TYPE_FACE_UP
 	return
 
-RiminiTown_MaysHouse_2F_EventScript_Ret::
+RiminiTown_CasaSte_2F_EventScript_Ret::
 	return
 
-RiminiTown_MaysHouse_2F_EventScript_CheckSetReadyToMeetMay::
+RiminiTown_CasaSte_2F_EventScript_CheckSetReadyToMeetMay::
 	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, RiminiTown_MaysHouse_2F_EventScript_SetReadyToMeetMay
+	goto_if_eq VAR_RESULT, MALE, RiminiTown_CasaSte_2F_EventScript_SetReadyToMeetMay
 	return
 
-RiminiTown_MaysHouse_2F_EventScript_SetReadyToMeetMay::
+RiminiTown_CasaSte_2F_EventScript_SetReadyToMeetMay::
 	setvar VAR_RIMINI_RIVAL_STATE, 2
 	return
 
-RiminiTown_MaysHouse_2F_OnWarp:
-	map_script_2 VAR_SECRET_BASE_INITIALIZED, 0, RiminiTown_MaysHouse_2F_EventScript_CheckInitDecor
+RiminiTown_CasaSte_2F_OnWarp:
+	map_script_2 VAR_SECRET_BASE_INITIALIZED, 0, RiminiTown_CasaSte_2F_EventScript_CheckInitDecor
 	.2byte 0
 
-RiminiTown_MaysHouse_2F_EventScript_CheckInitDecor::
+RiminiTown_CasaSte_2F_EventScript_CheckInitDecor::
 	checkplayergender
 	goto_if_eq VAR_RESULT, FEMALE, SecretBase_EventScript_InitDecorations
 	end
 
-RiminiTown_MaysHouse_2F_EventScript_RivalsPokeBall::
+RiminiTown_CasaSte_2F_EventScript_RivalsPokeBall::
 	lockall
-	goto_if_eq VAR_RIMINI_RIVAL_STATE, 2, RiminiTown_MaysHouse_2F_EventScript_MeetMay
+	goto_if_eq VAR_RIMINI_RIVAL_STATE, 2, RiminiTown_CasaSte_2F_EventScript_MeetMay
 	msgbox RivalsHouse_2F_Text_ItsRivalsPokeBall, MSGBOX_DEFAULT
 	releaseall
 	end
 
-RiminiTown_MaysHouse_2F_EventScript_MeetMay::
+RiminiTown_CasaSte_2F_EventScript_MeetMay::
 	delay 10
 	addobject LOCALID_RIVAL
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayEnters
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayEnters
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
@@ -66,10 +66,10 @@ RiminiTown_MaysHouse_2F_EventScript_MeetMay::
 	waitmovement 0
 	delay 10
 	playbgm MUS_ENCOUNTER_MAY, TRUE
-	call_if_eq VAR_FACING, DIR_NORTH, RiminiTown_MaysHouse_2F_EventScript_MeetMayNorth
-	call_if_eq VAR_FACING, DIR_SOUTH, RiminiTown_MaysHouse_2F_EventScript_MeetMaySouth
-	call_if_eq VAR_FACING, DIR_WEST, RiminiTown_MaysHouse_2F_EventScript_MeetMayWest
-	call_if_eq VAR_FACING, DIR_EAST, RiminiTown_MaysHouse_2F_EventScript_MeetMayEast
+	call_if_eq VAR_FACING, DIR_NORTH, RiminiTown_CasaSte_2F_EventScript_MeetMayNorth
+	call_if_eq VAR_FACING, DIR_SOUTH, RiminiTown_CasaSte_2F_EventScript_MeetMaySouth
+	call_if_eq VAR_FACING, DIR_WEST, RiminiTown_CasaSte_2F_EventScript_MeetMayWest
+	call_if_eq VAR_FACING, DIR_EAST, RiminiTown_CasaSte_2F_EventScript_MeetMayEast
 	setvar VAR_RIMINI_RIVAL_STATE, 3
 	setflag FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_2F_POKE_BALL
 	clearflag FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
@@ -79,60 +79,60 @@ RiminiTown_MaysHouse_2F_EventScript_MeetMay::
 	releaseall
 	end
 
-RiminiTown_MaysHouse_2F_EventScript_MeetMayNorth::
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerNorth
+RiminiTown_CasaSte_2F_EventScript_MeetMayNorth::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayApproachPlayerNorth
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_MaysHouse_2F_Movement_PlayerWatchMayNorth
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayWalkToPCNorth
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaSte_2F_Movement_PlayerWatchMayNorth
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayWalkToPCNorth
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_2F_EventScript_MeetMaySouth::
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerSouth
+RiminiTown_CasaSte_2F_EventScript_MeetMaySouth::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayApproachPlayerSouth
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_MaysHouse_2F_Movement_PlayerWatchMaySouth
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayWalkToPCSouth
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaSte_2F_Movement_PlayerWatchMaySouth
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayWalkToPCSouth
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_2F_EventScript_MeetMayWest::
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerWest
+RiminiTown_CasaSte_2F_EventScript_MeetMayWest::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayApproachPlayerWest
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayWalkToPCWest
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayWalkToPCWest
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_2F_EventScript_MeetMayEast::
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerEast
+RiminiTown_CasaSte_2F_EventScript_MeetMayEast::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayApproachPlayerEast
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox RivalsHouse_2F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_MaysHouse_2F_Movement_PlayerWatchMayEast
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_2F_Movement_MayWalkToPCEast
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaSte_2F_Movement_PlayerWatchMayEast
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_2F_Movement_MayWalkToPCEast
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_2F_Movement_MayEnters:
+RiminiTown_CasaSte_2F_Movement_MayEnters:
 	walk_down
 	walk_down
 	walk_in_place_faster_right
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerNorth:
+RiminiTown_CasaSte_2F_Movement_MayApproachPlayerNorth:
 	walk_right
 	walk_right
 	walk_down
@@ -140,7 +140,7 @@ RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerNorth:
 	walk_right
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_MayWalkToPCNorth:
+RiminiTown_CasaSte_2F_Movement_MayWalkToPCNorth:
 	walk_up
 	walk_up
 	walk_up
@@ -152,7 +152,7 @@ RiminiTown_MaysHouse_2F_Movement_MayWalkToPCNorth:
 	walk_in_place_faster_up
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_PlayerWatchMayNorth:
+RiminiTown_CasaSte_2F_Movement_PlayerWatchMayNorth:
 	delay_16
 	walk_in_place_faster_up
 	delay_16
@@ -162,13 +162,13 @@ RiminiTown_MaysHouse_2F_Movement_PlayerWatchMayNorth:
 	walk_in_place_faster_right
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerSouth:
+RiminiTown_CasaSte_2F_Movement_MayApproachPlayerSouth:
 	walk_right
 	walk_right
 	walk_right
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_MayWalkToPCSouth:
+RiminiTown_CasaSte_2F_Movement_MayWalkToPCSouth:
 	walk_up
 	walk_in_place_faster_right
 	walk_right
@@ -178,7 +178,7 @@ RiminiTown_MaysHouse_2F_Movement_MayWalkToPCSouth:
 	walk_in_place_faster_up
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_PlayerWatchMaySouth:
+RiminiTown_CasaSte_2F_Movement_PlayerWatchMaySouth:
 	delay_16
 	walk_in_place_faster_up
 	delay_16
@@ -186,7 +186,7 @@ RiminiTown_MaysHouse_2F_Movement_PlayerWatchMaySouth:
 	walk_in_place_faster_right
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerWest:
+RiminiTown_CasaSte_2F_Movement_MayApproachPlayerWest:
 	walk_right
 	walk_right
 	walk_right
@@ -195,7 +195,7 @@ RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerWest:
 	walk_in_place_faster_down
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_MayWalkToPCWest:
+RiminiTown_CasaSte_2F_Movement_MayWalkToPCWest:
 	walk_up
 	walk_right
 	walk_right
@@ -203,20 +203,20 @@ RiminiTown_MaysHouse_2F_Movement_MayWalkToPCWest:
 	step_end
 
 @ Unused, the player is already facing this direction so its unneeded
-RiminiTown_MaysHouse_2F_Movement_PlayerWatchMayWest:
+RiminiTown_CasaSte_2F_Movement_PlayerWatchMayWest:
 	delay_16
 	delay_16
 	walk_in_place_faster_right
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_MayApproachPlayerEast:
+RiminiTown_CasaSte_2F_Movement_MayApproachPlayerEast:
 	walk_right
 	walk_right
 	walk_down
 	walk_in_place_faster_right
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_MayWalkToPCEast:
+RiminiTown_CasaSte_2F_Movement_MayWalkToPCEast:
 	walk_up
 	walk_up
 	walk_right
@@ -227,7 +227,7 @@ RiminiTown_MaysHouse_2F_Movement_MayWalkToPCEast:
 	walk_in_place_faster_up
 	step_end
 
-RiminiTown_MaysHouse_2F_Movement_PlayerWatchMayEast:
+RiminiTown_CasaSte_2F_Movement_PlayerWatchMayEast:
 	delay_16
 	walk_in_place_faster_up
 	delay_16
@@ -281,19 +281,19 @@ RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext::
 	msgbox RivalsHouse_2F_Text_BrendanWhereShouldIGoNext, MSGBOX_DEFAULT
 	return
 
-RiminiTown_MaysHouse_2F_EventScript_PC::
+RiminiTown_CasaSte_2F_EventScript_PC::
 	lockall
 	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, RiminiTown_MaysHouse_2F_EventScript_CheckRivalsPC
-	goto_if_eq VAR_RESULT, FEMALE, RiminiTown_MaysHouse_2F_EventScript_CheckPlayersPC
+	goto_if_eq VAR_RESULT, MALE, RiminiTown_CasaSte_2F_EventScript_CheckRivalsPC
+	goto_if_eq VAR_RESULT, FEMALE, RiminiTown_CasaSte_2F_EventScript_CheckPlayersPC
 	end
 
-RiminiTown_MaysHouse_2F_EventScript_CheckRivalsPC::
+RiminiTown_CasaSte_2F_EventScript_CheckRivalsPC::
 	msgbox gText_PokemonTrainerSchoolEmail, MSGBOX_DEFAULT
 	releaseall
 	end
 
-RiminiTown_MaysHouse_2F_EventScript_CheckPlayersPC::
+RiminiTown_CasaSte_2F_EventScript_CheckPlayersPC::
 	setvar VAR_0x8004, PC_LOCATION_MAYS_HOUSE
 	special DoPCTurnOnEffect
 	playse SE_PC_ON
@@ -303,7 +303,7 @@ RiminiTown_MaysHouse_2F_EventScript_CheckPlayersPC::
 	releaseall
 	end
 
-RiminiTown_MaysHouse_2F_EventScript_TurnOffPlayerPC::
+RiminiTown_CasaSte_2F_EventScript_TurnOffPlayerPC::
 	setvar VAR_0x8004, PC_LOCATION_MAYS_HOUSE
 	playse SE_PC_OFF
 	special DoPCTurnOffEffect

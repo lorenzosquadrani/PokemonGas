@@ -1,6 +1,6 @@
 {
   "id": "MAP_RIMINI_TOWN_MAYS_HOUSE_1F",
-  "name": "RiminiTown_MaysHouse_1F",
+  "name": "RiminiTown_CasaSte_1F",
   "layout": "LAYOUT_RIMINI_TOWN_MAYS_HOUSE_1F",
   "music": "MUS_RIMINI",
   "region_map_section": "MAPSEC_RIMINI_TOWN",
@@ -137,7 +137,7 @@
       "elevation": 0,
       "var": "VAR_RIMINI_INTRO_STATE",
       "var_value": "4",
-      "script": "RiminiTown_MaysHouse_1F_EventScript_GoSeeRoom"
+      "script": "RiminiTown_CasaSte_1F_EventScript_GoSeeRoom"
     },
     {
       "type": "trigger",
@@ -146,7 +146,7 @@
       "elevation": 0,
       "var": "VAR_RIMINI_RIVAL_STATE",
       "var_value": "2",
-      "script": "RiminiTown_MaysHouse_1F_EventScript_MeetRival0"
+      "script": "RiminiTown_CasaSte_1F_EventScript_MeetRival0"
     },
     {
       "type": "trigger",
@@ -155,7 +155,7 @@
       "elevation": 0,
       "var": "VAR_RIMINI_RIVAL_STATE",
       "var_value": "2",
-      "script": "RiminiTown_MaysHouse_1F_EventScript_MeetRival1"
+      "script": "RiminiTown_CasaSte_1F_EventScript_MeetRival1"
     },
     {
       "type": "trigger",
@@ -164,7 +164,7 @@
       "elevation": 0,
       "var": "VAR_RIMINI_RIVAL_STATE",
       "var_value": "2",
-      "script": "RiminiTown_MaysHouse_1F_EventScript_MeetRival2"
+      "script": "RiminiTown_CasaSte_1F_EventScript_MeetRival2"
     }
   ],
   "bg_events": [

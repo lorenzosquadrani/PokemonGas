@@ -225,7 +225,7 @@ static bool8 TryStartInteractionScript(struct MapPosition *position, u16 metatil
 
     // Don't play interaction sound for certain scripts.
     if (script != RiminiTown_CasaGas_2F_EventScript_PC
-     && script != RiminiTown_MaysHouse_2F_EventScript_PC
+     && script != RiminiTown_CasaSte_2F_EventScript_PC
      && script != SecretBase_EventScript_PC
      && script != SecretBase_EventScript_RecordMixingPC
      && script != SecretBase_EventScript_DollInteract
@@ -579,7 +579,7 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
         }
         if (ShouldDoScottBattleFrontierCall() == TRUE)
         {
-            ScriptContext_SetupScript(RiminiTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall);
+            ScriptContext_SetupScript(RiminiTown_CasaTommi_EventScript_ScottAboardSSTidalCall);
             return TRUE;
         }
         if (ShouldDoRoxanneCall() == TRUE)

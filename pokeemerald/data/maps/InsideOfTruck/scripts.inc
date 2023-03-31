@@ -29,6 +29,6 @@ InsideOfTruck_EventScript_SetIntroFlagsMale::
 	setflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING
 	setflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
 	setvar VAR_RIMINI_HOUSES_STATE_BRENDAN, 1
-	setdynamicwarp MAP_RIMINI_TOWN, 11, 23
+	setdynamicwarp MAP_RIMINI_TOWN, 10, 23
 	releaseall
 	end

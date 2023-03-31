@@ -21,8 +21,8 @@ RiminiTown_CasaGas_2F_EventScript_CheckShouldUpdateBrendanPos::
 RiminiTown_CasaGas_2F_EventScript_TryUpdateBrendanPos::
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, RiminiTown_CasaGas_2F_EventScript_Ret
-	@ Odd that the MaysHouse equivalent was used below instead
-	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, RiminiTown_MaysHouse_2F_EventScript_Ret
+	@ Odd that the CasaSte equivalent was used below instead
+	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, RiminiTown_CasaSte_2F_EventScript_Ret
 	setobjectxyperm LOCALID_RIVAL, 0, 2
 	setobjectmovementtype LOCALID_RIVAL, MOVEMENT_TYPE_FACE_UP
 	return

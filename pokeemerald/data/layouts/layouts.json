@@ -537,7 +537,7 @@
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_CasaGasSte",
       "border_filepath": "data/layouts/RiminiTown_CasaGas_1F/border.bin",
       "blockdata_filepath": "data/layouts/RiminiTown_CasaGas_1F/map.bin"
     },
@@ -547,39 +547,39 @@
       "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "secondary_tileset": "gTileset_CasaGasSte",
       "border_filepath": "data/layouts/RiminiTown_CasaGas_2F/border.bin",
       "blockdata_filepath": "data/layouts/RiminiTown_CasaGas_2F/map.bin"
     },
     {
       "id": "LAYOUT_RIMINI_TOWN_MAYS_HOUSE_1F",
-      "name": "RiminiTown_MaysHouse_1F_Layout",
+      "name": "RiminiTown_CasaSte_1F_Layout",
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
-      "border_filepath": "data/layouts/RiminiTown_MaysHouse_1F/border.bin",
-      "blockdata_filepath": "data/layouts/RiminiTown_MaysHouse_1F/map.bin"
+      "secondary_tileset": "gTileset_CasaGasSte",
+      "border_filepath": "data/layouts/RiminiTown_CasaSte_1F/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiTown_CasaSte_1F/map.bin"
     },
     {
       "id": "LAYOUT_RIMINI_TOWN_MAYS_HOUSE_2F",
-      "name": "RiminiTown_MaysHouse_2F_Layout",
+      "name": "RiminiTown_CasaSte_2F_Layout",
       "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
-      "border_filepath": "data/layouts/RiminiTown_MaysHouse_2F/border.bin",
-      "blockdata_filepath": "data/layouts/RiminiTown_MaysHouse_2F/map.bin"
+      "secondary_tileset": "gTileset_CasaGasSte",
+      "border_filepath": "data/layouts/RiminiTown_CasaSte_2F/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiTown_CasaSte_2F/map.bin"
     },
     {
       "id": "LAYOUT_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB",
-      "name": "RiminiTown_ProfessorBirchsLab_Layout",
+      "name": "RiminiTown_CasaTommi_Layout",
       "width": 13,
       "height": 13,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Lab",
-      "border_filepath": "data/layouts/RiminiTown_ProfessorBirchsLab/border.bin",
-      "blockdata_filepath": "data/layouts/RiminiTown_ProfessorBirchsLab/map.bin"
+      "border_filepath": "data/layouts/RiminiTown_CasaTommi/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiTown_CasaTommi/map.bin"
     },
     {
       "id": "LAYOUT_HOUSE1",
@@ -4313,13 +4313,13 @@
     },
     {
       "id": "LAYOUT_RIMINI_TOWN_PROFESSOR_BIRCHS_LAB_WITH_TABLE",
-      "name": "RiminiTown_ProfessorBirchsLabWithTable_Layout",
+      "name": "RiminiTown_CasaTommiWithTable_Layout",
       "width": 13,
       "height": 13,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Lab",
-      "border_filepath": "data/layouts/RiminiTown_ProfessorBirchsLabWithTable/border.bin",
-      "blockdata_filepath": "data/layouts/RiminiTown_ProfessorBirchsLabWithTable/map.bin"
+      "border_filepath": "data/layouts/RiminiTown_CasaTommiWithTable/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiTown_CasaTommiWithTable/map.bin"
     },
     {
       "id": "LAYOUT_SKY_PILLAR_1F_CLEAN",

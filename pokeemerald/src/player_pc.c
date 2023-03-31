@@ -492,7 +492,7 @@ static void PlayerPC_TurnOff(u8 taskId)
         if (gSaveBlock2Ptr->playerGender == MALE)
             ScriptContext_SetupScript(RiminiTown_CasaGas_2F_EventScript_TurnOffPlayerPC);
         else
-            ScriptContext_SetupScript(RiminiTown_MaysHouse_2F_EventScript_TurnOffPlayerPC);
+            ScriptContext_SetupScript(RiminiTown_CasaSte_2F_EventScript_TurnOffPlayerPC);
     }
     else
     {

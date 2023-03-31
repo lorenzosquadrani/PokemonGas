@@ -2,92 +2,92 @@
 .set LOCALID_RIVAL_MOM, 4
 .set LOCALID_RIVAL, 7
 
-RiminiTown_MaysHouse_1F_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, RiminiTown_MaysHouse_1F_OnLoad
-	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_MaysHouse_1F_OnTransition
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, RiminiTown_MaysHouse_1F_OnFrame
+RiminiTown_CasaSte_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, RiminiTown_CasaSte_1F_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_CasaSte_1F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, RiminiTown_CasaSte_1F_OnFrame
 	.byte 0
 
-RiminiTown_MaysHouse_1F_OnLoad:
-	call_if_lt VAR_RIMINI_INTRO_STATE, 6, RiminiTown_MaysHouse_1F_EventScript_SetMovingBoxes
-	call_if_set FLAG_RECEIVED_RUNNING_SHOES, RiminiTown_MaysHouse_1F_EventScript_CheckShowShoesManual
+RiminiTown_CasaSte_1F_OnLoad:
+	call_if_lt VAR_RIMINI_INTRO_STATE, 6, RiminiTown_CasaSte_1F_EventScript_SetMovingBoxes
+	call_if_set FLAG_RECEIVED_RUNNING_SHOES, RiminiTown_CasaSte_1F_EventScript_CheckShowShoesManual
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_SetMovingBoxes::
-	setmetatile 5, 4, METATILE_BrendansMaysHouse_MovingBox_Open, TRUE
-	setmetatile 5, 2, METATILE_BrendansMaysHouse_MovingBox_Closed, TRUE
+RiminiTown_CasaSte_1F_EventScript_SetMovingBoxes::
+	setmetatile 5, 4, METATILE_CasaGasSte_MovingBox_Open, TRUE
+	setmetatile 5, 2, METATILE_CasaGasSte_MovingBox_Closed, TRUE
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_CheckShowShoesManual::
+RiminiTown_CasaSte_1F_EventScript_CheckShowShoesManual::
 	checkplayergender
-	goto_if_eq VAR_RESULT, FEMALE, RiminiTown_MaysHouse_1F_EventScript_ShowRunningShoesManual
+	goto_if_eq VAR_RESULT, FEMALE, RiminiTown_CasaSte_1F_EventScript_ShowRunningShoesManual
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_ShowRunningShoesManual::
-	setmetatile 6, 7, METATILE_BrendansMaysHouse_BookOnTable, TRUE
+RiminiTown_CasaSte_1F_EventScript_ShowRunningShoesManual::
+	setmetatile 6, 7, METATILE_CasaGasSte_BookOnTable, TRUE
 	return
 
-RiminiTown_MaysHouse_1F_OnTransition:
-	call_if_eq VAR_RIMINI_INTRO_STATE, 3, RiminiTown_MaysHouse_1F_EventScript_MoveMomToDoor
-	call_if_eq VAR_RIMINI_INTRO_STATE, 5, RiminiTown_MaysHouse_1F_EventScript_MoveMomToStairs
-	call_if_eq VAR_RIMINI_INTRO_STATE, 6, RiminiTown_MaysHouse_1F_EventScript_MoveMomToTV
+RiminiTown_CasaSte_1F_OnTransition:
+	call_if_eq VAR_RIMINI_INTRO_STATE, 3, RiminiTown_CasaSte_1F_EventScript_MoveMomToDoor
+	call_if_eq VAR_RIMINI_INTRO_STATE, 5, RiminiTown_CasaSte_1F_EventScript_MoveMomToStairs
+	call_if_eq VAR_RIMINI_INTRO_STATE, 6, RiminiTown_CasaSte_1F_EventScript_MoveMomToTV
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_MoveMomToStairs::
+RiminiTown_CasaSte_1F_EventScript_MoveMomToStairs::
 	setobjectxyperm LOCALID_MOM, 2, 4
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_MoveMomToTV::
+RiminiTown_CasaSte_1F_EventScript_MoveMomToTV::
 	setobjectxyperm LOCALID_MOM, 6, 5
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_MoveMomToDoor::
+RiminiTown_CasaSte_1F_EventScript_MoveMomToDoor::
 	setobjectxyperm LOCALID_MOM, 1, 8
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
 @ Many of the below scripts have no gender check because they assume youre in the correct house
-RiminiTown_MaysHouse_1F_OnFrame:
-	map_script_2 VAR_RIMINI_INTRO_STATE, 3, RiminiTown_MaysHouse_1F_EventScript_EnterHouseMovingIn
-	map_script_2 VAR_RIMINI_INTRO_STATE, 5, RiminiTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock
-	map_script_2 VAR_RIMINI_INTRO_STATE, 6, RiminiTown_MaysHouse_1F_EventScript_PetalburgGymReport
-	map_script_2 VAR_RIMINI_HOUSES_STATE_BRENDAN, 1, RiminiTown_MaysHouse_1F_EventScript_YoureNewNeighbor
+RiminiTown_CasaSte_1F_OnFrame:
+	map_script_2 VAR_RIMINI_INTRO_STATE, 3, RiminiTown_CasaSte_1F_EventScript_EnterHouseMovingIn
+	map_script_2 VAR_RIMINI_INTRO_STATE, 5, RiminiTown_CasaSte_1F_EventScript_GoUpstairsToSetClock
+	map_script_2 VAR_RIMINI_INTRO_STATE, 6, RiminiTown_CasaSte_1F_EventScript_PetalburgGymReport
+	map_script_2 VAR_RIMINI_HOUSES_STATE_BRENDAN, 1, RiminiTown_CasaSte_1F_EventScript_YoureNewNeighbor
 	map_script_2 VAR_RIMINI_HOUSES_STATE_MAY, 3, PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV
 	.2byte 0
 
-RiminiTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock::
+RiminiTown_CasaSte_1F_EventScript_GoUpstairsToSetClock::
 	lockall
 	msgbox PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_MaysHouse_1F_Movement_PushTowardStairs
-	applymovement LOCALID_MOM, RiminiTown_MaysHouse_1F_Movement_PushTowardStairs
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaSte_1F_Movement_PushTowardStairs
+	applymovement LOCALID_MOM, RiminiTown_CasaSte_1F_Movement_PushTowardStairs
 	waitmovement 0
 	warp MAP_RIMINI_TOWN_MAYS_HOUSE_2F, 1, 1
 	waitstate
 	releaseall
 	end
 
-RiminiTown_MaysHouse_1F_Movement_PushTowardStairs:
+RiminiTown_CasaSte_1F_Movement_PushTowardStairs:
 	walk_up
 	step_end
 
-RiminiTown_MaysHouse_1F_EventScript_EnterHouseMovingIn::
+RiminiTown_CasaSte_1F_EventScript_EnterHouseMovingIn::
 	lockall
 	setvar VAR_0x8004, LOCALID_MOM
 	setvar VAR_0x8005, FEMALE
 	goto PlayersHouse_1F_EventScript_EnterHouseMovingIn
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_PetalburgGymReport::
+RiminiTown_CasaSte_1F_EventScript_PetalburgGymReport::
 	lockall
 	setvar VAR_0x8004, FEMALE
 	setvar VAR_0x8005, LOCALID_MOM
 	goto PlayersHouse_1F_EventScript_PetalburgGymReportFemale
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
+RiminiTown_CasaSte_1F_EventScript_YoureNewNeighbor::
 	lockall
 	playse SE_PIN
 	applymovement LOCALID_RIVAL_MOM, Common_Movement_ExclamationMark
@@ -95,7 +95,7 @@ RiminiTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
 	applymovement LOCALID_RIVAL_MOM, Common_Movement_Delay48
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-	applymovement LOCALID_RIVAL_MOM, RiminiTown_MaysHouse_1F_Movement_RivalMomApproach
+	applymovement LOCALID_RIVAL_MOM, RiminiTown_CasaSte_1F_Movement_RivalMomApproach
 	waitmovement 0
 	special GetRivalSonDaughterString
 	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
@@ -104,7 +104,7 @@ RiminiTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
 	releaseall
 	end
 
-RiminiTown_MaysHouse_1F_Movement_RivalMomApproach:
+RiminiTown_CasaSte_1F_Movement_RivalMomApproach:
 	walk_down
 	walk_left
 	walk_left
@@ -147,7 +147,7 @@ RivalsHouse_1F_EventScript_RivalSibling::
 	release
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_GoSeeRoom::
+RiminiTown_CasaSte_1F_EventScript_GoSeeRoom::
 	lockall
 	setvar VAR_0x8004, LOCALID_MOM
 	setvar VAR_0x8005, FEMALE
@@ -156,25 +156,25 @@ RiminiTown_MaysHouse_1F_EventScript_GoSeeRoom::
 	goto PlayersHouse_1F_EventScript_MomGoSeeRoom
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_MeetRival0::
+RiminiTown_CasaSte_1F_EventScript_MeetRival0::
 	lockall
 	setvar VAR_0x8008, 0
-	goto RiminiTown_MaysHouse_1F_EventScript_MeetRival
+	goto RiminiTown_CasaSte_1F_EventScript_MeetRival
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_MeetRival1::
+RiminiTown_CasaSte_1F_EventScript_MeetRival1::
 	lockall
 	setvar VAR_0x8008, 1
-	goto RiminiTown_MaysHouse_1F_EventScript_MeetRival
+	goto RiminiTown_CasaSte_1F_EventScript_MeetRival
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_MeetRival2::
+RiminiTown_CasaSte_1F_EventScript_MeetRival2::
 	lockall
 	setvar VAR_0x8008, 2
-	goto RiminiTown_MaysHouse_1F_EventScript_MeetRival
+	goto RiminiTown_CasaSte_1F_EventScript_MeetRival
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_MeetRival::
+RiminiTown_CasaSte_1F_EventScript_MeetRival::
 	playse SE_EXIT
 	delay 10
 	addobject LOCALID_RIVAL
@@ -184,16 +184,16 @@ RiminiTown_MaysHouse_1F_EventScript_MeetRival::
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Common_Movement_Delay48
 	waitmovement 0
-	call_if_ne VAR_0x8008, 1, RiminiTown_MaysHouse_1F_EventScript_PlayerFaceMay
+	call_if_ne VAR_0x8008, 1, RiminiTown_CasaSte_1F_EventScript_PlayerFaceMay
 	playbgm MUS_ENCOUNTER_MAY, TRUE
-	call_if_eq VAR_0x8008, 0, RiminiTown_MaysHouse_1F_EventScript_MayApproachPlayer0
-	call_if_eq VAR_0x8008, 1, RiminiTown_MaysHouse_1F_EventScript_MayApproachPlayer1
-	call_if_eq VAR_0x8008, 2, RiminiTown_MaysHouse_1F_EventScript_MayApproachPlayer2
+	call_if_eq VAR_0x8008, 0, RiminiTown_CasaSte_1F_EventScript_MayApproachPlayer0
+	call_if_eq VAR_0x8008, 1, RiminiTown_CasaSte_1F_EventScript_MayApproachPlayer1
+	call_if_eq VAR_0x8008, 2, RiminiTown_CasaSte_1F_EventScript_MayApproachPlayer2
 	msgbox RivalsHouse_1F_Text_MayWhoAreYou, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_0x8008, 0, RiminiTown_MaysHouse_1F_EventScript_MayGoUpstairs0
-	call_if_eq VAR_0x8008, 1, RiminiTown_MaysHouse_1F_EventScript_MayGoUpstairs1
-	call_if_eq VAR_0x8008, 2, RiminiTown_MaysHouse_1F_EventScript_MayGoUpstairs2
+	call_if_eq VAR_0x8008, 0, RiminiTown_CasaSte_1F_EventScript_MayGoUpstairs0
+	call_if_eq VAR_0x8008, 1, RiminiTown_CasaSte_1F_EventScript_MayGoUpstairs1
+	call_if_eq VAR_0x8008, 2, RiminiTown_CasaSte_1F_EventScript_MayGoUpstairs2
 	playse SE_EXIT
 	removeobject LOCALID_RIVAL
 	setflag FLAG_HIDE_RIMINI_TOWN_MAYS_HOUSE_MAY
@@ -207,27 +207,27 @@ RiminiTown_MaysHouse_1F_EventScript_MeetRival::
 	releaseall
 	end
 
-RiminiTown_MaysHouse_1F_EventScript_PlayerFaceMay::
+RiminiTown_CasaSte_1F_EventScript_PlayerFaceMay::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_MayApproachPlayer0::
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_1F_Movement_MayApproachPlayer0
+RiminiTown_CasaSte_1F_EventScript_MayApproachPlayer0::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_1F_Movement_MayApproachPlayer0
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_MayApproachPlayer1::
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_1F_Movement_MayApproachPlayer1
+RiminiTown_CasaSte_1F_EventScript_MayApproachPlayer1::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_1F_Movement_MayApproachPlayer1
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_MayApproachPlayer2::
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_1F_Movement_MayApproachPlayer2
+RiminiTown_CasaSte_1F_EventScript_MayApproachPlayer2::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_1F_Movement_MayApproachPlayer2
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_1F_Movement_MayApproachPlayer0:
+RiminiTown_CasaSte_1F_Movement_MayApproachPlayer0:
 	walk_in_place_faster_left
 	walk_left
 	walk_in_place_faster_up
@@ -237,13 +237,13 @@ RiminiTown_MaysHouse_1F_Movement_MayApproachPlayer0:
 	walk_up
 	step_end
 
-RiminiTown_MaysHouse_1F_Movement_MayApproachPlayer1:
+RiminiTown_CasaSte_1F_Movement_MayApproachPlayer1:
 	walk_up
 	walk_up
 	walk_up
 	step_end
 
-RiminiTown_MaysHouse_1F_Movement_MayApproachPlayer2:
+RiminiTown_CasaSte_1F_Movement_MayApproachPlayer2:
 	walk_in_place_faster_right
 	walk_right
 	walk_in_place_faster_up
@@ -253,31 +253,31 @@ RiminiTown_MaysHouse_1F_Movement_MayApproachPlayer2:
 	walk_up
 	step_end
 
-RiminiTown_MaysHouse_1F_EventScript_MayGoUpstairs0::
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_MaysHouse_1F_Movement_PlayerWatchMayExit0
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_1F_Movement_MayGoUpstairs0
+RiminiTown_CasaSte_1F_EventScript_MayGoUpstairs0::
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaSte_1F_Movement_PlayerWatchMayExit0
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_1F_Movement_MayGoUpstairs0
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_MayGoUpstairs1::
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_MaysHouse_1F_Movement_PlayerWatchMayExit1
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_1F_Movement_MayGoUpstairs1
+RiminiTown_CasaSte_1F_EventScript_MayGoUpstairs1::
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaSte_1F_Movement_PlayerWatchMayExit1
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_1F_Movement_MayGoUpstairs1
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_1F_EventScript_MayGoUpstairs2::
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_MaysHouse_1F_Movement_PlayerWatchMayExit2
-	applymovement LOCALID_RIVAL, RiminiTown_MaysHouse_1F_Movement_MayGoUpstairs2
+RiminiTown_CasaSte_1F_EventScript_MayGoUpstairs2::
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaSte_1F_Movement_PlayerWatchMayExit2
+	applymovement LOCALID_RIVAL, RiminiTown_CasaSte_1F_Movement_MayGoUpstairs2
 	waitmovement 0
 	return
 
-RiminiTown_MaysHouse_1F_Movement_PlayerWatchMayExit0:
+RiminiTown_CasaSte_1F_Movement_PlayerWatchMayExit0:
 	delay_16
 	delay_8
 	walk_in_place_faster_right
 	step_end
 
-RiminiTown_MaysHouse_1F_Movement_PlayerWatchMayExit1:
+RiminiTown_CasaSte_1F_Movement_PlayerWatchMayExit1:
 	delay_16
 	delay_8
 	walk_in_place_faster_right
@@ -286,13 +286,13 @@ RiminiTown_MaysHouse_1F_Movement_PlayerWatchMayExit1:
 	walk_in_place_faster_up
 	step_end
 
-RiminiTown_MaysHouse_1F_Movement_PlayerWatchMayExit2:
+RiminiTown_CasaSte_1F_Movement_PlayerWatchMayExit2:
 	delay_16
 	delay_8
 	walk_in_place_faster_left
 	step_end
 
-RiminiTown_MaysHouse_1F_Movement_MayGoUpstairs0:
+RiminiTown_CasaSte_1F_Movement_MayGoUpstairs0:
 	walk_in_place_faster_right
 	walk_right
 	walk_in_place_faster_up
@@ -300,7 +300,7 @@ RiminiTown_MaysHouse_1F_Movement_MayGoUpstairs0:
 	walk_up
 	step_end
 
-RiminiTown_MaysHouse_1F_Movement_MayGoUpstairs1:
+RiminiTown_CasaSte_1F_Movement_MayGoUpstairs1:
 	walk_in_place_faster_right
 	walk_right
 	walk_in_place_faster_up
@@ -312,7 +312,7 @@ RiminiTown_MaysHouse_1F_Movement_MayGoUpstairs1:
 	walk_up
 	step_end
 
-RiminiTown_MaysHouse_1F_Movement_MayGoUpstairs2:
+RiminiTown_CasaSte_1F_Movement_MayGoUpstairs2:
 	walk_in_place_faster_left
 	walk_left
 	walk_in_place_faster_up
