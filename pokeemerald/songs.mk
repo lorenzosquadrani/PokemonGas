@@ -177,7 +177,7 @@ $(MID_SUBDIR)/mus_encounter_may.s: %.s: %.mid
 $(MID_SUBDIR)/mus_encounter_female.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G053 -V072
 
-$(MID_SUBDIR)/mus_Riminimare.s: %.s: %.mid
+$(MID_SUBDIR)/mus_riminimare.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G044 -V090
 
 $(MID_SUBDIR)/mus_rustboro.s: %.s: %.mid
@@ -602,9 +602,6 @@ $(MID_SUBDIR)/mus_link_contest_p3.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_link_contest_p4.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G042 -V090
-
-$(MID_SUBDIR)/mus_rimini_test.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G034 -V099
 
 $(MID_SUBDIR)/mus_credits.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G101 -V100

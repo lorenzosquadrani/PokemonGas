@@ -351,7 +351,6 @@ gSongTable::
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
-	song mus_rimini_test, 0, 0
 	song mus_gsc_route38, 0, 0
 	song mus_caught, 0, 0
 	song mus_victory_wild, 0, 0
@@ -399,7 +398,7 @@ gSongTable::
 	song mus_link_contest_p3, 0, 0
 	song mus_link_contest_p4, 0, 0
 	song mus_encounter_rich, 0, 0
-	song mus_Riminimare, 0, 0
+	song mus_riminimare, 0, 0
 	song mus_rustboro, 0, 0
 	song mus_poke_center, 0, 0
 	song mus_route104, 0, 0

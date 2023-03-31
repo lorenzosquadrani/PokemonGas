@@ -1,26 +1,26 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_Riminimare_grp, voicegroup044
-	.equ	mus_Riminimare_pri, 0
-	.equ	mus_Riminimare_rev, reverb_set+50
-	.equ	mus_Riminimare_mvl, 90
-	.equ	mus_Riminimare_key, 0
-	.equ	mus_Riminimare_tbs, 1
-	.equ	mus_Riminimare_exg, 1
-	.equ	mus_Riminimare_cmp, 1
+	.equ	mus_riminimare_grp, voicegroup044
+	.equ	mus_riminimare_pri, 0
+	.equ	mus_riminimare_rev, reverb_set+50
+	.equ	mus_riminimare_mvl, 90
+	.equ	mus_riminimare_key, 0
+	.equ	mus_riminimare_tbs, 1
+	.equ	mus_riminimare_exg, 1
+	.equ	mus_riminimare_cmp, 1
 
 	.section .rodata
-	.global	mus_Riminimare
+	.global	mus_riminimare
 	.align	2
 
 @**************** Track 1 (Midi-Chn.1) ****************@
 
-mus_Riminimare_1:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_1:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
-	.byte	TEMPO , 84*mus_Riminimare_tbs/2
+	.byte	TEMPO , 84*mus_riminimare_tbs/2
 	.byte		VOICE , 0
-	.byte		VOL   , 125*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 125*mus_riminimare_mvl/mxv
 	.byte		PAN   , c_v+16
 	.byte		N06   , An3 , v080
 	.byte	W06
@@ -28,7 +28,7 @@ mus_Riminimare_1:
 	.byte	W06
 	.byte		        En4 , v104
 	.byte	W06
-mus_Riminimare_1_B1:
+mus_riminimare_1_B1:
 @ 001   ----------------------------------------
 	.byte		N36   , Fs4 , v116
 	.byte	W36
@@ -123,8 +123,8 @@ mus_Riminimare_1_B1:
 	.byte		        En4 
 	.byte	W06
 	.byte	GOTO
-	 .word	mus_Riminimare_1_B1
-mus_Riminimare_1_B2:
+	 .word	mus_riminimare_1_B1
+mus_riminimare_1_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -132,14 +132,14 @@ mus_Riminimare_1_B2:
 
 @**************** Track 2 (Midi-Chn.2) ****************@
 
-mus_Riminimare_2:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_2:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 48
-	.byte		VOL   , 127*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 127*mus_riminimare_mvl/mxv
 	.byte		PAN   , c_v+32
 	.byte	W18
-mus_Riminimare_2_B1:
+mus_riminimare_2_B1:
 @ 001   ----------------------------------------
 	.byte		PAN   , c_v+32
 	.byte	W96
@@ -149,91 +149,91 @@ mus_Riminimare_2_B1:
 	.byte	W96
 @ 004   ----------------------------------------
 	.byte	W48
-	.byte		VOL   , 39*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 39*mus_riminimare_mvl/mxv
 	.byte		N36   , En3 , v060
 	.byte	W02
-	.byte		VOL   , 51*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 51*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        58*mus_Riminimare_mvl/mxv
+	.byte		        58*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        74*mus_Riminimare_mvl/mxv
+	.byte		        74*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        82*mus_Riminimare_mvl/mxv
+	.byte		        82*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        91*mus_Riminimare_mvl/mxv
+	.byte		        91*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        105*mus_Riminimare_mvl/mxv
+	.byte		        105*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        126*mus_Riminimare_mvl/mxv
+	.byte		        126*mus_riminimare_mvl/mxv
 	.byte	W01
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        84*mus_Riminimare_mvl/mxv
+	.byte		        84*mus_riminimare_mvl/mxv
 	.byte	W06
 	.byte		N06   , An2 
 	.byte	W03
-	.byte		VOL   , 96*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 96*mus_riminimare_mvl/mxv
 	.byte	W03
 	.byte		N06   , Cs3 
 	.byte	W06
 @ 005   ----------------------------------------
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   , Dn3 , v064
 	.byte	W02
-	.byte		VOL   , 68*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 68*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        72*mus_Riminimare_mvl/mxv
+	.byte		        72*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        74*mus_Riminimare_mvl/mxv
+	.byte		        74*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        80*mus_Riminimare_mvl/mxv
+	.byte		        80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        88*mus_Riminimare_mvl/mxv
+	.byte		        88*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        91*mus_Riminimare_mvl/mxv
+	.byte		        91*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte	W12
 	.byte		N12   , An2 
 	.byte	W12
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   , En3 
 	.byte	W02
-	.byte		VOL   , 68*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 68*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        72*mus_Riminimare_mvl/mxv
+	.byte		        72*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        74*mus_Riminimare_mvl/mxv
+	.byte		        74*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        80*mus_Riminimare_mvl/mxv
+	.byte		        80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        88*mus_Riminimare_mvl/mxv
+	.byte		        88*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        91*mus_Riminimare_mvl/mxv
+	.byte		        91*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte	W12
 	.byte		N12   , Gn3 
 	.byte	W12
 @ 006   ----------------------------------------
-	.byte		VOL   , 74*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 74*mus_riminimare_mvl/mxv
 	.byte		N24   , Fs3 
 	.byte	W02
-	.byte		VOL   , 78*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 78*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        94*mus_Riminimare_mvl/mxv
+	.byte		        94*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte	W13
 	.byte		N06   , An3 
 	.byte	W06
@@ -243,23 +243,23 @@ mus_Riminimare_2_B1:
 	.byte	W03
 	.byte		N36   , Dn3 
 	.byte	W12
-	.byte		VOL   , 92*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 92*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        84*mus_Riminimare_mvl/mxv
+	.byte		        84*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        80*mus_Riminimare_mvl/mxv
+	.byte		        80*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        75*mus_Riminimare_mvl/mxv
+	.byte		        75*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        71*mus_Riminimare_mvl/mxv
+	.byte		        71*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        68*mus_Riminimare_mvl/mxv
+	.byte		        68*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        63*mus_Riminimare_mvl/mxv
+	.byte		        63*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        56*mus_Riminimare_mvl/mxv
+	.byte		        56*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte		N06   , Bn3 
 	.byte	W06
 	.byte		        An3 
@@ -269,48 +269,48 @@ mus_Riminimare_2_B1:
 	.byte		        Fs3 
 	.byte	W06
 @ 007   ----------------------------------------
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   , Gn3 
 	.byte	W02
-	.byte		VOL   , 68*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 68*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        72*mus_Riminimare_mvl/mxv
+	.byte		        72*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        74*mus_Riminimare_mvl/mxv
+	.byte		        74*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        80*mus_Riminimare_mvl/mxv
+	.byte		        80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        88*mus_Riminimare_mvl/mxv
+	.byte		        88*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        91*mus_Riminimare_mvl/mxv
+	.byte		        91*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte	W12
 	.byte		N12   , Dn3 
 	.byte	W12
-	.byte		VOL   , 74*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 74*mus_riminimare_mvl/mxv
 	.byte		N24   , Cs3 
 	.byte	W02
-	.byte		VOL   , 78*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 78*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        94*mus_Riminimare_mvl/mxv
+	.byte		        94*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte	W13
-	.byte		        74*mus_Riminimare_mvl/mxv
+	.byte		        74*mus_riminimare_mvl/mxv
 	.byte		N24   , Bn3 
 	.byte	W02
-	.byte		VOL   , 78*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 78*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        94*mus_Riminimare_mvl/mxv
+	.byte		        94*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte	W13
 @ 008   ----------------------------------------
 	.byte		N12   , Cs4 
@@ -339,108 +339,108 @@ mus_Riminimare_2_B1:
 	.byte		        An4 
 	.byte	W06
 @ 009   ----------------------------------------
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N36   , Bn4 
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W12
-	.byte		        120*mus_Riminimare_mvl/mxv
+	.byte		        120*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        116*mus_Riminimare_mvl/mxv
+	.byte		        116*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte		N12   , Fs4 
 	.byte	W12
 	.byte		N24   , En4 
 	.byte	W12
-	.byte		VOL   , 123*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 123*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        120*mus_Riminimare_mvl/mxv
+	.byte		        120*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        118*mus_Riminimare_mvl/mxv
+	.byte		        118*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        113*mus_Riminimare_mvl/mxv
+	.byte		        113*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte		N12   , Fs4 
 	.byte	W12
 	.byte		        Gn4 
 	.byte	W12
 @ 010   ----------------------------------------
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N36   , An4 
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W12
-	.byte		        123*mus_Riminimare_mvl/mxv
+	.byte		        123*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        122*mus_Riminimare_mvl/mxv
+	.byte		        122*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        118*mus_Riminimare_mvl/mxv
+	.byte		        118*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        116*mus_Riminimare_mvl/mxv
+	.byte		        116*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte		N12   , Fs4 
 	.byte	W12
 	.byte		N24   , Dn4 
 	.byte	W12
-	.byte		VOL   , 123*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 123*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        120*mus_Riminimare_mvl/mxv
+	.byte		        120*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        118*mus_Riminimare_mvl/mxv
+	.byte		        118*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        113*mus_Riminimare_mvl/mxv
+	.byte		        113*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte		N12   , En4 
 	.byte	W12
 	.byte		        Fs4 
 	.byte	W12
 @ 011   ----------------------------------------
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N48   , Gn4 
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W15
-	.byte		        123*mus_Riminimare_mvl/mxv
+	.byte		        123*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        120*mus_Riminimare_mvl/mxv
+	.byte		        120*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        116*mus_Riminimare_mvl/mxv
+	.byte		        116*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        108*mus_Riminimare_mvl/mxv
+	.byte		        108*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        106*mus_Riminimare_mvl/mxv
+	.byte		        106*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        105*mus_Riminimare_mvl/mxv
+	.byte		        105*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte		N12   , An4 
 	.byte	W12
 	.byte		N02   , Gn4 
@@ -454,38 +454,38 @@ mus_Riminimare_2_B1:
 	.byte		        En4 
 	.byte	W12
 @ 012   ----------------------------------------
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N36   , Gn4 
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W12
-	.byte		        123*mus_Riminimare_mvl/mxv
+	.byte		        123*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        120*mus_Riminimare_mvl/mxv
+	.byte		        120*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        118*mus_Riminimare_mvl/mxv
+	.byte		        118*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        115*mus_Riminimare_mvl/mxv
+	.byte		        115*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte		N12   , An4 
 	.byte	W12
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N24   , Fs4 
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W18
 	.byte		N06   
 	.byte	W06
@@ -494,26 +494,26 @@ mus_Riminimare_2_B1:
 	.byte		        An4 
 	.byte	W06
 @ 013   ----------------------------------------
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N36   , Bn4 
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W12
-	.byte		        123*mus_Riminimare_mvl/mxv
+	.byte		        123*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        120*mus_Riminimare_mvl/mxv
+	.byte		        120*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        116*mus_Riminimare_mvl/mxv
+	.byte		        116*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        113*mus_Riminimare_mvl/mxv
+	.byte		        113*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -525,28 +525,28 @@ mus_Riminimare_2_B1:
 	.byte	W12
 	.byte		N06   , Cs5 
 	.byte	W06
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N42   , An4 
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
 @ 014   ----------------------------------------
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W21
-	.byte		        123*mus_Riminimare_mvl/mxv
+	.byte		        123*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        119*mus_Riminimare_mvl/mxv
+	.byte		        119*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        116*mus_Riminimare_mvl/mxv
+	.byte		        116*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte		N12   , Fs4 
 	.byte	W12
-	.byte		VOL   , 127*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 127*mus_riminimare_mvl/mxv
 	.byte		N12   , Bn4 
 	.byte	W12
 	.byte		N02   , An4 
@@ -564,26 +564,26 @@ mus_Riminimare_2_B1:
 	.byte	W18
 	.byte		N06   , Gn4 
 	.byte	W18
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N36   , Dn4 
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W12
-	.byte		        122*mus_Riminimare_mvl/mxv
+	.byte		        122*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        118*mus_Riminimare_mvl/mxv
+	.byte		        118*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        116*mus_Riminimare_mvl/mxv
+	.byte		        116*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        113*mus_Riminimare_mvl/mxv
+	.byte		        113*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte		N12   , Bn3 
 	.byte	W12
 	.byte		        Dn4 
@@ -593,34 +593,34 @@ mus_Riminimare_2_B1:
 	.byte	W18
 	.byte		N06   , Gn4 
 	.byte	W18
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte		N36   
 	.byte	W03
-	.byte		VOL   , 95*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W09
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        122*mus_Riminimare_mvl/mxv
+	.byte		        122*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        119*mus_Riminimare_mvl/mxv
+	.byte		        119*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        111*mus_Riminimare_mvl/mxv
+	.byte		        111*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        106*mus_Riminimare_mvl/mxv
+	.byte		        106*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        96*mus_Riminimare_mvl/mxv
+	.byte		        96*mus_riminimare_mvl/mxv
 	.byte	W09
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W15
 	.byte	GOTO
-	 .word	mus_Riminimare_2_B1
-mus_Riminimare_2_B2:
+	 .word	mus_riminimare_2_B1
+mus_riminimare_2_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -628,17 +628,17 @@ mus_Riminimare_2_B2:
 
 @**************** Track 3 (Midi-Chn.3) ****************@
 
-mus_Riminimare_3:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_3:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 73
-	.byte		VOL   , 127*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 127*mus_riminimare_mvl/mxv
 	.byte		LFOS  , 44
 	.byte		PAN   , c_v+0
 	.byte	W18
-mus_Riminimare_3_B1:
+mus_riminimare_3_B1:
 @ 001   ----------------------------------------
-	.byte		VOL   , 127*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 127*mus_riminimare_mvl/mxv
 	.byte	W96
 @ 002   ----------------------------------------
 	.byte	W96
@@ -649,7 +649,7 @@ mus_Riminimare_3_B1:
 	.byte	W01
 	.byte		N03   , Ds5 , v076
 	.byte	W03
-	.byte		VOL   , 112*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 112*mus_riminimare_mvl/mxv
 	.byte		N06   , Dn5 , v096
 	.byte	W06
 	.byte		        Cs5 
@@ -659,58 +659,58 @@ mus_Riminimare_3_B1:
 	.byte		        En5 , v092
 	.byte	W06
 @ 005   ----------------------------------------
-	.byte		VOL   , 63*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 63*mus_riminimare_mvl/mxv
 	.byte		N03   , Fn5 , v060
 	.byte	W02
-	.byte		VOL   , 68*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 68*mus_riminimare_mvl/mxv
 	.byte	W01
 	.byte		N32   , Fs5 , v096
 	.byte	W03
-	.byte		VOL   , 70*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 70*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        75*mus_Riminimare_mvl/mxv
+	.byte		        75*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        82*mus_Riminimare_mvl/mxv
+	.byte		        82*mus_riminimare_mvl/mxv
 	.byte	W01
 	.byte		MOD   , 6
 	.byte	W02
-	.byte		VOL   , 92*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 92*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        119*mus_Riminimare_mvl/mxv
+	.byte		        119*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W01
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W12
 	.byte		MOD   , 0
 	.byte		N09   , Gn5 
 	.byte	W09
 	.byte		N03   , Fs5 , v100
 	.byte	W03
-	.byte		VOL   , 63*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 63*mus_riminimare_mvl/mxv
 	.byte		N36   , En5 , v108
 	.byte	W02
-	.byte		VOL   , 68*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 68*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        70*mus_Riminimare_mvl/mxv
+	.byte		        70*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        75*mus_Riminimare_mvl/mxv
+	.byte		        75*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        82*mus_Riminimare_mvl/mxv
+	.byte		        82*mus_riminimare_mvl/mxv
 	.byte	W01
 	.byte		MOD   , 6
 	.byte	W02
-	.byte		VOL   , 92*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 92*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        104*mus_Riminimare_mvl/mxv
+	.byte		        104*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        119*mus_Riminimare_mvl/mxv
+	.byte		        119*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W01
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W12
 	.byte		MOD   , 0
 	.byte		N09   , Fs5 , v096
@@ -752,56 +752,56 @@ mus_Riminimare_3_B1:
 	.byte		        Dn5 , v092
 	.byte	W06
 @ 007   ----------------------------------------
-	.byte		VOL   , 109*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 109*mus_riminimare_mvl/mxv
 	.byte		N15   , Bn5 , v064
 	.byte	W02
-	.byte		VOL   , 116*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 116*mus_riminimare_mvl/mxv
 	.byte	W04
 	.byte		MOD   , 7
-	.byte		VOL   , 120*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 120*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W07
 	.byte		N03   , Ds5 , v092
 	.byte	W03
 	.byte		MOD   , 0
-	.byte		VOL   , 119*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 119*mus_riminimare_mvl/mxv
 	.byte		N54   , Dn5 , v096
 	.byte	W03
-	.byte		VOL   , 113*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 113*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        61*mus_Riminimare_mvl/mxv
+	.byte		        61*mus_riminimare_mvl/mxv
 	.byte	W01
-	.byte		        102*mus_Riminimare_mvl/mxv
+	.byte		        102*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        63*mus_Riminimare_mvl/mxv
+	.byte		        63*mus_riminimare_mvl/mxv
 	.byte	W01
 	.byte		MOD   , 7
-	.byte		VOL   , 85*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        82*mus_Riminimare_mvl/mxv
+	.byte		        82*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        80*mus_Riminimare_mvl/mxv
+	.byte		        80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        78*mus_Riminimare_mvl/mxv
+	.byte		        78*mus_riminimare_mvl/mxv
 	.byte	W09
-	.byte		        75*mus_Riminimare_mvl/mxv
+	.byte		        75*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        78*mus_Riminimare_mvl/mxv
+	.byte		        78*mus_riminimare_mvl/mxv
 	.byte	W07
-	.byte		        80*mus_Riminimare_mvl/mxv
+	.byte		        80*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        82*mus_Riminimare_mvl/mxv
+	.byte		        82*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        102*mus_Riminimare_mvl/mxv
+	.byte		        102*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        106*mus_Riminimare_mvl/mxv
+	.byte		        106*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        108*mus_Riminimare_mvl/mxv
+	.byte		        108*mus_riminimare_mvl/mxv
 	.byte	W01
-	.byte		        113*mus_Riminimare_mvl/mxv
+	.byte		        113*mus_riminimare_mvl/mxv
 	.byte	W03
 	.byte		MOD   , 0
 	.byte	W12
@@ -824,22 +824,22 @@ mus_Riminimare_3_B1:
 	.byte	W12
 	.byte		        Dn5 
 	.byte	W12
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N24   , En5 , v104
 	.byte	W02
-	.byte		VOL   , 78*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 78*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        82*mus_Riminimare_mvl/mxv
+	.byte		        82*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        92*mus_Riminimare_mvl/mxv
+	.byte		        92*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        101*mus_Riminimare_mvl/mxv
+	.byte		        101*mus_riminimare_mvl/mxv
 	.byte	W01
 	.byte		MOD   , 6
 	.byte	W02
-	.byte		VOL   , 112*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 112*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        127*mus_Riminimare_mvl/mxv
+	.byte		        127*mus_riminimare_mvl/mxv
 	.byte	W06
 @ 009   ----------------------------------------
 	.byte		MOD   , 0
@@ -859,8 +859,8 @@ mus_Riminimare_3_B1:
 @ 016   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	mus_Riminimare_3_B1
-mus_Riminimare_3_B2:
+	 .word	mus_riminimare_3_B1
+mus_riminimare_3_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -868,16 +868,16 @@ mus_Riminimare_3_B2:
 
 @**************** Track 4 (Midi-Chn.4) ****************@
 
-mus_Riminimare_4:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_4:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 35
-	.byte		VOL   , 127*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 127*mus_riminimare_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W18
-mus_Riminimare_4_B1:
+mus_riminimare_4_B1:
 @ 001   ----------------------------------------
-	.byte		VOL   , 127*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 127*mus_riminimare_mvl/mxv
 	.byte	W96
 @ 002   ----------------------------------------
 	.byte	W96
@@ -898,7 +898,7 @@ mus_Riminimare_4_B1:
 	.byte		        Fs1 
 	.byte	W06
 @ 009   ----------------------------------------
-mus_Riminimare_4_009:
+mus_riminimare_4_009:
 	.byte		N12   , Gn1 , v127
 	.byte	W36
 	.byte		N06   , Dn1 
@@ -957,7 +957,7 @@ mus_Riminimare_4_009:
 	.byte	W12
 @ 013   ----------------------------------------
 	.byte	PATT
-	 .word	mus_Riminimare_4_009
+	 .word	mus_riminimare_4_009
 @ 014   ----------------------------------------
 	.byte		N12   , Fs1 , v127
 	.byte	W36
@@ -995,27 +995,27 @@ mus_Riminimare_4_009:
 	.byte	W18
 	.byte		N36   , En2 , v104
 	.byte	W12
-	.byte		VOL   , 122*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 122*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        112*mus_Riminimare_mvl/mxv
+	.byte		        112*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        105*mus_Riminimare_mvl/mxv
+	.byte		        105*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        88*mus_Riminimare_mvl/mxv
+	.byte		        88*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        78*mus_Riminimare_mvl/mxv
+	.byte		        78*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        72*mus_Riminimare_mvl/mxv
+	.byte		        72*mus_riminimare_mvl/mxv
 	.byte	W02
-	.byte		        63*mus_Riminimare_mvl/mxv
+	.byte		        63*mus_riminimare_mvl/mxv
 	.byte	W04
-	.byte		        46*mus_Riminimare_mvl/mxv
+	.byte		        46*mus_riminimare_mvl/mxv
 	.byte	W24
 	.byte	GOTO
-	 .word	mus_Riminimare_4_B1
-mus_Riminimare_4_B2:
+	 .word	mus_riminimare_4_B1
+mus_riminimare_4_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -1023,18 +1023,18 @@ mus_Riminimare_4_B2:
 
 @**************** Track 5 (Midi-Chn.5) ****************@
 
-mus_Riminimare_5:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_5:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 0
 	.byte		PAN   , c_v+32
-	.byte		VOL   , 74*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 74*mus_riminimare_mvl/mxv
 	.byte	W18
-mus_Riminimare_5_B1:
+mus_riminimare_5_B1:
 @ 001   ----------------------------------------
 	.byte		VOICE , 0
 	.byte		PAN   , c_v+32
-	.byte		VOL   , 74*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 74*mus_riminimare_mvl/mxv
 	.byte	W12
 	.byte		N12   , Dn2 , v016
 	.byte	W12
@@ -1094,7 +1094,7 @@ mus_Riminimare_5_B1:
 	.byte		        En2 
 	.byte	W60
 @ 005   ----------------------------------------
-	.byte		VOL   , 99*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 99*mus_riminimare_mvl/mxv
 	.byte		PAN   , c_v-22
 	.byte		N12   , An1 
 	.byte	W12
@@ -1190,8 +1190,8 @@ mus_Riminimare_5_B1:
 @ 016   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	mus_Riminimare_5_B1
-mus_Riminimare_5_B2:
+	 .word	mus_riminimare_5_B1
+mus_riminimare_5_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -1199,14 +1199,14 @@ mus_Riminimare_5_B2:
 
 @**************** Track 6 (Midi-Chn.6) ****************@
 
-mus_Riminimare_6:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_6:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 0
 	.byte		PAN   , c_v-17
-	.byte		VOL   , 116*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 116*mus_riminimare_mvl/mxv
 	.byte	W18
-mus_Riminimare_6_B1:
+mus_riminimare_6_B1:
 @ 001   ----------------------------------------
 	.byte		N12   , Dn2 , v076
 	.byte	W12
@@ -1360,8 +1360,8 @@ mus_Riminimare_6_B1:
 @ 016   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	mus_Riminimare_6_B1
-mus_Riminimare_6_B2:
+	 .word	mus_riminimare_6_B1
+mus_riminimare_6_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -1369,18 +1369,18 @@ mus_Riminimare_6_B2:
 
 @**************** Track 7 (Midi-Chn.7) ****************@
 
-mus_Riminimare_7:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_7:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 0
-	.byte		VOL   , 96*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 96*mus_riminimare_mvl/mxv
 	.byte		PAN   , c_v-6
 	.byte		XCMD  , xIECV , 12
 	.byte		        xIECL , 10
 	.byte	W18
-mus_Riminimare_7_B1:
+mus_riminimare_7_B1:
 @ 001   ----------------------------------------
-	.byte		VOL   , 0*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 0*mus_riminimare_mvl/mxv
 	.byte		PAN   , c_v-16
 	.byte	W96
 @ 002   ----------------------------------------
@@ -1389,7 +1389,7 @@ mus_Riminimare_7_B1:
 	.byte	W96
 @ 004   ----------------------------------------
 	.byte		VOICE , 0
-	.byte		VOL   , 96*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 96*mus_riminimare_mvl/mxv
 	.byte	W36
 	.byte		N12   , Gn3 , v088
 	.byte	W12
@@ -1410,10 +1410,10 @@ mus_Riminimare_7_B1:
 @ 008   ----------------------------------------
 	.byte		VOICE , 5
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte	W96
 @ 009   ----------------------------------------
-mus_Riminimare_7_009:
+mus_riminimare_7_009:
 	.byte		N12   , Bn4 , v112
 	.byte	W12
 	.byte		        Gn3 
@@ -1430,7 +1430,7 @@ mus_Riminimare_7_009:
 	.byte	W12
 	.byte	PEND
 @ 010   ----------------------------------------
-mus_Riminimare_7_010:
+mus_riminimare_7_010:
 	.byte	W12
 	.byte		N12   , Fs3 , v112
 	.byte	W12
@@ -1492,10 +1492,10 @@ mus_Riminimare_7_010:
 	.byte	W12
 @ 013   ----------------------------------------
 	.byte	PATT
-	 .word	mus_Riminimare_7_009
+	 .word	mus_riminimare_7_009
 @ 014   ----------------------------------------
 	.byte	PATT
-	 .word	mus_Riminimare_7_010
+	 .word	mus_riminimare_7_010
 @ 015   ----------------------------------------
 	.byte		N06   , En4 , v112
 	.byte	W06
@@ -1505,50 +1505,50 @@ mus_Riminimare_7_010:
 	.byte	W06
 	.byte		        Dn5 
 	.byte	W06
-	.byte		VOL   , 60*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 60*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 54*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 48*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 48*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v-61
-	.byte		VOL   , 40*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 40*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 32*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 32*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 24*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 24*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 16*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 16*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v-61
-	.byte		VOL   , 9*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 9*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 15*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 15*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 24*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 24*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 32*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 32*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v-61
-	.byte		VOL   , 40*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 40*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 @ 016   ----------------------------------------
-	.byte		VOL   , 68*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 68*mus_riminimare_mvl/mxv
 	.byte		N06   , An4 
 	.byte	W06
 	.byte		        Dn5 
@@ -1557,49 +1557,49 @@ mus_Riminimare_7_010:
 	.byte	W06
 	.byte		        Gn5 
 	.byte	W06
-	.byte		VOL   , 61*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 61*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 51*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 51*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 48*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 48*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v-61
-	.byte		VOL   , 40*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 40*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 32*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 32*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 24*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 24*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 16*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 16*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v-61
-	.byte		VOL   , 12*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 12*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 9*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 9*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 8*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 8*mus_riminimare_mvl/mxv
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 6*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 6*mus_riminimare_mvl/mxv
 	.byte	W06
 	.byte		PAN   , c_v-61
-	.byte		VOL   , 5*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 5*mus_riminimare_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	mus_Riminimare_7_B1
-mus_Riminimare_7_B2:
+	 .word	mus_riminimare_7_B1
+mus_riminimare_7_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -1607,17 +1607,17 @@ mus_Riminimare_7_B2:
 
 @**************** Track 8 (Midi-Chn.8) ****************@
 
-mus_Riminimare_8:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_8:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 4
 	.byte		PAN   , c_v+0
 	.byte		LFOS  , 80
 	.byte		XCMD  , xIECV , 10
 	.byte		        xIECL , 6
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte	W18
-mus_Riminimare_8_B1:
+mus_riminimare_8_B1:
 @ 001   ----------------------------------------
 	.byte	W96
 @ 002   ----------------------------------------
@@ -1628,7 +1628,7 @@ mus_Riminimare_8_B1:
 	.byte		BEND  , c_v+0
 	.byte	W96
 @ 005   ----------------------------------------
-	.byte		VOL   , 43*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 43*mus_riminimare_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N12   , Dn1 , v096
 	.byte	W12
@@ -1695,7 +1695,7 @@ mus_Riminimare_8_B1:
 	.byte	W09
 	.byte		N03   , Gs5 , v080
 	.byte	W03
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N06   , Gn5 
 	.byte	W06
@@ -1841,8 +1841,8 @@ mus_Riminimare_8_B1:
 	.byte		        0
 	.byte	W24
 	.byte	GOTO
-	 .word	mus_Riminimare_8_B1
-mus_Riminimare_8_B2:
+	 .word	mus_riminimare_8_B1
+mus_riminimare_8_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -1850,18 +1850,18 @@ mus_Riminimare_8_B2:
 
 @**************** Track 9 (Midi-Chn.9) ****************@
 
-mus_Riminimare_9:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_9:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 0
-	.byte		VOL   , 96*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 96*mus_riminimare_mvl/mxv
 	.byte		PAN   , c_v-48
 	.byte		XCMD  , xIECV , 12
 	.byte		        xIECL , 8
 	.byte	W12
 	.byte		N06   , An3 , v004
 	.byte	W06
-mus_Riminimare_9_B1:
+mus_riminimare_9_B1:
 @ 001   ----------------------------------------
 	.byte		VOICE , 0
 	.byte		PAN   , c_v-48
@@ -1927,66 +1927,66 @@ mus_Riminimare_9_B1:
 	.byte		        En3 
 	.byte	W12
 @ 009   ----------------------------------------
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   , Dn4 , v032
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W24
 	.byte	W03
 	.byte		N12   , Bn3 , v028
 	.byte	W12
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N24   , Gn3 
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W15
 	.byte		N12   , An3 
 	.byte	W12
 	.byte		        Cs4 
 	.byte	W12
 @ 010   ----------------------------------------
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   , En4 
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W24
 	.byte	W03
 	.byte		N12   , Cs4 
 	.byte	W12
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N24   , Fs3 
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W15
 	.byte		N12   , Gn3 
 	.byte	W12
 	.byte		        An3 
 	.byte	W12
 @ 011   ----------------------------------------
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N48   , Bn3 
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W36
 	.byte	W03
 	.byte		N12   , Cs4 
@@ -2002,14 +2002,14 @@ mus_Riminimare_9_B1:
 	.byte		        En3 
 	.byte	W12
 @ 012   ----------------------------------------
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   , Bn3 
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W24
 	.byte	W03
 	.byte		N12   , Fs3 
@@ -2023,14 +2023,14 @@ mus_Riminimare_9_B1:
 	.byte		        An3 
 	.byte	W06
 @ 013   ----------------------------------------
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   , Dn4 
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W32
 	.byte	W01
 	.byte		N06   
@@ -2046,13 +2046,13 @@ mus_Riminimare_9_B1:
 	.byte		N42   , Cs4 
 	.byte	W06
 @ 014   ----------------------------------------
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        80*mus_Riminimare_mvl/mxv
+	.byte		        80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W24
 	.byte	W03
 	.byte		N12   , An3 
@@ -2067,27 +2067,27 @@ mus_Riminimare_9_B1:
 	.byte	W08
 	.byte		N12   , Bn3 
 	.byte	W12
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N30   , An3 
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W03
 @ 015   ----------------------------------------
 	.byte	W18
 	.byte		N06   , Bn3 
 	.byte	W18
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   , Gn3 
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W24
 	.byte	W03
 	.byte		N12   , Dn3 
@@ -2099,19 +2099,19 @@ mus_Riminimare_9_B1:
 	.byte	W18
 	.byte		N06   , En4 
 	.byte	W18
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte		N36   
 	.byte	W03
-	.byte		VOL   , 80*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 80*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        85*mus_Riminimare_mvl/mxv
+	.byte		        85*mus_riminimare_mvl/mxv
 	.byte	W03
-	.byte		        95*mus_Riminimare_mvl/mxv
+	.byte		        95*mus_riminimare_mvl/mxv
 	.byte	W48
 	.byte	W03
 	.byte	GOTO
-	 .word	mus_Riminimare_9_B1
-mus_Riminimare_9_B2:
+	 .word	mus_riminimare_9_B1
+mus_riminimare_9_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -2119,16 +2119,16 @@ mus_Riminimare_9_B2:
 
 @**************** Track 10 (Midi-Chn.10) ****************@
 
-mus_Riminimare_10:
-	.byte	KEYSH , mus_Riminimare_key+0
+mus_riminimare_10:
+	.byte	KEYSH , mus_riminimare_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 80
 	.byte		PAN   , c_v+0
 	.byte		XCMD  , xIECV , 12
 	.byte		        xIECL , 8
-	.byte		VOL   , 64*mus_Riminimare_mvl/mxv
+	.byte		VOL   , 64*mus_riminimare_mvl/mxv
 	.byte	W18
-mus_Riminimare_10_B1:
+mus_riminimare_10_B1:
 @ 001   ----------------------------------------
 	.byte	W96
 @ 002   ----------------------------------------
@@ -2253,8 +2253,8 @@ mus_Riminimare_10_B1:
 	.byte		N36   , En2 , v104
 	.byte	W60
 	.byte	GOTO
-	 .word	mus_Riminimare_10_B1
-mus_Riminimare_10_B2:
+	 .word	mus_riminimare_10_B1
+mus_riminimare_10_B2:
 @ 017   ----------------------------------------
 	.byte	W96
 @ 018   ----------------------------------------
@@ -2263,23 +2263,23 @@ mus_Riminimare_10_B2:
 @******************************************************@
 	.align	2
 
-mus_Riminimare:
+mus_riminimare:
 	.byte	10	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	mus_Riminimare_pri	@ Priority
-	.byte	mus_Riminimare_rev	@ Reverb.
+	.byte	mus_riminimare_pri	@ Priority
+	.byte	mus_riminimare_rev	@ Reverb.
 
-	.word	mus_Riminimare_grp
+	.word	mus_riminimare_grp
 
-	.word	mus_Riminimare_1
-	.word	mus_Riminimare_2
-	.word	mus_Riminimare_3
-	.word	mus_Riminimare_4
-	.word	mus_Riminimare_5
-	.word	mus_Riminimare_6
-	.word	mus_Riminimare_7
-	.word	mus_Riminimare_8
-	.word	mus_Riminimare_9
-	.word	mus_Riminimare_10
+	.word	mus_riminimare_1
+	.word	mus_riminimare_2
+	.word	mus_riminimare_3
+	.word	mus_riminimare_4
+	.word	mus_riminimare_5
+	.word	mus_riminimare_6
+	.word	mus_riminimare_7
+	.word	mus_riminimare_8
+	.word	mus_riminimare_9
+	.word	mus_riminimare_10
 
 	.end

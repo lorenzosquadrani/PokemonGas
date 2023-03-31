@@ -2,93 +2,93 @@
 .set LOCALID_RIVAL_MOM, 4
 .set LOCALID_RIVAL, 7
 
-RiminiTown_BrendansHouse_1F_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, RiminiTown_BrendansHouse_1F_OnLoad
-	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_BrendansHouse_1F_OnTransition
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, RiminiTown_BrendansHouse_1F_OnFrame
+RiminiTown_CasaGas_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, RiminiTown_CasaGas_1F_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_CasaGas_1F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, RiminiTown_CasaGas_1F_OnFrame
 	.byte 0
 
-RiminiTown_BrendansHouse_1F_OnLoad:
-	call_if_lt VAR_RIMINI_INTRO_STATE, 6, RiminiTown_BrendansHouse_1F_EventScript_SetMovingBoxes
-	call_if_set FLAG_RECEIVED_RUNNING_SHOES, RiminiTown_BrendansHouse_1F_EventScript_CheckShowShoesManual
+RiminiTown_CasaGas_1F_OnLoad:
+	call_if_lt VAR_RIMINI_INTRO_STATE, 6, RiminiTown_CasaGas_1F_EventScript_SetMovingBoxes
+	call_if_set FLAG_RECEIVED_RUNNING_SHOES, RiminiTown_CasaGas_1F_EventScript_CheckShowShoesManual
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_SetMovingBoxes::
+RiminiTown_CasaGas_1F_EventScript_SetMovingBoxes::
 	setmetatile 5, 4, METATILE_BrendansMaysHouse_MovingBox_Open, TRUE
 	setmetatile 5, 2, METATILE_BrendansMaysHouse_MovingBox_Closed, TRUE
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_CheckShowShoesManual::
+RiminiTown_CasaGas_1F_EventScript_CheckShowShoesManual::
 	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, RiminiTown_BrendansHouse_1F_EventScript_ShowRunningShoesManual
+	goto_if_eq VAR_RESULT, MALE, RiminiTown_CasaGas_1F_EventScript_ShowRunningShoesManual
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_ShowRunningShoesManual::
+RiminiTown_CasaGas_1F_EventScript_ShowRunningShoesManual::
 	setmetatile 3, 7, METATILE_BrendansMaysHouse_BookOnTable, TRUE
 	return
 
-RiminiTown_BrendansHouse_1F_OnTransition:
-	call_if_eq VAR_RIMINI_INTRO_STATE, 3, RiminiTown_BrendansHouse_1F_EventScript_MoveMomToDoor
-	call_if_eq VAR_RIMINI_INTRO_STATE, 5, RiminiTown_BrendansHouse_1F_EventScript_MoveMomToStairs
-	call_if_eq VAR_RIMINI_INTRO_STATE, 6, RiminiTown_BrendansHouse_1F_EventScript_MoveMomToTV
+RiminiTown_CasaGas_1F_OnTransition:
+	call_if_eq VAR_RIMINI_INTRO_STATE, 3, RiminiTown_CasaGas_1F_EventScript_MoveMomToDoor
+	call_if_eq VAR_RIMINI_INTRO_STATE, 5, RiminiTown_CasaGas_1F_EventScript_MoveMomToStairs
+	call_if_eq VAR_RIMINI_INTRO_STATE, 6, RiminiTown_CasaGas_1F_EventScript_MoveMomToTV
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_MoveMomToStairs::
+RiminiTown_CasaGas_1F_EventScript_MoveMomToStairs::
 	setobjectxyperm LOCALID_MOM, 8, 4
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_MoveMomToTV::
+RiminiTown_CasaGas_1F_EventScript_MoveMomToTV::
 	setobjectxyperm LOCALID_MOM, 4, 5
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_MoveMomToDoor::
+RiminiTown_CasaGas_1F_EventScript_MoveMomToDoor::
 	setobjectxyperm LOCALID_MOM, 9, 8
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
 @ Many of the below scripts have no gender check because they assume youre in the correct house
 @ The below SS Ticket script uses Mays house state by accident(?), but theyre both set identically after the intro
-RiminiTown_BrendansHouse_1F_OnFrame:
-	map_script_2 VAR_RIMINI_INTRO_STATE, 3, RiminiTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn
-	map_script_2 VAR_RIMINI_INTRO_STATE, 5, RiminiTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock
-	map_script_2 VAR_RIMINI_INTRO_STATE, 6, RiminiTown_BrendansHouse_1F_EventScript_PetalburgGymReport
-	map_script_2 VAR_RIMINI_HOUSES_STATE_MAY, 1, RiminiTown_BrendansHouse_1F_EventScript_YoureNewNeighbor
+RiminiTown_CasaGas_1F_OnFrame:
+	map_script_2 VAR_RIMINI_INTRO_STATE, 3, RiminiTown_CasaGas_1F_EventScript_EnterHouseMovingIn
+	map_script_2 VAR_RIMINI_INTRO_STATE, 5, RiminiTown_CasaGas_1F_EventScript_GoUpstairsToSetClock
+	map_script_2 VAR_RIMINI_INTRO_STATE, 6, RiminiTown_CasaGas_1F_EventScript_PetalburgGymReport
+	map_script_2 VAR_RIMINI_HOUSES_STATE_MAY, 1, RiminiTown_CasaGas_1F_EventScript_YoureNewNeighbor
 	map_script_2 VAR_RIMINI_HOUSES_STATE_MAY, 3, PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV
 	.2byte 0
 
-RiminiTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock::
+RiminiTown_CasaGas_1F_EventScript_GoUpstairsToSetClock::
 	lockall
 	msgbox PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_BrendansHouse_1F_Movement_PushTowardStairs
-	applymovement LOCALID_MOM, RiminiTown_BrendansHouse_1F_Movement_PushTowardStairs
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaGas_1F_Movement_PushTowardStairs
+	applymovement LOCALID_MOM, RiminiTown_CasaGas_1F_Movement_PushTowardStairs
 	waitmovement 0
 	warp MAP_RIMINI_TOWN_BRENDANS_HOUSE_2F, 7, 1
 	waitstate
 	releaseall
 	end
 
-RiminiTown_BrendansHouse_1F_Movement_PushTowardStairs:
+RiminiTown_CasaGas_1F_Movement_PushTowardStairs:
 	walk_up
 	step_end
 
-RiminiTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn::
+RiminiTown_CasaGas_1F_EventScript_EnterHouseMovingIn::
 	lockall
 	setvar VAR_0x8004, LOCALID_MOM
 	setvar VAR_0x8005, MALE
 	goto PlayersHouse_1F_EventScript_EnterHouseMovingIn
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_PetalburgGymReport::
+RiminiTown_CasaGas_1F_EventScript_PetalburgGymReport::
 	lockall
 	setvar VAR_0x8004, MALE
 	setvar VAR_0x8005, LOCALID_MOM
 	goto PlayersHouse_1F_EventScript_PetalburgGymReportMale
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_YoureNewNeighbor::
+RiminiTown_CasaGas_1F_EventScript_YoureNewNeighbor::
 	lockall
 	playse SE_PIN
 	applymovement LOCALID_RIVAL_MOM, Common_Movement_ExclamationMark
@@ -96,7 +96,7 @@ RiminiTown_BrendansHouse_1F_EventScript_YoureNewNeighbor::
 	applymovement LOCALID_RIVAL_MOM, Common_Movement_Delay48
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_RIVAL_MOM, RiminiTown_BrendansHouse_1F_Movement_RivalMomApproach
+	applymovement LOCALID_RIVAL_MOM, RiminiTown_CasaGas_1F_Movement_RivalMomApproach
 	waitmovement 0
 	special GetRivalSonDaughterString
 	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
@@ -105,7 +105,7 @@ RiminiTown_BrendansHouse_1F_EventScript_YoureNewNeighbor::
 	releaseall
 	end
 
-RiminiTown_BrendansHouse_1F_Movement_RivalMomApproach:
+RiminiTown_CasaGas_1F_Movement_RivalMomApproach:
 	walk_down
 	walk_right
 	walk_right
@@ -114,7 +114,7 @@ RiminiTown_BrendansHouse_1F_Movement_RivalMomApproach:
 	walk_right
 	step_end
 
-RiminiTown_BrendansHouse_1F_EventScript_GoSeeRoom::
+RiminiTown_CasaGas_1F_EventScript_GoSeeRoom::
 	lockall
 	setvar VAR_0x8004, LOCALID_MOM
 	setvar VAR_0x8005, MALE
@@ -123,25 +123,25 @@ RiminiTown_BrendansHouse_1F_EventScript_GoSeeRoom::
 	goto PlayersHouse_1F_EventScript_MomGoSeeRoom
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_MeetRival0::
+RiminiTown_CasaGas_1F_EventScript_MeetRival0::
 	lockall
 	setvar VAR_0x8008, 0
-	goto RiminiTown_BrendansHouse_1F_EventScript_MeetRival
+	goto RiminiTown_CasaGas_1F_EventScript_MeetRival
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_MeetRival1::
+RiminiTown_CasaGas_1F_EventScript_MeetRival1::
 	lockall
 	setvar VAR_0x8008, 1
-	goto RiminiTown_BrendansHouse_1F_EventScript_MeetRival
+	goto RiminiTown_CasaGas_1F_EventScript_MeetRival
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_MeetRival2::
+RiminiTown_CasaGas_1F_EventScript_MeetRival2::
 	lockall
 	setvar VAR_0x8008, 2
-	goto RiminiTown_BrendansHouse_1F_EventScript_MeetRival
+	goto RiminiTown_CasaGas_1F_EventScript_MeetRival
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_MeetRival::
+RiminiTown_CasaGas_1F_EventScript_MeetRival::
 	playse SE_EXIT
 	delay 10
 	addobject LOCALID_RIVAL
@@ -151,16 +151,16 @@ RiminiTown_BrendansHouse_1F_EventScript_MeetRival::
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Common_Movement_Delay48
 	waitmovement 0
-	call_if_ne VAR_0x8008, 1, RiminiTown_BrendansHouse_1F_EventScript_PlayerFaceBrendan
+	call_if_ne VAR_0x8008, 1, RiminiTown_CasaGas_1F_EventScript_PlayerFaceBrendan
 	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
-	call_if_eq VAR_0x8008, 0, RiminiTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer0
-	call_if_eq VAR_0x8008, 1, RiminiTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer1
-	call_if_eq VAR_0x8008, 2, RiminiTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer2
+	call_if_eq VAR_0x8008, 0, RiminiTown_CasaGas_1F_EventScript_BrendanApproachPlayer0
+	call_if_eq VAR_0x8008, 1, RiminiTown_CasaGas_1F_EventScript_BrendanApproachPlayer1
+	call_if_eq VAR_0x8008, 2, RiminiTown_CasaGas_1F_EventScript_BrendanApproachPlayer2
 	msgbox RivalsHouse_1F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_0x8008, 0, RiminiTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs0
-	call_if_eq VAR_0x8008, 1, RiminiTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs1
-	call_if_eq VAR_0x8008, 2, RiminiTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs2
+	call_if_eq VAR_0x8008, 0, RiminiTown_CasaGas_1F_EventScript_BrendanGoUpstairs0
+	call_if_eq VAR_0x8008, 1, RiminiTown_CasaGas_1F_EventScript_BrendanGoUpstairs1
+	call_if_eq VAR_0x8008, 2, RiminiTown_CasaGas_1F_EventScript_BrendanGoUpstairs2
 	playse SE_EXIT
 	removeobject LOCALID_RIVAL
 	setflag FLAG_HIDE_RIMINI_TOWN_BRENDANS_HOUSE_BRENDAN
@@ -174,27 +174,27 @@ RiminiTown_BrendansHouse_1F_EventScript_MeetRival::
 	releaseall
 	end
 
-RiminiTown_BrendansHouse_1F_EventScript_PlayerFaceBrendan::
+RiminiTown_CasaGas_1F_EventScript_PlayerFaceBrendan::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer0::
-	applymovement LOCALID_RIVAL, RiminiTown_BrendansHouse_1F_Movement_BrendanApproachPlayer0
+RiminiTown_CasaGas_1F_EventScript_BrendanApproachPlayer0::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaGas_1F_Movement_BrendanApproachPlayer0
 	waitmovement 0
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer1::
-	applymovement LOCALID_RIVAL, RiminiTown_BrendansHouse_1F_Movement_BrendanApproachPlayer1
+RiminiTown_CasaGas_1F_EventScript_BrendanApproachPlayer1::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaGas_1F_Movement_BrendanApproachPlayer1
 	waitmovement 0
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer2::
-	applymovement LOCALID_RIVAL, RiminiTown_BrendansHouse_1F_Movement_BrendanApproachPlayer2
+RiminiTown_CasaGas_1F_EventScript_BrendanApproachPlayer2::
+	applymovement LOCALID_RIVAL, RiminiTown_CasaGas_1F_Movement_BrendanApproachPlayer2
 	waitmovement 0
 	return
 
-RiminiTown_BrendansHouse_1F_Movement_BrendanApproachPlayer0:
+RiminiTown_CasaGas_1F_Movement_BrendanApproachPlayer0:
 	walk_in_place_faster_left
 	walk_left
 	walk_in_place_faster_up
@@ -204,13 +204,13 @@ RiminiTown_BrendansHouse_1F_Movement_BrendanApproachPlayer0:
 	walk_up
 	step_end
 
-RiminiTown_BrendansHouse_1F_Movement_BrendanApproachPlayer1:
+RiminiTown_CasaGas_1F_Movement_BrendanApproachPlayer1:
 	walk_up
 	walk_up
 	walk_up
 	step_end
 
-RiminiTown_BrendansHouse_1F_Movement_BrendanApproachPlayer2:
+RiminiTown_CasaGas_1F_Movement_BrendanApproachPlayer2:
 	walk_in_place_faster_right
 	walk_right
 	walk_in_place_faster_up
@@ -220,31 +220,31 @@ RiminiTown_BrendansHouse_1F_Movement_BrendanApproachPlayer2:
 	walk_up
 	step_end
 
-RiminiTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs0::
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit0
-	applymovement LOCALID_RIVAL, RiminiTown_BrendansHouse_1F_Movement_BrendanGoUpstairs0
+RiminiTown_CasaGas_1F_EventScript_BrendanGoUpstairs0::
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaGas_1F_Movement_PlayerWatchBrendanExit0
+	applymovement LOCALID_RIVAL, RiminiTown_CasaGas_1F_Movement_BrendanGoUpstairs0
 	waitmovement 0
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs1::
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit1
-	applymovement LOCALID_RIVAL, RiminiTown_BrendansHouse_1F_Movement_BrendanGoUpstairs1
+RiminiTown_CasaGas_1F_EventScript_BrendanGoUpstairs1::
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaGas_1F_Movement_PlayerWatchBrendanExit1
+	applymovement LOCALID_RIVAL, RiminiTown_CasaGas_1F_Movement_BrendanGoUpstairs1
 	waitmovement 0
 	return
 
-RiminiTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs2::
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit2
-	applymovement LOCALID_RIVAL, RiminiTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2
+RiminiTown_CasaGas_1F_EventScript_BrendanGoUpstairs2::
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaGas_1F_Movement_PlayerWatchBrendanExit2
+	applymovement LOCALID_RIVAL, RiminiTown_CasaGas_1F_Movement_BrendanGoUpstairs2
 	waitmovement 0
 	return
 
-RiminiTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit0:
+RiminiTown_CasaGas_1F_Movement_PlayerWatchBrendanExit0:
 	delay_16
 	delay_8
 	walk_in_place_faster_right
 	step_end
 
-RiminiTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit1:
+RiminiTown_CasaGas_1F_Movement_PlayerWatchBrendanExit1:
 	delay_16
 	delay_8
 	walk_in_place_faster_right
@@ -253,13 +253,13 @@ RiminiTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit1:
 	walk_in_place_faster_up
 	step_end
 
-RiminiTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit2:
+RiminiTown_CasaGas_1F_Movement_PlayerWatchBrendanExit2:
 	delay_16
 	delay_8
 	walk_in_place_faster_left
 	step_end
 
-RiminiTown_BrendansHouse_1F_Movement_BrendanGoUpstairs0:
+RiminiTown_CasaGas_1F_Movement_BrendanGoUpstairs0:
 	walk_in_place_faster_right
 	walk_right
 	walk_in_place_faster_up
@@ -267,7 +267,7 @@ RiminiTown_BrendansHouse_1F_Movement_BrendanGoUpstairs0:
 	walk_up
 	step_end
 
-RiminiTown_BrendansHouse_1F_Movement_BrendanGoUpstairs1:
+RiminiTown_CasaGas_1F_Movement_BrendanGoUpstairs1:
 	walk_in_place_faster_right
 	walk_right
 	walk_in_place_faster_up
@@ -279,7 +279,7 @@ RiminiTown_BrendansHouse_1F_Movement_BrendanGoUpstairs1:
 	walk_up
 	step_end
 
-RiminiTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2:
+RiminiTown_CasaGas_1F_Movement_BrendanGoUpstairs2:
 	walk_in_place_faster_left
 	walk_left
 	walk_in_place_faster_up

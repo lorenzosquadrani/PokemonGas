@@ -45,7 +45,7 @@ PlayersHouse_1F_EventScript_MomGoSeeRoom::
 	releaseall
 	end
 
-RiminiTown_BrendansHouse_2F_EventScript_WallClock::
+RiminiTown_CasaGas_2F_EventScript_WallClock::
 	lockall
 	setvar VAR_0x8004, MALE
 	goto PlayersHouse_2F_EventScript_WallClock
