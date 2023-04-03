@@ -18,8 +18,8 @@ SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleVisitingTrainer::
 	special CopyEReaderTrainerGreeting
 	msgbox gStringVar4, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_0x8004, SPECIAL_BATTLE_EREADER
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_EREADER
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	call_if_eq VAR_RESULT, B_OUTCOME_DREW, SootopolisCity_MysteryEventsHouse_B1F_EventScript_BattleTie

@@ -113,6 +113,6 @@ IslandCave_EventScript_DefeatedRegice::
 	end
 
 IslandCave_EventScript_RanFromRegice::
-	setvar VAR_0x8004, SPECIES_REGICE
+	setvar VAR_TEMP_PAR_4, SPECIES_REGICE
 	goto Common_EventScript_LegendaryFlewAway
 	end

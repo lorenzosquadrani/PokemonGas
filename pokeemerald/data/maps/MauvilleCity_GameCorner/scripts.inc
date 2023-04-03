@@ -248,31 +248,31 @@ MauvilleCity_GameCorner_EventScript_ChooseTMPrize::
 MauvilleCity_GameCorner_EventScript_TM32::
 	setvar VAR_TEMP_1, 1
 	bufferitemname STR_VAR_1, ITEM_TM32
-	setvar VAR_0x8004, ITEM_TM32
+	setvar VAR_TEMP_PAR_4, ITEM_TM32
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TM29::
 	setvar VAR_TEMP_1, 2
 	bufferitemname STR_VAR_1, ITEM_TM29
-	setvar VAR_0x8004, ITEM_TM29
+	setvar VAR_TEMP_PAR_4, ITEM_TM29
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TM35::
 	setvar VAR_TEMP_1, 3
 	bufferitemname STR_VAR_1, ITEM_TM35
-	setvar VAR_0x8004, ITEM_TM35
+	setvar VAR_TEMP_PAR_4, ITEM_TM35
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TM24::
 	setvar VAR_TEMP_1, 4
 	bufferitemname STR_VAR_1, ITEM_TM24
-	setvar VAR_0x8004, ITEM_TM24
+	setvar VAR_TEMP_PAR_4, ITEM_TM24
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TM13::
 	setvar VAR_TEMP_1, 5
 	bufferitemname STR_VAR_1, ITEM_TM13
-	setvar VAR_0x8004, ITEM_TM13
+	setvar VAR_TEMP_PAR_4, ITEM_TM13
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_ConfirmTMPrize::
@@ -505,7 +505,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine0::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -515,7 +515,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine1::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -525,7 +525,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine2::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 2
+	setvar VAR_TEMP_PAR_4, 2
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -535,7 +535,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine3::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 3
+	setvar VAR_TEMP_PAR_4, 3
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -545,7 +545,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine4::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 4
+	setvar VAR_TEMP_PAR_4, 4
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -555,7 +555,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine5::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 5
+	setvar VAR_TEMP_PAR_4, 5
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -565,7 +565,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine6::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 6
+	setvar VAR_TEMP_PAR_4, 6
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -575,7 +575,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine7::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 7
+	setvar VAR_TEMP_PAR_4, 7
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -585,7 +585,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine8::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 8
+	setvar VAR_TEMP_PAR_4, 8
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -595,7 +595,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine9::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 9
+	setvar VAR_TEMP_PAR_4, 9
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -605,7 +605,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine10::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 10
+	setvar VAR_TEMP_PAR_4, 10
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall
@@ -615,7 +615,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine11::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
-	setvar VAR_0x8004, 11
+	setvar VAR_TEMP_PAR_4, 11
 	specialvar VAR_RESULT, GetSlotMachineId
 	playslotmachine VAR_RESULT
 	releaseall

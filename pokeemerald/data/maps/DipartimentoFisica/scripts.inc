@@ -613,7 +613,7 @@ DipartimentoFisica_EventScript_ConfirmTrendyPhrase::
 
 DipartimentoFisica_EventScript_RejectTrendyPhrase::
 	msgbox DipartimentoFisica_Text_TellMeWhatsNewAndIn, MSGBOX_DEFAULT
-	setvar VAR_0x8004, EASY_CHAT_TYPE_TRENDY_PHRASE
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_TRENDY_PHRASE
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer
@@ -623,7 +623,7 @@ DipartimentoFisica_EventScript_RejectTrendyPhrase::
 
 DipartimentoFisica_EventScript_GiveNewTrendyPhrase::
 	incrementgamestat GAME_STAT_STARTED_TRENDS
-	goto_if_eq VAR_0x8004, FALSE, DipartimentoFisica_EventScript_PhraseNotTrendyEnough
+	goto_if_eq VAR_TEMP_PAR_4, FALSE, DipartimentoFisica_EventScript_PhraseNotTrendyEnough
 	msgbox DipartimentoFisica_Text_OfCourseIKnowAboutThat, MSGBOX_DEFAULT
 	release
 	end

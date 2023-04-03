@@ -43,7 +43,7 @@ MtChimney_CableCarStation_EventScript_RideCableCar::
 	applymovement LOCALID_ATTENDANT, MtChimney_CableCarStation_Movement_LeadPlayerToCableCar
 	applymovement OBJ_EVENT_ID_PLAYER, MtChimney_CableCarStation_Movement_BoardCableCar
 	waitmovement 0
-	setvar VAR_0x8004, TRUE  @ Going down
+	setvar VAR_TEMP_PAR_4, TRUE  @ Going down
 	setvar VAR_CABLE_CAR_STATION_STATE, 2
 	incrementgamestat GAME_STAT_RODE_CABLE_CAR
 	special CableCarWarp

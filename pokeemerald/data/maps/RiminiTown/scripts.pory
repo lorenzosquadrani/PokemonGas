@@ -18,7 +18,7 @@ RiminiTown_MapScripts::
 
 	@ State descriptions for VAR_RIMINI_INTRO_STATE
 	@ 1: In truck male
-	@ 2: In truck female
+	@ 2: In truck female (l'ho cancellato)
 	@ 3: Entered house
 	@ 4: Told to go set clock
 	@ 5: Entered 2F to set clock
@@ -43,20 +43,28 @@ RiminiTown_MapScripts::
 RiminiTown_OnTransition:
 	setflag FLAG_VISITED_RIMINI_TOWN
 	call Common_EventScript_SetupRivalGfxId
-	call_if_eq VAR_RIMINI_INTRO_STATE, 2, RiminiTown_EventScript_MoveMomToMaysDoor
 	call_if_unset FLAG_RESCUED_BIRCH, RiminiTown_EventScript_SetTwinPos
 	call_if_eq VAR_RIMINI_TOWN_STATE, 3, RiminiTown_EventScript_SetMomStandingInFrontOfDoorPos
 	call_if_eq VAR_RIMINI_HOUSES_STATE_MAY, 4, RiminiTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
 	call_if_eq VAR_RIMINI_HOUSES_STATE_BRENDAN, 4, RiminiTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent
 	call_if_eq VAR_BOLOGNA_RIVAL_STATE, 1, RiminiTown_EventScript_MoveRivalFromBologna
 	call_if_eq VAR_RIMINI_RIVAL_STATE, 3, RiminiTown_EventScript_SetRivalLeftForRoute103
-	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, RiminiTown_EventScript_HideMapNamePopup
-	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, RiminiTown_EventScript_LeftLabAfterDexUpgrade
 	end
 
-RiminiTown_EventScript_LeftLabAfterDexUpgrade::
-	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 3
-	return
+RiminiTown_OnFrame:
+	map_script_2 VAR_RIMINI_INTRO_STATE, 1, RiminiTown_EventScript_StepOffTruck
+	.2byte 0
+
+RiminiTown_EventScript_StepOffTruck::
+	lockall
+	setvar VAR_TEMP_PAR_4, 5
+	setvar VAR_TEMP_PAR_5, 8
+	call RiminiTown_EventScript_GoInsideWithMom
+	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_TRUCK
+	warpsilent MAP_RIMINI_TOWN_CASA_GAS_1F, 8, 8
+	waitstate
+	releaseall
+	end
 
 RiminiTown_EventScript_HideMapNamePopup::
 	setflag FLAG_HIDE_MAP_NAME_POPUP
@@ -107,45 +115,17 @@ RiminiTown_EventScript_SetMomInFrontOfDoorFemale::
 	setobjectxyperm LOCALID_MOM, 14, 9
 	return
 
-RiminiTown_OnFrame:
-	map_script_2 VAR_RIMINI_INTRO_STATE, 1, RiminiTown_EventScript_StepOffTruckMale
-	map_script_2 VAR_RIMINI_INTRO_STATE, 2, RiminiTown_EventScript_StepOffTruckFemale
-	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, RiminiTown_EventScript_BeginDexUpgradeScene
-	.2byte 0
-
-RiminiTown_EventScript_StepOffTruckMale::
-	lockall
-	setvar VAR_0x8004, 5
-	setvar VAR_0x8005, 8
-	call RiminiTown_EventScript_GoInsideWithMom
-	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_TRUCK
-	warpsilent MAP_RIMINI_TOWN_CASA_GAS_1F, 8, 8
-	waitstate
-	releaseall
-	end
-
-RiminiTown_EventScript_StepOffTruckFemale::
-	lockall
-	setvar VAR_0x8004, 14
-	setvar VAR_0x8005, 8
-	call RiminiTown_EventScript_GoInsideWithMom
-	setflag FLAG_HIDE_RIMINI_TOWN_CASA_STE_TRUCK
-	warpsilent MAP_RIMINI_TOWN_CASA_STE_1F, 2, 8
-	waitstate
-	releaseall
-	end
-
 RiminiTown_EventScript_GoInsideWithMom::
 	delay 15
 	playse SE_LEDGE
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerStepOffTruck
 	waitmovement 0
-	opendoor VAR_0x8004, VAR_0x8005
+	opendoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	waitdooranim
 	addobject LOCALID_MOM
 	applymovement LOCALID_MOM, RiminiTown_Movement_MomExitHouse
 	waitmovement 0
-	closedoor VAR_0x8004, VAR_0x8005
+	closedoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	waitdooranim
 	delay 10
 	applymovement LOCALID_MOM, RiminiTown_Movement_MomApproachPlayerAtTruck
@@ -155,7 +135,7 @@ RiminiTown_EventScript_GoInsideWithMom::
 	applymovement LOCALID_MOM, RiminiTown_Movement_MomApproachDoor
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerApproachDoor
 	waitmovement 0
-	opendoor VAR_0x8004, VAR_0x8005
+	opendoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	waitdooranim
 	applymovement LOCALID_MOM, RiminiTown_Movement_MomEnterHouse
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerEnterHouse
@@ -163,7 +143,7 @@ RiminiTown_EventScript_GoInsideWithMom::
 	setflag FLAG_HIDE_RIMINI_TOWN_MOM_OUTSIDE
 	setvar VAR_RIMINI_INTRO_STATE, 3
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	closedoor VAR_0x8004, VAR_0x8005
+	closedoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	waitdooranim
 	clearflag FLAG_HIDE_RIMINI_TOWN_FAT_MAN
 	clearflag FLAG_HIDE_MAP_NAME_POPUP

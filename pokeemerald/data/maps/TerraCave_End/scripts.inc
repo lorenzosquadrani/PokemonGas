@@ -57,7 +57,7 @@ TerraCave_End_EventScript_DefeatedGroudon::
 	end
 
 TerraCave_End_EventScript_RanFromGroudon::
-	setvar VAR_0x8004, SPECIES_GROUDON
+	setvar VAR_TEMP_PAR_4, SPECIES_GROUDON
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

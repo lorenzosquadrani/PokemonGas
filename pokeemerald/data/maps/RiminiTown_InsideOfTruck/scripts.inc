@@ -16,11 +16,6 @@ RiminiTown_InsideOfTruck_OnResume:
 RiminiTown_InsideOfTruck_EventScript_SetIntroFlags::
 	lockall
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, RiminiTown_InsideOfTruck_EventScript_SetIntroFlagsMale
-	end
-
-RiminiTown_InsideOfTruck_EventScript_SetIntroFlagsMale::
 	setrespawn HEAL_LOCATION_RIMINI_TOWN_CASA_GAS_2F
 	setvar VAR_RIMINI_INTRO_STATE, 1
 	setflag FLAG_HIDE_RIMINI_TOWN_CASA_STE_MOM
@@ -31,4 +26,5 @@ RiminiTown_InsideOfTruck_EventScript_SetIntroFlagsMale::
 	setvar VAR_RIMINI_HOUSES_STATE_BRENDAN, 1
 	setdynamicwarp MAP_RIMINI_TOWN, 9, 23
 	releaseall
-	end
+	return
+

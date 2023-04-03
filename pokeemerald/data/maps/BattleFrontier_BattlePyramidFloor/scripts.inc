@@ -13,8 +13,8 @@ BattleFrontier_BattlePyramidFloor_OnFrame:
 BattleFrontier_BattlePyramidFloor_EventScript_UpdateLight::
 	lockall
 	@ pyramid_updatelight, cant use macro because it straddles the loop
-	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_UPDATE_LIGHT
-	setvar VAR_0x8005, 4
+	setvar VAR_TEMP_PAR_4, BATTLE_PYRAMID_FUNC_UPDATE_LIGHT
+	setvar VAR_TEMP_PAR_5, 4
 	setvar VAR_0x8006, PYRAMID_LIGHT_INCR_RADIUS
 	setvar VAR_0x8007, SE_SAVE
 	setvar VAR_RESULT, 0

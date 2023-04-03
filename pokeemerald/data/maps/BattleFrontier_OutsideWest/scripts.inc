@@ -73,7 +73,7 @@ BattleFrontier_OutsideWest_EventScript_BoardFerry::
 	waitmovement 0
 	delay 30
 	hideobjectat LOCALID_FERRY_ATTENDANT, MAP_BATTLE_FRONTIER_OUTSIDE_WEST
-	setvar VAR_0x8004, LOCALID_SS_TIDAL
+	setvar VAR_TEMP_PAR_4, LOCALID_SS_TIDAL
 	call Common_EventScript_FerryDepartIsland
 	return
 

@@ -19,7 +19,7 @@ BattleFrontier_BattleTowerLobby_OnResume:
 BattleFrontier_BattleTowerLobby_OnTransition:
 	call BattleFrontier_BattleTowerLobby_EventScript_ShowOrHideReporter
 	apprentice_shouldcheckgone
-	goto_if_eq VAR_0x8004, FALSE, BattleFrontier_BattleTowerLobby_EventScript_ShowApprentice  @ VAR_0x8004 always TRUE here
+	goto_if_eq VAR_TEMP_PAR_4, FALSE, BattleFrontier_BattleTowerLobby_EventScript_ShowApprentice  @ VAR_TEMP_PAR_4 always TRUE here
 	goto_if_set FLAG_DAILY_APPRENTICE_LEAVES, BattleFrontier_BattleTowerLobby_EventScript_HideApprentice
 BattleFrontier_BattleTowerLobby_EventScript_ShowApprentice::
 	clearflag FLAG_HIDE_APPRENTICE
@@ -196,13 +196,13 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterSinglesChallenge::
 	case FRONTIER_LVL_TENT, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge
 	case MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge
 	frontier_checkineligible
-	goto_if_eq VAR_0x8004, TRUE, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMons
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMons
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattleTowerLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	call BattleFrontier_EventScript_GetLvlMode
-	copyvar VAR_0x8004, VAR_RESULT
-	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
+	setvar VAR_TEMP_PAR_5, FRONTIER_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
@@ -259,13 +259,13 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterDoublesChallenge::
 	case FRONTIER_LVL_TENT, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge
 	case MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge
 	frontier_checkineligible
-	goto_if_eq VAR_0x8004, TRUE, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMons
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMons
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	call BattleFrontier_EventScript_GetLvlMode
-	copyvar VAR_0x8004, VAR_RESULT
-	setvar VAR_0x8005, FRONTIER_DOUBLES_PARTY_SIZE
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
+	setvar VAR_TEMP_PAR_5, FRONTIER_DOUBLES_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
@@ -323,13 +323,13 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterMultisChallenge::
 	case FRONTIER_LVL_TENT, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge
 	case MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge
 	frontier_checkineligible
-	goto_if_eq VAR_0x8004, TRUE, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMons
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMons
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	call BattleFrontier_EventScript_GetLvlMode
-	copyvar VAR_0x8004, VAR_RESULT
-	setvar VAR_0x8005, FRONTIER_MULTI_PARTY_SIZE
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
+	setvar VAR_TEMP_PAR_5, FRONTIER_MULTI_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
@@ -386,13 +386,13 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterLinkMultisChallenge::
 	case FRONTIER_LVL_TENT, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge
 	case MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_CancelChallenge
 	frontier_checkineligible
-	goto_if_eq VAR_0x8004, TRUE, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMons
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMons
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons2, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	call BattleFrontier_EventScript_GetLvlMode
-	copyvar VAR_0x8004, VAR_RESULT
-	setvar VAR_0x8005, FRONTIER_MULTI_PARTY_SIZE
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
+	setvar VAR_TEMP_PAR_5, FRONTIER_MULTI_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
@@ -444,7 +444,7 @@ BattleFrontier_BattleTowerLobby_EventScript_FeelingsMan::
 
 BattleFrontier_BattleTowerLobby_EventScript_FeelingsBattleNow::
 	msgbox BattleFrontier_BattleTowerLobby_Text_FeelWhatWhenYouBegin, MSGBOX_DEFAULT
-	setvar VAR_0x8004, EASY_CHAT_TYPE_BATTLE_START
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_BATTLE_START
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer
@@ -453,7 +453,7 @@ BattleFrontier_BattleTowerLobby_EventScript_FeelingsBattleNow::
 
 BattleFrontier_BattleTowerLobby_EventScript_FeelingsIWon::
 	msgbox BattleFrontier_BattleTowerLobby_Text_FeelWhatWhenYouveWon, MSGBOX_DEFAULT
-	setvar VAR_0x8004, EASY_CHAT_TYPE_BATTLE_WON
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_BATTLE_WON
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer
@@ -462,7 +462,7 @@ BattleFrontier_BattleTowerLobby_EventScript_FeelingsIWon::
 
 BattleFrontier_BattleTowerLobby_EventScript_FeelingsILost::
 	msgbox BattleFrontier_BattleTowerLobby_Text_FeelWhatWhenYouveLost, MSGBOX_DEFAULT
-	setvar VAR_0x8004, EASY_CHAT_TYPE_BATTLE_LOST
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_BATTLE_LOST
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer
@@ -586,7 +586,7 @@ BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge::
 
 BattleFrontier_BattleTowerLobby_EventScript_EnterElevator::
 	special SavePlayerParty
-	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SET_PARTY_ORDER
+	setvar VAR_TEMP_PAR_4, FRONTIER_UTIL_FUNC_SET_PARTY_ORDER
 	call BattleFrontier_BattleTowerLobby_EventScript_GetPartySize
 	special CallFrontierUtilFunc
 	setvar VAR_RESULT, 0
@@ -618,12 +618,12 @@ BattleFrontier_BattleTowerLobby_EventScript_WalkToElevator::
 	applymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_WalkToElevator
 	waitmovement 0
-	opendoor VAR_0x8004, 1
+	opendoor VAR_TEMP_PAR_4, 1
 	waitdooranim
 	applymovement VAR_LAST_TALKED, BattleFrontier_BattleTowerLobby_Movement_AttendantEnterElevator
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleTowerLobby_Movement_PlayerEnterElevator
 	waitmovement 0
-	closedoor VAR_0x8004, 1
+	closedoor VAR_TEMP_PAR_4, 1
 	waitdooranim
 	return
 
@@ -708,19 +708,19 @@ BattleFrontier_BattleTowerLobby_EventScript_GetDoorXCoord::
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetDoorXCoordSingles::
-	setvar VAR_0x8004, 6
+	setvar VAR_TEMP_PAR_4, 6
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetDoorXCoordDoubles::
-	setvar VAR_0x8004, 10
+	setvar VAR_TEMP_PAR_4, 10
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetDoorXCoordMultis::
-	setvar VAR_0x8004, 14
+	setvar VAR_TEMP_PAR_4, 14
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetDoorXCoordLinkMultis::
-	setvar VAR_0x8004, 18
+	setvar VAR_TEMP_PAR_4, 18
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetPartySize::
@@ -731,19 +731,19 @@ BattleFrontier_BattleTowerLobby_EventScript_GetPartySize::
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetSinglesPartySize::
-	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
+	setvar VAR_TEMP_PAR_5, FRONTIER_PARTY_SIZE
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetDoublesPartySize::
-	setvar VAR_0x8005, FRONTIER_DOUBLES_PARTY_SIZE
+	setvar VAR_TEMP_PAR_5, FRONTIER_DOUBLES_PARTY_SIZE
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetMultisPartySize::
-	setvar VAR_0x8005, FRONTIER_MULTI_PARTY_SIZE
+	setvar VAR_TEMP_PAR_5, FRONTIER_MULTI_PARTY_SIZE
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_GetLinkMultisPartySize::
-	setvar VAR_0x8005, FRONTIER_MULTI_PARTY_SIZE
+	setvar VAR_TEMP_PAR_5, FRONTIER_MULTI_PARTY_SIZE
 	return
 
 BattleFrontier_EventScript_GetLvlMode::
@@ -751,10 +751,10 @@ BattleFrontier_EventScript_GetLvlMode::
 	return
 
 BattleFrontier_BattleTowerLobby_EventScript_TryCableLink::
-	setvar VAR_0x8004, USING_BATTLE_TOWER
+	setvar VAR_TEMP_PAR_4, USING_BATTLE_TOWER
 	message gText_PleaseWaitForLink
 	waitmessage
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_5, 0
 	special TryBattleLinkup
 	waitstate
 	goto_if_eq VAR_RESULT, LINKUP_SUCCESS, BattleFrontier_BattleTowerLobby_EventScript_CableLinkSuccessful
@@ -768,7 +768,7 @@ BattleFrontier_BattleTowerLobby_EventScript_TryCableLink::
 
 BattleFrontier_BattleTowerLobby_EventScript_AbortLinkDifferentSelections::
 	special CloseLink
-	goto_if_eq VAR_0x8005, 3, BattleFrontier_BattleTowerLobby_EventScript_FriendDifferentSelection
+	goto_if_eq VAR_TEMP_PAR_5, 3, BattleFrontier_BattleTowerLobby_EventScript_FriendDifferentSelection
 	msgbox Text_PlayersMadeDifferentSelections, MSGBOX_DEFAULT
 	release
 	end
@@ -788,9 +788,9 @@ BattleFrontier_BattleTowerLobby_EventScript_AbortLinkIncorrectNumberOfPlayers::
 
 BattleFrontier_BattleTowerLobby_EventScript_AbortLink::
 	special CloseLink
-	call_if_eq VAR_0x8005, 0, BattleFrontier_BattleTowerLobby_EventScript_FriendChoseDifferentLvlMode
-	call_if_eq VAR_0x8005, 1, BattleFrontier_BattleTowerLobby_EventScript_FriendAlsoSelectedMon
-	call_if_eq VAR_0x8005, 2, BattleFrontier_BattleTowerLobby_EventScript_FriendAlsoSelectedMons
+	call_if_eq VAR_TEMP_PAR_5, 0, BattleFrontier_BattleTowerLobby_EventScript_FriendChoseDifferentLvlMode
+	call_if_eq VAR_TEMP_PAR_5, 1, BattleFrontier_BattleTowerLobby_EventScript_FriendAlsoSelectedMon
+	call_if_eq VAR_TEMP_PAR_5, 2, BattleFrontier_BattleTowerLobby_EventScript_FriendAlsoSelectedMons
 	msgbox BattleFrontier_BattleTowerLobby_Text_ChooseDifferentMonsMatchLvlMode, MSGBOX_DEFAULT
 	release
 	end
@@ -827,7 +827,7 @@ BattleFrontier_BattleTowerLobby_EventScript_ExplainLinkMultisChallenge::
 	end
 
 BattleFrontier_BattleTowerLobby_EventScript_TryWirelessLink::
-	setvar VAR_0x8004, LINK_GROUP_BATTLE_TOWER
+	setvar VAR_TEMP_PAR_4, LINK_GROUP_BATTLE_TOWER
 	goto BattleFrontier_BattleTowerLobby_EventScript_ChooseLeader
 	end
 

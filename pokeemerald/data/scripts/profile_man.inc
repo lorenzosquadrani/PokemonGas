@@ -24,7 +24,7 @@ ProfileMan_EventScript_Info::
 ProfileMan_EventScript_CreateProfile::
 	msgbox ProfileMan_Text_LetsSeeItThen, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_0x8004, EASY_CHAT_TYPE_PROFILE
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_PROFILE
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer
@@ -38,7 +38,7 @@ ProfileMan_EventScript_CancelShowProfile::
 	end
 
 ProfileMan_EventScript_ShowProfile::
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	special ShowEasyChatProfile
 	waitmessage
 	delay 80
@@ -74,7 +74,7 @@ ProfileMan_EventScript_InfoNewProfile::
 ProfileMan_EventScript_CreateNewProfile::
 	msgbox ProfileMan_Text_EvenBetterThanLastProfile, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_0x8004, EASY_CHAT_TYPE_PROFILE
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_PROFILE
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer

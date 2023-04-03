@@ -36,8 +36,8 @@ NavelRock_Top_EventScript_HoOh::
 	lockall
 	setvar VAR_TEMP_1, 1
 	special SpawnCameraObject
-	setvar VAR_0x8004, 3  @ num loops
-	setvar VAR_0x8005, 35 @ delay
+	setvar VAR_TEMP_PAR_4, 3  @ num loops
+	setvar VAR_TEMP_PAR_5, 35 @ delay
 	special LoopWingFlapSE
 	applymovement LOCALID_HO_OH, NavelRock_Top_Movement_HoOhAppear
 	applymovement OBJ_EVENT_ID_CAMERA, NavelRock_Top_Movement_CameraPanUp
@@ -50,8 +50,8 @@ NavelRock_Top_EventScript_HoOh::
 	delay 30
 	waitmoncry
 	delay 60
-	setvar VAR_0x8004, 3  @ num loops
-	setvar VAR_0x8005, 35 @ delay
+	setvar VAR_TEMP_PAR_4, 3  @ num loops
+	setvar VAR_TEMP_PAR_5, 35 @ delay
 	special LoopWingFlapSE
 	applymovement OBJ_EVENT_ID_CAMERA, NavelRock_Top_Movement_CameraPanDown
 	applymovement LOCALID_HO_OH, NavelRock_Top_Movement_HoOhApproach
@@ -73,12 +73,12 @@ NavelRock_Top_EventScript_HoOh::
 
 NavelRock_Top_EventScript_DefeatedHoOh::
 	setflag FLAG_DEFEATED_HO_OH
-	setvar VAR_0x8004, SPECIES_HO_OH
+	setvar VAR_TEMP_PAR_4, SPECIES_HO_OH
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 NavelRock_Top_EventScript_RanFromHoOh::
-	setvar VAR_0x8004, SPECIES_HO_OH
+	setvar VAR_TEMP_PAR_4, SPECIES_HO_OH
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

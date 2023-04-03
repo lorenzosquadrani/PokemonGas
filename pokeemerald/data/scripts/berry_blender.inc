@@ -305,7 +305,7 @@ BerryBlender_EventScript_TryUseBerryBlender1:
 	end
 
 BerryBlender_EventScript_DoBerryBlending:
-	copyvar VAR_0x8004, NUM_OPPONENTS
+	copyvar VAR_TEMP_PAR_4, NUM_OPPONENTS
 	fadescreen FADE_TO_BLACK
 	special DoBerryBlending
 	waitstate
@@ -597,7 +597,7 @@ BerryBlender_EventScript_FourPlayerLink:
 	end
 
 BerryBlender_EventScript_DoLinkBerryBlending:
-	setvar VAR_0x8004, 0  @ number of opponents, 0 indicates Link
+	setvar VAR_TEMP_PAR_4, 0  @ number of opponents, 0 indicates Link
 	fadescreen FADE_TO_BLACK
 	removeobject 240 @ Unclear where these local IDs come from,
 	removeobject 239 @ but presumably they'd be the 4 link players
@@ -650,7 +650,7 @@ BerryBlender_EventScript_SpawnLinkPartners:
 	fadescreen FADE_TO_BLACK
 	specialvar VAR_RESULT, GetLinkPartnerNames
 	copyvar VAR_0x8008, VAR_RESULT
-	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_TEMP_PAR_4, VAR_0x8008
 	special SpawnLinkPartnerObjectEvent
 	goto BerryBlender_EventScript_LinkPlayersArrived
 	end
@@ -664,7 +664,7 @@ BerryBlender_EventScript_LinkPlayersArrived:
 	end
 
 BerryBlender_EventScript_StartDecideLinkLeader:
-	setvar VAR_0x8004, LINK_GROUP_BERRY_BLENDER
+	setvar VAR_TEMP_PAR_4, LINK_GROUP_BERRY_BLENDER
 	goto BerryBlender_EventScript_DecideLinkLeader
 	end
 

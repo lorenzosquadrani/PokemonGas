@@ -14,8 +14,8 @@ BattleFrontier_Lounge1_EventScript_Breeder::
 BattleFrontier_Lounge1_EventScript_ChooseMonToShowBreeder::
 	special ChoosePartyMon
 	waitstate
-	goto_if_ne VAR_0x8004, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge1_EventScript_ShowMonToBreeder
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge1_EventScript_CancelMonSelect
+	goto_if_ne VAR_TEMP_PAR_4, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge1_EventScript_ShowMonToBreeder
+	goto_if_eq VAR_TEMP_PAR_4, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge1_EventScript_CancelMonSelect
 	end
 
 BattleFrontier_Lounge1_EventScript_BreederIntro::
@@ -27,17 +27,17 @@ BattleFrontier_Lounge1_EventScript_AlreadyMetBreeder::
 	return
 
 @ BufferVarsForIVRater buffers the following values
-@ VAR_0x8005: Sum of the mons IVs
+@ VAR_TEMP_PAR_5: Sum of the mons IVs
 @ VAR_0x8006: Stat id of highest IV stat
 @ VAR_0x8007: IV of the highest IV stat
 BattleFrontier_Lounge1_EventScript_ShowMonToBreeder::
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
 	goto_if_eq VAR_RESULT, SPECIES_EGG, BattleFrontier_Lounge1_EventScript_ShowEggToBreeder
 	special BufferVarsForIVRater
-	goto_if_le VAR_0x8005, 90, BattleFrontier_Lounge1_EventScript_AverageTotalIVs       @ Average of 15
-	goto_if_le VAR_0x8005, 120, BattleFrontier_Lounge1_EventScript_AboveAverageTotalIVs @ Average of 20
-	goto_if_le VAR_0x8005, 150, BattleFrontier_Lounge1_EventScript_HighTotalIVs         @ Average of 25
-	goto_if_ge VAR_0x8005, 151, BattleFrontier_Lounge1_EventScript_VeryHighTotalIVs     @ Average of > 25
+	goto_if_le VAR_TEMP_PAR_5, 90, BattleFrontier_Lounge1_EventScript_AverageTotalIVs       @ Average of 15
+	goto_if_le VAR_TEMP_PAR_5, 120, BattleFrontier_Lounge1_EventScript_AboveAverageTotalIVs @ Average of 20
+	goto_if_le VAR_TEMP_PAR_5, 150, BattleFrontier_Lounge1_EventScript_HighTotalIVs         @ Average of 25
+	goto_if_ge VAR_TEMP_PAR_5, 151, BattleFrontier_Lounge1_EventScript_VeryHighTotalIVs     @ Average of > 25
 	end
 
 BattleFrontier_Lounge1_EventScript_ShowEggToBreeder::

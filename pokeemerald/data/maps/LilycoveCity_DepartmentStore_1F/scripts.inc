@@ -32,16 +32,16 @@ LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk::
 	delay 10
 	applymovement LOCALID_LOTTERY_CLERK, Common_Movement_FacePlayer
 	waitmovement 0
-	goto_if_eq VAR_0x8004, 0, LilycoveCity_DepartmentStore_1F_EventScript_NoMatch
+	goto_if_eq VAR_TEMP_PAR_4, 0, LilycoveCity_DepartmentStore_1F_EventScript_NoMatch
 	incrementgamestat GAME_STAT_WON_POKEMON_LOTTERY
 	call_if_eq VAR_0x8006, 0, LilycoveCity_DepartmentStore_1F_EventScript_TicketMatchPartyMon
 	call_if_eq VAR_0x8006, 1, LilycoveCity_DepartmentStore_1F_EventScript_TicketMatchPCMon
-	bufferitemname STR_VAR_1, VAR_0x8005
-	call_if_eq VAR_0x8004, 1, LilycoveCity_DepartmentStore_1F_EventScript_TwoDigitMatch
-	call_if_eq VAR_0x8004, 2, LilycoveCity_DepartmentStore_1F_EventScript_ThreeDigitMatch
-	call_if_eq VAR_0x8004, 3, LilycoveCity_DepartmentStore_1F_EventScript_FourDigitMatch
-	call_if_eq VAR_0x8004, 4, LilycoveCity_DepartmentStore_1F_EventScript_FullMatch
-	giveitem VAR_0x8005
+	bufferitemname STR_VAR_1, VAR_TEMP_PAR_5
+	call_if_eq VAR_TEMP_PAR_4, 1, LilycoveCity_DepartmentStore_1F_EventScript_TwoDigitMatch
+	call_if_eq VAR_TEMP_PAR_4, 2, LilycoveCity_DepartmentStore_1F_EventScript_ThreeDigitMatch
+	call_if_eq VAR_TEMP_PAR_4, 3, LilycoveCity_DepartmentStore_1F_EventScript_FourDigitMatch
+	call_if_eq VAR_TEMP_PAR_4, 4, LilycoveCity_DepartmentStore_1F_EventScript_FullMatch
+	giveitem VAR_TEMP_PAR_5
 	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStore_1F_EventScript_RecordPrizeNoRoom
 	special TryPutLotteryWinnerReportOnAir
 	goto LilycoveCity_DepartmentStore_1F_EventScript_PleaseVisitAgain2
@@ -92,8 +92,8 @@ LilycoveCity_DepartmentStore_1F_EventScript_FullMatch::
 	return
 
 LilycoveCity_DepartmentStore_1F_EventScript_RecordPrizeNoRoom::
-	copyvar VAR_POKELOT_PRIZE_PLACE, VAR_0x8004
-	copyvar VAR_POKELOT_PRIZE_ITEM, VAR_0x8005
+	copyvar VAR_POKELOT_PRIZE_PLACE, VAR_TEMP_PAR_4
+	copyvar VAR_POKELOT_PRIZE_ITEM, VAR_TEMP_PAR_5
 	goto LilycoveCity_DepartmentStore_1F_EventScript_NoRoomForPrize
 	end
 
@@ -106,8 +106,8 @@ LilycoveCity_DepartmentStore_1F_EventScript_GivePrizeFromEarlier::
 	msgbox LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding, MSGBOX_DEFAULT
 	giveitem VAR_POKELOT_PRIZE_ITEM
 	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStore_1F_EventScript_NoRoomForPrize
-	copyvar VAR_0x8004, VAR_POKELOT_PRIZE_PLACE
-	copyvar VAR_0x8005, VAR_POKELOT_PRIZE_ITEM
+	copyvar VAR_TEMP_PAR_4, VAR_POKELOT_PRIZE_PLACE
+	copyvar VAR_TEMP_PAR_5, VAR_POKELOT_PRIZE_ITEM
 	special TryPutLotteryWinnerReportOnAir
 	setvar VAR_POKELOT_PRIZE_ITEM, ITEM_NONE
 	setvar VAR_POKELOT_PRIZE_PLACE, 0

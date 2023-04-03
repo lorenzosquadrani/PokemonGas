@@ -21,8 +21,8 @@ SantaGiustina_EventScript_ClearSantaWhiteOut::
 	return
 
 SantaGiustina_EventScript_CheckSetRivalPos::
-	getplayerxy VAR_0x8004, VAR_0x8005
-	goto_if_eq VAR_0x8004, 9, SantaGiustina_EventScript_SetRivalPos
+	getplayerxy VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
+	goto_if_eq VAR_TEMP_PAR_4, 9, SantaGiustina_EventScript_SetRivalPos
 	return
 
 SantaGiustina_EventScript_SetRivalPos::

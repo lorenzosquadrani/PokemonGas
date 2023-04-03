@@ -94,8 +94,8 @@ LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall:
 LilycoveCity_LilycoveMuseum_2F_EventScript_Curator::
 	lockall
 	goto_if_set FLAG_RECEIVED_GLASS_ORNAMENT, LilycoveCity_LilycoveMuseum_2F_EventScript_ReceivedGlassOrnament
-	specialvar VAR_0x8004, CountPlayerMuseumPaintings
-	switch VAR_0x8004
+	specialvar VAR_TEMP_PAR_4, CountPlayerMuseumPaintings
+	switch VAR_TEMP_PAR_4
 	case 1, LilycoveCity_LilycoveMuseum_2F_EventScript_AddedPainting
 	case 2, LilycoveCity_LilycoveMuseum_2F_EventScript_AddedPainting
 	case 3, LilycoveCity_LilycoveMuseum_2F_EventScript_AddedPainting

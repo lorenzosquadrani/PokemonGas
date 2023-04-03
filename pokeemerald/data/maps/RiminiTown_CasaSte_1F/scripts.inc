@@ -75,15 +75,15 @@ RiminiTown_CasaSte_1F_Movement_PushTowardStairs:
 
 RiminiTown_CasaSte_1F_EventScript_EnterHouseMovingIn::
 	lockall
-	setvar VAR_0x8004, LOCALID_MOM
-	setvar VAR_0x8005, FEMALE
+	setvar VAR_TEMP_PAR_4, LOCALID_MOM
+	setvar VAR_TEMP_PAR_5, FEMALE
 	goto PlayersHouse_1F_EventScript_EnterHouseMovingIn
 	end
 
 RiminiTown_CasaSte_1F_EventScript_PetalburgGymReport::
 	lockall
-	setvar VAR_0x8004, FEMALE
-	setvar VAR_0x8005, LOCALID_MOM
+	setvar VAR_TEMP_PAR_4, FEMALE
+	setvar VAR_TEMP_PAR_5, LOCALID_MOM
 	goto PlayersHouse_1F_EventScript_PetalburgGymReportFemale
 	end
 
@@ -149,9 +149,9 @@ RivalsHouse_1F_EventScript_RivalSibling::
 
 RiminiTown_CasaSte_1F_EventScript_GoSeeRoom::
 	lockall
-	setvar VAR_0x8004, LOCALID_MOM
-	setvar VAR_0x8005, FEMALE
-	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFasterRight
+	setvar VAR_TEMP_PAR_4, LOCALID_MOM
+	setvar VAR_TEMP_PAR_5, FEMALE
+	applymovement VAR_TEMP_PAR_4, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	goto PlayersHouse_1F_EventScript_MomGoSeeRoom
 	end

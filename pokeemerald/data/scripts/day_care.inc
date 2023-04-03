@@ -53,7 +53,7 @@ Route117_EventScript_MonReceivedMail::
 Route117_EventScript_CheckOnOneMon::
 	special GetDaycareMonNicknames
 	msgbox Route117_Text_YourMonIsDoingFine, MSGBOX_DEFAULT
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	call Route117_EventScript_CheckMonReceivedMail
 	release
 	end
@@ -65,9 +65,9 @@ Route117_EventScript_CheckOnTwoMons::
 	special ShowFieldMessageStringVar4
 	waitmessage
 	waitbuttonpress
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	call Route117_EventScript_CheckMonReceivedMail
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	call Route117_EventScript_CheckMonReceivedMail
 	release
 	end
@@ -94,12 +94,12 @@ Route117_PokemonDayCare_EventScript_GiveMonToRaise::
 	fadescreen FADE_TO_BLACK
 	special ChooseSendDaycareMon
 	waitstate
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, Route117_PokemonDayCare_EventScript_ComeAgain
+	goto_if_eq VAR_TEMP_PAR_4, PARTY_NOTHING_CHOSEN, Route117_PokemonDayCare_EventScript_ComeAgain
 	specialvar VAR_RESULT, CountPartyAliveNonEggMons_IgnoreVar0x8004Slot
 	goto_if_eq VAR_RESULT, 0, Route117_PokemonDayCare_EventScript_OnlyOneAliveMon
-	specialvar VAR_0x8005, GetSelectedMonNicknameAndSpecies
+	specialvar VAR_TEMP_PAR_5, GetSelectedMonNicknameAndSpecies
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	playmoncry VAR_TEMP_PAR_5, CRY_MODE_NORMAL
 	msgbox Route117_PokemonDayCare_Text_WellRaiseYourMon, MSGBOX_DEFAULT
 	waitmoncry
 	special StoreSelectedPokemonInDaycare
@@ -151,7 +151,7 @@ Route117_PokemonDayCare_EventScript_DisplayLevelsGained::
 
 Route117_PokemonDayCare_EventScript_OneMonInDaycare::
 	msgbox Route117_PokemonDayCare_Text_GoodToSeeYou, MSGBOX_DEFAULT
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	call Route117_PokemonDayCare_EventScript_DisplayLevelsGained
 	msgbox Route117_PokemonDayCare_Text_WeCanRaiseOneMore, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route117_PokemonDayCare_EventScript_GiveMonToRaise
@@ -164,11 +164,11 @@ Route117_PokemonDayCare_EventScript_TryRetrieveMon::
 	specialvar VAR_RESULT, CalculatePlayerPartyCount
 	goto_if_eq VAR_RESULT, PARTY_SIZE, Route117_PokemonDayCare_EventScript_NoRoom
 	specialvar VAR_RESULT, GetDaycareState
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	goto_if_eq VAR_RESULT, DAYCARE_ONE_MON, Route117_PokemonDayCare_EventScript_CostPrompt
 	special ShowDaycareLevelMenu
 	waitstate
-	copyvar VAR_0x8004, VAR_RESULT
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
 	goto_if_eq VAR_RESULT, DAYCARE_EXITED_LEVEL_MENU, Route117_PokemonDayCare_EventScript_ComeAgain
 	goto Route117_PokemonDayCare_EventScript_CostPrompt
 	end
@@ -242,9 +242,9 @@ Route117_PokemonDayCare_EventScript_UnusedEnd::
 
 Route117_PokemonDayCare_EventScript_TwoMonsInDaycare::
 	msgbox Route117_PokemonDayCare_Text_GoodToSeeYou, MSGBOX_DEFAULT
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	call Route117_PokemonDayCare_EventScript_DisplayLevelsGained
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	call Route117_PokemonDayCare_EventScript_DisplayLevelsGained
 	msgbox Route117_PokemonDayCare_Text_TakeYourMonBack, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route117_PokemonDayCare_EventScript_TryRetrieveMon
@@ -257,7 +257,7 @@ Route117_PokemonDayCare_EventScript_UnusedRetrieveMon::
 	special ShowDaycareLevelMenu
 	waitstate
 	goto_if_eq VAR_RESULT, 2, Route117_PokemonDayCare_EventScript_ComeAgain
-	copyvar VAR_0x8004, VAR_RESULT
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
 	specialvar VAR_RESULT, TakePokemonFromDaycare
 	msgbox Route117_PokemonDayCare_Text_HeresYourMon, MSGBOX_DEFAULT
 	msgbox Route117_PokemonDayCare_Text_ComeAgain, MSGBOX_DEFAULT

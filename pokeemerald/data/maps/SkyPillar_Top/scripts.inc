@@ -67,7 +67,7 @@ SkyPillar_Top_EventScript_DefeatedRayquaza::
 	end
 
 SkyPillar_Top_EventScript_RanFromRayquaza::
-	setvar VAR_0x8004, SPECIES_RAYQUAZA
+	setvar VAR_TEMP_PAR_4, SPECIES_RAYQUAZA
 	goto SkyPillar_Top_EventScript_RanFromRayquaza2
 	end
 
@@ -82,7 +82,7 @@ SkyPillar_Top_EventScript_RanFromRayquaza2::
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject VAR_LAST_TALKED
 	fadescreenswapbuffers FADE_FROM_BLACK
-	bufferspeciesname STR_VAR_1, VAR_0x8004
+	bufferspeciesname STR_VAR_1, VAR_TEMP_PAR_4
 	msgbox gText_LegendaryFlewAway, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -100,16 +100,16 @@ SkyPillar_Top_EventScript_AwakenRayquaza::
 	waitmovement 0
 	waitse
 	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
-	setvar VAR_0x8004, 1  @ vertical pan
-	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 1  @ vertical pan
+	setvar VAR_TEMP_PAR_5, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 3  @ shake delay
 	special ShakeCamera
 	waitstate
 	waitse
 	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
-	setvar VAR_0x8004, 1  @ vertical pan
-	setvar VAR_0x8005, 2  @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 1  @ vertical pan
+	setvar VAR_TEMP_PAR_5, 2  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera

@@ -35,15 +35,15 @@ NavelRock_Bottom_EventScript_Lugia::
 	waitse
 	delay 20
 	playse SE_THUNDERSTORM_STOP
-	setvar VAR_0x8004, 0  @ vertical pan
-	setvar VAR_0x8005, 3  @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 0  @ vertical pan
+	setvar VAR_TEMP_PAR_5, 3  @ horizontal pan
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 2  @ shake delay
 	special ShakeCamera
 	delay 30
 	playse SE_THUNDERSTORM_STOP
-	setvar VAR_0x8004, 0  @ vertical pan
-	setvar VAR_0x8005, 3  @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 0  @ vertical pan
+	setvar VAR_TEMP_PAR_5, 3  @ horizontal pan
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 2  @ shake delay
 	special ShakeCamera
@@ -68,11 +68,11 @@ NavelRock_Bottom_EventScript_Lugia::
 
 NavelRock_Bottom_EventScript_DefeatedLugia::
 	setflag FLAG_DEFEATED_LUGIA
-	setvar VAR_0x8004, SPECIES_LUGIA
+	setvar VAR_TEMP_PAR_4, SPECIES_LUGIA
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 NavelRock_Bottom_EventScript_RanFromLugia::
-	setvar VAR_0x8004, SPECIES_LUGIA
+	setvar VAR_TEMP_PAR_4, SPECIES_LUGIA
 	goto Common_EventScript_LegendaryFlewAway
 	end

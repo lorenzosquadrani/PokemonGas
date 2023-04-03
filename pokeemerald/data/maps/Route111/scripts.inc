@@ -175,26 +175,26 @@ Route111_EventScript_ReceivedBerry::
 @ Unused
 Route111_EventScript_ViciousSandstormTriggerUp::
 	lockall
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	goto Route111_EventScript_ViciousSandstormTrigger
 	end
 
 Route111_EventScript_ViciousSandstormTriggerDown::
 	lockall
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	goto Route111_EventScript_ViciousSandstormTrigger
 	end
 
 Route111_EventScript_ViciousSandstormTriggerLeft::
 	lockall
-	setvar VAR_0x8004, 2
+	setvar VAR_TEMP_PAR_4, 2
 	goto Route111_EventScript_ViciousSandstormTrigger
 	end
 
 @ Unused
 Route111_EventScript_ViciousSandstormTriggerRight::
 	lockall
-	setvar VAR_0x8004, 3
+	setvar VAR_TEMP_PAR_4, 3
 	goto Route111_EventScript_ViciousSandstormTrigger
 	end
 
@@ -208,10 +208,10 @@ Route111_EventScript_ViciousSandstormTrigger::
 Route111_EventScript_PreventRouteAccess::
 	msgbox gText_SandstormIsVicious, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_0x8004, 0, Route111_EventScript_PushUpFromRoute
-	call_if_eq VAR_0x8004, 1, Route111_EventScript_PushDownFromRoute
-	call_if_eq VAR_0x8004, 2, Route111_EventScript_PushLeftFromRoute
-	call_if_eq VAR_0x8004, 3, Route111_EventScript_PushRightFromRoute
+	call_if_eq VAR_TEMP_PAR_4, 0, Route111_EventScript_PushUpFromRoute
+	call_if_eq VAR_TEMP_PAR_4, 1, Route111_EventScript_PushDownFromRoute
+	call_if_eq VAR_TEMP_PAR_4, 2, Route111_EventScript_PushLeftFromRoute
+	call_if_eq VAR_TEMP_PAR_4, 3, Route111_EventScript_PushRightFromRoute
 	releaseall
 	end
 

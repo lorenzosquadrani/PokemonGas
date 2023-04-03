@@ -30,7 +30,7 @@ FarawayIsland_Entrance_EventScript_Sailor::
 	waitmovement 0
 	delay 30
 	hideobjectat LOCALID_SAILOR, MAP_FARAWAY_ISLAND_ENTRANCE
-	setvar VAR_0x8004, LOCALID_SS_TIDAL
+	setvar VAR_TEMP_PAR_4, LOCALID_SS_TIDAL
 	call Common_EventScript_FerryDepartIsland
 	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
 	waitstate

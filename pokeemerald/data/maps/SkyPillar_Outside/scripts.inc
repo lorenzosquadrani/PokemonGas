@@ -41,8 +41,8 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	msgbox SkyPillar_Outside_Text_OpenedDoorToSkyPillar, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	setvar VAR_0x8004, 1  @ vertical pan
-	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 1  @ vertical pan
+	setvar VAR_TEMP_PAR_5, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 3  @ shake delay
 	special ShakeCamera
@@ -53,8 +53,8 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	applymovement OBJ_EVENT_ID_PLAYER, SkyPillar_Outside_Movement_PlayerClimbSkyPillar
 	applymovement LOCALID_WALLACE, SkyPillar_Outside_Movement_WallaceClimbSkyPillar
 	waitmovement 0
-	setvar VAR_0x8004, 1   @ vertical pan
-	setvar VAR_0x8005, 3   @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 1   @ vertical pan
+	setvar VAR_TEMP_PAR_5, 3   @ horizontal pan
 	setvar VAR_0x8006, 20  @ num shakes
 	setvar VAR_0x8007, 5   @ shake delay
 	special ShakeCamera

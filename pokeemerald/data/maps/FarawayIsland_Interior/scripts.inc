@@ -20,7 +20,7 @@ FarawayIsland_Interior_EventScript_TrySetMewAboveGrass::
 	return
 
 FarawayIsland_Interior_EventScript_SetMewAboveGrass::
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	special SetMewAboveGrass
 	return
 
@@ -117,7 +117,7 @@ FarawayIsland_Interior_EventScript_Mew::
 	faceplayer
 	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewAppear
 	waitmovement 0
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	special SetMewAboveGrass
 	message FarawayIsland_Interior_Text_Mew
 	waitse
@@ -145,12 +145,12 @@ FarawayIsland_Interior_EventScript_Mew::
 
 FarawayIsland_Interior_EventScript_MewDefeated::
 	setflag FLAG_DEFEATED_MEW
-	setvar VAR_0x8004, SPECIES_MEW
+	setvar VAR_TEMP_PAR_4, SPECIES_MEW
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 FarawayIsland_Interior_EventScript_PlayerOrMewRan::
-	setvar VAR_0x8004, SPECIES_MEW
+	setvar VAR_TEMP_PAR_4, SPECIES_MEW
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

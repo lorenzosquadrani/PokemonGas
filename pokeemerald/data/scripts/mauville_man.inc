@@ -18,7 +18,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_Bard::
 	end
 
 MauvilleCity_PokemonCenter_1F_EventScript_PlaySong::
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	special PlayBardSong
 	delay 60
 	special HasBardSongBeenChanged
@@ -39,13 +39,13 @@ MauvilleCity_PokemonCenter_1F_EventScript_AskToWriteLyrics::
 	end
 
 MauvilleCity_PokemonCenter_1F_EventScript_WriteLyrics::
-	setvar VAR_0x8004, EASY_CHAT_TYPE_BARD_SONG
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_BARD_SONG
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer
 	goto_if_eq VAR_RESULT, 0, MauvilleCity_PokemonCenter_1F_EventScript_DeclineWritingLyrics
 	msgbox MauvilleCity_PokemonCenter_1F_Text_LetMeSingItForYou, MSGBOX_DEFAULT
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	special PlayBardSong
 	delay 60
 	msgbox MauvilleCity_PokemonCenter_1F_Text_ThatHowYouWantedSongToGo, MSGBOX_YESNO
@@ -170,8 +170,8 @@ MauvilleCity_PokemonCenter_1F_EventScript_AlreadyTraded::
 MauvilleCity_PokemonCenter_1F_EventScript_PickDecorToReceive::
 	special TraderMenuGetDecoration
 	waitstate
-	goto_if_eq VAR_0x8004, 0, MauvilleCity_PokemonCenter_1F_EventScript_CancelPickDecor
-	goto_if_eq VAR_0x8004, 0xFFFF, MauvilleCity_PokemonCenter_1F_EventScript_InvalidDecor
+	goto_if_eq VAR_TEMP_PAR_4, 0, MauvilleCity_PokemonCenter_1F_EventScript_CancelPickDecor
+	goto_if_eq VAR_TEMP_PAR_4, 0xFFFF, MauvilleCity_PokemonCenter_1F_EventScript_InvalidDecor
 	msgbox MauvilleCity_PokemonCenter_1F_Text_OnceBelongedToPlayerDoYouWantIt, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_PokemonCenter_1F_EventScript_PickDifferentDecor
 	special DoesPlayerHaveNoDecorations

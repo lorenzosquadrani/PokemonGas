@@ -58,8 +58,8 @@ SlateportCity_EventScript_MovePeopleForSternInterview::
 
 SlateportCity_EventScript_SetReadyForScottScene::
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-	getplayerxy VAR_0x8004, VAR_0x8005
-	goto_if_eq VAR_0x8004, 30, SlateportCity_EventScript_MoveScottLeft
+	getplayerxy VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
+	goto_if_eq VAR_TEMP_PAR_4, 30, SlateportCity_EventScript_MoveScottLeft
 	setobjectxyperm LOCALID_SCOTT, 23, 27
 	setobjectmovementtype LOCALID_SCOTT, MOVEMENT_TYPE_FACE_RIGHT
 	return
@@ -746,7 +746,7 @@ SlateportCity_EventScript_BerryPowderClerk::
 	end
 
 SlateportCity_EventScript_ReceivedPowderJar::
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	specialvar VAR_RESULT, HasEnoughBerryPowder
 	goto_if_eq VAR_RESULT, FALSE, SlateportCity_EventScript_ExplainBerryPowder
 	msgbox SlateportCity_Text_BroughtMeSomeBerryPowder, MSGBOX_DEFAULT
@@ -762,7 +762,7 @@ SlateportCity_EventScript_ExplainBerryPowder::
 SlateportCity_EventScript_ChooseBerryPowderItem::
 	message SlateportCity_Text_ExchangeWhatWithIt
 	waitmessage
-	setvar VAR_0x8004, SCROLL_MULTI_BERRY_POWDER_VENDOR
+	setvar VAR_TEMP_PAR_4, SCROLL_MULTI_BERRY_POWDER_VENDOR
 	special ShowScrollableMultichoice
 	waitstate
 	switch VAR_RESULT
@@ -867,12 +867,12 @@ SlateportCity_EventScript_CancelPowderItemSelect::
 SlateportCity_EventScript_TryBuyBerryPowderItem::
 	msgbox SlateportCity_Text_ExchangeBerryPowderForItem, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SlateportCity_EventScript_ChooseBerryPowderItem
-	copyvar VAR_0x8004, VAR_0x8009
+	copyvar VAR_TEMP_PAR_4, VAR_0x8009
 	specialvar VAR_RESULT, HasEnoughBerryPowder
 	goto_if_eq VAR_RESULT, FALSE, SlateportCity_EventScript_NotEnoughBerryPowder
 	giveitem VAR_0x8008
 	goto_if_eq VAR_RESULT, FALSE, SlateportCity_EventScript_NoRoomForBerryPowderItem
-	copyvar VAR_0x8004, VAR_0x8009
+	copyvar VAR_TEMP_PAR_4, VAR_0x8009
 	special TakeBerryPowder
 	special PrintPlayerBerryPowderAmount
 	msgbox SlateportCity_Text_FineBerryPowderTradeSomethingElse, MSGBOX_YESNO

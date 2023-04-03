@@ -372,8 +372,8 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_DoArenaBattle::
 	setvar VAR_TEMP_2, 0
 	frontier_set FRONTIER_DATA_RECORD_DISABLED, FALSE
 	special HealPlayerParty
-	setvar VAR_0x8004, SPECIAL_BATTLE_ARENA
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_ARENA
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	frontier_restorehelditems

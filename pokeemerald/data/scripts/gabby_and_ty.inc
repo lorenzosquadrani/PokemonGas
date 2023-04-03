@@ -208,19 +208,19 @@ GabbyAndTy_EventScript_FirstInterview::
 	end
 
 GabbyAndTy_EventScript_FacePlayerNorth::
-	applymovement VAR_0x8004, GabbyAndTy_Movement_WalkInPlaceDown
+	applymovement VAR_TEMP_PAR_4, GabbyAndTy_Movement_WalkInPlaceDown
 	waitmovement 0
 	return
 
 GabbyAndTy_EventScript_FacePlayerSouth::
-	applymovement VAR_0x8004, GabbyAndTy_Movement_WalkInPlaceUp
-	applymovement VAR_0x8005, Common_Movement_WalkInPlaceFasterUp
+	applymovement VAR_TEMP_PAR_4, GabbyAndTy_Movement_WalkInPlaceUp
+	applymovement VAR_TEMP_PAR_5, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	return
 
 GabbyAndTy_EventScript_FacePlayerEast::
-	applymovement VAR_0x8004, GabbyAndTy_Movement_WalkInPlaceLeft
-	applymovement VAR_0x8005, Common_Movement_WalkInPlaceFasterLeft
+	applymovement VAR_TEMP_PAR_4, GabbyAndTy_Movement_WalkInPlaceLeft
+	applymovement VAR_TEMP_PAR_5, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
 
@@ -288,7 +288,7 @@ GabbyAndTy_EventScript_RequestInterviewLostAMon::
 GabbyAndTy_EventScript_Interview::
 	goto_if_eq VAR_RESULT, NO, GabbyAndTy_EventScript_DontGiveUpKeepingEyeOut
 	msgbox GabbyAndTy_Text_DescribeYourFeelings, MSGBOX_DEFAULT
-	setvar VAR_0x8004, EASY_CHAT_TYPE_GABBY_AND_TY
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_GABBY_AND_TY
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer

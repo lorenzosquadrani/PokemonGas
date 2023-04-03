@@ -10,7 +10,7 @@ BattleFrontier_Lounge3_EventScript_Gambler::
 	faceplayer
 	goto_if_set FLAG_MET_BATTLE_FRONTIER_GAMBLER, BattleFrontier_Lounge3_EventScript_AlreadyMetGambler
 	call BattleFrontier_Lounge3_EventScript_CountSilverSymbols
-	goto_if_le VAR_0x8004, 2, BattleFrontier_Lounge3_EventScript_NotEnoughSilverSymbols
+	goto_if_le VAR_TEMP_PAR_4, 2, BattleFrontier_Lounge3_EventScript_NotEnoughSilverSymbols
 	setflag FLAG_MET_BATTLE_FRONTIER_GAMBLER
 	msgbox BattleFrontier_Lounge3_Text_YouLookToughExplainGambling, MSGBOX_DEFAULT
 	goto BattleFrontier_Lounge3_EventScript_AskToEnterChallenge
@@ -66,7 +66,7 @@ BattleFrontier_Lounge3_EventScript_TryPlaceBet::
 	end
 
 BattleFrontier_Lounge3_EventScript_PlaceBet::
-	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_TEMP_PAR_4, VAR_0x8008
 	special TakeFrontierBattlePoints
 	setvar VAR_FRONTIER_GAMBLER_STATE, FRONTIER_GAMBLER_PLACED_BET
 	special UpdateBattlePointsWindow
@@ -84,7 +84,7 @@ BattleFrontier_Lounge3_EventScript_FinishBet::
 	end
 
 BattleFrontier_Lounge3_EventScript_CountSilverSymbols::
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	call_if_set FLAG_SYS_TOWER_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount
 	call_if_set FLAG_SYS_DOME_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount
 	call_if_set FLAG_SYS_PALACE_SILVER, BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount
@@ -95,7 +95,7 @@ BattleFrontier_Lounge3_EventScript_CountSilverSymbols::
 	return
 
 BattleFrontier_Lounge3_EventScript_AddSilverSymbolCount::
-	addvar VAR_0x8004, 1
+	addvar VAR_TEMP_PAR_4, 1
 	return
 
 BattleFrontier_Lounge3_EventScript_NotEnoughSilverSymbols::
@@ -135,17 +135,17 @@ BattleFrontier_Lounge3_EventScript_LostChallenge::
 
 BattleFrontier_Lounge3_EventScript_RewardBet5::
 	buffernumberstring STR_VAR_1, (BET_AMOUNT_5 * 2)
-	setvar VAR_0x8004, (BET_AMOUNT_5 * 2)
+	setvar VAR_TEMP_PAR_4, (BET_AMOUNT_5 * 2)
 	return
 
 BattleFrontier_Lounge3_EventScript_RewardBet10::
 	buffernumberstring STR_VAR_1, (BET_AMOUNT_10 * 2)
-	setvar VAR_0x8004, (BET_AMOUNT_10 * 2)
+	setvar VAR_TEMP_PAR_4, (BET_AMOUNT_10 * 2)
 	return
 
 BattleFrontier_Lounge3_EventScript_RewardBet15::
 	buffernumberstring STR_VAR_1, (BET_AMOUNT_15 * 2)
-	setvar VAR_0x8004, (BET_AMOUNT_15 * 2)
+	setvar VAR_TEMP_PAR_4, (BET_AMOUNT_15 * 2)
 	return
 
 BattleFrontier_Lounge3_EventScript_ChallengeNotAttempted::

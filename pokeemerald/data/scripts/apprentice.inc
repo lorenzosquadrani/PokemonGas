@@ -6,7 +6,7 @@ BattleFrontier_BattleTowerLobby_EventScript_Apprentice::
 	apprentice_gavelvlmode
 	goto_if_eq VAR_RESULT, FALSE, Apprentice_EventScript_FirstMeeting
 	apprentice_shouldcheckgone
-	goto_if_eq VAR_0x8004, FALSE, Apprentice_EventScript_AskQuestion  @ VAR_0x8004 always TRUE here
+	goto_if_eq VAR_TEMP_PAR_4, FALSE, Apprentice_EventScript_AskQuestion  @ VAR_TEMP_PAR_4 always TRUE here
 	goto_if_set FLAG_DAILY_APPRENTICE_LEAVES, Apprentice_EventScript_Gone
 Apprentice_EventScript_AskQuestion:
 	apprentice_getquestion
@@ -50,9 +50,9 @@ Apprentice_EventScript_UseWhichMon:
 	apprentice_buff STR_VAR_2, APPRENTICE_BUFF_SPECIES2
 	apprentice_msg FALSE, APPRENTICE_MSG_WHICH_MON
 	apprentice_menu APPRENTICE_ASK_2SPECIES
-	copyvar VAR_0x8005, VAR_RESULT
-	call_if_eq VAR_0x8005, 0, Apprentice_EventScript_ChoseFirstMon
-	call_if_eq VAR_0x8005, 1, Apprentice_EventScript_ChoseSecondMon
+	copyvar VAR_TEMP_PAR_5, VAR_RESULT
+	call_if_eq VAR_TEMP_PAR_5, 0, Apprentice_EventScript_ChoseFirstMon
+	call_if_eq VAR_TEMP_PAR_5, 1, Apprentice_EventScript_ChoseSecondMon
 	apprentice_getnumpartymons
 	apprentice_setpartymon VAR_RESULT
 	apprentice_answeredquestion
@@ -142,9 +142,9 @@ Apprentice_EventScript_UseWhichMove:
 	apprentice_buff STR_VAR_3, APPRENTICE_BUFF_MOVE2
 	apprentice_msg FALSE, APPRENTICE_MSG_WHICH_MOVE
 	apprentice_menu APPRENTICE_ASK_MOVES
-	copyvar VAR_0x8005, VAR_RESULT
-	call_if_eq VAR_0x8005, 0, Apprentice_EventScript_ChoseMove1
-	call_if_eq VAR_0x8005, 1, Apprentice_EventScript_ChoseMove2
+	copyvar VAR_TEMP_PAR_5, VAR_RESULT
+	call_if_eq VAR_TEMP_PAR_5, 0, Apprentice_EventScript_ChoseMove1
+	call_if_eq VAR_TEMP_PAR_5, 1, Apprentice_EventScript_ChoseMove2
 	apprentice_setmove
 	apprentice_answeredquestion
 	apprentice_buff STR_VAR_1, VAR_0x8007
@@ -185,7 +185,7 @@ Apprentice_EventScript_PutWhichMonFirst:
 Apprentice_EventScript_PickWinSpeech:
 	apprentice_msg TRUE, APPRENTICE_MSG_PICK_WIN_SPEECH
 	apprentice_shiftsaved
-	setvar VAR_0x8004, EASY_CHAT_TYPE_APPRENTICE
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_APPRENTICE
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer
@@ -208,14 +208,14 @@ Apprentice_EventScript_SetHideFlags:
 
 Apprentice_EventScript_LeaveNorth:
 	apprentice_shouldleave
-	goto_if_eq VAR_0x8004, FALSE, Apprentice_EventScript_DontMove  @ VAR_0x8004 always TRUE here
+	goto_if_eq VAR_TEMP_PAR_4, FALSE, Apprentice_EventScript_DontMove  @ VAR_TEMP_PAR_4 always TRUE here
 	applymovement LOCALID_APPRENTICE, Apprentice_Movement_LeaveNorth
 	waitmovement 0
 	end
 
 Apprentice_EventScript_Leave:
 	apprentice_shouldleave
-	goto_if_eq VAR_0x8004, FALSE, Apprentice_EventScript_DontMove  @ VAR_0x8004 always TRUE here
+	goto_if_eq VAR_TEMP_PAR_4, FALSE, Apprentice_EventScript_DontMove  @ VAR_TEMP_PAR_4 always TRUE here
 	applymovement LOCALID_APPRENTICE, Apprentice_Movement_Leave
 	waitmovement 0
 	end

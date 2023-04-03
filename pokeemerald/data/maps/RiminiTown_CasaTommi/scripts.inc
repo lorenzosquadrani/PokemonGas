@@ -124,7 +124,7 @@ RiminiTown_CasaTommi_EventScript_GiveStarterEvent::
 	end
 
 RiminiTown_CasaTommi_EventScript_NicknameStarter::
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	call Common_EventScript_NameReceivedPartyMon
 	goto RiminiTown_CasaTommi_EventScript_GoSeeRival
 	end

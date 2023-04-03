@@ -1,6 +1,6 @@
 BerryTreeScript::
 	special ObjectEventInteractionGetBerryTreeData
-	switch VAR_0x8004
+	switch VAR_TEMP_PAR_4
 	case BERRY_STAGE_SPARKLING, BerryTree_EventScript_Sparkling
 	case BERRY_STAGE_NO_BERRY, BerryTree_EventScript_CheckSoil
 	case BERRY_STAGE_PLANTED, BerryTree_EventScript_CheckBerryStage1
@@ -81,11 +81,11 @@ BerryTree_EventScript_CheckBerryStage4::
 	waitbuttonpress
 	goto BerryTree_EventScript_WantToWater
 
-@ VAR_0x8005 here is the number of times watered
+@ VAR_TEMP_PAR_5 here is the number of times watered
 @ Buffered by ObjectEventInteractionGetBerryTreeData
 BerryTree_EventScript_GetCareAdverb::
-	goto_if_eq VAR_0x8005, 0, BerryTree_EventScript_SetAdverbPoor
-	goto_if_eq VAR_0x8005, 4, BerryTree_EventScript_SetAdverbGreat
+	goto_if_eq VAR_TEMP_PAR_5, 0, BerryTree_EventScript_SetAdverbPoor
+	goto_if_eq VAR_TEMP_PAR_5, 4, BerryTree_EventScript_SetAdverbGreat
 	bufferstring STR_VAR_2, BerryTree_Text_CareAdverbGood
 	return
 
@@ -109,7 +109,7 @@ BerryTree_EventScript_CheckBerryFullyGrown::
 
 BerryTree_EventScript_PickBerry::
 	special ObjectEventInteractionPickBerryTree
-	goto_if_eq VAR_0x8004, 0, BerryTree_EventScript_BerryPocketFull
+	goto_if_eq VAR_TEMP_PAR_4, 0, BerryTree_EventScript_BerryPocketFull
 	special IncrementDailyPickedBerries
 	special ObjectEventInteractionRemoveBerryTree
 	message BerryTree_Text_PickedTheBerry

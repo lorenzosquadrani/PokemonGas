@@ -26,10 +26,10 @@ EmiliaRoad_MoveRelearnersHouse_EventScript_ChooseMon::
 	msgbox EmiliaRoad_MoveRelearnersHouse_Text_TutorWhichMon, MSGBOX_DEFAULT
 	special ChooseMonForMoveRelearner
 	waitstate
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, EmiliaRoad_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale
+	goto_if_eq VAR_TEMP_PAR_4, PARTY_NOTHING_CHOSEN, EmiliaRoad_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale
 	special IsSelectedMonEgg
 	goto_if_eq VAR_RESULT, TRUE, EmiliaRoad_MoveRelearnersHouse_EventScript_CantTeachEgg
-	goto_if_eq VAR_0x8005, 0, EmiliaRoad_MoveRelearnersHouse_EventScript_NoMoveToTeachMon
+	goto_if_eq VAR_TEMP_PAR_5, 0, EmiliaRoad_MoveRelearnersHouse_EventScript_NoMoveToTeachMon
 	goto EmiliaRoad_MoveRelearnersHouse_EventScript_ChooseMove
 	end
 
@@ -37,7 +37,7 @@ EmiliaRoad_MoveRelearnersHouse_EventScript_ChooseMove::
 	msgbox EmiliaRoad_MoveRelearnersHouse_Text_TeachWhichMove, MSGBOX_DEFAULT
 	special TeachMoveRelearnerMove
 	waitstate
-	goto_if_eq VAR_0x8004, 0, EmiliaRoad_MoveRelearnersHouse_EventScript_ChooseMon
+	goto_if_eq VAR_TEMP_PAR_4, 0, EmiliaRoad_MoveRelearnersHouse_EventScript_ChooseMon
 	msgbox EmiliaRoad_MoveRelearnersHouse_Text_HandedOverHeartScale, MSGBOX_DEFAULT
 	removeitem ITEM_HEART_SCALE
 	goto EmiliaRoad_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale

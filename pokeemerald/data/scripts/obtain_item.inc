@@ -96,8 +96,8 @@ Std_FindItem::
 	lock
 	faceplayer
 	waitse
-	copyvar VAR_0x8004, ITEMID
-	copyvar VAR_0x8005, AMOUNT
+	copyvar VAR_TEMP_PAR_4, ITEMID
+	copyvar VAR_TEMP_PAR_5, AMOUNT
 	checkitemspace ITEMID, AMOUNT
 	copyvar VAR_0x8007, VAR_RESULT
 	bufferitemnameplural STR_VAR_2, ITEMID, AMOUNT
@@ -110,14 +110,14 @@ Std_FindItem::
 
 EventScript_PickUpItem::
 	removeobject VAR_LAST_TALKED
-	additem VAR_0x8004, VAR_0x8005
+	additem VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	specialvar VAR_RESULT, BufferTMHMMoveName
 	copyvar VAR_0x8008, VAR_RESULT
 	call_if_eq VAR_0x8008, TRUE, EventScript_FoundTMHM
 	call_if_eq VAR_0x8008, FALSE, EventScript_FoundItem
 	waitfanfare
 	waitmessage
-	bufferitemnameplural STR_VAR_2, VAR_0x8004, VAR_0x8005
+	bufferitemnameplural STR_VAR_2, VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	pyramid_inchallenge
 	goto_if_eq VAR_RESULT, TRUE, EventScript_PutBattlePyramidItemInBag
 	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
@@ -128,7 +128,7 @@ EventScript_PutBattlePyramidItemInBag::
 	return
 
 EventScript_FoundTMHM::
-	bufferitemnameplural STR_VAR_1, VAR_0x8004, VAR_0x8005
+	bufferitemnameplural STR_VAR_1, VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	message gText_PlayerFoundOneTMHM
 	return
 
@@ -145,25 +145,25 @@ EventScript_NoRoomToPickUpItem::
 EventScript_HiddenItemScript::
 	lockall
 	waitse
-	additem VAR_0x8005
+	additem VAR_TEMP_PAR_5
 	copyvar VAR_0x8007, VAR_RESULT
-	bufferitemnameplural STR_VAR_2, VAR_0x8005, 1
-	checkitemtype VAR_0x8005
+	bufferitemnameplural STR_VAR_2, VAR_TEMP_PAR_5, 1
+	checkitemtype VAR_TEMP_PAR_5
 	call EventScript_BufferPocketNameAndTryFanfare
 	goto_if_eq VAR_0x8007, TRUE, EventScript_PickUpHiddenItem
 	goto_if_eq VAR_0x8007, FALSE, EventScript_NoRoomForHiddenItem
 	end
 
 EventScript_PickUpHiddenItem::
-	copyvar VAR_0x8008, VAR_0x8004
-	copyvar VAR_0x8004, VAR_0x8005
+	copyvar VAR_0x8008, VAR_TEMP_PAR_4
+	copyvar VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	specialvar VAR_RESULT, BufferTMHMMoveName
 	goto_if_eq VAR_RESULT, TRUE, EventScript_FoundHiddenTMHM
 	goto_if_eq VAR_RESULT, FALSE, EventScript_FoundHiddenItem
 	end
 
 EventScript_FoundHiddenTMHM::
-	bufferitemnameplural STR_VAR_1, VAR_0x8004, 1
+	bufferitemnameplural STR_VAR_1, VAR_TEMP_PAR_4, 1
 	message gText_PlayerFoundOneTMHM
 	goto EventScript_PutHiddenItemInPocket
 	end
@@ -176,8 +176,8 @@ EventScript_FoundHiddenItem::
 EventScript_PutHiddenItemInPocket::
 	waitmessage
 	waitfanfare
-	bufferitemnameplural STR_VAR_2, VAR_0x8004, 1
-	copyvar VAR_0x8004, VAR_0x8008
+	bufferitemnameplural STR_VAR_2, VAR_TEMP_PAR_4, 1
+	copyvar VAR_TEMP_PAR_4, VAR_0x8008
 	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
 	special TryPutTreasureInvestigatorsOnAir
 	special SetHiddenItemFlag

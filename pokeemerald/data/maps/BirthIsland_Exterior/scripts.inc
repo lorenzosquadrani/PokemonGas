@@ -100,12 +100,12 @@ BirthIsland_Exterior_EventScript_Deoxys::
 
 BirthIsland_Exterior_EventScript_DefeatedDeoxys::
 	setflag FLAG_DEFEATED_DEOXYS
-	setvar VAR_0x8004, SPECIES_DEOXYS
+	setvar VAR_TEMP_PAR_4, SPECIES_DEOXYS
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 BirthIsland_Exterior_EventScript_RanFromDeoxys::
-	setvar VAR_0x8004, SPECIES_DEOXYS
+	setvar VAR_TEMP_PAR_4, SPECIES_DEOXYS
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

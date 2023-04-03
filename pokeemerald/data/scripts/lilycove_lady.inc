@@ -112,10 +112,10 @@ LilycoveCity_PokemonCenter_1F_EventScript_LovedFavorItem::
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_FavorLadyPrize::
-	setvar VAR_0x8004, 0
-	specialvar VAR_0x8004, FavorLadyGetPrize
+	setvar VAR_TEMP_PAR_4, 0
+	specialvar VAR_TEMP_PAR_4, FavorLadyGetPrize
 	msgbox LilycoveCity_PokemonCenter_1F_Text_IllGiveYouThisInReturn, MSGBOX_DEFAULT
-	giveitem VAR_0x8004
+	giveitem VAR_TEMP_PAR_4
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_PokemonCenter_1F_EventScript_NoRoomForFavorPrize
 	goto_if_eq VAR_RESULT, 1, LilycoveCity_PokemonCenter_1F_EventScript_ReceivedFavorPrize
 	end
@@ -169,7 +169,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_LadyQuizReady::
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_AskTakeQuiz::
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	msgbox LilycoveCity_PokemonCenter_1F_Text_TakeQuizChallenge, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, LilycoveCity_PokemonCenter_1F_EventScript_TakeQuiz
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_PokemonCenter_1F_EventScript_DeclineQuiz
@@ -182,8 +182,8 @@ LilycoveCity_PokemonCenter_1F_EventScript_DeclineQuiz::
 
 LilycoveCity_PokemonCenter_1F_EventScript_TakeQuiz::
 	special ClearQuizLadyPlayerAnswer
-	goto_if_eq VAR_0x8004, 0, LilycoveCity_PokemonCenter_1F_EventScript_ShowQuestion
-	goto_if_eq VAR_0x8004, EASY_CHAT_TYPE_QUIZ_ANSWER, LilycoveCity_PokemonCenter_1F_EventScript_GetAnswer
+	goto_if_eq VAR_TEMP_PAR_4, 0, LilycoveCity_PokemonCenter_1F_EventScript_ShowQuestion
+	goto_if_eq VAR_TEMP_PAR_4, EASY_CHAT_TYPE_QUIZ_ANSWER, LilycoveCity_PokemonCenter_1F_EventScript_GetAnswer
 
 LilycoveCity_PokemonCenter_1F_EventScript_CheckQuizTakingState::
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_PokemonCenter_1F_EventScript_AskQuitQuiz
@@ -258,10 +258,10 @@ LilycoveCity_PokemonCenter_1F_EventScript_GivePrize0::
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_GivePrize::
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_5, 0
 	special BufferQuizPrizeItem
 	special SetQuizLadyState_Complete
-	giveitem VAR_0x8005
+	giveitem VAR_TEMP_PAR_5
 	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_PokemonCenter_1F_EventScript_NoSpaceForQuizPrize
 	goto LilycoveCity_PokemonCenter_1F_EventScript_AskMakeQuiz
 	end
@@ -305,7 +305,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_WriteQuiz::
 	msgbox LilycoveCity_PokemonCenter_1F_Text_WriteYourQuiz, MSGBOX_DEFAULT
 	special ClearQuizLadyQuestionAndAnswer
 	special ClearQuizLadyPlayerAnswer
-	setvar VAR_0x8004, EASY_CHAT_TYPE_QUIZ_QUESTION
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_QUIZ_QUESTION
 LilycoveCity_PokemonCenter_1F_EventScript_WriteQuizQuestion::
 	fadescreen FADE_TO_BLACK
 	special QuizLadySetCustomQuestion
@@ -385,7 +385,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_GivePokeblock::
 	goto LilycoveCity_PokemonCenter_1F_EventScript_FeedPokeblock
 	end
 
-@ VAR_0x8004 here is the return value from GivePokeblockToContestLady
+@ VAR_TEMP_PAR_4 here is the return value from GivePokeblockToContestLady
 LilycoveCity_PokemonCenter_1F_EventScript_FeedPokeblock::
 	applymovement LOCALID_LILYCOVE_LADY, LilycoveCity_PokemonCenter_1F_Movement_LadyFaceMon
 	waitmovement 0
@@ -394,14 +394,14 @@ LilycoveCity_PokemonCenter_1F_EventScript_FeedPokeblock::
 	waitmovement 0
 	delay 60
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	playmoncry VAR_TEMP_PAR_5, CRY_MODE_NORMAL
 	delay 120
 	waitmoncry
-	goto_if_eq VAR_0x8004, 1, LilycoveCity_PokemonCenter_1F_EventScript_MonEnjoyPokeblock
+	goto_if_eq VAR_TEMP_PAR_4, 1, LilycoveCity_PokemonCenter_1F_EventScript_MonEnjoyPokeblock
 	goto LilycoveCity_PokemonCenter_1F_EventScript_FinishFeedPokeblock
 	end
 
-@ VAR_0x8004 here is the return value from GivePokeblockToContestLady
+@ VAR_TEMP_PAR_4 here is the return value from GivePokeblockToContestLady
 LilycoveCity_PokemonCenter_1F_EventScript_MonEnjoyPokeblock::
 	applymovement LOCALID_LADYS_MON, LilycoveCity_PokemonCenter_1F_Movement_MonJump
 	waitmovement 0
@@ -410,8 +410,8 @@ LilycoveCity_PokemonCenter_1F_EventScript_FinishFeedPokeblock::
 	applymovement LOCALID_LILYCOVE_LADY, LilycoveCity_PokemonCenter_1F_Movement_LadyFacePlayer
 	waitmovement 0
 	delay 60
-	goto_if_eq VAR_0x8004, 0, LilycoveCity_PokemonCenter_1F_EventScript_MonDislikedPokeblock
-	goto_if_eq VAR_0x8004, 1, LilycoveCity_PokemonCenter_1F_EventScript_MonLikedPokeblock
+	goto_if_eq VAR_TEMP_PAR_4, 0, LilycoveCity_PokemonCenter_1F_EventScript_MonDislikedPokeblock
+	goto_if_eq VAR_TEMP_PAR_4, 1, LilycoveCity_PokemonCenter_1F_EventScript_MonLikedPokeblock
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_MonDislikedPokeblock::
@@ -483,7 +483,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	playmoncry VAR_TEMP_PAR_5, CRY_MODE_NORMAL
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -493,7 +493,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	playmoncry VAR_TEMP_PAR_5, CRY_MODE_NORMAL
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -503,7 +503,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Poochyena::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	playmoncry VAR_TEMP_PAR_5, CRY_MODE_NORMAL
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Poochyena, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -513,7 +513,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Kecleon::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	playmoncry VAR_TEMP_PAR_5, CRY_MODE_NORMAL
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Kecleon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -523,7 +523,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Pikachu::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	playmoncry VAR_TEMP_PAR_5, CRY_MODE_NORMAL
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Pikachu, MSGBOX_DEFAULT
 	waitmoncry
 	release

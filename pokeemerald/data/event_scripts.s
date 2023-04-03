@@ -674,7 +674,7 @@ Common_EventScript_ReadyPetalburgGymForBattle::
 
 Common_EventScript_BufferTrendyPhrase::
 	dotimebasedevents
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	special BufferTrendyPhraseString
 	return
 
@@ -746,7 +746,7 @@ Common_EventScript_StopBrineysBoatMusic::
 @ Below could be split as ferry.inc aside from the Rusturf tunnel script
 Common_EventScript_FerryDepart::
 	delay 60
-	applymovement VAR_0x8004, Movement_FerryDepart
+	applymovement VAR_TEMP_PAR_4, Movement_FerryDepart
 	waitmovement 0
 	return
 
@@ -814,12 +814,12 @@ Common_EventScript_NameReceivedPartyMon::
 	return
 
 Common_EventScript_PlayerHandedOverTheItem::
-	bufferitemname STR_VAR_1, VAR_0x8004
+	bufferitemname STR_VAR_1, VAR_TEMP_PAR_4
 	playfanfare MUS_OBTAIN_TMHM
 	message gText_PlayerHandedOverTheItem
 	waitmessage
 	waitfanfare
-	removeitem VAR_0x8004
+	removeitem VAR_TEMP_PAR_4
 	return
 
 	.include "data/scripts/elite_four.inc"
@@ -995,7 +995,7 @@ Common_EventScript_LegendaryFlewAway::
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject VAR_LAST_TALKED
 	fadescreenswapbuffers FADE_FROM_BLACK
-	bufferspeciesname STR_VAR_1, VAR_0x8004
+	bufferspeciesname STR_VAR_1, VAR_TEMP_PAR_4
 	msgbox gText_LegendaryFlewAway, MSGBOX_DEFAULT
 	release
 	end

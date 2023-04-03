@@ -27,8 +27,8 @@ CaveOfOrigin_EventScript_Shake3::
 	end
 
 CaveOfOrigin_EventScript_Shake::
-	setvar VAR_0x8004, 1  @ vertical pan
-	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 1  @ vertical pan
+	setvar VAR_TEMP_PAR_5, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera

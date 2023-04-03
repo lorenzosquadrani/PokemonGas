@@ -235,7 +235,7 @@ SlateportCity_Harbor_EventScript_BoardFerry::
 	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_Harbor_EventScript_BoardFerryEast
 	delay 30
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	setvar VAR_0x8004, LOCALID_SS_TIDAL
+	setvar VAR_TEMP_PAR_4, LOCALID_SS_TIDAL
 	call Common_EventScript_FerryDepart
 	return
 
@@ -267,10 +267,10 @@ SlateportCity_Harbor_EventScript_Sailor::
 	lock
 	faceplayer
 	goto_if_unset FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	call_if_set FLAG_DEFEATED_KYOGRE, SlateportCity_Harbor_EventScript_CountDefeatedLegendary
 	call_if_set FLAG_DEFEATED_GROUDON, SlateportCity_Harbor_EventScript_CountDefeatedLegendary
-	goto_if_eq VAR_0x8004, 2, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather  @ Defeated both
+	goto_if_eq VAR_TEMP_PAR_4, 2, SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather  @ Defeated both
 	msgbox SlateportCity_Harbor_Text_AbnormalWeather, MSGBOX_DEFAULT
 	release
 	end
@@ -281,7 +281,7 @@ SlateportCity_Harbor_EventScript_SailorNoAbnormalWeather::
 	end
 
 SlateportCity_Harbor_EventScript_CountDefeatedLegendary::
-	addvar VAR_0x8004, 1
+	addvar VAR_TEMP_PAR_4, 1
 	return
 
 SlateportCity_Harbor_EventScript_FatMan::

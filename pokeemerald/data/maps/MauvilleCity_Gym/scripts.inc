@@ -46,25 +46,25 @@ MauvilleCity_Gym_EventScript_SetAltBarriers::
 	end
 
 MauvilleCity_Gym_EventScript_Switch1Pressed::
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	special MauvilleGymPressSwitch
 	goto MauvilleCity_Gym_EventScript_UpdateBarriers
 	end
 
 MauvilleCity_Gym_EventScript_Switch2Pressed::
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	special MauvilleGymPressSwitch
 	goto MauvilleCity_Gym_EventScript_UpdateBarriers
 	end
 
 MauvilleCity_Gym_EventScript_Switch3Pressed::
-	setvar VAR_0x8004, 2
+	setvar VAR_TEMP_PAR_4, 2
 	special MauvilleGymPressSwitch
 	goto MauvilleCity_Gym_EventScript_UpdateBarriers
 	end
 
 MauvilleCity_Gym_EventScript_Switch4Pressed::
-	setvar VAR_0x8004, 3
+	setvar VAR_TEMP_PAR_4, 3
 	special MauvilleGymPressSwitch
 	goto MauvilleCity_Gym_EventScript_UpdateBarriers
 	end
@@ -141,7 +141,7 @@ MauvilleCity_Gym_EventScript_Switch1::
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	goto_if_eq VAR_MAUVILLE_GYM_STATE, 1, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	setvar VAR_MAUVILLE_GYM_STATE, 1
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	goto MauvilleCity_Gym_EventScript_PressFloorSwitch
 	end
 
@@ -150,7 +150,7 @@ MauvilleCity_Gym_EventScript_Switch2::
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	goto_if_eq VAR_MAUVILLE_GYM_STATE, 2, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	setvar VAR_MAUVILLE_GYM_STATE, 2
-	setvar VAR_0x8004, 1
+	setvar VAR_TEMP_PAR_4, 1
 	goto MauvilleCity_Gym_EventScript_PressFloorSwitch
 	end
 
@@ -159,7 +159,7 @@ MauvilleCity_Gym_EventScript_Switch3::
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	goto_if_eq VAR_MAUVILLE_GYM_STATE, 3, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	setvar VAR_MAUVILLE_GYM_STATE, 3
-	setvar VAR_0x8004, 2
+	setvar VAR_TEMP_PAR_4, 2
 	goto MauvilleCity_Gym_EventScript_PressFloorSwitch
 	end
 
@@ -168,7 +168,7 @@ MauvilleCity_Gym_EventScript_Switch4::
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	goto_if_eq VAR_MAUVILLE_GYM_STATE, 4, MauvilleCity_Gym_EventScript_SwitchDoNothing
 	setvar VAR_MAUVILLE_GYM_STATE, 4
-	setvar VAR_0x8004, 3
+	setvar VAR_TEMP_PAR_4, 3
 	goto MauvilleCity_Gym_EventScript_PressFloorSwitch
 	end
 

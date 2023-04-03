@@ -105,7 +105,7 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_DoTowerBattle::
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_WarpToLobbyLost::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST
 	tower_set TOWER_DATA_LVL_MODE
-	setvar VAR_0x8004, FANCOUNTER_USED_BATTLE_TOWER
+	setvar VAR_TEMP_PAR_4, FANCOUNTER_USED_BATTLE_TOWER
 	special Script_TryGainNewFanFromCounter
 	goto BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobby
 
@@ -206,7 +206,7 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallenge::
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_WarpToLobbyWon::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON
 	tower_set TOWER_DATA_LVL_MODE
-	setvar VAR_0x8004, FANCOUNTER_USED_BATTLE_TOWER
+	setvar VAR_TEMP_PAR_4, FANCOUNTER_USED_BATTLE_TOWER
 	special Script_TryGainNewFanFromCounter
 	goto BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobby
 
@@ -331,8 +331,8 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponentsLinkNo
 	end
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallengeLink::
-	setvar VAR_0x8004, BATTLE_TOWER_LINK_CONTINUE
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, BATTLE_TOWER_LINK_CONTINUE
+	setvar VAR_TEMP_PAR_5, 0
 	message gText_LinkStandby3
 	waitmessage
 	special LinkRetireStatusWithBattleTowerPartner
@@ -362,8 +362,8 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRetireChallengeLink::
 	end
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_RetireChallengeLink::
-	setvar VAR_0x8004, BATTLE_TOWER_LINK_RETIRE
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, BATTLE_TOWER_LINK_RETIRE
+	setvar VAR_TEMP_PAR_5, 0
 	message gText_LinkStandby3
 	waitmessage
 	special LinkRetireStatusWithBattleTowerPartner

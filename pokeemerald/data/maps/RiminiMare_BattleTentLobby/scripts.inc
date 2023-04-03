@@ -125,12 +125,12 @@ RiminiMare_BattleTentLobby_EventScript_TryEnterChallenge::
 	setvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES
 	setvar VAR_RESULT, 2
 	frontier_checkineligible
-	goto_if_eq VAR_0x8004, TRUE, RiminiMare_BattleTentLobby_EventScript_NotEnoughValidMons
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, RiminiMare_BattleTentLobby_EventScript_NotEnoughValidMons
 	frontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_TENT
 	msgbox RiminiMare_BattleTentLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
-	setvar VAR_0x8004, 1
-	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
+	setvar VAR_TEMP_PAR_4, 1
+	setvar VAR_TEMP_PAR_5, FRONTIER_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, RiminiMare_BattleTentLobby_EventScript_LoadPartyCancelChallenge
@@ -279,7 +279,7 @@ RiminiMare_BattleTentLobby_EventScript_RulesBoard::
 RiminiMare_BattleTentLobby_EventScript_ReadRulesBoard::
 	message BattleFrontier_BattlePalaceLobby_Text_ReadWhichHeading
 	waitmessage
-	setvar VAR_0x8004, SCROLL_MULTI_BATTLE_TENT_RULES
+	setvar VAR_TEMP_PAR_4, SCROLL_MULTI_BATTLE_TENT_RULES
 	special ShowScrollableMultichoice
 	waitstate
 	switch VAR_RESULT

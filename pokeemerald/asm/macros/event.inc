@@ -1015,7 +1015,7 @@
 
 	@ Checks if at least one Pokemon in the player's party knows the specified move. If so, VAR_RESULT is set to the
 	@ (zero-indexed) slot number of the first Pokemon that knows the move. If not, VAR_RESULT is set to PARTY_SIZE.
-	@ VAR_0x8004 is also set to this Pokemon's species.
+	@ VAR_TEMP_PAR_4 is also set to this Pokemon's species.
 	.macro checkpartymove move:req
 	.byte 0x7c
 	.2byte \move
@@ -1911,7 +1911,7 @@
 
 	@ Registers the specified trainer in Match Call and plays a fanfare with a notification message.
 	.macro register_matchcall trainer:req
-	setvar VAR_0x8004, \trainer
+	setvar VAR_TEMP_PAR_4, \trainer
 	special SetMatchCallRegisteredFlag
 	setorcopyvar VAR_0x8000, \trainer
 	callstd STD_REGISTER_MATCH_CALL
@@ -1934,8 +1934,8 @@
 
 	@ Creates a Pokémon with the modernFatefulEncounter bit set for an encounter
 	.macro seteventmon species:req, level:req, item=ITEM_NONE
-	setvar VAR_0x8004, \species
-	setvar VAR_0x8005, \level
+	setvar VAR_TEMP_PAR_4, \species
+	setvar VAR_TEMP_PAR_5, \level
 	setvar VAR_0x8006, \item
 	special CreateEnemyEventMon
 	.endm

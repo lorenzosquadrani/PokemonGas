@@ -18,7 +18,7 @@ EmiliaRoad_CozmosHouse_EventScript_PlayerHasMeteorite::
 	msgbox EmiliaRoad_CozmosHouse_Text_PleaseUseThisTM, MSGBOX_DEFAULT
 	giveitem ITEM_TM27
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setvar VAR_0x8004, ITEM_METEORITE
+	setvar VAR_TEMP_PAR_4, ITEM_METEORITE
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_RECEIVED_TM27
 	msgbox EmiliaRoad_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT

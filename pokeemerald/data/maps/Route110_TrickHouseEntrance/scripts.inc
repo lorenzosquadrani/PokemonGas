@@ -672,26 +672,26 @@ Route110_TrickHouseEntrance_EventScript_TrickMasterHiding::
 	end
 
 Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle1::
-	setvar VAR_0x8004, 6  @ x
-	setvar VAR_0x8005, 3  @ y
+	setvar VAR_TEMP_PAR_4, 6  @ x
+	setvar VAR_TEMP_PAR_5, 3  @ y
 	call Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle
 	return
 
 Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle2::
-	setvar VAR_0x8004, 11  @ x
-	setvar VAR_0x8005, 5   @ y
+	setvar VAR_TEMP_PAR_4, 11  @ x
+	setvar VAR_TEMP_PAR_5, 5   @ y
 	call Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle
 	return
 
 Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle3::
-	setvar VAR_0x8004, 9  @ x
-	setvar VAR_0x8005, 2  @ y
+	setvar VAR_TEMP_PAR_4, 9  @ x
+	setvar VAR_TEMP_PAR_5, 2  @ y
 	call Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle
 	return
 
 Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle::
 	setvar VAR_0x8006, 0
-	dofieldeffectsparkle VAR_0x8004, VAR_0x8005, VAR_0x8006
+	dofieldeffectsparkle VAR_TEMP_PAR_4, VAR_TEMP_PAR_5, VAR_0x8006
 	waitfieldeffect FLDEFF_SPARKLE
 	delay 10
 	return

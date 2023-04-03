@@ -2,13 +2,13 @@ EventScript_Questionnaire::
 	lockall
 	msgbox Questionnaire_Text_FillOut, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Questionnaire_EventScript_Release
-	setvar VAR_0x8004, EASY_CHAT_TYPE_QUESTIONNAIRE
+	setvar VAR_TEMP_PAR_4, EASY_CHAT_TYPE_QUESTIONNAIRE
 	call Common_ShowEasyChatScreen
 	lock
 	faceplayer
 	specialvar VAR_0x8008, GetMartEmployeeObjectEventId
-	goto_if_eq VAR_0x8004, 1, Questionnaire_EventScript_PlayerInputMysteryEventPhrase
-	goto_if_eq VAR_0x8004, 2, Questionnaire_EventScript_PlayerInputMysteryGiftPhrase
+	goto_if_eq VAR_TEMP_PAR_4, 1, Questionnaire_EventScript_PlayerInputMysteryEventPhrase
+	goto_if_eq VAR_TEMP_PAR_4, 2, Questionnaire_EventScript_PlayerInputMysteryGiftPhrase
 	goto_if_eq VAR_RESULT, 0, Questionnaire_EventScript_Release
 	goto_if_eq VAR_RESULT, 1, Questionnaire_EventScript_ThankYou
 	end

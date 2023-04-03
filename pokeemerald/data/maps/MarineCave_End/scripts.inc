@@ -57,7 +57,7 @@ MarineCave_End_EventScript_DefeatedKyogre::
 	end
 
 MarineCave_End_EventScript_RanFromKyogre::
-	setvar VAR_0x8004, SPECIES_KYOGRE
+	setvar VAR_TEMP_PAR_4, SPECIES_KYOGRE
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

@@ -183,8 +183,8 @@ BattleFrontier_BattlePyramidTop_EventScript_DefeatedBrandonGold::
 
 BattleFrontier_BattlePyramidTop_EventScript_DoBrandonBattle::
 	closemessage
-	setvar VAR_0x8004, SPECIAL_BATTLE_PYRAMID
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_PYRAMID
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	return

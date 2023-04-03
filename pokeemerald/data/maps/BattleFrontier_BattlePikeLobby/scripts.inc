@@ -115,13 +115,13 @@ BattleFrontier_BattlePikeLobby_EventScript_TryEnterChallenge::
 	case FRONTIER_LVL_TENT, BattleFrontier_BattlePikeLobby_EventScript_CancelChallenge
 	case MULTI_B_PRESSED, BattleFrontier_BattlePikeLobby_EventScript_CancelChallenge
 	frontier_checkineligible
-	goto_if_eq VAR_0x8004, TRUE, BattleFrontier_BattlePikeLobby_EventScript_NotEnoughValidMons
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, BattleFrontier_BattlePikeLobby_EventScript_NotEnoughValidMons
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	call BattleFrontier_EventScript_GetLvlMode
-	copyvar VAR_0x8004, VAR_RESULT
-	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
+	setvar VAR_TEMP_PAR_5, FRONTIER_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge

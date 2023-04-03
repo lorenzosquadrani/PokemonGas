@@ -34,8 +34,8 @@ MagmaHideout_4F_EventScript_Maxie::
 	waitmovement 0
 	special FadeOutOrbEffect
 	waitstate
-	setvar VAR_0x8004, 1  @ vertical pan
-	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 1  @ vertical pan
+	setvar VAR_TEMP_PAR_5, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
@@ -44,8 +44,8 @@ MagmaHideout_4F_EventScript_Maxie::
 	waitmovement 0
 	removeobject LOCALID_GROUDON
 	delay 4
-	setvar VAR_0x8004, 2  @ vertical pan
-	setvar VAR_0x8005, 2  @ horizontal pan
+	setvar VAR_TEMP_PAR_4, 2  @ vertical pan
+	setvar VAR_TEMP_PAR_5, 2  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera

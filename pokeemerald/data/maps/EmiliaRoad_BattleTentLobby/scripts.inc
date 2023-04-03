@@ -124,12 +124,12 @@ EmiliaRoad_BattleTentLobby_EventScript_TryEnterChallenge::
 	setvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES
 	setvar VAR_RESULT, 2
 	frontier_checkineligible
-	goto_if_eq VAR_0x8004, TRUE, EmiliaRoad_BattleTentLobby_EventScript_NotEnoughValidMons
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, EmiliaRoad_BattleTentLobby_EventScript_NotEnoughValidMons
 	frontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_TENT
 	msgbox EmiliaRoad_BattleTentLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
-	setvar VAR_0x8004, 2
-	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
+	setvar VAR_TEMP_PAR_4, 2
+	setvar VAR_TEMP_PAR_5, FRONTIER_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, EmiliaRoad_BattleTentLobby_EventScript_LoadPartyCancelChallenge

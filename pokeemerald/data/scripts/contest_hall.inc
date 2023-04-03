@@ -101,7 +101,7 @@ LilycoveCity_ContestLobby_EventScript_CancelEnterContest::
 LilycoveCity_ContestLobby_EventScript_ChooseContestMon::
 	msgbox LilycoveCity_ContestLobby_Text_EnterWhichPokemon1, MSGBOX_DEFAULT
 	choosecontestmon
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LilycoveCity_ContestLobby_EventScript_CancelEnterContest
+	goto_if_eq VAR_TEMP_PAR_4, PARTY_NOTHING_CHOSEN, LilycoveCity_ContestLobby_EventScript_CancelEnterContest
 	special TryEnterContestMon
 	goto_if_eq VAR_RESULT, CANT_ENTER_CONTEST, LilycoveCity_ContestLobby_EventScript_CantEnterLowRank
 	goto_if_eq VAR_RESULT, CAN_ENTER_CONTEST_EQUAL_RANK, LilycoveCity_ContestLobby_EventScript_EnterMon
@@ -530,62 +530,62 @@ ContestHall_EventScript_DisplayHearts::
 	return
 
 ContestHall_EventScript_GetNumberOfHeartsNormal::
-	goto_if_gt VAR_0x8004, 80, ContestHall_EventScript_Set8Hearts
-	goto_if_gt VAR_0x8004, 70, ContestHall_EventScript_Set7Hearts
-	goto_if_gt VAR_0x8004, 60, ContestHall_EventScript_Set6Hearts
-	goto_if_gt VAR_0x8004, 50, ContestHall_EventScript_Set5Hearts
-	goto_if_gt VAR_0x8004, 40, ContestHall_EventScript_Set4Hearts
-	goto_if_gt VAR_0x8004, 30, ContestHall_EventScript_Set3Hearts
-	goto_if_gt VAR_0x8004, 20, ContestHall_EventScript_Set2Hearts
-	goto_if_gt VAR_0x8004, 10, ContestHall_EventScript_Set1Heart
+	goto_if_gt VAR_TEMP_PAR_4, 80, ContestHall_EventScript_Set8Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 70, ContestHall_EventScript_Set7Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 60, ContestHall_EventScript_Set6Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 50, ContestHall_EventScript_Set5Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 40, ContestHall_EventScript_Set4Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 30, ContestHall_EventScript_Set3Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 20, ContestHall_EventScript_Set2Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 10, ContestHall_EventScript_Set1Heart
 	setvar VAR_TEMP_0, 0
 	return
 
 ContestHall_EventScript_GetNumberOfHeartsSuper::
-	goto_if_gt VAR_0x8004, 230, ContestHall_EventScript_Set8Hearts
-	goto_if_gt VAR_0x8004, 210, ContestHall_EventScript_Set7Hearts
-	goto_if_gt VAR_0x8004, 190, ContestHall_EventScript_Set6Hearts
-	goto_if_gt VAR_0x8004, 170, ContestHall_EventScript_Set5Hearts
-	goto_if_gt VAR_0x8004, 150, ContestHall_EventScript_Set4Hearts
-	goto_if_gt VAR_0x8004, 130, ContestHall_EventScript_Set3Hearts
-	goto_if_gt VAR_0x8004, 110, ContestHall_EventScript_Set2Hearts
-	goto_if_gt VAR_0x8004, 90, ContestHall_EventScript_Set1Heart
+	goto_if_gt VAR_TEMP_PAR_4, 230, ContestHall_EventScript_Set8Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 210, ContestHall_EventScript_Set7Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 190, ContestHall_EventScript_Set6Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 170, ContestHall_EventScript_Set5Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 150, ContestHall_EventScript_Set4Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 130, ContestHall_EventScript_Set3Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 110, ContestHall_EventScript_Set2Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 90, ContestHall_EventScript_Set1Heart
 	setvar VAR_TEMP_0, 0
 	return
 
 ContestHall_EventScript_GetNumberOfHeartsHyper::
-	goto_if_gt VAR_0x8004, 380, ContestHall_EventScript_Set8Hearts
-	goto_if_gt VAR_0x8004, 350, ContestHall_EventScript_Set7Hearts
-	goto_if_gt VAR_0x8004, 320, ContestHall_EventScript_Set6Hearts
-	goto_if_gt VAR_0x8004, 290, ContestHall_EventScript_Set5Hearts
-	goto_if_gt VAR_0x8004, 260, ContestHall_EventScript_Set4Hearts
-	goto_if_gt VAR_0x8004, 230, ContestHall_EventScript_Set3Hearts
-	goto_if_gt VAR_0x8004, 200, ContestHall_EventScript_Set2Hearts
-	goto_if_gt VAR_0x8004, 170, ContestHall_EventScript_Set1Heart
+	goto_if_gt VAR_TEMP_PAR_4, 380, ContestHall_EventScript_Set8Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 350, ContestHall_EventScript_Set7Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 320, ContestHall_EventScript_Set6Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 290, ContestHall_EventScript_Set5Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 260, ContestHall_EventScript_Set4Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 230, ContestHall_EventScript_Set3Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 200, ContestHall_EventScript_Set2Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 170, ContestHall_EventScript_Set1Heart
 	setvar VAR_TEMP_0, 0
 	return
 
 ContestHall_EventScript_GetNumberOfHeartsMaster::
-	goto_if_gt VAR_0x8004, 600, ContestHall_EventScript_Set8Hearts
-	goto_if_gt VAR_0x8004, 560, ContestHall_EventScript_Set7Hearts
-	goto_if_gt VAR_0x8004, 520, ContestHall_EventScript_Set6Hearts
-	goto_if_gt VAR_0x8004, 480, ContestHall_EventScript_Set5Hearts
-	goto_if_gt VAR_0x8004, 440, ContestHall_EventScript_Set4Hearts
-	goto_if_gt VAR_0x8004, 400, ContestHall_EventScript_Set3Hearts
-	goto_if_gt VAR_0x8004, 360, ContestHall_EventScript_Set2Hearts
-	goto_if_gt VAR_0x8004, 320, ContestHall_EventScript_Set1Heart
+	goto_if_gt VAR_TEMP_PAR_4, 600, ContestHall_EventScript_Set8Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 560, ContestHall_EventScript_Set7Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 520, ContestHall_EventScript_Set6Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 480, ContestHall_EventScript_Set5Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 440, ContestHall_EventScript_Set4Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 400, ContestHall_EventScript_Set3Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 360, ContestHall_EventScript_Set2Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 320, ContestHall_EventScript_Set1Heart
 	setvar VAR_TEMP_0, 0
 	return
 
 ContestHall_EventScript_GetNumberOfHeartsLink::
-	goto_if_gt VAR_0x8004, 600, ContestHall_EventScript_Set8Hearts
-	goto_if_gt VAR_0x8004, 550, ContestHall_EventScript_Set7Hearts
-	goto_if_gt VAR_0x8004, 500, ContestHall_EventScript_Set6Hearts
-	goto_if_gt VAR_0x8004, 450, ContestHall_EventScript_Set5Hearts
-	goto_if_gt VAR_0x8004, 400, ContestHall_EventScript_Set4Hearts
-	goto_if_gt VAR_0x8004, 300, ContestHall_EventScript_Set3Hearts
-	goto_if_gt VAR_0x8004, 200, ContestHall_EventScript_Set2Hearts
-	goto_if_gt VAR_0x8004, 100, ContestHall_EventScript_Set1Heart
+	goto_if_gt VAR_TEMP_PAR_4, 600, ContestHall_EventScript_Set8Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 550, ContestHall_EventScript_Set7Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 500, ContestHall_EventScript_Set6Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 450, ContestHall_EventScript_Set5Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 400, ContestHall_EventScript_Set4Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 300, ContestHall_EventScript_Set3Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 200, ContestHall_EventScript_Set2Hearts
+	goto_if_gt VAR_TEMP_PAR_4, 100, ContestHall_EventScript_Set1Heart
 	setvar VAR_TEMP_0, 0
 	return
 
@@ -884,7 +884,7 @@ ContestHall_EventScript_WeWillDeclareWinnerLink::
 
 ContestHall_EventScript_GetWinnerObjEventId::
 	special GetContestWinnerId
-	switch VAR_0x8005
+	switch VAR_TEMP_PAR_5
 	case 0, ContestHall_EventScript_GetPlayer1ObjEventId
 	case 1, ContestHall_EventScript_GetPlayer2ObjEventId
 	case 2, ContestHall_EventScript_GetPlayer3ObjEventId
@@ -910,9 +910,9 @@ ContestHall_EventScript_GetPlayer4ObjEventId::
 ContestHall_EventScript_CongratulateWinner::
 	special BufferContestWinnerTrainerName
 	special BufferContestWinnerMonName
-	addvar VAR_0x8005, 1
-	buffernumberstring STR_VAR_2, VAR_0x8005
-	addvar VAR_0x8005, -1
+	addvar VAR_TEMP_PAR_5, 1
+	buffernumberstring STR_VAR_2, VAR_TEMP_PAR_5
+	addvar VAR_TEMP_PAR_5, -1
 	call ContestHall_EventScript_CongratsWinner
 	applymovement VAR_TEMP_3, ContestHall_Movement_WinningPlayerWalkUp
 	waitmovement 0
@@ -1029,7 +1029,7 @@ ContestHall_EventScript_GiveWinnerPrize::
 	call ContestHall_EventScript_AudienceLookAround
 	delay 30
 	special ShouldReadyContestArtist
-	goto_if_eq VAR_0x8004, TRUE, ContestHall_EventScript_SetReadyForContestArtist
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, ContestHall_EventScript_SetReadyForContestArtist
 	return
 
 ContestHall_EventScript_SkipPrize::
@@ -1038,7 +1038,7 @@ ContestHall_EventScript_SkipPrize::
 	releaseall
 	delay 90
 	special ShouldReadyContestArtist
-	goto_if_eq VAR_0x8004, TRUE, ContestHall_EventScript_SetReadyForContestArtist
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, ContestHall_EventScript_SetReadyForContestArtist
 	return
 
 ContestHall_EventScript_CheckShouldSkipPrize::
@@ -1048,7 +1048,7 @@ ContestHall_EventScript_CheckShouldSkipPrize::
 
 ContestHall_EventScript_CheckPlayerWon::
 	special GetContestWinnerId
-	goto_if_eq VAR_0x8005, 3, ContestHall_EventScript_CheckRankIsMaster
+	goto_if_eq VAR_TEMP_PAR_5, 3, ContestHall_EventScript_CheckRankIsMaster
 	return
 
 ContestHall_EventScript_CheckRankIsMaster::
@@ -1073,7 +1073,7 @@ ContestHall_EventScript_EndLinkContest::
 	special GetContestPlayerId
 	special GetContestWinnerId
 	special ShouldReadyContestArtist
-	goto_if_eq VAR_0x8004, TRUE, ContestHall_EventScript_SetReadyForLinkContestArtist
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, ContestHall_EventScript_SetReadyForLinkContestArtist
 	closemessage
 	return
 
@@ -1086,7 +1086,7 @@ ContestHall_EventScript_Ret::
 	return
 
 ContestHall_EventScript_WinnerApproachForPrize::
-	switch VAR_0x8005
+	switch VAR_TEMP_PAR_5
 	case 0, ContestHall_EventScript_Player1ApproachForPrize
 	case 1, ContestHall_EventScript_Player2ApproachForPrize
 	case 2, ContestHall_EventScript_Player3ApproachForPrize
@@ -1124,7 +1124,7 @@ ContestHall_EventScript_Player4ApproachForPrize::
 @ In NPC Contests, the player is always entry 4 (id number 3)
 ContestHall_EventScript_GivePrizeIfWinner::
 	special GetContestWinnerId
-	goto_if_eq VAR_0x8005, 3, ContestHall_EventScript_GiveContestPrizes
+	goto_if_eq VAR_TEMP_PAR_5, 3, ContestHall_EventScript_GiveContestPrizes
 	lockall
 	msgbox ContestHall_Text_CongratsPleaseCompeteAgain, MSGBOX_DEFAULT
 	releaseall

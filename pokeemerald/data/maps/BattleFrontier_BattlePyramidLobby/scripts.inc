@@ -128,13 +128,13 @@ BattleFrontier_BattlePyramidLobby_EventScript_TryEnterChallenge::
 	case FRONTIER_LVL_TENT, BattleFrontier_BattlePyramidLobby_EventScript_CancelChallenge
 	case MULTI_B_PRESSED, BattleFrontier_BattlePyramidLobby_EventScript_CancelChallenge
 	frontier_checkineligible
-	goto_if_eq VAR_0x8004, TRUE, BattleFrontier_BattlePyramidLobby_EventScript_NotEnoughValidMons
+	goto_if_eq VAR_TEMP_PAR_4, TRUE, BattleFrontier_BattlePyramidLobby_EventScript_NotEnoughValidMons
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattlePyramidLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	call BattleFrontier_EventScript_GetLvlMode
-	copyvar VAR_0x8004, VAR_RESULT
-	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
+	setvar VAR_TEMP_PAR_5, FRONTIER_PARTY_SIZE
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePyramidLobby_EventScript_LoadPartyAndCancelChallenge
@@ -252,7 +252,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_GiveHintGetLvOpenStreak::
 	return
 
 BattleFrontier_BattlePyramidLobby_EventScript_DoHintComment::
-	copyvar VAR_0x8004, VAR_RESULT
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
 	special GetBattlePyramidHint
 	switch VAR_RESULT
 	case 0, BattleFrontier_BattlePyramidLobby_EventScript_HintParalysis

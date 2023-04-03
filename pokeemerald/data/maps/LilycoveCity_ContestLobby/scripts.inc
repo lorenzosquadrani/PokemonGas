@@ -103,8 +103,8 @@ LilycoveCity_ContestLobby_EventScript_ReceivedArtistRibbon::
 	return
 
 LilycoveCity_ContestLobby_EventScript_UpdateMuseumPatrons::
-	specialvar VAR_0x8004, CountPlayerMuseumPaintings
-	switch VAR_0x8004
+	specialvar VAR_TEMP_PAR_4, CountPlayerMuseumPaintings
+	switch VAR_TEMP_PAR_4
 	case 1, LilycoveCity_ContestLobby_EventScript_ShowPatron1
 	case 2, LilycoveCity_ContestLobby_EventScript_ShowPatron2
 	case 3, LilycoveCity_ContestLobby_EventScript_ShowPatron3
@@ -711,7 +711,7 @@ LilycoveCity_ContestLobby_EventScript_ChooseLinkContestMon::
 	msgbox LilycoveCity_ContestLobby_Text_EnterWhichPokemon3, MSGBOX_DEFAULT
 	setvar VAR_CONTEST_RANK, 0
 	choosecontestmon
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LilycoveCity_ContestLobby_EventScript_CancelLinkContest
+	goto_if_eq VAR_TEMP_PAR_4, PARTY_NOTHING_CHOSEN, LilycoveCity_ContestLobby_EventScript_CancelLinkContest
 	special TryEnterContestMon
 	goto_if_eq VAR_RESULT, CANT_ENTER_CONTEST, LilycoveCity_ContestLobby_EventScript_LinkCantEnterLowRank
 	goto_if_eq VAR_RESULT, CAN_ENTER_CONTEST_EQUAL_RANK, LilycoveCity_ContestLobby_EventScript_EnterMonForLinkContest
@@ -736,7 +736,7 @@ LilycoveCity_ContestLobby_EventScript_LinkCantEnterFainted::
 	end
 
 LilycoveCity_ContestLobby_EventScript_EnterMonForLinkContest::
-	copyvar VAR_0x8008, VAR_0x8004
+	copyvar VAR_0x8008, VAR_TEMP_PAR_4
 	goto LilycoveCity_ContestLobby_EventScript_TrySetUpLinkContest
 	end
 
@@ -745,7 +745,7 @@ LilycoveCity_ContestLobby_EventScript_TrySetUpLinkContest::
 	goto_if_ge VAR_TEMP_D, 2, LilycoveCity_ContestLobby_EventScript_CancelLinkContest
 	message LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel
 	waitmessage
-	copyvar VAR_0x8004, VAR_RESULT
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
 	call_if_eq VAR_TEMP_C, 0, LilycoveCity_ContestLobby_EventScript_TryLinkEMode
 	call_if_eq VAR_TEMP_C, 1, LilycoveCity_ContestLobby_EventScript_TryLinkGMode
 	goto_if_ge VAR_TEMP_C, 2, LilycoveCity_ContestLobby_EventScript_CancelLinkContest
@@ -756,7 +756,7 @@ LilycoveCity_ContestLobby_EventScript_TrySetUpLinkContest::
 	goto_if_eq VAR_RESULT, LINKUP_FAILED_CONTEST_GMODE, LilycoveCity_ContestLobby_EventScript_CancelLinkModeDifference
 	messageinstant LilycoveCity_ContestLobby_Text_Transmitting
 	contestlinktransfer
-	switch VAR_0x8004
+	switch VAR_TEMP_PAR_4
 	case 0, LilycoveCity_ContestLobby_EventScript_StartLinkContest
 	case 1, LilycoveCity_ContestLobby_EventScript_CancelLinkDifferentContest
 	case 2, LilycoveCity_ContestLobby_EventScript_CancelLinkTransmissionError
@@ -806,11 +806,11 @@ LilycoveCity_ContestLobby_EventScript_CancelLinkTransmissionError::
 
 LilycoveCity_ContestLobby_EventScript_StartLinkContest::
 	special GetContestPlayerId
-	addvar VAR_0x8004, 1
-	buffernumberstring STR_VAR_2, VAR_0x8004
+	addvar VAR_TEMP_PAR_4, 1
+	buffernumberstring STR_VAR_2, VAR_TEMP_PAR_4
 	messageautoscroll LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX
 	waitmessage
-	subvar VAR_0x8004, 1
+	subvar VAR_TEMP_PAR_4, 1
 	call LilycoveCity_ContestLobby_EventScript_LeadToLinkContestHall
 	setvar VAR_CONTEST_HALL_STATE, 1
 	special SetLinkContestPlayerGfx
@@ -829,23 +829,23 @@ LilycoveCity_ContestLobby_EventScript_SetLinkGroupType::
 	end
 
 LilycoveCity_ContestLobby_EventScript_SetLinkGroupCoolContest::
-	setvar VAR_0x8004, LINK_GROUP_COOL_CONTEST
+	setvar VAR_TEMP_PAR_4, LINK_GROUP_COOL_CONTEST
 	return
 
 LilycoveCity_ContestLobby_EventScript_SetLinkGroupBeautyContest::
-	setvar VAR_0x8004, LINK_GROUP_BEAUTY_CONTEST
+	setvar VAR_TEMP_PAR_4, LINK_GROUP_BEAUTY_CONTEST
 	return
 
 LilycoveCity_ContestLobby_EventScript_SetLinkGroupCuteContest::
-	setvar VAR_0x8004, LINK_GROUP_CUTE_CONTEST
+	setvar VAR_TEMP_PAR_4, LINK_GROUP_CUTE_CONTEST
 	return
 
 LilycoveCity_ContestLobby_EventScript_SetLinkGroupSmartContest::
-	setvar VAR_0x8004, LINK_GROUP_SMART_CONTEST
+	setvar VAR_TEMP_PAR_4, LINK_GROUP_SMART_CONTEST
 	return
 
 LilycoveCity_ContestLobby_EventScript_SetLinkGroupToughContest::
-	setvar VAR_0x8004, LINK_GROUP_TOUGH_CONTEST
+	setvar VAR_TEMP_PAR_4, LINK_GROUP_TOUGH_CONTEST
 	return
 
 LilycoveCity_ContestLobby_EventScript_DecideLinkLeader::

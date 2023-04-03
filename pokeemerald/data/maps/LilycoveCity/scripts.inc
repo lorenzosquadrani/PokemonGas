@@ -159,8 +159,8 @@ LilycoveCity_EventScript_MotelSign::
 
 LilycoveCity_EventScript_MuseumSign::
 	lockall
-	specialvar VAR_0x8004, CountPlayerMuseumPaintings
-	switch VAR_0x8004
+	specialvar VAR_TEMP_PAR_4, CountPlayerMuseumPaintings
+	switch VAR_TEMP_PAR_4
 	case 0, LilycoveCity_EventScript_MuseumSignNoPaintings
 	msgbox LilycoveCity_Text_MuseumSignPlayersExhibit, MSGBOX_DEFAULT
 	releaseall

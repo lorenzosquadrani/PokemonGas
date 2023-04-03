@@ -51,7 +51,7 @@ static const struct WindowTemplate sDaycareLevelMenuWindowTemplate =
 };
 
 // Indices here are assigned by Task_HandleDaycareLevelMenuInput to VAR_RESULT,
-// which is copied to VAR_0x8004 and used as an index for GetDaycareCost
+// which is copied to VAR_TEMP_PAR_4 and used as an index for GetDaycareCost
 static const struct ListMenuItem sLevelMenuItems[] =
 {
     {gText_ExpandedPlaceholder_Empty, 0},

@@ -1,8 +1,8 @@
-@ VAR_0x8004 here is used by ChangePokemonNickname
+@ VAR_TEMP_PAR_4 here is used by ChangePokemonNickname
 Common_EventScript_GetGiftMonPartySlot::
 	getpartysize
 	subvar VAR_RESULT, 1
-	copyvar VAR_0x8004, VAR_RESULT
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
 	return
 
 Common_EventScript_NameReceivedBoxMon::

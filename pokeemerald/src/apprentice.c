@@ -752,7 +752,7 @@ static void Script_GivenApprenticeLvlMode(void)
         gSpecialVar_Result = TRUE;
 }
 
-// VAR_0x8005 is 1 + the selection value from the multichoice APPRENTICE_ASK_WHICH_LEVEL
+// VAR_TEMP_PAR_5 is 1 + the selection value from the multichoice APPRENTICE_ASK_WHICH_LEVEL
 // i.e. APPRENTICE_LVL_MODE_50 or APPRENTICE_LVL_MODE_OPEN
 static void Script_SetApprenticeLvlMode(void)
 {
@@ -1245,7 +1245,7 @@ static void SetPlayerApprenticeTrainerGfxId(void)
 }
 
 // Both of the below functions may have been dummied / used for debug
-// In all cases theres a conditional for VAR_0x8004 right after the call to these functions
+// In all cases theres a conditional for VAR_TEMP_PAR_4 right after the call to these functions
 static void GetShouldCheckApprenticeGone(void)
 {
     gSpecialVar_0x8004 = TRUE;

@@ -136,8 +136,8 @@ SecretBase_EventScript_InitSecretBase::
 	setflag FLAG_HIDE_SECRET_BASE_TRAINER
 	special SetPlayerSecretBase
 	special EnterSecretBase
-	setvar VAR_0x8004, 0
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, 0
+	setvar VAR_TEMP_PAR_5, 0
 	special InitSecretBaseDecorationSprites
 	setvar VAR_SECRET_BASE_INITIALIZED, 1
 	waitstate
@@ -189,7 +189,7 @@ SecretBase_EventScript_AlreadyHasSecretBase::
 	checkpartymove MOVE_SECRET_POWER
 	goto_if_eq VAR_RESULT, PARTY_SIZE, SecretBase_EventScript_NoSecretPower
 	setfieldeffectargument 0, VAR_RESULT
-	setorcopyvar VAR_0x8004, VAR_RESULT
+	setorcopyvar VAR_TEMP_PAR_4, VAR_RESULT
 	lockall
 	special GetSecretBaseNearbyMapName
 	msgbox SecretBase_Text_WouldYouLikeToMoveBases, MSGBOX_YESNO
@@ -202,7 +202,7 @@ SecretBase_EventScript_AlreadyHasSecretBase::
 	fadescreenswapbuffers FADE_FROM_BLACK
 	msgbox SecretBase_Text_MovingCompletedUseSecretPower, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SecretBase_EventScript_CancelOnEntrance
-	bufferpartymonnick STR_VAR_1, VAR_0x8004
+	bufferpartymonnick STR_VAR_1, VAR_TEMP_PAR_4
 	buffermovename STR_VAR_2, MOVE_SECRET_POWER
 	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
@@ -249,14 +249,14 @@ SecretBase_EventScript_SetDecorationFlags::
 	return
 
 SecretBase_EventScript_InitDecorations::
-	setvar VAR_0x8004, 0
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, 0
+	setvar VAR_TEMP_PAR_5, 0
 	special InitSecretBaseDecorationSprites
 	setvar VAR_SECRET_BASE_INITIALIZED, 1
 	end
 
 SecretBase_EventScript_SetDecoration::
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_5, 0
 	goto SecretBase_EventScript_SetDecoration2
 	end
 
@@ -265,17 +265,17 @@ SecretBase_EventScript_SetDecoration2::
 	end
 
 SecretBase_EventScript_PutAwayDecoration::
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	goto SecretBase_EventScript_PutAwayDecorationLoop
 	end
 
 SecretBase_EventScript_PutAwayDecorationLoop::
 	special PutAwayDecorationIteration
 	goto_if_eq VAR_RESULT, 1, SecretBase_EventScript_PutAwayDecorationEnd
-	addvar VAR_0x8004, 1
-	goto_if_eq VAR_0x8005, 0, SecretBase_EventScript_PutAwayDecorationLoop
+	addvar VAR_TEMP_PAR_4, 1
+	goto_if_eq VAR_TEMP_PAR_5, 0, SecretBase_EventScript_PutAwayDecorationLoop
 	removeobject VAR_0x8006
-	setflag VAR_0x8005  @ UB: VAR_0x8005 is set to a flag by PutAwayDecorationIteration, but ScrCmd_setflag doesn't use VarGet
+	setflag VAR_TEMP_PAR_5  @ UB: VAR_TEMP_PAR_5 is set to a flag by PutAwayDecorationIteration, but ScrCmd_setflag doesn't use VarGet
 	goto SecretBase_EventScript_PutAwayDecorationLoop
 	end
 
@@ -284,16 +284,16 @@ SecretBase_EventScript_PutAwayDecorationEnd::
 
 SecretBase_EventScript_RecordMixTrainer::
 	special GetSecretBaseOwnerAndState
-	goto_if_eq VAR_0x8004, 0, SecretBase_EventScript_Trainer0
-	goto_if_eq VAR_0x8004, 1, SecretBase_EventScript_Trainer1
-	goto_if_eq VAR_0x8004, 2, SecretBase_EventScript_Trainer2
-	goto_if_eq VAR_0x8004, 3, SecretBase_EventScript_Trainer3
-	goto_if_eq VAR_0x8004, 4, SecretBase_EventScript_Trainer4
-	goto_if_eq VAR_0x8004, 5, SecretBase_EventScript_Trainer5
-	goto_if_eq VAR_0x8004, 6, SecretBase_EventScript_Trainer6
-	goto_if_eq VAR_0x8004, 7, SecretBase_EventScript_Trainer7
-	goto_if_eq VAR_0x8004, 8, SecretBase_EventScript_Trainer8
-	goto_if_eq VAR_0x8004, 9, SecretBase_EventScript_Trainer9
+	goto_if_eq VAR_TEMP_PAR_4, 0, SecretBase_EventScript_Trainer0
+	goto_if_eq VAR_TEMP_PAR_4, 1, SecretBase_EventScript_Trainer1
+	goto_if_eq VAR_TEMP_PAR_4, 2, SecretBase_EventScript_Trainer2
+	goto_if_eq VAR_TEMP_PAR_4, 3, SecretBase_EventScript_Trainer3
+	goto_if_eq VAR_TEMP_PAR_4, 4, SecretBase_EventScript_Trainer4
+	goto_if_eq VAR_TEMP_PAR_4, 5, SecretBase_EventScript_Trainer5
+	goto_if_eq VAR_TEMP_PAR_4, 6, SecretBase_EventScript_Trainer6
+	goto_if_eq VAR_TEMP_PAR_4, 7, SecretBase_EventScript_Trainer7
+	goto_if_eq VAR_TEMP_PAR_4, 8, SecretBase_EventScript_Trainer8
+	goto_if_eq VAR_TEMP_PAR_4, 9, SecretBase_EventScript_Trainer9
 	end
 
 @ VAR_RESULT is initially set by GetSecretBaseOwnerAndState
@@ -638,8 +638,8 @@ SecretBase_EventScript_Trainer9PostBattle::
 
 SecretBase_EventScript_BattleTrainer::
 	special PrepSecretBaseBattleFlags
-	setvar VAR_0x8004, SPECIAL_BATTLE_SECRET_BASE
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_SECRET_BASE
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	call_if_eq VAR_RESULT, B_OUTCOME_DREW, SecretBase_EventScript_DrewSecretBaseBattle

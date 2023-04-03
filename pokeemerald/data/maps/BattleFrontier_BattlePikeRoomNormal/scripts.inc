@@ -36,8 +36,8 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_EnterSingleBattleRoom::
 	waitmessage
 	closemessage
 	releaseall
-	setvar VAR_0x8004, SPECIAL_BATTLE_PIKE_SINGLE
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_PIKE_SINGLE
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	switch VAR_RESULT
@@ -66,8 +66,8 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_EnterHardBattleRoom::
 	waitmessage
 	closemessage
 	releaseall
-	setvar VAR_0x8004, SPECIAL_BATTLE_PIKE_SINGLE
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_PIKE_SINGLE
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	switch VAR_RESULT
@@ -257,8 +257,8 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_EnterDoubleBattleRoom::
 	pike_gettrainerintro 1
 	msgbox gStringVar4, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_0x8004, SPECIAL_BATTLE_PIKE_DOUBLE
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_PIKE_DOUBLE
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	switch VAR_RESULT
@@ -283,9 +283,9 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_EnterStatusRoom::
 	applymovement LOCALID_OBJ_1, BattleFrontier_BattlePikeRoomNormal_Movement_MonApproachPlayer
 	waitmovement 0
 	pike_getstatusmon
-	copyvar VAR_0x8004, VAR_RESULT
-	call_if_eq VAR_0x8004, PIKE_STATUSMON_KIRLIA, BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaAttack
-	call_if_eq VAR_0x8004, PIKE_STATUSMON_DUSCLOPS, BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
+	call_if_eq VAR_TEMP_PAR_4, PIKE_STATUSMON_KIRLIA, BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaAttack
+	call_if_eq VAR_TEMP_PAR_4, PIKE_STATUSMON_DUSCLOPS, BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack
 	msgbox BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled, MSGBOX_DEFAULT
 	closemessage
 	releaseall
@@ -385,8 +385,8 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_DoPikeQueenBattle::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePikeRoomNormal_Movement_PlayerWalkUp2
 	waitmovement 0
-	setvar VAR_0x8004, SPECIAL_BATTLE_PIKE_SINGLE
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_PIKE_SINGLE
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	return

@@ -13,11 +13,11 @@ EventScript_TV::
 	end
 
 EventScript_TryDoTVShow::
-	specialvar VAR_0x8004, GetRandomActiveShowIdx
-	goto_if_eq VAR_0x8004, 255, EventScript_MomDadMightLikeThis2
+	specialvar VAR_TEMP_PAR_4, GetRandomActiveShowIdx
+	goto_if_eq VAR_TEMP_PAR_4, 255, EventScript_MomDadMightLikeThis2
 	specialvar VAR_RESULT, GetNextActiveShowIfMassOutbreak
 	goto_if_eq VAR_RESULT, 255, EventScript_MomDadMightLikeThis2
-	copyvar VAR_0x8004, VAR_RESULT
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
 	specialvar VAR_RESULT, GetSelectedTVShow
 	goto_if_ne VAR_RESULT, 0, EventScript_DoTVShow
 	end
@@ -34,7 +34,7 @@ EventScript_PlayersHouseMovie::
 	releaseall
 	end
 
-@ special InitRoamer is a junk call. Its input var (VAR_0x8004) hasn't been set, and
+@ special InitRoamer is a junk call. Its input var (VAR_TEMP_PAR_4) hasn't been set, and
 @ It's called again when Mom actually asks for the color, overwriting
 @ whatever it does here.
 EventScript_PlayersHouseLatiNewsFlash::

@@ -139,8 +139,8 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	waitbuttonpress
 	fadescreen FADE_TO_BLACK
 	call BattleFrontier_EventScript_GetLvlMode
-	copyvar VAR_0x8004, VAR_RESULT
-	setvar VAR_0x8005, DOME_BATTLE_PARTY_SIZE  @ 2 of the 3 party mons are selected for battle
+	copyvar VAR_TEMP_PAR_4, VAR_RESULT
+	setvar VAR_TEMP_PAR_5, DOME_BATTLE_PARTY_SIZE  @ 2 of the 3 party mons are selected for battle
 	special ChoosePartyForBattleFrontier
 	waitstate
 	frontier_resetsketch

@@ -259,8 +259,8 @@ MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle::
 MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
 	special ReducePlayerPartyToSelectedMons
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
-	setvar VAR_0x8004, SPECIAL_BATTLE_STEVEN
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_STEVEN
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	frontier_saveparty

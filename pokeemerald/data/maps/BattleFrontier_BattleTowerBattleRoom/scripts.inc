@@ -48,7 +48,7 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_OpponentEnter::
 BattleFrontier_BattleTower_EventScript_WarpToLobbyLost::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST
 	tower_set TOWER_DATA_LVL_MODE
-	setvar VAR_0x8004, FANCOUNTER_USED_BATTLE_TOWER
+	setvar VAR_TEMP_PAR_4, FANCOUNTER_USED_BATTLE_TOWER
 	special Script_TryGainNewFanFromCounter
 	goto BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobby
 
@@ -134,7 +134,7 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_ContinueChallenge::
 BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON
 	tower_set TOWER_DATA_LVL_MODE
-	setvar VAR_0x8004, FANCOUNTER_USED_BATTLE_TOWER
+	setvar VAR_TEMP_PAR_4, FANCOUNTER_USED_BATTLE_TOWER
 	special Script_TryGainNewFanFromCounter
 	goto BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobby
 
@@ -300,12 +300,12 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_DoTowerBattle::
 	setvar VAR_TEMP_2, 0
 	frontier_set FRONTIER_DATA_RECORD_DISABLED, FALSE
 	special HealPlayerParty
-	setvar VAR_0x8004, SPECIAL_BATTLE_TOWER
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_TOWER
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
-	copyvar VAR_0x8004, VAR_FRONTIER_BATTLE_MODE
-	goto_if_eq VAR_0x8004, FRONTIER_MODE_LINK_MULTIS, BattleFrontier_BattleTowerBattleRoom_EventScript_EndTowerBattle
+	copyvar VAR_TEMP_PAR_4, VAR_FRONTIER_BATTLE_MODE
+	goto_if_eq VAR_TEMP_PAR_4, FRONTIER_MODE_LINK_MULTIS, BattleFrontier_BattleTowerBattleRoom_EventScript_EndTowerBattle
 	frontier_restorehelditems
 	special HealPlayerParty
 	frontier_resetsketch

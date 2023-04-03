@@ -57,8 +57,8 @@ SlateportCity_BattleTentBattleRoom_EventScript_EnterRoom::
 	waitmessage
 	closemessage
 	special HealPlayerParty
-	setvar VAR_0x8004, SPECIAL_BATTLE_FACTORY
-	setvar VAR_0x8005, 0
+	setvar VAR_TEMP_PAR_4, SPECIAL_BATTLE_FACTORY
+	setvar VAR_TEMP_PAR_5, 0
 	special DoSpecialTrainerBattle
 	waitstate
 	switch VAR_RESULT

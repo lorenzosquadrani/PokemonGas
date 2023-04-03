@@ -114,8 +114,8 @@ RiminiTown_OnFrame:
 
 RiminiTown_EventScript_StepOffTruckMale::
 	lockall
-	setvar VAR_0x8004, 5
-	setvar VAR_0x8005, 8
+	setvar VAR_TEMP_PAR_4, 5
+	setvar VAR_TEMP_PAR_5, 8
 	call RiminiTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_TRUCK
 	warpsilent MAP_RIMINI_TOWN_CASA_GAS_1F, 8, 8
@@ -125,8 +125,8 @@ RiminiTown_EventScript_StepOffTruckMale::
 
 RiminiTown_EventScript_StepOffTruckFemale::
 	lockall
-	setvar VAR_0x8004, 14
-	setvar VAR_0x8005, 8
+	setvar VAR_TEMP_PAR_4, 14
+	setvar VAR_TEMP_PAR_5, 8
 	call RiminiTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_RIMINI_TOWN_CASA_STE_TRUCK
 	warpsilent MAP_RIMINI_TOWN_CASA_STE_1F, 2, 8
@@ -139,12 +139,12 @@ RiminiTown_EventScript_GoInsideWithMom::
 	playse SE_LEDGE
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerStepOffTruck
 	waitmovement 0
-	opendoor VAR_0x8004, VAR_0x8005
+	opendoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	waitdooranim
 	addobject LOCALID_MOM
 	applymovement LOCALID_MOM, RiminiTown_Movement_MomExitHouse
 	waitmovement 0
-	closedoor VAR_0x8004, VAR_0x8005
+	closedoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	waitdooranim
 	delay 10
 	applymovement LOCALID_MOM, RiminiTown_Movement_MomApproachPlayerAtTruck
@@ -154,7 +154,7 @@ RiminiTown_EventScript_GoInsideWithMom::
 	applymovement LOCALID_MOM, RiminiTown_Movement_MomApproachDoor
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerApproachDoor
 	waitmovement 0
-	opendoor VAR_0x8004, VAR_0x8005
+	opendoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	waitdooranim
 	applymovement LOCALID_MOM, RiminiTown_Movement_MomEnterHouse
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerEnterHouse
@@ -162,7 +162,7 @@ RiminiTown_EventScript_GoInsideWithMom::
 	setflag FLAG_HIDE_RIMINI_TOWN_MOM_OUTSIDE
 	setvar VAR_RIMINI_INTRO_STATE, 3
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	closedoor VAR_0x8004, VAR_0x8005
+	closedoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
 	waitdooranim
 	clearflag FLAG_HIDE_RIMINI_TOWN_FAT_MAN
 	clearflag FLAG_HIDE_MAP_NAME_POPUP

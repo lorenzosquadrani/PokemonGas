@@ -80,7 +80,7 @@ AncientTomb_EventScript_DefeatedRegisteel::
 	end
 
 AncientTomb_EventScript_RanFromRegisteel::
-	setvar VAR_0x8004, SPECIES_REGISTEEL
+	setvar VAR_TEMP_PAR_4, SPECIES_REGISTEEL
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

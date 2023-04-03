@@ -4,13 +4,13 @@ LilycoveCity_DepartmentStoreElevator_MapScripts::
 LilycoveCity_DepartmentStoreElevator_EventScript_Attendant::
 	lock
 	faceplayer
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	call_if_unset FLAG_TEMP_2, LilycoveCity_DepartmentStoreElevator_EventScript_SetFloor
-	copyvar VAR_0x8005, VAR_DEPT_STORE_FLOOR
+	copyvar VAR_TEMP_PAR_5, VAR_DEPT_STORE_FLOOR
 	special ShowDeptStoreElevatorFloorSelect
 	message gText_WhichFloorWouldYouLike
 	waitmessage
-	setvar VAR_0x8004, 0
+	setvar VAR_TEMP_PAR_4, 0
 	specialvar VAR_RESULT, GetDeptStoreDefaultFloorChoice
 	switch VAR_RESULT
 	case 0, LilycoveCity_DepartmentStoreElevator_EventScript_ChooseFloorFrom5th
