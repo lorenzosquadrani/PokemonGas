@@ -95,6 +95,21 @@ Facciamo un gioco di pokemon per Gas!
         ```bash
         find ./ -iname "*oldale*"
         ```
-
+4. **Scripts**
+Tutte le cose che succedono nel gioco sono *eventi*. Ad ogni evento viene assegnato uno *script*.
+Ogni mappa ha i suoi eventi, definiti in `/data/maps/nome_mappa/map.json`.
+Ogni mappa ha i suoi scripts, definiti in `/data/maps/nome_mappa/scripts.inc`.
+Gli scripts sono scritti in un linguaggio abbastanza intuitivo ma macchinoso.
+Noi usiamo un linguaggio più high-level, chiamato poryscript.
+Quindi se dobbiamo modificare gli scripts di una mappa, creiamo un nuovo file chiamato `scripts.pory`.
+Dentro ci copiamo il contenuto dello `scripts.inc` originale, così:
+    ```bash
+    raw `
+    contenuto del file scripts.inc
+    ` 
+    ```
+(vedi esempio in RiminiTown).
+Tutte le funzioni che possiamo usare nei nostri scripts sono descritte in `/asm/macros/events.inc`.
+Tutte le variabili e le flags che possiamo usare nei nostri scripts sono elencate in `/include/constants/vars.h` e `/include/constants/flags.h`.
 
 
