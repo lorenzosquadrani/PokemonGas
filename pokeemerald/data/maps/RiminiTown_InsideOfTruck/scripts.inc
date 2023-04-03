@@ -26,5 +26,5 @@ RiminiTown_InsideOfTruck_EventScript_SetIntroFlags::
 	setvar VAR_RIMINI_HOUSES_STATE_BRENDAN, 1
 	setdynamicwarp MAP_RIMINI_TOWN, 9, 23
 	releaseall
-	return
+	end
 

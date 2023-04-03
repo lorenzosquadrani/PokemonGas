@@ -114,40 +114,6 @@ RiminiTown_EventScript_SetMomInFrontOfDoorFemale::
 	setobjectxyperm LOCALID_MOM, 14, 9
 	return
 
-RiminiTown_EventScript_GoInsideWithMom::
-	delay 15
-	playse SE_LEDGE
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerStepOffTruck
-	waitmovement 0
-	opendoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
-	waitdooranim
-	addobject LOCALID_MOM
-	applymovement LOCALID_MOM, RiminiTown_Movement_MomExitHouse
-	waitmovement 0
-	closedoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
-	waitdooranim
-	delay 10
-	applymovement LOCALID_MOM, RiminiTown_Movement_MomApproachPlayerAtTruck
-	waitmovement 0
-	msgbox RiminiTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_MOM, RiminiTown_Movement_MomApproachDoor
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerApproachDoor
-	waitmovement 0
-	opendoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
-	waitdooranim
-	applymovement LOCALID_MOM, RiminiTown_Movement_MomEnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerEnterHouse
-	waitmovement 0
-	setflag FLAG_HIDE_RIMINI_TOWN_MOM_OUTSIDE
-	setvar VAR_RIMINI_INTRO_STATE, 3
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	closedoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
-	waitdooranim
-	clearflag FLAG_HIDE_RIMINI_TOWN_FAT_MAN
-	clearflag FLAG_HIDE_MAP_NAME_POPUP
-	return
-
 RiminiTown_Movement_MomExitHouse:
 	walk_down
 	step_end
@@ -954,6 +920,41 @@ RiminiTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+RiminiTown_EventScript_GoInsideWithMom::
+	delay 15
+	playse SE_LEDGE
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerStepOffTruck
+	waitmovement 0
+	opendoor 11, 20
+	waitdooranim
+	addobject LOCALID_MOM
+	applymovement LOCALID_MOM, RiminiTown_Movement_MomExitHouse
+	waitmovement 0
+	closedoor 11, 20
+	waitdooranim
+	delay 10
+	applymovement LOCALID_MOM, RiminiTown_Movement_MomApproachPlayerAtTruck
+	waitmovement 0
+	msgbox RiminiTown_Text_ANDREAGASPARI, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_MOM, RiminiTown_Movement_MomApproachDoor
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerApproachDoor
+	waitmovement 0
+	opendoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
+	waitdooranim
+	applymovement LOCALID_MOM, RiminiTown_Movement_MomEnterHouse
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerEnterHouse
+	waitmovement 0
+	setflag FLAG_HIDE_RIMINI_TOWN_MOM_OUTSIDE
+	setvar VAR_RIMINI_INTRO_STATE, 3
+	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	closedoor VAR_TEMP_PAR_4, VAR_TEMP_PAR_5
+	waitdooranim
+	clearflag FLAG_HIDE_RIMINI_TOWN_FAT_MAN
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	return
+
+
 RiminiTown_EventScript_SteSign::
 	msgbox RiminiTown_EventScript_SteSign_Text_0, MSGBOX_SIGN
 	end
@@ -1001,3 +1002,13 @@ RiminiTown_EventScript_GnassiSign_Text_0:
 
 RiminiTown_EventScript_TownSign_Text_0:
 	.string "RIMINI TOWN$"
+
+RiminiTown_Text_ANDREAGASPARI::
+	.string "ANDREA GASPARI!\p"
+	.string "Non voglio neanche sapere cos'hai\n"
+	.string "fatto stanotte e perché sei tornato\l"
+	.string "con quel furgone. Ti ricordo, qual'ora\l"
+	.string "fossi ancora ubriaco, che oggi\l"
+	.string "pomeriggio ti LAUREI. Forza, vieni a\l"
+	.string "salutare il babbo prima di andare a\l"
+	.string "Bologna.$"
