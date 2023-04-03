@@ -171,7 +171,7 @@ $(TILESETGFXDIR)/secondary/secret_base/yellow_cave/tiles.4bpp: %.4bpp: %.png
 $(TILESETGFXDIR)/secondary/secret_base/red_cave/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 83 -Wnum_tiles
 
-$(TILESETGFXDIR)/secondary/inside_of_truck/tiles.4bpp: %.4bpp: %.png
+$(TILESETGFXDIR)/secondary/rimini_town_inside_of_truck/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 62 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/contest/tiles.4bpp: %.4bpp: %.png

@@ -416,14 +416,14 @@ const struct Tileset gTileset_SecretBaseRedCave =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_InsideOfTruck =
+const struct Tileset gTileset_RiminiTown_InsideOfTruck =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_InsideOfTruck,
-    .palettes = gTilesetPalettes_InsideOfTruck,
-    .metatiles = gMetatiles_InsideOfTruck,
-    .metatileAttributes = gMetatileAttributes_InsideOfTruck,
+    .tiles = gTilesetTiles_RiminiTown_InsideOfTruck,
+    .palettes = gTilesetPalettes_RiminiTown_InsideOfTruck,
+    .metatiles = gMetatiles_RiminiTown_InsideOfTruck,
+    .metatileAttributes = gMetatileAttributes_RiminiTown_InsideOfTruck,
     .callback = NULL,
 };
 

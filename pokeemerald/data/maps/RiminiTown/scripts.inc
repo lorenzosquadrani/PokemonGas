@@ -396,22 +396,6 @@ RiminiTown_EventScript_GoSaveBirchTrigger::
 	releaseall
 	end
 
-RiminiTown_EventScript_TownSign::
-	msgbox RiminiTown_Text_TownName, MSGBOX_SIGN
-	end
-
-RiminiTown_EventScript_GasSign::
-	msgbox RiminiTown_Text_GasHouse, MSGBOX_SIGN
-	end
-
-RiminiTown_EventScript_TommiSign::
-	msgbox RiminiTown_Text_TommiHouse, MSGBOX_SIGN
-	end
-
-RiminiTown_EventScript_CavaSign::
-	msgbox RiminiTown_Text_Cava, MSGBOX_SIGN
-	end
-
 RiminiTown_EventScript_GiveRunningShoesTrigger0::
 	lockall
 	setvar VAR_0x8008, 0
@@ -979,18 +963,6 @@ RiminiTown_Text_GoodLuckCatchingPokemon:
 	.string "Are you going to catch POKéMON?\n"
 	.string "Good luck!$"
 
-RiminiTown_Text_TownName:
-	.string "RIMINI TOWN$"
-
-RiminiTown_Text_GasHouse:
-	.string "Casa di Gas$"
-
-RiminiTown_Text_TommiHouse:
-	.string "Casa di Tommi$"
-
-RiminiTown_Text_Cava:
-	.string "La Cava$"
-
 RiminiTown_Text_BirchSomethingToShowYouAtLab:
 	.string "PROF. BIRCH: Well, well, {PLAYER}{KUN}!\n"
 	.string "That was good work out there!\p"
@@ -1007,5 +979,45 @@ RiminiTown_EventScript_SteSign::
 	end
 
 
+RiminiTown_EventScript_CavaSign::
+	msgbox RiminiTown_EventScript_CavaSign_Text_0, MSGBOX_SIGN
+	end
+
+
+RiminiTown_EventScript_GasSign::
+	msgbox RiminiTown_EventScript_GasSign_Text_0, MSGBOX_SIGN
+	end
+
+
+RiminiTown_EventScript_TommiSign::
+	msgbox RiminiTown_EventScript_TommiSign_Text_0, MSGBOX_SIGN
+	end
+
+
+RiminiTown_EventScript_GnassiSign::
+	msgbox RiminiTown_EventScript_GnassiSign_Text_0, MSGBOX_SIGN
+	end
+
+
+RiminiTown_EventScript_TownSign::
+	msgbox RiminiTown_EventScript_TownSign_Text_0, MSGBOX_SIGN
+	end
+
+
 RiminiTown_EventScript_SteSign_Text_0:
 	.string "Casa di Ste$"
+
+RiminiTown_EventScript_CavaSign_Text_0:
+	.string "La Cava$"
+
+RiminiTown_EventScript_GasSign_Text_0:
+	.string "Casa di Gas$"
+
+RiminiTown_EventScript_TommiSign_Text_0:
+	.string "Casa di Tommi$"
+
+RiminiTown_EventScript_GnassiSign_Text_0:
+	.string "Covo di Gnassi$"
+
+RiminiTown_EventScript_TownSign_Text_0:
+	.string "RIMINI TOWN$"
