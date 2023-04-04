@@ -1,4 +1,5 @@
 .set LOCALID_MOM, 1
+.set LOCALID_DAD, 2
 
 RiminiTown_CasaGas_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_CasaGas_1F_OnTransition
@@ -22,11 +23,49 @@ RiminiTown_CasaGas_1F_EventScript_PlaceMom::
 RiminiTown_CasaGas_1F_EventScript_DadSpeech::
 	lockall
 	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_0
+	applymovement LOCALID_DAD, DadFaceGas
+	closemessage
+	applymovement LOCALID_MOM, MomGoSit
+	delay 40
+	applymovement OBJ_EVENT_ID_PLAYER, GasApproachDad
+	waitmovement LOCALID_MOM
+	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_1
+	closemessage
 	setvar VAR_RIMINI_INTRO_STATE, 4
 	releaseall
 	end
 
 
+MomGoSit:
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	face_right
+	step_end
+
+GasApproachDad:
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	face_up
+	step_end
+
+DadFaceGas:
+	face_down
+	step_end
+
 RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_0:
 	.string "MOM: Guarda un po' chi è tornato,\n"
 	.string "tesoro.$"
+
+RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_1:
+	.string "BELLA$"

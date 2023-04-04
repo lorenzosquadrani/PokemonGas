@@ -1,5 +1,6 @@
 raw `
 .set LOCALID_MOM, 1
+.set LOCALID_DAD, 2
 
 RiminiTown_CasaGas_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_CasaGas_1F_OnTransition
@@ -23,7 +24,34 @@ script RiminiTown_CasaGas_1F_EventScript_PlaceMom {
 script RiminiTown_CasaGas_1F_EventScript_DadSpeech {
 	lockall
 	msgbox(format("MOM: Guarda un po' chi è tornato, tesoro."))
+	applymovement(LOCALID_DAD, DadFaceGas)
+	closemessage
+	applymovement(LOCALID_MOM, MomGoSit)
+	delay(40)
+	applymovement(OBJ_EVENT_ID_PLAYER, GasApproachDad)
+	waitmovement(LOCALID_MOM)
+	msgbox(format("BELLA"))
+	closemessage
 	setvar(VAR_RIMINI_INTRO_STATE, 4)
 	releaseall
 	end
+}
+
+movement MomGoSit { 
+	walk_up
+	walk_left*3
+	walk_down
+	walk_left*4
+	walk_up*2
+	face_right
+}
+
+movement GasApproachDad { 
+	walk_up
+	walk_left*3
+	face_up
+}
+
+movement DadFaceGas {
+	face_down
 }
