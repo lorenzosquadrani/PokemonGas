@@ -30,8 +30,17 @@ script RiminiTown_CasaGas_1F_EventScript_DadSpeech {
 	delay(40)
 	applymovement(OBJ_EVENT_ID_PLAYER, GasApproachDad)
 	waitmovement(LOCALID_MOM)
-	msgbox(format("BELLA"))
-	closemessage
+	msgbox(format("Ciao figliolo, spero tu sia pronto per la sfida di oggi!"))
+	delay(40)
+	msgbox(format("Come quale sfida?!
+Non ti hanno spiegato come funziona la LAUREA?\p 
+Ti conviene andare a trovarli prima di partire
+per Bologna, allora.\p
+A proposito, la signora che abita qui a fianco ha ordinato
+un pacco di caffé. Se non sbaglio è la mamma di un tuo amico,
+perché non glielo porti tu?"))
+	giveitem(ITEM_CAFFE)
+	msgbox(format("Ci vediamo più tardi a Bologna!"))
 	setvar(VAR_RIMINI_INTRO_STATE, 4)
 	releaseall
 	end

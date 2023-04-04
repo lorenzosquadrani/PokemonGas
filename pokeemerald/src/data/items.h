@@ -4380,12 +4380,12 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_BERRY_POUCH] =
+    [ITEM_CAFFE] =
     {
-        .name = _("BERRY POUCH"),
-        .itemId = ITEM_BERRY_POUCH,
+        .name = _("CAFFÈ"),
+        .itemId = ITEM_CAFFE,
         .price = 0,
-        .description = sBerryPouchDesc,
+        .description = sCaffeDesc,
         .importance = 1,
         .registrability = TRUE,
         .pocket = POCKET_KEY_ITEMS,

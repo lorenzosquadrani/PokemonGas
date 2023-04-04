@@ -30,7 +30,10 @@ RiminiTown_CasaGas_1F_EventScript_DadSpeech::
 	applymovement OBJ_EVENT_ID_PLAYER, GasApproachDad
 	waitmovement LOCALID_MOM
 	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_1
-	closemessage
+	delay 40
+	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_2
+	giveitem ITEM_CAFFE
+	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_3
 	setvar VAR_RIMINI_INTRO_STATE, 4
 	releaseall
 	end
@@ -68,4 +71,18 @@ RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_0:
 	.string "tesoro.$"
 
 RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_1:
-	.string "BELLA$"
+	.string "Ciao figliolo, spero tu sia pronto per la\n"
+	.string "sfida di oggi!$"
+
+RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_2:
+	.string "Come quale sfida?! Non ti hanno\n"
+	.string "spiegato come funziona la LAUREA?\p"
+	.string "Ti conviene andare a trovarli prima di\n"
+	.string "partire per Bologna, allora.\p"
+	.string "A proposito, la signora che abita qui a\n"
+	.string "fianco ha ordinato un pacco di caffé.\l"
+	.string "Se non sbaglio è la mamma di un tuo\l"
+	.string "amico, perché non glielo porti tu?$"
+
+RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_3:
+	.string "Ci vediamo più tardi a Bologna!$"

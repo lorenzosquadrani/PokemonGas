@@ -1489,10 +1489,8 @@ static const u8 sTMCaseDesc[] = _(
     "that holds TMs and\n"
     "HMs.");
 
-static const u8 sBerryPouchDesc[] = _(
-    "A convenient\n"
-    "container that\n"
-    "holds BERRIES.");
+static const u8 sCaffeDesc[] = _(
+    "Un pacco di caffé.");
 
 static const u8 sTeachyTVDesc[] = _(
     "A TV set tuned to\n"
