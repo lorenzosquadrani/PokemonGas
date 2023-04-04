@@ -724,7 +724,6 @@ Common_EventScript_OutOfCenterPartyHeal::
 
 EventScript_RegionMap::
 	lockall
-	msgbox Common_Text_LookCloserAtMap, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	special FieldShowRegionMap
 	waitstate

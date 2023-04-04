@@ -223,15 +223,7 @@ static bool8 TryStartInteractionScript(struct MapPosition *position, u16 metatil
     if (script == NULL)
         return FALSE;
 
-    // Don't play interaction sound for certain scripts.
-    if (script != RiminiTown_CasaGas_2F_EventScript_PC
-     && script != RiminiTown_CasaSte_2F_EventScript_PC
-     && script != SecretBase_EventScript_PC
-     && script != SecretBase_EventScript_RecordMixingPC
-     && script != SecretBase_EventScript_DollInteract
-     && script != SecretBase_EventScript_CushionInteract
-     && script != EventScript_PC)
-        PlaySE(SE_SELECT);
+    PlaySE(SE_SELECT);
 
     ScriptContext_SetupScript(script);
     return TRUE;
@@ -384,8 +376,6 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
         return Route110_TrickHousePuzzle_EventScript_Door;
     if (MetatileBehavior_IsRegionMap(metatileBehavior) == TRUE)
         return EventScript_RegionMap;
-    if (MetatileBehavior_IsRunningShoesManual(metatileBehavior) == TRUE)
-        return EventScript_RunningShoesManual;
     if (MetatileBehavior_IsPictureBookShelf(metatileBehavior) == TRUE)
         return EventScript_PictureBookShelf;
     if (MetatileBehavior_IsBookShelf(metatileBehavior) == TRUE)
