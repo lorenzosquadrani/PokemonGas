@@ -1,4 +1,4 @@
-.set LOCALID_TWIN, 1
+.set LOCALID_STE, 1
 .set LOCALID_MOM, 4
 .set LOCALID_RIVAL, 7
 .set LOCALID_BIRCH, 8
@@ -973,6 +973,123 @@ RiminiTown_EventScript_TownSign::
 	end
 
 
+RiminiTown_EventScript_IncontroConSte::
+	lockall
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_0
+	goto_if_unset FLAG_CONSEGNATO_CAFFE, RiminiTown_EventScript_IncontroConSte_2
+RiminiTown_EventScript_IncontroConSte_1:
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_2
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, 1
+	goto_if_ne RiminiTown_EventScript_IncontroConSte_5
+RiminiTown_EventScript_IncontroConSte_4:
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_6
+	closemessage
+	applymovement LOCALID_STE, RiminiTown_Movement_SteVersoCasa
+	delay 40
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasVersoCasaSte
+	waitmovement 0
+	opendoor 21, 20
+	waitdooranim
+	applymovement LOCALID_STE, RiminiTown_Movement_SteEntra
+	applymovement LOCALID_STE, RiminiTown_Movement_GasEntraSte
+	waitmovement 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	closedoor 21, 20
+	waitdooranim
+	setflag FLAG_INCONTRATO_STE
+	setvar VAR_RIMINI_INTRO_STATE, 3
+	warpsilent MAP_RIMINI_TOWN_CASA_STE_1F, 1, 8
+	waitstate
+	releaseall
+	end
+
+RiminiTown_EventScript_IncontroConSte_2:
+	delay 40
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_1
+	removeitem ITEM_CAFFE
+	setflag FLAG_CONSEGNATO_CAFFE
+	goto RiminiTown_EventScript_IncontroConSte_1
+
+RiminiTown_EventScript_IncontroConSte_5:
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_4, MSGBOX_YESNO
+RiminiTown_EventScript_IncontroConSte_7:
+	compare VAR_RESULT, 1
+	goto_if_ne RiminiTown_EventScript_IncontroConSte_8
+	goto RiminiTown_EventScript_IncontroConSte_4
+
+RiminiTown_EventScript_IncontroConSte_8:
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_5, MSGBOX_YESNO
+	goto RiminiTown_EventScript_IncontroConSte_7
+
+
+RiminiTown_Movement_SteVersoCasa:
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
+RiminiTown_Movement_GasVersoCasaSte:
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_up
+	step_end
+
+RiminiTown_Movement_SteEntra:
+	walk_up
+	set_invisible
+	step_end
+
+RiminiTown_Movement_GasEntraSte:
+	walk_up
+	walk_up
+	step_end
+
 RiminiTown_EventScript_SteSign_Text_0:
 	.string "Casa di Ste$"
 
@@ -990,6 +1107,30 @@ RiminiTown_EventScript_GnassiSign_Text_0:
 
 RiminiTown_EventScript_TownSign_Text_0:
 	.string "RIMINI TOWN$"
+
+RiminiTown_EventScript_IncontroConSte_Text_0:
+	.string "STE: Bella Gas!$"
+
+RiminiTown_EventScript_IncontroConSte_Text_1:
+	.string "Ah, hai del caffé per mia mamma? Da qua\n"
+	.string "ci penso io.$"
+
+RiminiTown_EventScript_IncontroConSte_Text_2:
+	.string "Oggi pomeriggio ti laurei vero? Daje!\p"
+	.string "Mi è appena arrivato un pacco di DROGA.$"
+
+RiminiTown_EventScript_IncontroConSte_Text_3:
+	.string "Che dici, ci facciamo una canna?$"
+
+RiminiTown_EventScript_IncontroConSte_Text_4:
+	.string "Mmh, sicuro sicuro?$"
+
+RiminiTown_EventScript_IncontroConSte_Text_5:
+	.string "Dai$"
+
+RiminiTown_EventScript_IncontroConSte_Text_6:
+	.string "Bravo! Vieni, andiamo a casa mia a\n"
+	.string "prendere la roba.$"
 
 RiminiTown_Text_ANDREAGASPARI::
 	.string "ANDREA GASPARI!\p"

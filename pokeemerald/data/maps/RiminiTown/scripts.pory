@@ -1,5 +1,5 @@
 raw `
-.set LOCALID_TWIN, 1
+.set LOCALID_STE, 1
 .set LOCALID_MOM, 4
 .set LOCALID_RIVAL, 7
 .set LOCALID_BIRCH, 8
@@ -982,4 +982,83 @@ e perché sei tornato con quel furgone.
 Ti ricordo, qual'ora fossi ancora ubriaco, che oggi pomeriggio
 ti LAUREI.\p
 Forza, vieni a salutare il babbo prima di andare a Bologna.")
+}
+
+script RiminiTown_EventScript_IncontroConSte {
+	lockall
+
+	msgbox(format("STE: Bella Gas!"))
+
+	if (!flag(FLAG_CONSEGNATO_CAFFE)) {
+		delay(40)
+		msgbox(format("Ah, hai del caffé per mia mamma? Da qua ci penso io."))
+		removeitem(ITEM_CAFFE)
+		setflag(FLAG_CONSEGNATO_CAFFE)
+	}
+
+	msgbox(format("Oggi pomeriggio ti laurei vero? Daje!\p
+Mi è appena arrivato un pacco di DROGA."))
+
+	msgbox(format("Che dici, ci facciamo una canna?"), MSGBOX_YESNO)
+
+	if (var(VAR_RESULT)!=1) {
+		msgbox(format("Mmh, sicuro sicuro?"), MSGBOX_YESNO)
+
+		while (var(VAR_RESULT)!=1) {
+			msgbox(format("Dai"), MSGBOX_YESNO)
+		}
+	}
+
+	msgbox(format("Bravo! Vieni, andiamo a casa mia a prendere la roba."))
+	closemessage
+	applymovement(LOCALID_STE, RiminiTown_Movement_SteVersoCasa)
+	delay(40)
+	applymovement(OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasVersoCasaSte)
+	waitmovement(0)
+	opendoor(21, 20)
+	waitdooranim
+	applymovement(LOCALID_STE, RiminiTown_Movement_SteEntra)
+	applymovement(OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasEntraSte)
+	waitmovement(0)
+	hideobjectat(OBJ_EVENT_ID_PLAYER, 0)
+	closedoor(21, 20)
+	waitdooranim
+	setflag(FLAG_INCONTRATO_STE)
+	setvar(VAR_RIMINI_INTRO_STATE, 3)
+	// Scenetta della gente davanti a casa di ste
+	// Ma non so come far spawnare la gente
+	//waitmovement(LOCALID_STE)
+	//msgbox(format("Oh no, ci risiamo!"))
+	//waitmovement(OBJ_EVENT_ID_PLAYER)
+	//msgbox(format("ANDATE VIA SUBITO, O CHIAMO LA POLIZIA!"))
+	//closemessage
+	warpsilent(MAP_RIMINI_TOWN_CASA_STE_1F, 1, 8)
+	waitstate
+	releaseall
+	end
+}
+
+movement RiminiTown_Movement_SteVersoCasa {
+	walk_left
+	walk_down*11
+	walk_left*9
+	walk_left*4
+	walk_up
+}
+
+movement RiminiTown_Movement_GasVersoCasaSte {
+	walk_left
+	walk_down*10
+	walk_left*8
+	walk_left*5
+	face_up
+}
+
+movement RiminiTown_Movement_SteEntra {
+	walk_up
+	set_invisible
+}
+
+movement RiminiTown_Movement_GasEntraSte {
+	walk_up*2
 }
