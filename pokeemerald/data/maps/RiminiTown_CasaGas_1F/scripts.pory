@@ -8,11 +8,11 @@ RiminiTown_CasaGas_1F_MapScripts::
 	.byte 0
 
 RiminiTown_CasaGas_1F_OnTransition:
-	call_if_eq VAR_RIMINI_INTRO_STATE, 3, RiminiTown_CasaGas_1F_EventScript_PlaceMom
+	call_if_eq VAR_RIMINI_INTRO_STATE, 1, RiminiTown_CasaGas_1F_EventScript_PlaceMom
 	end
 
 RiminiTown_CasaGas_1F_OnFrame:
-	map_script_2 VAR_RIMINI_INTRO_STATE, 3, RiminiTown_CasaGas_1F_EventScript_DadSpeech
+	map_script_2 VAR_RIMINI_INTRO_STATE, 1, RiminiTown_CasaGas_1F_EventScript_DadSpeech
 	.2byte 0
 `
 
@@ -24,11 +24,11 @@ script RiminiTown_CasaGas_1F_EventScript_PlaceMom {
 script RiminiTown_CasaGas_1F_EventScript_DadSpeech {
 	lockall
 	msgbox(format("MOM: Guarda un po' chi è tornato, tesoro."))
-	applymovement(LOCALID_DAD, DadFaceGas)
+	applymovement(LOCALID_DAD, RiminiTown_CasaGas_1F_Movement_DadFaceGas)
 	closemessage
-	applymovement(LOCALID_MOM, MomGoSit)
+	applymovement(LOCALID_MOM, RiminiTown_CasaGas_1F_Movement_MomGoSit)
 	delay(40)
-	applymovement(OBJ_EVENT_ID_PLAYER, GasApproachDad)
+	applymovement(OBJ_EVENT_ID_PLAYER, RiminiTown_CasaGas_1F_Movement_GasApproachDad)
 	waitmovement(LOCALID_MOM)
 	msgbox(format("Ciao figliolo, spero tu sia pronto per la sfida di oggi!"))
 	delay(40)
@@ -41,12 +41,12 @@ un pacco di caffé. Se non sbaglio è la mamma di un tuo amico,
 perché non glielo porti tu?"))
 	giveitem(ITEM_CAFFE)
 	msgbox(format("Ci vediamo più tardi a Bologna!"))
-	setvar(VAR_RIMINI_INTRO_STATE, 4)
+	setvar(VAR_RIMINI_INTRO_STATE, 2)
 	releaseall
 	end
 }
 
-movement MomGoSit { 
+movement RiminiTown_CasaGas_1F_Movement_MomGoSit { 
 	walk_up
 	walk_left*3
 	walk_down
@@ -55,12 +55,12 @@ movement MomGoSit {
 	face_right
 }
 
-movement GasApproachDad { 
+movement RiminiTown_CasaGas_1F_Movement_GasApproachDad { 
 	walk_up
 	walk_left*3
 	face_up
 }
 
-movement DadFaceGas {
+movement RiminiTown_CasaGas_1F_Movement_DadFaceGas {
 	face_down
 }

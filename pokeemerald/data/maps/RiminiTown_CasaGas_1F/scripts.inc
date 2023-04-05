@@ -7,11 +7,11 @@ RiminiTown_CasaGas_1F_MapScripts::
 	.byte 0
 
 RiminiTown_CasaGas_1F_OnTransition:
-	call_if_eq VAR_RIMINI_INTRO_STATE, 3, RiminiTown_CasaGas_1F_EventScript_PlaceMom
+	call_if_eq VAR_RIMINI_INTRO_STATE, 1, RiminiTown_CasaGas_1F_EventScript_PlaceMom
 	end
 
 RiminiTown_CasaGas_1F_OnFrame:
-	map_script_2 VAR_RIMINI_INTRO_STATE, 3, RiminiTown_CasaGas_1F_EventScript_DadSpeech
+	map_script_2 VAR_RIMINI_INTRO_STATE, 1, RiminiTown_CasaGas_1F_EventScript_DadSpeech
 	.2byte 0
 
 RiminiTown_CasaGas_1F_EventScript_PlaceMom::
@@ -23,23 +23,23 @@ RiminiTown_CasaGas_1F_EventScript_PlaceMom::
 RiminiTown_CasaGas_1F_EventScript_DadSpeech::
 	lockall
 	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_0
-	applymovement LOCALID_DAD, DadFaceGas
+	applymovement LOCALID_DAD, RiminiTown_CasaGas_1F_Movement_DadFaceGas
 	closemessage
-	applymovement LOCALID_MOM, MomGoSit
+	applymovement LOCALID_MOM, RiminiTown_CasaGas_1F_Movement_MomGoSit
 	delay 40
-	applymovement OBJ_EVENT_ID_PLAYER, GasApproachDad
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaGas_1F_Movement_GasApproachDad
 	waitmovement LOCALID_MOM
 	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_1
 	delay 40
 	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_2
 	giveitem ITEM_CAFFE
 	msgbox RiminiTown_CasaGas_1F_EventScript_DadSpeech_Text_3
-	setvar VAR_RIMINI_INTRO_STATE, 4
+	setvar VAR_RIMINI_INTRO_STATE, 2
 	releaseall
 	end
 
 
-MomGoSit:
+RiminiTown_CasaGas_1F_Movement_MomGoSit:
 	walk_up
 	walk_left
 	walk_left
@@ -54,7 +54,7 @@ MomGoSit:
 	face_right
 	step_end
 
-GasApproachDad:
+RiminiTown_CasaGas_1F_Movement_GasApproachDad:
 	walk_up
 	walk_left
 	walk_left
@@ -62,7 +62,7 @@ GasApproachDad:
 	face_up
 	step_end
 
-DadFaceGas:
+RiminiTown_CasaGas_1F_Movement_DadFaceGas:
 	face_down
 	step_end
 

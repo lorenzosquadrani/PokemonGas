@@ -16,13 +16,10 @@ RiminiTown_MapScripts::
 	@ 4: Received Running Shoes
 
 	@ State descriptions for VAR_RIMINI_INTRO_STATE
-	@ 1: In truck male
-	@ 2: In truck female (l'ho cancellato)
-	@ 3: Entered house
-	@ 4: Told to go set clock
-	@ 5: Entered 2F to set clock
-	@ 6: Set clock
-	@ 7: Told to go meet rival
+	@ 1: Gas nel furgone
+	@ 2: Gas ha ricevuto il caffé
+	@ 3: Gas e Ste vanno a casa sua
+	@ 4: Gas ha ricevuto Gastly
 
 	@ State descriptions for VAR_RIMINI_HOUSES_STATE_MAY
 	@                    and VAR_RIMINI_HOUSES_STATE_BRENDAN
@@ -939,7 +936,6 @@ RiminiTown_EventScript_GoInsideWithMom::
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PlayerEnterHouse
 	waitmovement 0
 	setflag FLAG_HIDE_RIMINI_TOWN_MOM_OUTSIDE
-	setvar VAR_RIMINI_INTRO_STATE, 3
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	closedoor 11, 20
 	waitdooranim
