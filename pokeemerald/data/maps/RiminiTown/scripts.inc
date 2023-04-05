@@ -992,7 +992,7 @@ RiminiTown_EventScript_IncontroConSte_4:
 	opendoor 21, 20
 	waitdooranim
 	applymovement LOCALID_STE, RiminiTown_Movement_SteEntra
-	applymovement LOCALID_STE, RiminiTown_Movement_GasEntraSte
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasEntraSte
 	waitmovement 0
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	closedoor 21, 20
