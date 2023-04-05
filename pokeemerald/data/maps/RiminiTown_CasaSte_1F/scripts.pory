@@ -7,3 +7,26 @@ RiminiTown_CasaSte_1F_OnTransition:
 	end
 
 `
+
+script RiminiTown_CasaSte_1F_EventScript_MammadiSte {
+
+	lockall
+	faceplayer
+
+	if(flag(FLAG_CONSEGNATO_CAFFE)) {
+		msgbox(format("Grazie per il caffé!"))
+	}
+	else {
+		msgbox(format("Buongiorno! Posso aiutarti?"))
+		delay(40)
+		msgbox(format("Oh, il caffé che avevo ordinato!\p
+Grazie, tu allora devi essere Gas, Stefano mi ha parlato di te.
+Non credo che sia in casa ora, probabilmente sarà
+alla cava a bighellonare."))
+		removeitem(ITEM_CAFFE)
+		setflag(FLAG_CONSEGNATO_CAFFE)
+	}
+
+	releaseall
+	end
+}

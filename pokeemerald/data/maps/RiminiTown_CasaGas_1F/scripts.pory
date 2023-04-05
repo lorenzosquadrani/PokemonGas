@@ -33,7 +33,7 @@ script RiminiTown_CasaGas_1F_EventScript_DadSpeech {
 	msgbox(format("Ciao figliolo, spero tu sia pronto per la sfida di oggi!"))
 	delay(40)
 	msgbox(format("Come quale sfida?!
-Non ti hanno spiegato come funziona la LAUREA?\p 
+I tuoi amici non ti hanno spiegato come funziona la LAUREA?p 
 Ti conviene andare a trovarli prima di partire
 per Bologna, allora.\p
 A proposito, la signora che abita qui a fianco ha ordinato
