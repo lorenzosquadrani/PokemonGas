@@ -1,0 +1,58 @@
+raw `
+.set STE_ID, 1
+
+RiminiTown_CasaSte_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RiminiTown_CasaSte_2F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, RiminiTown_CasaSte_2F_OnFrame
+	.byte 0
+
+RiminiTown_CasaSte_2F_OnTransition:
+	call_if_eq VAR_RIMINI_INTRO_STATE, 4, RiminiTown_CasaSte_2F_EventScript_PlaceSte
+	end
+
+RiminiTown_CasaSte_2F_OnFrame:
+	map_script_2 VAR_RIMINI_INTRO_STATE, 4, RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco
+	.2byte 0
+`
+
+script RiminiTown_CasaSte_2F_EventScript_PlaceSte {
+	setobjectxyperm(STE_ID, 1, 4)
+	setobjectmovementtype(STE_ID, MOVEMENT_TYPE_FACE_LEFT)	
+}
+
+script RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco {
+    lockall
+    msgbox(format("Eccolo qui, eheh.\p
+Inutile che ti dica che questa è roba buona, amico.\p
+Altro che la roba di Dalia, questa..."))
+    closemessage
+    applymovement(STE_ID, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(STE_ID, Common_Movement_Delay48)
+	waitmovement(0)
+    msgbox(format("Ma che cacchio è sta roba?! \p
+Sembra essere un Pokémon.\n
+Mmh, di sicuro hanno sbagliato pacco.\p
+CHE PALLE."))
+    closemessage
+    applymovement(STE_ID, RiminiTown_CasaGas_2F_Movement_SteGuardaGas)
+    waitmovement(0)
+    msgbox(format("Vabbé Gas prendilo tu, magari ti torna utile oggi pomeriggio."))
+    closemessage
+    applymovement(STE_ID, RiminiTown_CasaGas_2F_Movement_SteVaDaGas)
+    waitmovement(0)
+    delay(20)
+    givemon(SPECIES_GASTLY, 30)
+    msgbox(format("Mi toccherà ordinare dell'altra DROGA oggi a Bologna."))
+    closemessage
+    setvar(VAR_RIMINI_INTRO_STATE, 5)
+    releaseall
+    end
+}
+
+movement RiminiTown_CasaGas_2F_Movement_SteGuardaGas {
+    face_up
+}
+movement RiminiTown_CasaGas_2F_Movement_SteVaDaGas {
+    walk_up
+}

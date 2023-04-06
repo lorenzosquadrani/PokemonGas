@@ -45,6 +45,7 @@ RiminiTown_CasaSte_1F_EventScript_PassaSte::
 	delay 20
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_CasaSte_1F_Movement_GasVaSu
 	waitmovement 0
+	setvar VAR_RIMINI_INTRO_STATE, 4
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	warpsilent MAP_RIMINI_TOWN_CASA_STE_2F, 1, 2
 	waitstate
