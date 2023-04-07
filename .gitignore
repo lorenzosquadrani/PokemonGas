@@ -22481,7 +22481,6 @@ pokeemerald/libagbsyscall/Sqrt.o
 pokeemerald/libagbsyscall/VBlankIntrWait.o
 pokeemerald/libagbsyscall/libagbsyscall.a
 pokeemerald/pokeemerald.elf
-pokeemerald/pokeemerald.gba
 pokeemerald/pokeemerald.map
 pokeemerald/sound/direct_sound_samples/bicycle_bell.bin
 pokeemerald/sound/direct_sound_samples/classical_choir_voice_ahhs.bin
