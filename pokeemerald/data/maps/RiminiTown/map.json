@@ -109,7 +109,7 @@
       "elevation": 3,
       "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "0",
-      "script": "RiminiTown_EventScript_NeedPokemonTriggerLeft"
+      "script": "RiminiTown_EventScript_NeedPokemonTriggerDown"
     },
     {
       "type": "trigger",
@@ -118,7 +118,34 @@
       "elevation": 3,
       "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "0",
-      "script": "RiminiTown_EventScript_NeedPokemonTriggerRight"
+      "script": "RiminiTown_EventScript_NeedPokemonTriggerDown"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_RIMINI_TOWN_STATE",
+      "var_value": "0",
+      "script": "RiminiTown_EventScript_NeedPokemonTriggerUp"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_RIMINI_TOWN_STATE",
+      "var_value": "0",
+      "script": "RiminiTown_EventScript_NeedPokemonTriggerUp"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RiminiTown_EventScript_NeedPokemonTriggerUp"
     }
   ],
   "bg_events": [

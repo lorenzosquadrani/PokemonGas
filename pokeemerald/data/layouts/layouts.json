@@ -574,10 +574,10 @@
     {
       "id": "LAYOUT_RIMINI_TOWN_CASA_TOMMI",
       "name": "RiminiTown_CasaTommi_Layout",
-      "width": 13,
-      "height": 13,
+      "width": 10,
+      "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Lab",
+      "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/RiminiTown_CasaTommi/border.bin",
       "blockdata_filepath": "data/layouts/RiminiTown_CasaTommi/map.bin"
     },

@@ -227,26 +227,6 @@ RiminiTown_EventScript_GoodLuck::
 	release
 	end
 
-RiminiTown_EventScript_NeedPokemonTriggerLeft::
-	lockall
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinApproachPlayerLeft
-	waitmovement 0
-	call RiminiTown_EventScript_DangerousWithoutPokemon
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinReturnLeft
-	waitmovement 0
-	releaseall
-	end
-
-RiminiTown_EventScript_DangerousWithoutPokemon::
-	msgbox RiminiTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinPushPlayerFromRoute
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PushPlayerBackFromRoute
-	waitmovement 0
-	msgbox RiminiTown_Text_DangerousIfYouDontHavePokemon, MSGBOX_DEFAULT
-	closemessage
-	return
-
 RiminiTown_Movement_TwinApproachPlayerLeft:
 	face_right
 	delay_8
@@ -284,16 +264,6 @@ RiminiTown_Movement_PushPlayerBackFromRoute:
 	walk_down
 	unlock_facing_direction
 	step_end
-
-RiminiTown_EventScript_NeedPokemonTriggerRight::
-	lockall
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinApproachPlayerRight
-	waitmovement 0
-	call RiminiTown_EventScript_DangerousWithoutPokemon
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinReturnRight
-	waitmovement 0
-	releaseall
-	end
 
 RiminiTown_Movement_TwinApproachPlayerRight:
 	face_right
@@ -1023,6 +993,32 @@ RiminiTown_EventScript_IncontroConSte_8:
 	goto RiminiTown_EventScript_IncontroConSte_7
 
 
+RiminiTown_EventScript_NeedPokemonTriggerDown::
+	lockall
+	msgbox RiminiTown_EventScript_NeedPokemonTriggerDown_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasMoveDown
+	waitmovement 0
+	releaseall
+	end
+
+
+RiminiTown_EventScript_NeedPokemonTriggerUp::
+	lockall
+	msgbox RiminiTown_EventScript_NeedPokemonTriggerDown_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasMoveUp
+	waitmovement 0
+	releaseall
+	end
+
+
+RiminiTown_Movement_GasMoveUp:
+	walk_up
+	step_end
+
+RiminiTown_Movement_GasMoveDown:
+	walk_up
+	step_end
+
 RiminiTown_Movement_SteVersoCasa:
 	walk_left
 	walk_down
@@ -1131,6 +1127,10 @@ RiminiTown_EventScript_IncontroConSte_Text_5:
 RiminiTown_EventScript_IncontroConSte_Text_6:
 	.string "Bravo! Vieni, andiamo a casa mia a\n"
 	.string "prendere la roba.$"
+
+RiminiTown_EventScript_NeedPokemonTriggerDown_Text_0:
+	.string "SEI MATTO!? È pericoloso andare fuori\n"
+	.string "città senza Pokemons.$"
 
 RiminiTown_Text_ANDREAGASPARI::
 	.string "ANDREA GASPARI!\p"

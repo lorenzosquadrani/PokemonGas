@@ -228,26 +228,6 @@ RiminiTown_EventScript_GoodLuck::
 	release
 	end
 
-RiminiTown_EventScript_NeedPokemonTriggerLeft::
-	lockall
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinApproachPlayerLeft
-	waitmovement 0
-	call RiminiTown_EventScript_DangerousWithoutPokemon
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinReturnLeft
-	waitmovement 0
-	releaseall
-	end
-
-RiminiTown_EventScript_DangerousWithoutPokemon::
-	msgbox RiminiTown_Text_IfYouGoInGrassPokemonWillJumpOut, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinPushPlayerFromRoute
-	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_PushPlayerBackFromRoute
-	waitmovement 0
-	msgbox RiminiTown_Text_DangerousIfYouDontHavePokemon, MSGBOX_DEFAULT
-	closemessage
-	return
-
 RiminiTown_Movement_TwinApproachPlayerLeft:
 	face_right
 	delay_8
@@ -285,16 +265,6 @@ RiminiTown_Movement_PushPlayerBackFromRoute:
 	walk_down
 	unlock_facing_direction
 	step_end
-
-RiminiTown_EventScript_NeedPokemonTriggerRight::
-	lockall
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinApproachPlayerRight
-	waitmovement 0
-	call RiminiTown_EventScript_DangerousWithoutPokemon
-	applymovement LOCALID_TWIN, RiminiTown_Movement_TwinReturnRight
-	waitmovement 0
-	releaseall
-	end
 
 RiminiTown_Movement_TwinApproachPlayerRight:
 	face_right
@@ -1036,6 +1006,32 @@ Mi è appena arrivato un pacco di DROGA."))
 	waitstate
 	releaseall
 	end
+}
+
+script RiminiTown_EventScript_NeedPokemonTriggerDown{
+	lockall
+	msgbox(format("SEI MATTO!? È pericoloso andare fuori città senza Pokemons."))
+	applymovement(OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasMoveDown )
+	waitmovement(0)
+	releaseall
+	end
+}
+
+script RiminiTown_EventScript_NeedPokemonTriggerUp{
+	lockall
+	msgbox(format("SEI MATTO!? È pericoloso andare fuori città senza Pokemons."))
+	applymovement(OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasMoveUp )
+	waitmovement(0)
+	releaseall
+	end
+}
+
+movement RiminiTown_Movement_GasMoveUp {
+	walk_up
+}
+
+movement RiminiTown_Movement_GasMoveDown {
+	walk_up
 }
 
 movement RiminiTown_Movement_SteVersoCasa {

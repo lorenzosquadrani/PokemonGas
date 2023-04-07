@@ -30,6 +30,7 @@ RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco::
 	msgbox RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_1
 	closemessage
 	applymovement STE_ID, RiminiTown_CasaGas_2F_Movement_SteGuardaGas
+	waitmovement 0
 	msgbox RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_2
 	closemessage
 	applymovement STE_ID, RiminiTown_CasaGas_2F_Movement_SteVaDaGas
@@ -52,16 +53,16 @@ RiminiTown_CasaGas_2F_Movement_SteVaDaGas:
 	step_end
 
 RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_0:
-	.string "Eccoli qui, eheh.\p"
+	.string "Eccolo qui, eheh.\p"
 	.string "Inutile che ti dica che questa è roba\n"
 	.string "buona, amico.\p"
 	.string "Altro che la roba di Dalia, questa...$"
 
 RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_1:
-	.string "Ma che cacchio è stato roba?!\p"
-	.string "Sembra essere un Pokémon. Mmh, di\n"
-	.string "sicuro hanno sbagliato pacco. CHE\l"
-	.string "PALLE.$"
+	.string "Ma che cacchio è sta roba?!\p"
+	.string "Sembra essere un Pokémon.\n"
+	.string "Mmh, di sicuro hanno sbagliato pacco.\p"
+	.string "CHE PALLE.$"
 
 RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_2:
 	.string "Vabbé Gas prendilo tu, magari ti torna\n"
