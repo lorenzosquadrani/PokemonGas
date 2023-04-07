@@ -102,6 +102,12 @@
 #define METATILE_BikeShop_Generator_Off_Tile7      0x2F7
 #define METATILE_BikeShop_Wall_Edge_Top            0x281
 
+// gTileset_Building
+#define METATILE_Building_PC_Off  0x004
+#define METATILE_Building_PC_On   0x005
+#define METATILE_Building_TV_Off  0x002
+#define METATILE_Building_TV_On   0x003
+
 // gTileset_CasaGasSte
 #define METATILE_CasaGasSte_BookOnTable       0x293
 #define METATILE_CasaGasSte_BrendanPC_Off     0x25A
@@ -110,12 +116,6 @@
 #define METATILE_CasaGasSte_MayPC_On          0x27E
 #define METATILE_CasaGasSte_MovingBox_Closed  0x268
 #define METATILE_CasaGasSte_MovingBox_Open    0x270
-
-// gTileset_Building
-#define METATILE_Building_PC_Off  0x004
-#define METATILE_Building_PC_On   0x005
-#define METATILE_Building_TV_Off  0x002
-#define METATILE_Building_TV_On   0x003
 
 // gTileset_Cave
 #define METATILE_Cave_CrackedFloor                       0x22F
@@ -248,14 +248,6 @@
 #define METATILE_GenericBuilding_TableEdge               0x2F1
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
-
-// gTileset_RiminiTown_InsideOfTruck
-#define METATILE_RiminiTown_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
-#define METATILE_RiminiTown_InsideOfTruck_DoorClosedFloor_Mid     0x215
-#define METATILE_RiminiTown_InsideOfTruck_DoorClosedFloor_Top     0x20D
-#define METATILE_RiminiTown_InsideOfTruck_ExitLight_Bottom        0x218
-#define METATILE_RiminiTown_InsideOfTruck_ExitLight_Mid           0x210
-#define METATILE_RiminiTown_InsideOfTruck_ExitLight_Top           0x208
 
 // gTileset_InsideShip
 #define METATILE_InsideShip_DoorIndent_Locked           0x234
@@ -430,6 +422,14 @@
 #define METATILE_RS_MossdeepGym_RedArrow_Up     0x20D
 #define METATILE_RS_MossdeepGym_Switch_Down     0x239
 #define METATILE_RS_MossdeepGym_Switch_Up       0x238
+
+// gTileset_RiminiTown
+#define METATILE_RiminiTown_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
+#define METATILE_RiminiTown_InsideOfTruck_DoorClosedFloor_Mid     0x215
+#define METATILE_RiminiTown_InsideOfTruck_DoorClosedFloor_Top     0x20D
+#define METATILE_RiminiTown_InsideOfTruck_ExitLight_Bottom        0x218
+#define METATILE_RiminiTown_InsideOfTruck_ExitLight_Mid           0x210
+#define METATILE_RiminiTown_InsideOfTruck_ExitLight_Top           0x208
 
 // gTileset_Rustboro
 #define METATILE_Rustboro_Door_Gray  0x21F
