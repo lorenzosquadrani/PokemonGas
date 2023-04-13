@@ -92,4 +92,3 @@ EmiliaRoad_Text_TownSign:
 EmiliaRoad_Text_MoveTutorSign:
 	.string "MOVE TUTOR'S HOUSE\n"
 	.string "“New moves taught to POKéMON.”$"
-
