@@ -35,11 +35,13 @@ RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco::
 	closemessage
 	applymovement STE_ID, RiminiTown_CasaGas_2F_Movement_SteVaDaGas
 	waitmovement 0
+	setflag FLAG_SYS_POKEMON_GET
 	delay 20
 	givemon SPECIES_GASTLY, 30
 	msgbox RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_3
 	closemessage
 	setvar VAR_RIMINI_INTRO_STATE, 5
+	setvar VAR_RIMINI_TOWN_STATE, 1
 	releaseall
 	end
 

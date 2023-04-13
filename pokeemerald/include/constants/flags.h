@@ -118,7 +118,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_HIDE_STE_1F                     0x68  // Hide ste at the first floor of the house
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM04                   0x6A
@@ -804,7 +804,7 @@
 #define FLAG_HIDE_RIMINI_TOWN_CASA_GAS_MOM                0x2F6
 #define FLAG_HIDE_RIMINI_TOWN_CASA_STE_MOM                    0x2F7
 #define FLAG_HIDE_RIMINI_TOWN_CASA_GAS_RIVAL_BEDROOM      0x2F8
-#define FLAG_HIDE_RIMINI_TOWN_CASA_GAS_TRUCK              0x2F9
+#define FLAG_HIDE_STE_2F                                            0x2F9
 #define FLAG_HIDE_RIMINI_TOWN_CASA_STE_TRUCK                  0x2FA
 #define FLAG_HIDE_DEOXYS                                            0x2FB
 #define FLAG_HIDE_BIRTH_ISLAND_DEOXYS_TRIANGLE                      0x2FC

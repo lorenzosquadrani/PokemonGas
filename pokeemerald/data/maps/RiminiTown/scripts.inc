@@ -9,33 +9,6 @@ RiminiTown_MapScripts::
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, RiminiTown_OnWarp
 	.byte 0
 
-	@ State descriptions for VAR_RIMINI_TOWN_STATE
-	@ 1: Met Rival
-	@ 2: Saving Birch
-	@ 3: Received Pokedex
-	@ 4: Received Running Shoes
-
-	@ State descriptions for VAR_RIMINI_INTRO_STATE
-	@ 1: Gas nel furgone
-	@ 2: Gas ha ricevuto il caffé
-	@ 3: Gas e Ste vanno a casa sua
-	@ 4: Gas ha ricevuto Gastly
-
-	@ State descriptions for VAR_RIMINI_HOUSES_STATE_MAY
-	@                    and VAR_RIMINI_HOUSES_STATE_BRENDAN
-	@ 1: On Truck (and is corresponding gender)
-	@ 2: Met Rival's Mom (and is corresponding gender)
-	@ 3: Entered Hall of Fame
-	@ 4: Completed Lati TV / SS Ticket event
-	@ 5: Exited house after above event
-
-	@ State descriptions for VAR_RIMINI_RIVAL_STATE
-	@ 1: Never occurs
-	@ 2: Entered Rival's bedroom
-	@ 3: Met Rival
-	@ 4: Received Pokedex
-
-
 RiminiTown_OnTransition:
 	setflag FLAG_VISITED_RIMINI_TOWN
 	call Common_EventScript_SetupRivalGfxId
@@ -56,7 +29,6 @@ RiminiTown_EventScript_StepOffTruck::
 	setvar VAR_TEMP_PAR_4, 5
 	setvar VAR_TEMP_PAR_5, 8
 	call RiminiTown_EventScript_GoInsideWithMom
-	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_TRUCK
 	warpsilent MAP_RIMINI_TOWN_CASA_GAS_1F, 8, 8
 	waitstate
 	releaseall
@@ -968,6 +940,8 @@ RiminiTown_EventScript_IncontroConSte_4:
 	closedoor 21, 20
 	waitdooranim
 	setflag FLAG_INCONTRATO_STE
+	clearflag FLAG_HIDE_STE_1F
+	clearflag FLAG_HIDE_STE_2F
 	setvar VAR_RIMINI_INTRO_STATE, 3
 	warpsilent MAP_RIMINI_TOWN_CASA_STE_1F, 1, 8
 	waitstate
@@ -1016,7 +990,7 @@ RiminiTown_Movement_GasMoveUp:
 	step_end
 
 RiminiTown_Movement_GasMoveDown:
-	walk_up
+	walk_down
 	step_end
 
 RiminiTown_Movement_SteVersoCasa:

@@ -41,11 +41,13 @@ CHE PALLE."))
     closemessage
     applymovement(STE_ID, RiminiTown_CasaGas_2F_Movement_SteVaDaGas)
     waitmovement(0)
+    setflag(FLAG_SYS_POKEMON_GET)
     delay(20)
     givemon(SPECIES_GASTLY, 30)
     msgbox(format("Mi toccherà ordinare dell'altra DROGA oggi a Bologna."))
     closemessage
     setvar(VAR_RIMINI_INTRO_STATE, 5)
+    setvar(VAR_RIMINI_TOWN_STATE, 1)
     releaseall
     end
 }
