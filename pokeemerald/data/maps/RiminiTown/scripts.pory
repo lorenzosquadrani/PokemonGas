@@ -1005,7 +1005,7 @@ movement RiminiTown_Movement_GasMoveUp {
 }
 
 movement RiminiTown_Movement_GasMoveDown {
-	walk_up
+	walk_down
 }
 
 movement RiminiTown_Movement_SteVersoCasa {

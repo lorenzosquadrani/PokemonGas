@@ -86,7 +86,7 @@ RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_2:
 	.string "utile oggi pomeriggio.$"
 
 RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_3:
-	.string "Gas riceve Gastly!$"
+	.string "Gas riceve GASTLY!$"
 
 RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_4:
 	.string "Mi toccherà ordinare dell'altra DROGA\n"
