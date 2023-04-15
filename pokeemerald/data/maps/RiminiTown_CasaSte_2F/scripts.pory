@@ -41,9 +41,22 @@ CHE PALLE."))
     closemessage
     applymovement(STE_ID, RiminiTown_CasaGas_2F_Movement_SteVaDaGas)
     waitmovement(0)
+    
+    delay(40)
     setflag(FLAG_SYS_POKEMON_GET)
-    delay(20)
+    setvar(VAR_TEMP_1, SPECIES_GASTLY)
     givemon(SPECIES_GASTLY, 30)
+    playfanfare(MUS_OBTAIN_ITEM)
+	message(format("Gas riceve GASTLY!"))
+	waitmessage
+	waitfanfare
+	bufferspeciesname(STR_VAR_1, SPECIES_GASTLY)
+    msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+    if (var(VAR_RESULT)==YES) {
+        call(Common_EventScript_GetGiftMonPartySlot)
+	    call(Common_EventScript_NameReceivedPartyMon)
+    }
+
     msgbox(format("Mi toccherà ordinare dell'altra DROGA oggi a Bologna."))
     closemessage
     setvar(VAR_RIMINI_INTRO_STATE, 5)

@@ -35,15 +35,30 @@ RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco::
 	closemessage
 	applymovement STE_ID, RiminiTown_CasaGas_2F_Movement_SteVaDaGas
 	waitmovement 0
+	delay 40
 	setflag FLAG_SYS_POKEMON_GET
-	delay 20
+	setvar VAR_TEMP_1, SPECIES_GASTLY
 	givemon SPECIES_GASTLY, 30
-	msgbox RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_3
+	playfanfare MUS_OBTAIN_ITEM
+	message RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_3
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_GASTLY
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_2
+RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_1:
+	msgbox RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_4
 	closemessage
 	setvar VAR_RIMINI_INTRO_STATE, 5
 	setvar VAR_RIMINI_TOWN_STATE, 1
 	releaseall
 	end
+
+RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_2:
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_1
 
 
 RiminiTown_CasaGas_2F_Movement_SteGuardaGas:
@@ -71,5 +86,8 @@ RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_2:
 	.string "utile oggi pomeriggio.$"
 
 RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_3:
+	.string "Gas riceve Gastly!$"
+
+RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_4:
 	.string "Mi toccherà ordinare dell'altra DROGA\n"
 	.string "oggi a Bologna.$"
