@@ -146,6 +146,24 @@
       "var": "VAR_RIMINI_TOWN_STATE",
       "var_value": "0",
       "script": "RiminiTown_EventScript_NeedPokemonTriggerUp"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_RIMINI_INTRO_STATE",
+      "var_value": "2",
+      "script": "RiminiTown_EventScript_GasVersoSteTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_RIMINI_INTRO_STATE",
+      "var_value": "2",
+      "script": "RiminiTown_EventScript_GasVersoSteTrigger1"
     }
   ],
   "bg_events": [

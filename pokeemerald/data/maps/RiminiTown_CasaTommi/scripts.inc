@@ -78,11 +78,10 @@ RiminiTown_CasaTommi_EventScript_Tommi_Text_1:
 	.string "Vuoi sapere cosa c'è dentro il covo di\n"
 	.string "Gnassi?!\p"
 	.string "Bella domanda, sicuro qualcosa di\n"
-	.string "potente.\n"
-	.string "C'è chi dice nasconda dei Pokémon\l"
-	.string "estremamente rari. Ma se vuoi sapere\l"
-	.string "qualcosa di più preciso, ti consiglio di\l"
-	.string "chiedere a Squadra.$"
+	.string "potente. C'è chi dice nasconda dei\l"
+	.string "Pokémon estremamente rari. Ma se vuoi\l"
+	.string "sapere qualcosa di più preciso, ti\l"
+	.string "consiglio di chiedere a Squadra.$"
 
 RiminiTown_CasaTommi_EventScript_Tommi_Text_2:
 	.string "Torna quando hai bisogno di una mossa.$"

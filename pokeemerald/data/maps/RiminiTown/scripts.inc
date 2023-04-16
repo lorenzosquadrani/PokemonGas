@@ -126,17 +126,14 @@ RiminiTown_EventScript_TownSign::
 
 
 RiminiTown_EventScript_IncontroConSte::
-	lockall
 	msgbox RiminiTown_EventScript_IncontroConSte_Text_0
-	goto_if_unset FLAG_CONSEGNATO_CAFFE, RiminiTown_EventScript_IncontroConSte_2
-RiminiTown_EventScript_IncontroConSte_1:
-	msgbox RiminiTown_EventScript_IncontroConSte_Text_2
-	msgbox RiminiTown_EventScript_IncontroConSte_Text_3, MSGBOX_YESNO
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, 1
-	goto_if_ne RiminiTown_EventScript_IncontroConSte_5
-RiminiTown_EventScript_IncontroConSte_4:
-	msgbox RiminiTown_EventScript_IncontroConSte_Text_6
+	goto_if_ne RiminiTown_EventScript_IncontroConSte_2
+RiminiTown_EventScript_IncontroConSte_1:
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_4
 	closemessage
+	setvar VAR_RIMINI_INTRO_STATE, 3
 	applymovement LOCALID_STE, RiminiTown_Movement_SteVersoCasa
 	delay 40
 	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasVersoCasaSte
@@ -152,29 +149,21 @@ RiminiTown_EventScript_IncontroConSte_4:
 	setflag FLAG_INCONTRATO_STE
 	clearflag FLAG_HIDE_STE_1F
 	clearflag FLAG_HIDE_STE_2F
-	setvar VAR_RIMINI_INTRO_STATE, 3
 	warpsilent MAP_RIMINI_TOWN_CASA_STE_1F, 1, 8
 	waitstate
 	releaseall
 	end
 
 RiminiTown_EventScript_IncontroConSte_2:
-	delay 40
-	msgbox RiminiTown_EventScript_IncontroConSte_Text_1
-	removeitem ITEM_CAFFE
-	setflag FLAG_CONSEGNATO_CAFFE
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_2, MSGBOX_YESNO
+RiminiTown_EventScript_IncontroConSte_4:
+	compare VAR_RESULT, 1
+	goto_if_ne RiminiTown_EventScript_IncontroConSte_5
 	goto RiminiTown_EventScript_IncontroConSte_1
 
 RiminiTown_EventScript_IncontroConSte_5:
-	msgbox RiminiTown_EventScript_IncontroConSte_Text_4, MSGBOX_YESNO
-RiminiTown_EventScript_IncontroConSte_7:
-	compare VAR_RESULT, 1
-	goto_if_ne RiminiTown_EventScript_IncontroConSte_8
+	msgbox RiminiTown_EventScript_IncontroConSte_Text_3, MSGBOX_YESNO
 	goto RiminiTown_EventScript_IncontroConSte_4
-
-RiminiTown_EventScript_IncontroConSte_8:
-	msgbox RiminiTown_EventScript_IncontroConSte_Text_5, MSGBOX_YESNO
-	goto RiminiTown_EventScript_IncontroConSte_7
 
 
 RiminiTown_EventScript_NeedPokemonTriggerDown::
@@ -194,6 +183,43 @@ RiminiTown_EventScript_NeedPokemonTriggerUp::
 	releaseall
 	end
 
+
+RiminiTown_EventScript_GasVersoSteTrigger1::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasVersoSte1
+	waitmovement 0
+	call RiminiTown_EventScript_IncontroConSte
+	end
+
+
+RiminiTown_EventScript_GasVersoSteTrigger2::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, RiminiTown_Movement_GasVersoSte2
+	waitmovement 0
+	call RiminiTown_EventScript_IncontroConSte
+	return
+
+
+RiminiTown_Movement_GasVersoSte1:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+RiminiTown_Movement_GasVersoSte2:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_up
+	step_end
 
 RiminiTown_Movement_GasMoveUp:
 	walk_up
@@ -289,26 +315,20 @@ RiminiTown_EventScript_TownSign_Text_0:
 	.string "RIMINI TOWN$"
 
 RiminiTown_EventScript_IncontroConSte_Text_0:
-	.string "STE: Bella Gas!$"
-
-RiminiTown_EventScript_IncontroConSte_Text_1:
-	.string "Ah, hai del caffé per mia mamma? Da qua\n"
-	.string "ci penso io.$"
-
-RiminiTown_EventScript_IncontroConSte_Text_2:
-	.string "Oggi pomeriggio ti laurei vero? Daje!\p"
+	.string "STE: Bella Gas! Oggi pomeriggio ti laurei\n"
+	.string "vero? Daje!\p"
 	.string "Mi è appena arrivato un pacco di DROGA.$"
 
-RiminiTown_EventScript_IncontroConSte_Text_3:
+RiminiTown_EventScript_IncontroConSte_Text_1:
 	.string "Che dici, ci facciamo una canna?$"
 
-RiminiTown_EventScript_IncontroConSte_Text_4:
+RiminiTown_EventScript_IncontroConSte_Text_2:
 	.string "Mmh, sicuro sicuro?$"
 
-RiminiTown_EventScript_IncontroConSte_Text_5:
+RiminiTown_EventScript_IncontroConSte_Text_3:
 	.string "Dai$"
 
-RiminiTown_EventScript_IncontroConSte_Text_6:
+RiminiTown_EventScript_IncontroConSte_Text_4:
 	.string "Bravo! Vieni, andiamo a casa mia a\n"
 	.string "prendere la roba.$"
 
