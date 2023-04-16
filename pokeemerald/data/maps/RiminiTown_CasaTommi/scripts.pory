@@ -25,7 +25,7 @@ Sicuramente a BOLOGNA le hanno."))
 		waitmovement(0)
 		msgbox(format("Vuoi sapere cosa c'è dentro il covo
 di Gnassi?!\p
-Bella domanda, sicuro qualcosa di potente. \n
+Bella domanda, sicuro qualcosa di potente.
 C'è chi dice nasconda dei Pokémon estremamente rari.
 Ma se vuoi sapere qualcosa di più preciso, ti consiglio
 di chiedere a Squadra."))
