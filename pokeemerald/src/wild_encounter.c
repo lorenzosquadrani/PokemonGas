@@ -201,8 +201,84 @@ static u8 ChooseWildMonIndex_Land(void)
         return 9;
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_9 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_10)
         return 10;
-    else
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_10 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_11)
         return 11;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_11 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_12)
+        return 12;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_12 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_13)
+        return 13;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_13 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_14)
+        return 14;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_14 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_15)
+        return 15;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_15 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_16)
+        return 16;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_16 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_17)
+        return 17;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_17 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_18)
+        return 18;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_18 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_19)
+        return 19;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_19 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_20)
+        return 20;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_20 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_21)
+        return 21;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_21 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_22)
+        return 22;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_22 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_23)
+        return 23;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_23 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_24)
+        return 24;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_24 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_25)
+        return 25;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_25 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_26)
+        return 26;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_26 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_27)
+        return 27;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_27 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_28)
+        return 28;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_28 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_29)
+        return 29;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_29 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_30)
+        return 30;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_30 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_31)
+        return 31;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_31 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_32)
+        return 32;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_32 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_33)
+        return 33;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_33 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_34)
+        return 34;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_34 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_35)
+        return 35;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_35 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_36)
+        return 36;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_36 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_37)
+        return 37;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_37 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_38)
+        return 38;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_38 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_39)
+        return 39;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_39 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_40)
+        return 40;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_40 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_41)
+        return 41;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_41 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_42)
+        return 42;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_42 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_43)
+        return 43;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_43 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_44)
+        return 44;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_44 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_45)
+        return 45;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_45 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_46)
+        return 46;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_46 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_47)
+        return 47;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_47 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_48)
+        return 48;    
+    else
+        return 49;
 }
 
 // ROCK_WILD_COUNT / WATER_WILD_COUNT
