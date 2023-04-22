@@ -1,11 +1,24 @@
+mapscripts RiminiTown_Mare_MapScripts {
+    
+}
+
 script RiminiTown_Mare_EventScript_VecchioSinistra {
+    lockall
     msgbox(format("Mej un óv incù che una galena dman!"))
+    closemessage
+    releaseall
 }
 
 script RiminiTown_Mare_EventScript_Gabbiano {
+    lockall
     msgbox(format("I gabbiani sono la rovina del mare..."))
+    closemessage
+    releaseall
 }
 
 script RiminiTown_Mare_EventScript_OminoVerde {
+    lockall
     msgbox(format("Mi dicono ci sia un nuovo skate shop a Marina Centro. Se non fosse gay andare con lo skate andrei a visitarlo..."))
+    closemessage
+    releaseall
 }
