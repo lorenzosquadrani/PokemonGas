@@ -1,0 +1,11 @@
+script RiminiTown_Mare_EventScript_VecchioSinistra {
+    msgbox(format("Mej un óv incù che una galena dman!"))
+}
+
+script RiminiTown_Mare_EventScript_Gabbiano {
+    msgbox(format("I gabbiani sono la rovina del mare..."))
+}
+
+script RiminiTown_Mare_EventScript_OminoVerde {
+    msgbox(format("Mi dicono ci sia un nuovo skate shop a Marina Centro. Se non fosse gay andare con lo skate andrei a visitarlo..."))
+}
