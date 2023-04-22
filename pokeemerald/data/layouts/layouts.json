@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/RiminiTown_CasaChecco_1F/border.bin",
       "blockdata_filepath": "data/layouts/RiminiTown_CasaChecco_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMINI_TOWN_COVO_GNASSI",
+      "name": "RiminiTown_CovoGnassi_Layout",
+      "width": 46,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RiminiTown_CovoGnassi/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiTown_CovoGnassi/map.bin"
     }
   ]
 }
