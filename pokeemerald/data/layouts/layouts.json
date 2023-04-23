@@ -94,7 +94,7 @@
     {
       "id": "LAYOUT_RIMINI_TOWN",
       "name": "RiminiTown_Layout",
-      "width": 43,
+      "width": 53,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
