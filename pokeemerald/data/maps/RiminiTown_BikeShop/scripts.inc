@@ -1,17 +1,3 @@
-RiminiTown_BikeShop_MapScripts::
-	.byte 0
-
-RiminiTown_BikeShop_EventScript_Rydel::
-	lock
-	faceplayer
-	goto_if_set FLAG_RECEIVED_BIKE, RiminiTown_BikeShop_EventScript_AskSwitchBikes
-	goto_if_set FLAG_DECLINED_BIKE, RiminiTown_BikeShop_EventScript_SkipGreeting
-	msgbox RiminiTown_BikeShop_Text_RydelGreeting, MSGBOX_DEFAULT
-	msgbox RiminiTown_BikeShop_Text_DidYouComeFromFarAway, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RiminiTown_BikeShop_EventScript_YesFar
-	goto_if_eq VAR_RESULT, NO, RiminiTown_BikeShop_EventScript_NotFar
-	end
-
 RiminiTown_BikeShop_EventScript_SkipGreeting::
 	msgbox RiminiTown_BikeShop_Text_DidYouComeFromFarAway, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, RiminiTown_BikeShop_EventScript_YesFar
@@ -34,7 +20,7 @@ RiminiTown_BikeShop_EventScript_NotFar::
 	end
 
 RiminiTown_BikeShop_EventScript_YesFar::
-	setflag FLAG_RECEIVED_BIKE
+	setflag FLAG_RECEIVED_SKATE
 	goto RiminiTown_BikeShop_EventScript_ChooseBike
 	end
 
@@ -318,3 +304,29 @@ RiminiTown_BikeShop_Text_Jumps:
 	.string "change directions while jumping.\p"
 	.string "Want to read a different page?$"
 
+RiminiTown_BikeShop_MapScripts::
+	.byte 0
+
+
+RiminiTown_BikeShop_EventScript_Rydel::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_SKATE, RiminiTown_BikeShop_EventScript_Rydel_2
+	msgbox RiminiTown_BikeShop_EventScript_Rydel_Text_1
+	giveitem ITEM_MACH_BIKE
+	closemessage
+RiminiTown_BikeShop_EventScript_Rydel_1:
+	release
+	return
+
+RiminiTown_BikeShop_EventScript_Rydel_2:
+	msgbox RiminiTown_BikeShop_EventScript_Rydel_Text_0
+	closemessage
+	goto RiminiTown_BikeShop_EventScript_Rydel_1
+
+
+RiminiTown_BikeShop_EventScript_Rydel_Text_0:
+	.string "Cacchio vuoi.$"
+
+RiminiTown_BikeShop_EventScript_Rydel_Text_1:
+	.string "Pigliati sto skate.$"
