@@ -22,3 +22,11 @@ script RiminiTown_Mare_EventScript_OminoVerde {
     closemessage
     releaseall
 }
+
+
+script RiminiTown_Mare_EventScript_TipaInAcqua {
+    lockall
+    msgbox(format("L'acqua bella tiepida oggi, si vede che hanno aperto le fogne..."))
+    closemessage
+    releaseall
+}
