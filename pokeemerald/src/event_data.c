@@ -66,7 +66,9 @@ void DisableNationalPokedex(void)
 }
 
 void EnableNationalPokedex(void)
-{
+{   
+    u16 i = 0;
+    u16 species = 0;
     u16 *nationalDexVar = GetVarPointer(VAR_NATIONAL_DEX);
     gSaveBlock2Ptr->pokedex.nationalMagic = 0xDA;
     *nationalDexVar = 0x302;
@@ -74,6 +76,15 @@ void EnableNationalPokedex(void)
     gSaveBlock2Ptr->pokedex.mode = DEX_MODE_NATIONAL;
     gSaveBlock2Ptr->pokedex.order = 0;
     ResetPokedexScrollPositions();
+
+    GetSetPokedexFlag(12, FLAG_SET_SEEN);
+    
+    for(i=0; i<NUM_SPECIES; i++) {
+        
+        species = SpeciesToNationalPokedexNum(i);
+        GetSetPokedexFlag(species, FLAG_SET_SEEN);
+
+    }
 }
 
 bool32 IsNationalPokedexEnabled(void)

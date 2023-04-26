@@ -113,7 +113,16 @@ EventScript_ResetAllBerries::
 	return
 
 EventScript_ResetAllMapFlags::
+
+	@ TO MAKE THE NATIONAL POKEDEX VISIBLE
+	setflag FLAG_ADVENTURE_STARTED
+	setflag FLAG_SYS_POKEDEX_GET
+	special SetUnlockedPokedexFlags
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
 	setflag FLAG_SYS_B_DASH
+	
 	setflag FLAG_HIDE_CONTEST_POKE_BALL
 	setflag FLAG_HIDE_ROUTE_111_VICTORIA_WINSTRATE
 	setflag FLAG_HIDE_ROUTE_111_VIVI_WINSTRATE
