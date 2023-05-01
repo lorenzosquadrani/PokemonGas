@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_SANTA_GIUSTINA",
-      "offset": 0,
+      "offset": -5,
       "direction": "down"
     }
   ],

@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_ROUTE101",
-      "offset": -6,
+      "offset": 0,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE110",
-      "offset": 0,
+      "offset": 5,
       "direction": "up"
     }
   ],
