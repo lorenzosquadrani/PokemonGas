@@ -216,6 +216,11 @@ script RiminiTown_EventScript_GasVersoSteTrigger2{
 	call(RiminiTown_EventScript_IncontroConSte)
 }
 
+script RiminiTown_EventScript_DoveCazzo {
+	msgbox(format("Ma dove cazzo vai cojone.\p Non li trovi i bugs."))
+	closemessage
+}
+
 movement RiminiTown_Movement_GasVersoSte1 {
 	walk_up*7
 }

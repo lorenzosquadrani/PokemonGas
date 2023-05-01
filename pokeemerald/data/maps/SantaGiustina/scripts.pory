@@ -1,0 +1,54 @@
+mapscripts SantaGiustina_MapScripts {
+    
+}
+
+script SantaGiustina_EventScript_PortaChiusa {
+    msgbox(format("La porta è chiusa, come è normale che sia."))
+    closemessage
+}
+
+script SantaGiustina_EventScript_CartelloTown {
+    msgbox(format("SANTA GIUSTINA"))
+    closemessage
+}
+
+script SantaGiustina_EventScript_Striscione1 {
+    msgbox(format("Ho il cancro."))
+    closemessage
+}
+
+script SantaGiustina_EventScript_Striscione2 {
+    msgbox(format("Ho il cancro."))
+    closemessage
+}
+
+script SantaGiustina_EventScript_Striscione3 {
+    msgbox(format("Ho il cancro."))
+    closemessage
+}
+
+script SantaGiustina_EventScript_Striscione4 {
+    msgbox(format("Ho il cancro."))
+    closemessage
+}
+
+script SantaGiustina_EventScript_Striscione5 {
+    msgbox(format("Ho il cancro."))
+    closemessage
+}
+
+
+script SantaGiustina_EventScript_Striscione6 {
+    msgbox(format("Ho il cancro."))
+    closemessage
+}
+
+script SantaGiustina_EventScript_CentroMon {
+    msgbox(format("Centro Pokémon. Curiamo i tuoi Pokemons."))
+    closemessage
+}
+
+script SantaGiustina_EventScript_CartelloSquadra {
+    msgbox("Casa di Squadra")
+    closemessage
+}
