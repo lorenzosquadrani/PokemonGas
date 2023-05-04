@@ -90,6 +90,7 @@
 
 // gMapGroup_IndoorSanta
 #define MAP_SANTA_GIUSTINA_POKEMON_CENTER_1F (0 | (4 << 8))
+#define MAP_SANTA_GIUSTINA_CASA_SQUADRA_1F   (1 | (4 << 8))
 
 // gMapGroup_IndoorEmilia
 #define MAP_EMILIA_ROAD_MART                    (0 | (5 << 8))

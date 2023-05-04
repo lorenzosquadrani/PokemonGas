@@ -1054,3 +1054,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RiminiTown_CasaChecco_1F/scripts.inc"
 
 	.include "data/maps/RiminiTown_CovoGnassi/scripts.inc"
+
+	.include "data/maps/SantaGiustina_CasaSquadra_1F/scripts.inc"

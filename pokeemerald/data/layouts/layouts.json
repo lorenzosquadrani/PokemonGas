@@ -4410,6 +4410,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/RiminiTown_CovoGnassi/border.bin",
       "blockdata_filepath": "data/layouts/RiminiTown_CovoGnassi/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANTA_GIUSTINA_CASA_SQUADRA_1F",
+      "name": "SantaGiustina_CasaSquadra_1F_Layout",
+      "width": 15,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SantaGiustina_CasaSquadra_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SantaGiustina_CasaSquadra_1F/map.bin"
     }
   ]
 }
