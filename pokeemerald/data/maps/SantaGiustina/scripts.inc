@@ -21,31 +21,31 @@ SantaGiustina_EventScript_Striscione1::
 
 
 SantaGiustina_EventScript_Striscione2::
-	msgbox SantaGiustina_EventScript_Striscione1_Text_0
+	msgbox SantaGiustina_EventScript_Striscione2_Text_0
 	closemessage
 	return
 
 
 SantaGiustina_EventScript_Striscione3::
-	msgbox SantaGiustina_EventScript_Striscione1_Text_0
+	msgbox SantaGiustina_EventScript_Striscione3_Text_0
 	closemessage
 	return
 
 
 SantaGiustina_EventScript_Striscione4::
-	msgbox SantaGiustina_EventScript_Striscione1_Text_0
+	msgbox SantaGiustina_EventScript_Striscione4_Text_0
 	closemessage
 	return
 
 
 SantaGiustina_EventScript_Striscione5::
-	msgbox SantaGiustina_EventScript_Striscione1_Text_0
+	msgbox SantaGiustina_EventScript_Striscione4_Text_0
 	closemessage
 	return
 
 
 SantaGiustina_EventScript_Striscione6::
-	msgbox SantaGiustina_EventScript_Striscione1_Text_0
+	msgbox SantaGiustina_EventScript_Striscione4_Text_0
 	closemessage
 	return
 
@@ -70,6 +70,15 @@ SantaGiustina_EventScript_CartelloTown_Text_0:
 	.string "SANTA GIUSTINA$"
 
 SantaGiustina_EventScript_Striscione1_Text_0:
+	.string "Meglio gay che col cancro.$"
+
+SantaGiustina_EventScript_Striscione2_Text_0:
+	.string "Meno smog più puttane.$"
+
+SantaGiustina_EventScript_Striscione3_Text_0:
+	.string "Fate sta cazzo di circonvallazione.$"
+
+SantaGiustina_EventScript_Striscione4_Text_0:
 	.string "Ho il cancro.$"
 
 SantaGiustina_EventScript_CentroMon_Text_0:

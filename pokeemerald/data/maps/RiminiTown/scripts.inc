@@ -200,6 +200,12 @@ RiminiTown_EventScript_GasVersoSteTrigger2::
 	return
 
 
+RiminiTown_EventScript_DoveCazzo::
+	msgbox RiminiTown_EventScript_DoveCazzo_Text_0
+	closemessage
+	return
+
+
 RiminiTown_Movement_GasVersoSte1:
 	walk_up
 	walk_up
@@ -335,6 +341,10 @@ RiminiTown_EventScript_IncontroConSte_Text_4:
 RiminiTown_EventScript_NeedPokemonTriggerDown_Text_0:
 	.string "SEI MATTO!? È pericoloso andare fuori\n"
 	.string "città senza Pokemons.$"
+
+RiminiTown_EventScript_DoveCazzo_Text_0:
+	.string "Ma dove cazzo vai cojone.\p"
+	.string "Non li trovi i bugs.$"
 
 RiminiTown_Text_ANDREAGASPARI::
 	.string "ANDREA GASPARI!\p"

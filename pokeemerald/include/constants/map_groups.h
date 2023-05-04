@@ -89,13 +89,7 @@
 #define MAP_DIPARTIMENTO_FISICA_HOUSE2            (5 | (3 << 8))
 
 // gMapGroup_IndoorSanta
-#define MAP_SANTA_GIUSTINA_HERB_SHOP         (0 | (4 << 8))
-#define MAP_SANTA_GIUSTINA_GYM_1F            (1 | (4 << 8))
-#define MAP_SANTA_GIUSTINA_GYM_B1F           (2 | (4 << 8))
-#define MAP_SANTA_GIUSTINA_HOUSE             (3 | (4 << 8))
-#define MAP_SANTA_GIUSTINA_MART              (4 | (4 << 8))
-#define MAP_SANTA_GIUSTINA_POKEMON_CENTER_1F (5 | (4 << 8))
-#define MAP_SANTA_GIUSTINA_POKEMON_CENTER_2F (6 | (4 << 8))
+#define MAP_SANTA_GIUSTINA_POKEMON_CENTER_1F (0 | (4 << 8))
 
 // gMapGroup_IndoorEmilia
 #define MAP_EMILIA_ROAD_MART                    (0 | (5 << 8))

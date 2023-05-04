@@ -120,13 +120,7 @@
     "DipartimentoFisica_House2"
   ],
   "gMapGroup_IndoorSanta": [
-    "SantaGiustina_HerbShop",
-    "SantaGiustina_Gym_1F",
-    "SantaGiustina_Gym_B1F",
-    "SantaGiustina_House",
-    "SantaGiustina_Mart",
-    "SantaGiustina_PokemonCenter_1F",
-    "SantaGiustina_PokemonCenter_2F"
+    "SantaGiustina_PokemonCenter_1F"
   ],
   "gMapGroup_IndoorEmilia": [
     "EmiliaRoad_Mart",
