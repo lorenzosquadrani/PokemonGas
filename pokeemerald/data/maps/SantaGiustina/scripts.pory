@@ -13,17 +13,17 @@ script SantaGiustina_EventScript_CartelloTown {
 }
 
 script SantaGiustina_EventScript_Striscione1 {
-    msgbox(format("Ho il cancro."))
+    msgbox(format("Meglio gay che col cancro."))
     closemessage
 }
 
 script SantaGiustina_EventScript_Striscione2 {
-    msgbox(format("Ho il cancro."))
+    msgbox(format("Meno smog più puttane."))
     closemessage
 }
 
 script SantaGiustina_EventScript_Striscione3 {
-    msgbox(format("Ho il cancro."))
+    msgbox(format("Fate sta cazzo di circonvallazione."))
     closemessage
 }
 
