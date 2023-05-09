@@ -132,16 +132,6 @@
       "blockdata_filepath": "data/layouts/SantaGiustina/map.bin"
     },
     {
-      "id": "LAYOUT_EMILIA_ROAD",
-      "name": "EmiliaRoad_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Emilia",
-      "border_filepath": "data/layouts/EmiliaRoad/border.bin",
-      "blockdata_filepath": "data/layouts/EmiliaRoad/map.bin"
-    },
-    {
       "id": "LAYOUT_RIMINI_MARE",
       "name": "RiminiMare_Layout",
       "width": 20,
@@ -680,26 +670,6 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/SantaGiustina_PokemonCenter_1F/border.bin",
       "blockdata_filepath": "data/layouts/SantaGiustina_PokemonCenter_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_EMILIA_ROAD_LEFTOVER_RSCONTEST_LOBBY",
-      "name": "EmiliaRoad_LeftoverRSContestLobby_Layout",
-      "width": 15,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Contest",
-      "border_filepath": "data/layouts/EmiliaRoad_LeftoverRSContestLobby/border.bin",
-      "blockdata_filepath": "data/layouts/EmiliaRoad_LeftoverRSContestLobby/map.bin"
-    },
-    {
-      "id": "LAYOUT_EMILIA_ROAD_LEFTOVER_RSCONTEST_HALL",
-      "name": "EmiliaRoad_LeftoverRSContestHall_Layout",
-      "width": 21,
-      "height": 18,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Contest",
-      "border_filepath": "data/layouts/EmiliaRoad_LeftoverRSContestHall/border.bin",
-      "blockdata_filepath": "data/layouts/EmiliaRoad_LeftoverRSContestHall/map.bin"
     },
     {
       "id": "LAYOUT_LILYCOVE_CITY_HOUSE2",

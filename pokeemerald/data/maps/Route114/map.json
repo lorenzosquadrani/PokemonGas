@@ -17,11 +17,6 @@
       "map": "MAP_ROUTE115",
       "offset": 40,
       "direction": "left"
-    },
-    {
-      "map": "MAP_EMILIA_ROAD",
-      "offset": 0,
-      "direction": "right"
     }
   ],
   "object_events": [

@@ -50,7 +50,6 @@
     "BolognaTown",
     "DipartimentoFisica",
     "SantaGiustina",
-    "EmiliaRoad",
     "RiminiMare",
     "PacifidlogTown",
     "Route101",
@@ -122,16 +121,6 @@
   "gMapGroup_IndoorSanta": [
     "SantaGiustina_PokemonCenter_1F",
     "SantaGiustina_CasaSquadra_1F"
-  ],
-  "gMapGroup_IndoorEmilia": [
-    "EmiliaRoad_Mart",
-    "EmiliaRoad_BattleTentLobby",
-    "EmiliaRoad_BattleTentCorridor",
-    "EmiliaRoad_BattleTentBattleRoom",
-    "EmiliaRoad_PokemonCenter_1F",
-    "EmiliaRoad_PokemonCenter_2F",
-    "EmiliaRoad_CozmosHouse",
-    "EmiliaRoad_MoveRelearnersHouse"
   ],
   "gMapGroup_IndoorRiminimare": [
     "RiminiMare_BattleTentLobby",
