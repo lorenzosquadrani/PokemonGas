@@ -30,7 +30,7 @@
 #define MAP_ROUTE107            (21 | (0 << 8))
 #define MAP_ROUTE108            (22 | (0 << 8))
 #define MAP_ROUTE109            (23 | (0 << 8))
-#define MAP_ROUTE110            (24 | (0 << 8))
+#define MAP_EMILIA_ROAD         (24 | (0 << 8))
 #define MAP_ROUTE111            (25 | (0 << 8))
 #define MAP_ROUTE112            (26 | (0 << 8))
 #define MAP_ROUTE113            (27 | (0 << 8))
@@ -551,20 +551,9 @@
 // gMapGroup_IndoorRoute109
 #define MAP_ROUTE109_SEASHORE_HOUSE (0 | (28 << 8))
 
-// gMapGroup_IndoorRoute110
-#define MAP_ROUTE110_TRICK_HOUSE_ENTRANCE                (0 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_END                     (1 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_CORRIDOR                (2 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE1                 (3 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE2                 (4 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE3                 (5 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE4                 (6 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE5                 (7 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE6                 (8 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE7                 (9 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE8                 (10 | (29 << 8))
-#define MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE (11 | (29 << 8))
-#define MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE (12 | (29 << 8))
+// gMapGroup_IndoorEmiliaRoad
+#define MAP_EMILIA_ROAD_PISTA_SKATE_NORTH (0 | (29 << 8))
+#define MAP_EMILIA_ROAD_PISTA_SKATE_SOUTH (1 | (29 << 8))
 
 // gMapGroup_IndoorRoute113
 #define MAP_ROUTE113_GLASS_WORKSHOP (0 | (30 << 8))

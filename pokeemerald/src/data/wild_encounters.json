@@ -1924,8 +1924,8 @@
           }
         },
         {
-          "map": "MAP_ROUTE110",
-          "base_label": "gRoute110",
+          "map": "MAP_EMILIA_ROAD",
+          "base_label": "gEmiliaRoad",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
