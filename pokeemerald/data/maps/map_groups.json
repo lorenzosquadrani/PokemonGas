@@ -1,5 +1,4 @@
 {
-  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorRimini",
@@ -121,6 +120,9 @@
   "gMapGroup_IndoorSanta": [
     "SantaGiustina_PokemonCenter_1F",
     "SantaGiustina_CasaSquadra_1F"
+  ],
+  "gMapGroup_IndoorEmilia": [
+
   ],
   "gMapGroup_IndoorRiminimare": [
     "RiminiMare_BattleTentLobby",
