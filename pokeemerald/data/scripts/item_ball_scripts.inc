@@ -46,15 +46,15 @@ Route109_EventScript_ItemPotion::
 	finditem ITEM_POTION
 	end
 
-Route110_EventScript_ItemRareCandy::
+EmiliaRoad_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-Route110_EventScript_ItemDireHit::
+EmiliaRoad_EventScript_ItemDireHit::
 	finditem ITEM_DIRE_HIT
 	end
 
-Route110_EventScript_ItemElixir::
+EmiliaRoad_EventScript_ItemElixir::
 	finditem ITEM_ELIXIR
 	end
 
@@ -564,42 +564,6 @@ ShoalCave_LowTideIceRoom_EventScript_ItemNeverMeltIce::
 
 SeafloorCavern_Room9_EventScript_ItemTM26::
 	finditem ITEM_TM26
-	end
-
-Route110_TrickHousePuzzle1_EventScript_ItemOrangeMail::
-	finditem ITEM_ORANGE_MAIL
-	end
-
-Route110_TrickHousePuzzle2_EventScript_ItemHarborMail::
-	finditem ITEM_HARBOR_MAIL
-	end
-
-Route110_TrickHousePuzzle2_EventScript_ItemWaveMail::
-	finditem ITEM_WAVE_MAIL
-	end
-
-Route110_TrickHousePuzzle3_EventScript_ItemShadowMail::
-	finditem ITEM_SHADOW_MAIL
-	end
-
-Route110_TrickHousePuzzle3_EventScript_ItemWoodMail::
-	finditem ITEM_WOOD_MAIL
-	end
-
-Route110_TrickHousePuzzle4_EventScript_ItemMechMail::
-	finditem ITEM_MECH_MAIL
-	end
-
-Route110_TrickHousePuzzle6_EventScript_ItemGlitterMail::
-	finditem ITEM_GLITTER_MAIL
-	end
-
-Route110_TrickHousePuzzle7_EventScript_ItemTropicMail::
-	finditem ITEM_TROPIC_MAIL
-	end
-
-Route110_TrickHousePuzzle8_EventScript_ItemBeadMail::
-	finditem ITEM_BEAD_MAIL
 	end
 
 VictoryRoad_1F_EventScript_ItemMaxElixir::

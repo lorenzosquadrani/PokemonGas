@@ -1114,7 +1114,7 @@ u16 GetCurrLocationDefaultMusic(void)
     else
     {
         if (gSaveBlock1Ptr->pos.x < 24)
-            return MUS_ROUTE110;
+            return MUS_EMILIA_ROAD;
         else
             return MUS_ROUTE119;
     }
@@ -1131,7 +1131,7 @@ u16 GetWarpDestinationMusic(void)
     {
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAUVILLE_CITY)
          && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAUVILLE_CITY))
-            return MUS_ROUTE110;
+            return MUS_EMILIA_ROAD;
         else
             return MUS_ROUTE119;
     }
