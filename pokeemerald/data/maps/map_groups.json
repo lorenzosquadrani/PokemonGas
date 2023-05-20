@@ -1,4 +1,5 @@
 {
+  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorRimini",
@@ -92,7 +93,9 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "RiminiTown_Mare"
+    "RiminiTown_Mare",
+    "BolognaTown_ParteOvest",
+    "BolognaTown_ParteEst"
   ],
   "gMapGroup_IndoorRimini": [
     "RiminiTown_CasaGas_1F",

@@ -105,7 +105,7 @@
       "id": "LAYOUT_BOLOGNA_TOWN",
       "name": "BolognaTown_Layout",
       "width": 50,
-      "height": 50,
+      "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Bologna",
       "border_filepath": "data/layouts/BolognaTown/border.bin",
@@ -245,7 +245,7 @@
       "id": "LAYOUT_EMILIA_ROAD",
       "name": "EmiliaRoad_Layout",
       "width": 40,
-      "height": 100,
+      "height": 95,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/EmiliaRoad/border.bin",
@@ -4280,6 +4280,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SantaGiustina_CasaSquadra_1F/border.bin",
       "blockdata_filepath": "data/layouts/SantaGiustina_CasaSquadra_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BOLOGNA_TOWN_PARTE_OVEST",
+      "name": "BolognaTown_ParteOvest_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Bologna",
+      "border_filepath": "data/layouts/BolognaTown_ParteOvest/border.bin",
+      "blockdata_filepath": "data/layouts/BolognaTown_ParteOvest/map.bin"
+    },
+    {
+      "id": "LAYOUT_BOLOGNA_TOWN_PARTE_EST",
+      "name": "BolognaTown_ParteEst_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Bologna",
+      "border_filepath": "data/layouts/BolognaTown_ParteEst/border.bin",
+      "blockdata_filepath": "data/layouts/BolognaTown_ParteEst/map.bin"
     }
   ]
 }
