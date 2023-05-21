@@ -152,14 +152,14 @@
       "blockdata_filepath": "data/layouts/PacifidlogTown/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE101",
-      "name": "Route101_Layout",
+      "id": "LAYOUT_MARECCHIA",
+      "name": "Marecchia_Layout",
       "width": 30,
       "height": 22,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
-      "border_filepath": "data/layouts/Route101/border.bin",
-      "blockdata_filepath": "data/layouts/Route101/map.bin"
+      "border_filepath": "data/layouts/Marecchia/border.bin",
+      "blockdata_filepath": "data/layouts/Marecchia/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE102",

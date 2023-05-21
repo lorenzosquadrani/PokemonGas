@@ -14,10 +14,21 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_RIMINI_TOWN_CASA_GAS_1F",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
+
   ]
 }

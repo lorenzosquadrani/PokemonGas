@@ -21,7 +21,7 @@
 #define MAP_SANTA_GIUSTINA           (12 | (0 << 8))
 #define MAP_RIMINI_MARE              (13 | (0 << 8))
 #define MAP_PACIFIDLOG_TOWN          (14 | (0 << 8))
-#define MAP_ROUTE101                 (15 | (0 << 8))
+#define MAP_MARECCHIA                (15 | (0 << 8))
 #define MAP_ROUTE102                 (16 | (0 << 8))
 #define MAP_ROUTE103                 (17 | (0 << 8))
 #define MAP_ROUTE104                 (18 | (0 << 8))

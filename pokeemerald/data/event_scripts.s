@@ -116,7 +116,7 @@ gStdScripts_End::
 	.include "data/maps/SantaGiustina/scripts.inc"
 	.include "data/maps/RiminiMare/scripts.inc"
 	.include "data/maps/PacifidlogTown/scripts.inc"
-	.include "data/maps/Route101/scripts.inc"
+	.include "data/maps/Marecchia/scripts.inc"
 	.include "data/maps/Route102/scripts.inc"
 	.include "data/maps/Route103/scripts.inc"
 	.include "data/maps/Route104/scripts.inc"

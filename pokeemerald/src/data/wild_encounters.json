@@ -139,8 +139,8 @@
       ],
       "encounters": [
         {
-          "map": "MAP_ROUTE101",
-          "base_label": "gRoute101",
+          "map": "MAP_MARECCHIA",
+          "base_label": "gMarecchia",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
