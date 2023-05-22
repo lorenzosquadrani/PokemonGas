@@ -251,7 +251,7 @@ static const u8 sGreenShardDesc[] = _(
     "ancient item. Can\n"
     "be sold cheaply.");
 
-static const u8 sPietraGassosaDesc[] = _(
+static const u8 sPietraGasDesc[] = _(
     "Una strana pietra.");
 
 // Vitamins

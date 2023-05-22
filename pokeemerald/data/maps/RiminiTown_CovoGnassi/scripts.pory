@@ -1,7 +1,37 @@
 mapscripts RiminiTown_CovoGnassi_MapScripts {}
 
 
-script RiminiTown_CovoGnassi_EventScript_PietraGassosa {
+script RiminiTown_CovoGnassi_EventScript_PietraGas {
     finditem(ITEM_PIETRA_GAS)
     setflag(FLAG_PRESA_PIETRA_GAS)    
+}
+
+script RiminiTown_CovoGnassi_EventScript_ArrivaGnassi {
+
+    addobject(8) // Piazza Gnassi
+    
+    lockall
+    msgbox(format("FERMO LI!"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, GasGuardaGnassi)
+    waitmovement(0)
+    applymovement(8, GnassiRaggiungeGas)
+    waitmovement(0)
+
+    setvar(VAR_GNASSI_STATE, 2)
+
+    releaseall
+    }
+
+movement GnassiRaggiungeGas {
+    walk_up*4
+}
+
+movement GasGuardaGnassi {
+    face_down
+}
+
+script RiminiTown_CovoGnassi_EventScript_GnassiBattle {
+    
 }

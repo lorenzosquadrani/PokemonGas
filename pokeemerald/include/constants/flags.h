@@ -92,7 +92,7 @@
 
 // Scripts
 #define FLAG_PRESA_PIETRA_GAS  0x50
-#define FLAG_SET_WALL_CLOCK                      0x51
+#define FLAG_NASCONDI_GNASSI                      0x51
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 

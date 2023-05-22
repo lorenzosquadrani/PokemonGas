@@ -102,27 +102,27 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RiminiTown_CovoGnassi_EventScript_PietraGassosa",
+      "script": "RiminiTown_CovoGnassi_EventScript_PietraGas",
       "flag": "FLAG_PRESA_PIETRA_GAS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_STEVEN",
-      "x": 6,
-      "y": 40,
+      "x": 24,
+      "y": 18,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RiminiTown_CovoGnassi_EventScript_GnassiBattle",
+      "flag": "FLAG_NASCONDI_GNASSI"
     }
   ],
   "warp_events": [
     {
       "x": 25,
-      "y": 48,
+      "y": 49,
       "elevation": 0,
       "dest_map": "MAP_RIMINI_TOWN",
       "dest_warp_id": "3"
@@ -134,9 +134,18 @@
       "x": 24,
       "y": 13,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_GNASSI_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "RiminiTown_CovoGnassi_EventScript_ArrivaGnassi"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_GNASSI_STATE",
+      "var_value": "1",
+      "script": "RiminiTown_CovoGnassi_EventScript_ArrivaGnassi"
     }
   ],
   "bg_events": [
