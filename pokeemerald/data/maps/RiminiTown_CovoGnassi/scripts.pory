@@ -1,1 +1,7 @@
 mapscripts RiminiTown_CovoGnassi_MapScripts {}
+
+
+script RiminiTown_CovoGnassi_EventScript_PietraGassosa {
+    finditem(ITEM_PIETRA_GAS)
+    setflag(FLAG_PRESA_PIETRA_GAS)    
+}

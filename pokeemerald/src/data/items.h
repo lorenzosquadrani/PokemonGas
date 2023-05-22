@@ -679,15 +679,15 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_034] =
+    [ITEM_PIETRA_GAS] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
+        .name = _("PIETRA GAS"),
+        .itemId = ITEM_PIETRA_GAS,
         .price = 0,
-        .description = sDummyDesc,
+        .description = sPietraGassosaDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
     [ITEM_035] =

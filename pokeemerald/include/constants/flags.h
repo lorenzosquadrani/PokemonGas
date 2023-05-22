@@ -91,13 +91,13 @@
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
 
 // Scripts
-#define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
+#define FLAG_PRESA_PIETRA_GAS  0x50
 #define FLAG_SET_WALL_CLOCK                      0x51
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_CONSEGNATO_CAFFE                0x54  // Unused Flag
-#define FLAG_INCONTRATO_STE                  0x55  // Unused Flag
+#define FLAG_CONSEGNATO_CAFFE                0x54
+#define FLAG_INCONTRATO_STE                  0x55 
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
