@@ -27,9 +27,6 @@ GnassiRaggiungeGas:
 	walk_up
 	walk_up
 	walk_up
-	walk_up
-	walk_up
-	face_up
 	step_end
 
 GasGuardaGnassi:
