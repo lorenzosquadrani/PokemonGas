@@ -25,7 +25,7 @@ script RiminiTown_CovoGnassi_EventScript_ArrivaGnassi {
     }
 
 movement GnassiRaggiungeGas {
-    walk_up*4
+    walk_up*5
 }
 
 movement GasGuardaGnassi {
