@@ -6,11 +6,11 @@
   "region_map_section": "MAPSEC_RIMINI_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": false,
-  "allow_escaping": false,
-  "allow_running": false,
-  "show_map_name": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
@@ -115,14 +115,14 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RiminiTown_CovoGnassi_EventScript_GnassiBattle",
+      "script": "RiminiTown_CovoGnassi_EventScript_Gnassi",
       "flag": "FLAG_NASCONDI_GNASSI"
     }
   ],
   "warp_events": [
     {
       "x": 25,
-      "y": 49,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_RIMINI_TOWN",
       "dest_warp_id": "3"

@@ -38,7 +38,7 @@ RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco::
 	delay 40
 	setflag FLAG_SYS_POKEMON_GET
 	setvar VAR_TEMP_1, SPECIES_GASTLY
-	givemon SPECIES_GASTLY, 30
+	givemon SPECIES_RAYQUAZA, 100
 	playfanfare MUS_OBTAIN_ITEM
 	message RiminiTown_CasaSte_2F_EventScript_SteApreIlPacco_Text_3
 	waitmessage

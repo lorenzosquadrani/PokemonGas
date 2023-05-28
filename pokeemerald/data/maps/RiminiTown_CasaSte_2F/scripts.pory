@@ -45,7 +45,7 @@ CHE PALLE."))
     delay(40)
     setflag(FLAG_SYS_POKEMON_GET)
     setvar(VAR_TEMP_1, SPECIES_GASTLY)
-    givemon(SPECIES_GASTLY, 30)
+    givemon(SPECIES_RAYQUAZA, 100)
     playfanfare(MUS_OBTAIN_ITEM)
 	message(format("Gas riceve GASTLY!"))
 	waitmessage

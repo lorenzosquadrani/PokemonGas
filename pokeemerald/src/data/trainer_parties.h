@@ -108,29 +108,35 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntPetalburgWoods[] = 
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Marcel[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Gnassi[] = {
     {
     .iv = 100,
-    .lvl = 29,
-    .species = SPECIES_MANECTRIC,
+    .lvl = 27,
+    .species = SPECIES_KRABBY,
     },
     {
     .iv = 100,
-    .lvl = 29,
-    .species = SPECIES_SHIFTRY,
+    .lvl = 27,
+    .species = SPECIES_TENTACOOL,
+    },
+    {
+    .iv = 100,
+    .lvl = 32,
+    .species = SPECIES_TENTACRUEL,
+    },
+    {
+    .iv = 100,
+    .lvl = 34,
+    .species = SPECIES_KINGLER,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Alberto[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_Gnassi_Mewtwo[] = {
     {
-    .iv = 0,
-    .lvl = 30,
-    .species = SPECIES_PELIPPER,
-    },
-    {
-    .iv = 0,
-    .lvl = 30,
-    .species = SPECIES_XATU,
+    .iv = 100,
+    .lvl = 50,
+    .species = SPECIES_MEWTWO,
+    .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_FLAMETHROWER}
     }
 };
 

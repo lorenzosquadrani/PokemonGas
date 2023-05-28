@@ -10,28 +10,70 @@ script RiminiTown_CovoGnassi_EventScript_ArrivaGnassi {
 
     addobject(8) // Piazza Gnassi
     
-    lockall
     msgbox(format("FERMO LI!"))
     closemessage
-
+    
     applymovement(OBJ_EVENT_ID_PLAYER, GasGuardaGnassi)
-    waitmovement(0)
+    
+    lockall
+
     applymovement(8, GnassiRaggiungeGas)
     waitmovement(0)
 
+    if(var(VAR_GNASSI_STATE)==0) {
+        setvar(VAR_GNASSI_STATE, 1)
+        trainerbattle_single(TRAINER_GNASSI, GnassiIntro, GnassiOutro, RiminiTown_CovoGnassi_EventScript_GnassiDefeated)
+    }
+    else {
+        trainerbattle_single(TRAINER_GNASSI_MEWTWO, GnassiShortIntro, GnassiOutro, RiminiTown_CovoGnassi_EventScript_GnassiDefeated)
+    }
+
+    }
+
+script RiminiTown_CovoGnassi_EventScript_GnassiDefeated {
+
+    msgbox(format("Ok, mi hai battuto Andrea. Ma col cacchio che ti dò i miei pokemon leggendari.
+Prendi la pietra, è un pezzo più unico che raro. E VATTENE."))
+    closemessage
+
+    applymovement(8, GnassiSeNeVa)
+    waitmovement(0)
+    removeobject(8)
+    
     setvar(VAR_GNASSI_STATE, 2)
 
     releaseall
-    }
+}
+
+text GnassiIntro {
+    format("Andrea Gaspari, finalmente ci incontriamo.\p
+Ti tengo d'occhio da quella volta in cui hai vinto il LIUC Business Game. Ti ho lasciato in vita,
+perché non sembravi interessato alla carica di SINDACO di RIMINI... forse mi sono sbagliato. \p
+Entrare nel mio covo... Hai osato troppo, ragazzo.\p
+I miei pokemons da SPIAGGIA ti distruggeranno!")
+}
+
+text GnassiShortIntro {
+    format("Ancora tu! Mi hai stufato, vieni MEWTWO!")
+}
+
+text GnassiOutro {
+    format("PORCO DIO.")
+}
 
 movement GnassiRaggiungeGas {
     walk_up*5
+}
+
+movement GnassiSeNeVa {
+    walk_down*5
 }
 
 movement GasGuardaGnassi {
     face_down
 }
 
-script RiminiTown_CovoGnassi_EventScript_GnassiBattle {
-    
+script RiminiTown_CovoGnassi_EventScript_Gnassi {
+    msgbox(format("Ancora qui? Aria."))
+    closemessage
 }
