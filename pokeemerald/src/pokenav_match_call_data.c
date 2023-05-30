@@ -394,7 +394,7 @@ static const match_call_text_data_t sBrawlyTextScripts[] = {
 static const struct MatchCallStructTrainer sBrawlyMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
-    .mapSec = MAPSEC_DIPARTIMENTO_FISICA,
+    .mapSec = MAPSEC_RUSTBORO_CITY,
     .flag = FLAG_ENABLE_BRAWLY_MATCH_CALL,
     .rematchTableIdx = REMATCH_BRAWLY,
     .desc = gText_BrawlyMatchCallDesc,

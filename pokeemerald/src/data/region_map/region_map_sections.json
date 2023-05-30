@@ -17,14 +17,6 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_DIPARTIMENTO_FISICA",
-      "name": "DIFA",
-      "x": 5,
-      "y": 1,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_SANTA_GIUSTINA",
       "name": "SANTA GIUSTINA",
       "x": 6,

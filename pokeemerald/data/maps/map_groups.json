@@ -4,7 +4,6 @@
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorRimini",
     "gMapGroup_IndoorBologna",
-    "gMapGroup_IndoorDipartimento",
     "gMapGroup_IndoorSanta",
     "gMapGroup_IndoorEmilia",
     "gMapGroup_IndoorRiminimare",
@@ -48,7 +47,6 @@
     "EverGrandeCity",
     "RiminiTown",
     "BolognaTown",
-    "DipartimentoFisica",
     "SantaGiustina",
     "RiminiMare",
     "PacifidlogTown",
@@ -111,14 +109,6 @@
     "BolognaTown_PokemonCenter_1F",
     "BolognaTown_PokemonCenter_2F",
     "BolognaTown_Mart"
-  ],
-  "gMapGroup_IndoorDipartimento": [
-    "DipartimentoFisica_House1",
-    "DipartimentoFisica_PokemonCenter_1F",
-    "DipartimentoFisica_PokemonCenter_2F",
-    "DipartimentoFisica_Gym",
-    "DipartimentoFisica_Hall",
-    "DipartimentoFisica_House2"
   ],
   "gMapGroup_IndoorSanta": [
     "SantaGiustina_PokemonCenter_1F",

@@ -6,7 +6,7 @@
 #define MAPSEC_SANTA_GIUSTINA               0x02
 #define MAPSEC_EMILIA_ROAD                  0x03
 #define MAPSEC_BOLOGNA_TOWN                 0x04
-#define MAPSEC_DIPARTIMENTO_FISICA          0x05
+#define MAPSEC_EMPTY                        0x05
 #define MAPSEC_PACIFIDLOG_TOWN              0x06
 #define MAPSEC_PETALBURG_CITY               0x07
 #define MAPSEC_SLATEPORT_CITY               0x08

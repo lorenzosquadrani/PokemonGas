@@ -2011,7 +2011,6 @@ bool8 UsedPokemonCenterWarp(void)
     static const u16 sPokemonCenters[] =
     {
         MAP_BOLOGNA_TOWN_POKEMON_CENTER_1F,
-        MAP_DIPARTIMENTO_FISICA_POKEMON_CENTER_1F,
         MAP_SANTA_GIUSTINA_POKEMON_CENTER_1F,
         MAP_RIMINI_MARE_POKEMON_CENTER_1F,
         MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F,
@@ -3878,8 +3877,6 @@ void GetBattlePyramidHint(void)
 // Used to avoid a potential softlock if the player respawns on Dipartimento with no way off
 void ResetHealLocationFromDipartimento(void)
 {
-    if (gSaveBlock1Ptr->lastHealLocation.mapGroup == MAP_GROUP(DIPARTIMENTO_FISICA) && gSaveBlock1Ptr->lastHealLocation.mapNum == MAP_NUM(DIPARTIMENTO_FISICA))
-        SetLastHealLocationWarp(HEAL_LOCATION_PETALBURG_CITY);
 }
 
 bool8 InPokemonCenter(void)
@@ -3887,7 +3884,6 @@ bool8 InPokemonCenter(void)
     static const u16 sPokemonCenters[] =
     {
         MAP_BOLOGNA_TOWN_POKEMON_CENTER_1F,
-        MAP_DIPARTIMENTO_FISICA_POKEMON_CENTER_1F,
         MAP_SANTA_GIUSTINA_POKEMON_CENTER_1F,
         MAP_RIMINI_MARE_POKEMON_CENTER_1F,
         MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F,

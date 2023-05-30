@@ -19,11 +19,6 @@
       "direction": "down"
     },
     {
-      "map": "MAP_DIPARTIMENTO_FISICA",
-      "offset": 20,
-      "direction": "up"
-    },
-    {
       "map": "MAP_BOLOGNA_TOWN_PARTE_OVEST",
       "offset": 11,
       "direction": "left"

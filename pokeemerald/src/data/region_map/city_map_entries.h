@@ -11,11 +11,6 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .tilemap = gPokenavCityMap_Bologna_0,
     },
     {
-        .mapSecId = MAPSEC_DIPARTIMENTO_FISICA,
-        .index = 0,
-        .tilemap = gPokenavCityMap_Dipartimento_0,
-    },
-    {
         .mapSecId = MAPSEC_SANTA_GIUSTINA,
         .index = 0,
         .tilemap = gPokenavCityMap_Santa_0,

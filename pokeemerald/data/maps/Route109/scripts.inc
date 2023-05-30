@@ -4,67 +4,6 @@
 Route109_MapScripts::
 	.byte 0
 
-Route109_EventScript_StartDepartForDipartimento::
-	call EventScript_BackupMrBrineyLocation
-	setobjectsubpriority LOCALID_BRINEY_R109, MAP_ROUTE109, 0
-	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE109, 0
-	applymovement LOCALID_BRINEY_R109, Route109_Movement_BrineyEnterBoat
-	waitmovement 0
-	removeobject LOCALID_BRINEY_R109
-	switch VAR_FACING
-	case DIR_SOUTH, Route109_EventScript_EnterBoatSouth
-	case DIR_WEST, Route109_EventScript_EnterBoatWest
-	case DIR_EAST, Route109_EventScript_EnterBoatEast
-	end
-
-Route109_EventScript_EnterBoatSouth::
-	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerEnterBoatSouth
-	waitmovement 0
-	goto Route109_EventScript_DoSailToDipartimento
-	end
-
-Route109_EventScript_EnterBoatEast::
-	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerEnterBoatEast
-	waitmovement 0
-	goto Route109_EventScript_DoSailToDipartimento
-	end
-
-Route109_EventScript_EnterBoatWest::
-	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerEnterBoatWest
-	waitmovement 0
-	goto Route109_EventScript_DoSailToDipartimento
-	end
-
-Route109_EventScript_DoSailToDipartimento::
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
-	call Common_EventScript_PlayBrineysBoatMusic
-	applymovement LOCALID_BOAT_R109, Route109_Movement_SailToDipartimento
-	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_SailToDipartimento
-	waitmovement 0
-	delay 50
-	call Common_EventScript_StopBrineysBoatMusic
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DIPARTIMENTO_FISICA
-	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerExitBoat
-	waitmovement 0
-	addobject LOCALID_BOAT_DIPARTIMENTO
-	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DIPARTIMENTO_FISICA
-	setobjectxyperm LOCALID_BRINEY_DIPARTIMENTO, 12, 8
-	addobject LOCALID_BRINEY_DIPARTIMENTO
-	setobjectsubpriority LOCALID_BRINEY_DIPARTIMENTO, MAP_DIPARTIMENTO_FISICA, 0
-	applymovement LOCALID_BRINEY_DIPARTIMENTO, Route109_Movement_BrineyExitBoat
-	waitmovement 0
-	clearflag FLAG_HIDE_MR_BRINEY_DIPARTIMENTO_FISICA
-	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
-	hideobjectat LOCALID_BOAT_R109, MAP_ROUTE109
-	msgbox DipartimentoFisica_Text_BrineyLandedInDipartimento, MSGBOX_DEFAULT
-	closemessage
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
-	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
-	resetobjectsubpriority LOCALID_BRINEY_DIPARTIMENTO, MAP_DIPARTIMENTO_FISICA
-	copyobjectxytoperm LOCALID_BRINEY_DIPARTIMENTO
-	release
-	end
-
 Route109_Movement_SailToDipartimento:
 	walk_in_place_faster_down
 	walk_down
@@ -283,7 +222,6 @@ Route109_EventScript_HaveNotDeliveredDevonGood::
 	message Route109_Text_BrineySailToDipartimentoQuestion
 	msgbox Route109_Text_BrineySailToDipartimentoQuestion, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route109_EventScript_StayHere
-	goto Route109_EventScript_SailToDipartimento
 	end
 
 Route109_EventScript_DeliveredDevonGoods::
@@ -291,15 +229,8 @@ Route109_EventScript_DeliveredDevonGoods::
 	waitmessage
 	multichoicedefault 21, 8, MULTI_BRINEY_OFF_DIPARTIMENTO, 1, FALSE
 	switch VAR_RESULT
-	case 0, Route109_EventScript_SailToDipartimento
 	case 1, Route109_EventScript_ChoseNotToSail
 	case MULTI_B_PRESSED, Route109_EventScript_ChoseNotToSail
-	end
-
-Route109_EventScript_SailToDipartimento::
-	msgbox Route109_Text_BrineyDipartimentoItIs, MSGBOX_DEFAULT
-	closemessage
-	goto Route109_EventScript_StartDepartForDipartimento
 	end
 
 Route109_EventScript_StayHere::

@@ -13,7 +13,6 @@ Route104_OnFrame:
 
 Route104_EventScript_StartSailToDipartimento::
 	lockall
-	goto Route104_EventScript_SailToDipartimento
 	end
 
 Route104_OnTransition:
@@ -344,83 +343,6 @@ Route104_EventScript_ReceivedBulletSeed::
 
 Route104_EventScript_Girl2::
 	msgbox Route104_Text_ImNotATrainer, MSGBOX_NPC
-	end
-
-Route104_EventScript_SailToDipartimento::
-	setobjectsubpriority LOCALID_BRINEY_R104, MAP_ROUTE104, 0
-	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104, 0
-	applymovement LOCALID_BRINEY_R104, Route104_Movement_BrineyBoardBoat
-	waitmovement 0
-	removeobject LOCALID_BRINEY_R104
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerBoardBoat
-	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
-	call Common_EventScript_PlayBrineysBoatMusic
-	goto_if_set FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDipartimentoNoCall
-	goto_if_unset FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDipartimentoDadCalls
-	end
-
-Route104_EventScript_SailToDipartimentoNoCall::
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDipartimento
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDipartimento
-	waitmovement 0
-	goto Route104_EventScript_ArriveInDipartimento
-
-Route104_EventScript_SailToDipartimentoDadCalls::
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDipartimentoBeforeDadCalls
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDipartimentoBeforeDadCalls
-	waitmovement 0
-	pokenavcall Route104_Text_DadPokenavCall
-	waitmessage
-	delay 30
-	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route104_Text_RegisteredDadInPokenav, MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
-	delay 30
-	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDipartimentoAfterDadCalls
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDipartimentoAfterDadCalls, MAP_ROUTE104
-	waitmovement LOCALID_BOAT_R104, MAP_ROUTE104
-	waitmovement 0
-	goto Route104_EventScript_ArriveInDipartimento
-
-Route104_EventScript_ArriveInDipartimento::
-	delay 50
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerExitBoat
-	waitmovement 0
-	call Common_EventScript_StopBrineysBoatMusic
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DIPARTIMENTO_FISICA
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerMoveForBriney
-	waitmovement 0
-	setobjectxyperm LOCALID_BRINEY_DIPARTIMENTO, 12, 8
-	addobject LOCALID_BRINEY_DIPARTIMENTO
-	setobjectsubpriority LOCALID_BRINEY_DIPARTIMENTO, MAP_DIPARTIMENTO_FISICA, 0
-	clearflag FLAG_HIDE_MR_BRINEY_DIPARTIMENTO_FISICA
-	applymovement LOCALID_BRINEY_DIPARTIMENTO, Route104_Movement_BrineyExitBoat
-	waitmovement 0
-	addobject LOCALID_BOAT_DIPARTIMENTO
-	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DIPARTIMENTO_FISICA
-	call Common_EventScript_StopBrineysBoatMusic
-	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
-	hideobjectat LOCALID_BOAT_R104, MAP_ROUTE104
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
-	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
-	resetobjectsubpriority LOCALID_BRINEY_DIPARTIMENTO, MAP_DIPARTIMENTO_FISICA
-	copyobjectxytoperm LOCALID_BRINEY_DIPARTIMENTO
-	setvar VAR_BOARD_BRINEY_BOAT_STATE, 0
-	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_DeliverLetterReminder
-	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_LandedInDipartimento
-	end
-
-Route104_EventScript_DeliverLetterReminder::
-	msgbox Route104_Text_LandedInDipartimentoDeliverLetter, MSGBOX_DEFAULT
-	releaseall
-	end
-
-Route104_EventScript_LandedInDipartimento::
-	msgbox DipartimentoFisica_Text_BrineyLandedInDipartimento, MSGBOX_DEFAULT
-	releaseall
 	end
 
 Route104_Movement_SailToDipartimentoBeforeDadCalls:
