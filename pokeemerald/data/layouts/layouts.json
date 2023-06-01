@@ -82,14 +82,14 @@
       "blockdata_filepath": "data/layouts/SootopolisCity/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY",
-      "name": "EverGrandeCity_Layout",
+      "id": "LAYOUT_DIFA",
+      "name": "DIFA_Layout",
       "width": 30,
       "height": 18,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
-      "border_filepath": "data/layouts/EverGrandeCity/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity/map.bin"
+      "border_filepath": "data/layouts/DIFA/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA/map.bin"
     },
     {
       "id": "LAYOUT_RIMINI_TOWN",
@@ -1012,64 +1012,64 @@
       "blockdata_filepath": "data/layouts/SootopolisCity_Gym_B1F/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_SIDNEYS_ROOM",
-      "name": "EverGrandeCity_SidneysRoom_Layout",
+      "id": "LAYOUT_DIFA_SIDNEYS_ROOM",
+      "name": "DIFA_SidneysRoom_Layout",
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/EverGrandeCity_SidneysRoom/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_SidneysRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_SidneysRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_SidneysRoom/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_PHOEBES_ROOM",
-      "name": "EverGrandeCity_PhoebesRoom_Layout",
+      "id": "LAYOUT_DIFA_PHOEBES_ROOM",
+      "name": "DIFA_PhoebesRoom_Layout",
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/EverGrandeCity_PhoebesRoom/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_PhoebesRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_PhoebesRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_PhoebesRoom/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_GLACIAS_ROOM",
-      "name": "EverGrandeCity_GlaciasRoom_Layout",
+      "id": "LAYOUT_DIFA_GLACIAS_ROOM",
+      "name": "DIFA_GlaciasRoom_Layout",
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/EverGrandeCity_GlaciasRoom/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_GlaciasRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_GlaciasRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_GlaciasRoom/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_DRAKES_ROOM",
-      "name": "EverGrandeCity_DrakesRoom_Layout",
+      "id": "LAYOUT_DIFA_DRAKES_ROOM",
+      "name": "DIFA_DrakesRoom_Layout",
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/EverGrandeCity_DrakesRoom/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_DrakesRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_DrakesRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_DrakesRoom/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
-      "name": "EverGrandeCity_ChampionsRoom_Layout",
+      "id": "LAYOUT_DIFA_CHAMPIONS_ROOM",
+      "name": "DIFA_ChampionsRoom_Layout",
       "width": 13,
       "height": 13,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/EverGrandeCity_ChampionsRoom/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_ChampionsRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_ChampionsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_ChampionsRoom/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_SHORT_HALL",
-      "name": "EverGrandeCity_ShortHall_Layout",
+      "id": "LAYOUT_DIFA_SHORT_HALL",
+      "name": "DIFA_ShortHall_Layout",
       "width": 11,
       "height": 13,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/EverGrandeCity_ShortHall/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_ShortHall/map.bin"
+      "border_filepath": "data/layouts/DIFA_ShortHall/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_ShortHall/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
@@ -2492,14 +2492,14 @@
       "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_3F/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
-      "name": "EverGrandeCity_PokemonLeague_1F_Layout",
+      "id": "LAYOUT_DIFA_POKEMON_LEAGUE_1F",
+      "name": "DIFA_PokemonLeague_1F_Layout",
       "width": 19,
       "height": 12,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
-      "border_filepath": "data/layouts/EverGrandeCity_PokemonLeague_1F/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_PokemonLeague_1F/map.bin"
+      "border_filepath": "data/layouts/DIFA_PokemonLeague_1F/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_PokemonLeague_1F/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE119_WEATHER_INSTITUTE_1F",
@@ -2772,14 +2772,14 @@
       "blockdata_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_HALL_OF_FAME",
-      "name": "EverGrandeCity_HallOfFame_Layout",
+      "id": "LAYOUT_DIFA_HALL_OF_FAME",
+      "name": "DIFA_HallOfFame_Layout",
       "width": 15,
       "height": 17,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_CableClub",
-      "border_filepath": "data/layouts/EverGrandeCity_HallOfFame/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_HallOfFame/map.bin"
+      "border_filepath": "data/layouts/DIFA_HallOfFame/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_HallOfFame/map.bin"
     },
     {
       "id": "LAYOUT_LILYCOVE_CITY_COVE_LILY_MOTEL_1F",
@@ -2942,14 +2942,14 @@
       "blockdata_filepath": "data/layouts/RustboroCity_Flat1_2F/map.bin"
     },
     {
-      "id": "LAYOUT_EVER_GRANDE_CITY_HALL4",
-      "name": "EverGrandeCity_Hall4_Layout",
+      "id": "LAYOUT_DIFA_HALL4",
+      "name": "DIFA_Hall4_Layout",
       "width": 11,
       "height": 34,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/EverGrandeCity_Hall4/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_Hall4/map.bin"
+      "border_filepath": "data/layouts/DIFA_Hall4/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_Hall4/map.bin"
     },
     {
       "id": "LAYOUT_AQUA_HIDEOUT_UNUSED_RUBY_MAP1",

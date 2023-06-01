@@ -109,7 +109,7 @@ gStdScripts_End::
 	.include "data/maps/LilycoveCity/scripts.inc"
 	.include "data/maps/MossdeepCity/scripts.inc"
 	.include "data/maps/SootopolisCity/scripts.inc"
-	.include "data/maps/EverGrandeCity/scripts.inc"
+	.include "data/maps/DIFA/scripts.inc"
 	.include "data/maps/RiminiTown/scripts.inc"
 	.include "data/maps/BolognaTown/scripts.inc"
 	.include "data/maps/SantaGiustina/scripts.inc"
@@ -290,21 +290,21 @@ gStdScripts_End::
 	.include "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc"
-	.include "data/maps/EverGrandeCity_SidneysRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_DrakesRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_Hall1/scripts.inc"
-	.include "data/maps/EverGrandeCity_Hall2/scripts.inc"
-	.include "data/maps/EverGrandeCity_Hall3/scripts.inc"
-	.include "data/maps/EverGrandeCity_Hall4/scripts.inc"
-	.include "data/maps/EverGrandeCity_Hall5/scripts.inc"
-	.include "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc"
-	.include "data/maps/EverGrandeCity_HallOfFame/scripts.inc"
-	.include "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/EverGrandeCity_PokemonCenter_2F/scripts.inc"
-	.include "data/maps/EverGrandeCity_PokemonLeague_2F/scripts.inc"
+	.include "data/maps/DIFA_SidneysRoom/scripts.inc"
+	.include "data/maps/DIFA_PhoebesRoom/scripts.inc"
+	.include "data/maps/DIFA_GlaciasRoom/scripts.inc"
+	.include "data/maps/DIFA_DrakesRoom/scripts.inc"
+	.include "data/maps/DIFA_ChampionsRoom/scripts.inc"
+	.include "data/maps/DIFA_Hall1/scripts.inc"
+	.include "data/maps/DIFA_Hall2/scripts.inc"
+	.include "data/maps/DIFA_Hall3/scripts.inc"
+	.include "data/maps/DIFA_Hall4/scripts.inc"
+	.include "data/maps/DIFA_Hall5/scripts.inc"
+	.include "data/maps/DIFA_PokemonLeague_1F/scripts.inc"
+	.include "data/maps/DIFA_HallOfFame/scripts.inc"
+	.include "data/maps/DIFA_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/DIFA_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/DIFA_PokemonLeague_2F/scripts.inc"
 	.include "data/maps/Route104_MrBrineysHouse/scripts.inc"
 	.include "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc"
 	.include "data/maps/Route111_WinstrateFamilysHouse/scripts.inc"
@@ -544,7 +544,7 @@ gStdScripts_End::
 	.include "data/scripts/hall_of_fame.inc"
 
 EventScript_WhiteOut::
-	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
+	call DIFA_HallOfFame_EventScript_ResetEliteFour
 	goto EventScript_ResetMrBriney
 	end
 
@@ -586,7 +586,7 @@ EventScript_MoveMrBrineyToRoute109::
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
 	end
 
-EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
+DIFA_HallOfFame_EventScript_ResetEliteFour::
 	clearflag FLAG_DEFEATED_ELITE_4_SIDNEY
 	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
 	clearflag FLAG_DEFEATED_ELITE_4_GLACIA

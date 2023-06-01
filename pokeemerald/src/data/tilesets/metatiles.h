@@ -31,8 +31,8 @@ const u16 gMetatileAttributes_Lilycove[] = INCBIN_U16("data/tilesets/secondary/l
 const u16 gMetatiles_Mossdeep[] = INCBIN_U16("data/tilesets/secondary/mossdeep/metatiles.bin");
 const u16 gMetatileAttributes_Mossdeep[] = INCBIN_U16("data/tilesets/secondary/mossdeep/metatile_attributes.bin");
 
-const u16 gMetatiles_EverGrande[] = INCBIN_U16("data/tilesets/secondary/ever_grande/metatiles.bin");
-const u16 gMetatileAttributes_EverGrande[] = INCBIN_U16("data/tilesets/secondary/ever_grande/metatile_attributes.bin");
+const u16 gMetatiles_DIFA[] = INCBIN_U16("data/tilesets/secondary/difa/metatiles.bin");
+const u16 gMetatileAttributes_DIFA[] = INCBIN_U16("data/tilesets/secondary/difa/metatile_attributes.bin");
 
 const u16 gMetatiles_Pacifidlog[] = INCBIN_U16("data/tilesets/secondary/pacifidlog/metatiles.bin");
 const u16 gMetatileAttributes_Pacifidlog[] = INCBIN_U16("data/tilesets/secondary/pacifidlog/metatile_attributes.bin");

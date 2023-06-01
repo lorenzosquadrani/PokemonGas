@@ -330,7 +330,7 @@ $(MID_SUBDIR)/mus_b_pyramid.s: %.s: %.mid
 $(MID_SUBDIR)/mus_b_pyramid_top.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G107 -V077
 
-$(MID_SUBDIR)/mus_ever_grande.s: %.s: %.mid
+$(MID_SUBDIR)/mus_difa.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G068 -V086
 
 $(MID_SUBDIR)/mus_rayquaza_appears.s: %.s: %.mid

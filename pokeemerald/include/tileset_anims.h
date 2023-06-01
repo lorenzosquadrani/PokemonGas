@@ -17,7 +17,7 @@ void InitTilesetAnim_Emilia(void);
 void InitTilesetAnim_Fortree(void);
 void InitTilesetAnim_Lilycove(void);
 void InitTilesetAnim_Mossdeep(void);
-void InitTilesetAnim_EverGrande(void);
+void InitTilesetAnim_DIFA(void);
 void InitTilesetAnim_Pacifidlog(void);
 void InitTilesetAnim_Sootopolis(void);
 void InitTilesetAnim_BattleFrontierOutsideWest(void);

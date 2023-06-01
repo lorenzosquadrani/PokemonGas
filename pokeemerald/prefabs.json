@@ -10095,7 +10095,7 @@
     "width": 11,
     "height": 7,
     "primary_tileset": "",
-    "secondary_tileset": "gTileset_EverGrande",
+    "secondary_tileset": "gTileset_DIFA",
     "metatiles": [
       {
         "x": 0,
@@ -10601,7 +10601,7 @@
     "width": 7,
     "height": 5,
     "primary_tileset": "",
-    "secondary_tileset": "gTileset_EverGrande",
+    "secondary_tileset": "gTileset_DIFA",
     "metatiles": [
       {
         "x": 0,
@@ -10785,7 +10785,7 @@
     "width": 7,
     "height": 5,
     "primary_tileset": "",
-    "secondary_tileset": "gTileset_EverGrande",
+    "secondary_tileset": "gTileset_DIFA",
     "metatiles": [
       {
         "x": 0,
@@ -10969,7 +10969,7 @@
     "width": 5,
     "height": 5,
     "primary_tileset": "",
-    "secondary_tileset": "gTileset_EverGrande",
+    "secondary_tileset": "gTileset_DIFA",
     "metatiles": [
       {
         "x": 0,
@@ -11153,7 +11153,7 @@
     "width": 5,
     "height": 5,
     "primary_tileset": "gTileset_General",
-    "secondary_tileset": "gTileset_EverGrande",
+    "secondary_tileset": "gTileset_DIFA",
     "metatiles": [
       {
         "x": 0,

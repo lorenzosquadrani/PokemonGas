@@ -45,7 +45,7 @@ PetalburgCity_WallysHouse_EventScript_ReceievedHM03Surf::
 	end
 
 PetalburgCity_WallysHouse_EventScript_DefeatedWallyInVictoryRoad::
-	msgbox PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity, MSGBOX_DEFAULT
+	msgbox PetalburgCity_WallysHouse_Text_YouMetWallyInDIFA, MSGBOX_DEFAULT
 	release
 	end
 
@@ -111,7 +111,7 @@ PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon:
 	.string "WALLY's coming home soon.\n"
 	.string "I'm looking forward to that.$"
 
-PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity:
+PetalburgCity_WallysHouse_Text_YouMetWallyInDIFA:
 	.string "Oh? You met WALLY in\n"
 	.string "EVER GRANDE CITY?\p"
 	.string "Oh, {PLAYER}{KUN}, don't be silly.\p"

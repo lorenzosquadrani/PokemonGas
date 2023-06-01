@@ -18,7 +18,7 @@ RiminiMare_WandasHouse_EventScript_WallyShortSpeech::
 RiminiMare_WandasHouse_EventScript_WallysUncle::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, RiminiMare_WandasHouse_EventScript_WallysUncleEverGrande
+	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, RiminiMare_WandasHouse_EventScript_WallysUncleDIFA
 	goto_if_set FLAG_DEFEATED_SANTA_GYM, RiminiMare_WandasHouse_EventScript_WallysUncleSlippedOff
 	msgbox RiminiMare_WandasHouse_Text_WallysNextDoor, MSGBOX_DEFAULT
 	release
@@ -29,7 +29,7 @@ RiminiMare_WandasHouse_EventScript_WallysUncleSlippedOff::
 	release
 	end
 
-RiminiMare_WandasHouse_EventScript_WallysUncleEverGrande::
+RiminiMare_WandasHouse_EventScript_WallysUncleDIFA::
 	msgbox RiminiMare_WandasHouse_Text_WallyGoneThatFar, MSGBOX_DEFAULT
 	release
 	end
@@ -60,7 +60,7 @@ RiminiMare_WandasHouse_EventScript_WandaDontWorry::
 RiminiMare_WandasHouse_EventScript_WallysAunt::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, RiminiMare_WandasHouse_EventScript_WallysAuntEverGrande
+	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, RiminiMare_WandasHouse_EventScript_WallysAuntDIFA
 	goto_if_set FLAG_DEFEATED_SANTA_GYM, RiminiMare_WandasHouse_EventScript_WallysAuntAnythingHappened
 	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, RiminiMare_WandasHouse_EventScript_WallysAuntTunnelOpen
 	msgbox RiminiMare_WandasHouse_Text_DaughtersBoyfriendDriven, MSGBOX_DEFAULT
@@ -77,8 +77,8 @@ RiminiMare_WandasHouse_EventScript_WallysAuntAnythingHappened::
 	release
 	end
 
-RiminiMare_WandasHouse_EventScript_WallysAuntEverGrande::
-	msgbox RiminiMare_WandasHouse_Text_WallyWasInEverGrande, MSGBOX_DEFAULT
+RiminiMare_WandasHouse_EventScript_WallysAuntDIFA::
+	msgbox RiminiMare_WandasHouse_Text_WallyWasInDIFA, MSGBOX_DEFAULT
 	release
 	end
 
@@ -161,7 +161,7 @@ RiminiMare_WandasHouse_Text_IfAnythingHappenedToWally:
 	.string "I would never be able to look his\l"
 	.string "parents in PETALBURG in the eye…$"
 
-RiminiMare_WandasHouse_Text_WallyWasInEverGrande:
+RiminiMare_WandasHouse_Text_WallyWasInDIFA:
 	.string "WALLY was in EVER GRANDE?\p"
 	.string "His parents in PETALBURG would be\n"
 	.string "astonished to hear that!$"

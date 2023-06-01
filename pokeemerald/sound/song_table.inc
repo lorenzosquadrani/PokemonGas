@@ -422,7 +422,7 @@ gSongTable::
 	song mus_encounter_aqua, 0, 0
 	song mus_follow_me, 0, 0
 	song mus_encounter_brendan, 0, 0
-	song mus_ever_grande, 0, 0
+	song mus_difa, 0, 0
 	song mus_encounter_suspicious, 0, 0
 	song mus_victory_aqua_magma, 0, 0
 	song mus_cable_car, 0, 0

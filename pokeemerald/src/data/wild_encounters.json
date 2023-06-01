@@ -24556,8 +24556,8 @@
           }
         },
         {
-          "map": "MAP_EVER_GRANDE_CITY",
-          "base_label": "gEverGrandeCity",
+          "map": "MAP_DIFA",
+          "base_label": "gDIFA",
           "water_mons": {
             "encounter_rate": 4,
             "mons": [

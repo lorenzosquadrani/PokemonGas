@@ -119,15 +119,15 @@ const struct Tileset gTileset_Mossdeep =
     .callback = InitTilesetAnim_Mossdeep,
 };
 
-const struct Tileset gTileset_EverGrande =
+const struct Tileset gTileset_DIFA =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_EverGrande,
-    .palettes = gTilesetPalettes_EverGrande,
-    .metatiles = gMetatiles_EverGrande,
-    .metatileAttributes = gMetatileAttributes_EverGrande,
-    .callback = InitTilesetAnim_EverGrande,
+    .tiles = gTilesetTiles_DIFA,
+    .palettes = gTilesetPalettes_DIFA,
+    .metatiles = gMetatiles_DIFA,
+    .metatileAttributes = gMetatileAttributes_DIFA,
+    .callback = InitTilesetAnim_DIFA,
 };
 
 const struct Tileset gTileset_Pacifidlog =

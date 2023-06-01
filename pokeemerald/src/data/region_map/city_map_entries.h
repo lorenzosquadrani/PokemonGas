@@ -96,13 +96,13 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .tilemap = gPokenavCityMap_Sootopolis_0,
     },
     {
-        .mapSecId = MAPSEC_EVER_GRANDE_CITY,
+        .mapSecId = MAPSEC_DIFA,
         .index = 0,
-        .tilemap = gPokenavCityMap_EverGrande_0,
+        .tilemap = gPokenavCityMap_DIFA_0,
     },
     {
-        .mapSecId = MAPSEC_EVER_GRANDE_CITY,
+        .mapSecId = MAPSEC_DIFA,
         .index = 1,
-        .tilemap = gPokenavCityMap_EverGrande_1,
+        .tilemap = gPokenavCityMap_DIFA_1,
     },
 };
