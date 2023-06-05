@@ -20,8 +20,13 @@
     },
     {
       "map": "MAP_BOLOGNA_TOWN_PARTE_OVEST",
-      "offset": 11,
+      "offset": 18,
       "direction": "left"
+    },
+    {
+      "map": "MAP_DIFA",
+      "offset": 22,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -49,6 +54,19 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BolognaTown_EventScript_FootprintsMan",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POOCHYENA",
+      "x": 39,
+      "y": 44,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
       "flag": "0"
     }
   ],

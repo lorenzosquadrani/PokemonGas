@@ -139,6 +139,9 @@
 #define METATILE_Contest_FloorShadow         0x261
 #define METATILE_Contest_WallShadow          0x221
 
+// gTileset_DIFA
+#define METATILE_DIFA_Door_PokemonLeague  0x21D
+
 // gTileset_Dipartimento
 #define METATILE_Dipartimento_Door              0x225
 #define METATILE_Dipartimento_Door_BattleTower  0x25D
@@ -168,9 +171,6 @@
 #define METATILE_Emilia_RedCaveEntrance_Bottom    0x34F
 #define METATILE_Emilia_RedCaveEntrance_Top       0x347
 #define METATILE_Emilia_RedRockWall               0x269
-
-// gTileset_DIFA
-#define METATILE_DIFA_Door_PokemonLeague  0x21D
 
 // gTileset_Facility
 #define METATILE_Facility_DataPad                       0x3E4

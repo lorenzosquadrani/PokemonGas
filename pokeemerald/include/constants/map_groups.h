@@ -14,7 +14,7 @@
 #define MAP_LILYCOVE_CITY            (5 | (0 << 8))
 #define MAP_MOSSDEEP_CITY            (6 | (0 << 8))
 #define MAP_SOOTOPOLIS_CITY          (7 | (0 << 8))
-#define MAP_DIFA                (8 | (0 << 8))
+#define MAP_DIFA                     (8 | (0 << 8))
 #define MAP_RIMINI_TOWN              (9 | (0 << 8))
 #define MAP_BOLOGNA_TOWN             (10 | (0 << 8))
 #define MAP_SANTA_GIUSTINA           (11 | (0 << 8))
