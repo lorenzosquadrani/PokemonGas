@@ -7,7 +7,6 @@
     "gMapGroup_IndoorSanta",
     "gMapGroup_IndoorEmilia",
     "gMapGroup_IndoorRiminimare",
-    "gMapGroup_IndoorPacifidlog",
     "gMapGroup_IndoorPetalburg",
     "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorMauville",
@@ -49,7 +48,6 @@
     "BolognaTown",
     "SantaGiustina",
     "RiminiMare",
-    "PacifidlogTown",
     "Marecchia",
     "Route102",
     "Route103",
@@ -126,15 +124,6 @@
     "RiminiMare_House",
     "RiminiMare_Negozio",
     "RiminiMare_PokemonCenter"
-  ],
-  "gMapGroup_IndoorPacifidlog": [
-    "PacifidlogTown_PokemonCenter_1F",
-    "PacifidlogTown_PokemonCenter_2F",
-    "PacifidlogTown_House1",
-    "PacifidlogTown_House2",
-    "PacifidlogTown_House3",
-    "PacifidlogTown_House4",
-    "PacifidlogTown_House5"
   ],
   "gMapGroup_IndoorPetalburg": [
     "PetalburgCity_WallysHouse",

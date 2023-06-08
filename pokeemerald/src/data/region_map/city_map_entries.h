@@ -26,11 +26,6 @@ static const struct CityMapEntry sPokenavCityMaps[NUM_CITY_MAPS] =
         .tilemap = gPokenavCityMap_Riminimare_0,
     },
     {
-        .mapSecId = MAPSEC_PACIFIDLOG_TOWN,
-        .index = 0,
-        .tilemap = gPokenavCityMap_Pacifidlog_0,
-    },
-    {
         .mapSecId = MAPSEC_PETALBURG_CITY,
         .index = 0,
         .tilemap = gPokenavCityMap_Petalburg_0,
