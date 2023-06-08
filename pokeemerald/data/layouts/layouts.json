@@ -4252,16 +4252,6 @@
       "blockdata_filepath": "data/layouts/SantaGiustina_CasaSquadra_1F/map.bin"
     },
     {
-      "id": "LAYOUT_BOLOGNA_TOWN_PARTE_OVEST",
-      "name": "BolognaTown_ParteOvest_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Bologna",
-      "border_filepath": "data/layouts/BolognaTown_ParteOvest/border.bin",
-      "blockdata_filepath": "data/layouts/BolognaTown_ParteOvest/map.bin"
-    },
-    {
       "id": "LAYOUT_BOLOGNA_TOWN_PARTE_EST",
       "name": "BolognaTown_ParteEst_Layout",
       "width": 20,

@@ -19,14 +19,14 @@
       "direction": "down"
     },
     {
-      "map": "MAP_BOLOGNA_TOWN_PARTE_OVEST",
-      "offset": 18,
-      "direction": "left"
+      "map": "MAP_DIFA",
+      "offset": 20,
+      "direction": "up"
     },
     {
-      "map": "MAP_DIFA",
-      "offset": 22,
-      "direction": "up"
+      "map": "MAP_BOLOGNA_TOWN_PARTE_EST",
+      "offset": 21,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -86,17 +86,17 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 15,
-      "y": 16,
+      "x": 24,
+      "y": 44,
       "elevation": 0,
-      "dest_map": "MAP_BOLOGNA_TOWN_HOUSE2",
+      "dest_map": "MAP_BOLOGNA_TOWN",
       "dest_warp_id": "0"
     },
     {
-      "x": 5,
-      "y": 7,
+      "x": 25,
+      "y": 44,
       "elevation": 0,
-      "dest_map": "MAP_BOLOGNA_TOWN_HOUSE1",
+      "dest_map": "MAP_BOLOGNA_TOWN",
       "dest_warp_id": "0"
     }
   ],

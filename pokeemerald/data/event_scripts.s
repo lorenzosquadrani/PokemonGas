@@ -161,10 +161,7 @@ gStdScripts_End::
 	.include "data/maps/RiminiTown_CasaSte_1F/scripts.inc"
 	.include "data/maps/RiminiTown_CasaSte_2F/scripts.inc"
 	.include "data/maps/RiminiTown_CasaTommi/scripts.inc"
-	.include "data/maps/BolognaTown_House1/scripts.inc"
-	.include "data/maps/BolognaTown_House2/scripts.inc"
 	.include "data/maps/BolognaTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/BolognaTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/BolognaTown_Mart/scripts.inc"
 	.include "data/maps/SantaGiustina_PokemonCenter_1F/scripts.inc"
 	.include "data/maps/RiminiMare_BattleTentLobby/scripts.inc"
@@ -1029,8 +1026,6 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RiminiTown_CovoGnassi/scripts.inc"
 
 	.include "data/maps/SantaGiustina_CasaSquadra_1F/scripts.inc"
-
-	.include "data/maps/BolognaTown_ParteOvest/scripts.inc"
 
 	.include "data/maps/BolognaTown_ParteEst/scripts.inc"
 

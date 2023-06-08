@@ -92,7 +92,6 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "RiminiTown_Mare",
-    "BolognaTown_ParteOvest",
     "BolognaTown_ParteEst"
   ],
   "gMapGroup_IndoorRimini": [
@@ -104,10 +103,7 @@
     "RiminiTown_CasaChecco_1F"
   ],
   "gMapGroup_IndoorBologna": [
-    "BolognaTown_House1",
-    "BolognaTown_House2",
     "BolognaTown_PokemonCenter_1F",
-    "BolognaTown_PokemonCenter_2F",
     "BolognaTown_Mart",
     "BolognaTown_CasaSilvia"
   ],
