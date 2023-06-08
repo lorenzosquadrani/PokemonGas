@@ -4225,7 +4225,7 @@
       "id": "LAYOUT_RIMINI_TOWN_CASA_CHECCO_1F",
       "name": "RiminiTown_CasaChecco_1F_Layout",
       "width": 11,
-      "height": 9,
+      "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/RiminiTown_CasaChecco_1F/border.bin",
@@ -4270,6 +4270,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/BolognaTown_CasaSilvia/border.bin",
       "blockdata_filepath": "data/layouts/BolognaTown_CasaSilvia/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMINI_MARE_NEGOZIO",
+      "name": "RiminiMare_Negozio_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/RiminiMare_Negozio/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiMare_Negozio/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMINI_MARE_POKEMON_CENTER",
+      "name": "RiminiMare_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/RiminiMare_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/RiminiMare_PokemonCenter/map.bin"
     }
   ]
 }

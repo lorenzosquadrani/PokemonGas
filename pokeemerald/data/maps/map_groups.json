@@ -123,7 +123,9 @@
     "RiminiMare_PokemonCenter_2F",
     "RiminiMare_WandasHouse",
     "RiminiMare_FriendshipRatersHouse",
-    "RiminiMare_House"
+    "RiminiMare_House",
+    "RiminiMare_Negozio",
+    "RiminiMare_PokemonCenter"
   ],
   "gMapGroup_IndoorPacifidlog": [
     "PacifidlogTown_PokemonCenter_1F",

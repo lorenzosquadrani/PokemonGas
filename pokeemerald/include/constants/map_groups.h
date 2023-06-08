@@ -93,6 +93,8 @@
 #define MAP_RIMINI_MARE_WANDAS_HOUSE            (6 | (5 << 8))
 #define MAP_RIMINI_MARE_FRIENDSHIP_RATERS_HOUSE (7 | (5 << 8))
 #define MAP_RIMINI_MARE_HOUSE                   (8 | (5 << 8))
+#define MAP_RIMINI_MARE_NEGOZIO                 (9 | (5 << 8))
+#define MAP_RIMINI_MARE_POKEMON_CENTER          (10 | (5 << 8))
 
 // gMapGroup_IndoorPacifidlog
 #define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F (0 | (6 << 8))

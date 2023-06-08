@@ -1030,3 +1030,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/BolognaTown_ParteEst/scripts.inc"
 
 	.include "data/maps/BolognaTown_CasaSilvia/scripts.inc"
+
+	.include "data/maps/RiminiMare_Negozio/scripts.inc"
+
+	.include "data/maps/RiminiMare_PokemonCenter/scripts.inc"

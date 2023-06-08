@@ -87,6 +87,20 @@
       "elevation": 0,
       "dest_map": "MAP_RIMINI_TOWN_CASA_CHECCO_1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_RIMINI_MARE_NEGOZIO",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_RIMINI_MARE_POKEMON_CENTER",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
