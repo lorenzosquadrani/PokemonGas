@@ -6,8 +6,8 @@
 #define MAPSEC_SANTA_GIUSTINA               0x02
 #define MAPSEC_EMILIA_ROAD                  0x03
 #define MAPSEC_BOLOGNA_TOWN                 0x04
-#define MAPSEC_EMPTY_0                      0x05
-#define MAPSEC_EMPTY_1                      0x06
+#define MAPSEC_MARECCHIA                    0x05
+#define MAPSEC_DIFA                         0x06
 #define MAPSEC_PETALBURG_CITY               0x07
 #define MAPSEC_SLATEPORT_CITY               0x08
 #define MAPSEC_MAUVILLE_CITY                0x09
@@ -16,8 +16,8 @@
 #define MAPSEC_LILYCOVE_CITY                0x0C
 #define MAPSEC_MOSSDEEP_CITY                0x0D
 #define MAPSEC_SOOTOPOLIS_CITY              0x0E
-#define MAPSEC_DIFA             0x0F
-#define MAPSEC_MARECCHIA                    0x10
+#define MAPSEC_EMPTY_0                      0x0F
+#define MAPSEC_EMPTY_1                      0x10
 #define MAPSEC_ROUTE_102                    0x11
 #define MAPSEC_ROUTE_103                    0x12
 #define MAPSEC_ROUTE_104                    0x13
