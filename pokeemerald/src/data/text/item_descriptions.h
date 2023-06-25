@@ -438,6 +438,11 @@ static const u8 sHeartScaleDesc[] = _(
     "It is coveted by\n"
     "collectors.");
 
+static const u8 sBuonoSkateDesc[] = _(
+    "Un buono per un\n"
+    "penny board di\n"
+    "merda.");
+
 // Mail
 static const u8 sOrangeMailDesc[] = _(
     "A ZIGZAGOON-print\n"

@@ -1,0 +1,42 @@
+mapscripts RiminiTown_CasaChecco_1F_MapScripts {
+    
+}
+
+script RiminiTown_CasaChecco_1F_CheccoStuff {
+
+    lock
+    faceplayer
+
+    if(var(VAR_RIMINI_MARE_STATE)==0){
+        msgbox(format("Buonsgiur Gas! Ils me dicon che ti laurei aiòjurdui, in bocca al lupo.\p
+Hai visto che hanno aperto la pista da skate Rimini-Bologna? Direi che è l'occasione perfetta per
+provarla. Puppati questo buono per un penny board allo skate shop.\p
+...\p
+...\p
+Sì, mia mamma fa i pompini al proprietario, OK?! Prendilo e basta."))
+
+        giveitem(ITEM_BUONO_SKATE)
+        closemessage
+        setvar(VAR_RIMINI_MARE_STATE, 1)
+    }
+
+    else {
+        random(4)
+
+        if(var(VAR_RESULT)==0){
+            msgbox(format("Che fatica"))
+        }
+        elif(var(VAR_RESULT)==1){
+            msgbox(format("Porca vacca"))
+        }
+        elif(var(VAR_RESULT)==2){
+            msgbox(format("Miseriaccia"))
+        }
+        elif(var(VAR_RESULT)==3){
+            msgbox(format("aaaahoooehui"))
+        }   
+        closemessage
+    }
+
+    release
+}

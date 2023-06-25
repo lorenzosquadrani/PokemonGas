@@ -96,12 +96,12 @@
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
 #define VAR_UNUSED_0x404E                                0x404E // Unused Var
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
-#define VAR_RIMINI_TOWN_STATE                        0x4050
+#define VAR_RIMINI_TOWN_STATE                            0x4050
 #define VAR_BOLOGNA_TOWN_STATE                            0x4051
 #define VAR_DIPARTIMENTO_FISICA_STATE                           0x4052 // Unused Var
 #define VAR_SANTA_GIUSTINA_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_EMILIA_ROAD_STATE at one point
-#define VAR_RIMINI_MARE_STATE                        0x4055 // Unused Var
+#define VAR_RIMINI_MARE_STATE                            0x4055 // Unused Var
 #define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058

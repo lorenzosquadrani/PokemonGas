@@ -30,113 +30,13 @@
     }
   ],
   "object_events": [
-    {
-      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 11,
-      "y": 19,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "BolognaTown_EventScript_Rival",
-      "flag": "FLAG_HIDE_BOLOGNA_TOWN_RIVAL"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
-      "x": 8,
-      "y": 9,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "BolognaTown_EventScript_FootprintsMan",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POOCHYENA",
-      "x": 39,
-      "y": 44,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 2,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    }
+
   ],
   "warp_events": [
-    {
-      "x": 14,
-      "y": 6,
-      "elevation": 0,
-      "dest_map": "MAP_BOLOGNA_TOWN_MART",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 6,
-      "y": 16,
-      "elevation": 0,
-      "dest_map": "MAP_BOLOGNA_TOWN_POKEMON_CENTER_1F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 24,
-      "y": 44,
-      "elevation": 0,
-      "dest_map": "MAP_BOLOGNA_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 25,
-      "y": 44,
-      "elevation": 0,
-      "dest_map": "MAP_BOLOGNA_TOWN",
-      "dest_warp_id": "0"
-    }
+
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 19,
-      "elevation": 3,
-      "var": "VAR_BOLOGNA_RIVAL_STATE",
-      "var_value": "1",
-      "script": "BolognaTown_EventScript_RivalTrigger3"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 19,
-      "elevation": 3,
-      "var": "VAR_BOLOGNA_RIVAL_STATE",
-      "var_value": "1",
-      "script": "BolognaTown_EventScript_RivalTrigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 8,
-      "y": 19,
-      "elevation": 3,
-      "var": "VAR_BOLOGNA_RIVAL_STATE",
-      "var_value": "1",
-      "script": "BolognaTown_EventScript_RivalTrigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 0,
-      "y": 10,
-      "elevation": 3,
-      "var": "VAR_BOLOGNA_TOWN_STATE",
-      "var_value": "0",
-      "script": "BolognaTown_EventScript_BlockedPath"
-    }
+
   ],
   "bg_events": [
 

@@ -125,8 +125,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_STAR_PIECE] = {gItemIcon_StarPiece, gItemIconPalette_Star},
     [ITEM_NUGGET] = {gItemIcon_Nugget, gItemIconPalette_Nugget},
     [ITEM_HEART_SCALE] = {gItemIcon_HeartScale, gItemIconPalette_HeartScale},
-    // ????????
-    [ITEM_070] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
+    [ITEM_BUONO_SKATE] = {gItemIcon_MysticTicket, gItemIconPalette_MysticTicket},
     [ITEM_071] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_072] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_073] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},

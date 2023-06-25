@@ -1370,12 +1370,13 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_070] =
+    [ITEM_BUONO_SKATE] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
+        .name = _("Buono Skate"),
+        .itemId = ITEM_BUONO_SKATE,
         .price = 0,
-        .description = sDummyDesc,
+        .description = sBuonoSkateDesc,
+        .importance = 1,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
