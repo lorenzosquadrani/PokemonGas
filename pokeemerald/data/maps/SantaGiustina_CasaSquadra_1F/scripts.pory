@@ -1,1 +1,5 @@
 mapscripts SantaGiustina_CasaSquadra_1F_MapScripts {}
+
+script SantaGiustina_CasaSquadra_1F_EventScript_Antonia {
+    msgbox(format("Ciao caro! Lorenzo è in piscina."))
+}

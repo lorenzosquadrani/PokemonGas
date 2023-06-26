@@ -33,13 +33,13 @@ script SantaGiustina_EventScript_Striscione4 {
 }
 
 script SantaGiustina_EventScript_Striscione5 {
-    msgbox(format("Ho il cancro."))
+    msgbox(format("Abbasso la fog, viva la fig."))
     closemessage
 }
 
 
 script SantaGiustina_EventScript_Striscione6 {
-    msgbox(format("Ho il cancro."))
+    msgbox(format("Tutto fumo niente arrosto."))
     closemessage
 }
 
@@ -51,4 +51,58 @@ script SantaGiustina_EventScript_CentroMon {
 script SantaGiustina_EventScript_CartelloSquadra {
     msgbox("Casa di Squadra")
     closemessage
+}
+
+script SantaGiustina_EventScript_Squadra {
+
+    lock
+    faceplayer
+
+    if(var(VAR_SANTA_GIUSTINA_STATE)==0){
+
+        msgbox(format("Bella Gassi, ti stavo aspettando. Come avrai capito, oggi ti laurei.
+Ti starai chiedendo come. Beh, ovviamente devi andare in DIFA. E avrai bisogno di una squadra di Pokemons.
+Puoi costruirtela come vuoi, ma occhio perché non troverai altre pokéballs a parte quelle che ti sto per dare.\p
+Ecco, tieni."))
+
+        giveitem(ITEM_POKE_BALL, 10)
+        
+        msgbox(format("Ci sono tutti i Pokemons che vuoi in giro, devi solo trovarli eheh. 
+Ora ti attivo il Pokedex, così puoi vedere dove cercarli."))
+
+        setflag(FLAG_ADVENTURE_STARTED)
+        setflag(FLAG_SYS_POKEDEX_GET)
+        special(SetUnlockedPokedexFlags)
+        setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+        setflag(FLAG_SYS_NATIONAL_DEX)
+        special(EnableNationalPokedex)
+
+        msgbox(format("I leggendari ovviamente non ci sono, ce li ha tutti Gnassi."))
+        closemessage
+        applymovement(1, Common_Movement_Delay48)
+        applymovement(STE_ID, Common_Movement_ExclamationMark)
+
+        msgbox(format("Come? Vuoi entrare nel suo covo? Beh allora dovrai liberarti di quello Snorlax all'ingresso.
+Tieni, prova a sparargli."))
+        giveitem(ITEM_POKE_PISTOLA)
+        closemessage
+        setvar(VAR_SANTA_GIUSTINA_STATE, 1)
+    }
+
+    else {
+        random(4)
+
+        if(var(VAR_RESULT)==0){
+            msgbox(format("Daje Gassi"))
+        }
+        elif(var(VAR_RESULT)==1){
+            msgbox(format("I am the king of bets"))
+        }
+        elif(var(VAR_RESULT)==2){
+            msgbox(format("In realtà c'è un altro modo per avere le pokeballs, ma non te lo dico."))
+        }
+        closemessage
+    }
+
+    release
 }

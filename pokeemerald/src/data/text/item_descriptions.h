@@ -443,6 +443,10 @@ static const u8 sBuonoSkateDesc[] = _(
     "penny board di\n"
     "merda.");
 
+static const u8 sPokePistolaDesc[] = _(
+    "Una pistola per\n"
+    "sparare ai Pokémons");
+
 // Mail
 static const u8 sOrangeMailDesc[] = _(
     "A ZIGZAGOON-print\n"

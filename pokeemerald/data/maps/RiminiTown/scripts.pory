@@ -221,6 +221,63 @@ script RiminiTown_EventScript_DoveCazzo {
 	closemessage
 }
 
+script RiminiTown_EventScript_Snorlax {
+
+	lockall
+
+	checkitem(ITEM_POKE_PISTOLA)
+
+	msgbox(format("Uno Snorlax addormentato blocca l'ingresso."))
+
+	if (var(VAR_RESULT)) {
+		
+		msgbox(format("Vuoi sparargli con la PokéPistola?"), MSGBOX_YESNO)
+
+		if (var(VAR_RESULT)) {
+			msgbox("Gas spara a Snorlax con la PokéPistola\p
+...\p
+La pellaccia di Snorlax respinge il proiettile, ma Snorlax si sveglia e attacca!")
+
+		waitse
+		playmoncry(SPECIES_SNORLAX, CRY_MODE_ENCOUNTER)
+		delay(40)
+		waitmoncry
+		setwildbattle(SPECIES_SNORLAX, 40, ITEM_LEFTOVERS)
+		specialvar(VAR_RESULT, GetBattleOutcome)
+
+		if (var(VAR_RESULT)== B_OUTCOME_WON){
+			call(Won_or_Caught)
+			call(FLAG_BATTLED_SNORLAX)
+		}
+		elif (var(VAR_RESULT)== B_OUTCOME_CAUGHT){
+			call(Won_or_Caught)
+			setflag(FLAG_BATTLED_SNORLAX)
+		}
+		elif (var(VAR_RESULT)== B_OUTCOME_RAN){
+			call(RanAway)
+		}
+		elif (var(VAR_RESULT)== B_OUTCOME_PLAYER_TELEPORTED){
+			call(RanAway)
+		}
+	}}
+
+	waitmessage
+	releaseall
+	
+}
+
+script Won_or_Caught {
+	fadescreen(FADE_TO_BLACK)
+	removeobject(2)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}
+
+script RanAway {
+	msgbox("Snorlax torna a dormire.")
+	return
+}
+
 movement RiminiTown_Movement_GasVersoSte1 {
 	walk_up*7
 }

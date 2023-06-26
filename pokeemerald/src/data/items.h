@@ -1382,12 +1382,12 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_071] =
+    [ITEM_POKE_PISTOLA] =
     {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
+        .name = _("Poke Pistola"),
+        .itemId = ITEM_POKE_PISTOLA,
         .price = 0,
-        .description = sDummyDesc,
+        .description = sPokePistolaDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

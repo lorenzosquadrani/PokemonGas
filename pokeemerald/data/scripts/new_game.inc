@@ -114,14 +114,6 @@ EventScript_ResetAllBerries::
 
 EventScript_ResetAllMapFlags::
 
-	@ PER ATTIVARE IL POKEDEX REGIONALE + NAZIONALE
-	setflag FLAG_ADVENTURE_STARTED
-	setflag FLAG_SYS_POKEDEX_GET
-	special SetUnlockedPokedexFlags
-	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
-	setflag FLAG_SYS_NATIONAL_DEX
-	special EnableNationalPokedex
-
 	@ PER ATTIVARE LE SCARPE DA CORSA
 	setflag FLAG_SYS_B_DASH
 
