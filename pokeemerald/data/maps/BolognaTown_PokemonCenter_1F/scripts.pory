@@ -1,0 +1,43 @@
+raw `
+.set LOCALID_NURSE, 1
+
+BolognaTown_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, BolognaTown_PokemonCenter_1F_OnTransition
+	.byte 0
+
+BolognaTown_PokemonCenter_1F_OnTransition:
+	setrespawn HEAL_LOCATION_BOLOGNA_TOWN
+	end
+
+BolognaTown_PokemonCenter_1F_EventScript_Nurse::
+	setvar VAR_0x800B, LOCALID_NURSE
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+`
+
+script BolognaTown_PokemonCenter_1F_EventScript_Gentleman {
+	msgbox(format("Sono Guccini. Dio è morto."))
+	end
+}
+
+script BolognaTown_PokemonCenter_1F_EventScript_Boy {
+
+	checkitem(ITEM_MACH_BIKE)
+	if (var(VAR_RESULT)){
+		msgbox(format("Ehi amico, fico quel penny board!"))
+	}
+	else {
+		msgbox(format("Cazzo guardi, vuoi ciucciarmelo?"))
+	}
+	
+	end
+}
+
+script BolognaTown_PokemonCenter_1F_EventScript_Girl {
+	msgbox(format("Scusa mio fratello, è proprio rude. Rispetta solo
+quelli che hanno uno skateboard."))
+	end
+}
