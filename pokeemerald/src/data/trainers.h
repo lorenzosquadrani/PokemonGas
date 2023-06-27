@@ -181,16 +181,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern4),
     },
 
-    [TRAINER_DECLAN] =
+    [TRAINER_GAIA] =
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .trainerName = _("DECLAN"),
+        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerName = _("GAIA"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Declan),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Gaia),
     },
 
     [TRAINER_GRUNT_RUSTURF_TUNNEL] =

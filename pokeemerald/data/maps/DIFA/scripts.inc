@@ -1,4 +1,4 @@
-DIFA_MapScripts::
+gitDIFA_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, DIFA_OnTransition
 	.byte 0
 
