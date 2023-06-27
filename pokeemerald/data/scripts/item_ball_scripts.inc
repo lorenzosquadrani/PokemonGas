@@ -621,3 +621,15 @@ MagmaHideout_4F_EventScript_ItemMaxRevive::
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope::
 	finditem ITEM_ESCAPE_ROPE
 	end
+
+WeirdCave_EventScript_WaterStone::
+	finditem ITEM_WATER_STONE
+	end
+
+WeirdCave_EventScript_FireStone::
+	finditem ITEM_FIRE_STONE
+	end
+
+WeirdCave_EventScript_ThunderStone::
+	finditem ITEM_THUNDER_STONE
+	end

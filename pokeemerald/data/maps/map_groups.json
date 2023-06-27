@@ -400,7 +400,8 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "RiminiTown_CovoGnassi"
+    "RiminiTown_CovoGnassi",
+    "WeirdCave"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

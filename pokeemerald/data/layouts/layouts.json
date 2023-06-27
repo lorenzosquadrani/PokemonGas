@@ -4260,6 +4260,16 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/RiminiMare_PokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/RiminiMare_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_WEIRD_CAVE",
+      "name": "WeirdCave_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/WeirdCave/border.bin",
+      "blockdata_filepath": "data/layouts/WeirdCave/map.bin"
     }
   ]
 }

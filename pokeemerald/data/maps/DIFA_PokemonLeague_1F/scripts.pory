@@ -32,7 +32,7 @@ DIFA_PokemonLeague_1F_EventScript_Clerk::
 	.align 2
 DIFA_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_POTION
-	.2byte ITEM_REVIVE
+	.2byte ITEM_ELIXIR
 	.2byte ITEM_NONE
 	release
 	end
@@ -193,6 +193,14 @@ script DIFA_PokemonLeague_1F_EventScript_Filo {
 
 script DIFA_PokemonLeague_1F_EventScript_Cami {
 	msgbox(format("CAMI: Forza Gas!"))
+	end
+}
+
+script DIFA_PokemonLeague_1F_EventScript_Taglia{
+	msgbox(format("MCP: Oh bella Gas. Occhio che ovviamente se cominci la laurea non puoi tornare indietro.\p
+...\p
+Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."))
+	giveitem(ITEM_REVIVE, 5)
 	end
 }
 

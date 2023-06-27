@@ -371,6 +371,7 @@
 #define MAP_ALTERING_CAVE                            (106 | (22 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (22 << 8))
 #define MAP_RIMINI_TOWN_COVO_GNASSI                  (108 | (22 << 8))
+#define MAP_WEIRD_CAVE                               (109 | (22 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1       (0 | (23 << 8))
