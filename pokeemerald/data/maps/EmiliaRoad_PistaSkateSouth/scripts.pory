@@ -53,10 +53,10 @@ EmiliaRoad_PistaSkateSouth_EventScript_ClearCyclingRoad::
 	releaseall
 	end
 
-EmiliaRoad_PistaSkateNorth_Text_GoAllOutOnCyclingRoad:
+EmiliaRoad_PistaSkateSouth_Text_GoAllOutOnCyclingRoad:
 	.string "Circolare.$"
 
-EmiliaRoad_PistaSkateNorth_Text_TooDangerousToWalk:
+EmiliaRoad_PistaSkateSouth_Text_TooDangerousToWalk:
 	.string "Scusa giovanotto.\n"
 	.string "Dove credi di andare senza\n"
 	.string "uno skateboard?$"
