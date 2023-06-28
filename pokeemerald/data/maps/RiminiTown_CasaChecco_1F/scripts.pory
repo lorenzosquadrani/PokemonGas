@@ -27,7 +27,7 @@ Sì, mia mamma fa i pompini al proprietario, OK?! Prendilo e basta."))
             msgbox(format("Che fatica"))
         }
         elif(var(VAR_RESULT)==1){
-            msgbox(format("Porca vacca"))
+            msgbox(format("Dio madonna..."))
         }
         elif(var(VAR_RESULT)==2){
             msgbox(format("Miseriaccia"))

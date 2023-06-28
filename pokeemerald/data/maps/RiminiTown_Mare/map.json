@@ -107,6 +107,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RiminiTown_Mare_EventScript_CartelloCasaChecco"
+    }
   ]
 }

@@ -30,3 +30,10 @@ script RiminiTown_Mare_EventScript_TipaInAcqua {
     closemessage
     releaseall
 }
+
+script RiminiTown_Mare_EventScript_CartelloCasaChecco {
+    lockall
+    msgbox(format("Casa di Checco"))
+    closemessage
+    releaseall
+}
