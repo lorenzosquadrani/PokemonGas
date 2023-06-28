@@ -37,3 +37,10 @@ script RiminiTown_Mare_EventScript_CartelloCasaChecco {
     closemessage
     releaseall
 }
+
+script RiminiTown_Mare_EventScript_SkateShop {
+    lockall
+    msgbox(format("Negozio di Skateboards"))
+    closemessage
+    releaseall
+}

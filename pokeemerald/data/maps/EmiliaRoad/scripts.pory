@@ -146,10 +146,10 @@ EmiliaRoad_Text_ChallengeReactionWorst:
 `
 
 text EmiliaRoad_Text_RatedForNumberOfCollisions {
-	"Ehi, amico! Benvenuto nella nuova pista da skate.\p
+	format("Ehi, amico! Benvenuto nella nuova pista da skate.\p
 Se skati da Bologna a Rimini, verrai valutato per il numero
 di collisioni e il tempo totale.\p
-C'è un bel premio per il migliore!"
+C'è un bel premio per il migliore!")
 }
 
 script EmiliaRoad_EventScript_PistaSkateSign {

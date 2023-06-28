@@ -34,6 +34,22 @@ RiminiTown_Mare_EventScript_TipaInAcqua::
 	return
 
 
+RiminiTown_Mare_EventScript_CartelloCasaChecco::
+	lockall
+	msgbox RiminiTown_Mare_EventScript_CartelloCasaChecco_Text_0
+	closemessage
+	releaseall
+	return
+
+
+RiminiTown_Mare_EventScript_SkateShop::
+	lockall
+	msgbox RiminiTown_Mare_EventScript_SkateShop_Text_0
+	closemessage
+	releaseall
+	return
+
+
 RiminiTown_Mare_EventScript_VecchioSinistra_Text_0:
 	.string "Mej un óv incù che una galena dman!$"
 
@@ -48,3 +64,9 @@ RiminiTown_Mare_EventScript_OminoVerde_Text_0:
 RiminiTown_Mare_EventScript_TipaInAcqua_Text_0:
 	.string "L'acqua bella tiepida oggi, si vede che\n"
 	.string "hanno aperto le fogne...$"
+
+RiminiTown_Mare_EventScript_CartelloCasaChecco_Text_0:
+	.string "Casa di Checco$"
+
+RiminiTown_Mare_EventScript_SkateShop_Text_0:
+	.string "Negozio di Skateboards$"

@@ -160,7 +160,9 @@ EmiliaRoad_EventScript_EmiliaRoadSign_Text_0:
 	.string "VIA EMILIA$"
 
 EmiliaRoad_Text_RatedForNumberOfCollisions::
-	.string "Ehi, amico! Benvenuto nella nuova pista da skate.\p"
-	.string "Se skati da Bologna a Rimini, verrai valutato per il numero"
-	.string "di collisioni e il tempo totale.\p"
+	.string "Ehi, amico! Benvenuto nella nuova pista\n"
+	.string "da skate.\p"
+	.string "Se skati da Bologna a Rimini, verrai\n"
+	.string "valutato per il numero di collisioni e il\l"
+	.string "tempo totale.\p"
 	.string "C'è un bel premio per il migliore!$"

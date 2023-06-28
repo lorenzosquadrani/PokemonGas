@@ -63,7 +63,7 @@ RiminiTown_CasaChecco_1F_CheccoStuff_Text_1:
 	.string "Che fatica$"
 
 RiminiTown_CasaChecco_1F_CheccoStuff_Text_2:
-	.string "Porca vacca$"
+	.string "Dio madonna...$"
 
 RiminiTown_CasaChecco_1F_CheccoStuff_Text_3:
 	.string "Miseriaccia$"

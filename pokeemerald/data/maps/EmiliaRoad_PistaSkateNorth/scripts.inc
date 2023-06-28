@@ -39,7 +39,6 @@ EmiliaRoad_PistaSkateNorth_EventScript_ClearCyclingRoad::
 EmiliaRoad_PistaSkateNorth_Text_GoAllOutOnCyclingRoad:
 	.string "Circolare.$"
 
-EmiliaRoad_PistaSkateNorth_Text_TooDangerousToWalk:
-	.string "Scusa giovanotto.\n"
-	.string "Dove credi di andare senza\n"
-	.string "uno skateboard?$"
+EmiliaRoad_PistaSkateNorth_Text_TooDangerousToWalk::
+	.string "Scusa giovanotto, dove credi di andare\n"
+	.string "senza uno skateboard?$"

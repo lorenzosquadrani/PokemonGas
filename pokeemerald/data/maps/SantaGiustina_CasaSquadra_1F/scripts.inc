@@ -4,7 +4,7 @@ SantaGiustina_CasaSquadra_1F_MapScripts::
 
 SantaGiustina_CasaSquadra_1F_EventScript_Antonia::
 	msgbox SantaGiustina_CasaSquadra_1F_EventScript_Antonia_Text_0
-	return
+	end
 
 
 SantaGiustina_CasaSquadra_1F_EventScript_Antonia_Text_0:
