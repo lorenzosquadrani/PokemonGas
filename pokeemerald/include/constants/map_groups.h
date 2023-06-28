@@ -87,13 +87,11 @@
 #define MAP_RIMINI_MARE_BATTLE_TENT_CORRIDOR    (1 | (5 << 8))
 #define MAP_RIMINI_MARE_BATTLE_TENT_BATTLE_ROOM (2 | (5 << 8))
 #define MAP_RIMINI_MARE_MART                    (3 | (5 << 8))
-#define MAP_RIMINI_MARE_POKEMON_CENTER_1F       (4 | (5 << 8))
-#define MAP_RIMINI_MARE_POKEMON_CENTER_2F       (5 | (5 << 8))
-#define MAP_RIMINI_MARE_WANDAS_HOUSE            (6 | (5 << 8))
-#define MAP_RIMINI_MARE_FRIENDSHIP_RATERS_HOUSE (7 | (5 << 8))
-#define MAP_RIMINI_MARE_HOUSE                   (8 | (5 << 8))
-#define MAP_RIMINI_MARE_NEGOZIO                 (9 | (5 << 8))
-#define MAP_RIMINI_MARE_POKEMON_CENTER          (10 | (5 << 8))
+#define MAP_RIMINI_MARE_WANDAS_HOUSE            (4 | (5 << 8))
+#define MAP_RIMINI_MARE_FRIENDSHIP_RATERS_HOUSE (5 | (5 << 8))
+#define MAP_RIMINI_MARE_HOUSE                   (6 | (5 << 8))
+#define MAP_RIMINI_MARE_NEGOZIO                 (7 | (5 << 8))
+#define MAP_RIMINI_MARE_POKEMON_CENTER          (8 | (5 << 8))
 
 // gMapGroup_IndoorPetalburg
 #define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (6 << 8))

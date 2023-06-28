@@ -2,12 +2,10 @@
 
 BolognaTown_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, BolognaTown_PokemonCenter_1F_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	.byte 0
 
 BolognaTown_PokemonCenter_1F_OnTransition:
 	setrespawn HEAL_LOCATION_BOLOGNA_TOWN
-	call Common_EventScript_UpdateBrineyLocation
 	end
 
 BolognaTown_PokemonCenter_1F_EventScript_Nurse::
@@ -19,46 +17,38 @@ BolognaTown_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 BolognaTown_PokemonCenter_1F_EventScript_Gentleman::
-	msgbox BolognaTown_PokemonCenter_1F_Text_TrainersCanUsePC, MSGBOX_NPC
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Gentleman_Text_0
 	end
+
 
 BolognaTown_PokemonCenter_1F_EventScript_Boy::
-	msgbox BolognaTown_PokemonCenter_1F_Text_PokemonCentersAreGreat, MSGBOX_NPC
+	checkitem ITEM_MACH_BIKE
+	compare VAR_RESULT, 0
+	goto_if_ne BolognaTown_PokemonCenter_1F_EventScript_Boy_2
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_1
+BolognaTown_PokemonCenter_1F_EventScript_Boy_1:
 	end
+
+BolognaTown_PokemonCenter_1F_EventScript_Boy_2:
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_0
+	goto BolognaTown_PokemonCenter_1F_EventScript_Boy_1
+
 
 BolognaTown_PokemonCenter_1F_EventScript_Girl::
-	lock
-	faceplayer
-	goto_if_set FLAG_SYS_POKEDEX_GET, BolognaTown_PokemonCenter_1F_EventScript_WirelessClubAvailable
-	msgbox BolognaTown_PokemonCenter_1F_Text_WirelessClubNotAvailable, MSGBOX_DEFAULT
-	release
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Girl_Text_0
 	end
 
-BolognaTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
-	msgbox BolognaTown_PokemonCenter_1F_Text_TradedInWirelessClub, MSGBOX_DEFAULT
-	release
-	end
 
-BolognaTown_PokemonCenter_1F_Text_TrainersCanUsePC:
-	.string "That PC in the corner there is\n"
-	.string "for any POKéMON TRAINER to use.\p"
-	.string "Naturally, that means you're welcome\n"
-	.string "to use it, too.$"
+BolognaTown_PokemonCenter_1F_EventScript_Gentleman_Text_0:
+	.string "Sono Guccini. Dio è morto.$"
 
-BolognaTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
-	.string "POKéMON CENTERS are great!\p"
-	.string "You can use their services as much\n"
-	.string "as you like, and it's all for free.\l"
-	.string "You never have to worry!$"
+BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_0:
+	.string "Ehi amico, fico quel penny board!$"
 
-BolognaTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
-	.string "The POKéMON WIRELESS CLUB on\n"
-	.string "the second floor was built recently.\p"
-	.string "But they say they're still making\n"
-	.string "adjustments.$"
+BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_1:
+	.string "Cazzo guardi, vuoi ciucciarmelo?$"
 
-BolognaTown_PokemonCenter_1F_Text_TradedInWirelessClub:
-	.string "The POKéMON WIRELESS CLUB on\n"
-	.string "the second floor was built recently.\p"
-	.string "I traded POKéMON right away.$"
-
+BolognaTown_PokemonCenter_1F_EventScript_Girl_Text_0:
+	.string "Scusa mio fratello, è proprio rude.\n"
+	.string "Rispetta solo quelli che hanno uno\l"
+	.string "skateboard.$"

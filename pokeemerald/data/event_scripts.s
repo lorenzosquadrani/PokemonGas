@@ -167,8 +167,6 @@ gStdScripts_End::
 	.include "data/maps/RiminiMare_BattleTentCorridor/scripts.inc"
 	.include "data/maps/RiminiMare_BattleTentBattleRoom/scripts.inc"
 	.include "data/maps/RiminiMare_Mart/scripts.inc"
-	.include "data/maps/RiminiMare_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/RiminiMare_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/RiminiMare_WandasHouse/scripts.inc"
 	.include "data/maps/RiminiMare_FriendshipRatersHouse/scripts.inc"
 	.include "data/maps/RiminiMare_House/scripts.inc"

@@ -119,7 +119,7 @@ script DIFA_PokemonLeague_1F_EventScript_Gaia {
 	}
 }
 
-script DIFA_PokemonLeague_1F_EventScript_Morgana {
+script DIFA_PokemonLeague_1F_EventScript_Morghi {
 	msgbox(format("MORGANA: Forza Gas!"))
 	end
 }

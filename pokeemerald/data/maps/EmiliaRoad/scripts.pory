@@ -115,6 +115,10 @@ EmiliaRoad_Text_BestRecord:
 	.string "Num di collisioni: {STR_VAR_1}\p"
 	.string "Tempo: {STR_VAR_2}$"
 
+EmiliaRoad_Text_ThereIsNoRecord:
+	.string "Il record ad oggi è…\p"
+	.string "Boh.$"
+
 EmiliaRoad_Text_CyclingChallengeResultSummary:
 	.string "Numero di collisioni:\n"
 	.string "… … {STR_VAR_1}!\p"

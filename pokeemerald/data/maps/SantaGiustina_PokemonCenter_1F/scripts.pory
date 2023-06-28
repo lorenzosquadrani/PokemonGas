@@ -33,12 +33,3 @@ script SantaGiustina_PokemonCenter_1F_EventScript_Gentleman {
 	msgbox(format("Santa Giustina caput mundi."))
 	end
 }
-
-
-SantaGiustina_PokemonCenter_1F_EventScript_Woman::
-	msgbox SantaGiustina_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether, MSGBOX_NPC
-	end
-
-SantaGiustina_PokemonCenter_1F_EventScript_Gentleman::
-	msgbox SantaGiustina_PokemonCenter_1F_Text_TrainersShouldRestToo, MSGBOX_NPC
-	end

@@ -1,22 +1,13 @@
 .set LOCALID_NURSE, 1
-.set LOCALID_GUARD_1, 3
-.set LOCALID_GUARD_2, 4
 
 DIFA_PokemonLeague_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, DIFA_PokemonLeague_1F_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	.byte 0
 
 DIFA_PokemonLeague_1F_OnTransition:
 	setrespawn HEAL_LOCATION_DIFA_POKEMON_LEAGUE
 	setflag FLAG_LANDMARK_POKEMON_LEAGUE
-	call_if_unset FLAG_ENTERED_ELITE_FOUR, DIFA_PokemonLeague_1F_EventScript_GuardsBlockDoor
 	end
-
-DIFA_PokemonLeague_1F_EventScript_GuardsBlockDoor::
-	setobjectxyperm LOCALID_GUARD_1, 9, 2
-	setobjectxyperm LOCALID_GUARD_2, 10, 2
-	return
 
 DIFA_PokemonLeague_1F_EventScript_Nurse::
 	setvar VAR_0x800B, LOCALID_NURSE
@@ -38,106 +29,285 @@ DIFA_PokemonLeague_1F_EventScript_Clerk::
 
 	.align 2
 DIFA_PokemonLeague_1F_Pokemart:
-	.2byte ITEM_ULTRA_BALL
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_MAX_POTION
-	.2byte ITEM_FULL_RESTORE
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
-	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_POTION
+	.2byte ITEM_ELIXIR
 	.2byte ITEM_NONE
 	release
 	end
 
-@ The door guards only check for FLAG_BADGE06_GET because Winonas badge is the only one that can be skipped
-@ Its assumed the player has the remaining badges
-DIFA_PokemonLeague_1F_EventScript_DoorGuard::
-	lockall
-	goto_if_set FLAG_ENTERED_ELITE_FOUR, DIFA_PokemonLeague_1F_EventScript_GoForth
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-	call_if_ge VAR_TEMP_0, 11, DIFA_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromRight
-	call_if_le VAR_TEMP_0, 8, DIFA_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromLeft
-	message DIFA_PokemonLeague_1F_Text_MustHaveAllGymBadges
-	waitmessage
-	delay 120
-	goto_if_unset FLAG_BADGE06_GET, DIFA_PokemonLeague_1F_EventScript_NotAllBadges
-	closemessage
-	applymovement LOCALID_GUARD_1, DIFA_PokemonLeague_1F_Movement_LeftGuardOutOfWay
-	applymovement LOCALID_GUARD_2, DIFA_PokemonLeague_1F_Movement_RightGuardOutOfWay
-	waitmovement 0
-	delay 10
-	playfanfare MUS_OBTAIN_BADGE
-	message DIFA_PokemonLeague_1F_Text_GoForth
-	waitmessage
-	waitfanfare
-	closemessage
-	copyobjectxytoperm LOCALID_GUARD_1
-	copyobjectxytoperm LOCALID_GUARD_2
-	setflag FLAG_ENTERED_ELITE_FOUR
-	releaseall
+DIFA_PokemonLeague_1F_EventScript_Squadra::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Squadra_Text_0
+	delay 30
+	applymovement 17, Common_Movement_ExclamationMark
+	msgbox DIFA_PokemonLeague_1F_EventScript_Squadra_Text_1
 	end
 
-DIFA_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromRight::
-	applymovement OBJ_EVENT_ID_PLAYER, DIFA_PokemonLeague_1F_Movement_MoveToFrontFromRight
-	waitmovement 0
+
+DIFA_PokemonLeague_1F_EventScript_Tommi::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Tommi_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq DIFA_PokemonLeague_1F_EventScript_Tommi_2
+	call DIFA_PokemonLeague_1F_EventScript_InsegnaMosse
+	end
+
+DIFA_PokemonLeague_1F_EventScript_Tommi_2:
+	msgbox DIFA_PokemonLeague_1F_EventScript_Tommi_Text_1
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse::
+	goto_if_unset FLAG_SYS_POKEMON_GET, DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_2
+	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_1
+	special ChooseMonForMoveRelearner
+	waitstate
+	compare VAR_TEMP_PAR_4, PARTY_NOTHING_CHOSEN
+	goto_if_eq DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_5
+	special IsSelectedMonEgg
+	compare VAR_RESULT, TRUE
+	goto_if_eq DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_8
+	compare VAR_TEMP_PAR_5, 0
+	goto_if_eq DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_11
+	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_4
+	special TeachMoveRelearnerMove
+	waitstate
 	return
 
-DIFA_PokemonLeague_1F_EventScript_PlayerMoveToFrontFromLeft::
-	applymovement OBJ_EVENT_ID_PLAYER, DIFA_PokemonLeague_1F_Movement_MoveToFrontFromLeft
-	waitmovement 0
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_2:
+	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_0
 	return
 
-DIFA_PokemonLeague_1F_EventScript_NotAllBadges::
-	playse SE_FAILURE
-	msgbox DIFA_PokemonLeague_1F_Text_HaventObtainedAllBadges, MSGBOX_DEFAULT
-	releaseall
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_5:
+	return
+
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_8:
+	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_2
+	return
+
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_11:
+	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_3
+	return
+
+
+DIFA_PokemonLeague_1F_EventScript_Gaia::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq DIFA_PokemonLeague_1F_EventScript_Gaia_1
+	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_2
+	trainerbattle_single TRAINER_GAIA, DIFA_PokemonLeague_1F_EventScript_Gaia_Text_3, DIFA_PokemonLeague_1F_EventScript_Gaia_Text_4
+	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_5, MSGBOX_AUTOCLOSE
+	waitmessage
 	end
 
-DIFA_PokemonLeague_1F_EventScript_GoForth::
-	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
-	waitmovement 0
-	msgbox DIFA_PokemonLeague_1F_Text_GoForth, MSGBOX_DEFAULT
-	closemessage
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	releaseall
+DIFA_PokemonLeague_1F_EventScript_Gaia_1:
+	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_1
 	end
 
-DIFA_PokemonLeague_1F_Movement_MoveToFrontFromRight:
-	walk_down
-	walk_left
-	walk_in_place_faster_up
-	step_end
 
-DIFA_PokemonLeague_1F_Movement_MoveToFrontFromLeft:
-	walk_down
-	walk_right
-	walk_in_place_faster_up
-	step_end
+DIFA_PokemonLeague_1F_EventScript_Morghi::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Morghi_Text_0
+	end
 
-DIFA_PokemonLeague_1F_Movement_LeftGuardOutOfWay:
-	walk_left
-	walk_in_place_faster_down
-	step_end
 
-DIFA_PokemonLeague_1F_Movement_RightGuardOutOfWay:
-	walk_right
-	walk_in_place_faster_down
-	step_end
+DIFA_PokemonLeague_1F_EventScript_Stoppi::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Stoppi_Text_0
+	end
 
-DIFA_PokemonLeague_1F_Text_MustHaveAllGymBadges:
-	.string "Beyond this point, only those TRAINERS\n"
-	.string "who have collected all the GYM BADGES\l"
-	.string "are permitted to enter.\p"
-	.string "TRAINER, let us confirm that you have\n"
-	.string "all the GYM BADGES.$"
 
-DIFA_PokemonLeague_1F_Text_HaventObtainedAllBadges:
-	.string "You haven't obtained all the BADGES.\p"
-	.string "If you're bound for the POKéMON\n"
-	.string "LEAGUE, you must return with them.$"
+DIFA_PokemonLeague_1F_EventScript_Peach::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Peach_Text_0
+	end
 
-DIFA_PokemonLeague_1F_Text_GoForth:
-	.string "TRAINER! Believe in yourself and your\n"
-	.string "POKéMON, and go forth!$"
 
+DIFA_PokemonLeague_1F_EventScript_Domi::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Domi_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq DIFA_PokemonLeague_1F_EventScript_Domi_2
+	msgbox DIFA_PokemonLeague_1F_EventScript_Domi_Text_2
+DIFA_PokemonLeague_1F_EventScript_Domi_1:
+	end
+
+DIFA_PokemonLeague_1F_EventScript_Domi_2:
+	msgbox DIFA_PokemonLeague_1F_EventScript_Domi_Text_1
+	goto DIFA_PokemonLeague_1F_EventScript_Domi_1
+
+
+DIFA_PokemonLeague_1F_EventScript_Checco::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Checco_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Simo::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Simo_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Dalia::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Dalia_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Janko::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Janko_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Sarah::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Sarah_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Diego::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Diego_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Mati::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Mati_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Filo::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Filo_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Cami::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Cami_Text_0
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Taglia::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0
+	giveitem ITEM_REVIVE, 5
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Squadra_Text_0:
+	.string "Bella Gassi, felice di vedere che sei\n"
+	.string "arrivato fino a qua.\p"
+	.string "Spero che la tua squadra sia decente,\n"
+	.string "perché non sarà facile laurearsi.\l"
+	.string "Giusto perché sono buono, ho messo che\l"
+	.string "i professori non possono usare\l"
+	.string "strumenti per curare i Pokémons.$"
+
+DIFA_PokemonLeague_1F_EventScript_Squadra_Text_1:
+	.string "Come dici? Nei negozi trovi solo Pozioni?\p"
+	.string "AHAH devo aver dimenticato di mettere le altre cure...$"
+
+DIFA_PokemonLeague_1F_EventScript_Tommi_Text_0:
+	.string "Daje Gassi, hai ancora bisogno di\n"
+	.string "qualche mossa?$"
+
+DIFA_PokemonLeague_1F_EventScript_Tommi_Text_1:
+	.string "Ok, se hai bisogno chiedi.$"
+
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_0:
+	.string "Peccato che non hai un cazzo di\n"
+	.string "Pokémon, Gassi.$"
+
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_1:
+	.string "A quale Pokémon vuoi insegnarla?$"
+
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_2:
+	.string "Mi pigli per il culo Gassi? Con un uovo se\n"
+	.string "vuoi ci faccio la frittata.$"
+
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_3:
+	.string "Mmh, non ho niente da insegnare al\n"
+	.string "ragazzo, è ancora troppo giovane.$"
+
+DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_4:
+	.string "Quale mossa vuoi che impari?$"
+
+DIFA_PokemonLeague_1F_EventScript_Gaia_Text_0:
+	.string "GAIA: Ciao Gas! Vuoi allenarti per la\n"
+	.string "laurea con i miei gabbiani?$"
+
+DIFA_PokemonLeague_1F_EventScript_Gaia_Text_1:
+	.string "Ok, in bocca al lupo allora.$"
+
+DIFA_PokemonLeague_1F_EventScript_Gaia_Text_2:
+	.string "Molto bene, cominciamo!$"
+
+DIFA_PokemonLeague_1F_EventScript_Gaia_Text_3:
+	.string "Te faccio er culo.$"
+
+DIFA_PokemonLeague_1F_EventScript_Gaia_Text_4:
+	.string "I miei poveri gabbiani...$"
+
+DIFA_PokemonLeague_1F_EventScript_Gaia_Text_5:
+	.string "Wow, non male Gas! Possiamo rifarlo\n"
+	.string "quando vuoi.$"
+
+DIFA_PokemonLeague_1F_EventScript_Morghi_Text_0:
+	.string "MORGANA: Forza Gas!$"
+
+DIFA_PokemonLeague_1F_EventScript_Stoppi_Text_0:
+	.string "STOPPI: Sono la più figa.$"
+
+DIFA_PokemonLeague_1F_EventScript_Peach_Text_0:
+	.string "PEACH: settemiladuecentouno,\n"
+	.string "settemiladuecentodue, sett... Oh Gas!\p"
+	.string "In bocca al lupo per la laurea!$"
+
+DIFA_PokemonLeague_1F_EventScript_Domi_Text_0:
+	.string "DOMI: Ciao Gas! Hai visto che figo il mio\n"
+	.string "sito web personale?$"
+
+DIFA_PokemonLeague_1F_EventScript_Domi_Text_1:
+	.string "Come no?! Dacci un'occhiata, l'indirizzo\n"
+	.string "è domingoranieri.com$"
+
+DIFA_PokemonLeague_1F_EventScript_Domi_Text_2:
+	.string "Figo eh? Daje con sta laurea.$"
+
+DIFA_PokemonLeague_1F_EventScript_Checco_Text_0:
+	.string "CHECCO: Il mio sito web fa schifo in\n"
+	.string "confronto a quello di domi...$"
+
+DIFA_PokemonLeague_1F_EventScript_Simo_Text_0:
+	.string "SIMO: Chissà quale Pokémon farebbe i\n"
+	.string "pompini migliori...$"
+
+DIFA_PokemonLeague_1F_EventScript_Dalia_Text_0:
+	.string "DALIA: sono palesemente più figa di\n"
+	.string "Stoppi, ma non so perché lei è molto più\l"
+	.string "hot$"
+
+DIFA_PokemonLeague_1F_EventScript_Janko_Text_0:
+	.string "JANKO: Ehi Gas, ho saputo che quel\n"
+	.string "coglione di Squadra ti ha dato solo\l"
+	.string "Pozioni per curare i Pokémons. Niente\l"
+	.string "panico, c'è qui il Dottore per te. Se\l"
+	.string "vuoi curare i Pokémons basta che fai\l"
+	.string "Start, Pokémon, selezioni quello che\l"
+	.string "vuoi curare, poi clicchi su Libera. Se ti\l"
+	.string "chiede conferma fai SÌ, mi raccomando.$"
+
+DIFA_PokemonLeague_1F_EventScript_Sarah_Text_0:
+	.string "SARAH: Lo sapevi che Sarah fa rima con\n"
+	.string "baldracca?$"
+
+DIFA_PokemonLeague_1F_EventScript_Diego_Text_0:
+	.string "DIEGO: In bocca al lupo per la laurea\n"
+	.string "Gas!$"
+
+DIFA_PokemonLeague_1F_EventScript_Mati_Text_0:
+	.string "MATI: Che bello che ti laurei Gas, buona\n"
+	.string "fortuna!$"
+
+DIFA_PokemonLeague_1F_EventScript_Filo_Text_0:
+	.string "FILO: Dirò una sola cosa campione:\n"
+	.string "SPINGERE.$"
+
+DIFA_PokemonLeague_1F_EventScript_Cami_Text_0:
+	.string "CAMI: Forza Gas!$"
+
+DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0:
+	.string "MCP: Oh bella Gas. Occhio che\n"
+	.string "ovviamente se cominci la laurea non\l"
+	.string "puoi tornare indietro.\p"
+	.string "...\p"
+	.string "Dio santo sono in ansia per te. Tò tieni\n"
+	.string "sti revitalizzanti che mi fai pietà.$"

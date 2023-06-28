@@ -206,6 +206,72 @@ RiminiTown_EventScript_DoveCazzo::
 	return
 
 
+RiminiTown_EventScript_Snorlax::
+	lockall
+	checkitem ITEM_POKE_PISTOLA
+	msgbox RiminiTown_EventScript_Snorlax_Text_0
+	compare VAR_RESULT, 0
+	goto_if_ne RiminiTown_EventScript_Snorlax_2
+RiminiTown_EventScript_Snorlax_1:
+	waitmessage
+	releaseall
+	return
+
+RiminiTown_EventScript_Snorlax_2:
+	msgbox RiminiTown_EventScript_Snorlax_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne RiminiTown_EventScript_Snorlax_4
+	goto RiminiTown_EventScript_Snorlax_1
+
+RiminiTown_EventScript_Snorlax_4:
+	msgbox RiminiTown_EventScript_Snorlax_Text_2
+	waitse
+	playmoncry SPECIES_SNORLAX, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_SNORLAX, 40, ITEM_LEFTOVERS
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq RiminiTown_EventScript_Snorlax_6
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq RiminiTown_EventScript_Snorlax_7
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq RiminiTown_EventScript_Snorlax_8
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq RiminiTown_EventScript_Snorlax_9
+	goto RiminiTown_EventScript_Snorlax_1
+
+RiminiTown_EventScript_Snorlax_6:
+	call Won_or_Caught
+	call FLAG_BATTLED_SNORLAX
+	goto RiminiTown_EventScript_Snorlax_1
+
+RiminiTown_EventScript_Snorlax_7:
+	call Won_or_Caught
+	setflag FLAG_BATTLED_SNORLAX
+	goto RiminiTown_EventScript_Snorlax_1
+
+RiminiTown_EventScript_Snorlax_8:
+	call RanAway
+	goto RiminiTown_EventScript_Snorlax_1
+
+RiminiTown_EventScript_Snorlax_9:
+	call RanAway
+	goto RiminiTown_EventScript_Snorlax_1
+
+
+Won_or_Caught::
+	fadescreen FADE_TO_BLACK
+	removeobject 2
+	fadescreen FADE_FROM_BLACK
+	return
+
+
+RanAway::
+	msgbox RanAway_Text_0
+	return
+
+
 RiminiTown_Movement_GasVersoSte1:
 	walk_up
 	walk_up
@@ -345,6 +411,21 @@ RiminiTown_EventScript_NeedPokemonTriggerDown_Text_0:
 RiminiTown_EventScript_DoveCazzo_Text_0:
 	.string "Ma dove cazzo vai cojone.\p"
 	.string "Non li trovi i bugs.$"
+
+RiminiTown_EventScript_Snorlax_Text_0:
+	.string "Uno Snorlax addormentato blocca\n"
+	.string "l'ingresso.$"
+
+RiminiTown_EventScript_Snorlax_Text_1:
+	.string "Vuoi sparargli con la PokéPistola?$"
+
+RiminiTown_EventScript_Snorlax_Text_2:
+	.string "Gas spara a Snorlax con la PokéPistola\p"
+	.string "...\p"
+	.string "La pellaccia di Snorlax respinge il proiettile, ma Snorlax si sveglia e attacca!$"
+
+RanAway_Text_0:
+	.string "Snorlax torna a dormire.$"
 
 RiminiTown_Text_ANDREAGASPARI::
 	.string "ANDREA GASPARI!\p"

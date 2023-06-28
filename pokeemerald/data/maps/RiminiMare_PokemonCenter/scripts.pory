@@ -1,8 +1,8 @@
 raw `
 .set LOCALID_NURSE, 1
 
-RiminiMare_PokemonCenter_1F_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, SantaGiustina_PokemonCenter_1F_OnTransition
+RiminiMare_PokemonCenter_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RiminiMare_PokemonCenter_1F_OnTransition
 	.byte 0
 
 RiminiMare_PokemonCenter_1F_OnTransition:
