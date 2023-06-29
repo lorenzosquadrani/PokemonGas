@@ -230,6 +230,7 @@ RiminiTown_EventScript_Snorlax_4:
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_SNORLAX, 40, ITEM_LEFTOVERS
+	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq RiminiTown_EventScript_Snorlax_6
@@ -422,7 +423,9 @@ RiminiTown_EventScript_Snorlax_Text_1:
 RiminiTown_EventScript_Snorlax_Text_2:
 	.string "Gas spara a Snorlax con la PokéPistola\p"
 	.string "...\p"
-	.string "La pellaccia di Snorlax respinge il proiettile, ma Snorlax si sveglia e attacca!$"
+	.string "La pellaccia di Snorlax respinge il\n"
+	.string "proiettile, ma Snorlax si sveglia e\l"
+	.string "attacca!$"
 
 RanAway_Text_0:
 	.string "Snorlax torna a dormire.$"

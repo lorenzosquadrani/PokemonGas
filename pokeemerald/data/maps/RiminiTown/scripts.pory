@@ -234,15 +234,16 @@ script RiminiTown_EventScript_Snorlax {
 		msgbox(format("Vuoi sparargli con la PokéPistola?"), MSGBOX_YESNO)
 
 		if (var(VAR_RESULT)) {
-			msgbox("Gas spara a Snorlax con la PokéPistola\p
+			msgbox(format("Gas spara a Snorlax con la PokéPistola\p
 ...\p
-La pellaccia di Snorlax respinge il proiettile, ma Snorlax si sveglia e attacca!")
+La pellaccia di Snorlax respinge il proiettile, ma Snorlax si sveglia e attacca!"))
 
 		waitse
 		playmoncry(SPECIES_SNORLAX, CRY_MODE_ENCOUNTER)
 		delay(40)
 		waitmoncry
 		setwildbattle(SPECIES_SNORLAX, 40, ITEM_LEFTOVERS)
+		dowildbattle
 		specialvar(VAR_RESULT, GetBattleOutcome)
 
 		if (var(VAR_RESULT)== B_OUTCOME_WON){

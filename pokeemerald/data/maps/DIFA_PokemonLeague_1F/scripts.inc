@@ -36,10 +36,12 @@ DIFA_PokemonLeague_1F_Pokemart:
 	end
 
 DIFA_PokemonLeague_1F_EventScript_Squadra::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Squadra_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Squadra_Text_0, MSGBOX_NPC
 	delay 30
-	applymovement 17, Common_Movement_ExclamationMark
-	msgbox DIFA_PokemonLeague_1F_EventScript_Squadra_Text_1
+	applymovement 16, Common_Movement_ExclamationMark
+	msgbox DIFA_PokemonLeague_1F_EventScript_Squadra_Text_1, MSGBOX_NPC
+	waitmessage
+	release
 	end
 
 
@@ -51,7 +53,7 @@ DIFA_PokemonLeague_1F_EventScript_Tommi::
 	end
 
 DIFA_PokemonLeague_1F_EventScript_Tommi_2:
-	msgbox DIFA_PokemonLeague_1F_EventScript_Tommi_Text_1
+	msgbox DIFA_PokemonLeague_1F_EventScript_Tommi_Text_1, MSGBOX_NPC
 	end
 
 
@@ -73,57 +75,62 @@ DIFA_PokemonLeague_1F_EventScript_InsegnaMosse::
 	return
 
 DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_2:
-	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_0, MSGBOX_NPC
 	return
 
 DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_5:
 	return
 
 DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_8:
-	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_2
+	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_2, MSGBOX_NPC
 	return
 
 DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_11:
-	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_3
+	msgbox DIFA_PokemonLeague_1F_EventScript_InsegnaMosse_Text_3, MSGBOX_NPC
 	return
 
 
 DIFA_PokemonLeague_1F_EventScript_Gaia::
+	lock
+	faceplayer
 	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq DIFA_PokemonLeague_1F_EventScript_Gaia_1
+	goto_if_eq DIFA_PokemonLeague_1F_EventScript_Gaia_2
 	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_2
 	trainerbattle_single TRAINER_GAIA, DIFA_PokemonLeague_1F_EventScript_Gaia_Text_3, DIFA_PokemonLeague_1F_EventScript_Gaia_Text_4
-	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_5, MSGBOX_AUTOCLOSE
-	waitmessage
+	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_5, MSGBOX_NPC
+	release
 	end
 
-DIFA_PokemonLeague_1F_EventScript_Gaia_1:
+DIFA_PokemonLeague_1F_EventScript_Gaia_2:
 	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_1
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Morghi::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Morghi_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Morghi_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Stoppi::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Stoppi_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Stoppi_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Peach::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Peach_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Peach_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Domi::
+	lock
+	faceplayer
 	msgbox DIFA_PokemonLeague_1F_EventScript_Domi_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq DIFA_PokemonLeague_1F_EventScript_Domi_2
 	msgbox DIFA_PokemonLeague_1F_EventScript_Domi_Text_2
 DIFA_PokemonLeague_1F_EventScript_Domi_1:
+	release
 	end
 
 DIFA_PokemonLeague_1F_EventScript_Domi_2:
@@ -132,52 +139,52 @@ DIFA_PokemonLeague_1F_EventScript_Domi_2:
 
 
 DIFA_PokemonLeague_1F_EventScript_Checco::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Checco_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Checco_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Simo::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Simo_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Simo_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Dalia::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Dalia_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Dalia_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Janko::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Janko_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Janko_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Sarah::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Sarah_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Sarah_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Diego::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Diego_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Diego_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Mati::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Mati_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Mati_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Filo::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Filo_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Filo_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Cami::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Cami_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Cami_Text_0, MSGBOX_NPC
 	end
 
 
 DIFA_PokemonLeague_1F_EventScript_Taglia::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0, MSGBOX_NPC
 	giveitem ITEM_REVIVE, 5
 	end
 
@@ -192,8 +199,10 @@ DIFA_PokemonLeague_1F_EventScript_Squadra_Text_0:
 	.string "strumenti per curare i Pokémons.$"
 
 DIFA_PokemonLeague_1F_EventScript_Squadra_Text_1:
-	.string "Come dici? Nei negozi trovi solo Pozioni?\p"
-	.string "AHAH devo aver dimenticato di mettere le altre cure...$"
+	.string "Come dici? Nei negozi trovi solo\n"
+	.string "Pozioni?\p"
+	.string "AHAH devo aver dimenticato di mettere\n"
+	.string "le altre cure...$"
 
 DIFA_PokemonLeague_1F_EventScript_Tommi_Text_0:
 	.string "Daje Gassi, hai ancora bisogno di\n"
@@ -273,7 +282,7 @@ DIFA_PokemonLeague_1F_EventScript_Simo_Text_0:
 DIFA_PokemonLeague_1F_EventScript_Dalia_Text_0:
 	.string "DALIA: sono palesemente più figa di\n"
 	.string "Stoppi, ma non so perché lei è molto più\l"
-	.string "hot$"
+	.string "hot.$"
 
 DIFA_PokemonLeague_1F_EventScript_Janko_Text_0:
 	.string "JANKO: Ehi Gas, ho saputo che quel\n"

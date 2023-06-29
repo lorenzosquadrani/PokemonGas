@@ -39,15 +39,18 @@ DIFA_PokemonLeague_1F_Pokemart:
 `
 
 script DIFA_PokemonLeague_1F_EventScript_Squadra {
+
 	msgbox(format("Bella Gassi, felice di vedere che sei arrivato fino a qua.\p
 Spero che la tua squadra sia decente, perché non sarà facile laurearsi.
-Giusto perché sono buono, ho messo che i professori non possono usare strumenti per curare i Pokémons."))
+Giusto perché sono buono, ho messo che i professori non possono usare strumenti per curare i Pokémons."), MSGBOX_NPC)
 
 	delay(30)
-	applymovement(17, Common_Movement_ExclamationMark)
-	msgbox("Come dici? Nei negozi trovi solo Pozioni?\p
-AHAH devo aver dimenticato di mettere le altre cure...")
+	applymovement(16, Common_Movement_ExclamationMark)
+	msgbox(format("Come dici? Nei negozi trovi solo Pozioni?\p
+AHAH devo aver dimenticato di mettere le altre cure..."), MSGBOX_NPC)
+	waitmessage
 
+	release
 	end
 }
 
@@ -55,7 +58,7 @@ script DIFA_PokemonLeague_1F_EventScript_Tommi {
 	msgbox(format("Daje Gassi, hai ancora bisogno di qualche mossa?"), MSGBOX_YESNO)
 
 	if (var(VAR_RESULT)==NO) {
-		msgbox(format("Ok, se hai bisogno chiedi."))
+		msgbox(format("Ok, se hai bisogno chiedi."), MSGBOX_NPC)
 		end
 	}
 	else {
@@ -68,7 +71,7 @@ script DIFA_PokemonLeague_1F_EventScript_Tommi {
 script DIFA_PokemonLeague_1F_EventScript_InsegnaMosse {
 
 	if (flag(FLAG_SYS_POKEMON_GET)==false) {
-		msgbox(format("Peccato che non hai un cazzo di Pokémon, Gassi."))
+		msgbox(format("Peccato che non hai un cazzo di Pokémon, Gassi."), MSGBOX_NPC)
 		return
 	}
 
@@ -84,13 +87,13 @@ script DIFA_PokemonLeague_1F_EventScript_InsegnaMosse {
 
 	if(var(VAR_RESULT)==TRUE){
 		msgbox(format("Mi pigli per il culo Gassi?
-Con un uovo se vuoi ci faccio la frittata."))
+Con un uovo se vuoi ci faccio la frittata."), MSGBOX_NPC)
 		return
 	}
 
 	if(var(VAR_TEMP_PAR_5)==0) {
 		msgbox(format("Mmh, non ho niente da insegnare al ragazzo, 
-è ancora troppo giovane."))
+è ancora troppo giovane."), MSGBOX_NPC)
 		return
 	}
 		
@@ -102,6 +105,9 @@ Con un uovo se vuoi ci faccio la frittata."))
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Gaia {
+	lock
+	faceplayer
+
 	msgbox(format("GAIA: Ciao Gas! Vuoi allenarti per la laurea con i miei gabbiani?"), MSGBOX_YESNO)
 
 	if (var(VAR_RESULT)==NO) {
@@ -113,29 +119,33 @@ script DIFA_PokemonLeague_1F_EventScript_Gaia {
 		trainerbattle_single(TRAINER_GAIA, 
 							 format("Te faccio er culo."),
 							 format("I miei poveri gabbiani..."))
-		msgbox(format("Wow, non male Gas! Possiamo rifarlo quando vuoi."), MSGBOX_AUTOCLOSE)
-		waitmessage
-		end
+		msgbox(format("Wow, non male Gas! Possiamo rifarlo quando vuoi."), MSGBOX_NPC)
 	}
+
+	release
+	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Morghi {
-	msgbox(format("MORGANA: Forza Gas!"))
+	msgbox(format("MORGANA: Forza Gas!"), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Stoppi {
-	msgbox(format("STOPPI: Sono la più figa."))
+	msgbox(format("STOPPI: Sono la più figa."), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Peach {
 	msgbox(format("PEACH: settemiladuecentouno, settemiladuecentodue, sett... Oh Gas!\p
-In bocca al lupo per la laurea!"))
+In bocca al lupo per la laurea!"), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Domi {
+	lock
+	faceplayer
+
 	msgbox(format("DOMI: Ciao Gas! Hai visto che figo il mio sito web personale?"), MSGBOX_YESNO)
 
 	if (var(VAR_RESULT)==NO) {
@@ -145,21 +155,22 @@ script DIFA_PokemonLeague_1F_EventScript_Domi {
 		msgbox(format("Figo eh? Daje con sta laurea."))
 	}
 
+	release
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Checco {
-	msgbox(format("CHECCO: Il mio sito web fa schifo in confronto a quello di domi..."))
+	msgbox(format("CHECCO: Il mio sito web fa schifo in confronto a quello di domi..."), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Simo {
-	msgbox(format("SIMO: Chissà quale Pokémon farebbe i pompini migliori..."))
+	msgbox(format("SIMO: Chissà quale Pokémon farebbe i pompini migliori..."), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Dalia {
-	msgbox(format("DALIA: sono palesemente più figa di Stoppi, ma non so perché lei è molto più hot"))
+	msgbox(format("DALIA: sono palesemente più figa di Stoppi, ma non so perché lei è molto più hot."), MSGBOX_NPC)
 	end
 }
 
@@ -167,39 +178,39 @@ script DIFA_PokemonLeague_1F_EventScript_Janko {
 	msgbox(format("JANKO: Ehi Gas, ho saputo che quel coglione di Squadra ti ha dato solo Pozioni
 per curare i Pokémons.
 Niente panico, c'è qui il Dottore per te. Se vuoi curare i Pokémons basta che fai Start, Pokémon,
-selezioni quello che vuoi curare, poi clicchi su Libera. Se ti chiede conferma fai SÌ, mi raccomando."))
+selezioni quello che vuoi curare, poi clicchi su Libera. Se ti chiede conferma fai SÌ, mi raccomando."), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Sarah {
-	msgbox(format("SARAH: Lo sapevi che Sarah fa rima con baldracca?"))
+	msgbox(format("SARAH: Lo sapevi che Sarah fa rima con baldracca?"), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Diego {
-	msgbox(format("DIEGO: In bocca al lupo per la laurea Gas!"))
+	msgbox(format("DIEGO: In bocca al lupo per la laurea Gas!"), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Mati {
-	msgbox(format("MATI: Che bello che ti laurei Gas, buona fortuna!"))
+	msgbox(format("MATI: Che bello che ti laurei Gas, buona fortuna!"), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Filo {
-	msgbox(format("FILO: Dirò una sola cosa campione: SPINGERE."))
+	msgbox(format("FILO: Dirò una sola cosa campione: SPINGERE."), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Cami {
-	msgbox(format("CAMI: Forza Gas!"))
+	msgbox(format("CAMI: Forza Gas!"), MSGBOX_NPC)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Taglia{
 	msgbox(format("MCP: Oh bella Gas. Occhio che ovviamente se cominci la laurea non puoi tornare indietro.\p
 ...\p
-Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."))
+Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."), MSGBOX_NPC)
 	giveitem(ITEM_REVIVE, 5)
 	end
 }
