@@ -1026,3 +1026,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RiminiMare_PokemonCenter/scripts.inc"
 
 	.include "data/maps/WeirdCave/scripts.inc"
+
+	.include "data/maps/BolognaTown_SantaMariaMaggiore/scripts.inc"

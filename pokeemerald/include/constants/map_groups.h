@@ -72,9 +72,10 @@
 #define MAP_RIMINI_TOWN_CASA_CHECCO_1F (5 | (1 << 8))
 
 // gMapGroup_IndoorBologna
-#define MAP_BOLOGNA_TOWN_POKEMON_CENTER_1F (0 | (2 << 8))
-#define MAP_BOLOGNA_TOWN_MART              (1 | (2 << 8))
-#define MAP_BOLOGNA_TOWN_CASA_SILVIA       (2 | (2 << 8))
+#define MAP_BOLOGNA_TOWN_POKEMON_CENTER_1F    (0 | (2 << 8))
+#define MAP_BOLOGNA_TOWN_MART                 (1 | (2 << 8))
+#define MAP_BOLOGNA_TOWN_CASA_SILVIA          (2 | (2 << 8))
+#define MAP_BOLOGNA_TOWN_SANTA_MARIA_MAGGIORE (3 | (2 << 8))
 
 // gMapGroup_IndoorSanta
 #define MAP_SANTA_GIUSTINA_POKEMON_CENTER_1F (0 | (3 << 8))
