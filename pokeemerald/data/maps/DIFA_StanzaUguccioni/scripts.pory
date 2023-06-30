@@ -1,0 +1,79 @@
+raw `
+
+DIFA_StanzaUguccioni_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, DIFA_StanzaUguccioni_OnLoad
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, DIFA_StanzaUguccioni_OnWarp
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, DIFA_StanzaUguccioni_OnFrame
+	.byte 0
+
+DIFA_StanzaUguccioni_OnLoad:
+	call_if_set FLAG_DEFEATED_ELITE_4_UGUCCIONI, DIFA_StanzaUguccioni_EventScript_ResetAdvanceToNextRoom
+	call_if_eq VAR_ELITE_4_STATE, 1, DIFA_StanzaUguccioni_EventScript_CloseDoor
+	end
+
+DIFA_StanzaUguccioni_EventScript_ResetAdvanceToNextRoom::
+	call PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom
+	return
+
+DIFA_StanzaUguccioni_EventScript_CloseDoor::
+	call PokemonLeague_EliteFour_EventScript_CloseDoor
+	return
+
+DIFA_StanzaUguccioni_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, DIFA_StanzaUguccioni_EventScript_PlayerTurnNorth
+	.2byte 0
+
+DIFA_StanzaUguccioni_EventScript_PlayerTurnNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+DIFA_StanzaUguccioni_OnFrame:
+	map_script_2 VAR_ELITE_4_STATE, 0, DIFA_StanzaUguccioni_EventScript_WalkInCloseDoor
+	.2byte 0
+
+DIFA_StanzaUguccioni_EventScript_WalkInCloseDoor::
+	lockall
+	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	setvar VAR_ELITE_4_STATE, 1
+	releaseall
+	end
+`
+
+script DIFA_StanzaUguccioni_EventScript_uguccioni {
+
+	lock
+	faceplayer
+	
+	if (flag(FLAG_DEFEATED_ELITE_4_UGUCCIONI)) {
+		msgbox(DIFA_StanzaUguccioni_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+	}
+	else {
+		playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+		msgbox(DIFA_StanzaUguccioni_Text_IntroSpeech, MSGBOX_DEFAULT)
+		trainerbattle_no_intro(TRAINER_UGUCCIONI, DIFA_StanzaUguccioni_Text_Defeat)
+
+		call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+		setflag(FLAG_DEFEATED_ELITE_4_UGUCCIONI)
+		msgbox(DIFA_StanzaUguccioni_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+	}
+
+	release
+	end
+}
+
+
+text DIFA_StanzaUguccioni_Text_IntroSpeech {
+	format("Buongiorno, signor Gaspari.\p
+Sono lieto, si fa per dire, di darle il benventuo al suo primo esame. 
+Per conseguire la sua laurea ovviamente dovrà passare tutti gli esami, ma non 
+si preoccupi, il mio è facile. \p
+Sono il professor UGUZZONI, e mi sono già rotto i COGLIONI. Cominciamo!")
+}
+
+text DIFA_StanzaUguccioni_Text_Defeat {
+	format("Una successione di sconfitte, ma almeno è limitata AHAH")
+}
+
+text DIFA_StanzaUguccioni_Text_PostBattleSpeech {
+	format("Ok, per me basta così Gaspari. Ti dò 30L, vai pure avanti.")
+}

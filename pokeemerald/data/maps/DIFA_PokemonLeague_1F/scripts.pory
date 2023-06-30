@@ -207,12 +207,65 @@ script DIFA_PokemonLeague_1F_EventScript_Cami {
 	end
 }
 
-script DIFA_PokemonLeague_1F_EventScript_Taglia{
-	msgbox(format("MCP: Oh bella Gas. Occhio che ovviamente se cominci la laurea non puoi tornare indietro.\p
+script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1{
+
+	applymovement(9, Common_Movement_ExclamationMark)
+	applymovement(9, Common_Movement_WalkInPlaceFasterUp)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement(0)
+
+	msgbox(format("MCP: Ehi Gas!"), MSGBOX_AUTOCLOSE)
+	waitmessage
+
+	applymovement(9, taglia_approach_player_1)
+	waitmovement(0)
+
+	msgbox(format("MCP: Occhio che ovviamente se cominci la laurea non puoi tornare indietro.\p
 ...\p
-Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."), MSGBOX_NPC)
+Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."))
 	giveitem(ITEM_REVIVE, 5)
+
+	setvar(VAR_DIFA_STATE, 1)
 	end
+}
+
+script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2{
+
+	applymovement(9, Common_Movement_ExclamationMark)
+	applymovement(9, Common_Movement_WalkInPlaceFasterUp)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement(0)
+
+	msgbox(format("MCP: Ehi Gas!"), MSGBOX_AUTOCLOSE)
+	waitmessage
+
+	applymovement(9, taglia_approach_player_2)
+	waitmovement(0)
+
+	msgbox(format("MCP: Occhio che ovviamente se cominci la laurea non puoi tornare indietro.\p
+...\p
+Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."))
+	giveitem(ITEM_REVIVE, 5)
+
+	setvar(VAR_DIFA_STATE, 1)
+	end
+}
+
+script DIFA_PokemonLeague_1F_EventScript_Taglia{
+	msgbox(format("MCP: Daje Gassi! Hai studiato anche tu sugli appunti di Sonia, vero?"), MSGBOX_NPC)
+	end
+}
+
+movement taglia_approach_player_1 {
+	walk_left
+	walk_up*2
+	walk_left
+}
+
+movement taglia_approach_player_2 {
+	walk_left
+	walk_up*2
+	walk_left*2
 }
 
 

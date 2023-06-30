@@ -363,10 +363,10 @@ const u8 gText_MatchCallDandyCharm_Juan_Pokemon[] = _("POKéMON of elegance!");
 const u8 gText_MatchCallDandyCharm_Juan_Intro1[] = _("The adulation of beautiful");
 const u8 gText_MatchCallDandyCharm_Juan_Intro2[] = _("ladies fills me with energy!");
 
-const u8 gText_MatchCallEliteFour_Sidney_Strategy[] = _("Offense over defense!");
-const u8 gText_MatchCallEliteFour_Sidney_Pokemon[] = _("The DARK side's beauties.");
-const u8 gText_MatchCallEliteFour_Sidney_Intro1[] = _("They said I was a punk, but");
-const u8 gText_MatchCallEliteFour_Sidney_Intro2[] = _("I'm one of the ELITE FOUR!");
+const u8 gText_MatchCallEliteFour_uguccioni_Strategy[] = _("Offense over defense!");
+const u8 gText_MatchCallEliteFour_uguccioni_Pokemon[] = _("The DARK side's beauties.");
+const u8 gText_MatchCallEliteFour_uguccioni_Intro1[] = _("They said I was a punk, but");
+const u8 gText_MatchCallEliteFour_uguccioni_Intro2[] = _("I'm one of the ELITE FOUR!");
 
 const u8 gText_MatchCallEliteFour_Phoebe_Strategy[] = _("Confuse and confound.");
 const u8 gText_MatchCallEliteFour_Phoebe_Pokemon[] = _("There's nothing definite.");
@@ -463,7 +463,7 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_WINONA] = MCFLAVOR(SkyTamer_Winona),
     [REMATCH_TATE_AND_LIZA] = MCFLAVOR(MysticDuo_TateAndLiza),
     [REMATCH_JUAN] = MCFLAVOR(DandyCharm_Juan),
-    [REMATCH_SIDNEY] = MCFLAVOR(EliteFour_Sidney),
+    [REMATCH_UGUCCIONI] = MCFLAVOR(EliteFour_uguccioni),
     [REMATCH_PHOEBE] = MCFLAVOR(EliteFour_Phoebe),
     [REMATCH_GLACIA] = MCFLAVOR(EliteFour_Glacia),
     [REMATCH_DRAKE] = MCFLAVOR(EliteFour_Drake),

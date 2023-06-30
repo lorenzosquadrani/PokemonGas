@@ -2470,7 +2470,7 @@ extern const u8 MatchCall_Text_Juan1[];
 extern const u8 MatchCall_Text_Juan2[];
 extern const u8 MatchCall_Text_Juan3[];
 extern const u8 MatchCall_Text_Juan4[];
-extern const u8 MatchCall_Text_Sidney[];
+extern const u8 MatchCall_Text_uguccioni[];
 extern const u8 MatchCall_Text_Phoebe[];
 extern const u8 MatchCall_Text_Glacia[];
 extern const u8 MatchCall_Text_Drake[];

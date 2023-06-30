@@ -2256,8 +2256,8 @@ MatchCall_Text_Juan4::
 	.string "When I close my eyes, I see visions\n"
 	.string "of you soaring with the melody…$"
 
-MatchCall_Text_Sidney::
-	.string "SIDNEY: Yo, {PLAYER}!\p"
+MatchCall_Text_uguccioni::
+	.string "UGUCCIONI: Yo, {PLAYER}!\p"
 	.string "If you want to battle with me\n"
 	.string "again, you come on back whenever\l"
 	.string "you like to the POKéMON LEAGUE.\p"

@@ -142,7 +142,7 @@ static const union AnimCmd *const sAnims_Gentleman[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_EliteFourSidney[] ={
+static const union AnimCmd *const sAnims_EliteFouruguccioni[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -408,7 +408,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_PSYCHIC_M] = sAnims_PsychicM,
     [TRAINER_PIC_PSYCHIC_F] = sAnims_PsychicF,
     [TRAINER_PIC_GENTLEMAN] = sAnims_Gentleman,
-    [TRAINER_PIC_ELITE_FOUR_SIDNEY] = sAnims_EliteFourSidney,
+    [TRAINER_PIC_ELITE_FOUR_UGUCCIONI] = sAnims_EliteFouruguccioni,
     [TRAINER_PIC_ELITE_FOUR_PHOEBE] = sAnims_EliteFourPhoebe,
     [TRAINER_PIC_ELITE_FOUR_GLACIA] = sAnims_EliteFourGlacia,
     [TRAINER_PIC_ELITE_FOUR_DRAKE] = sAnims_EliteFourDrake,

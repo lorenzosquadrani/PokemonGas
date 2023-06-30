@@ -1,10 +1,10 @@
 DIFA_DrakesRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, DIFA_DrakesRoom_OnFrame
 	map_script MAP_SCRIPT_ON_LOAD, DIFA_DrakesRoom_OnLoad
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, DIFA_SidneysRoom_OnWarp
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, DIFA_StanzaUguccioni_OnWarp
 	.byte 0
 
-@ Unused, Drake uses Sidneys identical OnWarp for some reason
+@ Unused, Drake uses uguccionis identical OnWarp for some reason
 DIFA_DrakesRoom_OnWarp:
 	map_script_2 VAR_TEMP_1, 0, DIFA_DrakesRoom_EventScript_PlayerTurnNorth
 	.2byte 0

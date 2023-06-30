@@ -277,7 +277,7 @@ gStdScripts_End::
 	.include "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc"
-	.include "data/maps/DIFA_SidneysRoom/scripts.inc"
+	.include "data/maps/DIFA_StanzaUguccioni/scripts.inc"
 	.include "data/maps/DIFA_PhoebesRoom/scripts.inc"
 	.include "data/maps/DIFA_GlaciasRoom/scripts.inc"
 	.include "data/maps/DIFA_DrakesRoom/scripts.inc"
@@ -574,7 +574,7 @@ EventScript_MoveMrBrineyToRoute109::
 	end
 
 DIFA_HallOfFame_EventScript_ResetEliteFour::
-	clearflag FLAG_DEFEATED_ELITE_4_SIDNEY
+	clearflag FLAG_DEFEATED_ELITE_4_UGUCCIONI
 	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
 	clearflag FLAG_DEFEATED_ELITE_4_GLACIA
 	clearflag FLAG_DEFEATED_ELITE_4_DRAKE

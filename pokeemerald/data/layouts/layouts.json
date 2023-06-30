@@ -982,14 +982,14 @@
       "blockdata_filepath": "data/layouts/SootopolisCity_Gym_B1F/map.bin"
     },
     {
-      "id": "LAYOUT_DIFA_SIDNEYS_ROOM",
-      "name": "DIFA_SidneysRoom_Layout",
+      "id": "LAYOUT_DIFA_STANZA_UGUCCIONI",
+      "name": "DIFA_StanzaUguccioni_Layout",
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/DIFA_SidneysRoom/border.bin",
-      "blockdata_filepath": "data/layouts/DIFA_SidneysRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_StanzaUguccioni/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_StanzaUguccioni/map.bin"
     },
     {
       "id": "LAYOUT_DIFA_PHOEBES_ROOM",

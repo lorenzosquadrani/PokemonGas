@@ -183,11 +183,55 @@ DIFA_PokemonLeague_1F_EventScript_Cami::
 	end
 
 
-DIFA_PokemonLeague_1F_EventScript_Taglia::
-	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0, MSGBOX_NPC
+DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1::
+	applymovement 9, Common_Movement_ExclamationMark
+	applymovement 9, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_0, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement 9, taglia_approach_player_1
+	waitmovement 0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_1
 	giveitem ITEM_REVIVE, 5
+	setvar VAR_DIFA_STATE, 1
 	end
 
+
+DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2::
+	applymovement 9, Common_Movement_ExclamationMark
+	applymovement 9, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_0, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement 9, taglia_approach_player_2
+	waitmovement 0
+	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_1
+	giveitem ITEM_REVIVE, 5
+	setvar VAR_DIFA_STATE, 1
+	end
+
+
+DIFA_PokemonLeague_1F_EventScript_Taglia::
+	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0, MSGBOX_NPC
+	end
+
+
+taglia_approach_player_1:
+	walk_left
+	walk_up
+	walk_up
+	walk_left
+	step_end
+
+taglia_approach_player_2:
+	walk_left
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	step_end
 
 DIFA_PokemonLeague_1F_EventScript_Squadra_Text_0:
 	.string "Bella Gassi, felice di vedere che sei\n"
@@ -313,10 +357,16 @@ DIFA_PokemonLeague_1F_EventScript_Filo_Text_0:
 DIFA_PokemonLeague_1F_EventScript_Cami_Text_0:
 	.string "CAMI: Forza Gas!$"
 
-DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0:
-	.string "MCP: Oh bella Gas. Occhio che\n"
-	.string "ovviamente se cominci la laurea non\l"
-	.string "puoi tornare indietro.\p"
+DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_0:
+	.string "MCP: Ehi Gas!$"
+
+DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_1:
+	.string "MCP: Occhio che ovviamente se cominci\n"
+	.string "la laurea non puoi tornare indietro.\p"
 	.string "...\p"
 	.string "Dio santo sono in ansia per te. Tò tieni\n"
 	.string "sti revitalizzanti che mi fai pietà.$"
+
+DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0:
+	.string "MCP: Daje Gassi! Hai studiato anche tu\n"
+	.string "sugli appunti di Sonia, vero?$"

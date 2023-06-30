@@ -3133,16 +3133,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Walter5),
     },
 
-    [TRAINER_SIDNEY] =
+    [TRAINER_UGUCCIONI] =
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
-        .trainerName = _("SIDNEY"),
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_UGUCCIONI,
+        .trainerName = _("UGUCCIONI"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_SETUP_FIRST_TURN,
-        .party = ITEM_CUSTOM_MOVES(sParty_Sidney),
+        .party = ITEM_CUSTOM_MOVES(sParty_uguccioni),
     },
 
     [TRAINER_PHOEBE] =

@@ -497,20 +497,20 @@ static const struct MatchCallStructTrainer sJuanMatchCallHeader =
     .textData = sJuanTextScripts
 };
 
-static const match_call_text_data_t sSidneyTextScripts[] = {
-    { MatchCall_Text_Sidney, 0xFFFF, 0xFFFF },
+static const match_call_text_data_t suguccioniTextScripts[] = {
+    { MatchCall_Text_uguccioni, 0xFFFF, 0xFFFF },
     { NULL,                  0xFFFF, 0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sSidneyMatchCallHeader =
+static const struct MatchCallStructTrainer suguccioniMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_DIFA,
-    .flag = FLAG_REMATCH_SIDNEY,
-    .rematchTableIdx = REMATCH_SIDNEY,
+    .flag = FLAG_REMATCH_UGUCCIONI,
+    .rematchTableIdx = REMATCH_UGUCCIONI,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sSidneyTextScripts
+    .textData = suguccioniTextScripts
 };
 
 static const match_call_text_data_t sPhoebeTextScripts[] = {
@@ -594,7 +594,7 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_WINONA]     = {.leader = &sWinonaMatchCallHeader},
     [MC_HEADER_TATE_LIZA]  = {.leader = &sTateLizaMatchCallHeader},
     [MC_HEADER_JUAN]       = {.leader = &sJuanMatchCallHeader},
-    [MC_HEADER_SIDNEY]     = {.leader = &sSidneyMatchCallHeader},
+    [MC_HEADER_UGUCCIONI]     = {.leader = &suguccioniMatchCallHeader},
     [MC_HEADER_PHOEBE]     = {.leader = &sPhoebeMatchCallHeader},
     [MC_HEADER_GLACIA]     = {.leader = &sGlaciaMatchCallHeader},
     [MC_HEADER_DRAKE]      = {.leader = &sDrakeMatchCallHeader},

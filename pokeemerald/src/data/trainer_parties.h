@@ -3233,7 +3233,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Walter5[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
+static const struct TrainerMonItemCustomMoves sParty_uguccioni[] = {
     {
     .iv = 250,
     .lvl = 46,
