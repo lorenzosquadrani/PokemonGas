@@ -2335,7 +2335,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_uguccioni = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Phoebe = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fraboni = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -2350,11 +2350,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Phoebe = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Phoebe,
+    .images = sPicTable_Fraboni,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glacia = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Castellani = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -2369,11 +2369,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glacia = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Glacia,
+    .images = sPicTable_Castellani,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drake = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kamencik = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -2388,7 +2388,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drake = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Drake,
+    .images = sPicTable_Kamencik,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

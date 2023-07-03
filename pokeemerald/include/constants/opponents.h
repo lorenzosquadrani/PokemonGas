@@ -263,9 +263,9 @@
 #define TRAINER_WALTER_4                    259
 #define TRAINER_WALTER_5                    260
 #define TRAINER_UGUCCIONI                      261
-#define TRAINER_PHOEBE                      262
-#define TRAINER_GLACIA                      263
-#define TRAINER_DRAKE                       264
+#define TRAINER_FRABONI                      262
+#define TRAINER_CASTELLANI                      263
+#define TRAINER_KAMENCIK                       264
 #define TRAINER_ROXANNE_1                   265
 #define TRAINER_BRAWLY_1                    266
 #define TRAINER_WATTSON_1                   267

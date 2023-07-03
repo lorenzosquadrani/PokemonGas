@@ -450,9 +450,9 @@
 #define FLAG_REMATCH_TATE_AND_LIZA           0x1A4
 // Note: FLAG_REMATCH_JUAN is handled by FLAG_ENABLE_JUAN_MATCH_CALL instead.
 #define FLAG_REMATCH_UGUCCIONI                  0x1A5
-#define FLAG_REMATCH_PHOEBE                  0x1A6
-#define FLAG_REMATCH_GLACIA                  0x1A7
-#define FLAG_REMATCH_DRAKE                   0x1A8
+#define FLAG_REMATCH_FRABONI                  0x1A6
+#define FLAG_REMATCH_CASTELLANI                  0x1A7
+#define FLAG_REMATCH_KAMENCIK                   0x1A8
 #define FLAG_REMATCH_WALLACE                 0x1A9
 
 #define FLAG_UNUSED_0x1AA                    0x1AA // Unused Flag
@@ -1325,9 +1325,9 @@
 #define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
 
 #define FLAG_DEFEATED_ELITE_4_UGUCCIONI                                0x4FB
-#define FLAG_DEFEATED_ELITE_4_PHOEBE                                0x4FC
-#define FLAG_DEFEATED_ELITE_4_GLACIA                                0x4FD
-#define FLAG_DEFEATED_ELITE_4_DRAKE                                 0x4FE
+#define FLAG_DEFEATED_ELITE_4_FRABONI                                0x4FC
+#define FLAG_DEFEATED_ELITE_4_CASTELLANI                                0x4FD
+#define FLAG_DEFEATED_ELITE_4_KAMENCIK                                 0x4FE
 
 #define FLAG_UNUSED_0x4FF                                           0x4FF // Unused Flag
 

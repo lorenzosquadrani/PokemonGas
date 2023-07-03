@@ -108,9 +108,9 @@ static void Task_WhiteBarsFade(u8);
 static void Task_GridSquares(u8);
 static void Task_AngledWipes(u8);
 static void Task_uguccioni(u8);
-static void Task_Phoebe(u8);
-static void Task_Glacia(u8);
-static void Task_Drake(u8);
+static void Task_Fraboni(u8);
+static void Task_Castellani(u8);
+static void Task_Kamencik(u8);
 static void Task_Champion(u8);
 static void Task_Aqua(u8);
 static void Task_Magma(u8);
@@ -359,9 +359,9 @@ static const TaskFunc sTasks_Main[B_TRANSITION_COUNT] =
     [B_TRANSITION_GRID_SQUARES] = Task_GridSquares,
     [B_TRANSITION_ANGLED_WIPES] = Task_AngledWipes,
     [B_TRANSITION_UGUCCIONI] = Task_uguccioni,
-    [B_TRANSITION_PHOEBE] = Task_Phoebe,
-    [B_TRANSITION_GLACIA] = Task_Glacia,
-    [B_TRANSITION_DRAKE] = Task_Drake,
+    [B_TRANSITION_FRABONI] = Task_Fraboni,
+    [B_TRANSITION_CASTELLANI] = Task_Castellani,
+    [B_TRANSITION_KAMENCIK] = Task_Kamencik,
     [B_TRANSITION_CHAMPION] = Task_Champion,
     [B_TRANSITION_AQUA] = Task_Aqua,
     [B_TRANSITION_MAGMA] = Task_Magma,
@@ -544,25 +544,25 @@ static const TransitionStateFunc sMugshot_Funcs[] =
 static const u8 sMugshotsTrainerPicIDsTable[MUGSHOTS_COUNT] =
 {
     [MUGSHOT_UGUCCIONI]   = TRAINER_PIC_ELITE_FOUR_UGUCCIONI,
-    [MUGSHOT_PHOEBE]   = TRAINER_PIC_ELITE_FOUR_PHOEBE,
-    [MUGSHOT_GLACIA]   = TRAINER_PIC_ELITE_FOUR_GLACIA,
-    [MUGSHOT_DRAKE]    = TRAINER_PIC_ELITE_FOUR_DRAKE,
+    [MUGSHOT_FRABONI]   = TRAINER_PIC_ELITE_FOUR_FRABONI,
+    [MUGSHOT_CASTELLANI]   = TRAINER_PIC_ELITE_FOUR_CASTELLANI,
+    [MUGSHOT_KAMENCIK]    = TRAINER_PIC_ELITE_FOUR_KAMENCIK,
     [MUGSHOT_CHAMPION] = TRAINER_PIC_CHAMPION_WALLACE,
 };
 static const s16 sMugshotsOpponentRotationScales[MUGSHOTS_COUNT][2] =
 {
     [MUGSHOT_UGUCCIONI] =   {0x200, 0x200},
-    [MUGSHOT_PHOEBE] =   {0x200, 0x200},
-    [MUGSHOT_GLACIA] =   {0x1B0, 0x1B0},
-    [MUGSHOT_DRAKE] =    {0x1A0, 0x1A0},
+    [MUGSHOT_FRABONI] =   {0x200, 0x200},
+    [MUGSHOT_CASTELLANI] =   {0x1B0, 0x1B0},
+    [MUGSHOT_KAMENCIK] =    {0x1A0, 0x1A0},
     [MUGSHOT_CHAMPION] = {0x188, 0x188},
 };
 static const s16 sMugshotsOpponentCoords[MUGSHOTS_COUNT][2] =
 {
     [MUGSHOT_UGUCCIONI] =   { 0,  0},
-    [MUGSHOT_PHOEBE] =   { 0,  0},
-    [MUGSHOT_GLACIA] =   {-4,  4},
-    [MUGSHOT_DRAKE] =    { 0,  5},
+    [MUGSHOT_FRABONI] =   { 0,  0},
+    [MUGSHOT_CASTELLANI] =   {-4,  4},
+    [MUGSHOT_KAMENCIK] =    { 0,  5},
     [MUGSHOT_CHAMPION] = {-8,  7},
 };
 
@@ -887,9 +887,9 @@ static const u16 sFieldEffectPal_Pokeball[] = INCBIN_U16("graphics/field_effects
 const struct SpritePalette gSpritePalette_Pokeball = {sFieldEffectPal_Pokeball, FLDEFF_PAL_TAG_POKEBALL_TRAIL};
 
 static const u16 sMugshotPal_uguccioni[] = INCBIN_U16("graphics/battle_transitions/uguccioni_bg.gbapal");
-static const u16 sMugshotPal_Phoebe[] = INCBIN_U16("graphics/battle_transitions/phoebe_bg.gbapal");
-static const u16 sMugshotPal_Glacia[] = INCBIN_U16("graphics/battle_transitions/glacia_bg.gbapal");
-static const u16 sMugshotPal_Drake[] = INCBIN_U16("graphics/battle_transitions/drake_bg.gbapal");
+static const u16 sMugshotPal_Fraboni[] = INCBIN_U16("graphics/battle_transitions/fraboni_bg.gbapal");
+static const u16 sMugshotPal_Castellani[] = INCBIN_U16("graphics/battle_transitions/castellani_bg.gbapal");
+static const u16 sMugshotPal_Kamencik[] = INCBIN_U16("graphics/battle_transitions/kamencik_bg.gbapal");
 static const u16 sMugshotPal_Champion[] = INCBIN_U16("graphics/battle_transitions/wallace_bg.gbapal");
 static const u16 sMugshotPal_Brendan[] = INCBIN_U16("graphics/battle_transitions/brendan_bg.gbapal");
 static const u16 sMugshotPal_May[] = INCBIN_U16("graphics/battle_transitions/may_bg.gbapal");
@@ -897,9 +897,9 @@ static const u16 sMugshotPal_May[] = INCBIN_U16("graphics/battle_transitions/may
 static const u16 *const sOpponentMugshotsPals[MUGSHOTS_COUNT] =
 {
     [MUGSHOT_UGUCCIONI] = sMugshotPal_uguccioni,
-    [MUGSHOT_PHOEBE] = sMugshotPal_Phoebe,
-    [MUGSHOT_GLACIA] = sMugshotPal_Glacia,
-    [MUGSHOT_DRAKE] = sMugshotPal_Drake,
+    [MUGSHOT_FRABONI] = sMugshotPal_Fraboni,
+    [MUGSHOT_CASTELLANI] = sMugshotPal_Castellani,
+    [MUGSHOT_KAMENCIK] = sMugshotPal_Kamencik,
     [MUGSHOT_CHAMPION] = sMugshotPal_Champion
 };
 
@@ -2237,8 +2237,8 @@ static void VBlankCB_Wave(void)
 #undef tSinIndex
 
 //----------------------------------------------------------------
-// B_TRANSITION_UGUCCIONI, B_TRANSITION_PHOEBE, B_TRANSITION_GLACIA,
-// B_TRANSITION_DRAKE, and B_TRANSITION_CHAMPION
+// B_TRANSITION_UGUCCIONI, B_TRANSITION_FRABONI, B_TRANSITION_CASTELLANI,
+// B_TRANSITION_KAMENCIK, and B_TRANSITION_CHAMPION
 //
 // These are all the "mugshot" transitions, where a banner shows
 // the trainer pic of the player and their opponent.
@@ -2266,21 +2266,21 @@ static void Task_uguccioni(u8 taskId)
     DoMugshotTransition(taskId);
 }
 
-static void Task_Phoebe(u8 taskId)
+static void Task_Fraboni(u8 taskId)
 {
-    gTasks[taskId].tMugshotId = MUGSHOT_PHOEBE;
+    gTasks[taskId].tMugshotId = MUGSHOT_FRABONI;
     DoMugshotTransition(taskId);
 }
 
-static void Task_Glacia(u8 taskId)
+static void Task_Castellani(u8 taskId)
 {
-    gTasks[taskId].tMugshotId = MUGSHOT_GLACIA;
+    gTasks[taskId].tMugshotId = MUGSHOT_CASTELLANI;
     DoMugshotTransition(taskId);
 }
 
-static void Task_Drake(u8 taskId)
+static void Task_Kamencik(u8 taskId)
 {
-    gTasks[taskId].tMugshotId = MUGSHOT_DRAKE;
+    gTasks[taskId].tMugshotId = MUGSHOT_KAMENCIK;
     DoMugshotTransition(taskId);
 }
 

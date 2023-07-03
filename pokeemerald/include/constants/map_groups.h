@@ -219,9 +219,9 @@
 
 // gMapGroup_IndoorDIFA
 #define MAP_DIFA_STANZA_UGUCCIONI  (0 | (14 << 8))
-#define MAP_DIFA_PHOEBES_ROOM      (1 | (14 << 8))
-#define MAP_DIFA_GLACIAS_ROOM      (2 | (14 << 8))
-#define MAP_DIFA_DRAKES_ROOM       (3 | (14 << 8))
+#define MAP_DIFA_STANZA_FRABONI    (1 | (14 << 8))
+#define MAP_DIFA_STANZA_CASTELLANI (2 | (14 << 8))
+#define MAP_DIFA_STANZA_KAMENCIK   (3 | (14 << 8))
 #define MAP_DIFA_CHAMPIONS_ROOM    (4 | (14 << 8))
 #define MAP_DIFA_HALL1             (5 | (14 << 8))
 #define MAP_DIFA_HALL2             (6 | (14 << 8))

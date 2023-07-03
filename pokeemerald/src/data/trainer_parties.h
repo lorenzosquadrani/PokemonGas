@@ -3271,7 +3271,7 @@ static const struct TrainerMonItemCustomMoves sParty_uguccioni[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
+static const struct TrainerMonItemCustomMoves sParty_Fraboni[] = {
     {
     .iv = 250,
     .lvl = 48,
@@ -3309,7 +3309,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
+static const struct TrainerMonItemCustomMoves sParty_Castellani[] = {
     {
     .iv = 250,
     .lvl = 50,
@@ -3347,7 +3347,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
+static const struct TrainerMonItemCustomMoves sParty_Kamencik[] = {
     {
     .iv = 250,
     .lvl = 52,

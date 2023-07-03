@@ -1,4 +1,5 @@
 {
+  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorRimini",
@@ -248,9 +249,9 @@
   ],
   "gMapGroup_IndoorDIFA": [
     "DIFA_StanzaUguccioni",
-    "DIFA_PhoebesRoom",
-    "DIFA_GlaciasRoom",
-    "DIFA_DrakesRoom",
+    "DIFA_StanzaFraboni",
+    "DIFA_StanzaCastellani",
+    "DIFA_StanzaKamencik",
     "DIFA_ChampionsRoom",
     "DIFA_Hall1",
     "DIFA_Hall2",

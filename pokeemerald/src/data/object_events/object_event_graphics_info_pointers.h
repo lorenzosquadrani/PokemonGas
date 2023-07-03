@@ -120,9 +120,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberF
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_uguccioni;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Phoebe;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glacia;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drake;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fraboni;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Castellani;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kamencik;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Roxanne;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brawly;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wattson;
@@ -369,9 +369,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MAGMA_MEMBER_M] =           &gObjectEventGraphicsInfo_MagmaMemberM,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_F] =           &gObjectEventGraphicsInfo_MagmaMemberF,
     [OBJ_EVENT_GFX_UGUCCIONI] =                   &gObjectEventGraphicsInfo_uguccioni,
-    [OBJ_EVENT_GFX_PHOEBE] =                   &gObjectEventGraphicsInfo_Phoebe,
-    [OBJ_EVENT_GFX_GLACIA] =                   &gObjectEventGraphicsInfo_Glacia,
-    [OBJ_EVENT_GFX_DRAKE] =                    &gObjectEventGraphicsInfo_Drake,
+    [OBJ_EVENT_GFX_FRABONI] =                   &gObjectEventGraphicsInfo_Fraboni,
+    [OBJ_EVENT_GFX_CASTELLANI] =                   &gObjectEventGraphicsInfo_Castellani,
+    [OBJ_EVENT_GFX_KAMENCIK] =                    &gObjectEventGraphicsInfo_Kamencik,
     [OBJ_EVENT_GFX_ROXANNE] =                  &gObjectEventGraphicsInfo_Roxanne,
     [OBJ_EVENT_GFX_BRAWLY] =                   &gObjectEventGraphicsInfo_Brawly,
     [OBJ_EVENT_GFX_WATTSON] =                  &gObjectEventGraphicsInfo_Wattson,

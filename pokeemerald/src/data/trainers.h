@@ -3145,40 +3145,40 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_uguccioni),
     },
 
-    [TRAINER_PHOEBE] =
+    [TRAINER_FRABONI] =
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_PHOEBE,
-        .trainerName = _("PHOEBE"),
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_FRABONI,
+        .trainerName = _("FRABONI"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = ITEM_CUSTOM_MOVES(sParty_Phoebe),
+        .party = ITEM_CUSTOM_MOVES(sParty_Fraboni),
     },
 
-    [TRAINER_GLACIA] =
+    [TRAINER_CASTELLANI] =
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_GLACIA,
-        .trainerName = _("GLACIA"),
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_CASTELLANI,
+        .trainerName = _("CASTELLANI"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = ITEM_CUSTOM_MOVES(sParty_Glacia),
+        .party = ITEM_CUSTOM_MOVES(sParty_Castellani),
     },
 
-    [TRAINER_DRAKE] =
+    [TRAINER_KAMENCIK] =
     {
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,
-        .trainerName = _("DRAKE"),
+        .trainerPic = TRAINER_PIC_ELITE_FOUR_KAMENCIK,
+        .trainerName = _("KAMENCIK"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = ITEM_CUSTOM_MOVES(sParty_Drake),
+        .party = ITEM_CUSTOM_MOVES(sParty_Kamencik),
     },
 
     [TRAINER_ROXANNE_1] =

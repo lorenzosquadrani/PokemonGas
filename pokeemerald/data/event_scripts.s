@@ -278,9 +278,9 @@ gStdScripts_End::
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc"
 	.include "data/maps/DIFA_StanzaUguccioni/scripts.inc"
-	.include "data/maps/DIFA_PhoebesRoom/scripts.inc"
-	.include "data/maps/DIFA_GlaciasRoom/scripts.inc"
-	.include "data/maps/DIFA_DrakesRoom/scripts.inc"
+	.include "data/maps/DIFA_StanzaFraboni/scripts.inc"
+	.include "data/maps/DIFA_StanzaCastellani/scripts.inc"
+	.include "data/maps/DIFA_StanzaKamencik/scripts.inc"
 	.include "data/maps/DIFA_ChampionsRoom/scripts.inc"
 	.include "data/maps/DIFA_Hall1/scripts.inc"
 	.include "data/maps/DIFA_Hall2/scripts.inc"
@@ -572,9 +572,9 @@ EventScript_MoveMrBrineyToRoute109::
 
 DIFA_HallOfFame_EventScript_ResetEliteFour::
 	clearflag FLAG_DEFEATED_ELITE_4_UGUCCIONI
-	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
-	clearflag FLAG_DEFEATED_ELITE_4_GLACIA
-	clearflag FLAG_DEFEATED_ELITE_4_DRAKE
+	clearflag FLAG_DEFEATED_ELITE_4_FRABONI
+	clearflag FLAG_DEFEATED_ELITE_4_CASTELLANI
+	clearflag FLAG_DEFEATED_ELITE_4_KAMENCIK
 	setvar VAR_ELITE_4_STATE, 0
 	return
 

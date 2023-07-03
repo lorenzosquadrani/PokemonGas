@@ -513,52 +513,52 @@ static const struct MatchCallStructTrainer suguccioniMatchCallHeader =
     .textData = suguccioniTextScripts
 };
 
-static const match_call_text_data_t sPhoebeTextScripts[] = {
-    { MatchCall_Text_Phoebe, 0xFFFF, 0xFFFF },
+static const match_call_text_data_t sFraboniTextScripts[] = {
+    { MatchCall_Text_Fraboni, 0xFFFF, 0xFFFF },
     { NULL,                  0xFFFF, 0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sPhoebeMatchCallHeader =
+static const struct MatchCallStructTrainer sFraboniMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_DIFA,
-    .flag = FLAG_REMATCH_PHOEBE,
-    .rematchTableIdx = REMATCH_PHOEBE,
+    .flag = FLAG_REMATCH_FRABONI,
+    .rematchTableIdx = REMATCH_FRABONI,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sPhoebeTextScripts
+    .textData = sFraboniTextScripts
 };
 
-static const match_call_text_data_t sGlaciaTextScripts[] = {
-    { MatchCall_Text_Glacia, 0xFFFF, 0xFFFF },
+static const match_call_text_data_t sCastellaniTextScripts[] = {
+    { MatchCall_Text_Castellani, 0xFFFF, 0xFFFF },
     { NULL,                  0xFFFF, 0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sGlaciaMatchCallHeader =
+static const struct MatchCallStructTrainer sCastellaniMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_DIFA,
-    .flag = FLAG_REMATCH_GLACIA,
-    .rematchTableIdx = REMATCH_GLACIA,
+    .flag = FLAG_REMATCH_CASTELLANI,
+    .rematchTableIdx = REMATCH_CASTELLANI,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sGlaciaTextScripts
+    .textData = sCastellaniTextScripts
 };
 
-static const match_call_text_data_t sDrakeTextScripts[] = {
-    { MatchCall_Text_Drake, 0xFFFF, 0xFFFF },
+static const match_call_text_data_t sKamencikTextScripts[] = {
+    { MatchCall_Text_Kamencik, 0xFFFF, 0xFFFF },
     { NULL,                 0xFFFF, 0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sDrakeMatchCallHeader =
+static const struct MatchCallStructTrainer sKamencikMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_DIFA,
-    .flag = FLAG_REMATCH_DRAKE,
-    .rematchTableIdx = REMATCH_DRAKE,
+    .flag = FLAG_REMATCH_KAMENCIK,
+    .rematchTableIdx = REMATCH_KAMENCIK,
     .desc = gText_EliteFourMatchCallDesc,
     .name = NULL,
-    .textData = sDrakeTextScripts
+    .textData = sKamencikTextScripts
 };
 
 static const match_call_text_data_t sWallaceTextScripts[] = {
@@ -595,9 +595,9 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_TATE_LIZA]  = {.leader = &sTateLizaMatchCallHeader},
     [MC_HEADER_JUAN]       = {.leader = &sJuanMatchCallHeader},
     [MC_HEADER_UGUCCIONI]     = {.leader = &suguccioniMatchCallHeader},
-    [MC_HEADER_PHOEBE]     = {.leader = &sPhoebeMatchCallHeader},
-    [MC_HEADER_GLACIA]     = {.leader = &sGlaciaMatchCallHeader},
-    [MC_HEADER_DRAKE]      = {.leader = &sDrakeMatchCallHeader},
+    [MC_HEADER_FRABONI]     = {.leader = &sFraboniMatchCallHeader},
+    [MC_HEADER_CASTELLANI]     = {.leader = &sCastellaniMatchCallHeader},
+    [MC_HEADER_KAMENCIK]      = {.leader = &sKamencikMatchCallHeader},
     [MC_HEADER_WALLACE]    = {.leader = &sWallaceMatchCallHeader}
 };
 

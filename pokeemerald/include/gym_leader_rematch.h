@@ -76,9 +76,9 @@ enum {
     REMATCH_TATE_AND_LIZA,
     REMATCH_JUAN,
     REMATCH_UGUCCIONI, // Entries from UGUCCIONI below are considered part of REMATCH_ELITE_FOUR_ENTRIES.
-    REMATCH_PHOEBE,
-    REMATCH_GLACIA,
-    REMATCH_DRAKE,
+    REMATCH_FRABONI,
+    REMATCH_CASTELLANI,
+    REMATCH_KAMENCIK,
     REMATCH_WALLACE,
     REMATCH_TABLE_ENTRIES // The total number of rematch entries. Must be last in enum
 };

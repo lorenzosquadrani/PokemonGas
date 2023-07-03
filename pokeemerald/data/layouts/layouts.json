@@ -992,34 +992,34 @@
       "blockdata_filepath": "data/layouts/DIFA_StanzaUguccioni/map.bin"
     },
     {
-      "id": "LAYOUT_DIFA_PHOEBES_ROOM",
-      "name": "DIFA_PhoebesRoom_Layout",
+      "id": "LAYOUT_DIFA_STANZA_FRABONI",
+      "name": "DIFA_StanzaFraboni_Layout",
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/DIFA_PhoebesRoom/border.bin",
-      "blockdata_filepath": "data/layouts/DIFA_PhoebesRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_StanzaFraboni/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_StanzaFraboni/map.bin"
     },
     {
-      "id": "LAYOUT_DIFA_GLACIAS_ROOM",
-      "name": "DIFA_GlaciasRoom_Layout",
+      "id": "LAYOUT_DIFA_STANZA_CASTELLANI",
+      "name": "DIFA_StanzaCastellani_Layout",
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/DIFA_GlaciasRoom/border.bin",
-      "blockdata_filepath": "data/layouts/DIFA_GlaciasRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_StanzaCastellani/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_StanzaCastellani/map.bin"
     },
     {
-      "id": "LAYOUT_DIFA_DRAKES_ROOM",
-      "name": "DIFA_DrakesRoom_Layout",
+      "id": "LAYOUT_DIFA_STANZA_KAMENCIK",
+      "name": "DIFA_StanzaKamencik_Layout",
       "width": 13,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
-      "border_filepath": "data/layouts/DIFA_DrakesRoom/border.bin",
-      "blockdata_filepath": "data/layouts/DIFA_DrakesRoom/map.bin"
+      "border_filepath": "data/layouts/DIFA_StanzaKamencik/border.bin",
+      "blockdata_filepath": "data/layouts/DIFA_StanzaKamencik/map.bin"
     },
     {
       "id": "LAYOUT_DIFA_CHAMPIONS_ROOM",

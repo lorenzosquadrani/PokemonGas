@@ -831,20 +831,20 @@ void DrawMainBattleBackground(void)
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
             LoadCompressedPalette(gBattleTerrainPalette_Stadiumuguccioni, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
-        case MAP_BATTLE_SCENE_PHOEBE:
+        case MAP_BATTLE_SCENE_FRABONI:
             LZDecompressVram(gBattleTerrainTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_StadiumPhoebe, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(gBattleTerrainPalette_StadiumFraboni, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
-        case MAP_BATTLE_SCENE_GLACIA:
+        case MAP_BATTLE_SCENE_CASTELLANI:
             LZDecompressVram(gBattleTerrainTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_StadiumGlacia, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(gBattleTerrainPalette_StadiumCastellani, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
-        case MAP_BATTLE_SCENE_DRAKE:
+        case MAP_BATTLE_SCENE_KAMENCIK:
             LZDecompressVram(gBattleTerrainTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_StadiumDrake, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(gBattleTerrainPalette_StadiumKamencik, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         case MAP_BATTLE_SCENE_FRONTIER:
             LZDecompressVram(gBattleTerrainTiles_Building, (void *)(BG_CHAR_ADDR(2)));
@@ -1265,13 +1265,13 @@ bool8 LoadChosenBattleElement(u8 caseId)
             case MAP_BATTLE_SCENE_UGUCCIONI:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
                 break;
-            case MAP_BATTLE_SCENE_PHOEBE:
+            case MAP_BATTLE_SCENE_FRABONI:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
                 break;
-            case MAP_BATTLE_SCENE_GLACIA:
+            case MAP_BATTLE_SCENE_CASTELLANI:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
                 break;
-            case MAP_BATTLE_SCENE_DRAKE:
+            case MAP_BATTLE_SCENE_KAMENCIK:
                 LZDecompressVram(gBattleTerrainTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
                 break;
             case MAP_BATTLE_SCENE_FRONTIER:
@@ -1327,13 +1327,13 @@ bool8 LoadChosenBattleElement(u8 caseId)
             case MAP_BATTLE_SCENE_UGUCCIONI:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
                 break;
-            case MAP_BATTLE_SCENE_PHOEBE:
+            case MAP_BATTLE_SCENE_FRABONI:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
                 break;
-            case MAP_BATTLE_SCENE_GLACIA:
+            case MAP_BATTLE_SCENE_CASTELLANI:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
                 break;
-            case MAP_BATTLE_SCENE_DRAKE:
+            case MAP_BATTLE_SCENE_KAMENCIK:
                 LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
                 break;
             case MAP_BATTLE_SCENE_FRONTIER:
@@ -1389,14 +1389,14 @@ bool8 LoadChosenBattleElement(u8 caseId)
             case MAP_BATTLE_SCENE_UGUCCIONI:
                 LoadCompressedPalette(gBattleTerrainPalette_Stadiumuguccioni, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
-            case MAP_BATTLE_SCENE_PHOEBE:
-                LoadCompressedPalette(gBattleTerrainPalette_StadiumPhoebe, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            case MAP_BATTLE_SCENE_FRABONI:
+                LoadCompressedPalette(gBattleTerrainPalette_StadiumFraboni, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
-            case MAP_BATTLE_SCENE_GLACIA:
-                LoadCompressedPalette(gBattleTerrainPalette_StadiumGlacia, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            case MAP_BATTLE_SCENE_CASTELLANI:
+                LoadCompressedPalette(gBattleTerrainPalette_StadiumCastellani, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
-            case MAP_BATTLE_SCENE_DRAKE:
-                LoadCompressedPalette(gBattleTerrainPalette_StadiumDrake, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            case MAP_BATTLE_SCENE_KAMENCIK:
+                LoadCompressedPalette(gBattleTerrainPalette_StadiumKamencik, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 break;
             case MAP_BATTLE_SCENE_FRONTIER:
                 LoadCompressedPalette(gBattleTerrainPalette_Frontier, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
