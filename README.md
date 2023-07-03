@@ -112,4 +112,11 @@ Dentro ci copiamo il contenuto dello `scripts.inc` originale, così:
 Tutte le funzioni che possiamo usare nei nostri scripts sono descritte in `/asm/macros/events.inc`.
 Tutte le variabili e le flags che possiamo usare nei nostri scripts sono elencate in `/include/constants/vars.h` e `/include/constants/flags.h`.
 
+5. **Cancellare una mappa**
+Bisogna cancellare i files e le references nei file che rimangono:
+- Cancella la cartella data/maps/NOMEMAPPA
+- Cancella la cartella data/layouts/NOMEMAPPA, *se esiste* (potrebbe non esistere perché il layout è condiviso con altre mappe)
+- Cerca NOMEMAPPA con VSCode, e cancella tutte le occorrenze che trovi
+- Se la mappa è un centro Pokemon cerca anche per MAP_NOME_MAPPA, ed elimina le occorrenze
+- prova a compilare, se hai lasciato qualcosa in giro te lo dice
 

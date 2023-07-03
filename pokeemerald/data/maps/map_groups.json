@@ -258,10 +258,7 @@
     "DIFA_Hall4",
     "DIFA_Hall5",
     "DIFA_PokemonLeague_1F",
-    "DIFA_HallOfFame",
-    "DIFA_PokemonCenter_1F",
-    "DIFA_PokemonCenter_2F",
-    "DIFA_PokemonLeague_2F"
+    "DIFA_HallOfFame"
   ],
   "gMapGroup_IndoorRoute104": [
     "Route104_MrBrineysHouse",

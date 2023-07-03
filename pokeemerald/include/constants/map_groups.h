@@ -230,9 +230,6 @@
 #define MAP_DIFA_HALL5             (9 | (14 << 8))
 #define MAP_DIFA_POKEMON_LEAGUE_1F (10 | (14 << 8))
 #define MAP_DIFA_HALL_OF_FAME      (11 | (14 << 8))
-#define MAP_DIFA_POKEMON_CENTER_1F (12 | (14 << 8))
-#define MAP_DIFA_POKEMON_CENTER_2F (13 | (14 << 8))
-#define MAP_DIFA_POKEMON_LEAGUE_2F (14 | (14 << 8))
 
 // gMapGroup_IndoorRoute104
 #define MAP_ROUTE104_MR_BRINEYS_HOUSE         (0 | (15 << 8))
