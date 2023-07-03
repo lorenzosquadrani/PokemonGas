@@ -39,7 +39,7 @@ DIFA_StanzaUguccioni_EventScript_WalkInCloseDoor::
 	end
 `
 
-script DIFA_StanzaUguccioni_EventScript_uguccioni {
+script DIFA_StanzaUguccioni_EventScript_Uguccioni {
 
 	lock
 	faceplayer

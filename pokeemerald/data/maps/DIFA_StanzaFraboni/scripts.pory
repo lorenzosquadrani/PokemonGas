@@ -1,0 +1,77 @@
+raw `
+DIFA_StanzaFraboni_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, DIFA_StanzaFraboni_OnLoad
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, DIFA_StanzaFraboni_OnWarp
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, DIFA_StanzaFraboni_OnFrame
+	.byte 0
+
+DIFA_StanzaFraboni_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, DIFA_StanzaFraboni_EventScript_PlayerTurnNorth
+	.2byte 0
+
+DIFA_StanzaFraboni_EventScript_PlayerTurnNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+DIFA_StanzaFraboni_OnFrame:
+	map_script_2 VAR_ELITE_4_STATE, 1, DIFA_StanzaFraboni_EventScript_WalkInCloseDoor
+	.2byte 0
+
+DIFA_StanzaFraboni_EventScript_WalkInCloseDoor::
+	lockall
+	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	setvar VAR_ELITE_4_STATE, 2
+	releaseall
+	end
+
+DIFA_StanzaFraboni_OnLoad:
+	call_if_set FLAG_DEFEATED_ELITE_4_FRABONI, DIFA_StanzaFraboni_EventScript_ResetAdvanceToNextRoom
+	call_if_eq VAR_ELITE_4_STATE, 2, DIFA_StanzaFraboni_EventScript_CloseDoor
+	end
+
+DIFA_StanzaFraboni_EventScript_ResetAdvanceToNextRoom::
+	call PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom
+	return
+
+DIFA_StanzaFraboni_EventScript_CloseDoor::
+	call PokemonLeague_EliteFour_EventScript_CloseDoor
+	return
+`
+
+script DIFA_StanzaFraboni_EventScript_Fraboni {
+
+	lock
+	faceplayer
+	
+	if (flag(FLAG_DEFEATED_ELITE_4_FRABONI)) {
+		msgbox(DIFA_StanzaFraboni_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+	}
+	else {
+		playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+		msgbox(DIFA_StanzaFraboni_Text_IntroSpeech, MSGBOX_DEFAULT)
+		trainerbattle_no_intro(TRAINER_FRABONI, DIFA_StanzaFraboni_Text_Defeat)
+
+		call(PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles)
+		setflag(FLAG_DEFEATED_ELITE_4_FRABONI)
+		msgbox(DIFA_StanzaFraboni_Text_PostBattleSpeech, MSGBOX_DEFAULT)
+	}
+
+	release
+	end
+}
+
+text DIFA_StanzaFraboni_Text_IntroSpeech {
+	format("Oh ma guarda che bel ragazzo abbiamo qui! \p
+Ciao Andrea, io sono la professoresa FRABONI, e non vedo l'ora di vedere
+cosa tu e i tuoi Pokémons sapete fare. 
+Combattiamo!")
+}
+
+text DIFA_StanzaFraboni_Text_Defeat {
+	format("Caspiterina, sei proprio forte.")
+}
+
+text DIFA_StanzaFraboni_Text_PostBattleSpeech {
+	format("Ottimo, Andrea. Non mi sarei aspettata di meno da un bel ragazzone come te. Chissà cos'altro sai fare bene...
+			Ti segno un bel 30L ovviamente, in bocca al lupo!")
+}
