@@ -61,8 +61,20 @@ static const u32 sTitleScreenCloudsGfx[] = INCBIN_U32("graphics/title_screen/clo
 
 
 // POKEMON 
-const u32 gTest_Mon[] = INCBIN_U32("graphics/pokemon/gengar/front.4bpp.lz");
+const u32 gTest_Mon[] = INCBIN_U32("graphics/pokemon/gengar/anim_front.4bpp.lz");
 const u32 gTestPal_Mon[] = INCBIN_U32("graphics/pokemon/gengar/normal.gbapal.lz");
+
+static const union AnimCmd smon_Anim1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(64, 30),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const smon_AnimTable[] =
+{
+        smon_Anim1,
+};
 
 static const struct CompressedSpriteSheet sSpriteSheet_Mon[] =
 {
@@ -99,7 +111,7 @@ static const struct SpriteTemplate sMonSpriteTemplate =
     .tileTag = 777,
     .paletteTag = 777,
     .oam = &sMonOamData,
-    .anims = gDummySpriteAnimTable,
+    .anims = smon_AnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy,
