@@ -40,53 +40,29 @@ DIFA_StanzaKamencik_EventScript_CloseDoor::
 DIFA_StanzaKamencik_EventScript_Kamencik::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ELITE_4_KAMENCIK, DIFA_StanzaKamencik_EventScript_PostBattleSpeech
+	goto_if_set FLAG_DEFEATED_ELITE_4_KAMENCIK, DIFA_StanzaKamencik_EventScript_Kamencik_2
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox DIFA_StanzaKamencik_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_KAMENCIK, DIFA_StanzaKamencik_Text_Defeat
-	goto DIFA_StanzaKamencik_EventScript_Defeated
-	end
-
-DIFA_StanzaKamencik_EventScript_PostBattleSpeech::
-	msgbox DIFA_StanzaKamencik_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	release
-	end
-
-DIFA_StanzaKamencik_EventScript_Defeated::
-	setvar VAR_TEMP_PAR_4, FANCOUNTER_DEFEATED_KAMENCIK
-	special Script_TryGainNewFanFromCounter
-	setflag FLAG_DEFEATED_ELITE_4_KAMENCIK
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	setflag FLAG_DEFEATED_ELITE_4_KAMENCIK
 	msgbox DIFA_StanzaKamencik_Text_PostBattleSpeech, MSGBOX_DEFAULT
+DIFA_StanzaKamencik_EventScript_Kamencik_1:
 	release
 	end
 
-DIFA_StanzaKamencik_Text_IntroSpeech:
-	.string "I am the last of the POKéMON LEAGUE\n"
-	.string "ELITE FOUR, KAMENCIK the DRAGON master!\p"
-	.string "In their natural state, POKéMON are\n"
-	.string "wild living things. They are free.\p"
-	.string "At times, they hinder us.\n"
-	.string "At times, they help us.\p"
-	.string "For us to battle with POKéMON as\n"
-	.string "partners, do you know what it takes?\p"
-	.string "Do you know what is needed?\p"
-	.string "If you don't, then you will never\n"
-	.string "prevail over me!$"
+DIFA_StanzaKamencik_EventScript_Kamencik_2:
+	msgbox DIFA_StanzaKamencik_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	goto DIFA_StanzaKamencik_EventScript_Kamencik_1
 
-DIFA_StanzaKamencik_Text_Defeat:
-	.string "Superb, it should be said.$"
 
-DIFA_StanzaKamencik_Text_PostBattleSpeech:
-	.string "You deserve every credit for coming\n"
-	.string "this far as a TRAINER of POKéMON.\p"
-	.string "You do seem to know what is needed.\p"
-	.string "Yes, what a TRAINER needs is a\n"
-	.string "virtuous heart.\p"
-	.string "POKéMON touch the good hearts of\n"
-	.string "TRAINERS and learn good from wrong.\p"
-	.string "They touch the good hearts of\n"
-	.string "TRAINERS and grow strong.\p"
-	.string "Go! Go onwards!\n"
-	.string "The CHAMPION is waiting!$"
+DIFA_StanzaKamencik_Text_IntroSpeech::
+	.string "Salve, io sono il professor Kamentchik e\n"
+	.string "davero posiamo già cominciere l'esame.$"
 
+DIFA_StanzaKamencik_Text_Defeat::
+	.string "Sìsì, lei ha ragione.$"
+
+DIFA_StanzaKamencik_Text_PostBattleSpeech::
+	.string "Per me è suficiente, le dò un 29.\n"
+	.string "Prosegua pure per la sua ultima sfida.$"

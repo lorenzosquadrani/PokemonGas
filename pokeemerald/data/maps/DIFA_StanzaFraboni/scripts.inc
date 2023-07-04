@@ -39,46 +39,36 @@ DIFA_StanzaFraboni_EventScript_CloseDoor::
 DIFA_StanzaFraboni_EventScript_Fraboni::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ELITE_4_FRABONI, DIFA_StanzaFraboni_EventScript_PostBattleSpeech
+	goto_if_set FLAG_DEFEATED_ELITE_4_FRABONI, DIFA_StanzaFraboni_EventScript_Fraboni_2
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox DIFA_StanzaFraboni_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_FRABONI, DIFA_StanzaFraboni_Text_Defeat
-	goto DIFA_StanzaFraboni_EventScript_Defeated
-	end
-
-DIFA_StanzaFraboni_EventScript_PostBattleSpeech::
-	msgbox DIFA_StanzaFraboni_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	release
-	end
-
-DIFA_StanzaFraboni_EventScript_Defeated::
-	setflag FLAG_DEFEATED_ELITE_4_FRABONI
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	setflag FLAG_DEFEATED_ELITE_4_FRABONI
 	msgbox DIFA_StanzaFraboni_Text_PostBattleSpeech, MSGBOX_DEFAULT
+DIFA_StanzaFraboni_EventScript_Fraboni_1:
 	release
 	end
 
-DIFA_StanzaFraboni_Text_IntroSpeech:
-	.string "Ahahaha!\p"
-	.string "I'm FRABONI of the ELITE FOUR.\n"
-	.string "I did my training on MT. PYRE.\p"
-	.string "While I trained, I gained the ability\n"
-	.string "to commune with GHOST-type POKéMON.\p"
-	.string "Yes, the bond I developed with POKéMON\n"
-	.string "is extremely tight.\p"
-	.string "So, come on, just try and see if you can\n"
-	.string "even inflict damage on my POKéMON!$"
+DIFA_StanzaFraboni_EventScript_Fraboni_2:
+	msgbox DIFA_StanzaFraboni_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	goto DIFA_StanzaFraboni_EventScript_Fraboni_1
 
-DIFA_StanzaFraboni_Text_Defeat:
-	.string "Oh, darn.\n"
-	.string "I've gone and lost.$"
 
-DIFA_StanzaFraboni_Text_PostBattleSpeech:
-	.string "There's a definite bond between you\n"
-	.string "and your POKéMON, too.\p"
-	.string "I didn't recognize it, so it's only\n"
-	.string "natural that I lost.\p"
-	.string "Yup, I'd like to see how far your bond\n"
-	.string "will carry you.\p"
-	.string "Go ahead, move on to the next room.$"
+DIFA_StanzaFraboni_Text_IntroSpeech::
+	.string "Oh ma guarda che bel ragazzo abbiamo\n"
+	.string "qui!\p"
+	.string "Ciao Andrea, io sono la professoresa\n"
+	.string "FRABONI, e non vedo l'ora di vedere\l"
+	.string "cosa tu e i tuoi Pokémons sapete fare.\l"
+	.string "Combattiamo!$"
 
+DIFA_StanzaFraboni_Text_Defeat::
+	.string "Caspiterina, sei proprio forte.$"
+
+DIFA_StanzaFraboni_Text_PostBattleSpeech::
+	.string "Ottimo, Andrea. Non mi sarei aspettata\n"
+	.string "di meno da un bel ragazzone come te.\l"
+	.string "Chissà cos'altro sai fare bene... Ti\l"
+	.string "segno un bel 30L ovviamente, in bocca\l"
+	.string "al lupo!$"

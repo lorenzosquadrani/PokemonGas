@@ -72,6 +72,6 @@ text DIFA_StanzaFraboni_Text_Defeat {
 }
 
 text DIFA_StanzaFraboni_Text_PostBattleSpeech {
-	format("Ottimo, Andrea. Non mi sarei aspettata di meno da un bel ragazzone come te. Chissà cos'altro sai fare bene...
-			Ti segno un bel 30L ovviamente, in bocca al lupo!")
+	format("Ottimo, Andrea. Non mi sarei aspettata di meno da un bel ragazzone come te. 
+Chissà cos'altro sai fare bene... Ti segno un bel 30L ovviamente, in bocca al lupo!")
 }

@@ -39,45 +39,36 @@ DIFA_StanzaCastellani_EventScript_CloseDoor::
 DIFA_StanzaCastellani_EventScript_Castellani::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ELITE_4_CASTELLANI, DIFA_StanzaCastellani_EventScript_PostBattleSpeech
+	goto_if_set FLAG_DEFEATED_ELITE_4_CASTELLANI, DIFA_StanzaCastellani_EventScript_Castellani_2
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox DIFA_StanzaCastellani_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CASTELLANI, DIFA_StanzaCastellani_Text_Defeat
-	goto DIFA_StanzaCastellani_EventScript_Defeated
-	end
-
-DIFA_StanzaCastellani_EventScript_PostBattleSpeech::
-	msgbox DIFA_StanzaCastellani_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	release
-	end
-
-DIFA_StanzaCastellani_EventScript_Defeated::
-	setflag FLAG_DEFEATED_ELITE_4_CASTELLANI
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	setflag FLAG_DEFEATED_ELITE_4_CASTELLANI
 	msgbox DIFA_StanzaCastellani_Text_PostBattleSpeech, MSGBOX_DEFAULT
+DIFA_StanzaCastellani_EventScript_Castellani_1:
 	release
 	end
 
-DIFA_StanzaCastellani_Text_IntroSpeech:
-	.string "Welcome, my name is CASTELLANI\n"
-	.string "of the ELITE FOUR.\p"
-	.string "I've traveled from afar to HOENN\n"
-	.string "so that I may hone my ice skills.\p"
-	.string "But all I have seen are challenges by\n"
-	.string "weak TRAINERS and their POKéMON.\p"
-	.string "What about you?\p"
-	.string "It would please me to no end if I could\n"
-	.string "go all out against you!$"
+DIFA_StanzaCastellani_EventScript_Castellani_2:
+	msgbox DIFA_StanzaCastellani_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	goto DIFA_StanzaCastellani_EventScript_Castellani_1
 
-DIFA_StanzaCastellani_Text_Defeat:
-	.string "You and your POKéMON…\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
 
-DIFA_StanzaCastellani_Text_PostBattleSpeech:
-	.string "Advance to the next room.\p"
-	.string "And there, confirm the truly fearsome\n"
-	.string "side of the POKéMON LEAGUE.$"
+DIFA_StanzaCastellani_Text_IntroSpeech::
+	.string "Buongiorno, signor Gaspari.\p"
+	.string "Sono lieto, si fa per dire, di darle il\n"
+	.string "benventuo al suo primo esame. Per\l"
+	.string "conseguire la sua laurea ovviamente\l"
+	.string "dovrà passare tutti gli esami, ma non si\l"
+	.string "preoccupi, il mio è facile.\p"
+	.string "Sono il professor UGUZZONI, e mi sono\n"
+	.string "già rotto i COGLIONI. Cominciamo!$"
 
+DIFA_StanzaCastellani_Text_Defeat::
+	.string "Una successione di sconfitte, ma almeno\n"
+	.string "è limitata AHAH$"
+
+DIFA_StanzaCastellani_Text_PostBattleSpeech::
+	.string "Ok, per me basta così Gaspari. Ti dò 30L,\n"
+	.string "vai pure avanti.$"

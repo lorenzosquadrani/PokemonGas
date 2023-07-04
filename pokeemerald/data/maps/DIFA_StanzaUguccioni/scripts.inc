@@ -36,23 +36,23 @@ DIFA_StanzaUguccioni_EventScript_WalkInCloseDoor::
 	releaseall
 	end
 
-DIFA_StanzaUguccioni_EventScript_uguccioni::
+DIFA_StanzaUguccioni_EventScript_Uguccioni::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ELITE_4_UGUCCIONI, DIFA_StanzaUguccioni_EventScript_uguccioni_2
+	goto_if_set FLAG_DEFEATED_ELITE_4_UGUCCIONI, DIFA_StanzaUguccioni_EventScript_Uguccioni_2
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox DIFA_StanzaUguccioni_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_UGUCCIONI, DIFA_StanzaUguccioni_Text_Defeat
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	setflag FLAG_DEFEATED_ELITE_4_UGUCCIONI
 	msgbox DIFA_StanzaUguccioni_Text_PostBattleSpeech, MSGBOX_DEFAULT
-DIFA_StanzaUguccioni_EventScript_uguccioni_1:
+DIFA_StanzaUguccioni_EventScript_Uguccioni_1:
 	release
 	end
 
-DIFA_StanzaUguccioni_EventScript_uguccioni_2:
+DIFA_StanzaUguccioni_EventScript_Uguccioni_2:
 	msgbox DIFA_StanzaUguccioni_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	goto DIFA_StanzaUguccioni_EventScript_uguccioni_1
+	goto DIFA_StanzaUguccioni_EventScript_Uguccioni_1
 
 
 DIFA_StanzaUguccioni_Text_IntroSpeech::

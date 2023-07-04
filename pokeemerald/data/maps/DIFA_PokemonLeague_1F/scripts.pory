@@ -22,10 +22,10 @@ DIFA_PokemonLeague_1F_EventScript_Nurse::
 DIFA_PokemonLeague_1F_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message MaxCosaTiServe
 	waitmessage
 	pokemart DIFA_PokemonLeague_1F_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox MaxSiChiude, MSGBOX_DEFAULT
 	release
 	end
 
@@ -37,6 +37,14 @@ DIFA_PokemonLeague_1F_Pokemart:
 	release
 	end
 `
+
+text MaxCosaTiServe {
+	format("MAX: Buongiorno, ti serve qualcosa?")
+}
+
+text MaxSiChiude {
+	format("Si chiude!")
+}
 
 script DIFA_PokemonLeague_1F_EventScript_Squadra {
 
@@ -209,6 +217,8 @@ script DIFA_PokemonLeague_1F_EventScript_Cami {
 
 script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1{
 
+	setvar(VAR_DIFA_STATE, 1)
+
 	applymovement(9, Common_Movement_ExclamationMark)
 	applymovement(9, Common_Movement_WalkInPlaceFasterUp)
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
@@ -224,20 +234,19 @@ script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1{
 ...\p
 Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."))
 	giveitem(ITEM_REVIVE, 5)
-
-	setvar(VAR_DIFA_STATE, 1)
 	end
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2{
 
-	applymovement(9, Common_Movement_ExclamationMark)
+	setvar(VAR_DIFA_STATE, 1)
+
 	applymovement(9, Common_Movement_WalkInPlaceFasterUp)
+	applymovement(9, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	msgbox(format("MCP: Ehi Gas!"), MSGBOX_AUTOCLOSE)
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
 	waitmovement(0)
-
-	msgbox(format("MCP: Ehi Gas!"), MSGBOX_AUTOCLOSE)
-	waitmessage
 
 	applymovement(9, taglia_approach_player_2)
 	waitmovement(0)
@@ -246,8 +255,6 @@ script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2{
 ...\p
 Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."))
 	giveitem(ITEM_REVIVE, 5)
-
-	setvar(VAR_DIFA_STATE, 1)
 	end
 }
 

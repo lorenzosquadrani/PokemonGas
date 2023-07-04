@@ -3,15 +3,15 @@ gText_ConfirmSave::
 	.string "Cos'è ci hai la scaga Gassi Gas?$"
 
 gText_AlreadySavedFile::
-	.string "There is already a saved file.\n"
-	.string "Is it okay to overwrite it?$"
+	.string "C'è già un salvataggio.\n"
+	.string "Lo vuoi sovrascrivere?$"
 
 gText_SavingDontTurnOff::
-	.string "SAVING…\n"
-	.string "DON'T TURN OFF THE POWER.$"
+	.string "SALVATAGGIO…\n"
+	.string "DON'T TURN OFF THE POWER BOY.$"
 
 gText_PlayerSavedGame::
-	.string "{PLAYER} saved the game.$"
+	.string "Gas ha salvato il gioco.$"
 
 gText_DifferentSaveFile::
 	.string "WARNING!\p"
@@ -29,5 +29,5 @@ gText_SaveError::
 	.string "backup memory.$"
 
 gText_SavingDontTurnOffPower::
-	.string "SAVING…\n"
-	.string "DON'T TURN OFF THE POWER.$"
+	.string "SALVATAGGIO…\n"
+	.string "DON'T TURN OFF THE POWER BOY.$"

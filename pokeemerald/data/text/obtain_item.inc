@@ -2,29 +2,28 @@ gText_ObtainedTheItem::
 	.string "Hai ricevuto {STR_VAR_2}!$"
 
 gText_TheBagIsFull::
-	.string "The BAG is full…$"
+	.string "La BORSA è piena…$"
 
 gText_PutItemInPocket::
 	.string "Meglio metterlo nella\n"
 	.string "borsa.$"
 
 gText_PlayerFoundOneItem::
-	.string "{PLAYER} found one {STR_VAR_2}!$"
+	.string "Gas ha trovato {STR_VAR_2}!$"
 
 gText_TooBadBagIsFull::
-	.string "Too bad!\n"
-	.string "The BAG is full…$"
+	.string "La BORSA è piena…$"
 
 gText_PlayerPutItemInBag::
-	.string "{PLAYER} put away the {STR_VAR_2}\n"
-	.string "in the BAG.$"
+	.string "Gas mette {STR_VAR_2}\n"
+	.string "nella BORSA.$"
 
 gText_ObtainedTheDecor::
-	.string "Obtained the {STR_VAR_2}!$"
+	.string "Hai ottenuto {STR_VAR_2}!$"
 
 gText_NoRoomLeftForAnother::
-	.string "Too bad! There's no room left for\n"
-	.string "another {STR_VAR_2}…$"
+	.string "Non hai spazio per un altro\n"
+	.string "{STR_VAR_2}…$"
 
 gText_TheDecorWasTransferredToThePC::
 	.string "The {STR_VAR_2} was transferred\n"
