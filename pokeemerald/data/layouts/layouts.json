@@ -105,7 +105,7 @@
       "id": "LAYOUT_BOLOGNA_TOWN",
       "name": "BolognaTown_Layout",
       "width": 50,
-      "height": 62,
+      "height": 59,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Bologna",
       "border_filepath": "data/layouts/BolognaTown/border.bin",
@@ -225,7 +225,7 @@
       "id": "LAYOUT_EMILIA_ROAD",
       "name": "EmiliaRoad_Layout",
       "width": 40,
-      "height": 95,
+      "height": 100,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/EmiliaRoad/border.bin",
@@ -4280,6 +4280,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/BolognaTown_SantaMariaMaggiore/border.bin",
       "blockdata_filepath": "data/layouts/BolognaTown_SantaMariaMaggiore/map.bin"
+    },
+    {
+      "id": "LAYOUT_BOLOGNA_TOWN_CASELLO",
+      "name": "BolognaTown_Casello_Layout",
+      "width": 5,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/BolognaTown_Casello/border.bin",
+      "blockdata_filepath": "data/layouts/BolognaTown_Casello/map.bin"
     }
   ]
 }

@@ -76,6 +76,7 @@
 #define MAP_BOLOGNA_TOWN_MART                 (1 | (2 << 8))
 #define MAP_BOLOGNA_TOWN_CASA_SILVIA          (2 | (2 << 8))
 #define MAP_BOLOGNA_TOWN_SANTA_MARIA_MAGGIORE (3 | (2 << 8))
+#define MAP_BOLOGNA_TOWN_CASELLO              (4 | (2 << 8))
 
 // gMapGroup_IndoorSanta
 #define MAP_SANTA_GIUSTINA_POKEMON_CENTER_1F (0 | (3 << 8))

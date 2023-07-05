@@ -14,18 +14,13 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_EMILIA_ROAD",
-      "offset": 5,
-      "direction": "down"
-    },
-    {
       "map": "MAP_DIFA",
       "offset": 20,
       "direction": "up"
     },
     {
       "map": "MAP_BOLOGNA_TOWN_PARTE_EST",
-      "offset": 21,
+      "offset": 23,
       "direction": "right"
     }
   ],
@@ -98,6 +93,27 @@
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 55,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN_CASELLO",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 20,
+      "y": 55,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN_CASELLO",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 19,
+      "y": 55,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN_CASELLO",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

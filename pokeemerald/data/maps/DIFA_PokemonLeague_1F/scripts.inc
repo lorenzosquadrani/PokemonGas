@@ -7,6 +7,7 @@ DIFA_PokemonLeague_1F_MapScripts::
 DIFA_PokemonLeague_1F_OnTransition:
 	setrespawn HEAL_LOCATION_DIFA_POKEMON_LEAGUE
 	setflag FLAG_LANDMARK_POKEMON_LEAGUE
+	setflag FLAG_VISITED_DIFA
 	end
 
 DIFA_PokemonLeague_1F_EventScript_Nurse::

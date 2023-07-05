@@ -1025,3 +1025,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/WeirdCave/scripts.inc"
 
 	.include "data/maps/BolognaTown_SantaMariaMaggiore/scripts.inc"
+
+	.include "data/maps/BolognaTown_Casello/scripts.inc"

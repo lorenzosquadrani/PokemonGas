@@ -1,0 +1,8 @@
+mapscripts DIFA_MapScripts {
+	
+}
+
+script DIFA_EventScript_Cartello {
+	msgbox(format("Dipartimento di Fisica e Astronimia"), MSGBOX_SIGN)
+	end
+}

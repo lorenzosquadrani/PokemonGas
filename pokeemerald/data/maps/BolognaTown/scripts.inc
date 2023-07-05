@@ -3,26 +3,23 @@ BolognaTown_MapScripts::
 
 
 BolognaTown_EventScript_Birra1::
-	lockall
-	msgbox BolognaTown_EventScript_Birra1_Text_0
-	closemessage
-	releaseall
+	lock
+	msgbox BolognaTown_EventScript_Birra1_Text_0, MSGBOX_NPC
+	release
 	return
 
 
 BolognaTown_EventScript_TipaDroghe::
-	lockall
-	msgbox BolognaTown_EventScript_TipaDroghe_Text_0
-	closemessage
-	releaseall
+	lock
+	msgbox BolognaTown_EventScript_TipaDroghe_Text_0, MSGBOX_NPC
+	release
 	return
 
 
 BolognaTown_EventScript_VecchioEntrata::
-	lockall
-	msgbox BolognaTown_EventScript_VecchioEntrata_Text_0
-	closemessage
-	releaseall
+	lock
+	msgbox BolognaTown_EventScript_VecchioEntrata_Text_0, MSGBOX_NPC
+	release
 	return
 
 

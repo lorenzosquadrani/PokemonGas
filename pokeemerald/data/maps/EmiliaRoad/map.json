@@ -14,11 +14,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_BOLOGNA_TOWN",
-      "offset": -5,
-      "direction": "up"
-    },
-    {
       "map": "MAP_SANTA_GIUSTINA",
       "offset": -5,
       "direction": "down"
@@ -28,7 +23,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 5,
-      "y": 6,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -41,7 +36,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 6,
-      "y": 6,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -54,7 +49,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 7,
-      "y": 6,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -67,7 +62,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M",
       "x": 27,
-      "y": 87,
+      "y": 92,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -81,45 +76,59 @@
   "warp_events": [
     {
       "x": 35,
-      "y": 19,
+      "y": 24,
       "elevation": 3,
       "dest_map": "MAP_WEIRD_CAVE",
       "dest_warp_id": "0"
     },
     {
       "x": 15,
-      "y": 11,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_EMILIA_ROAD_PISTA_SKATE_SOUTH",
       "dest_warp_id": "0"
     },
     {
       "x": 18,
-      "y": 11,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_EMILIA_ROAD_PISTA_SKATE_SOUTH",
       "dest_warp_id": "2"
     },
     {
       "x": 16,
-      "y": 83,
+      "y": 88,
       "elevation": 0,
       "dest_map": "MAP_EMILIA_ROAD_PISTA_SKATE_NORTH",
       "dest_warp_id": "0"
     },
     {
       "x": 19,
-      "y": 83,
+      "y": 88,
       "elevation": 0,
       "dest_map": "MAP_EMILIA_ROAD_PISTA_SKATE_NORTH",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN_CASELLO",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN_CASELLO",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
     {
       "type": "trigger",
       "x": 28,
-      "y": 87,
+      "y": 92,
       "elevation": 3,
       "var": "VAR_CYCLING_CHALLENGE_STATE",
       "var_value": "2",
@@ -128,7 +137,7 @@
     {
       "type": "trigger",
       "x": 29,
-      "y": 87,
+      "y": 92,
       "elevation": 3,
       "var": "VAR_CYCLING_CHALLENGE_STATE",
       "var_value": "2",
@@ -139,7 +148,7 @@
     {
       "type": "sign",
       "x": 14,
-      "y": 83,
+      "y": 88,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "EmiliaRoad_EventScript_PistaSkateSign"
@@ -147,7 +156,7 @@
     {
       "type": "sign",
       "x": 20,
-      "y": 89,
+      "y": 94,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "EmiliaRoad_EventScript_EmiliaRoadSign"
@@ -155,7 +164,7 @@
     {
       "type": "sign",
       "x": 32,
-      "y": 88,
+      "y": 93,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "EmiliaRoad_EventScript_CyclingRoadResultsSign"
@@ -163,7 +172,7 @@
     {
       "type": "hidden_item",
       "x": 33,
-      "y": 59,
+      "y": 64,
       "elevation": 3,
       "item": "ITEM_GREAT_BALL",
       "flag": "FLAG_HIDDEN_ITEM_EMILIA_ROAD_GREAT_BALL_2"
@@ -171,7 +180,7 @@
     {
       "type": "hidden_item",
       "x": 27,
-      "y": 59,
+      "y": 64,
       "elevation": 3,
       "item": "ITEM_GREAT_BALL",
       "flag": "FLAG_HIDDEN_ITEM_EMILIA_ROAD_GREAT_BALL"
@@ -179,7 +188,7 @@
     {
       "type": "hidden_item",
       "x": 4,
-      "y": 30,
+      "y": 35,
       "elevation": 3,
       "item": "ITEM_MAX_REVIVE",
       "flag": "FLAG_HIDDEN_ITEM_EMILIA_ROAD_REVIVE"
@@ -187,7 +196,7 @@
     {
       "type": "sign",
       "x": 13,
-      "y": 11,
+      "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "EmiliaRoad_EventScript_PistaSkateSign"
