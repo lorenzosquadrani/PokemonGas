@@ -45,7 +45,7 @@ DIFA_ChampionsRoom_Movement_PlayerApproachSioli:
 DIFA_ChampionsRoom_EventScript_Sioli::
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 	msgbox DIFA_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLACE, DIFA_ChampionsRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_SIOLI, DIFA_ChampionsRoom_Text_Defeat
 	goto DIFA_ChampionsRoom_EventScript_Defeated
 	end
 

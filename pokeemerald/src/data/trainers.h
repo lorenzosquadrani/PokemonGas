@@ -3142,7 +3142,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_SETUP_FIRST_TURN,
-        .party = ITEM_CUSTOM_MOVES(sParty_uguccioni),
+        .party = ITEM_CUSTOM_MOVES(sParty_Uguzzoni),
     },
 
     [TRAINER_FRABONI] =
@@ -4021,16 +4021,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Timmy),
     },
 
-    [TRAINER_WALLACE] =
+    [TRAINER_SIOLI] =
     {
         .trainerClass = TRAINER_CLASS_CHAMPION,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_WALLY,
-        .trainerName = _("WALLACE"),
+        .trainerName = _("SIOLI"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = ITEM_CUSTOM_MOVES(sParty_Wallace),
+        .party = ITEM_CUSTOM_MOVES(sParty_Sioli),
     },
 
     [TRAINER_ANDREW] =
