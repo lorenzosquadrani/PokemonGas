@@ -3,9 +3,10 @@ enum
     PAGE_TITLE,
     PAGE_DIRECTOR,
     PAGE_MAIN_PROGRAMMER,
-    PAGE_DEBUGGER,
+    PAGE_MAPS_DESIGNERS,
     PAGE_SKATEBOARD_DESIGNER,
     PAGE_MAPPA_DIFA,
+    PAGE_DEBUGGERS,
     PAGE_CHECCO_GAY0,
     PAGE_CHECCO_GAY1,
     PAGE_CHECCO_GAY2,
@@ -26,7 +27,8 @@ static const u8 sCreditsText_PkmnEmeraldVersion[]             = _("POKéMON PURP
 static const u8 sCreditsText_Credits[]                        = _("Credits");
 static const u8 sCreditsText_Director[]                       = _("Director");
 static const u8 sCreditsText_MainProgrammer[]                 = _("Main Programmer");
-static const u8 sCreditsText_Debugger[]                       = _("Debugger");
+static const u8 sCreditsText_MapsDesigners[]                   = _("Maps Designers");
+static const u8 sCreditsText_Debuggers[]                       = _("Debuggers");
 static const u8 sCreditsText_SkateboardDesigner[]             = _("Skateboard Designer");
 static const u8 sCreditsText_MappaDIFA[]                      = _("Mappa DIFA");
 static const u8 sCreditsText_Checco[]                         = _("Checco");
@@ -34,6 +36,7 @@ static const u8 sCreditsText_LorenzoSquadrani[]               = _("Lorenzo Squad
 static const u8 sCreditsText_FrancescoMorri[]                 = _("FrancescoMorri");
 static const u8 sCreditsText_JankoPetkovic[]                  = _("Janko Petkovic");
 static const u8 sCreditsText_TommasoMarzi[]                   = _("Tommaso Marzi");
+static const u8 sCreditsText_ManuelFurlan[]                   = _("Manuel Furlan");
 static const u8 sCreditsText_Gay[]                            = _("Gay");
 
 static const struct CreditsEntry sCreditsEntry_EmptyString[]                    = { 0, FALSE, sCreditsText_EmptyString};
@@ -41,7 +44,8 @@ static const struct CreditsEntry sCreditsEntry_PkmnEmeraldVersion[]             
 static const struct CreditsEntry sCreditsEntry_Credits[]                        = {11,  TRUE, sCreditsText_Credits};
 static const struct CreditsEntry sCreditsEntry_Director[]                       = {12,  TRUE, sCreditsText_Director};
 static const struct CreditsEntry sCreditsEntry_MainProgrammer[]                 = {10,  TRUE, sCreditsText_MainProgrammer};
-static const struct CreditsEntry sCreditsEntry_Debugger[]                       = {11,  TRUE, sCreditsText_Debugger};
+static const struct CreditsEntry sCreditsEntry_MapDesigners  []                 = {11,  TRUE, sCreditsText_MapsDesigners};
+static const struct CreditsEntry sCreditsEntry_Debuggers[]                       = {11,  TRUE, sCreditsText_Debuggers};
 static const struct CreditsEntry sCreditsEntry_SkateboardDesigner[]             = {11,  TRUE, sCreditsText_SkateboardDesigner};
 static const struct CreditsEntry sCreditsEntry_MappaDIFA[]                      = {11,  TRUE, sCreditsText_MappaDIFA};
 static const struct CreditsEntry sCreditsEntry_Checco[]                         = {11,  TRUE, sCreditsText_Checco};
@@ -49,6 +53,7 @@ static const struct CreditsEntry sCreditsEntry_LorenzoSquadrani[]               
 static const struct CreditsEntry sCreditsEntry_FrancescoMorri[]                 = {11,  TRUE, sCreditsText_FrancescoMorri};
 static const struct CreditsEntry sCreditsEntry_JankoPetkovic[]                  = {11,  TRUE, sCreditsText_JankoPetkovic};
 static const struct CreditsEntry sCreditsEntry_TommasoMarzi[]                   = {11,  TRUE, sCreditsText_TommasoMarzi};
+static const struct CreditsEntry sCreditsEntry_ManuelFurlan[]                   = {11,  TRUE, sCreditsText_ManuelFurlan};
 static const struct CreditsEntry sCreditsEntry_Gay[]                            = {11,  TRUE, sCreditsText_Gay};
 
 #define _ sCreditsEntry_EmptyString
@@ -75,12 +80,12 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         _,
     },
-    [PAGE_DEBUGGER] = {
+    [PAGE_MAPS_DESIGNERS] = {
         _,
-        sCreditsEntry_Debugger,
+        sCreditsEntry_MapDesigners,
+        sCreditsEntry_LorenzoSquadrani,
         sCreditsEntry_FrancescoMorri,
-        _,
-        _,
+        sCreditsEntry_JankoPetkovic,
     },
     [PAGE_SKATEBOARD_DESIGNER] = {
         _,
@@ -93,6 +98,13 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         sCreditsEntry_MappaDIFA,
         sCreditsEntry_TommasoMarzi,
+        _,
+        _,
+    },
+    [PAGE_DEBUGGERS] = {
+        sCreditsEntry_Debugger,
+        sCreditsEntry_FrancescoMorri,
+        sCreditsEntry_ManuelFurlan,
         _,
         _,
     },
