@@ -1,1 +1,6 @@
 mapscripts RiminiMare_Negozio_MapScripts {}
+
+script RiminiMare_Negozio_Ragazzo {
+    msgbox(format("Il venditore è in bagno, e non torna è inutile che aspetti."), MSGBOX_NPC)
+    end
+}

@@ -17,17 +17,17 @@ SantaGiustina_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 SantaGiustina_PokemonCenter_1F_EventScript_Youngster::
-	msgbox SantaGiustina_PokemonCenter_1F_EventScript_Youngster_Text_0
+	msgbox SantaGiustina_PokemonCenter_1F_EventScript_Youngster_Text_0, MSGBOX_NPC
 	end
 
 
 SantaGiustina_PokemonCenter_1F_EventScript_Woman::
-	msgbox SantaGiustina_PokemonCenter_1F_EventScript_Woman_Text_0
+	msgbox SantaGiustina_PokemonCenter_1F_EventScript_Woman_Text_0, MSGBOX_NPC
 	end
 
 
 SantaGiustina_PokemonCenter_1F_EventScript_Gentleman::
-	msgbox SantaGiustina_PokemonCenter_1F_EventScript_Gentleman_Text_0
+	msgbox SantaGiustina_PokemonCenter_1F_EventScript_Gentleman_Text_0, MSGBOX_NPC
 	end
 
 

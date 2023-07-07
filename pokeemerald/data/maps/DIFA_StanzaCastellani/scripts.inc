@@ -56,19 +56,12 @@ DIFA_StanzaCastellani_EventScript_Castellani_2:
 
 
 DIFA_StanzaCastellani_Text_IntroSpeech::
-	.string "Buongiorno, signor Gaspari.\p"
-	.string "Sono lieto, si fa per dire, di darle il\n"
-	.string "benventuo al suo primo esame. Per\l"
-	.string "conseguire la sua laurea ovviamente\l"
-	.string "dovrà passare tutti gli esami, ma non si\l"
-	.string "preoccupi, il mio è facile.\p"
-	.string "Sono il professor UGUZZONI, e mi sono\n"
-	.string "già rotto i COGLIONI. Cominciamo!$"
+	.string "Buongiorno, siignor Gaaaspari.\p"
+	.string "Io sono il professor CASTELLANI. Mi\n"
+	.string "faccia vedere cos'ha imparato fin'ora.$"
 
 DIFA_StanzaCastellani_Text_Defeat::
-	.string "Una successione di sconfitte, ma almeno\n"
-	.string "è limitata AHAH$"
+	.string "Sei un coglione!$"
 
 DIFA_StanzaCastellani_Text_PostBattleSpeech::
-	.string "Ok, per me basta così Gaspari. Ti dò 30L,\n"
-	.string "vai pure avanti.$"
+	.string "Va bene, Gaspari, le dò 30L, se ne vada.$"

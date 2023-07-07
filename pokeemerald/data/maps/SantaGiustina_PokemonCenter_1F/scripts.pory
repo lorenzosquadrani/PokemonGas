@@ -20,16 +20,16 @@ SantaGiustina_PokemonCenter_1F_EventScript_Nurse::
 
 script SantaGiustina_PokemonCenter_1F_EventScript_Youngster {
 	msgbox(format("Squadra è l'uomo più ricco di Santa Giustina.
-Dicono abbia fatto i soldi con le schedine."))
+Dicono abbia fatto i soldi con le schedine."), MSGBOX_NPC)
 	end	
 }
 
 script SantaGiustina_PokemonCenter_1F_EventScript_Woman {
-	msgbox(format("Che bei polpaccioni che hai."))
+	msgbox(format("Che bei polpaccioni che hai."), MSGBOX_NPC)
 	end	
 }
 
 script SantaGiustina_PokemonCenter_1F_EventScript_Gentleman {
-	msgbox(format("Santa Giustina caput mundi."))
+	msgbox(format("Santa Giustina caput mundi."), MSGBOX_NPC)
 	end
 }

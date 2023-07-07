@@ -1,7 +1,6 @@
 gText_WouldYouLikeToRestYourPkmn::
-	.string "Benvenuto al centro\n"
-	.string "dei Pokémons, curiamo\n"
-	.string "i tuoi Pokémons.\p"
+	.string "Benvenuto al centro dei Pokémons,\n"
+	.string "curiamo i tuoi Pokémons.\p"
 	.string "Vuoi curarli?$"
 
 gText_IllTakeYourPkmn::
