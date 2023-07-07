@@ -1,0 +1,118 @@
+raw `
+.set LOCALID_TAGLIA, 12
+.set LOCALID_SIOLI, 1
+.set LOCALID_FRABONI, 20
+.set LOCALID_UGUZZONI, 19
+.set LOCALID_CASTELLANI, 21
+.set LOCALID_KAMENCIK, 22
+
+DIFA_HallOfFame_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, DIFA_HallOfFame_OnFrame
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, DIFA_HallOfFame_OnWarp
+	.byte 0
+
+DIFA_HallOfFame_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, DIFA_HallOfFame_EventScript_TurnPlayerNorth
+	.2byte 0
+
+DIFA_HallOfFame_EventScript_TurnPlayerNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+DIFA_HallOfFame_OnFrame:
+	map_script_2 VAR_TEMP_1, 0, DIFA_HallOfFame_EventScript_EnterHallOfFame
+	.2byte 0
+
+DIFA_HallOfFame_EventScript_GameClear::
+	setrespawn HEAL_LOCATION_RIMINI_TOWN_CASA_GAS_2F
+	fadescreenspeed FADE_TO_BLACK, 24
+	special GameClear
+	waitstate
+	releaseall
+	end
+`
+
+script DIFA_HallOfFame_EventScript_EnterHallOfFame {
+	lockall
+
+	applymovement(LOCALID_TAGLIA, DIFA_HallOfFame_Movement_TagliaSiAccomoda)
+	applymovement(OBJ_EVENT_ID_PLAYER, DIFA_HallOfFame_Movement_GasSiAccomoda)
+	waitmovement(0)
+
+	delay(40)
+	msgbox(format("SIOLI: Andrea Gaspari\p
+La commissione qui riunita le conferisce la
+POKéLAUREA con un risultato di 110 su 110.\n
+Congratulazioni!"), MSGBOX_DEFAULT)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, DIFA_HallOfFame_Movement_GasLoCiucciaATutti)
+	delay(20)
+
+	applymovement(11, Common_Movement_ExclamationMark)
+	applymovement(15, Common_Movement_ExclamationMark)
+	applymovement(14, Common_Movement_ExclamationMark)
+	applymovement(3, Common_Movement_ExclamationMark)
+	applymovement(10, Common_Movement_ExclamationMark)
+	msgbox(format("CLAP CLAP CLAP... BRAVO! ... CLAP CLAP UHUHUUU CLAP CLAP ..."))
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+	closemessage
+	
+	msgbox(format("SIOLI: Molto bene, ed ora registriamo tu e la tua squadra su ALMALAUREA.\n
+Vieni pure avanti."), MSGBOX_DEFAULT)
+	closemessage
+	applymovement(LOCALID_SIOLI, DIFA_HallOfFame_Movement_SioliSiLeva)
+	applymovement(LOCALID_FRABONI, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement(LOCALID_CASTELLANI, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement(LOCALID_UGUZZONI, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement(LOCALID_KAMENCIK, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement(OBJ_EVENT_ID_PLAYER, DIFA_ChampionsRoom_Movement_GasFaDuePassi)
+	waitmovement(0)
+
+	delay(20)
+	dofieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
+	waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
+	delay(40)
+	setvar(VAR_TEMP_1, 1)
+	call(DIFA_HallOfFame_EventScript_SetGameClearFlags)
+	goto(DIFA_HallOfFame_EventScript_GameClear)
+	end
+}
+
+movement DIFA_HallOfFame_Movement_TagliaSiAccomoda {
+	walk_up*2
+	walk_left*3
+	walk_up*2
+}
+
+movement DIFA_HallOfFame_Movement_GasSiAccomoda {
+	walk_up*9
+}
+
+movement DIFA_HallOfFame_Movement_GasLoCiucciaATutti {
+	walk_up
+	delay_16
+	walk_left*3
+	walk_in_place_up
+	delay_16
+	walk_right
+	walk_in_place_up
+	delay_16
+	walk_right*4
+	walk_in_place_up
+	delay_16
+	walk_right
+	walk_in_place_up
+	delay_16
+	walk_down
+	walk_left*3
+	walk_in_place_faster_up
+}
+
+movement DIFA_HallOfFame_Movement_SioliSiLeva {
+	walk_right
+	walk_in_place_fast_left
+}
+
+movement DIFA_ChampionsRoom_Movement_GasFaDuePassi {
+	walk_up*2
+}

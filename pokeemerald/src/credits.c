@@ -848,7 +848,7 @@ static u8 CheckChangeScene(u8 page, u8 taskId)
     if (page == PAGE_INTERVAL * 3)
     {
         // Pokémon interlude
-        gTasks[taskId].tNextMode = MODE_SHOW_MONS;
+        gTasks[taskId].tNextMode = MODE_BIKE_SCENE;
     }
 
     if (page == PAGE_INTERVAL * 4)
@@ -861,7 +861,7 @@ static u8 CheckChangeScene(u8 page, u8 taskId)
     if (page == PAGE_INTERVAL * 5)
     {
         // Pokémon interlude
-        gTasks[taskId].tNextMode = MODE_SHOW_MONS;
+        gTasks[taskId].tNextMode = MODE_BIKE_SCENE;
     }
 
     if (page == PAGE_INTERVAL * 6)
@@ -874,7 +874,7 @@ static u8 CheckChangeScene(u8 page, u8 taskId)
     if (page == PAGE_INTERVAL * 7)
     {
         // Pokémon interlude
-        gTasks[taskId].tNextMode = MODE_SHOW_MONS;
+        gTasks[taskId].tNextMode = MODE_BIKE_SCENE;
     }
 
     if (page == PAGE_INTERVAL * 8)

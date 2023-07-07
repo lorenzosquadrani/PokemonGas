@@ -64,6 +64,9 @@ AHAH devo aver dimenticato di mettere le altre cure..."), MSGBOX_NPC)
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Tommi {
+	lock
+	faceplayer
+
 	msgbox(format("Daje Gassi, hai ancora bisogno di qualche mossa?"), MSGBOX_YESNO)
 
 	if (var(VAR_RESULT)==NO) {
@@ -74,6 +77,7 @@ script DIFA_PokemonLeague_1F_EventScript_Tommi {
 		call(DIFA_PokemonLeague_1F_EventScript_InsegnaMosse)
 	}
 
+	release
 	end
 }
 
@@ -239,6 +243,7 @@ Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2{
+	lock
 
 	setvar(VAR_DIFA_STATE, 1)
 
@@ -256,6 +261,8 @@ script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2{
 ...\p
 Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."))
 	giveitem(ITEM_REVIVE, 5)
+	msgbox(format("MCP: Daje Gas!"))
+	release
 	end
 }
 

@@ -47,10 +47,13 @@ DIFA_PokemonLeague_1F_EventScript_Squadra::
 
 
 DIFA_PokemonLeague_1F_EventScript_Tommi::
+	lock
+	faceplayer
 	msgbox DIFA_PokemonLeague_1F_EventScript_Tommi_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq DIFA_PokemonLeague_1F_EventScript_Tommi_2
 	call DIFA_PokemonLeague_1F_EventScript_InsegnaMosse
+	release
 	end
 
 DIFA_PokemonLeague_1F_EventScript_Tommi_2:
@@ -200,6 +203,7 @@ DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1::
 
 
 DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2::
+	lock
 	setvar VAR_DIFA_STATE, 1
 	applymovement 9, Common_Movement_WalkInPlaceFasterUp
 	applymovement 9, Common_Movement_ExclamationMark
@@ -211,6 +215,8 @@ DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2::
 	waitmovement 0
 	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_1
 	giveitem ITEM_REVIVE, 5
+	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2_Text_0
+	release
 	end
 
 
@@ -367,6 +373,9 @@ DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_1:
 	.string "...\p"
 	.string "Dio santo sono in ansia per te. Tò tieni\n"
 	.string "sti revitalizzanti che mi fai pietà.$"
+
+DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2_Text_0:
+	.string "MCP: Daje Gas!$"
 
 DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0:
 	.string "MCP: Daje Gassi! Hai studiato anche tu\n"
