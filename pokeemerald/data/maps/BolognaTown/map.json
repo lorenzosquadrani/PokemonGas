@@ -81,21 +81,21 @@
   "warp_events": [
     {
       "x": 17,
-      "y": 21,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_SANTA_MARIA_MAGGIORE",
       "dest_warp_id": "0"
     },
     {
       "x": 20,
-      "y": 21,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_SANTA_MARIA_MAGGIORE",
       "dest_warp_id": "2"
     },
     {
       "x": 23,
-      "y": 21,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_SANTA_MARIA_MAGGIORE",
       "dest_warp_id": "4"
