@@ -37,6 +37,8 @@ static const u8 sCreditsText_FrancescoMorri[]                 = _("FrancescoMorr
 static const u8 sCreditsText_JankoPetkovic[]                  = _("Janko Petkovic");
 static const u8 sCreditsText_TommasoMarzi[]                   = _("Tommaso Marzi");
 static const u8 sCreditsText_ManuelFurlan[]                   = _("Manuel Furlan");
+static const u8 sCreditsText_SimoneTentori[]                  = _("Simone Tentori");
+static const u8 sCreditsText_SarahFerraiuolo[]               = _("Sarah Ferraiuolo");
 static const u8 sCreditsText_Gay[]                            = _("Gay");
 
 static const struct CreditsEntry sCreditsEntry_EmptyString[]                    = { 0, FALSE, sCreditsText_EmptyString};
@@ -54,6 +56,8 @@ static const struct CreditsEntry sCreditsEntry_FrancescoMorri[]                 
 static const struct CreditsEntry sCreditsEntry_JankoPetkovic[]                  = {11,  TRUE, sCreditsText_JankoPetkovic};
 static const struct CreditsEntry sCreditsEntry_TommasoMarzi[]                   = {11,  TRUE, sCreditsText_TommasoMarzi};
 static const struct CreditsEntry sCreditsEntry_ManuelFurlan[]                   = {11,  TRUE, sCreditsText_ManuelFurlan};
+static const struct CreditsEntry sCreditsEntry_SimoneTentori[]                  = {11,  TRUE, sCreditsText_SimoneTentori};
+static const struct CreditsEntry sCreditsEntry_SarahFerraiuolo[]                = {11,  TRUE, sCreditsText_SarahFerraiuolo};
 static const struct CreditsEntry sCreditsEntry_Gay[]                            = {11,  TRUE, sCreditsText_Gay};
 
 #define _ sCreditsEntry_EmptyString
@@ -102,11 +106,11 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
     },
     [PAGE_DEBUGGERS] = {
-        sCreditsEntry_Debugger,
+        sCreditsEntry_Debuggers,
         sCreditsEntry_FrancescoMorri,
         sCreditsEntry_ManuelFurlan,
-        _,
-        _,
+        sCreditsEntry_SimoneTentori,
+        sCreditsEntry_SarahFerraiuolo,
     },
     [PAGE_CHECCO_GAY0] = {
         _,

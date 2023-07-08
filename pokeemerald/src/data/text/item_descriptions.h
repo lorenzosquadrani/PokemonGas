@@ -1024,6 +1024,10 @@ static const u8 sContestPassDesc[] = _(
     "for entering\n"
     "POKéMON CONTESTS.");
 
+static const u8 sCartaSilviaDesc[] = _(
+    "La carta bancomat\n"
+    "di Silvia.");
+
 static const u8 sWailmerPailDesc[] = _(
     "A tool used for\n"
     "watering BERRIES\n"

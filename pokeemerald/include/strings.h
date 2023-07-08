@@ -1,6 +1,11 @@
 #ifndef GUARD_STRINGS_H
 #define GUARD_STRINGS_H
 
+// Soldi multichoice
+extern const u8 gText_Soldi0[];
+extern const u8 gText_Soldi1[];
+extern const u8 gText_Soldi2[];
+
 // Placeholders
 extern const u8 gText_ExpandedPlaceholder_Empty[];
 extern const u8 gText_ExpandedPlaceholder_Kun[];

@@ -1,4 +1,12 @@
 // multichoice lists
+
+static const struct MenuAction MultichoiceList_RitirareSoldi[] =
+{
+    {gText_Soldi0},
+    {gText_Soldi1},
+    {gText_Soldi2},
+};
+
 static const struct MenuAction MultichoiceList_BrineyOnDipartimento[] =
 {
     {gText_Petalburg},
@@ -898,6 +906,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SLATEPORT_TENT_RULES]       = MULTICHOICE(MultichoiceList_SlateportTentRules),
     [MULTI_EMILIA_TENT_RULES]       = MULTICHOICE(MultichoiceList_EmiliaTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
+    [MULTI_RITIRARE_SOLDI]             = MULTICHOICE(MultichoiceList_RitirareSoldi),
 };
 
 const u8 *const gStdStrings[] =

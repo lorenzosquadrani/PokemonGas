@@ -223,7 +223,7 @@ script RiminiTown_EventScript_DoveCazzo {
 
 script RiminiTown_EventScript_Snorlax {
 
-	lockall
+	lock
 
 	checkitem(ITEM_POKE_PISTOLA)
 
@@ -238,39 +238,38 @@ script RiminiTown_EventScript_Snorlax {
 ...\p
 La pellaccia di Snorlax respinge il proiettile, ma Snorlax si sveglia e attacca!"))
 
-		waitse
-		playmoncry(SPECIES_SNORLAX, CRY_MODE_ENCOUNTER)
-		delay(40)
-		waitmoncry
-		setwildbattle(SPECIES_SNORLAX, 40, ITEM_LEFTOVERS)
-		dowildbattle
-		specialvar(VAR_RESULT, GetBattleOutcome)
+			waitse
+			playmoncry(SPECIES_SNORLAX, CRY_MODE_ENCOUNTER)
+			delay(40)
+			waitmoncry
+			setwildbattle(SPECIES_SNORLAX, 40, ITEM_LEFTOVERS)
+			dowildbattle
+			specialvar(VAR_RESULT, GetBattleOutcome)
 
-		if (var(VAR_RESULT)== B_OUTCOME_WON){
-			call(Won_or_Caught)
-			call(FLAG_BATTLED_SNORLAX)
-		}
-		elif (var(VAR_RESULT)== B_OUTCOME_CAUGHT){
-			call(Won_or_Caught)
-			setflag(FLAG_BATTLED_SNORLAX)
-		}
-		elif (var(VAR_RESULT)== B_OUTCOME_RAN){
-			call(RanAway)
-		}
-		elif (var(VAR_RESULT)== B_OUTCOME_PLAYER_TELEPORTED){
-			call(RanAway)
-		}
+			if (var(VAR_RESULT)== B_OUTCOME_WON){
+				call(Won_or_Caught)
+			}
+			elif (var(VAR_RESULT)== B_OUTCOME_CAUGHT){
+				call(Won_or_Caught)
+			}
+			elif (var(VAR_RESULT)== B_OUTCOME_RAN){
+				call(RanAway)
+			}
+			elif (var(VAR_RESULT)== B_OUTCOME_PLAYER_TELEPORTED){
+				call(RanAway)
+			}
 	}}
 
 	waitmessage
-	releaseall
-	
+	release
+	end
 }
 
 script Won_or_Caught {
 	fadescreen(FADE_TO_BLACK)
 	removeobject(2)
 	fadescreen(FADE_FROM_BLACK)
+	setflag(FLAG_BATTLED_SNORLAX)
 	return
 }
 

@@ -207,15 +207,15 @@ RiminiTown_EventScript_DoveCazzo::
 
 
 RiminiTown_EventScript_Snorlax::
-	lockall
+	lock
 	checkitem ITEM_POKE_PISTOLA
 	msgbox RiminiTown_EventScript_Snorlax_Text_0
 	compare VAR_RESULT, 0
 	goto_if_ne RiminiTown_EventScript_Snorlax_2
 RiminiTown_EventScript_Snorlax_1:
 	waitmessage
-	releaseall
-	return
+	release
+	end
 
 RiminiTown_EventScript_Snorlax_2:
 	msgbox RiminiTown_EventScript_Snorlax_Text_1, MSGBOX_YESNO
@@ -244,12 +244,10 @@ RiminiTown_EventScript_Snorlax_4:
 
 RiminiTown_EventScript_Snorlax_6:
 	call Won_or_Caught
-	call FLAG_BATTLED_SNORLAX
 	goto RiminiTown_EventScript_Snorlax_1
 
 RiminiTown_EventScript_Snorlax_7:
 	call Won_or_Caught
-	setflag FLAG_BATTLED_SNORLAX
 	goto RiminiTown_EventScript_Snorlax_1
 
 RiminiTown_EventScript_Snorlax_8:
@@ -265,6 +263,7 @@ Won_or_Caught::
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
+	setflag FLAG_BATTLED_SNORLAX
 	return
 
 

@@ -70,5 +70,5 @@ DIFA_StanzaUguccioni_Text_Defeat::
 	.string "è limitata AHAH$"
 
 DIFA_StanzaUguccioni_Text_PostBattleSpeech::
-	.string "Ok, per me basta così Gaspari. Ti dò 30L,\n"
-	.string "vai pure avanti.$"
+	.string "UGUZZONI: Ok, per me basta così\n"
+	.string "Gaspari. Ti dò 30L, vai pure avanti.$"

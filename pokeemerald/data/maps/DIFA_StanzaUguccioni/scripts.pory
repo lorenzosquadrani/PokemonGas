@@ -75,5 +75,5 @@ text DIFA_StanzaUguccioni_Text_Defeat {
 }
 
 text DIFA_StanzaUguccioni_Text_PostBattleSpeech {
-	format("Ok, per me basta così Gaspari. Ti dò 30L, vai pure avanti.")
+	format("UGUZZONI: Ok, per me basta così Gaspari. Ti dò 30L, vai pure avanti.")
 }

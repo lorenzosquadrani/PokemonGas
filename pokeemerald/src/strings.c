@@ -1819,3 +1819,8 @@ const u8 gText_Answer[] = _("ANSWER");
 const u8 gText_PokeBalls[] = _("POKé BALLS");
 const u8 gText_Berry[] = _("BERRY");
 const u8 gText_Berries[] = _("BERRIES");
+
+
+const u8 gText_Soldi0[] = _("1000");
+const u8 gText_Soldi1[] = _("10000");
+const u8 gText_Soldi2[] = _("100000");

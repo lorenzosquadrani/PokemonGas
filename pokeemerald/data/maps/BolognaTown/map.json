@@ -28,7 +28,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
       "x": 30,
-      "y": 32,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 3,
@@ -41,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
       "x": 9,
-      "y": 28,
+      "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 4,
@@ -54,7 +54,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
       "x": 19,
-      "y": 50,
+      "y": 52,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -68,49 +68,49 @@
   "warp_events": [
     {
       "x": 17,
-      "y": 19,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_SANTA_MARIA_MAGGIORE",
       "dest_warp_id": "0"
     },
     {
       "x": 20,
-      "y": 19,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_SANTA_MARIA_MAGGIORE",
       "dest_warp_id": "2"
     },
     {
       "x": 23,
-      "y": 19,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_SANTA_MARIA_MAGGIORE",
       "dest_warp_id": "4"
     },
     {
       "x": 33,
-      "y": 27,
+      "y": 29,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
       "x": 21,
-      "y": 55,
+      "y": 57,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_CASELLO",
       "dest_warp_id": "3"
     },
     {
       "x": 20,
-      "y": 55,
+      "y": 57,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_CASELLO",
       "dest_warp_id": "3"
     },
     {
       "x": 19,
-      "y": 55,
+      "y": 57,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN_CASELLO",
       "dest_warp_id": "2"

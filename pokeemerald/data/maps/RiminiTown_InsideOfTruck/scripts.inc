@@ -24,6 +24,8 @@ RiminiTown_InsideOfTruck_EventScript_SetIntroFlags::
 	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_RIVAL_SIBLING
 	setflag FLAG_HIDE_RIMINI_TOWN_CASA_GAS_2F_POKE_BALL
 	setvar VAR_RIMINI_HOUSES_STATE_BRENDAN, 1
+	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_RAYQUAZA, 100
 	setdynamicwarp MAP_RIMINI_TOWN, 9, 27
 	releaseall
 	end

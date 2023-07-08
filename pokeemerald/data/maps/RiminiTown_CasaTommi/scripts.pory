@@ -15,8 +15,7 @@ script RiminiTown_CasaTommi_EventScript_Tommi {
 
 		msgbox (format("HO LA MOSSA, GAS.\p 
 Tu oggi ti laurei, vero? Se mi porti i tuoi Pokémon, 
-posso insegnargli tutte le mosse che imparano con
-con l'esperienza. \p
+posso insegnargli tutte le mosse che imparano con l'esperienza.\p
 Quelle con le MT e le MN, invece, tocca che le compri.
 Sicuramente a BOLOGNA le hanno."))
 
