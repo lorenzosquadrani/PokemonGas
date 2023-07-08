@@ -17,7 +17,7 @@ BolognaTown_PokemonCenter_1F_EventScript_Nurse::
 	end
 
 BolognaTown_PokemonCenter_1F_EventScript_Gentleman::
-	msgbox BolognaTown_PokemonCenter_1F_EventScript_Gentleman_Text_0
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Gentleman_Text_0, MSGBOX_NPC
 	end
 
 
@@ -25,17 +25,17 @@ BolognaTown_PokemonCenter_1F_EventScript_Boy::
 	checkitem ITEM_MACH_BIKE
 	compare VAR_RESULT, 0
 	goto_if_ne BolognaTown_PokemonCenter_1F_EventScript_Boy_2
-	msgbox BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_1
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_1, MSGBOX_NPC
 BolognaTown_PokemonCenter_1F_EventScript_Boy_1:
 	end
 
 BolognaTown_PokemonCenter_1F_EventScript_Boy_2:
-	msgbox BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_0
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_0, MSGBOX_NPC
 	goto BolognaTown_PokemonCenter_1F_EventScript_Boy_1
 
 
 BolognaTown_PokemonCenter_1F_EventScript_Girl::
-	msgbox BolognaTown_PokemonCenter_1F_EventScript_Girl_Text_0
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Girl_Text_0, MSGBOX_NPC
 	end
 
 

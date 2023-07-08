@@ -35,6 +35,14 @@
     {
       "map_section": "MAPSEC_INSIDE_OF_TRUCK",
       "name": "INSIDE OF TRUCK",
+      "x": 5,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_DIFA",
+      "name": "DIFA",
       "x": 0,
       "y": 0,
       "width": 1,

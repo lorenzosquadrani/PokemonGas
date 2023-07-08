@@ -107,7 +107,7 @@ DIFA_PokemonLeague_1F_EventScript_Gaia::
 	end
 
 DIFA_PokemonLeague_1F_EventScript_Gaia_2:
-	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_1
+	msgbox DIFA_PokemonLeague_1F_EventScript_Gaia_Text_1, MSGBOX_NPC
 	end
 
 
@@ -241,8 +241,8 @@ taglia_approach_player_2:
 	step_end
 
 DIFA_PokemonLeague_1F_EventScript_Squadra_Text_0:
-	.string "Bella Gassi, felice di vedere che sei\n"
-	.string "arrivato fino a qua.\p"
+	.string "SQUADRA: Bella Gassi, felice di vedere\n"
+	.string "che sei arrivato fino a qua.\p"
 	.string "Spero che la tua squadra sia decente,\n"
 	.string "perché non sarà facile laurearsi.\l"
 	.string "Giusto perché sono buono, ho messo che\l"
@@ -256,7 +256,7 @@ DIFA_PokemonLeague_1F_EventScript_Squadra_Text_1:
 	.string "le altre cure...$"
 
 DIFA_PokemonLeague_1F_EventScript_Tommi_Text_0:
-	.string "Daje Gassi, hai ancora bisogno di\n"
+	.string "EAGLE: Daje Gassi, hai ancora bisogno di\n"
 	.string "qualche mossa?$"
 
 DIFA_PokemonLeague_1F_EventScript_Tommi_Text_1:
@@ -324,7 +324,7 @@ DIFA_PokemonLeague_1F_EventScript_Domi_Text_2:
 
 DIFA_PokemonLeague_1F_EventScript_Checco_Text_0:
 	.string "CHECCO: Il mio sito web fa schifo in\n"
-	.string "confronto a quello di domi...$"
+	.string "confronto a quello di Domi...$"
 
 DIFA_PokemonLeague_1F_EventScript_Simo_Text_0:
 	.string "SIMO: Chissà quale Pokémon farebbe i\n"

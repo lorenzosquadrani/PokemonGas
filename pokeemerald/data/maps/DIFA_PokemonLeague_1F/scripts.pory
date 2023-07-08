@@ -49,7 +49,7 @@ text MaxSiChiude {
 
 script DIFA_PokemonLeague_1F_EventScript_Squadra {
 
-	msgbox(format("Bella Gassi, felice di vedere che sei arrivato fino a qua.\p
+	msgbox(format("SQUADRA: Bella Gassi, felice di vedere che sei arrivato fino a qua.\p
 Spero che la tua squadra sia decente, perché non sarà facile laurearsi.
 Giusto perché sono buono, ho messo che i professori non possono usare strumenti per curare i Pokémons."), MSGBOX_NPC)
 
@@ -67,7 +67,7 @@ script DIFA_PokemonLeague_1F_EventScript_Tommi {
 	lock
 	faceplayer
 
-	msgbox(format("Daje Gassi, hai ancora bisogno di qualche mossa?"), MSGBOX_YESNO)
+	msgbox(format("EAGLE: Daje Gassi, hai ancora bisogno di qualche mossa?"), MSGBOX_YESNO)
 
 	if (var(VAR_RESULT)==NO) {
 		msgbox(format("Ok, se hai bisogno chiedi."), MSGBOX_NPC)
@@ -124,7 +124,7 @@ script DIFA_PokemonLeague_1F_EventScript_Gaia {
 	msgbox(format("GAIA: Ciao Gas! Vuoi allenarti per la laurea con i miei gabbiani?"), MSGBOX_YESNO)
 
 	if (var(VAR_RESULT)==NO) {
-		msgbox(format("Ok, in bocca al lupo allora."))
+		msgbox(format("Ok, in bocca al lupo allora."), MSGBOX_NPC)
 		end
 	}
 	else {
@@ -173,7 +173,7 @@ script DIFA_PokemonLeague_1F_EventScript_Domi {
 }
 
 script DIFA_PokemonLeague_1F_EventScript_Checco {
-	msgbox(format("CHECCO: Il mio sito web fa schifo in confronto a quello di domi..."), MSGBOX_NPC)
+	msgbox(format("CHECCO: Il mio sito web fa schifo in confronto a quello di Domi..."), MSGBOX_NPC)
 	end
 }
 

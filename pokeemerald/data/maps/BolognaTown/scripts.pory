@@ -3,21 +3,23 @@ mapscripts BolognaTown_MapScripts {
 }
 
 script BolognaTown_EventScript_Birra1 {
-    lock
     msgbox(format("Biraaa! Biraa! 1 euro, fresca fresca!!"), MSGBOX_NPC)
-    release
+    end
 }
 
 script BolognaTown_EventScript_TipaDroghe {
-    lock
     msgbox(format("Hey, hai qualche moneta da darmi? 
 Devo andare a comprare un paio di pasticche..."), MSGBOX_NPC)
-    release
+    end
 }
 
 script BolognaTown_EventScript_VecchioEntrata {
-    lock
     msgbox(format("Sei sicuro di voler venire a Bolo? 
 Lo sai che poi finisci ubriaco e fatto steso in mezzo a una piazza..."), MSGBOX_NPC)
-    release
+    end
+}
+
+script BolognaTown_EventScript_Davo {
+    msgbox(format("DAVO: Ciao Gas! Sto aiutando i drogati... In bocca al lupo per oggi!"), MSGBOX_NPC)
+    end
 }
