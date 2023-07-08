@@ -219,8 +219,8 @@ BolognaTown_SantaMariaMaggiore_EventScript_Bancomat_8:
 
 
 BolognaTown_SantaMariaMaggiore_EventScript_Silvia_Text_0:
-	.string "Ehi Gas! Hai visto la mia carta di\n"
-	.string "credito? Mi sa che l'ho persa qua in\l"
+	.string "SILVIA: Ehi Gas! Hai visto la mia carta\n"
+	.string "di credito? Mi sa che l'ho persa qua in\l"
 	.string "giro...$"
 
 BolognaTown_SantaMariaMaggiore_EventScript_Bancomat_Text_0:
@@ -233,19 +233,19 @@ BolognaTown_SantaMariaMaggiore_EventScript_Bancomat_Text_2:
 	.string "Quanti soldi vuoi ritirare?$"
 
 BolognaTown_SantaMariaMaggiore_EventScript_Bancomat_Text_3:
-	.string "Gas ritira 1000 soldi.$"
+	.string "Gas ritira ¥1000.$"
 
 BolognaTown_SantaMariaMaggiore_EventScript_Bancomat_Text_4:
-	.string "Gas ritira 10000 soldi.$"
+	.string "Gas ritira ¥10000.$"
 
 BolognaTown_SantaMariaMaggiore_EventScript_Bancomat_Text_5:
-	.string "Gas ritira 100000 soldi.$"
+	.string "Gas ritira ¥100000$"
 
 BolognaTown_SantaMariaMaggiore_Text_Fu::
-	.string "Bella Gas, lascia perdere tutte queste\n"
-	.string "troiate. I veri allenatori di Pokémons\l"
-	.string "usano le bacche.\p"
+	.string "FU: Bella Gas, lascia perdere tutte\n"
+	.string "queste troiate. I veri allenatori di\l"
+	.string "Pokémons usano le bacche.\p"
 	.string "Ecco, guarda pure la mia scorta.$"
 
 BolognaTown_SantaMariaMaggiore_Text_FuTorna::
-	.string "Torna se ti servono altre bacche.$"
+	.string "FU: Torna se ti servono altre bacche.$"

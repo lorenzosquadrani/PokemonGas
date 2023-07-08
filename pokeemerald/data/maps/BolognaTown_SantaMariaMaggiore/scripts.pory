@@ -34,7 +34,7 @@ BolognaTown_SantaMariaMaggiore_MTShop:
     .2byte ITEM_TM19_GIGA_DRAIN
     .2byte ITEM_TM20_SAFEGUARD
     .2byte ITEM_TM21_FRUSTRATION
-    .2byte ITEM_TM22_SOLAR_BEAM,
+    .2byte ITEM_TM22_SOLAR_BEAM
     .2byte ITEM_TM23_IRON_TAIL
     .2byte ITEM_TM24_THUNDERBOLT
     .2byte ITEM_TM25_THUNDER
@@ -170,17 +170,17 @@ BolognaTown_SantaMariaMaggiore_BerryShop:
 `
 
 text BolognaTown_SantaMariaMaggiore_Text_Fu {
-    format("Bella Gas, lascia perdere tutte queste troiate.
+    format("FU: Bella Gas, lascia perdere tutte queste troiate.
 I veri allenatori di Pokémons usano le bacche.\p
 Ecco, guarda pure la mia scorta.")
 }
 
 text BolognaTown_SantaMariaMaggiore_Text_FuTorna {
-    format("Torna se ti servono altre bacche.")
+    format("FU: Torna se ti servono altre bacche.")
 }
 
 script BolognaTown_SantaMariaMaggiore_EventScript_Silvia {
-    msgbox(format("Ehi Gas! Hai visto la mia carta di credito? Mi sa che l'ho persa qua in giro..."), MSGBOX_NPC)
+    msgbox(format("SILVIA: Ehi Gas! Hai visto la mia carta di credito? Mi sa che l'ho persa qua in giro..."), MSGBOX_NPC)
     end
 }
 
@@ -201,15 +201,15 @@ script BolognaTown_SantaMariaMaggiore_EventScript_Bancomat {
             
             if (var(VAR_RESULT)==0) {
                 addmoney(1000)
-                msgbox(format("Gas ritira 1000 soldi."))
+                msgbox(format("Gas ritira ¥1000."))
             }
             elif (var(VAR_RESULT)==1) {
                 addmoney(10000)
-                msgbox(format("Gas ritira 10000 soldi."))
+                msgbox(format("Gas ritira ¥10000."))
             }
             elif (var(VAR_RESULT)==2) {
                 addmoney(100000)
-                msgbox(format("Gas ritira 100000 soldi."))
+                msgbox(format("Gas ritira ¥100000"))
             }
         }
     }
