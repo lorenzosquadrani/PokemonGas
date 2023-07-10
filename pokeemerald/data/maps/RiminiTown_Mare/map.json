@@ -27,7 +27,7 @@
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_UP_LEFT_RIGHT",
       "movement_range_x": 3,
-      "movement_range_y": 4,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RiminiTown_Mare_EventScript_VecchioSinistra",

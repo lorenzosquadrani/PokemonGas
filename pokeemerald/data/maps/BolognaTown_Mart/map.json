@@ -15,65 +15,108 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-      "x": 1,
-      "y": 3,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 4,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BolognaTown_Mart_EventScript_Clerk",
+      "script": "BolognaTown_Mart_EventScript_Deme",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 5,
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 3,
       "y": 5,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BolognaTown_Mart_EventScript_Woman",
+      "script": "BolognaTown_Mart_EventScript_Leo",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 9,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
-      "movement_range_y": 1,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BolognaTown_Mart_EventScript_Boy",
+      "script": "BolognaTown_Mart_EventScript_Fabruz",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 3,
-      "y": 7,
+      "x": 2,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN",
-      "dest_warp_id": "3"
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN",
+      "dest_warp_id": "8"
     },
     {
       "x": 4,
-      "y": 7,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_BOLOGNA_TOWN",
-      "dest_warp_id": "3"
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_BOLOGNA_TOWN",
+      "dest_warp_id": "10"
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BolognaTown_Mart_EventScript_PizzaSign"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BolognaTown_Mart_EventScript_PamcialSign"
+    }
   ]
 }

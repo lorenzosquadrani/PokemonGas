@@ -6,7 +6,8 @@ enum
     PAGE_MAPS_DESIGNERS,
     PAGE_SKATEBOARD_DESIGNER,
     PAGE_MAPPA_DIFA,
-    PAGE_DEBUGGERS,
+    PAGE_DEBUGGERS0,
+    PAGE_DEBUGGERS1,
     PAGE_CHECCO_GAY0,
     PAGE_CHECCO_GAY1,
     PAGE_CHECCO_GAY2,
@@ -38,7 +39,9 @@ static const u8 sCreditsText_JankoPetkovic[]                  = _("Janko Petkovi
 static const u8 sCreditsText_TommasoMarzi[]                   = _("Tommaso Marzi");
 static const u8 sCreditsText_ManuelFurlan[]                   = _("Manuel Furlan");
 static const u8 sCreditsText_SimoneTentori[]                  = _("Simone Tentori");
-static const u8 sCreditsText_SarahFerraiuolo[]               = _("Sarah Ferraiuolo");
+static const u8 sCreditsText_SarahFerraiuolo[]                = _("Sarah Ferraiuolo");
+static const u8 sCreditsText_GaiaFontana[]                    = _("Gaia Fontana");
+static const u8 sCreditsText_CamillaBordoni[]                 = _("Camilla Bordoni");
 static const u8 sCreditsText_Gay[]                            = _("Gay");
 
 static const struct CreditsEntry sCreditsEntry_EmptyString[]                    = { 0, FALSE, sCreditsText_EmptyString};
@@ -58,6 +61,8 @@ static const struct CreditsEntry sCreditsEntry_TommasoMarzi[]                   
 static const struct CreditsEntry sCreditsEntry_ManuelFurlan[]                   = {11,  TRUE, sCreditsText_ManuelFurlan};
 static const struct CreditsEntry sCreditsEntry_SimoneTentori[]                  = {11,  TRUE, sCreditsText_SimoneTentori};
 static const struct CreditsEntry sCreditsEntry_SarahFerraiuolo[]                = {11,  TRUE, sCreditsText_SarahFerraiuolo};
+static const struct CreditsEntry sCreditsEntry_GaiaFontana[]                    = {11,  TRUE, sCreditsText_GaiaFontana};
+static const struct CreditsEntry sCreditsEntry_CamillaBordoni[]                 = {11,  TRUE, sCreditsText_CamillaBordoni};
 static const struct CreditsEntry sCreditsEntry_Gay[]                            = {11,  TRUE, sCreditsText_Gay};
 
 #define _ sCreditsEntry_EmptyString
@@ -105,12 +110,19 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         _,
     },
-    [PAGE_DEBUGGERS] = {
+    [PAGE_DEBUGGERS0] = {
         sCreditsEntry_Debuggers,
         sCreditsEntry_FrancescoMorri,
         sCreditsEntry_ManuelFurlan,
         sCreditsEntry_SimoneTentori,
+        _,
+    },
+    [PAGE_DEBUGGERS1] = {
+        sCreditsEntry_Debuggers,
         sCreditsEntry_SarahFerraiuolo,
+        sCreditsEntry_GaiaFontana,
+        sCreditsEntry_CamillaBordoni,
+        _,
     },
     [PAGE_CHECCO_GAY0] = {
         _,

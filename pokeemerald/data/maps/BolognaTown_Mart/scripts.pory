@@ -1,0 +1,30 @@
+mapscripts BolognaTown_Mart_MapScripts {
+	
+}
+
+script BolognaTown_Mart_EventScript_PamcialSign {
+	msgbox("PAMCIAL", MSGBOX_SIGN)
+	end
+}
+
+script BolognaTown_Mart_EventScript_PizzaSign {
+	msgbox("PIZZA IRNERIO", MSGBOX_SIGN)
+}
+
+script BolognaTown_Mart_EventScript_Deme {
+	msgbox(format("DEME: Gli origami sono meglio."), MSGBOX_NPC)
+	end
+}
+
+
+script BolognaTown_Mart_EventScript_Leo {
+	msgbox(format("LEO: Pamcial è meglio."), MSGBOX_NPC)
+	end
+}
+
+
+script BolognaTown_Mart_EventScript_Fabruz {
+	msgbox(format("FABRUZ: Questa pizza è una nuvola."), MSGBOX_NPC)
+	end
+}
+

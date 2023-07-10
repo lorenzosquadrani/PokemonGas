@@ -3,24 +3,23 @@ BolognaTown_MapScripts::
 
 
 BolognaTown_EventScript_Birra1::
-	lock
 	msgbox BolognaTown_EventScript_Birra1_Text_0, MSGBOX_NPC
-	release
-	return
+	end
 
 
 BolognaTown_EventScript_TipaDroghe::
-	lock
 	msgbox BolognaTown_EventScript_TipaDroghe_Text_0, MSGBOX_NPC
-	release
-	return
+	end
 
 
 BolognaTown_EventScript_VecchioEntrata::
-	lock
 	msgbox BolognaTown_EventScript_VecchioEntrata_Text_0, MSGBOX_NPC
-	release
-	return
+	end
+
+
+BolognaTown_EventScript_Davo::
+	msgbox BolognaTown_EventScript_Davo_Text_0, MSGBOX_NPC
+	end
 
 
 BolognaTown_EventScript_Birra1_Text_0:
@@ -35,3 +34,7 @@ BolognaTown_EventScript_VecchioEntrata_Text_0:
 	.string "Sei sicuro di voler venire a Bolo? Lo sai\n"
 	.string "che poi finisci ubriaco e fatto steso\l"
 	.string "in mezzo a una piazza...$"
+
+BolognaTown_EventScript_Davo_Text_0:
+	.string "DAVO: Ciao Gas! Sto aiutando i drogati...\n"
+	.string "In bocca al lupo per oggi!$"
