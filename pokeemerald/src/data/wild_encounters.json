@@ -33639,7 +33639,7 @@
           "map": "MAP_WEIRD_CAVE",
           "base_label": "gWeirdCave0",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 30,

@@ -161,3 +161,8 @@ script EmiliaRoad_EventScript_EmiliaRoadSign {
 	msgbox(format("VIA EMILIA"), MSGBOX_SIGN)
 	end
 }
+
+script EmiliaRoad_EventScript_WeirdCaveSign {
+	msgbox(format("Una strana grotta."), MSGBOX_SIGN)
+	end
+}

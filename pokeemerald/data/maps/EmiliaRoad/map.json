@@ -200,6 +200,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "EmiliaRoad_EventScript_PistaSkateSign"
+    },
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "EmiliaRoad_EventScript_WeirdCaveSign"
     }
   ]
 }
