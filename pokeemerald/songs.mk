@@ -238,7 +238,7 @@ $(MID_SUBDIR)/mus_sealed_chamber.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G084 -V100
 
 $(MID_SUBDIR)/mus_paracetamolo.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G015 -V080
+	$(MID) $< $@ -E -R$(STD_REVERB) -G011 -V080
 
 $(MID_SUBDIR)/mus_fortree.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G032 -V080
