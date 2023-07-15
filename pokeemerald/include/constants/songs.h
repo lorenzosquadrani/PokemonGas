@@ -42,7 +42,7 @@
 #define SE_CLICK                    36 // SE_TK_KASYA
 #define SE_FU_ZAKU                  37 // SE_FU_ZAKU (Unknown purpose, unused)
 #define SE_CONTEST_CONDITION_LOSE   38 // SE_FU_ZAKU2
-#define SE_SANTA_FALL_WARP      39 // SE_FU_ZUZUZU
+#define SE_SANTA_FALL_WARP          39 // SE_FU_ZUZUZU
 #define SE_ICE_STAIRS               40 // SE_RU_GASHIN
 #define SE_ICE_BREAK                41 // SE_RU_GASYAN
 #define SE_ICE_CRACK                42 // SE_RU_BARI
@@ -278,7 +278,7 @@
 #define SE_SUDOWOODO_SHAKE          269 // SE_USSOKI
 
 // Music
-#define MUS_RIMINI_TEST         350 // MUS_TETSUJI
+#define MUS_RIMINI_TEST             350 // MUS_TETSUJI
 #define MUS_GSC_ROUTE38             351 // MUS_FIELD13
 #define MUS_CAUGHT                  352 // MUS_KACHI22
 #define MUS_VICTORY_WILD            353 // MUS_KACHI2
@@ -287,11 +287,11 @@
 #define MUS_C_COMM_CENTER           356 // MUS_PCC
 #define MUS_GSC_PEWTER              357 // MUS_NIBI
 #define MUS_C_VS_LEGEND_BEAST       358 // MUS_SUIKUN
-#define MUS_MARECCHIA                359 // MUS_DOORO1
-#define MUS_EMILIA_ROAD                360 // MUS_DOORO_X1
+#define MUS_ROMAGNA_MIA             359 // MUS_DOORO1
+#define MUS_EMILIA_ROAD             360 // MUS_DOORO_X1
 #define MUS_ROUTE120                361 // MUS_DOORO_X3
-#define MUS_PETALBURG               362 // MUS_MACHI_S2
-#define MUS_BOLOGNA                  363 // MUS_MACHI_S4
+#define MUS_PARACETAMOLO            362 // MUS_MACHI_S2
+#define MUS_BOLOGNA                 363 // MUS_MACHI_S4
 #define MUS_GYM                     364 // MUS_GIM
 #define MUS_SURF                    365 // MUS_NAMINORI
 #define MUS_PETALBURG_WOODS         366 // MUS_DAN01

@@ -359,10 +359,10 @@ gSongTable::
 	song mus_c_comm_center, 0, 0
 	song mus_gsc_pewter, 0, 0
 	song mus_c_vs_legend_beast, 0, 0
-	song mus_marecchia, 0, 0
+	song mus_romagna_mia, 0, 0
 	song mus_emiliaroad, 0, 0
 	song mus_route120, 0, 0
-	song mus_petalburg, 0, 0
+	song mus_paracetamolo, 0, 0
 	song mus_bologna, 0, 0
 	song mus_gym, 0, 0
 	song mus_surf, 0, 0

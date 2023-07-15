@@ -2,7 +2,7 @@
   "id": "MAP_MARECCHIA",
   "name": "Marecchia",
   "layout": "LAYOUT_MARECCHIA",
-  "music": "MUS_MARECCHIA",
+  "music": "MUS_ROMAGNA_MIA",
   "region_map_section": "MAPSEC_MARECCHIA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

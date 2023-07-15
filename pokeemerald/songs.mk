@@ -132,7 +132,7 @@ $(MID_SUBDIR)/mus_route120.s: %.s: %.mid
 $(MID_SUBDIR)/mus_route122.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G021 -V080
 
-$(MID_SUBDIR)/mus_marecchia.s: %.s: %.mid
+$(MID_SUBDIR)/mus_romagna_mia.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G011 -V080
 
 $(MID_SUBDIR)/mus_dummy.s: %.s: %.mid
@@ -237,7 +237,7 @@ $(MID_SUBDIR)/mus_mt_pyre.s: %.s: %.mid
 $(MID_SUBDIR)/mus_sealed_chamber.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G084 -V100
 
-$(MID_SUBDIR)/mus_petalburg.s: %.s: %.mid
+$(MID_SUBDIR)/mus_paracetamolo.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G015 -V080
 
 $(MID_SUBDIR)/mus_fortree.s: %.s: %.mid

@@ -153,11 +153,19 @@ EmiliaRoad_EventScript_EmiliaRoadSign::
 	end
 
 
+EmiliaRoad_EventScript_WeirdCaveSign::
+	msgbox EmiliaRoad_EventScript_WeirdCaveSign_Text_0, MSGBOX_SIGN
+	end
+
+
 EmiliaRoad_EventScript_PistaSkateSign_Text_0:
 	.string "Pista da Skate Rimini-Bologna$"
 
 EmiliaRoad_EventScript_EmiliaRoadSign_Text_0:
 	.string "VIA EMILIA$"
+
+EmiliaRoad_EventScript_WeirdCaveSign_Text_0:
+	.string "Una strana grotta.$"
 
 EmiliaRoad_Text_RatedForNumberOfCollisions::
 	.string "Ehi, amico! Benvenuto nella nuova pista\n"

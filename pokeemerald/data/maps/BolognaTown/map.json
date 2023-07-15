@@ -2,7 +2,7 @@
   "id": "MAP_BOLOGNA_TOWN",
   "name": "BolognaTown",
   "layout": "LAYOUT_BOLOGNA_TOWN",
-  "music": "MUS_BOLOGNA",
+  "music": "MUS_ROUTE120",
   "region_map_section": "MAPSEC_BOLOGNA_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
