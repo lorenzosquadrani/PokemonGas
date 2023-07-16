@@ -30,6 +30,9 @@ script RiminiTown_InsideOfTruck_EventScript_SetIntroFlags {
 	setflag(FLAG_SYS_POKEMON_GET)
 	givemon(SPECIES_RAYQUAZA, 100)
 
+	giveitem(ITEM_MACH_BIKE)
+	closemessage
+
 	setdynamicwarp(MAP_RIMINI_TOWN, 9, 27)
 	#setdynamicwarp(MAP_DIFA, 14, 14)
 
