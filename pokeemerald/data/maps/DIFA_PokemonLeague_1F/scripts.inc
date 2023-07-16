@@ -205,7 +205,8 @@ DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1::
 DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2::
 	lock
 	setvar VAR_DIFA_STATE, 1
-	applymovement 9, Common_Movement_WalkInPlaceFasterUp
+	applymovement 9, Common_Movement_FacePlayer
+	waitmovement 0
 	applymovement 9, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_0, MSGBOX_AUTOCLOSE
@@ -375,7 +376,7 @@ DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_1_Text_1:
 	.string "sti revitalizzanti che mi fai pietà.$"
 
 DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2_Text_0:
-	.string "MCP: Daje Gas!$"
+	.string "Daje Gas!$"
 
 DIFA_PokemonLeague_1F_EventScript_Taglia_Text_0:
 	.string "MCP: Daje Gassi! Hai studiato anche tu\n"

@@ -2,7 +2,7 @@
   "id": "MAP_WEIRD_CAVE",
   "name": "WeirdCave",
   "layout": "LAYOUT_WEIRD_CAVE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PARACETAMOLO",
   "region_map_section": "MAPSEC_EMILIA_ROAD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

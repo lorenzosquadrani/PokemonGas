@@ -135,6 +135,9 @@ $(MID_SUBDIR)/mus_route122.s: %.s: %.mid
 $(MID_SUBDIR)/mus_romagna_mia.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G011 -V080
 
+$(MID_SUBDIR)/mus_despacito.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G011 -V080
+
 $(MID_SUBDIR)/mus_dummy.s: %.s: %.mid
 	$(MID) $< $@ -E -R40
 
@@ -242,9 +245,6 @@ $(MID_SUBDIR)/mus_paracetamolo.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_fortree.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G032 -V080
-
-$(MID_SUBDIR)/mus_bologna.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G019 -V080
 
 $(MID_SUBDIR)/mus_mt_pyre_exterior.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G080 -V080

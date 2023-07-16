@@ -2,7 +2,7 @@
   "id": "MAP_RIMINI_TOWN_CASA_TOMMI",
   "name": "RiminiTown_CasaTommi",
   "layout": "LAYOUT_RIMINI_TOWN_CASA_TOMMI",
-  "music": "MUS_BIRCH_LAB",
+  "music": "MUS_C_VS_LEGEND_BEAST",
   "region_map_section": "MAPSEC_RIMINI_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

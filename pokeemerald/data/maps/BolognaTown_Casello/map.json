@@ -2,7 +2,7 @@
   "id": "MAP_BOLOGNA_TOWN_CASELLO",
   "name": "BolognaTown_Casello",
   "layout": "LAYOUT_BOLOGNA_TOWN_CASELLO",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_RUSTBORO",
   "region_map_section": "MAPSEC_BOLOGNA_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

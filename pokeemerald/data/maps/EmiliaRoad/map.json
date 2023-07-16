@@ -2,7 +2,7 @@
   "id": "MAP_EMILIA_ROAD",
   "name": "EmiliaRoad",
   "layout": "LAYOUT_EMILIA_ROAD",
-  "music": "MUS_EMILIA_ROAD",
+  "music": "MUS_PARACETAMOLO",
   "region_map_section": "MAPSEC_EMILIA_ROAD",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -291,7 +291,7 @@
 #define MUS_EMILIA_ROAD             360 // MUS_DOORO_X1
 #define MUS_ROUTE120                361 // MUS_DOORO_X3
 #define MUS_PARACETAMOLO            362 // MUS_MACHI_S2
-#define MUS_BOLOGNA                 363 // MUS_MACHI_S4
+#define MUS_DESPACITO               363 // MUS_MACHI_S4
 #define MUS_GYM                     364 // MUS_GIM
 #define MUS_SURF                    365 // MUS_NAMINORI
 #define MUS_PETALBURG_WOODS         366 // MUS_DAN01

@@ -27,10 +27,18 @@ script RiminiTown_CasaSte_1F_EventScript_MammadiSte {
 	else {
 		msgbox(format("Buongiorno! Posso aiutarti?"))
 		delay(40)
-		msgbox(format("Oh, il caffé che avevo ordinato!\p
+
+		if (var(VAR_RIMINI_INTRO_STATE)==5) {
+			msgbox(format("Oh, il caffé che avevo ordinato!\pGrazie, ecco tieni i soldi."))
+		}
+
+		else {
+			msgbox(format("Oh, il caffé che avevo ordinato!\p
 Grazie, tu allora devi essere Gas, Stefano mi ha parlato di te.
 Non credo che sia in casa ora, probabilmente sarà
 alla cava a bighellonare."))
+		}
+
 		removeitem(ITEM_CAFFE)
 		setflag(FLAG_CONSEGNATO_CAFFE)
 	}

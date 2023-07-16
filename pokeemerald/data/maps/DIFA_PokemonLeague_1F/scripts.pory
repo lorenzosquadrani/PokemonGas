@@ -247,7 +247,7 @@ script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2{
 
 	setvar(VAR_DIFA_STATE, 1)
 
-	applymovement(9, Common_Movement_WalkInPlaceFasterUp)
+	applymovement(9, Common_Movement_FacePlayer)
 	waitmovement(0)
 	applymovement(9, Common_Movement_ExclamationMark)
 	waitmovement(0)
@@ -262,8 +262,7 @@ script DIFA_PokemonLeague_1F_EventScript_Taglia_Advice_2{
 ...\p
 Dio santo sono in ansia per te. Tò tieni sti revitalizzanti che mi fai pietà."))
 	giveitem(ITEM_REVIVE, 5)
-	closemessage
-	msgbox(format("MCP: Daje Gas!"), MSGBOX_NPC)
+	msgbox(format("Daje Gas!"))
 	release
 	end
 }

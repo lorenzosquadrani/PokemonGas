@@ -2,7 +2,7 @@
   "id": "MAP_RIMINI_TOWN_BIKE_SHOP",
   "name": "RiminiTown_BikeShop",
   "layout": "LAYOUT_MAUVILLE_CITY_BIKE_SHOP",
-  "music": "MUS_RIMINI",
+  "music": "MUS_C_VS_LEGEND_BEAST",
   "region_map_section": "MAPSEC_RIMINI_MARE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

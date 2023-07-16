@@ -2,7 +2,7 @@
   "id": "MAP_SANTA_GIUSTINA",
   "name": "SantaGiustina",
   "layout": "LAYOUT_SANTA_GIUSTINA",
-  "music": "MUS_BOLOGNA",
+  "music": "MUS_C_VS_LEGEND_BEAST",
   "region_map_section": "MAPSEC_SANTA_GIUSTINA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

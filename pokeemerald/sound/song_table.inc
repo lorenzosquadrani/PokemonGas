@@ -363,7 +363,7 @@ gSongTable::
 	song mus_emiliaroad, 0, 0
 	song mus_route120, 0, 0
 	song mus_paracetamolo, 0, 0
-	song mus_bologna, 0, 0
+	song mus_despacito, 0, 0
 	song mus_gym, 0, 0
 	song mus_surf, 0, 0
 	song mus_petalburg_woods, 0, 0

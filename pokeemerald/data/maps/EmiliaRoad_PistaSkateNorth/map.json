@@ -2,7 +2,7 @@
   "id": "MAP_EMILIA_ROAD_PISTA_SKATE_NORTH",
   "name": "EmiliaRoad_PistaSkateNorth",
   "layout": "LAYOUT_EMILIA_ROAD_PISTA_SKATE_INGRESSO",
-  "music": "MUS_SLATEPORT",
+  "music": "MUS_PARACETAMOLO",
   "region_map_section": "MAPSEC_EMILIA_ROAD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

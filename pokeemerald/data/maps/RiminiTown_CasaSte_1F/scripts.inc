@@ -19,7 +19,10 @@ RiminiTown_CasaSte_1F_EventScript_MammadiSte::
 	goto_if_set FLAG_CONSEGNATO_CAFFE, RiminiTown_CasaSte_1F_EventScript_MammadiSte_2
 	msgbox RiminiTown_CasaSte_1F_EventScript_MammadiSte_Text_1
 	delay 40
-	msgbox RiminiTown_CasaSte_1F_EventScript_MammadiSte_Text_2
+	compare VAR_RIMINI_INTRO_STATE, 5
+	goto_if_eq RiminiTown_CasaSte_1F_EventScript_MammadiSte_6
+	msgbox RiminiTown_CasaSte_1F_EventScript_MammadiSte_Text_3
+RiminiTown_CasaSte_1F_EventScript_MammadiSte_5:
 	removeitem ITEM_CAFFE
 	setflag FLAG_CONSEGNATO_CAFFE
 RiminiTown_CasaSte_1F_EventScript_MammadiSte_1:
@@ -29,6 +32,10 @@ RiminiTown_CasaSte_1F_EventScript_MammadiSte_1:
 RiminiTown_CasaSte_1F_EventScript_MammadiSte_2:
 	msgbox RiminiTown_CasaSte_1F_EventScript_MammadiSte_Text_0
 	goto RiminiTown_CasaSte_1F_EventScript_MammadiSte_1
+
+RiminiTown_CasaSte_1F_EventScript_MammadiSte_6:
+	msgbox RiminiTown_CasaSte_1F_EventScript_MammadiSte_Text_2
+	goto RiminiTown_CasaSte_1F_EventScript_MammadiSte_5
 
 
 RiminiTown_CasaSte_1F_EventScript_PlaceSte::
@@ -81,6 +88,10 @@ RiminiTown_CasaSte_1F_EventScript_MammadiSte_Text_1:
 	.string "Buongiorno! Posso aiutarti?$"
 
 RiminiTown_CasaSte_1F_EventScript_MammadiSte_Text_2:
+	.string "Oh, il caffé che avevo ordinato!\p"
+	.string "Grazie, ecco tieni i soldi.$"
+
+RiminiTown_CasaSte_1F_EventScript_MammadiSte_Text_3:
 	.string "Oh, il caffé che avevo ordinato!\p"
 	.string "Grazie, tu allora devi essere Gas,\n"
 	.string "Stefano mi ha parlato di te. Non credo\l"
