@@ -346,8 +346,8 @@ static const union AnimCmd sAnim_GoFastestEast[] =
 static const union AnimCmd sAnim_SkateSouth[] =
 {
     ANIMCMD_FRAME(3, 8),
-    ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(4, 8),
+    ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_JUMP(0),
 };
@@ -355,8 +355,8 @@ static const union AnimCmd sAnim_SkateSouth[] =
 static const union AnimCmd sAnim_SkateNorth[] =
 {
     ANIMCMD_FRAME(5, 8),
-    ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(6, 8),
+    ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_JUMP(0),
 };
@@ -364,8 +364,8 @@ static const union AnimCmd sAnim_SkateNorth[] =
 static const union AnimCmd sAnim_SkateWest[] =
 {
     ANIMCMD_FRAME(7, 8),
-    ANIMCMD_FRAME(2, 8),
     ANIMCMD_FRAME(8, 8),
+    ANIMCMD_FRAME(2, 8),
     ANIMCMD_FRAME(2, 8),
     ANIMCMD_JUMP(0),
 };
@@ -373,8 +373,8 @@ static const union AnimCmd sAnim_SkateWest[] =
 static const union AnimCmd sAnim_SkateEast[] =
 {
     ANIMCMD_FRAME(7, 8, .hFlip = TRUE),
-    ANIMCMD_FRAME(2, 8, .hFlip = TRUE),
     ANIMCMD_FRAME(8, 8, .hFlip = TRUE),
+    ANIMCMD_FRAME(2, 8, .hFlip = TRUE),
     ANIMCMD_FRAME(2, 8, .hFlip = TRUE),
     ANIMCMD_JUMP(0),
 };
@@ -382,8 +382,8 @@ static const union AnimCmd sAnim_SkateEast[] =
 static const union AnimCmd sAnim_SkateFastSouth[] =
 {
     ANIMCMD_FRAME(3, 4),
-    ANIMCMD_FRAME(0, 4),
     ANIMCMD_FRAME(4, 4),
+    ANIMCMD_FRAME(0, 4),
     ANIMCMD_FRAME(0, 4),
     ANIMCMD_JUMP(0),
 };
@@ -391,8 +391,8 @@ static const union AnimCmd sAnim_SkateFastSouth[] =
 static const union AnimCmd sAnim_SkateFastNorth[] =
 {
     ANIMCMD_FRAME(5, 4),
-    ANIMCMD_FRAME(1, 4),
     ANIMCMD_FRAME(6, 4),
+    ANIMCMD_FRAME(1, 4),
     ANIMCMD_FRAME(1, 4),
     ANIMCMD_JUMP(0),
 };
@@ -400,8 +400,8 @@ static const union AnimCmd sAnim_SkateFastNorth[] =
 static const union AnimCmd sAnim_SkateFastWest[] =
 {
     ANIMCMD_FRAME(7, 4),
-    ANIMCMD_FRAME(2, 4),
     ANIMCMD_FRAME(8, 4),
+    ANIMCMD_FRAME(2, 4),
     ANIMCMD_FRAME(2, 4),
     ANIMCMD_JUMP(0),
 };
@@ -409,8 +409,8 @@ static const union AnimCmd sAnim_SkateFastWest[] =
 static const union AnimCmd sAnim_SkateFastEast[] =
 {
     ANIMCMD_FRAME(7, 4, .hFlip = TRUE),
-    ANIMCMD_FRAME(2, 4, .hFlip = TRUE),
     ANIMCMD_FRAME(8, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(2, 4, .hFlip = TRUE),
     ANIMCMD_FRAME(2, 4, .hFlip = TRUE),
     ANIMCMD_JUMP(0),
 };
@@ -418,8 +418,8 @@ static const union AnimCmd sAnim_SkateFastEast[] =
 static const union AnimCmd sAnim_SkateFasterSouth[] =
 {
     ANIMCMD_FRAME(3, 2),
-    ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(4, 2),
+    ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_JUMP(0),
 };
@@ -427,8 +427,8 @@ static const union AnimCmd sAnim_SkateFasterSouth[] =
 static const union AnimCmd sAnim_SkateFasterNorth[] =
 {
     ANIMCMD_FRAME(5, 2),
-    ANIMCMD_FRAME(1, 2),
     ANIMCMD_FRAME(6, 2),
+    ANIMCMD_FRAME(1, 2),
     ANIMCMD_FRAME(1, 2),
     ANIMCMD_JUMP(0),
 };
@@ -436,8 +436,8 @@ static const union AnimCmd sAnim_SkateFasterNorth[] =
 static const union AnimCmd sAnim_SkateFasterWest[] =
 {
     ANIMCMD_FRAME(7, 2),
-    ANIMCMD_FRAME(2, 2),
     ANIMCMD_FRAME(8, 2),
+    ANIMCMD_FRAME(2, 2),
     ANIMCMD_FRAME(2, 2),
     ANIMCMD_JUMP(0),
 };
@@ -445,8 +445,8 @@ static const union AnimCmd sAnim_SkateFasterWest[] =
 static const union AnimCmd sAnim_SkateFasterEast[] =
 {
     ANIMCMD_FRAME(7, 2, .hFlip = TRUE),
-    ANIMCMD_FRAME(2, 2, .hFlip = TRUE),
     ANIMCMD_FRAME(8, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(2, 2, .hFlip = TRUE),
     ANIMCMD_FRAME(2, 2, .hFlip = TRUE),
     ANIMCMD_JUMP(0),
 };
@@ -454,8 +454,8 @@ static const union AnimCmd sAnim_SkateFasterEast[] =
 static const union AnimCmd sAnim_SkateFastestSouth[] =
 {
     ANIMCMD_FRAME(3, 1),
-    ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(4, 1),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_JUMP(0),
 };
@@ -463,8 +463,8 @@ static const union AnimCmd sAnim_SkateFastestSouth[] =
 static const union AnimCmd sAnim_SkateFastestNorth[] =
 {
     ANIMCMD_FRAME(5, 1),
-    ANIMCMD_FRAME(1, 1),
     ANIMCMD_FRAME(6, 1),
+    ANIMCMD_FRAME(1, 1),
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_JUMP(0),
 };
@@ -472,8 +472,8 @@ static const union AnimCmd sAnim_SkateFastestNorth[] =
 static const union AnimCmd sAnim_SkateFastestWest[] =
 {
     ANIMCMD_FRAME(7, 1),
-    ANIMCMD_FRAME(2, 1),
     ANIMCMD_FRAME(8, 1),
+    ANIMCMD_FRAME(2, 1),
     ANIMCMD_FRAME(2, 1),
     ANIMCMD_JUMP(0),
 };
@@ -481,8 +481,8 @@ static const union AnimCmd sAnim_SkateFastestWest[] =
 static const union AnimCmd sAnim_SkateFastestEast[] =
 {
     ANIMCMD_FRAME(7, 1, .hFlip = TRUE),
-    ANIMCMD_FRAME(2, 1, .hFlip = TRUE),
     ANIMCMD_FRAME(8, 1, .hFlip = TRUE),
+    ANIMCMD_FRAME(2, 1, .hFlip = TRUE),
     ANIMCMD_FRAME(2, 1, .hFlip = TRUE),
     ANIMCMD_JUMP(0),
 };
