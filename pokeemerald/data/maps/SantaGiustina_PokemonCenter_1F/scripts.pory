@@ -33,3 +33,8 @@ script SantaGiustina_PokemonCenter_1F_EventScript_Gentleman {
 	msgbox(format("Santa Giustina caput mundi."), MSGBOX_NPC)
 	end
 }
+
+script SantaGiustina_PokemonCenter_1F_EventScript_Bill {
+	msgbox(format("BILL: Ancora? Compratelo un PC, cojone."), MSGBOX_NPC)
+	end
+}

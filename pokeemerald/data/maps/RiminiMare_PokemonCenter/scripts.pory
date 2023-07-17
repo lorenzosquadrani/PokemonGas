@@ -17,3 +17,8 @@ RiminiMare_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 `
+
+script RiminiMare_PokemonCenter_1F_EventScript_Bill {
+	msgbox(format("BILL: Come? Il mio PC? Perché mai dovrei lasciare il mio PC al Centro Pokémon?"), MSGBOX_NPC)
+	end
+}

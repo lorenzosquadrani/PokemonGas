@@ -35,7 +35,20 @@ BolognaTown_PokemonCenter_1F_EventScript_Boy_2:
 
 
 BolognaTown_PokemonCenter_1F_EventScript_Girl::
+	checkitem ITEM_MACH_BIKE
+	compare VAR_RESULT, 0
+	goto_if_ne BolognaTown_PokemonCenter_1F_EventScript_Girl_2
 	msgbox BolognaTown_PokemonCenter_1F_EventScript_Girl_Text_0, MSGBOX_NPC
+BolognaTown_PokemonCenter_1F_EventScript_Girl_1:
+	end
+
+BolognaTown_PokemonCenter_1F_EventScript_Girl_2:
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Boy_Text_1, MSGBOX_NPC
+	goto BolognaTown_PokemonCenter_1F_EventScript_Girl_1
+
+
+BolognaTown_PokemonCenter_1F_EventScript_Bill::
+	msgbox BolognaTown_PokemonCenter_1F_EventScript_Bill_Text_0, MSGBOX_NPC
 	end
 
 
@@ -52,3 +65,6 @@ BolognaTown_PokemonCenter_1F_EventScript_Girl_Text_0:
 	.string "Scusa mio fratello, è proprio rude.\n"
 	.string "Rispetta solo quelli che hanno uno\l"
 	.string "skateboard.$"
+
+BolognaTown_PokemonCenter_1F_EventScript_Bill_Text_0:
+	.string "BILL: No.$"

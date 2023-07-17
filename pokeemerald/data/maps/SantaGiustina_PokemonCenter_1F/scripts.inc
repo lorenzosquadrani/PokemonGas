@@ -31,6 +31,11 @@ SantaGiustina_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 
+SantaGiustina_PokemonCenter_1F_EventScript_Bill::
+	msgbox SantaGiustina_PokemonCenter_1F_EventScript_Bill_Text_0, MSGBOX_NPC
+	end
+
+
 SantaGiustina_PokemonCenter_1F_EventScript_Youngster_Text_0:
 	.string "Squadra è l'uomo più ricco di Santa\n"
 	.string "Giustina. Dicono abbia fatto i soldi con\l"
@@ -41,3 +46,6 @@ SantaGiustina_PokemonCenter_1F_EventScript_Woman_Text_0:
 
 SantaGiustina_PokemonCenter_1F_EventScript_Gentleman_Text_0:
 	.string "Santa Giustina caput mundi.$"
+
+SantaGiustina_PokemonCenter_1F_EventScript_Bill_Text_0:
+	.string "BILL: Ancora? Compratelo un PC, cojone.$"

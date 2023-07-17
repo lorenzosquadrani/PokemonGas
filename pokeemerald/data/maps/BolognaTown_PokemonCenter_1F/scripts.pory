@@ -36,7 +36,19 @@ script BolognaTown_PokemonCenter_1F_EventScript_Boy {
 }
 
 script BolognaTown_PokemonCenter_1F_EventScript_Girl {
-	msgbox(format("Scusa mio fratello, è proprio rude. Rispetta solo
+
+	checkitem(ITEM_MACH_BIKE)
+	if (var(VAR_RESULT)){
+		msgbox(format("Cazzo guardi, vuoi ciucciarmelo?"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Scusa mio fratello, è proprio rude. Rispetta solo
 quelli che hanno uno skateboard."), MSGBOX_NPC)
+	}
+	end
+}
+
+script BolognaTown_PokemonCenter_1F_EventScript_Bill {
+	msgbox(format("BILL: No."), MSGBOX_NPC)
 	end
 }

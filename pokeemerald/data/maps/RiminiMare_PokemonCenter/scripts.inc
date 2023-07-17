@@ -15,3 +15,12 @@ RiminiMare_PokemonCenter_1F_EventScript_Nurse::
 	waitbuttonpress
 	release
 	end
+
+RiminiMare_PokemonCenter_1F_EventScript_Bill::
+	msgbox RiminiMare_PokemonCenter_1F_EventScript_Bill_Text_0, MSGBOX_NPC
+	end
+
+
+RiminiMare_PokemonCenter_1F_EventScript_Bill_Text_0:
+	.string "BILL: Come? Il mio PC? Perché mai dovrei\n"
+	.string "lasciare il mio PC al Centro Pokémon?$"
