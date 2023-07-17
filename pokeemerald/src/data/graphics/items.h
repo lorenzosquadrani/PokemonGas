@@ -538,8 +538,8 @@ const u32 gItemIconPalette_YellowScarf[] = INCBIN_U32("graphics/items/icon_palet
 
 // Key items
 
-const u32 gItemIcon_MachBike[] = INCBIN_U32("graphics/items/icons/mach_bike.4bpp.lz");
-const u32 gItemIconPalette_MachBike[] = INCBIN_U32("graphics/items/icon_palettes/mach_bike.gbapal.lz");
+const u32 gItemIcon_MachBike[] = INCBIN_U32("graphics/items/icons/berry_juice.4bpp.lz");
+const u32 gItemIconPalette_MachBike[] = INCBIN_U32("graphics/items/icon_palettes/berry_juice.gbapal.lz");
 
 const u32 gItemIcon_CoinCase[] = INCBIN_U32("graphics/items/icons/coin_case.4bpp.lz");
 const u32 gItemIconPalette_CoinCase[] = INCBIN_U32("graphics/items/icon_palettes/coin_case.gbapal.lz");

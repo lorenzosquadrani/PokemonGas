@@ -26,8 +26,6 @@ RiminiTown_InsideOfTruck_EventScript_SetIntroFlags::
 	setvar VAR_RIMINI_HOUSES_STATE_BRENDAN, 1
 	setflag FLAG_SYS_POKEMON_GET
 	givemon SPECIES_RAYQUAZA, 100
-	giveitem ITEM_MACH_BIKE
-	closemessage
 	setdynamicwarp MAP_RIMINI_TOWN, 9, 27
 	releaseall
 	end
