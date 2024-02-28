@@ -2,15 +2,15 @@
 Facciamo un gioco di pokemon per Gas!
 
 ## Get Started
-1.  Creiamo una cartella chiamata CheccoGay, e ci cloniamo dentro questa repo.
+1.  Creiamo una cartella chiamata Checco***, e ci cloniamo dentro questa repo.
 
     ```bash
-    mkdir CheccoGay
-    cd CheccoGay
+    mkdir Checco***
+    cd Checco***
     git clone https://github.com/lorenzosquadrani/PokemonGas.git
     ```
 
-3.  Dentro CheccoGay (__non nella repo__), scarichiamo e installiamo il compilatore. 
+3.  Dentro Checco*** (__non nella repo__), scarichiamo e installiamo il compilatore. 
     
     ```bash
     git clone https://github.com/pret/agbcc
@@ -29,7 +29,7 @@ Facciamo un gioco di pokemon per Gas!
     ```
 
 5.  Ora installiamo Porymap, per modificare le cose. 
-    Nella cartella CheccoGay clona la repository, e compila con qmake.
+    Nella cartella Checco*** clona la repository, e compila con qmake.
     ```bash
     git clone https://github.com/huderlem/porymap.git
     cd porymap
